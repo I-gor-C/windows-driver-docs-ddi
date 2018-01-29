@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : Fltmgr.lib
 req.dll : 
-req.irql : <= APC_LEVEL
+req.irql : "<= APC_LEVEL"
 topictype : 
 apitype : 
 apilocation : 

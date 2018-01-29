@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : Ntoskrnl.lib
 req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql : < DISPATCH_LEVEL
+req.irql : "< DISPATCH_LEVEL"
 topictype : 
 apitype : 
 apilocation : 

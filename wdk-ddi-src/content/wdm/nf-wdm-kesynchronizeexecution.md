@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
-req.irql : <= DIRQL (see Remarks section)
+req.irql : "<= DIRQL (see Remarks section)"
 topictype : 
 apitype : 
 apilocation : 

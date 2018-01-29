@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : Fltmgr.lib
 req.dll : FltMgr.sys
-req.irql : <= DISPATCH_LEVEL
+req.irql : "<= DISPATCH_LEVEL"
 topictype : 
 apitype : 
 apilocation : 

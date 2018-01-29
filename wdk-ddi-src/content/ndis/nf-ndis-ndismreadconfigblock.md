@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : Ndis.lib
 req.dll : 
-req.irql : <= APC_LEVEL
+req.irql : "<= APC_LEVEL"
 topictype : 
 apitype : 
 apilocation : 

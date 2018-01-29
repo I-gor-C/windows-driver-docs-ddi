@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : Clfs.lib
 req.dll : Clfs.sys
-req.irql : <= APC_LEVEL
+req.irql : "<= APC_LEVEL"
 topictype : 
 apitype : 
 apilocation : 

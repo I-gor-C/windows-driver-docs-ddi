@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : ntifs.h
 req.dll : 
-req.irql : <= DISPATCH_LEVEL
+req.irql : "<= DISPATCH_LEVEL"
 topictype : 
 apitype : 
 apilocation : 

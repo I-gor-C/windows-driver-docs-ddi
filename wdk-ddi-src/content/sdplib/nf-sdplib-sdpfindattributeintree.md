@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : NtosKrnl.exe
 req.dll : 
-req.irql : <= PASSIVE_LEVEL
+req.irql : "<= PASSIVE_LEVEL"
 topictype : 
 apitype : 
 apilocation : 

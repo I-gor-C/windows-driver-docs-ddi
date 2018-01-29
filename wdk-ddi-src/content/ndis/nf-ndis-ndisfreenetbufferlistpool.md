@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : Ndis.lib
 req.dll : Ndis.sys
-req.irql : <= DISPATCH_LEVEL
+req.irql : "<= DISPATCH_LEVEL"
 topictype : 
 apitype : 
 apilocation : 

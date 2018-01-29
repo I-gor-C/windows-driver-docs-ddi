@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
-req.irql : <= DIRQL
+req.irql : "<= DIRQL"
 topictype : 
 apitype : 
 apilocation : 

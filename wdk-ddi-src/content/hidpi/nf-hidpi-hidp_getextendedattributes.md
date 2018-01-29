@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : Hidparse.lib
 req.dll : 
-req.irql : <= DISPATCH_ LEVEL
+req.irql : "<= DISPATCH_ LEVEL"
 topictype : 
 apitype : 
 apilocation : 

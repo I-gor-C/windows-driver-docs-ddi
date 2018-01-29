@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : Pshed.lib
 req.dll : Pshed.dll
-req.irql : <= DIRQL
+req.irql : "<= DIRQL"
 topictype : 
 apitype : 
 apilocation : 

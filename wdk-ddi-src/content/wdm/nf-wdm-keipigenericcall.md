@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
-req.irql : < IPI_LEVEL
+req.irql : "< IPI_LEVEL"
 topictype : 
 apitype : 
 apilocation : 

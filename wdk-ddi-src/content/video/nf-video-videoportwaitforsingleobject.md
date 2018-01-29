@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : Videoprt.lib
 req.dll : Videoprt.sys
-req.irql : <= DISPATCH_LEVEL (see Remarks section)
+req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
 topictype : 
 apitype : 
 apilocation : 

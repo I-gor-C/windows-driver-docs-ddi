@@ -30,7 +30,7 @@ req.assembly :
 req.type-library : 
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
-req.irql : <=APC_LEVEL
+req.irql : "<=APC_LEVEL"
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---

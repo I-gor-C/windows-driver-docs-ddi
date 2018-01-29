@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : NtosKrnl.lib
 req.dll : NtosKrnl.exe
-req.irql : <= DISPATCH_LEVEL (see Remarks section)
+req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
 topictype : 
 apitype : 
 apilocation : 

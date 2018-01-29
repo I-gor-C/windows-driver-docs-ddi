@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : Wdf01000.sys (see Framework Library Versioning.)
 req.dll : 
-req.irql : <=DISPATCH_LEVEL
+req.irql : "<=DISPATCH_LEVEL"
 topictype : 
 apitype : 
 apilocation : 

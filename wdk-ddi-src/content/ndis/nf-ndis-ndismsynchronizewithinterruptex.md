@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : Ndis.lib
 req.dll : 
-req.irql : <= DIRQL
+req.irql : "<= DIRQL"
 topictype : 
 apitype : 
 apilocation : 

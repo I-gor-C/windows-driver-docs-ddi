@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : Ntoskrnl.lib
 req.dll : Ntoskrnl.exe
-req.irql : <= APC_LEVEL or <= DISPATCH_LEVEL (See Remarks section)
+req.irql : "<= APC_LEVEL or <= DISPATCH_LEVEL (See Remarks section)"
 topictype : 
 apitype : 
 apilocation : 
