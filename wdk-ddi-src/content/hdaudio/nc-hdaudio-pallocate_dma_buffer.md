@@ -2,7 +2,7 @@
 UID : NC:hdaudio.PALLOCATE_DMA_BUFFER
 title : PALLOCATE_DMA_BUFFER
 author : windows-driver-content
-description : The AllocateDmaBuffer routine allocates a data buffer in system memory for a DMA engine.The function pointer type for an AllocateDmaBuffer routine is defined as:
+description : The AllocateDmaBuffer routine allocates a data buffer in system memory for a DMA engine.The function pointer type for an AllocateDmaBuffer routine is defined as
 old-location : audio\allocatedmabuffer.htm
 old-project : audio
 ms.assetid : 44fd988a-24b3-4587-88d9-30585800ffbf

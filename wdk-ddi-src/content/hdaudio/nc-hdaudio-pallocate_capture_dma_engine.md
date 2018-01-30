@@ -2,7 +2,7 @@
 UID : NC:hdaudio.PALLOCATE_CAPTURE_DMA_ENGINE
 title : PALLOCATE_CAPTURE_DMA_ENGINE
 author : windows-driver-content
-description : The AllocateCaptureDmaEngine routine allocates a DMA engine for a capture stream.The function pointer type for an AllocateCaptureDmaEngine routine is defined as:
+description : The AllocateCaptureDmaEngine routine allocates a DMA engine for a capture stream.The function pointer type for an AllocateCaptureDmaEngine routine is defined as
 old-location : audio\allocatecapturedmaengine.htm
 old-project : audio
 ms.assetid : 038e52be-04db-41c2-aa19-85bc4eb8bc57

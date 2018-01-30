@@ -2,7 +2,7 @@
 UID : NC:hdaudio.PSETUP_DMA_ENGINE_WITH_BDL
 title : PSETUP_DMA_ENGINE_WITH_BDL
 author : windows-driver-content
-description : The SetupDmaEngineWithBdl routine sets up a DMA engine to use a caller-allocated DMA buffer.The function pointer type for a SetupDmaEngineWithBdl routine is defined as:
+description : The SetupDmaEngineWithBdl routine sets up a DMA engine to use a caller-allocated DMA buffer.The function pointer type for a SetupDmaEngineWithBdl routine is defined as
 old-location : audio\setupdmaenginewithbdl.htm
 old-project : audio
 ms.assetid : 2760579b-9922-4709-a049-a73f3abd5043

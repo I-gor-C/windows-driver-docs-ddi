@@ -2,7 +2,7 @@
 UID : NC:hdaudio.PCHANGE_BANDWIDTH_ALLOCATION
 title : PCHANGE_BANDWIDTH_ALLOCATION
 author : windows-driver-content
-description : The ChangeBandwidthAllocation routine changes a DMA engine's bandwidth allocation on the HD Audio Link.The function pointer type for a ChangeBandwidthAllocation routine is defined as:
+description : The ChangeBandwidthAllocation routine changes a DMA engine's bandwidth allocation on the HD Audio Link.The function pointer type for a ChangeBandwidthAllocation routine is defined as
 old-location : audio\changebandwidthallocation.htm
 old-project : audio
 ms.assetid : 4dcf8fb6-71f5-4e11-a92a-0292c2a1515c
