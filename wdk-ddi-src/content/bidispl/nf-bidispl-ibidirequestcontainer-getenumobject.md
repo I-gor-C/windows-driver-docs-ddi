@@ -33,7 +33,7 @@ topictype :
 apitype : 
 apilocation : 
 apiname : 
--	IBidiRequestContainer.IBidiRequestContainer : :GetEnumObject
+-	IBidiRequestContainer.IBidiRequestContainer::GetEnumObject
 product : Windows
 targetos : Windows
 req.typenames : "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
