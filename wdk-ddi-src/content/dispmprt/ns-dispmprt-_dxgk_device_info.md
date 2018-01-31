@@ -1,6 +1,6 @@
 ---
 UID : NS:dispmprt._DXGK_DEVICE_INFO
-title : _DXGK_DEVICE_INFO
+title : "_DXGK_DEVICE_INFO"
 author : windows-driver-content
 description : The DXGK_DEVICE_INFO structure holds information that describes a display adapter.
 old-location : display\dxgk_device_info.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : dcdae08f-69a6-496b-8391-d2b505fb86d9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_DEVICE_INFO structure [Display Devices], _DXGK_DEVICE_INFO, display.dxgk_device_info, *PDXGK_DEVICE_INFO, DmStructs_89344ee9-8c4e-4f7e-8950-11948c07bb8e.xml, dispmprt/DXGK_DEVICE_INFO, dispmprt/PDXGK_DEVICE_INFO, PDXGK_DEVICE_INFO, DXGK_DEVICE_INFO, PDXGK_DEVICE_INFO structure pointer [Display Devices]
+ms.keywords : display.dxgk_device_info, DXGK_DEVICE_INFO structure [Display Devices], DXGK_DEVICE_INFO, PDXGK_DEVICE_INFO, _DXGK_DEVICE_INFO, DmStructs_89344ee9-8c4e-4f7e-8950-11948c07bb8e.xml, PDXGK_DEVICE_INFO structure pointer [Display Devices], dispmprt/PDXGK_DEVICE_INFO, dispmprt/DXGK_DEVICE_INFO, *PDXGK_DEVICE_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

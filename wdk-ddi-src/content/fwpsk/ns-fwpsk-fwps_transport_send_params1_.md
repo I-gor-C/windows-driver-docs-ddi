@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 8d5653e4-a755-4066-b25a-f8f589821412
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : fwpsk/FWPS_TRANSPORT_SEND_PARAMS1, FWPS_TRANSPORT_SEND_PARAMS1, netvista.fwps_transport_send_params1, FWPS_TRANSPORT_SEND_PARAMS1_, FWPS_TRANSPORT_SEND_PARAMS1 structure [Network Drivers Starting with Windows Vista], wfp_ref_3_struct_3_fwps_P-Z_55024e38-5ae1-4a2c-8595-2722e481a947.xml
+ms.keywords : netvista.fwps_transport_send_params1, fwpsk/FWPS_TRANSPORT_SEND_PARAMS1, FWPS_TRANSPORT_SEND_PARAMS1 structure [Network Drivers Starting with Windows Vista], wfp_ref_3_struct_3_fwps_P-Z_55024e38-5ae1-4a2c-8595-2722e481a947.xml, FWPS_TRANSPORT_SEND_PARAMS1_, FWPS_TRANSPORT_SEND_PARAMS1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -114,17 +114,17 @@ A <b>SCOPE_ID</b> structure that contains the scope identifier for the remote IP
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544964">CMSGHDR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a>
+
+<a href="https://msdn.microsoft.com/3b2ba645-6a70-4ba2-b4a2-5bde0c7f8d08">WSASendMsg</a>
 
 <mshelp:link keywords="netvista.fwpsinjecttransportsendasync1" tabindex="0"><b>
    FwpsInjectTransportSendAsync1</b></mshelp:link>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a>
-
 <mshelp:link keywords="netvista.fwps_incoming_metadata_values0" tabindex="0"><b>
    FWPS_INCOMING_METADATA_VALUES0</b></mshelp:link>
 
-<a href="https://msdn.microsoft.com/3b2ba645-6a70-4ba2-b4a2-5bde0c7f8d08">WSASendMsg</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544964">CMSGHDR</a>
 
  
 

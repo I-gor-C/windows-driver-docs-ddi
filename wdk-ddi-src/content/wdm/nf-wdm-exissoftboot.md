@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ff67bc75-b424-4278-b979-f67d118232aa
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExIsSoftBoot function [Kernel-Mode Driver Architecture], ExIsSoftBoot, wdm/ExIsSoftBoot, kernel.exissoftboot
+ms.keywords : ExIsSoftBoot, ExIsSoftBoot function [Kernel-Mode Driver Architecture], kernel.exissoftboot, wdm/ExIsSoftBoot
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,5 +69,5 @@ TRUE indicates a soft restart; FALSE otherwise.
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h |
 | **Library** |  |
-| **IRQL** | <=APC_LEVEL |
+| **IRQL** | "<=APC_LEVEL" |
 | **DDI compliance rules** |  |

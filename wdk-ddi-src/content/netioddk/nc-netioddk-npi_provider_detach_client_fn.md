@@ -149,7 +149,7 @@ The NMR calls a provider module's
 | **Minimum UMDF version** |  |
 | **Header** | netioddk.h (include Wsk.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
@@ -160,15 +160,15 @@ The NMR calls a provider module's
 
 <a href="..\netioddk\nc-netioddk-npi_client_cleanup_binding_context_fn.md">ClientCleanupBindingContext</a>
 
+<mshelp:link keywords="netvista.nmrproviderdetachclientcomplete" tabindex="0"><b>
+   NmrProviderDetachClientComplete</b></mshelp:link>
+
 <a href="..\netioddk\nf-netioddk-nmrderegisterprovider.md">NmrDeregisterProvider</a>
 
 <mshelp:link keywords="netvista.providercleanupbindingcontext" tabindex="0"><i>
    ProviderCleanupBindingContext</i></mshelp:link>
 
 <a href="..\netioddk\nc-netioddk-npi_provider_attach_client_fn.md">ProviderAttachClient</a>
-
-<mshelp:link keywords="netvista.nmrproviderdetachclientcomplete" tabindex="0"><b>
-   NmrProviderDetachClientComplete</b></mshelp:link>
 
  
 

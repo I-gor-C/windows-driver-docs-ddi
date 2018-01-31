@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c8f0e47c-4d06-445f-a6dd-9bd80fc490bc
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : srb/ScsiPortGetSrb, storage.scsiportgetsrb, scsiprt_28205a6f-8758-4aed-8fae-94a12c216cf4.xml, ScsiPortGetSrb, ScsiPortGetSrb routine [Storage Devices]
+ms.keywords : srb/ScsiPortGetSrb, scsiprt_28205a6f-8758-4aed-8fae-94a12c216cf4.xml, storage.scsiportgetsrb, ScsiPortGetSrb routine [Storage Devices], ScsiPortGetSrb
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

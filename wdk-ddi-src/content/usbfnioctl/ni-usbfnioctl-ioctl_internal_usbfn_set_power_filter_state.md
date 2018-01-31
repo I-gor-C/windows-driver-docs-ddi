@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBFN_USB_STRING, USBFN_USB_STRING"
+req.typenames : USBFN_USB_STRING, *PUSBFN_USB_STRING
 req.product : Windows 10 or later.
 ---
 

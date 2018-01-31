@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : B91EF786-51F7-406E-BCC2-C917E6881886
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols4 interface [Windows Debugging], GetScopeEx method, IDebugSymbols4, GetScopeEx method [Windows Debugging], IDebugSymbols4 interface, dbgeng/IDebugSymbols4::GetScopeEx, GetScopeEx method [Windows Debugging], debugger.idebugsymbols4_getscopeex, GetScopeEx, IDebugSymbols4::GetScopeEx
+ms.keywords : GetScopeEx, debugger.idebugsymbols4_getscopeex, GetScopeEx method [Windows Debugging], IDebugSymbols4 interface, IDebugSymbols4, IDebugSymbols4::GetScopeEx, GetScopeEx method [Windows Debugging], dbgeng/IDebugSymbols4::GetScopeEx, IDebugSymbols4 interface [Windows Debugging], GetScopeEx method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -91,9 +91,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<a href="..\dbgeng\ns-dbgeng-_debug_stack_frame_ex.md">DEBUG_STACK_FRAME_EX</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols4.md">IDebugSymbols4</a>
+
+<a href="..\dbgeng\ns-dbgeng-_debug_stack_frame_ex.md">DEBUG_STACK_FRAME_EX</a>
 
  
 

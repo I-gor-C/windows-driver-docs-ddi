@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 56B9C623-2038-4DD3-AA1B-D9A6E47E06C1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : VmbPacketGetPointer, vmbuskernelmodeclientlibapi/VmbPacketGetPointer, netvista.vmbpacketgetpointer, VmbPacketGetPointer function [Network Drivers Starting with Windows Vista]
+ms.keywords : VmbPacketGetPointer, netvista.vmbpacketgetpointer, vmbuskernelmodeclientlibapi/VmbPacketGetPointer, VmbPacketGetPointer function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

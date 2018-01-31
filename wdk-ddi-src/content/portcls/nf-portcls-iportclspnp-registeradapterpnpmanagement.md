@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : D9A54562-0ABC-4BEA-A9E3-F1A0A4EBC095
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : RegisterAdapterPnpManagement method [Audio Devices], IPortClsPnp interface, IPortClsPnp, RegisterAdapterPnpManagement method [Audio Devices], portcls/IPortClsPnp::RegisterAdapterPnpManagement, RegisterAdapterPnpManagement, IPortClsPnp::RegisterAdapterPnpManagement, IPortClsPnp interface [Audio Devices], RegisterAdapterPnpManagement method, audio.iportclspnp_registeradapterpnpmanagement
+ms.keywords : portcls/IPortClsPnp::RegisterAdapterPnpManagement, IPortClsPnp::RegisterAdapterPnpManagement, audio.iportclspnp_registeradapterpnpmanagement, IPortClsPnp, RegisterAdapterPnpManagement, RegisterAdapterPnpManagement method [Audio Devices], IPortClsPnp interface, IPortClsPnp interface [Audio Devices], RegisterAdapterPnpManagement method, RegisterAdapterPnpManagement method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -86,9 +86,9 @@ For more information,  see <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iportclspnp.md">IPortClsPnp</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536876">IPortClsPower::UnregisterAdapterPowerManagement</a>
+
+<a href="..\portcls\nn-portcls-iportclspnp.md">IPortClsPnp</a>
 
  
 

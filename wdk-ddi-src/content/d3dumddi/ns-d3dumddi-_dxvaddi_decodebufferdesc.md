@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._DXVADDI_DECODEBUFFERDESC
-title : _DXVADDI_DECODEBUFFERDESC
+title : "_DXVADDI_DECODEBUFFERDESC"
 author : windows-driver-content
 description : The DXVADDI_DECODEBUFFERDESC structure describes a buffer that is currently passed from the host decoder to the accelerator.
 old-location : display\dxvaddi_decodebufferdesc.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 809b4cf8-e4c5-4cb6-b58f-8b6b98111361
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVADDI_DECODEBUFFERDESC structure [Display Devices], DXVADDI_DECODEBUFFERDESC, _DXVADDI_DECODEBUFFERDESC, display.dxvaddi_decodebufferdesc, d3dumddi/DXVADDI_DECODEBUFFERDESC, DXVA2_Structs_0946584e-3d1f-4bb4-95d5-7ae2c669814a.xml
+ms.keywords : DXVADDI_DECODEBUFFERDESC structure [Display Devices], d3dumddi/DXVADDI_DECODEBUFFERDESC, DXVA2_Structs_0946584e-3d1f-4bb4-95d5-7ae2c669814a.xml, _DXVADDI_DECODEBUFFERDESC, DXVADDI_DECODEBUFFERDESC, display.dxvaddi_decodebufferdesc
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -223,13 +223,13 @@ Because Microsoft DirectX Video Acceleration (VA) version 2.0 uses Microsoft Dir
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_decodeexecute.md">D3DDDIARG_DECODEEXECUTE</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_pvp_hw_iv.md">DXVADDI_PVP_HW_IV</a>
 
 <a href="..\dxva\ns-dxva-_dxva_sliceinfo.md">DXVA_SliceInfo</a>
 
 <a href="..\dxva\ns-dxva-_dxva_pictureparameters.md">DXVA_PictureParameters</a>
 
-<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_pvp_hw_iv.md">DXVADDI_PVP_HW_IV</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_decodeexecute.md">D3DDDIARG_DECODEEXECUTE</a>
 
  
 

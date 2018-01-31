@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7070070c-a953-4120-bddf-c1a7f080ef50
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeSetBasePriorityThread, ntddk/KeSetBasePriorityThread, kernel.kesetbaseprioritythread, k105_6c558266-e459-447c-9586-4b327e24d7dd.xml, KeSetBasePriorityThread routine [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.kesetbaseprioritythread, ntddk/KeSetBasePriorityThread, KeSetBasePriorityThread routine [Kernel-Mode Driver Architecture], KeSetBasePriorityThread, k105_6c558266-e459-447c-9586-4b327e24d7dd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -88,11 +88,11 @@ The new base priority is restricted to the priority class of the given thread's 
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-kesetprioritythread.md">KeSetPriorityThread</a>
+
 <a href="..\wdm\nf-wdm-kegetcurrentthread.md">KeGetCurrentThread</a>
 
 <a href="..\wdm\nf-wdm-kequeryprioritythread.md">KeQueryPriorityThread</a>
-
-<a href="..\wdm\nf-wdm-kesetprioritythread.md">KeSetPriorityThread</a>
 
  
 

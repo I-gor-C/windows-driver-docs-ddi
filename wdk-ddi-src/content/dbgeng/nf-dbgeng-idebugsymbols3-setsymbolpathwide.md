@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 44ee3342-3677-4eee-8ddf-d0a01e9bb309
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : SetSymbolPathWide method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], SetSymbolPathWide method, debugger.setsymbolpathwide, SetSymbolPathWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::SetSymbolPathWide, IDebugSymbols3, dbgeng/IDebugSymbols3::SetSymbolPathWide, SetSymbolPathWide
+ms.keywords : debugger.setsymbolpathwide, SetSymbolPathWide method [Windows Debugging], dbgeng/IDebugSymbols3::SetSymbolPathWide, SetSymbolPathWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, IDebugSymbols3::SetSymbolPathWide, SetSymbolPathWide, IDebugSymbols3 interface [Windows Debugging], SetSymbolPathWide method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -96,11 +96,11 @@ For more information about manipulating the symbol path, see <a href="https://ms
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538110">AppendSymbolPath</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549155">GetSymbolPath</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
  
 

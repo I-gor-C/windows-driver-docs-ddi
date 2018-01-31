@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 943a9139-f3b8-468e-9357-26b7b6bfed32
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetNearNameByOffsetWide method [Windows Debugging], IDebugSymbols3 interface, debugger.getnearnamebyoffsetwide, dbgeng/IDebugSymbols3::GetNearNameByOffsetWide, IDebugSymbols3::GetNearNameByOffsetWide, GetNearNameByOffsetWide method [Windows Debugging], GetNearNameByOffsetWide, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetNearNameByOffsetWide method
+ms.keywords : IDebugSymbols3 interface [Windows Debugging], GetNearNameByOffsetWide method, GetNearNameByOffsetWide method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::GetNearNameByOffsetWide, GetNearNameByOffsetWide, GetNearNameByOffsetWide method [Windows Debugging], IDebugSymbols3::GetNearNameByOffsetWide, IDebugSymbols3, debugger.getnearnamebyoffsetwide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

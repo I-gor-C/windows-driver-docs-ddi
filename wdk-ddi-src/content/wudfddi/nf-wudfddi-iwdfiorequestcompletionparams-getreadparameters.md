@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8f38616e-498b-485e-84c8-de62477b5871
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : GetReadParameters, IWDFIoRequestCompletionParams interface, GetReadParameters method, UMDFRequestObjectRef_008ca4d6-ddbe-4288-9b5d-d6ccb35518db.xml, umdf.iwdfiorequestcompletionparams_getreadparameters, GetReadParameters method, IWDFIoRequestCompletionParams interface, IWDFIoRequestCompletionParams, wdf.iwdfiorequestcompletionparams_getreadparameters, IWDFIoRequestCompletionParams::GetReadParameters, GetReadParameters method, wudfddi/IWDFIoRequestCompletionParams::GetReadParameters
+ms.keywords : IWDFIoRequestCompletionParams interface, GetReadParameters method, IWDFIoRequestCompletionParams, GetReadParameters method, IWDFIoRequestCompletionParams interface, umdf.iwdfiorequestcompletionparams_getreadparameters, wudfddi/IWDFIoRequestCompletionParams::GetReadParameters, UMDFRequestObjectRef_008ca4d6-ddbe-4288-9b5d-d6ccb35518db.xml, GetReadParameters, GetReadParameters method, IWDFIoRequestCompletionParams::GetReadParameters, wdf.iwdfiorequestcompletionparams_getreadparameters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -95,9 +95,9 @@ None
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequestcompletionparams.md">IWDFIoRequestCompletionParams</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequestcompletionparams.md">IWDFIoRequestCompletionParams</a>
 
  
 

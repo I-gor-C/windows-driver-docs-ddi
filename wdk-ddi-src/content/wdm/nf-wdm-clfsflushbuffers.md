@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 70e93c8f-a23c-4399-9299-c2743d097ded
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/ClfsFlushBuffers, Clfs_3c04240c-0914-472f-9b4b-97a00221e092.xml, kernel.clfsflushbuffers, ClfsFlushBuffers routine [Kernel-Mode Driver Architecture], ClfsFlushBuffers
+ms.keywords : ClfsFlushBuffers, Clfs_3c04240c-0914-472f-9b4b-97a00221e092.xml, ClfsFlushBuffers routine [Kernel-Mode Driver Architecture], kernel.clfsflushbuffers, wdm/ClfsFlushBuffers
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,7 +77,7 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

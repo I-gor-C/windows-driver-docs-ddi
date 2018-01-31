@@ -1,6 +1,6 @@
 ---
 UID : NS:pepfx._PEP_COMPONENT_PERF_INFO
-title : _PEP_COMPONENT_PERF_INFO
+title : "_PEP_COMPONENT_PERF_INFO"
 author : windows-driver-content
 description : The PEP_COMPONENT_PERF_INFO structure describes the performance states (P-states) of a component.
 old-location : kernel\pep_component_perf_info.htm
@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : F05D67A0-6583-4C3E-B9AA-B99381A18047
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PPEP_COMPONENT_PERF_INFO structure pointer [Kernel-Mode Driver Architecture], *PPEP_COMPONENT_PERF_INFO, _PEP_COMPONENT_PERF_INFO, pepfx/PEP_COMPONENT_PERF_INFO, PEP_COMPONENT_PERF_INFO structure [Kernel-Mode Driver Architecture], PPEP_COMPONENT_PERF_INFO, pepfx/PPEP_COMPONENT_PERF_INFO, PEP_COMPONENT_PERF_INFO, kernel.pep_component_perf_info
+ms.keywords : "_PEP_COMPONENT_PERF_INFO, *PPEP_COMPONENT_PERF_INFO, kernel.pep_component_perf_info, pepfx/PEP_COMPONENT_PERF_INFO, pepfx/PPEP_COMPONENT_PERF_INFO, PEP_COMPONENT_PERF_INFO structure [Kernel-Mode Driver Architecture], PPEP_COMPONENT_PERF_INFO structure pointer [Kernel-Mode Driver Architecture], PPEP_COMPONENT_PERF_INFO, PEP_COMPONENT_PERF_INFO"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPEP_COMPONENT_PERF_INFO, PEP_COMPONENT_PERF_INFO"
+req.typenames : PEP_COMPONENT_PERF_INFO, *PPEP_COMPONENT_PERF_INFO
 ---
 
 # _PEP_COMPONENT_PERF_INFO structure
@@ -75,9 +75,9 @@ The <b>PEP_COMPONENT_PERF_INFO</b> structure contains input values that are supp
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_component_perf_info.md">PEP_COMPONENT_PERF_INFO</a>
-
 <a href="..\pepfx\ns-pepfx-_pep_register_component_perf_states.md">PEP_REGISTER_COMPONENT_PERF_STATES</a>
+
+<a href="..\pepfx\ns-pepfx-_pep_component_perf_info.md">PEP_COMPONENT_PERF_INFO</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186848">PEP_DPM_REGISTER_COMPONENT_PERF_STATES</a>
 

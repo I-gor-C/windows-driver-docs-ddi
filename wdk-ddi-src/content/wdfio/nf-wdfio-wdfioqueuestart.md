@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 1ce8a447-6205-44d0-b5d2-b78f01e15bb4
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfio/WdfIoQueueStart, kmdf.wdfioqueuestart, WdfIoQueueStart method, WdfIoQueueStart, DFQueueObjectRef_15829d65-ee6a-455d-a0c6-cf21f5426e31.xml, PFN_WDFIOQUEUESTART, wdf.wdfioqueuestart
+ms.keywords : DFQueueObjectRef_15829d65-ee6a-455d-a0c6-cf21f5426e31.xml, wdfio/WdfIoQueueStart, WdfIoQueueStart method, wdf.wdfioqueuestart, WdfIoQueueStart, kmdf.wdfioqueuestart, PFN_WDFIOQUEUESTART
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,7 +81,7 @@ For more information about the <b>WdfIoQueueStart</b> method, see <a href="https
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfio.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also

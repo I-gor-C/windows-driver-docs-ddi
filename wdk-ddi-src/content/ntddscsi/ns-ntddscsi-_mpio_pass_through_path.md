@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddscsi._MPIO_PASS_THROUGH_PATH
-title : _MPIO_PASS_THROUGH_PATH
+title : "_MPIO_PASS_THROUGH_PATH"
 author : windows-driver-content
 description : The MPIO_PASS_THROUGH_PATH structure is used together with an IOCTL_MPIO_PASS_THROUGH_PATH request to instruct the port driver to send an embedded SCSI command to the target device.
 old-location : storage\mpio_pass_through_path.htm
@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 8c7f3832-3faa-4ece-8434-338f1b150ec1
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MPIO_PASS_THROUGH_PATH, storage.mpio_pass_through_path, *PMPIO_PASS_THROUGH_PATH, PMPIO_PASS_THROUGH_PATH, structs-scsibus_0a643059-71aa-4dca-92a8-525924a999df.xml, PMPIO_PASS_THROUGH_PATH structure pointer [Storage Devices], ntddscsi/MPIO_PASS_THROUGH_PATH, ntddscsi/PMPIO_PASS_THROUGH_PATH, MPIO_PASS_THROUGH_PATH, MPIO_PASS_THROUGH_PATH structure [Storage Devices]
+ms.keywords : MPIO_PASS_THROUGH_PATH, MPIO_PASS_THROUGH_PATH structure [Storage Devices], _MPIO_PASS_THROUGH_PATH, structs-scsibus_0a643059-71aa-4dca-92a8-525924a999df.xml, ntddscsi/MPIO_PASS_THROUGH_PATH, storage.mpio_pass_through_path, PMPIO_PASS_THROUGH_PATH, ntddscsi/PMPIO_PASS_THROUGH_PATH, *PMPIO_PASS_THROUGH_PATH, PMPIO_PASS_THROUGH_PATH structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : MPIO_PASS_THROUGH_PATH, *PMPIO_PASS_THROUGH_PATH
+req.typenames : "*PMPIO_PASS_THROUGH_PATH, MPIO_PASS_THROUGH_PATH"
 ---
 
 # _MPIO_PASS_THROUGH_PATH structure
@@ -58,7 +58,11 @@ typedef struct _MPIO_PASS_THROUGH_PATH {
 
 `Flags`
 
+#### 
 
+
+
+####
 
 `Length`
 
@@ -93,17 +97,17 @@ The <b>MPIO_PASS_THROUGH_PATH</b> structure is used for a double-buffered device
 
 ## See Also
 
-<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+<a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_direct.md">SCSI_PASS_THROUGH_DIRECT</a>
 
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_mpio_pass_through_path.md">IOCTL_MPIO_PASS_THROUGH_PATH</a>
 
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through.md">IOCTL_SCSI_PASS_THROUGH</a>
 
+<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_direct.md">IOCTL_SCSI_PASS_THROUGH_DIRECT</a>
 
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_mpio_pass_through_path_direct.md">IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT</a>
-
-<a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_direct.md">SCSI_PASS_THROUGH_DIRECT</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 59eb490e-66d5-4108-8d00-5503fa56665d
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetScope method [Windows Debugging], IDebugSymbols interface, IDebugSymbols2::GetScope, dbgeng/IDebugSymbols::GetScope, dbgeng/IDebugSymbols3::GetScope, GetScope method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols2 interface [Windows Debugging], GetScope method, IDebugSymbols3, debugger.getscope, GetScope method [Windows Debugging], IDebugSymbols interface [Windows Debugging], GetScope method, GetScope method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols3 interface [Windows Debugging], GetScope method, IDebugSymbols3::GetScope, IDebugSymbols::GetScope, IDebugSymbols_500f523a-22d9-468e-8d7c-36f49bda089c.xml, dbgeng/IDebugSymbols2::GetScope, GetScope
+ms.keywords : debugger.getscope, IDebugSymbols3::GetScope, IDebugSymbols2::GetScope, dbgeng/IDebugSymbols2::GetScope, dbgeng/IDebugSymbols3::GetScope, dbgeng/IDebugSymbols::GetScope, GetScope, GetScope method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols interface [Windows Debugging], GetScope method, IDebugSymbols::GetScope, GetScope method [Windows Debugging], IDebugSymbols interface, GetScope method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, IDebugSymbols2 interface [Windows Debugging], GetScope method, IDebugSymbols3 interface [Windows Debugging], GetScope method, IDebugSymbols_500f523a-22d9-468e-8d7c-36f49bda089c.xml, GetScope method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -122,15 +122,15 @@ For more information about scopes, see <a href="https://msdn.microsoft.com/libra
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554577">ResetScope</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+
 <a href="https://msdn.microsoft.com/66a5aa3d-fe35-4c30-951f-f25de75dacb0">IDebugControl::GetEffectiveProcessorType</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554577">ResetScope</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556773">SetScope</a>
 

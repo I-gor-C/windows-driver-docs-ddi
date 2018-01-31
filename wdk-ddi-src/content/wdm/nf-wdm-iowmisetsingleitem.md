@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 73c6ddaa-f090-430a-86b5-61b33cb8ffc8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k104_cc50cf7d-a35a-42d6-86e2-4fb6a6183323.xml, IoWMISetSingleItem routine [Kernel-Mode Driver Architecture], IoWMISetSingleItem, wdm/IoWMISetSingleItem, kernel.iowmisetsingleitem
+ms.keywords : IoWMISetSingleItem, kernel.iowmisetsingleitem, wdm/IoWMISetSingleItem, k104_cc50cf7d-a35a-42d6-86e2-4fb6a6183323.xml, IoWMISetSingleItem routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -174,18 +174,18 @@ Drivers can also use <a href="..\wdm\nf-wdm-iowmisetsingleinstance.md">IoWMISetS
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iowmiquerysingleinstance.md">IoWMIQuerySingleInstance</a>
+<a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550836">IRP_MN_CHANGE_SINGLE_ITEM</a>
+<a href="..\wdm\nf-wdm-iowmiquerysingleinstance.md">IoWMIQuerySingleInstance</a>
 
 <a href="..\wdm\nf-wdm-iowmisetsingleinstance.md">IoWMISetSingleInstance</a>
 
-<a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550836">IRP_MN_CHANGE_SINGLE_ITEM</a>
 
  
 

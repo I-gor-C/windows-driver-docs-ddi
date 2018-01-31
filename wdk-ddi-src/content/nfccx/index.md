@@ -47,7 +47,7 @@ nfccx.h contains the following programming interfaces:
 | [_NFC_CX_HARDWARE_EVENT](ns-nfccx-_nfc_cx_hardware_event.md) | The NFC_CX_HARDWARE_EVENT structure is an input parameter to NfcCxHardwareEvent. |
 | [_NFC_CX_LLCP_CONFIG](ns-nfccx-_nfc_cx_llcp_config.md) | The NFC_CX_LLCP_CONFIG structure is an input parameter to NfcCxSetLlcpConfig. |
 | [_NFC_CX_RF_DISCOVERY_CONFIG](ns-nfccx-_nfc_cx_rf_discovery_config.md) | The NFC_CX_RF_DISCOVERY_CONFIG structure contains RF discovery configuration settings. Discovery configuration should be completed during initialization after calling NfcDxDeviceInitialize, otherwise an error is returned. |
-| [_NFCCX_DRIVER_GLOBALS](ns-nfccx-_nfccx_driver_globals.md) | . |
+| [_NFCCX_DRIVER_GLOBALS](ns-nfccx-_nfccx_driver_globals.md) | "." |
 
 
 ## Enumerations

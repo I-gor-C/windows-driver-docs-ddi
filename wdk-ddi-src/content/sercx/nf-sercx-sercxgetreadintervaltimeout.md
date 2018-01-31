@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : E92F181A-DBD7-44A3-A49D-DDF07E03ADB1
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : serports.sercxgetreadintervaltimeout, SerCxGetReadIntervalTimeout, 1/SerCxGetReadIntervalTimeout, SerCxGetReadIntervalTimeout method [Serial Ports]
+ms.keywords : SerCxGetReadIntervalTimeout method [Serial Ports], 1/SerCxGetReadIntervalTimeout, SerCxGetReadIntervalTimeout, serports.sercxgetreadintervaltimeout
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SERCX_STATUS, *PSERCX_STATUS
+req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
 req.product : Windows 10 or later.
 ---
 
@@ -77,7 +77,7 @@ A read (<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">I
 | **Minimum UMDF version** |  |
 | **Header** | sercx.h |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

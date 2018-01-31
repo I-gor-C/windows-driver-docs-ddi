@@ -25,7 +25,7 @@ dmusicks.h contains the following programming interfaces:
 | [IMiniportDMus](nn-dmusicks-iminiportdmus.md) | The IMiniportDMus interface is the primary interface for a DMus miniport driver for a DirectMusic synthesizer device. |
 | [IMXF](nn-dmusicks-imxf.md) | The IMXF interface represents the DirectMusic stream on a MIDI transport filter (MXF). |
 | [IPortDMus](nn-dmusicks-iportdmus.md) | The IPortDMus interface is the DMus port driver's primary interface. |
-| [IPositionNotify](nn-dmusicks-ipositionnotify.md) |  |
+| [IPositionNotify](nn-dmusicks-ipositionnotify.md) | PositionNotify |
 | [ISynthSinkDMus](nn-dmusicks-isynthsinkdmus.md) | The ISynthSinkDMus interface handles wave output for a DirectMusic synthesizer device. |
 
 

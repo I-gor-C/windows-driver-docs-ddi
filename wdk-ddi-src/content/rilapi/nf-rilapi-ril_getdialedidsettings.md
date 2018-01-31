@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 088fd502-a209-4fec-bec0-9f47f61022ee
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ril_getdialedidsettings, RIL_GetDialedIdSettings, RIL_GetDialedIdSettings method [Network Drivers Starting with Windows Vista], rilapi/RIL_GetDialedIdSettings
+ms.keywords : RIL_GetDialedIdSettings, netvista.ril_getdialedidsettings, RIL_GetDialedIdSettings method [Network Drivers Starting with Windows Vista], rilapi/RIL_GetDialedIdSettings
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
+req.typenames : "*PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER"
 req.product : Windows 10 or later.
 ---
 

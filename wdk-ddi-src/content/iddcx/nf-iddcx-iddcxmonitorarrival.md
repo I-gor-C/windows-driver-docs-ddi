@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e73a8111-9e54-4040-a38a-441948e10212
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.iddcxmonitorarrival, IddCxMonitorArrival, IddCxMonitorArrival method [Display Devices], iddcx/IddCxMonitorArrival
+ms.keywords : iddcx/IddCxMonitorArrival, IddCxMonitorArrival, IddCxMonitorArrival method [Display Devices], display.iddcxmonitorarrival
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : NtosKrnl.exe
 req.dll : 
-req.irql : _Must_inspect_result_
+req.irql : "_Must_inspect_result_"
 topictype : 
 apitype : 
 apilocation : 
@@ -76,5 +76,5 @@ Output arguments to the function
 | **Minimum UMDF version** |  |
 | **Header** | iddcx.h |
 | **Library** |  |
-| **IRQL** | _Must_inspect_result_ |
+| **IRQL** | "_Must_inspect_result_" |
 | **DDI compliance rules** |  |

@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILCALLVIDEOMEDIASTATE, *LPRILCALLVIDEOMEDIASTATE
+req.typenames : "*LPRILCALLVIDEOMEDIASTATE, RILCALLVIDEOMEDIASTATE"
 ---
 
 # RILCALLVIDEOMEDIASTATE structure

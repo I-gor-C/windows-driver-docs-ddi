@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b4c3cb7e-9c4a-40a5-a11b-952562c4790b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wfp_ref_2_funct_2_fwpm_606dbd2f-8df7-497b-8feb-ba7aedbabedb.xml, FwpmCalloutDeleteByKey0 function [Network Drivers Starting with Windows Vista], netvista.fwpmcalloutdeletebykey0, fwpmk/FwpmCalloutDeleteByKey0, FwpmCalloutDeleteByKey0
+ms.keywords : FwpmCalloutDeleteByKey0, wfp_ref_2_funct_2_fwpm_606dbd2f-8df7-497b-8feb-ba7aedbabedb.xml, netvista.fwpmcalloutdeletebykey0, fwpmk/FwpmCalloutDeleteByKey0, FwpmCalloutDeleteByKey0 function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -151,11 +151,11 @@ A callout can be deleted from the filter engine only if there are no filters in 
 
 ## See Also
 
+<a href="..\fwpmk\nf-fwpmk-fwpmcalloutadd0.md">FwpmCalloutAdd0</a>
+
 <a href="..\fwpmk\nf-fwpmk-fwpmengineopen0.md">FwpmEngineOpen0</a>
 
 <a href="..\fwpmk\nf-fwpmk-fwpmcalloutdeletebyid0.md">FwpmCalloutDeleteById0</a>
-
-<a href="..\fwpmk\nf-fwpmk-fwpmcalloutadd0.md">FwpmCalloutAdd0</a>
 
  
 

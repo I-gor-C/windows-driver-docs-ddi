@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3bd88ecd-7c7c-4ee9-8eb8-bc5653bd4ed0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : umdf.iwdfdevice_setpnpstate, IWDFDevice, SetPnpState method, wudfddi/IWDFDevice::SetPnpState, wdf.iwdfdevice_setpnpstate, IWDFDevice::SetPnpState, SetPnpState method, IWDFDevice interface, UMDFDeviceObjectRef_1efea639-31d7-4420-8b8a-c528597ceffb.xml, SetPnpState, IWDFDevice interface, SetPnpState method
+ms.keywords : SetPnpState, wdf.iwdfdevice_setpnpstate, UMDFDeviceObjectRef_1efea639-31d7-4420-8b8a-c528597ceffb.xml, wudfddi/IWDFDevice::SetPnpState, SetPnpState method, IWDFDevice::SetPnpState, SetPnpState method, IWDFDevice interface, IWDFDevice, umdf.iwdfdevice_setpnpstate, IWDFDevice interface, SetPnpState method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -125,11 +125,11 @@ Before the state of the PnP property that <b>SetPnpState</b> set can take effect
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558834">IWDFDevice::GetPnpState</a>
 
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_pnp_state.md">WDF_PNP_STATE</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557010">IWDFDevice::CommitPnpState</a>
-
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
 
  
 

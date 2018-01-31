@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 43d30c99-9f9e-4516-8c50-e096f760a774
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortGetBusData routine [Storage Devices], srb/ScsiPortGetBusData, scsiprt_85566dfe-b1b6-4b6d-9f80-69fbdd82904a.xml, ScsiPortGetBusData, storage.scsiportgetbusdata
+ms.keywords : ScsiPortGetBusData routine [Storage Devices], srb/ScsiPortGetBusData, storage.scsiportgetbusdata, scsiprt_85566dfe-b1b6-4b6d-9f80-69fbdd82904a.xml, ScsiPortGetBusData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -140,11 +140,11 @@ Configuration data returned by <b>ScsiPortGetBusData</b> is valid only until the
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
 
+<a href="..\wdm\ns-wdm-_pci_slot_number.md">PCI_SLOT_NUMBER</a>
+
 <a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
 
 <a href="..\wdm\ns-wdm-_pci_common_config.md">PCI_COMMON_CONFIG</a>
-
-<a href="..\wdm\ns-wdm-_pci_slot_number.md">PCI_SLOT_NUMBER</a>
 
  
 

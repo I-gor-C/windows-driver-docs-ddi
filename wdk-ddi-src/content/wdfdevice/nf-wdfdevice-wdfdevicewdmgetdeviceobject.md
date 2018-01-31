@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 87a427ae-5c1e-4975-a48f-80c3549a3564
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdevicewdmgetdeviceobject, WdfDeviceWdmGetDeviceObject, WdfDeviceWdmGetDeviceObject method, wdfdevice/WdfDeviceWdmGetDeviceObject, kmdf.wdfdevicewdmgetdeviceobject, PFN_WDFDEVICEWDMGETDEVICEOBJECT, DFDeviceObjectGeneralRef_b145d3cd-578a-4be9-80d1-b260f5693b3d.xml
+ms.keywords : WdfDeviceWdmGetDeviceObject method, WdfDeviceWdmGetDeviceObject, kmdf.wdfdevicewdmgetdeviceobject, PFN_WDFDEVICEWDMGETDEVICEOBJECT, wdfdevice/WdfDeviceWdmGetDeviceObject, DFDeviceObjectGeneralRef_b145d3cd-578a-4be9-80d1-b260f5693b3d.xml, wdf.wdfdevicewdmgetdeviceobject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,7 +79,7 @@ The pointer that the <b>WdfDeviceWdmGetDeviceObject</b> method returns is valid 
 | **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also

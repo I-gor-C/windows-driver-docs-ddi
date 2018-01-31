@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : E2FAEBDD-336D-4E11-933B-88A6EA3BBDF9
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugClient, SetOutputWidth method [Windows Debugging], IDebugClient interface, dbgeng/IDebugClient::SetOutputWidth, IDebugClient interface [Windows Debugging], SetOutputWidth method, IDebugClient::SetOutputWidth, SetOutputWidth method [Windows Debugging], debugger.idebugclient_setoutputwidth, SetOutputWidth
+ms.keywords : IDebugClient::SetOutputWidth, dbgeng/IDebugClient::SetOutputWidth, SetOutputWidth, IDebugClient interface [Windows Debugging], SetOutputWidth method, SetOutputWidth method [Windows Debugging], IDebugClient interface, SetOutputWidth method [Windows Debugging], debugger.idebugclient_setoutputwidth, IDebugClient
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

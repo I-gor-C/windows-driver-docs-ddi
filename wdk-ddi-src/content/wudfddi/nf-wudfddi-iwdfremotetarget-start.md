@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f0f21d34-21f2-48ac-994f-e050f4447745
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFRemoteTarget interface, Start method, Start method, IWDFRemoteTarget interface, wdf.iwdfremotetarget_start, Start method, IWDFRemoteTarget::Start, UMDFIoTargetObjectRef_8e44c1ab-5ce6-4c4a-a7dc-e9de4b10ba12.xml, umdf.iwdfremotetarget_start, Start, wudfddi/IWDFRemoteTarget::Start, IWDFRemoteTarget
+ms.keywords : wudfddi/IWDFRemoteTarget::Start, IWDFRemoteTarget interface, Start method, Start method, IWDFRemoteTarget interface, wdf.iwdfremotetarget_start, IWDFRemoteTarget::Start, UMDFIoTargetObjectRef_8e44c1ab-5ce6-4c4a-a7dc-e9de4b10ba12.xml, Start, Start method, IWDFRemoteTarget, umdf.iwdfremotetarget_start
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -98,9 +98,9 @@ For more information about <b>Start</b>, and how to use remote I/O targets in UM
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560289">IWDFRemoteTarget::Stop</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfremotetarget.md">IWDFRemoteTarget</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560289">IWDFRemoteTarget::Stop</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 27BE493F-8F70-4FBF-AA58-D6ACB27BFC2D
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_UPDATESUBRESOURCEUP, D3DDDIARG_UPDATESUBRESOURCEUP structure [Display Devices], display.d3dddiarg_updatesubresourceup, d3dumddi/D3DDDIARG_UPDATESUBRESOURCEUP
+ms.keywords : D3DDDIARG_UPDATESUBRESOURCEUP structure [Display Devices], d3dumddi/D3DDDIARG_UPDATESUBRESOURCEUP, display.d3dddiarg_updatesubresourceup, D3DDDIARG_UPDATESUBRESOURCEUP
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -96,11 +96,11 @@ The index of the destination subresource to which data is to be copied.
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddibox.md">D3DDDIBOX</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_updatesubresourceup.md">pfnUpdateSubresourceUP</a>
 
 <a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_copyflags.md">D3DDDIARG_COPYFLAGS</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddibox.md">D3DDDIBOX</a>
 
  
 

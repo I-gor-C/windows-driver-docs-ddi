@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : DA4C7FBC-F5D5-48EA-90D6-F2249AF6401E
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.exacquirerundownprotection, ExAcquireRundownProtection, ExAcquireRundownProtection routine [Kernel-Mode Driver Architecture], wdm/ExAcquireRundownProtection
+ms.keywords : ExAcquireRundownProtection routine [Kernel-Mode Driver Architecture], kernel.exacquirerundownprotection, ExAcquireRundownProtection, wdm/ExAcquireRundownProtection
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,7 +81,7 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** | HwStorPortProhibitedDDIs |
 
 ## See Also

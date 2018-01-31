@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddndis._NDIS_PORT_AUTHENTICATION_PARAMETERS
-title : _NDIS_PORT_AUTHENTICATION_PARAMETERS
+title : "_NDIS_PORT_AUTHENTICATION_PARAMETERS"
 author : windows-driver-content
 description : The NDIS_PORT_AUTHENTICATION_PARAMETERS structure specifies the state parameters for an NDIS port.
 old-location : netvista\ndis_port_authentication_parameters.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7c411d9e-1064-4278-9870-0546891d4743
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddndis/PNDIS_PORT_AUTHENTICATION_PARAMETERS, _NDIS_PORT_AUTHENTICATION_PARAMETERS, NDIS_PORT_AUTHENTICATION_PARAMETERS, ndis_ports_ref_f78165f6-8166-4889-98e8-6c9f99fe0a0e.xml, PNDIS_PORT_AUTHENTICATION_PARAMETERS, NDIS_PORT_AUTHENTICATION_PARAMETERS structure [Network Drivers Starting with Windows Vista], *PNDIS_PORT_AUTHENTICATION_PARAMETERS, netvista.ndis_port_authentication_parameters, ntddndis/NDIS_PORT_AUTHENTICATION_PARAMETERS, PNDIS_PORT_AUTHENTICATION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords : "_NDIS_PORT_AUTHENTICATION_PARAMETERS, NDIS_PORT_AUTHENTICATION_PARAMETERS, ntddndis/NDIS_PORT_AUTHENTICATION_PARAMETERS, NDIS_PORT_AUTHENTICATION_PARAMETERS structure [Network Drivers Starting with Windows Vista], ndis_ports_ref_f78165f6-8166-4889-98e8-6c9f99fe0a0e.xml, *PNDIS_PORT_AUTHENTICATION_PARAMETERS, netvista.ndis_port_authentication_parameters, PNDIS_PORT_AUTHENTICATION_PARAMETERS, PNDIS_PORT_AUTHENTICATION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_PORT_AUTHENTICATION_PARAMETERS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,10 +76,52 @@ The authorization state of the port that the miniport adapter should use for rec
 
 This member must contain one of the following values:
 
+
+
+
+#### NdisPortAuthorizationUnknown
+
+The port's authorization state for receive operations is unknown.
+
+
+#### NdisPortAuthorized
+
+The port is authorized for receive operations.
+
+
+#### NdisPortUnauthorized
+
+The port is not authorized for receive operations.
+
+
+#### NdisPortReauthorizing
+
+The port is re-authorizing for receive operations.
+
 `RcvControlState`
 
 The control state of the port that the miniport adapter should use for receive operations. This
      member must contain one of the following values:
+     
+
+
+
+
+#### NdisPortControlStateUnknown
+
+The port's control state for receive operations is unknown.
+
+
+#### NdisPortControlStateControlled
+
+The port is in a controlled state for receive operations. That is, the port requires
+       authorization.
+
+
+#### NdisPortControlStateUncontrolled
+
+The port is in an uncontrolled state for receive operations. That is, the port does not require
+       authorization.
 
 `SendAuthorizationState`
 
@@ -91,10 +133,52 @@ The authorization state of the port that the miniport adapter should use for sen
 
 This member must contain one of the following values:
 
+
+
+
+#### NdisPortAuthorizationUnknown
+
+The port's authorization state for send operations is unknown.
+
+
+#### NdisPortAuthorized
+
+The port is authorized for send operations.
+
+
+#### NdisPortUnauthorized
+
+The port is not authorized for send operations.
+
+
+#### NdisPortReauthorizing
+
+The port is re-authorizing for send operations.
+
 `SendControlState`
 
 The control state of the port that the miniport adapter should use for send operations. This
      member must contain one of the following values:
+     
+
+
+
+
+#### NdisPortControlStateUnknown
+
+The port's control state for send operations is unknown.
+
+
+#### NdisPortControlStateControlled
+
+The port is in a controlled state for send operations. That is, the port requires
+       authorization.
+
+
+#### NdisPortControlStateUncontrolled
+
+The port is in an uncontrolled state for send operations. That is, the port does not require
+       authorization.
 
 ## Remarks
 The NDIS_PORT_AUTHENTICATION_PARAMETERS structure is used in 
@@ -112,10 +196,10 @@ The NDIS_PORT_AUTHENTICATION_PARAMETERS structure is used in
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
 <mshelp:link keywords="netvista.oid_gen_port_authentication_parameters" tabindex="0">
    OID_GEN_PORT_AUTHENTICATION_PARAMETERS</mshelp:link>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
  
 

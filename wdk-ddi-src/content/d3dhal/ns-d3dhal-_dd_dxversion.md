@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dhal._DD_DXVERSION
-title : _DD_DXVERSION
+title : "_DD_DXVERSION"
 author : windows-driver-content
 description : DirectX 8.0 and later versions only. DD_DXVERSION describes the current DirectX runtime version.
 old-location : display\dd_dxversion.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 72c22f76-c867-4924-b066-2ae4b25bfc43
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_DXVERSION, DD_DXVERSION structure [Display Devices], display.dd_dxversion, d3dstrct_8955afcc-5fa5-493b-b291-69cd3b61ed8b.xml, d3dhal/DD_DXVERSION, DD_DXVERSION
+ms.keywords : DD_DXVERSION structure [Display Devices], d3dhal/DD_DXVERSION, _DD_DXVERSION, d3dstrct_8955afcc-5fa5-493b-b291-69cd3b61ed8b.xml, display.dd_dxversion, DD_DXVERSION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -85,9 +85,9 @@ The <b>gdi2</b> member of DD_DXVERSION is used by the runtime with type D3DGDI2_
 
 ## See Also
 
-<a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551550">DD_GETDRIVERINFODATA</a>
+
+<a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a>
 
  
 

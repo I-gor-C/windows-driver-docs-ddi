@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9a922379-b439-4f94-9eb1-7c229318382c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ZwDuplicateObject routine [Kernel-Mode Driver Architecture], NtDuplicateObject, kernel.zwduplicateobject, ntifs/NtDuplicateObject, ntifs/ZwDuplicateObject, ZwDuplicateObject
+ms.keywords : ZwDuplicateObject routine [Kernel-Mode Driver Architecture], kernel.zwduplicateobject, ntifs/ZwDuplicateObject, ntifs/NtDuplicateObject, NtDuplicateObject, ZwDuplicateObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -133,9 +133,9 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-
 <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 

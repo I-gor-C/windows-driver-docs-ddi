@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : C31681A0-17C6-4255-9068-7486A2101AB7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IXpsRasterizationFactory2::CreateRasterizer, CreateRasterizer method [Print Devices], CreateRasterizer method [Print Devices], IXpsRasterizationFactory2 interface, print.ixpsrasterizationfactory2_createrasterizer, IXpsRasterizationFactory2 interface [Print Devices], CreateRasterizer method, xpsrassvc/IXpsRasterizationFactory2::CreateRasterizer, CreateRasterizer, IXpsRasterizationFactory2
+ms.keywords : CreateRasterizer method [Print Devices], IXpsRasterizationFactory2, CreateRasterizer, xpsrassvc/IXpsRasterizationFactory2::CreateRasterizer, print.ixpsrasterizationfactory2_createrasterizer, IXpsRasterizationFactory2::CreateRasterizer, IXpsRasterizationFactory2 interface [Print Devices], CreateRasterizer method, CreateRasterizer method [Print Devices], IXpsRasterizationFactory2 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method

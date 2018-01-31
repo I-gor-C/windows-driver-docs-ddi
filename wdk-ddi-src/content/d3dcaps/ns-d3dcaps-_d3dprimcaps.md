@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dcaps._D3DPrimCaps
-title : _D3DPrimCaps
+title : "_D3DPrimCaps"
 author : windows-driver-content
 description : Obsolete in DirectX 8.0 and later versions; see Remarks. The D3DPRIMCAPS structure defines the capabilities for each primitive type.
 old-location : display\d3dprimcaps.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fa725534-ccc3-4e71-a83f-b25fd4c72c14
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dstrct_671f3c02-cad3-47bc-871e-df1388f8cf1a.xml, d3dcaps/D3DPRIMCAPS, d3dcaps/LPD3DPRIMCAPS, *LPD3DPRIMCAPS, LPD3DPRIMCAPS structure pointer [Display Devices], LPD3DPRIMCAPS, display.d3dprimcaps, D3DPRIMCAPS, D3DPRIMCAPS structure [Display Devices], _D3DPrimCaps
+ms.keywords : d3dstrct_671f3c02-cad3-47bc-871e-df1388f8cf1a.xml, _D3DPrimCaps, d3dcaps/D3DPRIMCAPS, display.d3dprimcaps, LPD3DPRIMCAPS structure pointer [Display Devices], LPD3DPRIMCAPS, d3dcaps/LPD3DPRIMCAPS, D3DPRIMCAPS structure [Display Devices], D3DPRIMCAPS, *LPD3DPRIMCAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

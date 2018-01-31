@@ -2,13 +2,13 @@
 UID : NF:prcomoem.IPrintOemEngine.DisableDriver
 title : IPrintOemEngine::DisableDriver method
 author : windows-driver-content
-description : .
+description : "."
 old-location : print\iprintoemengine_disabledriver.htm
 old-project : print
 ms.assetid : 1BCE08D6-B25E-4C1B-B0F7-A53BE0E705A1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : prcomoem/IPrintOemEngine::DisableDriver, DisableDriver method [Print Devices], IPrintOemEngine interface, IPrintOemEngine interface [Print Devices], DisableDriver method, IPrintOemEngine::DisableDriver, print.iprintoemengine_disabledriver, DisableDriver, IPrintOemEngine, DisableDriver method [Print Devices]
+ms.keywords : IPrintOemEngine::DisableDriver, DisableDriver method [Print Devices], IPrintOemEngine interface [Print Devices], DisableDriver method, DisableDriver, print.iprintoemengine_disabledriver, prcomoem/IPrintOemEngine::DisableDriver, IPrintOemEngine, DisableDriver method [Print Devices], IPrintOemEngine interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*POEMPTOPTS, OEMPTOPTS"
+req.typenames : OEMPTOPTS, *POEMPTOPTS
 req.product : Windows 10 or later.
 ---
 

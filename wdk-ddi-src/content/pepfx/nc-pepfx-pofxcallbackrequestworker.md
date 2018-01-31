@@ -81,7 +81,7 @@ A PEP can call this routine at IRQL &lt;= DISPATCH_LEVEL.
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

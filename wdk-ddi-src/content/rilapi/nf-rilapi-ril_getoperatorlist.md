@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 34894a89-73ba-4744-97b9-7c1f124431f4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_GetOperatorList, rilapi/RIL_GetOperatorList, netvista.ril_getoperatorlist, RIL_GetOperatorList method [Network Drivers Starting with Windows Vista]
+ms.keywords : RIL_GetOperatorList method [Network Drivers Starting with Windows Vista], RIL_GetOperatorList, rilapi/RIL_GetOperatorList, netvista.ril_getoperatorlist
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
+req.typenames : "*PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER"
 req.product : Windows 10 or later.
 ---
 

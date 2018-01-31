@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 05d37fbd-9bdc-478a-8772-6f63d1363c1c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsStreamPointerGetMdl function [Streaming Media Devices], avfunc_94dcd1e0-4882-4703-b69a-9ca8b21d30a0.xml, ks/KsStreamPointerGetMdl, KsStreamPointerGetMdl, stream.ksstreampointergetmdl
+ms.keywords : avfunc_94dcd1e0-4882-4703-b69a-9ca8b21d30a0.xml, stream.ksstreampointergetmdl, KsStreamPointerGetMdl, ks/KsStreamPointerGetMdl, KsStreamPointerGetMdl function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,14 @@ Also see <a href="https://msdn.microsoft.com/4bac68a0-34d2-431a-9ed9-8a42751a736
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksstreampointergetirp.md">KsStreamPointerGetIrp</a>
-
 <a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
+
+<a href="..\ks\nf-ks-ksstreampointergetirp.md">KsStreamPointerGetIrp</a>
 
  
 

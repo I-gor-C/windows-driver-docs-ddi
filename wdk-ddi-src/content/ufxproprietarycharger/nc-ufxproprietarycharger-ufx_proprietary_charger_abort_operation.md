@@ -78,7 +78,7 @@ To support handling of proprietary chargers, the USB lower filter driver must pu
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ufxproprietarycharger.h |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

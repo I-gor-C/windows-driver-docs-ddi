@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 604182ea-3712-4670-bab8-edc3cb2fcd06
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfresource/WdfIoResourceListInsertDescriptor, DFResourceObjectRef_6f8fc17d-c5db-47fa-854a-5536dfc11705.xml, wdf.wdfioresourcelistinsertdescriptor, WdfIoResourceListInsertDescriptor, kmdf.wdfioresourcelistinsertdescriptor, WdfIoResourceListInsertDescriptor method, PFN_WDFIORESOURCELISTINSERTDESCRIPTOR
+ms.keywords : kmdf.wdfioresourcelistinsertdescriptor, DFResourceObjectRef_6f8fc17d-c5db-47fa-854a-5536dfc11705.xml, WdfIoResourceListInsertDescriptor, wdf.wdfioresourcelistinsertdescriptor, wdfresource/WdfIoResourceListInsertDescriptor, PFN_WDFIORESOURCELISTINSERTDESCRIPTOR, WdfIoResourceListInsertDescriptor method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -145,14 +145,14 @@ For more information about resource requirements lists and logical configuration
 | **Minimum UMDF version** |  |
 | **Header** | wdfresource.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfresource\nf-wdfresource-wdfioresourcelistappenddescriptor.md">WdfIoResourceListAppendDescriptor</a>
-
 <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
+
+<a href="..\wdfresource\nf-wdfresource-wdfioresourcelistappenddescriptor.md">WdfIoResourceListAppendDescriptor</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : fd5967cc-fb30-4882-9567-4617b9f9e723
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fltkernel/FltClose, FltClose function [Installable File System Drivers], FltClose, ifsk.fltclose, FltApiRef_a_to_d_f50e2397-1161-4e6e-9688-2baa417f6845.xml
+ms.keywords : ifsk.fltclose, FltClose function [Installable File System Drivers], FltApiRef_a_to_d_f50e2397-1161-4e6e-9688-2baa417f6845.xml, FltClose, fltkernel/FltClose
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

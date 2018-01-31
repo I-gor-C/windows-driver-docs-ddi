@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 67c85eaa-bb47-4384-8e37-fdbbc879b352
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : UMDFRequestObjectRef_bdb47237-28bf-4b07-9bcb-f8d029636d2d.xml, umdf.irequestcallbackcancel_oncancel, IRequestCallbackCancel, OnCancel, OnCancel method, wdf.irequestcallbackcancel_oncancel, IRequestCallbackCancel interface, OnCancel method, OnCancel method, IRequestCallbackCancel interface, wudfddi/IRequestCallbackCancel::OnCancel, IRequestCallbackCancel::OnCancel
+ms.keywords : wudfddi/IRequestCallbackCancel::OnCancel, UMDFRequestObjectRef_bdb47237-28bf-4b07-9bcb-f8d029636d2d.xml, OnCancel method, IRequestCallbackCancel interface, OnCancel method, IRequestCallbackCancel::OnCancel, OnCancel, IRequestCallbackCancel interface, OnCancel method, IRequestCallbackCancel, wdf.irequestcallbackcancel_oncancel, umdf.irequestcallbackcancel_oncancel
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -92,9 +92,9 @@ The User-Mode Driver Framework (UMDF) allows only one <b>OnCancel</b> method per
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559070">IWDFIoRequest::Complete</a>
 
-<a href="..\wudfddi\nn-wudfddi-irequestcallbackcancel.md">IRequestCallbackCancel</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
+<a href="..\wudfddi\nn-wudfddi-irequestcallbackcancel.md">IRequestCallbackCancel</a>
 
  
 

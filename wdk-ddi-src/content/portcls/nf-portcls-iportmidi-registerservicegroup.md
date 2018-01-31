@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 8e6b967f-7114-4231-bcfc-23637cd83268
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : RegisterServiceGroup method [Audio Devices], IPortMidi interface, audmp-routines_ff2228bf-489d-4980-a317-e9cb89e4f394.xml, audio.iportmidi_registerservicegroup, IPortMidi::RegisterServiceGroup, RegisterServiceGroup, IPortMidi interface [Audio Devices], RegisterServiceGroup method, RegisterServiceGroup method [Audio Devices], portcls/IPortMidi::RegisterServiceGroup, IPortMidi
+ms.keywords : portcls/IPortMidi::RegisterServiceGroup, RegisterServiceGroup method [Audio Devices], IPortMidi interface [Audio Devices], RegisterServiceGroup method, audio.iportmidi_registerservicegroup, IPortMidi::RegisterServiceGroup, audmp-routines_ff2228bf-489d-4980-a317-e9cb89e4f394.xml, RegisterServiceGroup, RegisterServiceGroup method [Audio Devices], IPortMidi interface, IPortMidi
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -79,11 +79,11 @@ The <i>ServiceGroup</i> parameter follows the <a href="https://msdn.microsoft.co
 
 ## See Also
 
+<a href="..\portcls\nn-portcls-iportmidi.md">IPortMidi</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536893">IPortMidi::Notify</a>
 
 <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
-
-<a href="..\portcls\nn-portcls-iportmidi.md">IPortMidi</a>
 
  
 

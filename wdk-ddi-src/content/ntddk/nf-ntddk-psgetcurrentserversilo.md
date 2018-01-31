@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4E30CD53-C078-40D7-BEF8-A39F57D71D42
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PsGetCurrentServerSilo, ntddk/PsGetCurrentServerSilo, kernel.psgetcurrentserversilo, PsGetCurrentServerSilo routine [Kernel-Mode Driver Architecture]
+ms.keywords : PsGetCurrentServerSilo routine [Kernel-Mode Driver Architecture], kernel.psgetcurrentserversilo, PsGetCurrentServerSilo, ntddk/PsGetCurrentServerSilo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -28,14 +28,14 @@ req.assembly :
 req.type-library : 
 req.lib : NtosKrnl.exe
 req.dll : 
-req.irql : _IRQL_requires_max_(DISPATCH_LEVEL)
+req.irql : "_IRQL_requires_max_(DISPATCH_LEVEL)"
 topictype : 
 apitype : 
 apilocation : 
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -66,5 +66,5 @@ A pointer to the current server silo.  This pointer is valid for the current thr
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h |
 | **Library** |  |
-| **IRQL** | _IRQL_requires_max_(DISPATCH_LEVEL) |
+| **IRQL** | "_IRQL_requires_max_(DISPATCH_LEVEL)" |
 | **DDI compliance rules** |  |

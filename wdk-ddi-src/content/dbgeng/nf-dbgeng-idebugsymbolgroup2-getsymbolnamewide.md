@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : b5de2450-8003-4866-86e8-1fd251e1552c
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetSymbolNameWide method [Windows Debugging], GetSymbolNameWide, dbgeng/IDebugSymbolGroup2::GetSymbolNameWide, GetSymbolNameWide method [Windows Debugging], IDebugSymbolGroup2 interface, IDebugSymbolGroup2::GetSymbolNameWide, debugger.getsymbolnamewide, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolNameWide method, IDebugSymbolGroup2
+ms.keywords : GetSymbolNameWide, GetSymbolNameWide method [Windows Debugging], IDebugSymbolGroup2 interface, GetSymbolNameWide method [Windows Debugging], IDebugSymbolGroup2::GetSymbolNameWide, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolNameWide method, IDebugSymbolGroup2, debugger.getsymbolnamewide, dbgeng/IDebugSymbolGroup2::GetSymbolNameWide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -123,9 +123,9 @@ For more information about symbol groups, see <a href="https://msdn.microsoft.co
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
 
  
 

@@ -1,6 +1,6 @@
 ---
 UID : NS:compstui._OPTTYPE
-title : _OPTTYPE
+title : "_OPTTYPE"
 author : windows-driver-content
 description : The OPTTYPE structure is used by CPSUI applications (including printer interface DLLs) for describing the type and other characteristics of a property sheet option, if the option is specified by an OPTITEM structure.
 old-location : print\opttype.htm
@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 041dd438-e837-4912-bda7-de654204198b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.opttype, POPTTYPE, compstui/POPTTYPE, POPTTYPE structure pointer [Print Devices], cpsuifnc_de1ff2db-9eea-4daf-bc9e-2e24a2dd5271.xml, OPTTYPE structure [Print Devices], compstui/OPTTYPE, OPTTYPE, _OPTTYPE, *POPTTYPE
+ms.keywords : "_OPTTYPE, print.opttype, *POPTTYPE, OPTTYPE structure [Print Devices], POPTTYPE, compstui/OPTTYPE, cpsuifnc_de1ff2db-9eea-4daf-bc9e-2e24a2dd5271.xml, OPTTYPE, compstui/POPTTYPE, POPTTYPE structure pointer [Print Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -80,6 +80,22 @@ Reserved, must be initialized to zero.
 `Flags`
 
 Optional bit flags that modify the option's characteristics. The following flags can be set in any combination.
+
+
+
+
+
+
+#### OPTTF_NOSPACE_BEFORE_POSTFIX
+
+CPSUI should not add a space character between the string specified by the <a href="..\compstui\ns-compstui-_optitem.md">OPTITEM</a> structure's <b>pName</b> string and the <a href="..\compstui\ns-compstui-_optparam.md">OPTPARAM</a> structure's <b>pData</b> string, when displaying the option.
+
+Valid only if the option type is or <a href="https://msdn.microsoft.com/library/windows/hardware/ff562847">TVOT_SCROLLBAR</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff562848">TVOT_TRACKBAR</a>.
+
+
+#### OPTTF_TYPE_DISABLED
+
+All the OPTPARAM structures to which <b>pOptParam</b> points are disabled, so that none of the parameter values are user-selectable.
 
 `pOptParam`
 

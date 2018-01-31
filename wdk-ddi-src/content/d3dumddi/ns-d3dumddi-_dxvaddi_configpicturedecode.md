@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._DXVADDI_CONFIGPICTUREDECODE
-title : _DXVADDI_CONFIGPICTUREDECODE
+title : "_DXVADDI_CONFIGPICTUREDECODE"
 author : windows-driver-content
 description : The DXVADDI_CONFIGPICTUREDECODE structure describes the configuration for compressed picture decoding.
 old-location : display\dxvaddi_configpicturedecode.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3305b892-6785-4412-9b9e-86561c83764a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxvaddi_configpicturedecode, _DXVADDI_CONFIGPICTUREDECODE, DXVA2_Structs_23ba33fb-2b89-48c1-9455-6edc3bb8b9d3.xml, d3dumddi/DXVADDI_CONFIGPICTUREDECODE, DXVADDI_CONFIGPICTUREDECODE, DXVADDI_CONFIGPICTUREDECODE structure [Display Devices]
+ms.keywords : DXVA2_Structs_23ba33fb-2b89-48c1-9455-6edc3bb8b9d3.xml, DXVADDI_CONFIGPICTUREDECODE, d3dumddi/DXVADDI_CONFIGPICTUREDECODE, DXVADDI_CONFIGPICTUREDECODE structure [Display Devices], _DXVADDI_CONFIGPICTUREDECODE, display.dxvaddi_configpicturedecode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

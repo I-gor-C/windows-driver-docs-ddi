@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : CC67993A-99B1-41DC-9278-7A475EF87089
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rtlnumbergenerictableelementsavl, RtlNumberGenericTableElementsAvl routine [Installable File System Drivers], RtlNumberGenericTableElementsAvl, ntddk/RtlNumberGenericTableElementsAvl
+ms.keywords : RtlNumberGenericTableElementsAvl, ntddk/RtlNumberGenericTableElementsAvl, RtlNumberGenericTableElementsAvl routine [Installable File System Drivers], ifsk.rtlnumbergenerictableelementsavl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -82,14 +82,14 @@ Callers of <b>RtlNumberGenericTableElementsAvl</b> must be running at IRQL &lt; 
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | < DISPATCH_LEVEL (see Remarks section) |
+| **IRQL** | "< DISPATCH_LEVEL (see Remarks section)" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-rtlisgenerictableemptyavl.md">RtlIsGenericTableEmptyAvl</a>
-
 <a href="..\ntddk\nf-ntddk-rtlinitializegenerictableavl.md">RtlInitializeGenericTableAvl</a>
+
+<a href="..\ntddk\nf-ntddk-rtlisgenerictableemptyavl.md">RtlIsGenericTableEmptyAvl</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3361DAEF-AC2A-401B-80E8-0220F191587C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : CmCallbackReleaseKeyObjectIDEx, wdm/CmCallbackReleaseKeyObjectIDEx, CmCallbackReleaseKeyObjectIDEx routine [Kernel-Mode Driver Architecture], kernel.cmcallbackreleasekeyobjectidex
+ms.keywords : wdm/CmCallbackReleaseKeyObjectIDEx, CmCallbackReleaseKeyObjectIDEx routine [Kernel-Mode Driver Architecture], kernel.cmcallbackreleasekeyobjectidex, CmCallbackReleaseKeyObjectIDEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,14 +72,14 @@ None.
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-cmcallbackgetkeyobjectidex.md">CmCallbackGetKeyObjectIDEx</a>
-
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
+<a href="..\wdm\nf-wdm-cmcallbackgetkeyobjectidex.md">CmCallbackGetKeyObjectIDEx</a>
 
  
 

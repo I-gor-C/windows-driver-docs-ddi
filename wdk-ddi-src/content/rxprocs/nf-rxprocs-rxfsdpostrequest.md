@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 0b1bc248-6b8e-498c-936d-64f6ff9fa183
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rxref_ceb83e58-1e5a-49d0-b281-50cd5067e09f.xml, ifsk.rxfsdpostrequest, rxprocs/RxFsdPostRequest, RxFsdPostRequest function [Installable File System Drivers], RxFsdPostRequest
+ms.keywords : rxref_ceb83e58-1e5a-49d0-b281-50cd5067e09f.xml, RxFsdPostRequest function [Installable File System Drivers], rxprocs/RxFsdPostRequest, RxFsdPostRequest, ifsk.rxfsdpostrequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
+req.typenames : RX_CONTEXT, *PRX_CONTEXT
 req.product : Windows 10 or later.
 ---
 
@@ -120,7 +120,7 @@ All calls to <b>RxFsdPostRequest</b> are queued to a worker thread to call the <
 | **Minimum UMDF version** |  |
 | **Header** | rxprocs.h (include Rxprocs.h, Rxcontx.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

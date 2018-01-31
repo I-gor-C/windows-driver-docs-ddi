@@ -104,10 +104,10 @@ The shared memory provider specified the entry point (FREE_SHARED_MEMORY_HANDLER
 
 ## See Also
 
+<a href="..\ndis\nc-ndis-allocate_shared_memory_handler.md">NetAllocateSharedMemory</a>
+
 <mshelp:link keywords="netvista.ndis_shared_memory_provider_characteristics" tabindex="0"><b>
    NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS</b></mshelp:link>
-
-<a href="..\ndis\nc-ndis-allocate_shared_memory_handler.md">NetAllocateSharedMemory</a>
 
 <a href="..\ndis\nf-ndis-ndisfreesharedmemory.md">NdisFreeSharedMemory</a>
 

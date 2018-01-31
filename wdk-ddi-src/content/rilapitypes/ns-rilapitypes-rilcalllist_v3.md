@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 6ddeb8ab-076e-44a2-9705-8d5d527a9fd7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilcalllist_v3_2, RILCALLLIST_V3 structure [Network Drivers Starting with Windows Vista], RILCALLLIST_V3, rilapitypes/RILCALLLIST_V3, *LPRILCALLLIST_V3, RILCALLLIST, *LPRILCALLLIST
+ms.keywords : RILCALLLIST, *LPRILCALLLIST, *LPRILCALLLIST_V3, RILCALLLIST_V3 structure [Network Drivers Starting with Windows Vista], netvista.rilcalllist_v3_2, RILCALLLIST_V3, rilapitypes/RILCALLLIST_V3
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILCALLLIST_V3, RILCALLLIST_V3, RILCALLLIST, *LPRILCALLLIST"
+req.typenames : RILCALLLIST, RILCALLLIST_V3, *LPRILCALLLIST, *LPRILCALLLIST_V3
 req.product : Windows 10 or later.
 ---
 

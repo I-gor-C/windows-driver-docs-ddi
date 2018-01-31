@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : B821AF54-AF2C-4E19-BC70-2E0A8F172D93
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoFxPowerControl routine [Kernel-Mode Driver Architecture], PoFxPowerControl, kernel.pofxpowercontrol, wdm/PoFxPowerControl
+ms.keywords : PoFxPowerControl, kernel.pofxpowercontrol, wdm/PoFxPowerControl, PoFxPowerControl routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -137,14 +137,14 @@ PoFx delegates the handling of all power control requests to the power engine pl
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439564">PowerControlCallback</a>
+
+<a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
 
  
 

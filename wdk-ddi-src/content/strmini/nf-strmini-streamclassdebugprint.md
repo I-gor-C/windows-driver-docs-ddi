@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a8b7efd2-7773-44dc-92de-85b03c31ada8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : StreamClassDebugPrint routine [Streaming Media Devices], strmini/StreamClassDebugPrint, strclass-routines_858a2dd4-ee74-44de-9293-05bd804c315d.xml, StreamClassDebugPrint, stream.streamclassdebugprint
+ms.keywords : strmini/StreamClassDebugPrint, stream.streamclassdebugprint, strclass-routines_858a2dd4-ee74-44de-9293-05bd804c315d.xml, StreamClassDebugPrint routine [Streaming Media Devices], StreamClassDebugPrint
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : STREAM_PRIORITY, *PSTREAM_PRIORITY
+req.typenames : "*PSTREAM_PRIORITY, STREAM_PRIORITY"
 req.product : Windows 10 or later.
 ---
 
@@ -90,9 +90,9 @@ For more information, see <a href="https://msdn.microsoft.com/544b922b-58e4-4cbb
 
 ## See Also
 
-<a href="..\strmini\nf-strmini-streamclassdebugassert.md">StreamClassDebugAssert</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543632">DbgPrint</a>
+
+<a href="..\strmini\nf-strmini-streamclassdebugassert.md">StreamClassDebugAssert</a>
 
  
 

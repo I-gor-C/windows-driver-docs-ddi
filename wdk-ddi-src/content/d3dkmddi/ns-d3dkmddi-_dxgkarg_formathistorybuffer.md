@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmddi._DXGKARG_FORMATHISTORYBUFFER
-title : _DXGKARG_FORMATHISTORYBUFFER
+title : "_DXGKARG_FORMATHISTORYBUFFER"
 author : windows-driver-content
 description : Contains info for the display miniport driver to format a history buffer.
 old-location : display\dxgkarg_formathistorybuffer.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 40E00234-C22B-4F86-AC5D-197223298FD7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKARG_FORMATHISTORYBUFFER structure [Display Devices], d3dkmddi/DXGKARG_FORMATHISTORYBUFFER, DXGKARG_FORMATHISTORYBUFFER, display.dxgkarg_formathistorybuffer, _DXGKARG_FORMATHISTORYBUFFER
+ms.keywords : DXGKARG_FORMATHISTORYBUFFER, display.dxgkarg_formathistorybuffer, d3dkmddi/DXGKARG_FORMATHISTORYBUFFER, DXGKARG_FORMATHISTORYBUFFER structure [Display Devices], _DXGKARG_FORMATHISTORYBUFFER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

@@ -1,6 +1,6 @@
 ---
 UID : NS:hidpi._HIDP_UNKNOWN_TOKEN
-title : _HIDP_UNKNOWN_TOKEN
+title : "_HIDP_UNKNOWN_TOKEN"
 author : windows-driver-content
 description : The HIDP_UNKNOWN_TOKEN structure contains information about a global item that the HID parser did not recognize.
 old-location : hid\hidp_unknown_token.htm
@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 6c9e0477-1698-41bf-9ce6-43e7e8741425
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _HIDP_UNKNOWN_TOKEN, PHIDP_UNKNOWN_TOKEN, hid.hidp_unknown_token, HIDP_UNKNOWN_TOKEN, hidstrct_646ea225-5fff-4430-9112-06bb4cf8c988.xml, hidpi/HIDP_UNKNOWN_TOKEN, HIDP_UNKNOWN_TOKEN structure [Human Input Devices], *PHIDP_UNKNOWN_TOKEN, hidpi/PHIDP_UNKNOWN_TOKEN, PHIDP_UNKNOWN_TOKEN structure pointer [Human Input Devices]
+ms.keywords : hidpi/PHIDP_UNKNOWN_TOKEN, HIDP_UNKNOWN_TOKEN structure [Human Input Devices], PHIDP_UNKNOWN_TOKEN, hidpi/HIDP_UNKNOWN_TOKEN, PHIDP_UNKNOWN_TOKEN structure pointer [Human Input Devices], _HIDP_UNKNOWN_TOKEN, hidstrct_646ea225-5fff-4430-9112-06bb4cf8c988.xml, HIDP_UNKNOWN_TOKEN, hid.hidp_unknown_token, *PHIDP_UNKNOWN_TOKEN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : HIDP_UNKNOWN_TOKEN, *PHIDP_UNKNOWN_TOKEN
+req.typenames : "*PHIDP_UNKNOWN_TOKEN, HIDP_UNKNOWN_TOKEN"
 ---
 
 # _HIDP_UNKNOWN_TOKEN structure

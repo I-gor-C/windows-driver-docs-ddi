@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WNODE_HEADER, *PWNODE_HEADER
+req.typenames : "*PWNODE_HEADER, WNODE_HEADER"
 req.product : Windows 10 or later.
 ---
 
@@ -76,6 +76,24 @@ A pointer to a
 
 A value that specifies the type of control operation that is being performed. A WSK application
      sets this parameter to one of the following values:
+     
+
+
+
+
+#### WskSetOption
+
+Set the state or value for a socket option.
+
+
+#### WskGetOption
+
+Get the state or value of a socket option.
+
+
+#### WskIoctl
+
+Perform an I/O control operation.
 
 `ControlCode`
 
@@ -290,28 +308,28 @@ Callers of the
 | **Minimum UMDF version** |  |
 | **Header** | wsk.h (include Wsk.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL (see Remarks section) |
+| **IRQL** | "<= DISPATCH_LEVEL (see Remarks section)" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wsk\ns-wsk-_wsk_provider_listen_dispatch.md">WSK_PROVIDER_LISTEN_DISPATCH</a>
-
 <mshelp:link keywords="netvista.wsk_provider_connection_dispatch" tabindex="0"><b>
    WSK_PROVIDER_CONNECTION_DISPATCH</b></mshelp:link>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
-
-<mshelp:link keywords="netvista.wsk_provider_datagram_dispatch" tabindex="0"><b>
-   WSK_PROVIDER_DATAGRAM_DISPATCH</b></mshelp:link>
-
-<a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571186">WSK Socket Options</a>
 
 <a href="..\wsk\ns-wsk-_wsk_provider_basic_dispatch.md">WSK_PROVIDER_BASIC_DISPATCH</a>
 
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/wsk-socket-ioctl-operations">WSK Socket IOCTL Operations</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571186">WSK Socket Options</a>
+<mshelp:link keywords="netvista.wsk_provider_datagram_dispatch" tabindex="0"><b>
+   WSK_PROVIDER_DATAGRAM_DISPATCH</b></mshelp:link>
+
+<a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
+
+<a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
+
+<a href="..\wsk\ns-wsk-_wsk_provider_listen_dispatch.md">WSK_PROVIDER_LISTEN_DISPATCH</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4A5413AD-A2EB-4772-89BF-867C30E0CD10
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_MIRACAST_CHUNK_INFO structure [Display Devices], display.dxgk_miracast_chunk_info, DXGK_MIRACAST_CHUNK_INFO, d3dukmdt/DXGK_MIRACAST_CHUNK_INFO
+ms.keywords : DXGK_MIRACAST_CHUNK_INFO structure [Display Devices], DXGK_MIRACAST_CHUNK_INFO, display.dxgk_miracast_chunk_info, d3dukmdt/DXGK_MIRACAST_CHUNK_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

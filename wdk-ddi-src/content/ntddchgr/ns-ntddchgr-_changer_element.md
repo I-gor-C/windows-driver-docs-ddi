@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddchgr._CHANGER_ELEMENT
-title : _CHANGER_ELEMENT
+title : "_CHANGER_ELEMENT"
 author : windows-driver-content
 description : The CHANGER_ELEMENT structure contains a description of a changer element.
 old-location : storage\changer_element.htm
@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 85035147-0ae8-482a-9a12-1e4e53ae1969
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _CHANGER_ELEMENT, storage.changer_element, structs-changer_b1685d99-20ff-495d-a9e3-c63571559106.xml, CHANGER_ELEMENT structure [Storage Devices], PCHANGER_ELEMENT structure pointer [Storage Devices], *PCHANGER_ELEMENT, CHANGER_ELEMENT, ntddchgr/CHANGER_ELEMENT, ntddchgr/PCHANGER_ELEMENT, PCHANGER_ELEMENT
+ms.keywords : "*PCHANGER_ELEMENT, structs-changer_b1685d99-20ff-495d-a9e3-c63571559106.xml, CHANGER_ELEMENT, PCHANGER_ELEMENT structure pointer [Storage Devices], _CHANGER_ELEMENT, ntddchgr/CHANGER_ELEMENT, PCHANGER_ELEMENT, CHANGER_ELEMENT structure [Storage Devices], ntddchgr/PCHANGER_ELEMENT, storage.changer_element"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : CHANGER_ELEMENT, *PCHANGER_ELEMENT
+req.typenames : "*PCHANGER_ELEMENT, CHANGER_ELEMENT"
 ---
 
 # _CHANGER_ELEMENT structure
@@ -60,6 +60,55 @@ Indicates the element's zero-based address used by the system. A changer minicla
 
 Indicates the type of element. Can be one of the following values taken from the <a href="..\ntddchgr\ne-ntddchgr-_element_type.md">ELEMENT_TYPE</a> enumeration.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### AllElements
+
+All elements of a changer, including its robotic transport, drives, slots, and IEport. <b>AllElements</b> is valid only in a <b>ChangerGetElementStatus</b> or <b>ChangerInitializeElementStatus</b> call.
+
+
+#### ChangerTransport
+
+The changer's robotic transport element, which is used to move media between IEports, slots, and drives.
+
+
+#### ChangerSlot
+
+A storage element, which is a slot in the changer in which media is stored when not mounted in a drive.
+
+
+#### ChangerIEPort
+
+An import/export element (IEport), which is a single or multiple-cartridge access port in some changers. An element is an IEport only if it is possible to move a piece of media from a slot to the IEport.
+
+
+#### ChangerDrive
+
+A data transfer element where data can be read from and written to media. 
+
+
+#### ChangerDoor
+
+A mechanism that provides access to all media in a changer at one time (as compared to an IEport that provides access to one or more, but not all, media). For example, a large front door or a magazine that contains all media in the changer are elements of this type. <b>ChangerDoor</b> is valid only in a <b>ChangerSetAccess</b> call.
+
+
+#### ChangerKeypad
+
+The keypad or other input control on the front panel of a changer. <b>ChangerKeypad</b> is valid only in a <b>ChangerSetAccess</b> call.
+
 ## Remarks
 CHANGER_ELEMENT is used by both the changer class driver and a changer miniclass driver to describe a changer element. 
 
@@ -75,9 +124,9 @@ On input, a changer miniclass driver must translate the zero-based address in <b
 
 ## See Also
 
-<a href="..\ntddchgr\ne-ntddchgr-_element_type.md">ELEMENT_TYPE</a>
-
 <a href="..\ntddchgr\ns-ntddchgr-_changer_element_status.md">CHANGER_ELEMENT_STATUS</a>
+
+<a href="..\ntddchgr\ne-ntddchgr-_element_type.md">ELEMENT_TYPE</a>
 
 <a href="..\ntddchgr\ns-ntddchgr-_changer_element_list.md">CHANGER_ELEMENT_LIST</a>
 

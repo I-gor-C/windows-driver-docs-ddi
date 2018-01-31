@@ -1,6 +1,6 @@
 ---
 UID : NS:gpioclx._CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT
-title : _CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT
+title : "_CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT"
 author : windows-driver-content
 description : The CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT structure contains information about the power-management capabilities of a bank of general-purpose I/O (GPIO) pins.
 old-location : gpio\client_query_bank_power_information_output.htm
@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : 156115CB-FF0C-4E53-BB7E-CF98420DF443
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GPIO.client_query_bank_power_information_output, PCLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT structure pointer [Parallel Ports], PCLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT, *PCLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT, CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT, CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT structure [Parallel Ports], gpioclx/PCLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT, gpioclx/CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT, _CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT
+ms.keywords : "*PCLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT, PCLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT, _CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT, gpioclx/PCLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT, CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT, gpioclx/CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT, CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT structure [Parallel Ports], PCLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT structure pointer [Parallel Ports], GPIO.client_query_bank_power_information_output"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PCLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT, CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT"
+req.typenames : CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT, *PCLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT
 ---
 
 # _CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT structure
@@ -74,9 +74,9 @@ For more information about GPIO banks, see <a href="https://msdn.microsoft.com/D
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh698239">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_OUTPUT</a>
-
 <a href="..\wdm\ns-wdm-_po_fx_component_idle_state.md">PO_FX_COMPONENT_IDLE_STATE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh698239">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_OUTPUT</a>
 
  
 

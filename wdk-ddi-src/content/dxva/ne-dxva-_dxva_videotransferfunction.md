@@ -1,6 +1,6 @@
 ---
 UID : NE:dxva._DXVA_VideoTransferFunction
-title : _DXVA_VideoTransferFunction
+title : "_DXVA_VideoTransferFunction"
 author : windows-driver-content
 description : The DXVA_VideoTransferFunction enumeration type contains enumerators that identify the conversion function from R'G'B' to RGB.
 old-location : display\dxva_videotransferfunction.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2ed04fd0-685d-4b5a-a23f-337a14506f8b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : dxva/DXVA_VideoTransFunc_22_8bit_sRGB, DXVA_VideoTransferFunction, DXVA_VideoTransFuncMask, dxva/DXVA_VideoTransFunc_10, DXVA_VideoTransFunc_22, display.dxva_videotransferfunction, DXVA_VideoTransFunc_28, dxva/DXVA_VideoTransFunc_22_709, DXVA_VideoTransFuncShift, dxva/DXVA_VideoTransFunc_Unknown, DXVA_VideoTransFunc_18, _DXVA_VideoTransferFunction, DXVA_VideoTransFunc_20, DXVA_VideoTransFunc_22_240M, dxva/DXVA_VideoTransFunc_22_240M, DXVA_VideoTransFunc_10, dxva/DXVA_VideoTransFunc_28, dxva/DXVA_VideoTransFuncMask, DXVA_VideoTransferFunction enumeration [Display Devices], DXVA_VideoTransFunc_22_8bit_sRGB, dxva/DXVA_VideoTransFunc_18, DXVA_VideoTransFunc_22_709, dxva/DXVA_VideoTransferFunction, DXVA_VideoTransFunc_Unknown, dxvaref_67be6e0a-79c6-4821-b3c3-899c2a2f9234.xml, dxva/DXVA_VideoTransFuncShift, dxva/DXVA_VideoTransFunc_22, dxva/DXVA_VideoTransFunc_20
+ms.keywords : dxva/DXVA_VideoTransFunc_10, dxva/DXVA_VideoTransFunc_28, _DXVA_VideoTransferFunction, dxva/DXVA_VideoTransFunc_22_709, DXVA_VideoTransFuncMask, DXVA_VideoTransferFunction enumeration [Display Devices], dxva/DXVA_VideoTransFuncMask, dxva/DXVA_VideoTransFunc_22_8bit_sRGB, DXVA_VideoTransFunc_22_240M, DXVA_VideoTransFunc_28, DXVA_VideoTransFunc_18, dxva/DXVA_VideoTransFunc_22, dxva/DXVA_VideoTransFuncShift, DXVA_VideoTransFunc_22, DXVA_VideoTransFuncShift, DXVA_VideoTransferFunction, dxva/DXVA_VideoTransferFunction, dxvaref_67be6e0a-79c6-4821-b3c3-899c2a2f9234.xml, dxva/DXVA_VideoTransFunc_22_240M, DXVA_VideoTransFunc_20, display.dxva_videotransferfunction, DXVA_VideoTransFunc_22_8bit_sRGB, DXVA_VideoTransFunc_22_709, DXVA_VideoTransFunc_10, DXVA_VideoTransFunc_Unknown, dxva/DXVA_VideoTransFunc_Unknown, dxva/DXVA_VideoTransFunc_18, dxva/DXVA_VideoTransFunc_20
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -79,17 +79,29 @@ typedef enum _DXVA_VideoTransferFunction {
 
 <tr>
 <td>DXVA_VideoTransFunc_22</td>
-<td></td>
+<td>#### 
+
+
+
+####</td>
 </tr>
 
 <tr>
 <td>DXVA_VideoTransFunc_22_240M</td>
-<td></td>
+<td>#### 
+
+
+
+####</td>
 </tr>
 
 <tr>
 <td>DXVA_VideoTransFunc_22_709</td>
-<td></td>
+<td>#### 
+
+
+
+####</td>
 </tr>
 
 <tr>

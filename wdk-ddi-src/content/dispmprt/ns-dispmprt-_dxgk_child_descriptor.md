@@ -1,6 +1,6 @@
 ---
 UID : NS:dispmprt._DXGK_CHILD_DESCRIPTOR
-title : _DXGK_CHILD_DESCRIPTOR
+title : "_DXGK_CHILD_DESCRIPTOR"
 author : windows-driver-content
 description : The DXGK_CHILD_DESCRIPTOR structure holds identification and capability information for an individual child device of the display adapter.
 old-location : display\dxgk_child_descriptor.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a814da0c-3712-4e7b-9349-a446d7b32c90
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxgk_child_descriptor, DmStructs_711f63dc-7ad9-49d8-b83b-5e375764a762.xml, PDXGK_CHILD_DESCRIPTOR structure pointer [Display Devices], DXGK_CHILD_DESCRIPTOR structure [Display Devices], DXGK_CHILD_DESCRIPTOR, PDXGK_CHILD_DESCRIPTOR, dispmprt/PDXGK_CHILD_DESCRIPTOR, *PDXGK_CHILD_DESCRIPTOR, dispmprt/DXGK_CHILD_DESCRIPTOR, _DXGK_CHILD_DESCRIPTOR
+ms.keywords : dispmprt/PDXGK_CHILD_DESCRIPTOR, _DXGK_CHILD_DESCRIPTOR, dispmprt/DXGK_CHILD_DESCRIPTOR, PDXGK_CHILD_DESCRIPTOR structure pointer [Display Devices], DXGK_CHILD_DESCRIPTOR structure [Display Devices], DXGK_CHILD_DESCRIPTOR, PDXGK_CHILD_DESCRIPTOR, DmStructs_711f63dc-7ad9-49d8-b83b-5e375764a762.xml, display.dxgk_child_descriptor, *PDXGK_CHILD_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DXGK_CHILD_DESCRIPTOR, *PDXGK_CHILD_DESCRIPTOR
+req.typenames : "*PDXGK_CHILD_DESCRIPTOR, DXGK_CHILD_DESCRIPTOR"
 ---
 
 # _DXGK_CHILD_DESCRIPTOR structure
@@ -89,9 +89,9 @@ Each child device of type <b>TypeVideoOutput</b> is associated with a video pres
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_status.md">DxgkDdiQueryChildStatus</a>
 
-<a href="..\dispmprt\ns-dispmprt-_dxgk_child_capabilities.md">DXGK_CHILD_CAPABILITIES</a>
-
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
+
+<a href="..\dispmprt\ns-dispmprt-_dxgk_child_capabilities.md">DXGK_CHILD_CAPABILITIES</a>
 
  
 

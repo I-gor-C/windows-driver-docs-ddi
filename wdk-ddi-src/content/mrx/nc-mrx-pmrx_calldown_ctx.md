@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+req.typenames : "*PSetDSMCounters_IN, SetDSMCounters_IN"
 ---
 
 
@@ -129,11 +129,11 @@ A network mini-redirector would normally maintain an internal variable indicatin
 
 ## See Also
 
-<a href="..\mrx\nf-mrx-rxstartminirdr.md">RxStartMinirdr</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549876">MRxDevFcbXXXControlFile</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550833">MRxStop</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549876">MRxDevFcbXXXControlFile</a>
+<a href="..\mrx\nf-mrx-rxstartminirdr.md">RxStartMinirdr</a>
 
  
 

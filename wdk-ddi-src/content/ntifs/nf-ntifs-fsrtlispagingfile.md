@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 85363a0b-0e62-499e-bcdb-4b86c4a0c3a0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.fsrtlispagingfile, fsrtlref_80254cb1-bb65-4b1b-8fe4-c975b0f00c63.xml, FsRtlIsPagingFile routine [Installable File System Drivers], ntifs/FsRtlIsPagingFile, FsRtlIsPagingFile
+ms.keywords : fsrtlref_80254cb1-bb65-4b1b-8fe4-c975b0f00c63.xml, FsRtlIsPagingFile, ifsk.fsrtlispagingfile, FsRtlIsPagingFile routine [Installable File System Drivers], ntifs/FsRtlIsPagingFile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,7 +75,7 @@ File system filter drivers call <b>FsRtlIsPagingFile</b> to determine whether a 
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

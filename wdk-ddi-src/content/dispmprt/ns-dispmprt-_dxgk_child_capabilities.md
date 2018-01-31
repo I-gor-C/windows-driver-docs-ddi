@@ -1,6 +1,6 @@
 ---
 UID : NS:dispmprt._DXGK_CHILD_CAPABILITIES
-title : _DXGK_CHILD_CAPABILITIES
+title : "_DXGK_CHILD_CAPABILITIES"
 author : windows-driver-content
 description : The DXGK_CHILD_CAPABILITIES structure contains information about the capabilities of an individual child device of a display adapter.
 old-location : display\dxgk_child_capabilities.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6ab6a505-ad02-4dce-8061-bba13081208a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : PDXGK_CHILD_CAPABILITIES structure pointer [Display Devices], *PDXGK_CHILD_CAPABILITIES, PDXGK_CHILD_CAPABILITIES, dispmprt/PDXGK_CHILD_CAPABILITIES, dispmprt/DXGK_CHILD_CAPABILITIES, _DXGK_CHILD_CAPABILITIES, DXGK_CHILD_CAPABILITIES, DXGK_CHILD_CAPABILITIES structure [Display Devices], DmStructs_886366a4-949a-4171-abcf-e318df848285.xml, display.dxgk_child_capabilities
+ms.keywords : DXGK_CHILD_CAPABILITIES, PDXGK_CHILD_CAPABILITIES, dispmprt/PDXGK_CHILD_CAPABILITIES, PDXGK_CHILD_CAPABILITIES structure pointer [Display Devices], DmStructs_886366a4-949a-4171-abcf-e318df848285.xml, display.dxgk_child_capabilities, dispmprt/DXGK_CHILD_CAPABILITIES, _DXGK_CHILD_CAPABILITIES, *PDXGK_CHILD_CAPABILITIES, DXGK_CHILD_CAPABILITIES structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -83,11 +83,11 @@ If a child device is of type <b>TypeOther</b>, then <b>Type.Other.MustBeZero</b>
 
 ## See Also
 
-<a href="..\dispmprt\ns-dispmprt-_dxgk_child_descriptor.md">DXGK_CHILD_DESCRIPTOR</a>
-
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
 
 <a href="..\dispmprt\ns-dispmprt-_dxgk_video_output_capabilities.md">DXGK_VIDEO_OUTPUT_CAPABILITIES</a>
+
+<a href="..\dispmprt\ns-dispmprt-_dxgk_child_descriptor.md">DXGK_CHILD_DESCRIPTOR</a>
 
  
 

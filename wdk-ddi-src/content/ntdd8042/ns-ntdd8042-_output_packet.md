@@ -1,6 +1,6 @@
 ---
 UID : NS:ntdd8042._OUTPUT_PACKET
-title : _OUTPUT_PACKET
+title : "_OUTPUT_PACKET"
 author : windows-driver-content
 description : OUTPUT_PACKET contains information about the data that is being written to a keyboard or mouse device by I8042prt.
 old-location : hid\output_packet.htm
@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 1d8d723f-aae5-499e-94cf-c7ccdb24c45f
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : OUTPUT_PACKET, ntdd8042/OUTPUT_PACKET, POUTPUT_PACKET, hid.output_packet, OUTPUT_PACKET structure [Human Input Devices], POUTPUT_PACKET structure pointer [Human Input Devices], i8042ref_3e563892-06cb-4021-847d-d6afda279c7a.xml, _OUTPUT_PACKET, ntdd8042/POUTPUT_PACKET, *POUTPUT_PACKET
+ms.keywords : "*POUTPUT_PACKET, ntdd8042/POUTPUT_PACKET, OUTPUT_PACKET structure [Human Input Devices], POUTPUT_PACKET structure pointer [Human Input Devices], _OUTPUT_PACKET, POUTPUT_PACKET, ntdd8042/OUTPUT_PACKET, i8042ref_3e563892-06cb-4021-847d-d6afda279c7a.xml, hid.output_packet, OUTPUT_PACKET"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -83,6 +83,16 @@ Specifies one of the following write states:
 </tr>
 </table></span></div>
 
+
+#### Idle
+
+Identifies that a write is not in progress.
+
+
+#### SendingBytes
+
+Identifies that a write is in progress.
+
 ## Remarks
 This structure is used with a <a href="..\ntdd8042\nc-ntdd8042-pi8042_keyboard_isr.md">PI8042_KEYBOARD_ISR</a> callback routine and a <a href="..\ntdd8042\nc-ntdd8042-pi8042_mouse_isr.md">PI8042_MOUSE_ISR</a> callback routine.
 
@@ -96,11 +106,11 @@ This structure is used with a <a href="..\ntdd8042\nc-ntdd8042-pi8042_keyboard_i
 
 ## See Also
 
-<a href="..\ntdd8042\nc-ntdd8042-pi8042_keyboard_isr.md">PI8042_KEYBOARD_ISR</a>
+<a href="https://msdn.microsoft.com/0feca7de-aa80-4d1e-a5fc-901c18169649">KbFilter_IsrHook</a>
 
 <a href="https://msdn.microsoft.com/34d0a7e9-4a1e-43ba-a643-800ebaadc360">MouFilter_IsrHook</a>
 
-<a href="https://msdn.microsoft.com/0feca7de-aa80-4d1e-a5fc-901c18169649">KbFilter_IsrHook</a>
+<a href="..\ntdd8042\nc-ntdd8042-pi8042_keyboard_isr.md">PI8042_KEYBOARD_ISR</a>
 
 <a href="..\ntdd8042\nc-ntdd8042-pi8042_mouse_isr.md">PI8042_MOUSE_ISR</a>
 

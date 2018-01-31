@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 0fc9fb57-219e-4a3d-bc82-904ab8657d66
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rxposttoworkerthread, rxref_19387eca-2666-41c0-a93d-2133d3ca03ee.xml, RxPostToWorkerThread, RxPostToWorkerThread routine [Installable File System Drivers], rxworkq/RxPostToWorkerThread
+ms.keywords : rxworkq/RxPostToWorkerThread, ifsk.rxposttoworkerthread, rxref_19387eca-2666-41c0-a93d-2133d3ca03ee.xml, RxPostToWorkerThread, RxPostToWorkerThread routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
+req.typenames : RX_CONTEXT, *PRX_CONTEXT
 req.product : Windows 10 or later.
 ---
 
@@ -64,6 +64,23 @@ A pointer to the device object of the corresponding network mini-redirector driv
 `WorkQueueType`
 
 The type of the work queue that represents the priority of the task. This parameter can be one of the following values:
+
+
+
+
+#### CriticalWorkQueue
+
+Insert WORK_QUEUE_ITEM into the queue from which a system thread with a real-time priority attribute will process the work item.
+
+
+#### DelayedWorkQueue
+
+Insert WORK_QUEUE_ITEM into the queue from which a system thread with a variable priority attribute will process the work item.
+
+
+#### HyperCriticalWorkQueue
+
+Insert WORK_QUEUE_ITEM into the queue from which a system thread will process the work item so that the routine to invoke is not blocked.
 
 `pWorkQueueItem`
 
@@ -126,14 +143,14 @@ If the <b>RxPostToWorkerThread </b>routine fails on a debug build, the <a href="
 | **Minimum UMDF version** |  |
 | **Header** | rxworkq.h (include Rxworkq.h, Rxstruc.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\rxworkq\nf-rxworkq-rxspindownmrxdispatcher.md">RxSpinDownMRxDispatcher</a>
-
 <a href="..\rxworkq\nf-rxworkq-rxdispatchtoworkerthread.md">RxDispatchToWorkerThread</a>
+
+<a href="..\rxworkq\nf-rxworkq-rxspindownmrxdispatcher.md">RxSpinDownMRxDispatcher</a>
 
 <a href="..\rxlog\nf-rxlog-_rxlog.md">_RxLog</a>
 

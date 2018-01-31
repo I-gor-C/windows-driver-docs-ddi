@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8f918bc4-d2d0-4d5b-93c8-89f02c81a701
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.iwdfiorequest2_getrequestormode, UMDFRequestObjectRef_ab2c358c-de7c-4bc3-b0cf-a598a1c69bd1.xml, GetRequestorMode method, umdf.iwdfiorequest2_getrequestormode, IWDFIoRequest2::GetRequestorMode, IWDFIoRequest2 interface, GetRequestorMode method, GetRequestorMode, IWDFIoRequest2, GetRequestorMode method, IWDFIoRequest2 interface, wudfddi/IWDFIoRequest2::GetRequestorMode
+ms.keywords : GetRequestorMode method, IWDFIoRequest2 interface, wdf.iwdfiorequest2_getrequestormode, IWDFIoRequest2, IWDFIoRequest2::GetRequestorMode, IWDFIoRequest2 interface, GetRequestorMode method, GetRequestorMode method, GetRequestorMode, wudfddi/IWDFIoRequest2::GetRequestorMode, umdf.iwdfiorequest2_getrequestormode, UMDFRequestObjectRef_ab2c358c-de7c-4bc3-b0cf-a598a1c69bd1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -79,9 +79,9 @@ If <b>GetRequestorMode</b> returns <b>WdfUserMode</b>, the driver can call <a hr
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest2.md">IWDFIoRequest2</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559021">IWDFIoRequest2::IsFromUserModeDriver</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest2.md">IWDFIoRequest2</a>
 
  
 

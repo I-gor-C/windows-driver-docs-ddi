@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e3203542-177c-440a-8d41-4d70d77f804d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : umdf.iwdfremoteinterfaceinitialize_retrievesymboliclink, wdf.iwdfremoteinterfaceinitialize_retrievesymboliclink, RetrieveSymbolicLink, IWDFRemoteInterfaceInitialize interface, RetrieveSymbolicLink method, UMDFIoTargetObjectRef_e76cdd61-351a-43f9-93a6-6991159e3d53.xml, IWDFRemoteInterfaceInitialize, IWDFRemoteInterfaceInitialize::RetrieveSymbolicLink, RetrieveSymbolicLink method, RetrieveSymbolicLink method, IWDFRemoteInterfaceInitialize interface, wudfddi/IWDFRemoteInterfaceInitialize::RetrieveSymbolicLink
+ms.keywords : RetrieveSymbolicLink, IWDFRemoteInterfaceInitialize::RetrieveSymbolicLink, IWDFRemoteInterfaceInitialize interface, RetrieveSymbolicLink method, UMDFIoTargetObjectRef_e76cdd61-351a-43f9-93a6-6991159e3d53.xml, IWDFRemoteInterfaceInitialize, umdf.iwdfremoteinterfaceinitialize_retrievesymboliclink, RetrieveSymbolicLink method, IWDFRemoteInterfaceInitialize interface, wdf.iwdfremoteinterfaceinitialize_retrievesymboliclink, wudfddi/IWDFRemoteInterfaceInitialize::RetrieveSymbolicLink, RetrieveSymbolicLink method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -122,9 +122,9 @@ Call <b>RetrieveSymbolicLink</b> again, and set the <i>pSymbolicLink</i> paramet
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfremoteinterfaceinitialize.md">IWDFRemoteInterfaceInitialize</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560238">IWDFRemoteInterfaceInitialize::GetInterfaceGuid</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfremoteinterfaceinitialize.md">IWDFRemoteInterfaceInitialize</a>
 
  
 

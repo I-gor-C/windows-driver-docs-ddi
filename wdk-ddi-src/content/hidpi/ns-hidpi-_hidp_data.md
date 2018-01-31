@@ -1,6 +1,6 @@
 ---
 UID : NS:hidpi._HIDP_DATA
-title : _HIDP_DATA
+title : "_HIDP_DATA"
 author : windows-driver-content
 description : The HIDP_DATA structure contains information about a HID control's data index and value in a HID report.
 old-location : hid\hidp_data.htm
@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : f48bbf84-027f-4579-b83c-7dfb1cbe6b65
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : PHIDP_DATA structure pointer [Human Input Devices], *PHIDP_DATA, HIDP_DATA, hid.hidp_data, hidpi/HIDP_DATA, HIDP_DATA structure [Human Input Devices], hidstrct_690e0e92-9de7-44e0-8550-4f84d7bb768e.xml, _HIDP_DATA, hidpi/PHIDP_DATA, PHIDP_DATA
+ms.keywords : hid.hidp_data, _HIDP_DATA, *PHIDP_DATA, PHIDP_DATA, hidpi/PHIDP_DATA, hidstrct_690e0e92-9de7-44e0-8550-4f84d7bb768e.xml, hidpi/HIDP_DATA, HIDP_DATA structure [Human Input Devices], PHIDP_DATA structure pointer [Human Input Devices], HIDP_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PHIDP_DATA, HIDP_DATA"
+req.typenames : HIDP_DATA, *PHIDP_DATA
 ---
 
 # _HIDP_DATA structure
@@ -77,9 +77,9 @@ See <a href="https://msdn.microsoft.com/d26d169f-4116-4d81-94c7-63c92d22877d">Ex
 
 ## See Also
 
-<a href="..\hidpi\nf-hidpi-hidp_getdata.md">HidP_GetData</a>
-
 <a href="..\hidpi\nf-hidpi-hidp_setdata.md">HidP_SetData</a>
+
+<a href="..\hidpi\nf-hidpi-hidp_getdata.md">HidP_GetData</a>
 
  
 

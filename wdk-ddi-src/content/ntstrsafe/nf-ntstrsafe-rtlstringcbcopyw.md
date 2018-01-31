@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 77a42d5e-92ff-4e64-9bd3-b713286d3db0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.rtlstringcbcopy, ntstrsafe/RtlStringCbCopyA, ntstrsafe/RtlStringCbCopyW, RtlStringCbCopyW function [Kernel-Mode Driver Architecture], RtlStringCbCopy, RtlStringCbCopyW, safestrings_a9c53388-15ef-4140-8931-ca93d519a7d4.xml, RtlStringCbCopyA
+ms.keywords : RtlStringCbCopyA, ntstrsafe/RtlStringCbCopyA, RtlStringCbCopy, safestrings_a9c53388-15ef-4140-8931-ca93d519a7d4.xml, RtlStringCbCopyW function [Kernel-Mode Driver Architecture], ntstrsafe/RtlStringCbCopyW, RtlStringCbCopyW, kernel.rtlstringcbcopy
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
+req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 

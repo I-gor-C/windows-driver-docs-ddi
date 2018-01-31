@@ -87,9 +87,9 @@ The user-mode display driver must submit all partially built render data (comman
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_present1.md">D3DDDIARG_PRESENT1</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_present1.md">D3DDDIARG_PRESENT1</a>
 
  
 

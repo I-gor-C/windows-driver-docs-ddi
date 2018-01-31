@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : fcad4b8e-4273-43ff-8077-a96d1bd4640a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFDEVICEINITSETIOTYPE, wdf.wdfdeviceinitsetiotype, DFDeviceObjectGeneralRef_4c821466-f1d7-46fa-a1f0-e8fefd20caab.xml, wdfdevice/WdfDeviceInitSetIoType, kmdf.wdfdeviceinitsetiotype, WdfDeviceInitSetIoType method, WdfDeviceInitSetIoType
+ms.keywords : wdfdevice/WdfDeviceInitSetIoType, DFDeviceObjectGeneralRef_4c821466-f1d7-46fa-a1f0-e8fefd20caab.xml, PFN_WDFDEVICEINITSETIOTYPE, kmdf.wdfdeviceinitsetiotype, wdf.wdfdeviceinitsetiotype, WdfDeviceInitSetIoType, WdfDeviceInitSetIoType method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -90,16 +90,16 @@ For more information about buffer-access methods, see <a href="https://docs.micr
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | ChildDeviceInitAPI, ControlDeviceInitAPI, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI |
 
 ## See Also
 
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotypeex.md">WdfDeviceInitSetIoTypeEx</a>
+
 <a href="https://msdn.microsoft.com/7d79f34d-42aa-4ac7-a63d-2f17ee0dfcf0"> IWDFDeviceInitialize2::SetIoTypePreference</a>
 
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>
-
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotypeex.md">WdfDeviceInitSetIoTypeEx</a>
 
  
 

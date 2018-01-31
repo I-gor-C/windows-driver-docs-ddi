@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 6ff4e4d7-3ba4-4e4b-98fa-62f269aee69f
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : Write, portcls/IMiniportMidiStream::Write, audmp-routines_523fd287-5380-4259-ba2c-4d9adef4fe4b.xml, IMiniportMidiStream::Write, IMiniportMidiStream, audio.iminiportmidistream_write, Write method [Audio Devices], IMiniportMidiStream interface [Audio Devices], Write method, Write method [Audio Devices], IMiniportMidiStream interface
+ms.keywords : audio.iminiportmidistream_write, IMiniportMidiStream interface [Audio Devices], Write method, IMiniportMidiStream, IMiniportMidiStream::Write, Write method [Audio Devices], audmp-routines_523fd287-5380-4259-ba2c-4d9adef4fe4b.xml, Write, portcls/IMiniportMidiStream::Write, Write method [Audio Devices], IMiniportMidiStream interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4537447a-17d5-4431-929c-7a8fda0f2986
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/ExRegisterCallback, ExRegisterCallback, ExRegisterCallback routine [Kernel-Mode Driver Architecture], kernel.exregistercallback, k102_db841434-fe00-448d-b5bb-2c35d1ad0ec4.xml
+ms.keywords : k102_db841434-fe00-448d-b5bb-2c35d1ad0ec4.xml, wdm/ExRegisterCallback, ExRegisterCallback routine [Kernel-Mode Driver Architecture], kernel.exregistercallback, ExRegisterCallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,6 +78,23 @@ A pointer to a driver-implemented callback routine, which must be nonpageable. T
 </tr>
 </table></span></div>The callback routine parameters are as follows:
 
+
+
+
+#### CallbackContext
+
+A pointer to a driver-supplied context area as specified in the <i>CallbackContext</i> parameter of <b>ExRegisterCallback</b>.
+
+
+#### Argument1
+
+A pointer to a parameter defined by the callback object.
+
+
+#### Argument2
+
+A pointer to a parameter defined by the callback object.
+
 `CallbackContext`
 
 A pointer to a caller-defined structure of data items to be passed as the context parameter of the callback routine each time it is called. Typically the context is part of the caller's device object extension.
@@ -114,20 +131,20 @@ The operating system calls registered callback routines at the same IRQL at whic
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** | IrqlExApcLte2, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_ke_processor_change_notify_context.md">KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT</a>
-
 <a href="..\wdm\nf-wdm-exnotifycallback.md">ExNotifyCallback</a>
-
-<a href="..\wdm\nf-wdm-exunregistercallback.md">ExUnregisterCallback</a>
 
 <a href="..\wdm\nf-wdm-excreatecallback.md">ExCreateCallback</a>
 
+<a href="..\wdm\ns-wdm-_ke_processor_change_notify_context.md">KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT</a>
+
 <a href="..\wdm\nf-wdm-keregisterprocessorchangecallback.md">KeRegisterProcessorChangeCallback</a>
+
+<a href="..\wdm\nf-wdm-exunregistercallback.md">ExUnregisterCallback</a>
 
  
 

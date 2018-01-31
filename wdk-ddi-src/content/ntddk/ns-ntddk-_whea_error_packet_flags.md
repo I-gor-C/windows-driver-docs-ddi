@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddk._WHEA_ERROR_PACKET_FLAGS
-title : _WHEA_ERROR_PACKET_FLAGS
+title : "_WHEA_ERROR_PACKET_FLAGS"
 author : windows-driver-content
 description : The WHEA_ERROR_PACKET_FLAGS union defines the error condition reported through a WHEA_ERROR_PACKET structure.
 old-location : whea\whea_error_packet_flags.htm
@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : e1dae7df-7d81-42cc-9a01-44345f53ba4e
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : WHEA_ERROR_PACKET_FLAGS, _WHEA_ERROR_PACKET_FLAGS, WHEA_ERROR_PACKET_FLAGS union [WHEA Drivers and Applications], whearef_c193e4e7-f233-4de0-93ac-5e7b841a6c6e.xml, whea.whea_error_packet_flags, PWHEA_ERROR_PACKET_FLAGS union pointer [WHEA Drivers and Applications], *PWHEA_ERROR_PACKET_FLAGS, ntddk/WHEA_ERROR_PACKET_FLAGS, ntddk/PWHEA_ERROR_PACKET_FLAGS, PWHEA_ERROR_PACKET_FLAGS
+ms.keywords : ntddk/PWHEA_ERROR_PACKET_FLAGS, _WHEA_ERROR_PACKET_FLAGS, WHEA_ERROR_PACKET_FLAGS, PWHEA_ERROR_PACKET_FLAGS, *PWHEA_ERROR_PACKET_FLAGS, ntddk/WHEA_ERROR_PACKET_FLAGS, whearef_c193e4e7-f233-4de0-93ac-5e7b841a6c6e.xml, WHEA_ERROR_PACKET_FLAGS union [WHEA Drivers and Applications], PWHEA_ERROR_PACKET_FLAGS union pointer [WHEA Drivers and Applications], whea.whea_error_packet_flags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_ERROR_PACKET_FLAGS, WHEA_ERROR_PACKET_FLAGS"
+req.typenames : WHEA_ERROR_PACKET_FLAGS, *PWHEA_ERROR_PACKET_FLAGS
 ---
 
 # _WHEA_ERROR_PACKET_FLAGS structure
@@ -81,9 +81,9 @@ The WHEA_ERROR_PACKET_FLAGS union describes the error condition reported by usin
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/d2ded330-edcc-4bdd-9b52-73c1961d8ef2">Predictive Failure Analysis (PFA)</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
+
+<a href="https://msdn.microsoft.com/d2ded330-edcc-4bdd-9b52-73c1961d8ef2">Predictive Failure Analysis (PFA)</a>
 
  
 

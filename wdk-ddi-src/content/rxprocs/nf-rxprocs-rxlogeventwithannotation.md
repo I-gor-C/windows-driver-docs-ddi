@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : cb8b757a-cff5-41cf-8155-2c45a8a35f00
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxLogEventWithAnnotation function [Installable File System Drivers], RxLogEventWithAnnotation, rxprocs/RxLogEventWithAnnotation, rxref_9c7d3613-cf3b-4de9-bfcb-a1dbe9213834.xml, ifsk.rxlogeventwithannotation
+ms.keywords : rxref_9c7d3613-cf3b-4de9-bfcb-a1dbe9213834.xml, ifsk.rxlogeventwithannotation, rxprocs/RxLogEventWithAnnotation, RxLogEventWithAnnotation function [Installable File System Drivers], RxLogEventWithAnnotation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
+req.typenames : RX_CONTEXT, *PRX_CONTEXT
 req.product : Windows 10 or later.
 ---
 
@@ -109,16 +109,16 @@ The <b>RxLogEventWithAnnotation</b> routine needs to allocate memory in order to
 | **Minimum UMDF version** |  |
 | **Header** | rxprocs.h (include Rxprocs.h, Rxstruc.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\rxlog\nf-rxlog-_rxlog.md">_RxLog</a>
-
 <a href="..\rxprocs\nf-rxprocs-rxlogeventdirect.md">RxLogEventDirect</a>
 
 <a href="..\rxprocs\nf-rxprocs-rxlogeventwithbufferdirect.md">RxLogEventWithBufferDirect</a>
+
+<a href="..\rxlog\nf-rxlog-_rxlog.md">_RxLog</a>
 
  
 

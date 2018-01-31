@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 120285ff-1cb4-4570-a1e7-0a7d22b43560
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltDeleteTransactionContext routine [Installable File System Drivers], FltApiRef_a_to_d_785d668e-0232-4937-996e-846e459db2c5.xml, ifsk.fltdeletetransactioncontext, FltDeleteTransactionContext, fltkernel/FltDeleteTransactionContext
+ms.keywords : ifsk.fltdeletetransactioncontext, FltDeleteTransactionContext routine [Installable File System Drivers], FltDeleteTransactionContext, FltApiRef_a_to_d_785d668e-0232-4937-996e-846e459db2c5.xml, fltkernel/FltDeleteTransactionContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -111,32 +111,32 @@ To set a transaction context, call <a href="..\fltkernel\nf-fltkernel-fltsettran
 | **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltgettransactioncontext.md">FltGetTransactionContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltrollbackcomplete.md">FltRollbackComplete</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltcommitcomplete.md">FltCommitComplete</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltenlistintransaction.md">FltEnlistInTransaction</a>
+<a href="..\fltkernel\nf-fltkernel-fltrollbackenlistment.md">FltRollbackEnlistment</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltsettransactioncontext.md">FltSetTransactionContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltprepreparecomplete.md">FltPrePrepareComplete</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltrollbackenlistment.md">FltRollbackEnlistment</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltrollbackcomplete.md">FltRollbackComplete</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltgettransactioncontext.md">FltGetTransactionContext</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltpreparecomplete.md">FltPrepareComplete</a>
+<a href="..\fltkernel\nf-fltkernel-fltenlistintransaction.md">FltEnlistInTransaction</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltpreparecomplete.md">FltPrepareComplete</a>
 
  
 

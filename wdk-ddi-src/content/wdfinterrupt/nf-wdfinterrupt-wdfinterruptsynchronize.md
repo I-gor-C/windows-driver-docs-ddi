@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b41fc37a-d41f-49ca-848f-844e049dd987
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfinterruptsynchronize, WdfInterruptSynchronize, wdfinterrupt/WdfInterruptSynchronize, WdfInterruptSynchronize method, wdf.wdfinterruptsynchronize, PFN_WDFINTERRUPTSYNCHRONIZE, DFInterruptObjectRef_d56eadd2-4636-43bb-b842-318243bcf192.xml
+ms.keywords : wdfinterrupt/WdfInterruptSynchronize, DFInterruptObjectRef_d56eadd2-4636-43bb-b842-318243bcf192.xml, wdf.wdfinterruptsynchronize, PFN_WDFINTERRUPTSYNCHRONIZE, WdfInterruptSynchronize method, WdfInterruptSynchronize, kmdf.wdfinterruptsynchronize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_INTERRUPT_PRIORITY, WDF_INTERRUPT_PRIORITY"
+req.typenames : WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
 req.product : Windows 10 or later.
 ---
 
@@ -103,16 +103,16 @@ Do not call <b>WdfInterruptSynchronize</b> from an arbitrary thread context,  su
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfinterrupt.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547376">WdfInterruptReleaseLock</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547340">WdfInterruptAcquireLock</a>
 
 <a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_synchronize.md">EvtInterruptSynchronize</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547376">WdfInterruptReleaseLock</a>
 
  
 

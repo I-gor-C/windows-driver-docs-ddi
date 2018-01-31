@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : aea5651f-b361-4253-bf51-bd320408bdab
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : SetKernelConnectionOptionsWide method [Windows Debugging], SetKernelConnectionOptionsWide, dbgeng/IDebugClient5::SetKernelConnectionOptionsWide, IDebugClient5, IDebugClient5::SetKernelConnectionOptionsWide, IDebugClient5 interface [Windows Debugging], SetKernelConnectionOptionsWide method, debugger.setkernelconnectionoptionswide, SetKernelConnectionOptionsWide method [Windows Debugging], IDebugClient5 interface
+ms.keywords : dbgeng/IDebugClient5::SetKernelConnectionOptionsWide, SetKernelConnectionOptionsWide method [Windows Debugging], IDebugClient5 interface, debugger.setkernelconnectionoptionswide, IDebugClient5::SetKernelConnectionOptionsWide, SetKernelConnectionOptionsWide method [Windows Debugging], IDebugClient5 interface [Windows Debugging], SetKernelConnectionOptionsWide method, SetKernelConnectionOptionsWide, IDebugClient5
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

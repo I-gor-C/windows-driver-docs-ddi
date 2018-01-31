@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 043c15dc-ebd7-4d91-8f65-d89d6064cc7c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfinterruptsetextendedpolicy, WdfInterruptSetExtendedPolicy method, PFN_WDFINTERRUPTSETEXTENDEDPOLICY, wdfinterrupt/WdfInterruptSetExtendedPolicy, DFInterruptObjectRef_ed600fb0-0e09-4c00-a132-cd4947dd2b04.xml, wdf.wdfinterruptsetextendedpolicy, WdfInterruptSetExtendedPolicy
+ms.keywords : DFInterruptObjectRef_ed600fb0-0e09-4c00-a132-cd4947dd2b04.xml, PFN_WDFINTERRUPTSETEXTENDEDPOLICY, WdfInterruptSetExtendedPolicy, kmdf.wdfinterruptsetextendedpolicy, WdfInterruptSetExtendedPolicy method, wdf.wdfinterruptsetextendedpolicy, wdfinterrupt/WdfInterruptSetExtendedPolicy
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_INTERRUPT_PRIORITY, WDF_INTERRUPT_PRIORITY"
+req.typenames : WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
 req.product : Windows 10 or later.
 ---
 
@@ -98,7 +98,7 @@ For more information about handling interrupts in framework-based drivers, see <
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfinterrupt.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 
 ## See Also

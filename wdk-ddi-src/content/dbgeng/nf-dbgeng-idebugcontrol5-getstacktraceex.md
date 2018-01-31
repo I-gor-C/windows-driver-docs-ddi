@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 6DFCA3CB-D5DE-4EF5-892B-776B932E6CE6
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.idebugcontrol5_getstacktraceex, IDebugControl5::GetStackTraceEx, GetStackTraceEx method [Windows Debugging], GetStackTraceEx, GetStackTraceEx method [Windows Debugging], IDebugControl5 interface, dbgeng/IDebugControl5::GetStackTraceEx, IDebugControl5, IDebugControl5 interface [Windows Debugging], GetStackTraceEx method
+ms.keywords : GetStackTraceEx, debugger.idebugcontrol5_getstacktraceex, dbgeng/IDebugControl5::GetStackTraceEx, GetStackTraceEx method [Windows Debugging], IDebugControl5, GetStackTraceEx method [Windows Debugging], IDebugControl5 interface, IDebugControl5::GetStackTraceEx, IDebugControl5 interface [Windows Debugging], GetStackTraceEx method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -132,21 +132,21 @@ The stack trace returned to Frames can be printed using <a href="https://msdn.mi
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol5.md">IDebugControl5</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546933">GetInstructionOffset2</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548414">GetStackOffset2</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn818567">OutputStackTraceEx</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546815">GetFrameOffset2</a>
 
 <a href="..\wdbgexts\nc-wdbgexts-pwindbg_stacktrace_routine.md">StackTrace</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn818567">OutputStackTraceEx</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548414">GetStackOffset2</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol5.md">IDebugControl5</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn818564">GetContextStackTraceEx</a>
 
 <a href="https://msdn.microsoft.com/1061015f-cb0c-490b-b256-e0dedb659f22">k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546933">GetInstructionOffset2</a>
 
  
 

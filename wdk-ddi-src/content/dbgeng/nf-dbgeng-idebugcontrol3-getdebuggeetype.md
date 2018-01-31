@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 86f236fa-73f8-4071-b6da-6de2d276cbff
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetDebuggeeType, IDebugControl2 interface [Windows Debugging], GetDebuggeeType method, IDebugControl::GetDebuggeeType, GetDebuggeeType method [Windows Debugging], IDebugControl interface, GetDebuggeeType method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], GetDebuggeeType method, GetDebuggeeType method [Windows Debugging], debugger.getdebuggeetype, IDebugControl3, IDebugControl interface [Windows Debugging], GetDebuggeeType method, IDebugControl3::GetDebuggeeType, IDebugControl_4179686c-b047-41f5-98cc-28f2c6bd852d.xml, GetDebuggeeType method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl::GetDebuggeeType, dbgeng/IDebugControl3::GetDebuggeeType, dbgeng/IDebugControl2::GetDebuggeeType, IDebugControl2::GetDebuggeeType
+ms.keywords : IDebugControl interface [Windows Debugging], GetDebuggeeType method, GetDebuggeeType method [Windows Debugging], dbgeng/IDebugControl3::GetDebuggeeType, GetDebuggeeType method [Windows Debugging], IDebugControl2 interface, IDebugControl_4179686c-b047-41f5-98cc-28f2c6bd852d.xml, IDebugControl2 interface [Windows Debugging], GetDebuggeeType method, IDebugControl3, dbgeng/IDebugControl::GetDebuggeeType, GetDebuggeeType method [Windows Debugging], IDebugControl3 interface, IDebugControl::GetDebuggeeType, debugger.getdebuggeetype, IDebugControl3 interface [Windows Debugging], GetDebuggeeType method, IDebugControl3::GetDebuggeeType, GetDebuggeeType method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl2::GetDebuggeeType, GetDebuggeeType, IDebugControl2::GetDebuggeeType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

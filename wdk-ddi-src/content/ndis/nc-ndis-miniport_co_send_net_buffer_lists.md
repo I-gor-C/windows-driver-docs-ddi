@@ -82,6 +82,25 @@ A pointer to the first
 Flags that define attributes for the send operation. The flags can be combined with a bitwise OR
      operation. To clear all of the flags, set this parameter to zero. 
      <i>MiniportCoSendNetBufferLists</i> supports the following flags:
+     
+
+
+
+
+#### NDIS_SEND_FLAGS_DISPATCH_LEVEL
+
+The caller can optionally set this flag if the current IRQL is DISPATCH_LEVEL. For more information about this flag, see 
+       <a href="https://msdn.microsoft.com/ac559f4f-0138-4b9a-8f1b-44a2973fd6a1">Dispatch IRQL Tracking</a>.
+
+
+#### NDIS_SEND_FLAGS_CHECK_FOR_LOOPBACK
+
+NDIS should check for loopback. By default, NDIS does not loop back data to the driver that
+       submitted the send request. An overlying driver can override this behavior by setting the
+       <b>NDIS_SEND_FLAGS_CHECK_FOR_LOOPBACK</b> flag. When this flag is set, NDIS identifies all of the <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+       structures that contain data that matches the receive criteria for the binding. NDIS indicates
+       <b>NET_BUFFER</b> structures that match the criteria to the overlying driver. This flag does not affect
+       checking for loopback, or looping back, on other bindings.
 
 
 ## Return Value
@@ -179,7 +198,7 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
@@ -187,13 +206,13 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 <mshelp:link keywords="netvista.ndismcosendnetbufferlistscomplete" tabindex="0"><b>
    NdisMCoSendNetBufferListsComplete</b></mshelp:link>
 
-<a href="..\ndis\nc-ndis-miniport_co_create_vc.md">MiniportCoCreateVc</a>
-
 <a href="..\ndis\nf-ndis-ndiscosendnetbufferlists.md">NdisCoSendNetBufferLists</a>
+
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+<a href="..\ndis\nc-ndis-miniport_co_create_vc.md">MiniportCoCreateVc</a>
 
  
 

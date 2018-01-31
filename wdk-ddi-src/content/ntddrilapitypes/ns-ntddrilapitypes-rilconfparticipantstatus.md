@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7eb0e06b-85f0-4b61-9ed0-2f35156fbb8c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilconfparticipantstatus, RILCONFPARTICIPANTSTATUS structure [Network Drivers Starting with Windows Vista], *LPRILCONFPARTICIPANTSTATUS, ntddrilapitypes/RILCONFPARTICIPANTSTATUS, RILCONFPARTICIPANTSTATUS
+ms.keywords : RILCONFPARTICIPANTSTATUS, *LPRILCONFPARTICIPANTSTATUS, netvista.rilconfparticipantstatus, RILCONFPARTICIPANTSTATUS structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILCONFPARTICIPANTSTATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILCONFPARTICIPANTSTATUS, *LPRILCONFPARTICIPANTSTATUS
+req.typenames : "*LPRILCONFPARTICIPANTSTATUS, RILCONFPARTICIPANTSTATUS"
 ---
 
 # RILCONFPARTICIPANTSTATUS structure

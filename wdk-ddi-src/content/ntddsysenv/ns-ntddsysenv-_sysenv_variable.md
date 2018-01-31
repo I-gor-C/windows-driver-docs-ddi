@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddsysenv._SYSENV_VARIABLE
-title : _SYSENV_VARIABLE
+title : "_SYSENV_VARIABLE"
 author : windows-driver-content
 description : Stores the name a system environment variable using SysEnv device. This structure is used in the IOCTL_SYSENV_GET_VARIABLE request.
 old-location : kernel\sysenv_variable.htm
@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 311A5977-C3F5-4287-B030-00F4BB9C8629
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PSYSENV_VARIABLE, kernel.sysenv_variable, ntddsysenv/PSYSENV_VARIABLE, SYSENV_VARIABLE, PSYSENV_VARIABLE, PSYSENV_VARIABLE structure pointer [Kernel-Mode Driver Architecture], SYSENV_VARIABLE structure [Kernel-Mode Driver Architecture], ntddsysenv/SYSENV_VARIABLE, _SYSENV_VARIABLE"
+ms.keywords : PSYSENV_VARIABLE, SYSENV_VARIABLE, *PSYSENV_VARIABLE, ntddsysenv/PSYSENV_VARIABLE, _SYSENV_VARIABLE, kernel.sysenv_variable, SYSENV_VARIABLE structure [Kernel-Mode Driver Architecture], PSYSENV_VARIABLE structure pointer [Kernel-Mode Driver Architecture], ntddsysenv/SYSENV_VARIABLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

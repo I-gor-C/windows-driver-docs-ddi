@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : f03851a4-e1e9-4fee-b264-c2f91c6e8180
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltApiRef_a_to_d_9ef78123-712f-465a-8c8a-efc3d64b7001.xml, ifsk.fltallocatecallbackdataex, FltAllocateCallbackDataEx routine [Installable File System Drivers], fltkernel/FltAllocateCallbackDataEx, FltAllocateCallbackDataEx
+ms.keywords : FltAllocateCallbackDataEx routine [Installable File System Drivers], FltAllocateCallbackDataEx, ifsk.fltallocatecallbackdataex, fltkernel/FltAllocateCallbackDataEx, FltApiRef_a_to_d_9ef78123-712f-465a-8c8a-efc3d64b7001.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,7 +95,7 @@ If the FLT_ALLOCATE_CALLBACK_DATA_PREALLOCATE_ALL_MEMORY flag is set, the routin
 | **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include FltKernel.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

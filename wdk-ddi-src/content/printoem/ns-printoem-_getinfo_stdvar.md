@@ -1,6 +1,6 @@
 ---
 UID : NS:printoem._GETINFO_STDVAR
-title : _GETINFO_STDVAR
+title : "_GETINFO_STDVAR"
 author : windows-driver-content
 description : The GETINFO_STDVAR structure is used as input to the UNIFONTOBJ_GetInfo callback function.
 old-location : print\getinfo_stdvar.htm
@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 9f2ae88c-34a4-46b3-9571-5f2f023b7d6b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.getinfo_stdvar, PGETINFO_STDVAR, PGETINFO_STDVAR structure pointer [Print Devices], *PGETINFO_STDVAR, _GETINFO_STDVAR, GETINFO_STDVAR, print_unidrv-pscript_rendering_3a08d48b-215f-4acc-89ef-849a2b826ce7.xml, printoem/GETINFO_STDVAR, printoem/PGETINFO_STDVAR, GETINFO_STDVAR structure [Print Devices]
+ms.keywords : GETINFO_STDVAR structure [Print Devices], _GETINFO_STDVAR, printoem/PGETINFO_STDVAR, *PGETINFO_STDVAR, GETINFO_STDVAR, PGETINFO_STDVAR structure pointer [Print Devices], PGETINFO_STDVAR, print_unidrv-pscript_rendering_3a08d48b-215f-4acc-89ef-849a2b826ce7.xml, print.getinfo_stdvar, printoem/GETINFO_STDVAR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -68,6 +68,164 @@ Specifies the size, in bytes, of the GETINFO_STDVAR structure. Supplied by the <
 `StdVar`
 
 Is an array specifying standard variable indexes and values. Each array element contains two members: a <b>dwStdVarID</b> member and an <b>lStdVariable</b> member.
+
+
+#### dwStdVarID
+
+Specifies the <a href="https://msdn.microsoft.com/d3f85c0f-7387-4301-8b1e-904471aed4b0">standard variables</a> for which a value should be returned. Supplied by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> caller. Valid values are contained in the following table.
+<table>
+<tr>
+<th>Identifier</th>
+<th>Standard Variable</th>
+</tr>
+<tr>
+<td>
+FNT_INFO_CURRENTFONTID
+
+</td>
+<td>
+<code>CurrentFontID</code>
+
+</td>
+</tr>
+<tr>
+<td>
+FNT_INFO_FONTBOLD
+
+</td>
+<td>
+<code>FontBold</code>
+
+</td>
+</tr>
+<tr>
+<td>
+FNT_INFO_FONTHEIGHT
+
+</td>
+<td>
+<code>FontHeight</code>
+
+</td>
+</tr>
+<tr>
+<td>
+FNT_INFO_FONTITALIC
+
+</td>
+<td>
+<code>FontItalic</code>
+
+</td>
+</tr>
+<tr>
+<td>
+FNT_INFO_FONTMAXWIDTH
+
+</td>
+<td>
+<code>FontMaxWidth</code>
+
+</td>
+</tr>
+<tr>
+<td>
+FNT_INFO_FONTSTRIKETHRU
+
+</td>
+<td>
+<code>FontStrikeThru</code>
+
+</td>
+</tr>
+<tr>
+<td>
+FNT_INFO_FONTUNDERLINE
+
+</td>
+<td>
+<code>FontUnderline</code>
+
+</td>
+</tr>
+<tr>
+<td>
+FNT_INFO_FONTWIDTH
+
+</td>
+<td>
+<code>FontWidth</code>
+
+</td>
+</tr>
+<tr>
+<td>
+FNT_INFO_GRAYPERCENTAGE
+
+</td>
+<td>
+<code>GrayPercentage</code>
+
+</td>
+</tr>
+<tr>
+<td>
+FNT_INFO_NEXTFONTID
+
+</td>
+<td>
+<code>NextFontID</code>
+
+</td>
+</tr>
+<tr>
+<td>
+FNT_INFO_NEXTGLYPH
+
+</td>
+<td>
+<code>NextGlyph</code>
+
+</td>
+</tr>
+<tr>
+<td>
+FNT_INFO_PRINTDIRINCCDEGREES
+
+</td>
+<td>
+<code>PrintDirInCCDegrees</code>
+
+</td>
+</tr>
+<tr>
+<td>
+FNT_INFO_TEXTXRES
+
+</td>
+<td>
+<code>TextXRes</code>
+
+</td>
+</tr>
+<tr>
+<td>
+FNT_INFO_TEXTYRES
+
+</td>
+<td>
+<code>TextYRes</code>
+
+</td>
+</tr>
+</table> 
+
+Supplied by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> caller.
+
+
+#### lStdVariable
+
+Specifies the current value of the specified standard variable. Supplied by Unidrv's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> callback function.
 
 ## Remarks
 To obtain the current value for one or more of Unidrv's standard variables, a rendering plug-in can supply the address of a GETINFO_STDVAR structure when calling Unidrv's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> callback function.

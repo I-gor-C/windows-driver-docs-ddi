@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 0b5378fa-ab1d-453f-b976-f6cd0d4247de
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.replyprinterchangenotification, ReplyPrinterChangeNotification function [Print Devices], winsplp/ReplyPrinterChangeNotification, spoolfnc_524073df-9320-46d6-b4fe-6d3b73ccbe5b.xml, ReplyPrinterChangeNotification
+ms.keywords : winsplp/ReplyPrinterChangeNotification, spoolfnc_524073df-9320-46d6-b4fe-6d3b73ccbe5b.xml, ReplyPrinterChangeNotification, print.replyprinterchangenotification, ReplyPrinterChangeNotification function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

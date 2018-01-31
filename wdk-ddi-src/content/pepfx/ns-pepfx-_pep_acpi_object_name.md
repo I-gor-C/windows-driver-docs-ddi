@@ -1,6 +1,6 @@
 ---
 UID : NS:pepfx._PEP_ACPI_OBJECT_NAME
-title : _PEP_ACPI_OBJECT_NAME
+title : "_PEP_ACPI_OBJECT_NAME"
 author : windows-driver-content
 description : The PEP_ACPI_OBJECT_NAME union contains the four-character name of an ACPI object.
 old-location : kernel\pep_acpi_object_name.htm
@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 55D8A977-DA91-4CB5-8549-E1CB1731256C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : _PEP_ACPI_OBJECT_NAME, PEP_ACPI_OBJECT_NAME, kernel.pep_acpi_object_name, PEP_ACPI_OBJECT_NAME union [Kernel-Mode Driver Architecture], *PPEP_ACPI_OBJECT_NAME, pepfx/PEP_ACPI_OBJECT_NAME
+ms.keywords : pepfx/PEP_ACPI_OBJECT_NAME, _PEP_ACPI_OBJECT_NAME, PEP_ACPI_OBJECT_NAME, kernel.pep_acpi_object_name, *PPEP_ACPI_OBJECT_NAME, PEP_ACPI_OBJECT_NAME union [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

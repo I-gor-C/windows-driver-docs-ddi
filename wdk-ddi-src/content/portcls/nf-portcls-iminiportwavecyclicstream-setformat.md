@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 6881ea55-138a-408e-955e-c5c74f777ce8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SetFormat method [Audio Devices], IMiniportWaveCyclicStream interface, portcls/IMiniportWaveCyclicStream::SetFormat, SetFormat, IMiniportWaveCyclicStream::SetFormat, IMiniportWaveCyclicStream, audio.iminiportwavecyclicstream_setformat, IMiniportWaveCyclicStream interface [Audio Devices], SetFormat method, audmp-routines_d23a09d4-7110-425f-b10d-5f7f601179bb.xml, SetFormat method [Audio Devices]
+ms.keywords : IMiniportWaveCyclicStream, IMiniportWaveCyclicStream interface [Audio Devices], SetFormat method, SetFormat, audio.iminiportwavecyclicstream_setformat, IMiniportWaveCyclicStream::SetFormat, SetFormat method [Audio Devices], IMiniportWaveCyclicStream interface, audmp-routines_d23a09d4-7110-425f-b10d-5f7f601179bb.xml, portcls/IMiniportWaveCyclicStream::SetFormat, SetFormat method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -81,11 +81,11 @@ For information about specifying wave stream formats, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iminiportwavecyclicstream.md">IMiniportWaveCyclicStream</a>
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536723">IMiniportWaveCyclic::NewStream</a>
 
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
+<a href="..\portcls\nn-portcls-iminiportwavecyclicstream.md">IMiniportWaveCyclicStream</a>
 
  
 

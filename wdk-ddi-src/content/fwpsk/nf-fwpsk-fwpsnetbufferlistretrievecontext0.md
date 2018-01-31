@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 482cec75-8a21-4988-b869-639d019f9460
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : fwpsk/FwpsNetBufferListRetrieveContext0, wfp_ref_2_funct_3_fwps_J-Q_63312511-d342-4705-86d9-844c59f42fe3.xml, FwpsNetBufferListRetrieveContext0, FwpsNetBufferListRetrieveContext0 function [Network Drivers Starting with Windows Vista], netvista.fwpsnetbufferlistretrievecontext0
+ms.keywords : FwpsNetBufferListRetrieveContext0 function [Network Drivers Starting with Windows Vista], netvista.fwpsnetbufferlistretrievecontext0, FwpsNetBufferListRetrieveContext0, wfp_ref_2_funct_3_fwps_J-Q_63312511-d342-4705-86d9-844c59f42fe3.xml, fwpsk/FwpsNetBufferListRetrieveContext0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -138,19 +138,19 @@ You can also use this function to remove the context association by setting the
 | **Minimum UMDF version** |  |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
-
-<mshelp:link keywords="netvista.fwpsnetbufferlistassociatecontext0" tabindex="0"><b>
-   FwpsNetBufferListAssociateContext0</b></mshelp:link>
 
 <mshelp:link keywords="netvista.fwpsnetbufferlistgettagforcontext0" tabindex="0"><b>
    FwpsNetBufferListGetTagForContext0</b></mshelp:link>
 
 <mshelp:link keywords="netvista.fwpsnetbufferlistremovecontext0" tabindex="0"><b>
    FwpsNetBufferListRemoveContext0</b></mshelp:link>
+
+<mshelp:link keywords="netvista.fwpsnetbufferlistassociatecontext0" tabindex="0"><b>
+   FwpsNetBufferListAssociateContext0</b></mshelp:link>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 

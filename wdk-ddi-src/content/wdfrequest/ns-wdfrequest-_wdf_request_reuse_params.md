@@ -1,6 +1,6 @@
 ---
 UID : NS:wdfrequest._WDF_REQUEST_REUSE_PARAMS
-title : _WDF_REQUEST_REUSE_PARAMS
+title : "_WDF_REQUEST_REUSE_PARAMS"
 author : windows-driver-content
 description : The WDF_REQUEST_REUSE_PARAMS structure specifies information that is associated with a reused I/O request.
 old-location : wdf\wdf_request_reuse_params.htm
@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 292e8a75-2035-4333-8a3c-28e79549d374
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : "*PWDF_REQUEST_REUSE_PARAMS, WDF_REQUEST_REUSE_PARAMS structure, wdf.wdf_request_reuse_params, DFRequestObjectRef_07ccbf40-797b-41c5-9f81-87c1494a69ce.xml, kmdf.wdf_request_reuse_params, wdfrequest/PWDF_REQUEST_REUSE_PARAMS, _WDF_REQUEST_REUSE_PARAMS, PWDF_REQUEST_REUSE_PARAMS, wdfrequest/WDF_REQUEST_REUSE_PARAMS, WDF_REQUEST_REUSE_PARAMS, PWDF_REQUEST_REUSE_PARAMS structure pointer"
+ms.keywords : WDF_REQUEST_REUSE_PARAMS structure, wdf.wdf_request_reuse_params, _WDF_REQUEST_REUSE_PARAMS, PWDF_REQUEST_REUSE_PARAMS, DFRequestObjectRef_07ccbf40-797b-41c5-9f81-87c1494a69ce.xml, WDF_REQUEST_REUSE_PARAMS, PWDF_REQUEST_REUSE_PARAMS structure pointer, *PWDF_REQUEST_REUSE_PARAMS, wdfrequest/WDF_REQUEST_REUSE_PARAMS, wdfrequest/PWDF_REQUEST_REUSE_PARAMS, kmdf.wdf_request_reuse_params
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_REQUEST_REUSE_PARAMS, *PWDF_REQUEST_REUSE_PARAMS
+req.typenames : "*PWDF_REQUEST_REUSE_PARAMS, WDF_REQUEST_REUSE_PARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -92,15 +92,15 @@ You can set a <b>NewIrp</b> value only if the I/O request that you supply to <a 
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdf_request_reuse_params_set_new_irp.md">WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP</a>
-
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreatefromirp.md">WdfRequestCreateFromIrp</a>
-
-<a href="..\wdfrequest\ne-wdfrequest-_wdf_request_reuse_flags.md">WDF_REQUEST_REUSE_FLAGS</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestreuse.md">WdfRequestReuse</a>
 
 <a href="..\wdfrequest\nf-wdfrequest-wdf_request_reuse_params_init.md">WDF_REQUEST_REUSE_PARAMS_INIT</a>
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestreuse.md">WdfRequestReuse</a>
+<a href="..\wdfrequest\ne-wdfrequest-_wdf_request_reuse_flags.md">WDF_REQUEST_REUSE_FLAGS</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdf_request_reuse_params_set_new_irp.md">WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreatefromirp.md">WdfRequestCreateFromIrp</a>
 
  
 

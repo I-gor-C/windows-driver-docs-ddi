@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : A318FD24-4E48-4DE4-B919-DD1D701F7EA7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : vmbuskernelmodeclientlibapi/VmbChannelStart, netvista.vmbchannelstart, VmbChannelStart, VmbChannelStart function [Network Drivers Starting with Windows Vista]
+ms.keywords : VmbChannelStart, netvista.vmbchannelstart, vmbuskernelmodeclientlibapi/VmbChannelStart, VmbChannelStart function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

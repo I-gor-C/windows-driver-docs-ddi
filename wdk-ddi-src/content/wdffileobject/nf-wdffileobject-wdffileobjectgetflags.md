@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f2f30acb-cab7-444a-8b86-6001a8a325b9
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfFileObjectGetFlags, DFFileObjectRef_5f2f8f12-9a16-4fb5-88ae-ee726a278cc5.xml, WdfFileObjectGetFlags method, kmdf.wdffileobjectgetflags, PFN_WDFFILEOBJECTGETFLAGS, wdf.wdffileobjectgetflags, wdffileobject/WdfFileObjectGetFlags
+ms.keywords : WdfFileObjectGetFlags method, wdffileobject/WdfFileObjectGetFlags, DFFileObjectRef_5f2f8f12-9a16-4fb5-88ae-ee726a278cc5.xml, kmdf.wdffileobjectgetflags, WdfFileObjectGetFlags, PFN_WDFFILEOBJECTGETFLAGS, wdf.wdffileobjectgetflags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS"
+req.typenames : WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
 req.product : Windows 10 or later.
 ---
 
@@ -79,5 +79,5 @@ For more information about framework file objects, see <a href="https://msdn.mic
 | **Minimum UMDF version** |  |
 | **Header** | wdffileobject.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |

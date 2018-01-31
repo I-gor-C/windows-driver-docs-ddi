@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddndis._NDIS_SWITCH_NIC_OID_REQUEST
-title : _NDIS_SWITCH_NIC_OID_REQUEST
+title : "_NDIS_SWITCH_NIC_OID_REQUEST"
 author : windows-driver-content
 description : The NDIS_SWITCH_NIC_OID_REQUEST structure specifies the information that is required to forward or originate OID requests.
 old-location : netvista\ndis_switch_nic_oid_request.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0a097769-0c74-4465-b339-13696b4dbb6b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_SWITCH_NIC_OID_REQUEST, _NDIS_SWITCH_NIC_OID_REQUEST, PNDIS_SWITCH_NIC_OID_REQUEST, ntddndis/PNDIS_SWITCH_NIC_OID_REQUEST, *PNDIS_SWITCH_NIC_OID_REQUEST, ntddndis/NDIS_SWITCH_NIC_OID_REQUEST, NDIS_SWITCH_NIC_OID_REQUEST structure [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_NIC_OID_REQUEST structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_switch_nic_oid_request
+ms.keywords : netvista.ndis_switch_nic_oid_request, NDIS_SWITCH_NIC_OID_REQUEST structure [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_NIC_OID_REQUEST, ntddndis/NDIS_SWITCH_NIC_OID_REQUEST, PNDIS_SWITCH_NIC_OID_REQUEST structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_SWITCH_NIC_OID_REQUEST, _NDIS_SWITCH_NIC_OID_REQUEST, NDIS_SWITCH_NIC_OID_REQUEST, *PNDIS_SWITCH_NIC_OID_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -73,7 +73,16 @@ A ULONG value that contains a bitwise <b>OR</b> of flags. This member is reserve
 
 The type, revision, and size of the <b>NDIS_SWITCH_NIC_OID_REQUEST</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
-The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_NIC_OID_REQUEST</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value:
+The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_NIC_OID_REQUEST</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value: 
+
+
+
+
+#### NDIS_SWITCH_NIC_OID_REQUEST_REVISION_1
+
+Original version for NDIS 6.30 and later.
+
+Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_SWITCH_NIC_OID_REQUEST_REVISION_1.
 
 `OidRequest`
 
@@ -126,9 +135,9 @@ Query the configuration of an underlying physical network adapter by issuing sta
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598266">OID_SWITCH_NIC_REQUEST</a>
 

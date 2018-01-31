@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 02c0ea87-d25d-4363-85e3-e47c4c5d8a9b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisfreegenericobject, NdisFreeGenericObject, NdisFreeGenericObject function [Network Drivers Starting with Windows Vista], ndis_object_ref_d796ffda-61f1-473d-98ea-5ad3570889e9.xml, ndis/NdisFreeGenericObject
+ms.keywords : netvista.ndisfreegenericobject, ndis/NdisFreeGenericObject, ndis_object_ref_d796ffda-61f1-473d-98ea-5ad3570889e9.xml, NdisFreeGenericObject function [Network Drivers Starting with Windows Vista], NdisFreeGenericObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -81,14 +81,14 @@ An NDIS handle is required to allocate some NDIS resources (for example, buffer 
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Miscellaneous_Function, NdisAllocateGenericObject |
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_ndis_generic_object.md">NDIS_GENERIC_OBJECT</a>
-
 <a href="..\ndis\nf-ndis-ndisallocategenericobject.md">NdisAllocateGenericObject</a>
+
+<a href="..\ndis\ns-ndis-_ndis_generic_object.md">NDIS_GENERIC_OBJECT</a>
 
  
 

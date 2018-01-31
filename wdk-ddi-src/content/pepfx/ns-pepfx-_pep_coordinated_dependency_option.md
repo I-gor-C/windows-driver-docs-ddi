@@ -1,6 +1,6 @@
 ---
 UID : NS:pepfx._PEP_COORDINATED_DEPENDENCY_OPTION
-title : _PEP_COORDINATED_DEPENDENCY_OPTION
+title : "_PEP_COORDINATED_DEPENDENCY_OPTION"
 author : windows-driver-content
 description : The PEP_COORIDNATED_DEPENDENCY_OPTION structure describes a coordinated idle stateâ€™s dependency to the OS.
 old-location : kernel\pep_coordinated_dependency_option.htm
@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : DE95A3E9-3542-49EE-AA62-3430A6B2D7C7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PPEP_COORDINATED_DEPENDENCY_OPTION, pepfx/PPEP_COORDINATED_DEPENDENCY_OPTION, PPEP_COORDINATED_DEPENDENCY_OPTION structure pointer [Kernel-Mode Driver Architecture], PPEP_COORDINATED_DEPENDENCY_OPTION, pepfx/PEP_COORDINATED_DEPENDENCY_OPTION, _PEP_COORDINATED_DEPENDENCY_OPTION, PEP_COORDINATED_DEPENDENCY_OPTION structure [Kernel-Mode Driver Architecture], PEP_COORDINATED_DEPENDENCY_OPTION, kernel.pep_coordinated_dependency_option"
+ms.keywords : PPEP_COORDINATED_DEPENDENCY_OPTION structure pointer [Kernel-Mode Driver Architecture], *PPEP_COORDINATED_DEPENDENCY_OPTION, PEP_COORDINATED_DEPENDENCY_OPTION, PPEP_COORDINATED_DEPENDENCY_OPTION, kernel.pep_coordinated_dependency_option, PEP_COORDINATED_DEPENDENCY_OPTION structure [Kernel-Mode Driver Architecture], pepfx/PEP_COORDINATED_DEPENDENCY_OPTION, _PEP_COORDINATED_DEPENDENCY_OPTION, pepfx/PPEP_COORDINATED_DEPENDENCY_OPTION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -84,9 +84,9 @@ The PEP must set <b>LooseDependency</b> to <b>TRUE</b> if the <b>ExpectedState</
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_ppm_query_coordinated_dependency.md">PEP_PPM_QUERY_COORDINATED_DEPENDENCY</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt186775">PEP_NOTIFY_PPM_QUERY_COORDINATED_DEPENDENCY notification</a>
+
+<a href="..\pepfx\ns-pepfx-_pep_ppm_query_coordinated_dependency.md">PEP_PPM_QUERY_COORDINATED_DEPENDENCY</a>
 
  
 

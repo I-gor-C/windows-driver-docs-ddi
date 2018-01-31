@@ -1,6 +1,6 @@
 ---
 UID : NS:scsi._INQUIRYDATA
-title : _INQUIRYDATA
+title : "_INQUIRYDATA"
 author : windows-driver-content
 description : The INQUIRYDATA structure is used in conjunction with the TapeMiniExtensionInit and TapeMiniVerifyInquiry routines to report SCSI inquiry data associated with a tape device.
 old-location : storage\inquirydata.htm
@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2389fb1e-b16a-4d0a-b347-8b8a0f1cf061
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PINQUIRYDATA, INQUIRYDATA structure [Storage Devices], scsi/INQUIRYDATA, structs-tape_be59bcac-0d77-4186-99a6-97c34bb37793.xml, _INQUIRYDATA, *PINQUIRYDATA, INQUIRYDATA, scsi/PINQUIRYDATA, storage.inquirydata, PINQUIRYDATA structure pointer [Storage Devices]
+ms.keywords : scsi/INQUIRYDATA, PINQUIRYDATA structure pointer [Storage Devices], structs-tape_be59bcac-0d77-4186-99a6-97c34bb37793.xml, *PINQUIRYDATA, _INQUIRYDATA, INQUIRYDATA, storage.inquirydata, PINQUIRYDATA, scsi/PINQUIRYDATA, INQUIRYDATA structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PINQUIRYDATA, INQUIRYDATA"
+req.typenames : INQUIRYDATA, *PINQUIRYDATA
 req.product : Windows 10 or later.
 ---
 
@@ -246,9 +246,9 @@ Indicates, when set to one, that the target supports 32-bit wide data transfers.
 
 ## See Also
 
-<a href="..\minitape\nc-minitape-tape_extension_init_routine.md">TapeMiniExtensionInit</a>
-
 <a href="..\minitape\nc-minitape-tape_verify_inquiry_routine.md">TapeMiniVerifyInquiry</a>
+
+<a href="..\minitape\nc-minitape-tape_extension_init_routine.md">TapeMiniExtensionInit</a>
 
  
 

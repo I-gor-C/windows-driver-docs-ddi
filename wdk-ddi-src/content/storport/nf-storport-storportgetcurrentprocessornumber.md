@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 10d77823-fcaa-43c3-b55e-74f2da97ecf0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storport/StorPortGetCurrentProcessorNumber, StorPortGetCurrentProcessorNumber routine [Storage Devices], StorPortGetCurrentProcessorNumber, storprt_ac4d7e8b-eeb7-4b10-9c9e-cfe9acfddb24.xml, storage.storportgetcurrentprocessornumber
+ms.keywords : StorPortGetCurrentProcessorNumber routine [Storage Devices], storport/StorPortGetCurrentProcessorNumber, storprt_ac4d7e8b-eeb7-4b10-9c9e-cfe9acfddb24.xml, storage.storportgetcurrentprocessornumber, StorPortGetCurrentProcessorNumber
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -116,5 +116,5 @@ The operation fails with this return value if one or more of the parameters are 
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | StorPortIrql |

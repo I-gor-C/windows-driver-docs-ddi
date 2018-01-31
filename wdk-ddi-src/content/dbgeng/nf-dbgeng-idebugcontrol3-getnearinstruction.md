@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 76387681-cac6-4c35-9095-28942a856c30
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugControl2::GetNearInstruction, GetNearInstruction, debugger.getnearinstruction, IDebugControl3::GetNearInstruction, GetNearInstruction method [Windows Debugging], dbgeng/IDebugControl::GetNearInstruction, IDebugControl::GetNearInstruction, IDebugControl_2c12e1fe-0f9b-45d6-9ff4-477bc42b2275.xml, GetNearInstruction method [Windows Debugging], IDebugControl interface, IDebugControl2 interface [Windows Debugging], GetNearInstruction method, IDebugControl2::GetNearInstruction, GetNearInstruction method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl3::GetNearInstruction, GetNearInstruction method [Windows Debugging], IDebugControl2 interface, IDebugControl3, IDebugControl interface [Windows Debugging], GetNearInstruction method, IDebugControl3 interface [Windows Debugging], GetNearInstruction method
+ms.keywords : GetNearInstruction method [Windows Debugging], IDebugControl2 interface, IDebugControl3, GetNearInstruction method [Windows Debugging], IDebugControl3 interface, IDebugControl::GetNearInstruction, IDebugControl3 interface [Windows Debugging], GetNearInstruction method, dbgeng/IDebugControl::GetNearInstruction, dbgeng/IDebugControl2::GetNearInstruction, GetNearInstruction method [Windows Debugging], IDebugControl interface, debugger.getnearinstruction, dbgeng/IDebugControl3::GetNearInstruction, IDebugControl_2c12e1fe-0f9b-45d6-9ff4-477bc42b2275.xml, IDebugControl interface [Windows Debugging], GetNearInstruction method, GetNearInstruction method [Windows Debugging], IDebugControl2 interface [Windows Debugging], GetNearInstruction method, IDebugControl3::GetNearInstruction, GetNearInstruction, IDebugControl2::GetNearInstruction
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 UID : NS:sercx._SERCX2_CONFIG
-title : _SERCX2_CONFIG
+title : "_SERCX2_CONFIG"
 author : windows-driver-content
 description : The SERCX2_CONFIG structure contains configuration information for version 2 of the serial framework extension (SerCx2).
 old-location : serports\sercx2_config.htm
@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 9F33E535-21C1-446F-93AA-B86157904F68
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : _SERCX2_CONFIG, SERCX2_CONFIG, 2/PSERCX2_CONFIG, 2/SERCX2_CONFIG, PSERCX2_CONFIG, SERCX2_CONFIG structure [Serial Ports], PSERCX2_CONFIG structure pointer [Serial Ports], serports.sercx2_config, *PSERCX2_CONFIG
+ms.keywords : PSERCX2_CONFIG structure pointer [Serial Ports], SERCX2_CONFIG, *PSERCX2_CONFIG, _SERCX2_CONFIG, 2/SERCX2_CONFIG, 2/PSERCX2_CONFIG, SERCX2_CONFIG structure [Serial Ports], serports.sercx2_config, PSERCX2_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSERCX2_CONFIG, SERCX2_CONFIG"
+req.typenames : SERCX2_CONFIG, *PSERCX2_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -120,29 +120,29 @@ A driver that never needs a request context does not need to call <b>WdfDeviceIn
 
 ## See Also
 
-<a href="..\sercx\nf-sercx-sercx2_config_init.md">SERCX2_CONFIG_INIT</a>
+<a href="..\sercx\nc-sercx-evt_sercx2_select_next_transmit_transaction_type.md">EvtSerCx2SelectNextTransmitTransactionType</a>
 
 <a href="..\sercx\nc-sercx-evt_sercx2_apply_config.md">EvtSerCx2ApplyConfig</a>
 
-<a href="..\sercx\nc-sercx-evt_sercx2_control.md">EvtSerCx2Control</a>
-
-<a href="..\sercx\nc-sercx-evt_sercx2_set_wait_mask.md">EvtSerCx2SetWaitmask</a>
-
 <a href="..\sercx\nc-sercx-evt_sercx2_select_next_receive_transaction_type.md">EvtSerCx2SelectNextReceiveTransactionType</a>
-
-<a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a>
-
-<a href="..\sercx\nc-sercx-evt_sercx2_select_next_transmit_transaction_type.md">EvtSerCx2SelectNextTransmitTransactionType</a>
-
-<a href="..\sercx\nc-sercx-evt_sercx2_fileclose.md">EvtSerCx2FileClose</a>
-
-<a href="..\sercx\nc-sercx-evt_sercx2_fileopen.md">EvtSerCx2FileOpen</a>
-
-<a href="..\sercx\nc-sercx-evt_sercx2_purge_fifos.md">EvtSerCx2PurgeFifos</a>
 
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 
 <a href="..\wdfobject\nf-wdfobject-wdf_object_attributes_init.md">WDF_OBJECT_ATTRIBUTES_INIT</a>
+
+<a href="..\sercx\nc-sercx-evt_sercx2_fileopen.md">EvtSerCx2FileOpen</a>
+
+<a href="..\sercx\nc-sercx-evt_sercx2_set_wait_mask.md">EvtSerCx2SetWaitmask</a>
+
+<a href="..\sercx\nf-sercx-sercx2_config_init.md">SERCX2_CONFIG_INIT</a>
+
+<a href="..\sercx\nc-sercx-evt_sercx2_purge_fifos.md">EvtSerCx2PurgeFifos</a>
+
+<a href="..\sercx\nc-sercx-evt_sercx2_control.md">EvtSerCx2Control</a>
+
+<a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a>
+
+<a href="..\sercx\nc-sercx-evt_sercx2_fileclose.md">EvtSerCx2FileClose</a>
 
  
 

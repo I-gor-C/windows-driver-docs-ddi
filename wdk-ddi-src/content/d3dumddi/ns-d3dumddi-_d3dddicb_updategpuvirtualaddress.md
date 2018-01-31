@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._D3DDDICB_UPDATEGPUVIRTUALADDRESS
-title : _D3DDDICB_UPDATEGPUVIRTUALADDRESS
+title : "_D3DDDICB_UPDATEGPUVIRTUALADDRESS"
 author : windows-driver-content
 description : D3DDDICB_UPDATEGPUVIRTUALADDRESS is used with pfnUpdateGpuVirtualAddressCb to allow the user mode driver to specify a number of mapping operations to be applied to the process virtual address space in a single batch of page table updates.
 old-location : display\d3dddicb_updategpuvirtualaddress.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6D460EBF-1D5D-4A99-90EE-FCBBC56B8EA4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddicb_updategpuvirtualaddress, d3dumddi/D3DDDICB_UPDATEGPUVIRTUALADDRESS, D3DDDICB_UPDATEGPUVIRTUALADDRESS, D3DDDICB_UPDATEGPUVIRTUALADDRESS structure [Display Devices], _D3DDDICB_UPDATEGPUVIRTUALADDRESS
+ms.keywords : D3DDDICB_UPDATEGPUVIRTUALADDRESS structure [Display Devices], display.d3dddicb_updategpuvirtualaddress, _D3DDDICB_UPDATEGPUVIRTUALADDRESS, d3dumddi/D3DDDICB_UPDATEGPUVIRTUALADDRESS, D3DDDICB_UPDATEGPUVIRTUALADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -107,9 +107,9 @@ This member is reserved and should be set to zero.
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_updategpuvirtualaddresscb.md">pfnUpdateGpuVirtualAddressCb</a>
-
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_updategpuvirtualaddress_operation.md">D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_updategpuvirtualaddresscb.md">pfnUpdateGpuVirtualAddressCb</a>
 
  
 

@@ -75,9 +75,9 @@ If the miniport driver successfully gets or sets the requested information, it s
 
 ## See Also
 
-<a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570173">VIDEOPARAMETERS</a>
+
+<a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a>
 
  
 

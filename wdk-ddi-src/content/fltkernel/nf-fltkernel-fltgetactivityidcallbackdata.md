@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3DAA2135-768E-4A37-B2FD-9915F16D8A66
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetActivityIdCallbackData, ifsk.fltgetactivityidcallbackdata, fltkernel/FltGetActivityIdCallbackData, FltGetActivityIdCallbackData routine [Installable File System Drivers]
+ms.keywords : ifsk.fltgetactivityidcallbackdata, FltGetActivityIdCallbackData routine [Installable File System Drivers], fltkernel/FltGetActivityIdCallbackData, FltGetActivityIdCallbackData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -115,7 +115,7 @@ An activity ID was returned in the <b>GUID</b> value pointed to by <i>Guid</i>.
 | **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

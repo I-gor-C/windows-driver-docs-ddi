@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5d51ec82-4891-47f1-8fc1-b20cb611d7fe
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfchildlist/WdfChildListGetDevice, WdfChildListGetDevice method, PFN_WDFCHILDLISTGETDEVICE, wdf.wdfchildlistgetdevice, DFDeviceObjectChildListRef_3126e6d6-e0d4-4ad1-865e-e7ec36e3c593.xml, kmdf.wdfchildlistgetdevice, WdfChildListGetDevice
+ms.keywords : wdf.wdfchildlistgetdevice, WdfChildListGetDevice, wdfchildlist/WdfChildListGetDevice, WdfChildListGetDevice method, DFDeviceObjectChildListRef_3126e6d6-e0d4-4ad1-865e-e7ec36e3c593.xml, kmdf.wdfchildlistgetdevice, PFN_WDFCHILDLISTGETDEVICE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,5 +79,5 @@ For more information about child lists, see <a href="https://docs.microsoft.com/
 | **Minimum UMDF version** |  |
 | **Header** | wdfchildlist.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |

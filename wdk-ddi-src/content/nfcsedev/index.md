@@ -42,7 +42,7 @@ nfcsedev.h contains the following programming interfaces:
 | [_SECURE_ELEMENT_ENDPOINT_LIST](ns-nfcsedev-_secure_element_endpoint_list.md) | The output parameter for IOCTL_NFCSE_ENUM_ENDPOINTS. |
 | [_SECURE_ELEMENT_EVENT_INFO](ns-nfcsedev-_secure_element_event_info.md) | This structure provides information about a secure element event. |
 | [_SECURE_ELEMENT_EVENT_SUBSCRIPTION_INFO](ns-nfcsedev-_secure_element_event_subscription_info.md) | The SECURE_ELEMENT_EVENT_SUBSCRIPTION_INFO structure is an input parameter to IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT. |
-| [_SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD](ns-nfcsedev-_secure_element_hce_activation_payload.md) | . |
+| [_SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD](ns-nfcsedev-_secure_element_hce_activation_payload.md) | "." |
 | [_SECURE_ELEMENT_HCE_DATA_PACKET](ns-nfcsedev-_secure_element_hce_data_packet.md) | SECURE_ELEMENT_HCE_DATA_PACKET is an input buffer to IOCTL_NFCSE_HCE_REMOTE_SEND and output buffer for IOCTL_NFCSE_HCE_REMOTE_RECV. |
 | [_SECURE_ELEMENT_NFCC_CAPABILITIES](ns-nfcsedev-_secure_element_nfcc_capabilities.md) | SECURE_ELEMENT_NFCC_CAPABILITIES contains NFC controller capabilities. |
 | [_SECURE_ELEMENT_PROTO_ROUTING_INFO](ns-nfcsedev-_secure_element_proto_routing_info.md) | SECURE_ELEMENT_PROTO_ROUTING_INFO is a member of SECURE_ELEMENT_ROUTING_TABLE_ENTRY. |

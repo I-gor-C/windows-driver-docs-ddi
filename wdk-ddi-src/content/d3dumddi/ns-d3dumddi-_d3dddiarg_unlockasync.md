@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._D3DDDIARG_UNLOCKASYNC
-title : _D3DDDIARG_UNLOCKASYNC
+title : "_D3DDDIARG_UNLOCKASYNC"
 author : windows-driver-content
 description : The D3DDDIARG_UNLOCKASYNC structure describes a resource or a surface within the resource to unlock.
 old-location : display\d3dddiarg_unlockasync.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 27d4a7fa-ac2a-4049-8c9f-5ac9338c70b3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_UNLOCKASYNC, display.d3dddiarg_unlockasync, _D3DDDIARG_UNLOCKASYNC, UMDisplayDriver_param_Structs_1b08f2e6-73cd-4390-a9a2-54e604ca5012.xml, d3dumddi/D3DDDIARG_UNLOCKASYNC, D3DDDIARG_UNLOCKASYNC structure [Display Devices]
+ms.keywords : display.d3dddiarg_unlockasync, D3DDDIARG_UNLOCKASYNC, D3DDDIARG_UNLOCKASYNC structure [Display Devices], _D3DDDIARG_UNLOCKASYNC, d3dumddi/D3DDDIARG_UNLOCKASYNC, UMDisplayDriver_param_Structs_1b08f2e6-73cd-4390-a9a2-54e604ca5012.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

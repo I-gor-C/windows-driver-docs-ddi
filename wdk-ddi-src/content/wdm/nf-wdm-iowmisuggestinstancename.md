@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a07ff2f6-e67e-489e-a477-6dc4b4ce6fed
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/IoWMISuggestInstanceName, kernel.iowmisuggestinstancename, k104_dc84cc9c-d6ca-40d2-93af-f54a149be7d1.xml, IoWMISuggestInstanceName routine [Kernel-Mode Driver Architecture], IoWMISuggestInstanceName
+ms.keywords : IoWMISuggestInstanceName, kernel.iowmisuggestinstancename, IoWMISuggestInstanceName routine [Kernel-Mode Driver Architecture], wdm/IoWMISuggestInstanceName, k104_dc84cc9c-d6ca-40d2-93af-f54a149be7d1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -140,7 +140,7 @@ If the <i>CombineNames</i> parameter is <b>TRUE</b> then both <i>PhysicalDeviceO
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

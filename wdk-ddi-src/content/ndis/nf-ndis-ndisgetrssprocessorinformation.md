@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0da022d5-7294-4780-bab8-119ff6385abf
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisGetRssProcessorInformation, netvista.ndisgetrssprocessorinformation, ndis_processor_group_ref_167a091b-01dd-4e5d-bee8-01f5aa9f56fd.xml, ndis/NdisGetRssProcessorInformation, NdisGetRssProcessorInformation function [Network Drivers Starting with Windows Vista]
+ms.keywords : ndis_processor_group_ref_167a091b-01dd-4e5d-bee8-01f5aa9f56fd.xml, ndis/NdisGetRssProcessorInformation, netvista.ndisgetrssprocessorinformation, NdisGetRssProcessorInformation, NdisGetRssProcessorInformation function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -142,7 +142,7 @@ RSS-capable miniport drivers that support MSI-X call
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
@@ -151,10 +151,10 @@ RSS-capable miniport drivers that support MSI-X call
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
+
 <mshelp:link keywords="netvista.miniportfilterresourcerequirements" tabindex="0"><b>
    MiniportFilterResourceRequirements</b></mshelp:link>
-
-<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_rss_processor_info.md">NDIS_RSS_PROCESSOR_INFO</a>
 

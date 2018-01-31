@@ -2,13 +2,13 @@
 UID : NF:winspool.GetPrintOutputInfo
 title : GetPrintOutputInfo function
 author : windows-driver-content
-description : .
+description : "."
 old-location : print\getprintoutputinfo.htm
 old-project : print
 ms.assetid : 0EC09215-48B1-4B71-9B4C-99A25C35269F
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : GetPrintOutputInfo function [Print Devices], GetPrintOutputInfo, winspool/GetPrintOutputInfo, print.getprintoutputinfo
+ms.keywords : GetPrintOutputInfo function [Print Devices], winspool/GetPrintOutputInfo, GetPrintOutputInfo, print.getprintoutputinfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

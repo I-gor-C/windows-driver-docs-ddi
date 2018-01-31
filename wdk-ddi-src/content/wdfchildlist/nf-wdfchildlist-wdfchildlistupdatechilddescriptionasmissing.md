@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 21932a96-285c-490d-a1fb-a137aed57bbb
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfChildListUpdateChildDescriptionAsMissing method, wdfchildlist/WdfChildListUpdateChildDescriptionAsMissing, PFN_WDFCHILDLISTUPDATECHILDDESCRIPTIONASMISSING, DFDeviceObjectChildListRef_1a871104-3d76-4ecb-936e-c27c2a107f2e.xml, wdf.wdfchildlistupdatechilddescriptionasmissing, WdfChildListUpdateChildDescriptionAsMissing, kmdf.wdfchildlistupdatechilddescriptionasmissing
+ms.keywords : PFN_WDFCHILDLISTUPDATECHILDDESCRIPTIONASMISSING, wdfchildlist/WdfChildListUpdateChildDescriptionAsMissing, wdf.wdfchildlistupdatechilddescriptionasmissing, WdfChildListUpdateChildDescriptionAsMissing, DFDeviceObjectChildListRef_1a871104-3d76-4ecb-936e-c27c2a107f2e.xml, WdfChildListUpdateChildDescriptionAsMissing method, kmdf.wdfchildlistupdatechilddescriptionasmissing
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -131,16 +131,16 @@ For more information about child devices and child lists, see <a href="https://d
 | **Minimum UMDF version** |  |
 | **Header** | wdfchildlist.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistaddorupdatechilddescriptionaspresent.md">WdfChildListAddOrUpdateChildDescriptionAsPresent</a>
-
 <a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_identification_description_header.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a>
 
 <a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_identification_description_header_init.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT</a>
+
+<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistaddorupdatechilddescriptionaspresent.md">WdfChildListAddOrUpdateChildDescriptionAsPresent</a>
 
  
 

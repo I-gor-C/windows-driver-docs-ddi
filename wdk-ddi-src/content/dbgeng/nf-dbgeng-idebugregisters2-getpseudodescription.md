@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : dc1c7b8a-1233-4f22-8c5f-273f370a1e06
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetPseudoDescription method [Windows Debugging], IDebugRegisters_7b1f8069-32d0-4fb4-9cee-7fd045bae8d3.xml, debugger.getpseudodescription, GetPseudoDescription, IDebugRegisters2::GetPseudoDescription, IDebugRegisters2, GetPseudoDescription method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters2 interface [Windows Debugging], GetPseudoDescription method, dbgeng/IDebugRegisters2::GetPseudoDescription
+ms.keywords : GetPseudoDescription, IDebugRegisters_7b1f8069-32d0-4fb4-9cee-7fd045bae8d3.xml, GetPseudoDescription method [Windows Debugging], GetPseudoDescription method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters2 interface [Windows Debugging], GetPseudoDescription method, debugger.getpseudodescription, IDebugRegisters2, IDebugRegisters2::GetPseudoDescription, dbgeng/IDebugRegisters2::GetPseudoDescription
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

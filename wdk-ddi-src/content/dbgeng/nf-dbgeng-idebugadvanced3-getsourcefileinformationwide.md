@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 1b7b26be-b7be-4dc7-9863-413f7293707c
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugAdvanced3, GetSourceFileInformationWide, GetSourceFileInformationWide method [Windows Debugging], IDebugAdvanced3 interface, IDebugAdvanced3 interface [Windows Debugging], GetSourceFileInformationWide method, dbgeng/IDebugAdvanced3::GetSourceFileInformationWide, GetSourceFileInformationWide method [Windows Debugging], IDebugAdvanced3::GetSourceFileInformationWide, debugger.getsourcefileinformationwide
+ms.keywords : IDebugAdvanced3::GetSourceFileInformationWide, debugger.getsourcefileinformationwide, IDebugAdvanced3 interface [Windows Debugging], GetSourceFileInformationWide method, IDebugAdvanced3, dbgeng/IDebugAdvanced3::GetSourceFileInformationWide, GetSourceFileInformationWide, GetSourceFileInformationWide method [Windows Debugging], GetSourceFileInformationWide method [Windows Debugging], IDebugAdvanced3 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -61,6 +61,18 @@ HRESULT GetSourceFileInformationWide(
 `Which`
 
 Specifies the piece of information to return.  The <i>Which</i> parameter can take one of the values in the following table.
+
+
+
+
+#### DEBUG_SRCFILE_SYMBOL_TOKEN
+
+Returns a token representing the specified source file on a source server.  This token can be passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff545430">FindSourceFileAndToken</a> to retrieve information about the file. The token is returned to the <i>Buffer</i> buffer as an array of bytes.  The size of this token is a reflection of the size of the SrcSrv token. 
+
+
+#### DEBUG_SRCFILE_SYMBOL_TOKEN_SOURCE_COMMAND_WIDE
+
+Queries a source server for the command to extract the source file from source control.  This includes the name of the executable file and its command-line parameters. The command is returned to the <i>Buffer</i> buffer as a Unicode string.
 
 `SourceFile`
 

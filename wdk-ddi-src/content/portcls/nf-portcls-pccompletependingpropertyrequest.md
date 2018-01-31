@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : a4b59403-9a2f-4857-947b-dff8e3ea079c
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audpc-routines_934503ea-325f-4e57-ba45-e8834a64cefa.xml, PcCompletePendingPropertyRequest function [Audio Devices], audio.pccompletependingpropertyrequest, PcCompletePendingPropertyRequest, portcls/PcCompletePendingPropertyRequest
+ms.keywords : audpc-routines_934503ea-325f-4e57-ba45-e8834a64cefa.xml, audio.pccompletependingpropertyrequest, PcCompletePendingPropertyRequest, PcCompletePendingPropertyRequest function [Audio Devices], portcls/PcCompletePendingPropertyRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,14 +81,14 @@ The driver should call <b>PcCompletePendingPropertyRequest</b> only when the req
 | **Minimum UMDF version** |  |
 | **Header** | portcls.h (include Portcls.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>
-
 <a href="..\portcls\ns-portcls-_pcproperty_request.md">PCPROPERTY_REQUEST</a>
+
+<a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>
 
  
 

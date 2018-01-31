@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 7a36f278-45eb-4ee9-9bdf-370c546245c0
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : StartServerWide method [Windows Debugging], IDebugClient5 interface, IDebugClient5 interface [Windows Debugging], StartServerWide method, StartServerWide method [Windows Debugging], IDebugClient5, StartServerWide, dbgeng/IDebugClient5::StartServerWide, IDebugClient5::StartServerWide, debugger.startserverwide
+ms.keywords : StartServerWide, StartServerWide method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient5::StartServerWide, StartServerWide method [Windows Debugging], IDebugClient5::StartServerWide, debugger.startserverwide, IDebugClient5 interface [Windows Debugging], StartServerWide method, IDebugClient5
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -98,13 +98,13 @@ For more information about debugging servers, see Debugging Server and Debugging
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553247">OutputServers</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558810">StartProcessServer</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 
 <a href="..\dbgeng\nf-dbgeng-debugconnect.md">DebugConnect</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553247">OutputServers</a>
 
  
 

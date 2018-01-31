@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2bf90d1d-887f-4d0c-8d79-e102a14dfe71
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/RtlDeleteAce, rtlref_68fe46f1-318a-48c6-9004-c338f52f41a5.xml, RtlDeleteAce routine [Installable File System Drivers], RtlDeleteAce, ifsk.rtldeleteace
+ms.keywords : ifsk.rtldeleteace, ntifs/RtlDeleteAce, RtlDeleteAce, rtlref_68fe46f1-318a-48c6-9004-c338f52f41a5.xml, RtlDeleteAce routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -114,18 +114,18 @@ For more information about security and access control, see the documentation on
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\ntifs\nf-ntifs-rtladdace.md">RtlAddAce</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
+
 <a href="..\ntifs\nf-ntifs-rtlcreateacl.md">RtlCreateAcl</a>
 
 <a href="..\ntifs\nf-ntifs-rtlgetace.md">RtlGetAce</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
 
 <a href="..\wdm\ns-wdm-_acl.md">ACL</a>
 

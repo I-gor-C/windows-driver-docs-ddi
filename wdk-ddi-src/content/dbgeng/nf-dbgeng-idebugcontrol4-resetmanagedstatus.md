@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 6A9F8963-54F2-4AD7-AB98-C3215E1F7839
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : ResetManagedStatus, IDebugControl4::ResetManagedStatus, debugger.idebugcontrol4_resetmanagedstatus, ResetManagedStatus method [Windows Debugging], IDebugControl4 interface, dbgeng/IDebugControl4::ResetManagedStatus, IDebugControl4, IDebugControl4 interface [Windows Debugging], ResetManagedStatus method, ResetManagedStatus method [Windows Debugging]
+ms.keywords : IDebugControl4::ResetManagedStatus, IDebugControl4 interface [Windows Debugging], ResetManagedStatus method, dbgeng/IDebugControl4::ResetManagedStatus, ResetManagedStatus, debugger.idebugcontrol4_resetmanagedstatus, IDebugControl4, ResetManagedStatus method [Windows Debugging], IDebugControl4 interface, ResetManagedStatus method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

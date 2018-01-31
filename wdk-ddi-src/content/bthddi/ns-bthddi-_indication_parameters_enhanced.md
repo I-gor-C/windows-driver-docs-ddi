@@ -1,6 +1,6 @@
 ---
 UID : NS:bthddi._INDICATION_PARAMETERS_ENHANCED
-title : _INDICATION_PARAMETERS_ENHANCED
+title : "_INDICATION_PARAMETERS_ENHANCED"
 author : windows-driver-content
 description : The INDICATION_PARAMETERS_ENHANCED structure is passed as the Parameters parameter to a profile driver's enhanced L2CAP Callback Function.
 old-location : bltooth\indication_parameters_enhanced.htm
@@ -8,14 +8,14 @@ old-project : bltooth
 ms.assetid : D0FBA555-B61F-4D6F-B93F-C77D395F2BCD
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : bthddi/PINDICATION_PARAMETERS_ENHANCED, INDICATION_PARAMETERS_ENHANCED structure [Bluetooth Devices], bltooth.indication_parameters_enhanced, bthddi/INDICATION_PARAMETERS_ENHANCED, *PINDICATION_PARAMETERS_ENHANCED, PINDICATION_PARAMETERS_ENHANCED, INDICATION_PARAMETERS_ENHANCED, PINDICATION_PARAMETERS_ENHANCED structure pointer [Bluetooth Devices], _INDICATION_PARAMETERS_ENHANCED
+ms.keywords : "*PINDICATION_PARAMETERS_ENHANCED, _INDICATION_PARAMETERS_ENHANCED, INDICATION_PARAMETERS_ENHANCED, bthddi/PINDICATION_PARAMETERS_ENHANCED, PINDICATION_PARAMETERS_ENHANCED structure pointer [Bluetooth Devices], PINDICATION_PARAMETERS_ENHANCED, bthddi/INDICATION_PARAMETERS_ENHANCED, bltooth.indication_parameters_enhanced, INDICATION_PARAMETERS_ENHANCED structure [Bluetooth Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows 8 and later versions of Windows
+req.target-min-winverclnt : Versions:\_Supported in Windows 8 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : INDICATION_PARAMETERS_ENHANCED, *PINDICATION_PARAMETERS_ENHANCED
+req.typenames : "*PINDICATION_PARAMETERS_ENHANCED, INDICATION_PARAMETERS_ENHANCED"
 ---
 
 # _INDICATION_PARAMETERS_ENHANCED structure

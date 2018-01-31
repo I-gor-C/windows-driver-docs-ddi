@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 85252A53-E653-4D14-B1FE-72CA9AFA1F10
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : hid.vhfdelete, VhfDelete, vhf/VhfDelete, VhfDelete method [Human Input Devices]
+ms.keywords : hid.vhfdelete, VhfDelete, VhfDelete method [Human Input Devices], vhf/VhfDelete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR"
+req.typenames : USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 

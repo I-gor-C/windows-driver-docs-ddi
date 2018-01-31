@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : 
 req.dll : 
-req.irql : = DISPATCH_LEVEL
+req.irql : "= DISPATCH_LEVEL"
 topictype : 
 apitype : 
 apilocation : 
@@ -109,19 +109,19 @@ The driver specified the entry point (NDIS_PROCESS_SG_LIST_HANDLER) for
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | = DISPATCH_LEVEL |
+| **IRQL** | "= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\wdm\ns-wdm-_scatter_gather_list.md">SCATTER_GATHER_LIST</a>
+
+<a href="..\ndis\nf-ndis-ndisbuildscattergatherlist.md">NdisBuildScatterGatherList</a>
 
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
 <mshelp:link keywords="netvista.ndis_scatter_gather_list_parameters" tabindex="0"><b>
    NDIS_SCATTER_GATHER_LIST_PARAMETERS</b></mshelp:link>
-
-<a href="..\wdm\ns-wdm-_scatter_gather_list.md">SCATTER_GATHER_LIST</a>
-
-<a href="..\ndis\nf-ndis-ndisbuildscattergatherlist.md">NdisBuildScatterGatherList</a>
 
  
 

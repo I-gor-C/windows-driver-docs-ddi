@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddndis._NDIS_RECEIVE_FILTER_INFO
-title : _NDIS_RECEIVE_FILTER_INFO
+title : "_NDIS_RECEIVE_FILTER_INFO"
 author : windows-driver-content
 description : The NDIS_RECEIVE_FILTER_INFO structure contains information about a receive filter that is currently configured on a miniport driver.
 old-location : netvista\ndis_receive_filter_info.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 12029cfd-58d0-4621-8cbc-c07e68db61b8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddndis/NDIS_RECEIVE_FILTER_INFO, ntddndis/PNDIS_RECEIVE_FILTER_INFO, _NDIS_RECEIVE_FILTER_INFO, PNDIS_RECEIVE_FILTER_INFO, NDIS_RECEIVE_FILTER_INFO structure [Network Drivers Starting with Windows Vista], netvista.ndis_receive_filter_info, *PNDIS_RECEIVE_FILTER_INFO, NDIS_RECEIVE_FILTER_INFO, virtual_machine_queue_ref_4c711292-ce17-4eb9-a051-c32f8ad6f49e.xml, PNDIS_RECEIVE_FILTER_INFO structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords : NDIS_RECEIVE_FILTER_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_RECEIVE_FILTER_INFO structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_receive_filter_info, NDIS_RECEIVE_FILTER_INFO, ntddndis/PNDIS_RECEIVE_FILTER_INFO, virtual_machine_queue_ref_4c711292-ce17-4eb9-a051-c32f8ad6f49e.xml, _NDIS_RECEIVE_FILTER_INFO, ntddndis/NDIS_RECEIVE_FILTER_INFO, *PNDIS_RECEIVE_FILTER_INFO, PNDIS_RECEIVE_FILTER_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_RECEIVE_FILTER_INFO, NDIS_RECEIVE_FILTER_INFO"
+req.typenames : NDIS_RECEIVE_FILTER_INFO, *PNDIS_RECEIVE_FILTER_INFO
 ---
 
 # _NDIS_RECEIVE_FILTER_INFO structure
@@ -100,6 +100,16 @@ The
 To indicate the version of the <b>NDIS_RECEIVE_FILTER_INFO</b> structure, the driver sets the 
      <b>Revision</b> member to one of the following values:
 
+
+
+
+#### NDIS_RECEIVE_FILTER_INFO_REVISION_1
+
+Original version for NDIS 6.20.
+
+The driver sets the 
+        <b>Size</b> member to NDIS_SIZEOF_RECEIVE_FILTER_INFO_REVISION_1.
+
 ## Remarks
 The <b>NDIS_RECEIVE_FILTER_INFO</b> structure is used with the 
     <mshelp:link keywords="netvista.ndis_receive_filter_info_array" tabindex="0"><b>
@@ -116,12 +126,12 @@ The <b>NDIS_RECEIVE_FILTER_INFO</b> structure is used with the
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-enum-filters">OID_RECEIVE_FILTER_ENUM_FILTERS</a>
 
 <mshelp:link keywords="netvista.ndis_receive_filter_info_array" tabindex="0"><b>
    NDIS_RECEIVE_FILTER_INFO_ARRAY</b></mshelp:link>
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-enum-filters">OID_RECEIVE_FILTER_ENUM_FILTERS</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
  
 

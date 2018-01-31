@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : c3391615-963b-4916-9280-ce782269692c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : fwpsk/FwpsGetPacketListSecurityInformation0, wfp_ref_2_funct_3_fwps_D-H_1c333aca-c13e-449e-b230-a6d217442a5d.xml, netvista.fwpsgetpacketlistsecurityinformation0, FwpsGetPacketListSecurityInformation0, FwpsGetPacketListSecurityInformation0 function [Network Drivers Starting with Windows Vista]
+ms.keywords : FwpsGetPacketListSecurityInformation0 function [Network Drivers Starting with Windows Vista], netvista.fwpsgetpacketlistsecurityinformation0, FwpsGetPacketListSecurityInformation0, fwpsk/FwpsGetPacketListSecurityInformation0, wfp_ref_2_funct_3_fwps_D-H_1c333aca-c13e-449e-b230-a6d217442a5d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -67,6 +67,41 @@ A pointer to the
 
 A UINT32 value that contains a bitwise OR of a combination of the following flags that specify the
      information to be retrieved:
+     
+
+
+
+
+#### FWPS_PACKET_LIST_INFORMATION_QUERY_INBOUND
+
+Retrieve information for an inbound packet list.
+
+
+#### FWPS_PACKET_LIST_INFORMATION_QUERY_OUTBOUND
+
+Retrieve information for an outbound packet list.
+
+
+#### FWPS_PACKET_LIST_INFORMATION_QUERY_IPSEC
+
+Retrieve the IPsec information associated with the packet list. This flag must be used in
+       combination with either the FWPS_PACKET_LIST_INFORMATION_QUERY_INBOUND flag or the
+       FWPS_PACKET_LIST_INFORMATION_QUERY_OUTBOUND flag.
+
+
+#### FWPS_PACKET_LIST_INFORMATION_QUERY_FWP
+
+Retrieve the Windows Filtering Platform information associated with the packet list.
+
+
+#### FWPS_PACKET_LIST_INFORMATION_QUERY_ALL_INBOUND
+
+Retrieve all information associated with an inbound packet list.
+
+
+#### FWPS_PACKET_LIST_INFORMATION_QUERY_ALL_OUTBOUND
+
+Retrieve all information associated with an outbound packet list.
 
 `packetInformation`
 
@@ -125,14 +160,14 @@ A callout driver calls the
 | **Minimum UMDF version** |  |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fwpsk\ns-fwpsk-fwps_packet_list_information0_.md">FWPS_PACKET_LIST_INFORMATION0</a>
-
 <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
+
+<a href="..\fwpsk\ns-fwpsk-fwps_packet_list_information0_.md">FWPS_PACKET_LIST_INFORMATION0</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 

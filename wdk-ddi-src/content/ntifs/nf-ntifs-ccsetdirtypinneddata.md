@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : f621a54f-ed40-4ec7-8678-7c72fcd9e704
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ccref_2cd7571b-289f-4510-a5de-f4e38eb049a2.xml, ntifs/CcSetDirtyPinnedData, CcSetDirtyPinnedData routine [Installable File System Drivers], ifsk.ccsetdirtypinneddata, CcSetDirtyPinnedData
+ms.keywords : ccref_2cd7571b-289f-4510-a5de-f4e38eb049a2.xml, ifsk.ccsetdirtypinneddata, CcSetDirtyPinnedData, ntifs/CcSetDirtyPinnedData, CcSetDirtyPinnedData routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,18 +79,18 @@ None
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-ccpinread.md">CcPinRead</a>
-
-<a href="..\ntifs\nf-ntifs-ccpinmappeddata.md">CcPinMappedData</a>
+<a href="..\ntifs\nf-ntifs-ccmapdata.md">CcMapData</a>
 
 <a href="..\ntifs\nf-ntifs-ccunpindata.md">CcUnpinData</a>
 
-<a href="..\ntifs\nf-ntifs-ccmapdata.md">CcMapData</a>
+<a href="..\ntifs\nf-ntifs-ccpinmappeddata.md">CcPinMappedData</a>
+
+<a href="..\ntifs\nf-ntifs-ccpinread.md">CcPinRead</a>
 
 <a href="..\ntifs\nf-ntifs-ccpreparepinwrite.md">CcPreparePinWrite</a>
 

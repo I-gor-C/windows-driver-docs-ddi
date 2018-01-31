@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : b060bd22-113f-4f78-8763-d1d19cf198b8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rxcebuildvc, rxce/RxCeBuildVC, RxCeBuildVC function [Installable File System Drivers], RxCeBuildVC, rxref_4f4f58c7-5970-4a86-883e-359e92bddaa3.xml
+ms.keywords : RxCeBuildVC, rxce/RxCeBuildVC, ifsk.rxcebuildvc, RxCeBuildVC function [Installable File System Drivers], rxref_4f4f58c7-5970-4a86-883e-359e92bddaa3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.typenames : RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -108,7 +108,7 @@ When <b>RxCeBuildVC</b> is successful, the data members in the RXCE_VC structure
 | **Minimum UMDF version** |  |
 | **Header** | rxce.h (include Rxce.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 24787963-98c6-4c32-9ba8-2cd4778f8436
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl4::GetProcessorTypeNamesWide, dbgeng/IDebugControl4::GetProcessorTypeNamesWide, GetProcessorTypeNamesWide, IDebugControl4, GetProcessorTypeNamesWide method [Windows Debugging], IDebugControl4 interface, GetProcessorTypeNamesWide method [Windows Debugging], IDebugControl4 interface [Windows Debugging], GetProcessorTypeNamesWide method, debugger.getprocessortypenameswide
+ms.keywords : IDebugControl4 interface [Windows Debugging], GetProcessorTypeNamesWide method, GetProcessorTypeNamesWide method [Windows Debugging], debugger.getprocessortypenameswide, IDebugControl4, dbgeng/IDebugControl4::GetProcessorTypeNamesWide, GetProcessorTypeNamesWide, IDebugControl4::GetProcessorTypeNamesWide, GetProcessorTypeNamesWide method [Windows Debugging], IDebugControl4 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

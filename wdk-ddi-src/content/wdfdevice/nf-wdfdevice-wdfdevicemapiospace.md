@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 13ECF87D-13F7-4154-A17E-D49A2BB0F83A
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdevicemapiospace, wdfdevice/WdfDeviceMapIoSpace, WdfDeviceMapIoSpace function, WdfDeviceMapIoSpace
+ms.keywords : wdfdevice/WdfDeviceMapIoSpace, WdfDeviceMapIoSpace function, wdf.wdfdevicemapiospace, WdfDeviceMapIoSpace
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

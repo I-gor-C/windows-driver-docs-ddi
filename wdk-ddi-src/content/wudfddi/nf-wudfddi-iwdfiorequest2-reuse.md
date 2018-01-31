@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 21d04633-3b68-4c89-a0b9-81507a1bb6d3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest2::Reuse, Reuse method, wudfddi/IWDFIoRequest2::Reuse, umdf.iwdfiorequest2_reuse, IWDFIoRequest2, Reuse, IWDFIoRequest2 interface, Reuse method, Reuse method, IWDFIoRequest2 interface, wdf.iwdfiorequest2_reuse, UMDFRequestObjectRef_887853e7-3603-4793-b1b2-0b72e63b0d5a.xml
+ms.keywords : wdf.iwdfiorequest2_reuse, IWDFIoRequest2 interface, Reuse method, UMDFRequestObjectRef_887853e7-3603-4793-b1b2-0b72e63b0d5a.xml, Reuse method, IWDFIoRequest2, wudfddi/IWDFIoRequest2::Reuse, Reuse method, IWDFIoRequest2 interface, IWDFIoRequest2::Reuse, umdf.iwdfiorequest2_reuse, Reuse
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -88,11 +88,11 @@ For more information about <b>Reuse</b>, see <a href="https://msdn.microsoft.com
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559153">IWDFIoRequest::SetCompletionCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556905">IRequestCallbackRequestCompletion::OnCompletion</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest2.md">IWDFIoRequest2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556905">IRequestCallbackRequestCompletion::OnCompletion</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559153">IWDFIoRequest::SetCompletionCallback</a>
 
  
 

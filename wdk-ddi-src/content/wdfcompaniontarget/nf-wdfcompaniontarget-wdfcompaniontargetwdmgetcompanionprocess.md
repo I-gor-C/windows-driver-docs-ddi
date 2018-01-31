@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 589c5076-e283-4cf4-bd9f-52a465794b06
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfCompanionTargetWdmGetCompanionProcess method, WdfCompanionTargetWdmGetCompanionProcess, wdfcompaniontarget/WdfCompanionTargetWdmGetCompanionProcess, wdf.wdfcompaniontargetwdmgetcompanionprocess
+ms.keywords : wdf.wdfcompaniontargetwdmgetcompanionprocess, WdfCompanionTargetWdmGetCompanionProcess method, wdfcompaniontarget/WdfCompanionTargetWdmGetCompanionProcess, WdfCompanionTargetWdmGetCompanionProcess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,5 +72,5 @@ None
 | **Minimum UMDF version** |  |
 | **Header** | wdfcompaniontarget.h |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |

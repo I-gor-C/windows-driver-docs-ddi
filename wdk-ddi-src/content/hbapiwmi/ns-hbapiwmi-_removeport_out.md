@@ -1,6 +1,6 @@
 ---
 UID : NS:hbapiwmi._RemovePort_OUT
-title : _RemovePort_OUT
+title : "_RemovePort_OUT"
 author : windows-driver-content
 description : The RemovePort_OUT structure is used by an HBA miniport driver to the output parameter data of the RemovePort WMI method to the WMI client.
 old-location : storage\removeport_out.htm
@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 89cb75e4-5e3b-4277-b173-abed00a7360b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _RemovePort_OUT, hbapiwmi/RemovePort_OUT, storage.removeport_out, RemovePort_OUT, structs-Fibre_dc8be161-745b-4919-9227-e333933482cf.xml, *PRemovePort_OUT, PRemovePort_OUT structure pointer [Storage Devices], hbapiwmi/PRemovePort_OUT, RemovePort_OUT structure [Storage Devices], PRemovePort_OUT
+ms.keywords : PRemovePort_OUT, hbapiwmi/PRemovePort_OUT, RemovePort_OUT structure [Storage Devices], _RemovePort_OUT, storage.removeport_out, hbapiwmi/RemovePort_OUT, PRemovePort_OUT structure pointer [Storage Devices], structs-Fibre_dc8be161-745b-4919-9227-e333933482cf.xml, RemovePort_OUT, *PRemovePort_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : ff22498e-404f-42f6-82fd-f0178f6c7789
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.gdideletespoolfilehandle, winppi/GdiDeleteSpoolFileHandle, gdifnc_76c1c0cf-2a48-44eb-9b48-1d0a5bf4548b.xml, GdiDeleteSpoolFileHandle, GdiDeleteSpoolFileHandle function [Print Devices]
+ms.keywords : winppi/GdiDeleteSpoolFileHandle, gdifnc_76c1c0cf-2a48-44eb-9b48-1d0a5bf4548b.xml, print.gdideletespoolfilehandle, GdiDeleteSpoolFileHandle, GdiDeleteSpoolFileHandle function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : ab49643b-ab77-49ea-9a3b-e3a184cd29d0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiamindr_lh/IWiaMiniDrv::drvAcquireItemData, drvAcquireItemData method [Imaging Devices], IWiaMiniDrv::drvAcquireItemData, IWiaMiniDrv interface [Imaging Devices], drvAcquireItemData method, MiniDrv_fb4ad9e4-6648-4038-9b72-4e521d4dd5f2.xml, drvAcquireItemData, drvAcquireItemData method [Imaging Devices], IWiaMiniDrv interface, image.iwiaminidrv_drvacquireitemdata, IWiaMiniDrv
+ms.keywords : drvAcquireItemData method [Imaging Devices], IWiaMiniDrv::drvAcquireItemData, IWiaMiniDrv, image.iwiaminidrv_drvacquireitemdata, IWiaMiniDrv interface [Imaging Devices], drvAcquireItemData method, wiamindr_lh/IWiaMiniDrv::drvAcquireItemData, drvAcquireItemData, drvAcquireItemData method [Imaging Devices], IWiaMiniDrv interface, MiniDrv_fb4ad9e4-6648-4038-9b72-4e521d4dd5f2.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
+req.typenames : "*PSCANWINDOW, SCANWINDOW"
 req.product : Windows 10 or later.
 ---
 
@@ -167,13 +167,13 @@ Other error code
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiasgetimageinformation.md">wiasGetImageInformation</a>
-
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
-
 <a href="..\wiamindr_lh\ns-wiamindr_lh-_minidrv_transfer_context.md">MINIDRV_TRANSFER_CONTEXT</a>
 
+<a href="..\wiamdef\nf-wiamdef-wiasgetimageinformation.md">wiasGetImageInformation</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543982">IWiaMiniDrv::drvGetDeviceErrorStr</a>
+
+<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
 
  
 

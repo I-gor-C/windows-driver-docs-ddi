@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 30957475-D02B-434D-9FAB-BBCD5732DCA5
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : nfpdrivers._nfccxregistersequencehandler, nfccx/NfcCxRegisterSequenceHandler, NfcCxRegisterSequenceHandler method [Near-Field Proximity Drivers], NfcCxRegisterSequenceHandler
+ms.keywords : nfpdrivers._nfccxregistersequencehandler, nfccx/NfcCxRegisterSequenceHandler, NfcCxRegisterSequenceHandler, NfcCxRegisterSequenceHandler method [Near-Field Proximity Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,9 +86,9 @@ If the operation succeeds, the function returns STATUS_SUCCESS.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a>
-
 <a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a>
+
+<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a>
 
  
 

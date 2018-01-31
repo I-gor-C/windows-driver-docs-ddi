@@ -1,6 +1,6 @@
 ---
 UID : NS:dbgeng._DEBUG_PROCESSOR_IDENTIFICATION_ALL
-title : _DEBUG_PROCESSOR_IDENTIFICATION_ALL
+title : "_DEBUG_PROCESSOR_IDENTIFICATION_ALL"
 author : windows-driver-content
 description : This union contains relevant information for a processor the supported processors.
 old-location : debugger\debug_processor_identification_all.htm
@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 2C4C03BC-0D84-4151-B1A1-FE76F0355CD6
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : "*PDEBUG_PROCESSOR_IDENTIFICATION_ALL, _DEBUG_PROCESSOR_IDENTIFICATION_ALL, debugger.debug_processor_identification_all, DEBUG_PROCESSOR_IDENTIFICATION_ALL union [Windows Debugging], dbgeng/DEBUG_PROCESSOR_IDENTIFICATION_ALL, DEBUG_PROCESSOR_IDENTIFICATION_ALL"
+ms.keywords : debugger.debug_processor_identification_all, *PDEBUG_PROCESSOR_IDENTIFICATION_ALL, DEBUG_PROCESSOR_IDENTIFICATION_ALL union [Windows Debugging], _DEBUG_PROCESSOR_IDENTIFICATION_ALL, dbgeng/DEBUG_PROCESSOR_IDENTIFICATION_ALL, DEBUG_PROCESSOR_IDENTIFICATION_ALL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DEBUG_PROCESSOR_IDENTIFICATION_ALL, *PDEBUG_PROCESSOR_IDENTIFICATION_ALL
+req.typenames : "*PDEBUG_PROCESSOR_IDENTIFICATION_ALL, DEBUG_PROCESSOR_IDENTIFICATION_ALL"
 ---
 
 # _DEBUG_PROCESSOR_IDENTIFICATION_ALL structure
@@ -93,15 +93,15 @@ An x86 processor as a <a href="..\dbgeng\ns-dbgeng-_debug_processor_identificati
 
 <a href="..\dbgeng\ns-dbgeng-_debug_processor_identification_arm64.md">DEBUG_PROCESSOR_IDENTIFICATION_ARM64</a>
 
-<a href="..\dbgeng\ns-dbgeng-_debug_processor_identification_arm.md">DEBUG_PROCESSOR_IDENTIFICATION_ARM</a>
-
-<a href="..\dbgeng\ns-dbgeng-_debug_processor_identification_amd64.md">DEBUG_PROCESSOR_IDENTIFICATION_AMD64</a>
-
-<a href="..\dbgeng\ns-dbgeng-_debug_processor_identification_x86.md">DEBUG_PROCESSOR_IDENTIFICATION_X86</a>
-
 <a href="..\dbgeng\ns-dbgeng-_debug_processor_identification_ia64.md">DEBUG_PROCESSOR_IDENTIFICATION_IA64</a>
 
 <a href="..\dbgeng\ns-dbgeng-_debug_processor_identification_alpha.md">DEBUG_PROCESSOR_IDENTIFICATION_ALPHA</a>
+
+<a href="..\dbgeng\ns-dbgeng-_debug_processor_identification_x86.md">DEBUG_PROCESSOR_IDENTIFICATION_X86</a>
+
+<a href="..\dbgeng\ns-dbgeng-_debug_processor_identification_amd64.md">DEBUG_PROCESSOR_IDENTIFICATION_AMD64</a>
+
+<a href="..\dbgeng\ns-dbgeng-_debug_processor_identification_arm.md">DEBUG_PROCESSOR_IDENTIFICATION_ARM</a>
 
  
 

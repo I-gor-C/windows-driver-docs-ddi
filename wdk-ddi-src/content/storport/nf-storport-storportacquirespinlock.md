@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 52a877c7-b274-4bec-b948-edb0585a09e1
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortAcquireSpinLock routine [Storage Devices], storage.storportacquirespinlock, StorPortAcquireSpinLock, storprt_a5092ef5-d8ab-4175-8799-df23cfcd4dc8.xml, storport/StorPortAcquireSpinLock
+ms.keywords : storage.storportacquirespinlock, storprt_a5092ef5-d8ab-4175-8799-df23cfcd4dc8.xml, StorPortAcquireSpinLock, storport/StorPortAcquireSpinLock, StorPortAcquireSpinLock routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -467,9 +467,9 @@ DPC, StartIo, Interrupt
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportreleasespinlock.md">StorPortReleaseSpinLock</a>
-
 <a href="..\storport\ne-storport-_stor_spinlock.md">STOR_SPINLOCK</a>
+
+<a href="..\storport\nf-storport-storportreleasespinlock.md">StorPortReleaseSpinLock</a>
 
  
 

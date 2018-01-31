@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 10f5296c-6be2-4f88-952b-b23e518b844a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFUsbRef_5a1aa46c-9d8a-4e6b-9003-723a65c314f3.xml, PFN_WDFUSBTARGETPIPEFORMATREQUESTFORRESET, WdfUsbTargetPipeFormatRequestForReset method, kmdf.wdfusbtargetpipeformatrequestforreset, wdf.wdfusbtargetpipeformatrequestforreset, wdfusb/WdfUsbTargetPipeFormatRequestForReset, WdfUsbTargetPipeFormatRequestForReset
+ms.keywords : DFUsbRef_5a1aa46c-9d8a-4e6b-9003-723a65c314f3.xml, PFN_WDFUSBTARGETPIPEFORMATREQUESTFORRESET, kmdf.wdfusbtargetpipeformatrequestforreset, WdfUsbTargetPipeFormatRequestForReset, wdfusb/WdfUsbTargetPipeFormatRequestForReset, wdf.wdfusbtargetpipeformatrequestforreset, WdfUsbTargetPipeFormatRequestForReset method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
+req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
 
@@ -143,7 +143,7 @@ For more information about the <b>WdfUsbTargetPipeFormatRequestForReset</b> meth
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestForUrbXrb, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2, UsbKmdfIrql, UsbKmdfIrql2 |
 
 ## See Also

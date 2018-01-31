@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 7984308D-4C8E-4481-8770-2430552B00E8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxRootHubPortChanged, UcxRootHubPortChanged method [Buses], buses._ucxroothubportchanged, ucxroothub/UcxRootHubPortChanged
+ms.keywords : buses._ucxroothubportchanged, ucxroothub/UcxRootHubPortChanged, UcxRootHubPortChanged method [Buses], UcxRootHubPortChanged
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,7 +75,7 @@ This method causes interrupt transfers to be sent to the host controller. UCX in
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ucxroothub.h (include Ucxclass.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

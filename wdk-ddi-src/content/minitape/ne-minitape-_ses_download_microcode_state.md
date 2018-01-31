@@ -1,6 +1,6 @@
 ---
 UID : NE:minitape._SES_DOWNLOAD_MICROCODE_STATE
-title : _SES_DOWNLOAD_MICROCODE_STATE
+title : "_SES_DOWNLOAD_MICROCODE_STATE"
 author : windows-driver-content
 description : TBD.
 old-location : storage\ses_download_microcode_state.htm
@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5edff312-8373-4d36-b93c-c35fe8c2996a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : scsi/SesDownloadMcStateNoneInProgress, scsi/SesDownloadMcStateCompletedPendingReset, storage.ses_download_microcode_state, PSES_DOWNLOAD_MICROCODE_STATE enumeration pointer [Storage Devices], PSES_DOWNLOAD_MICROCODE_STATE, _SES_DOWNLOAD_MICROCODE_STATE, scsi/SesDownloadMcStateCompletedPendingActivation, SesDownloadMcStateCompletedPendingActivation, *PSES_DOWNLOAD_MICROCODE_STATE, SesDownloadMcStateCompletedPendingReset, scsi/SesDownloadMcStateInProgress, scsi/SesDownloadMcStateCompletedPendingPowerOn, SesDownloadMcStateInProgress, scsi/SES_DOWNLOAD_MICROCODE_STATE, scsi/PSES_DOWNLOAD_MICROCODE_STATE, SES_DOWNLOAD_MICROCODE_STATE, SesDownloadMcStateNoneInProgress, SES_DOWNLOAD_MICROCODE_STATE enumeration [Storage Devices], SesDownloadMcStateCompletedPendingPowerOn
+ms.keywords : scsi/SesDownloadMcStateInProgress, SesDownloadMcStateInProgress, SesDownloadMcStateCompletedPendingPowerOn, SES_DOWNLOAD_MICROCODE_STATE enumeration [Storage Devices], scsi/SesDownloadMcStateCompletedPendingPowerOn, scsi/SesDownloadMcStateCompletedPendingReset, SesDownloadMcStateCompletedPendingActivation, scsi/SES_DOWNLOAD_MICROCODE_STATE, scsi/SesDownloadMcStateNoneInProgress, storage.ses_download_microcode_state, PSES_DOWNLOAD_MICROCODE_STATE, PSES_DOWNLOAD_MICROCODE_STATE enumeration pointer [Storage Devices], scsi/SesDownloadMcStateCompletedPendingActivation, _SES_DOWNLOAD_MICROCODE_STATE, SesDownloadMcStateCompletedPendingReset, SES_DOWNLOAD_MICROCODE_STATE, scsi/PSES_DOWNLOAD_MICROCODE_STATE, *PSES_DOWNLOAD_MICROCODE_STATE, SesDownloadMcStateNoneInProgress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSES_DOWNLOAD_MICROCODE_STATE, SES_DOWNLOAD_MICROCODE_STATE"
+req.typenames : SES_DOWNLOAD_MICROCODE_STATE, *PSES_DOWNLOAD_MICROCODE_STATE
 ---
 
 # _SES_DOWNLOAD_MICROCODE_STATE Enumeration

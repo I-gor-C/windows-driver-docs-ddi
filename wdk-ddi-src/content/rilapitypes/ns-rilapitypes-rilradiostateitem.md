@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1cfc3e62-3398-435a-b603-fb7638ed8ce9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilradiostateitem_2, rilapitypes/RILRADIOSTATEITEM, *LPRILRADIOSTATEITEM, RILRADIOSTATEITEM, RILRADIOSTATEITEM structure [Network Drivers Starting with Windows Vista]
+ms.keywords : RILRADIOSTATEITEM, rilapitypes/RILRADIOSTATEITEM, netvista.rilradiostateitem_2, RILRADIOSTATEITEM structure [Network Drivers Starting with Windows Vista], *LPRILRADIOSTATEITEM
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILRADIOSTATEITEM, *LPRILRADIOSTATEITEM
+req.typenames : "*LPRILRADIOSTATEITEM, RILRADIOSTATEITEM"
 req.product : Windows 10 or later.
 ---
 

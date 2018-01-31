@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 63ca0e60-700b-459a-a88a-bc7bb6f5f6e6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.zwallocatelocallyuniqueid, ntddk/ZwAllocateLocallyUniqueId, k111_de9ec26c-4aa4-4f1b-b876-c6e27bb2a067.xml, ntddk/NtAllocateLocallyUniqueId, NtAllocateLocallyUniqueId, ZwAllocateLocallyUniqueId, ZwAllocateLocallyUniqueId routine [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.zwallocatelocallyuniqueid, ZwAllocateLocallyUniqueId, ZwAllocateLocallyUniqueId routine [Kernel-Mode Driver Architecture], k111_de9ec26c-4aa4-4f1b-b876-c6e27bb2a067.xml, ntddk/NtAllocateLocallyUniqueId, NtAllocateLocallyUniqueId, ntddk/ZwAllocateLocallyUniqueId
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

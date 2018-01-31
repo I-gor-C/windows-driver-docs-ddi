@@ -1,6 +1,6 @@
 ---
 UID : NS:video._VIDEO_CHILD_STATE
-title : _VIDEO_CHILD_STATE
+title : "_VIDEO_CHILD_STATE"
 author : windows-driver-content
 description : The VIDEO_CHILD_STATE structure contains information about a child device and the state into which it should be placed.
 old-location : display\video_child_state.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 69a2eebb-9294-4fc1-871a-587792f84f35
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "*PVIDEO_CHILD_STATE, display.video_child_state, video/VIDEO_CHILD_STATE, _VIDEO_CHILD_STATE, VIDEO_CHILD_STATE, PVIDEO_CHILD_STATE, Video_Structs_330b2d6d-13da-4949-9827-73e7829931b6.xml, video/PVIDEO_CHILD_STATE, VIDEO_CHILD_STATE structure [Display Devices], PVIDEO_CHILD_STATE structure pointer [Display Devices]"
+ms.keywords : PVIDEO_CHILD_STATE, Video_Structs_330b2d6d-13da-4949-9827-73e7829931b6.xml, VIDEO_CHILD_STATE structure [Display Devices], PVIDEO_CHILD_STATE structure pointer [Display Devices], _VIDEO_CHILD_STATE, *PVIDEO_CHILD_STATE, VIDEO_CHILD_STATE, video/PVIDEO_CHILD_STATE, video/VIDEO_CHILD_STATE, display.video_child_state
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_CHILD_STATE, *PVIDEO_CHILD_STATE
+req.typenames : "*PVIDEO_CHILD_STATE, VIDEO_CHILD_STATE"
 req.product : Windows 10 or later.
 ---
 

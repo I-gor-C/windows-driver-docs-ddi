@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 572A2C38-A990-4225-A3FC-6E899A248B1C
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_SELFTESTRESULT structure [Sensor Devices], gnssdriver/PGNSS_SELFTESTRESULT, GNSS_SELFTESTRESULT, PGNSS_SELFTESTRESULT structure pointer [Sensor Devices], *PGNSS_SELFTESTRESULT, gnssdriver/GNSS_SELFTESTRESULT, PGNSS_SELFTESTRESULT, sensors.gnss_selftestresult
+ms.keywords : GNSS_SELFTESTRESULT structure [Sensor Devices], gnssdriver/PGNSS_SELFTESTRESULT, GNSS_SELFTESTRESULT, PGNSS_SELFTESTRESULT, PGNSS_SELFTESTRESULT structure pointer [Sensor Devices], gnssdriver/GNSS_SELFTESTRESULT, *PGNSS_SELFTESTRESULT, sensors.gnss_selftestresult
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

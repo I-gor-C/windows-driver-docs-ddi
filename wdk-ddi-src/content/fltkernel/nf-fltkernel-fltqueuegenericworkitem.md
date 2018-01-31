@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 30179fe1-e218-46cd-96a9-816ebab112bf
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fltkernel/FltQueueGenericWorkItem, ifsk.fltqueuegenericworkitem, FltApiRef_p_to_z_221f809d-f028-4e0f-b7b3-1341c1ed8782.xml, FltQueueGenericWorkItem function [Installable File System Drivers], FltQueueGenericWorkItem
+ms.keywords : fltkernel/FltQueueGenericWorkItem, FltQueueGenericWorkItem function [Installable File System Drivers], FltApiRef_p_to_z_221f809d-f028-4e0f-b7b3-1341c1ed8782.xml, ifsk.fltqueuegenericworkitem, FltQueueGenericWorkItem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,6 +82,21 @@ Pointer to a caller-supplied worker routine. This routine is declared as follows
 </td>
 </tr>
 </table></span></div>
+
+
+#### FltWorkItem
+
+Opaque pointer to a generic work item structure. 
+
+
+#### FltObject
+
+Opaque filter pointer that was passed as the <i>FltObject</i> parameter of <b>FltQueueGenericWorkItem</b>. 
+
+
+#### Context
+
+Context information pointer that was passed as the <i>Context</i> parameter of <b>FltQueueGenericWorkItem</b>. This parameter is optional.
 
 `QueueType`
 
@@ -158,7 +173,7 @@ To free the work item when it is no longer needed, call <a href="..\fltkernel\nf
 | **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

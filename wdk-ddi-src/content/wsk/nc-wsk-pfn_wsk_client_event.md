@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WNODE_HEADER, *PWNODE_HEADER
+req.typenames : "*PWNODE_HEADER, WNODE_HEADER"
 req.product : Windows 10 or later.
 ---
 
@@ -149,14 +149,14 @@ A WSK application's <i>WskClientEvent</i> event callback function must not wait 
 | **Minimum UMDF version** |  |
 | **Header** | wsk.h (include Wsk.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wsk\ns-wsk-_wsk_client_dispatch.md">WSK_CLIENT_DISPATCH</a>
-
 <a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a>
+
+<a href="..\wsk\ns-wsk-_wsk_client_dispatch.md">WSK_CLIENT_DISPATCH</a>
 
  
 

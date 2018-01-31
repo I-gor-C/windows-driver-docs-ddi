@@ -1,6 +1,6 @@
 ---
 UID : NS:usbioctl._USB_CYCLE_PORT_PARAMS
-title : _USB_CYCLE_PORT_PARAMS
+title : "_USB_CYCLE_PORT_PARAMS"
 author : windows-driver-content
 description : The USB_CYCLE_PORT_PARAMS structure is used with the IOCTL_USB_HUB_CYCLE_PORT I/O control request to power cycle the port that is associated with the PDO that receives the request.
 old-location : buses\usb_cycle_port_params.htm
@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 357C62F3-43FE-4132-9233-7BFAD2CE95C5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.usb_cycle_port_params, USB_CYCLE_PORT_PARAMS structure [Buses], PUSB_CYCLE_PORT_PARAMS structure pointer [Buses], *PUSB_CYCLE_PORT_PARAMS, usbioctl/PUSB_CYCLE_PORT_PARAMS, usbioctl/USB_CYCLE_PORT_PARAMS, PUSB_CYCLE_PORT_PARAMS, USB_CYCLE_PORT_PARAMS, _USB_CYCLE_PORT_PARAMS
+ms.keywords : PUSB_CYCLE_PORT_PARAMS structure pointer [Buses], USB_CYCLE_PORT_PARAMS structure [Buses], PUSB_CYCLE_PORT_PARAMS, usbioctl/USB_CYCLE_PORT_PARAMS, USB_CYCLE_PORT_PARAMS, buses.usb_cycle_port_params, *PUSB_CYCLE_PORT_PARAMS, usbioctl/PUSB_CYCLE_PORT_PARAMS, _USB_CYCLE_PORT_PARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : USB_CYCLE_PORT_PARAMS, *PUSB_CYCLE_PORT_PARAMS
+req.typenames : "*PUSB_CYCLE_PORT_PARAMS, USB_CYCLE_PORT_PARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -74,9 +74,9 @@ On return, contains the USBD status of the operation.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-
 <a href="..\usbioctl\ni-usbioctl-ioctl_usb_hub_cycle_port.md">IOCTL_USB_HUB_CYCLE_PORT</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
 
  
 

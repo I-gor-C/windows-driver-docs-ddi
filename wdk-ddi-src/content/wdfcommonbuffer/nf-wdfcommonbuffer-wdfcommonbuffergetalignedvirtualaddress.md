@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6874a1bc-e16e-4052-85a4-dba617a69ccd
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFCommonBufferObjectRef_469df6c0-51ef-480a-93fe-dee452eaf216.xml, PFN_WDFCOMMONBUFFERGETALIGNEDVIRTUALADDRESS, wdfcommonbuffer/WdfCommonBufferGetAlignedVirtualAddress, WdfCommonBufferGetAlignedVirtualAddress method, wdf.wdfcommonbuffergetalignedvirtualaddress, kmdf.wdfcommonbuffergetalignedvirtualaddress, WdfCommonBufferGetAlignedVirtualAddress
+ms.keywords : DFCommonBufferObjectRef_469df6c0-51ef-480a-93fe-dee452eaf216.xml, wdf.wdfcommonbuffergetalignedvirtualaddress, WdfCommonBufferGetAlignedVirtualAddress, WdfCommonBufferGetAlignedVirtualAddress method, wdfcommonbuffer/WdfCommonBufferGetAlignedVirtualAddress, PFN_WDFCOMMONBUFFERGETALIGNEDVIRTUALADDRESS, kmdf.wdfcommonbuffergetalignedvirtualaddress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_CHILD_RETRIEVE_INFO, *PWDF_CHILD_RETRIEVE_INFO
+req.typenames : "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -81,7 +81,7 @@ For more information about common buffers, see <a href="https://msdn.microsoft.c
 | **Minimum UMDF version** |  |
 | **Header** | wdfcommonbuffer.h (include WdfCommonBuffer.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 6c9c8270-78c4-4bc2-a0e4-5c5e245326ad
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.getsourcepathwide, IDebugSymbols3 interface [Windows Debugging], GetSourcePathWide method, IDebugSymbols3, GetSourcePathWide, IDebugSymbols3::GetSourcePathWide, GetSourcePathWide method [Windows Debugging], dbgeng/IDebugSymbols3::GetSourcePathWide, GetSourcePathWide method [Windows Debugging], IDebugSymbols3 interface
+ms.keywords : IDebugSymbols3 interface [Windows Debugging], GetSourcePathWide method, GetSourcePathWide, debugger.getsourcepathwide, GetSourcePathWide method [Windows Debugging], IDebugSymbols3 interface, GetSourcePathWide method [Windows Debugging], IDebugSymbols3, IDebugSymbols3::GetSourcePathWide, dbgeng/IDebugSymbols3::GetSourcePathWide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -119,11 +119,11 @@ For more information about manipulating the source path, see <a href="https://ms
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556781">SetSourcePath</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548367">GetSourcePathElement</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538102">AppendSourcePath</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556781">SetSourcePath</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 

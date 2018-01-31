@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : eebae465-a49a-4e19-a636-9da7f9db7278
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IAllocatorMXF::GetBuffer, audmp-routines_5abb78f4-de92-4342-877f-e7f1c15f8d8e.xml, GetBuffer, audio.iallocatormxf_getbuffer, dmusicks/IAllocatorMXF::GetBuffer, GetBuffer method [Audio Devices], IAllocatorMXF interface [Audio Devices], GetBuffer method, IAllocatorMXF, GetBuffer method [Audio Devices], IAllocatorMXF interface
+ms.keywords : GetBuffer method [Audio Devices], audmp-routines_5abb78f4-de92-4342-877f-e7f1c15f8d8e.xml, audio.iallocatormxf_getbuffer, GetBuffer, IAllocatorMXF::GetBuffer, dmusicks/IAllocatorMXF::GetBuffer, IAllocatorMXF, IAllocatorMXF interface [Audio Devices], GetBuffer method, GetBuffer method [Audio Devices], IAllocatorMXF interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -76,7 +76,7 @@ The size of the buffer can determined by calling <a href="https://msdn.microsoft
 | **Minimum UMDF version** |  |
 | **Header** | dmusicks.h (include Dmusicks.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

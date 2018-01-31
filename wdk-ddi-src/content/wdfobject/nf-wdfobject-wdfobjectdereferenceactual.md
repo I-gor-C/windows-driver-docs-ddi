@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ff96ea2b-a1f9-417c-98e6-fbf9cc9f6827
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFGenObjectRef_d09786da-bccf-4735-bd7b-816bf2bd999d.xml, wdfobject/WdfObjectDereferenceActual, WdfObjectDereferenceActual method, kmdf.wdfobjectdereferenceactual, WdfObjectDereferenceActual, wdf.wdfobjectdereferenceactual
+ms.keywords : wdfobject/WdfObjectDereferenceActual, WdfObjectDereferenceActual, wdf.wdfobjectdereferenceactual, kmdf.wdfobjectdereferenceactual, DFGenObjectRef_d09786da-bccf-4735-bd7b-816bf2bd999d.xml, WdfObjectDereferenceActual method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -100,7 +100,7 @@ For more information about object reference counts, see <a href="https://msdn.mi
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfobject.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 02ab63fe-0c59-480c-a333-a9b14d83ad68
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3 interface [Windows Debugging], GetSourceEntriesByLine method, GetSourceEntriesByLine method [Windows Debugging], IDebugSymbols_b750f895-6583-49a6-be03-c373f89808a7.xml, IDebugSymbols3::GetSourceEntriesByLine, GetSourceEntriesByLine, debugger.getsourceentriesbyline, IDebugSymbols3, GetSourceEntriesByLine method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::GetSourceEntriesByLine
+ms.keywords : IDebugSymbols3::GetSourceEntriesByLine, IDebugSymbols3 interface [Windows Debugging], GetSourceEntriesByLine method, IDebugSymbols3, GetSourceEntriesByLine, debugger.getsourceentriesbyline, dbgeng/IDebugSymbols3::GetSourceEntriesByLine, GetSourceEntriesByLine method [Windows Debugging], GetSourceEntriesByLine method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols_b750f895-6583-49a6-be03-c373f89808a7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -195,9 +195,9 @@ For more information about source files, see <a href="https://msdn.microsoft.com
 
 ## See Also
 
-<a href="..\dbgeng\ns-dbgeng-_debug_symbol_source_entry.md">DEBUG_SYMBOL_SOURCE_ENTRY</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548339">GetSourceFileLineOffsets</a>
+
+<a href="..\dbgeng\ns-dbgeng-_debug_symbol_source_entry.md">DEBUG_SYMBOL_SOURCE_ENTRY</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 

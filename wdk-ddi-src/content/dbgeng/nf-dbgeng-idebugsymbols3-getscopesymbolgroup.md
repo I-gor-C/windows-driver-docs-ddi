@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 002af3f1-4879-40e9-a5c6-bf62a3b26e02
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetScopeSymbolGroup method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetScopeSymbolGroup, IDebugSymbols::GetScopeSymbolGroup, dbgeng/IDebugSymbols3::GetScopeSymbolGroup, IDebugSymbols interface [Windows Debugging], GetScopeSymbolGroup method, dbgeng/IDebugSymbols2::GetScopeSymbolGroup, IDebugSymbols3 interface [Windows Debugging], GetScopeSymbolGroup method, IDebugSymbols_a51f6be3-09dc-48a4-ae45-149fea6bfb1b.xml, IDebugSymbols3, dbgeng/IDebugSymbols::GetScopeSymbolGroup, IDebugSymbols2::GetScopeSymbolGroup, GetScopeSymbolGroup method [Windows Debugging], IDebugSymbols2 interface [Windows Debugging], GetScopeSymbolGroup method, GetScopeSymbolGroup, GetScopeSymbolGroup method [Windows Debugging], IDebugSymbols2 interface, GetScopeSymbolGroup method [Windows Debugging], IDebugSymbols interface, debugger.getscopesymbolgroup
+ms.keywords : GetScopeSymbolGroup, dbgeng/IDebugSymbols::GetScopeSymbolGroup, GetScopeSymbolGroup method [Windows Debugging], IDebugSymbols3 interface, debugger.getscopesymbolgroup, IDebugSymbols_a51f6be3-09dc-48a4-ae45-149fea6bfb1b.xml, IDebugSymbols::GetScopeSymbolGroup, IDebugSymbols2::GetScopeSymbolGroup, IDebugSymbols3::GetScopeSymbolGroup, IDebugSymbols3 interface [Windows Debugging], GetScopeSymbolGroup method, GetScopeSymbolGroup method [Windows Debugging], IDebugSymbols interface, GetScopeSymbolGroup method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols2::GetScopeSymbolGroup, IDebugSymbols3, GetScopeSymbolGroup method [Windows Debugging], IDebugSymbols2 interface [Windows Debugging], GetScopeSymbolGroup method, dbgeng/IDebugSymbols3::GetScopeSymbolGroup, IDebugSymbols interface [Windows Debugging], GetScopeSymbolGroup method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -134,15 +134,15 @@ For more information about scopes and symbol groups, see <a href="https://msdn.m
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548270">GetScope</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 507729e9-96da-461c-badb-a3725abf6591
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfresource/WdfIoResourceRequirementsListRemoveByIoResList, WdfIoResourceRequirementsListRemoveByIoResList, WdfIoResourceRequirementsListRemoveByIoResList method, kmdf.wdfioresourcerequirementslistremovebyioreslist, DFResourceObjectRef_fa50f423-3ade-4deb-89a0-d79cd3f98710.xml, PFN_WDFIORESOURCEREQUIREMENTSLISTREMOVEBYIORESLIST, wdf.wdfioresourcerequirementslistremovebyioreslist
+ms.keywords : wdfresource/WdfIoResourceRequirementsListRemoveByIoResList, kmdf.wdfioresourcerequirementslistremovebyioreslist, WdfIoResourceRequirementsListRemoveByIoResList method, wdf.wdfioresourcerequirementslistremovebyioreslist, PFN_WDFIORESOURCEREQUIREMENTSLISTREMOVEBYIORESLIST, WdfIoResourceRequirementsListRemoveByIoResList, DFResourceObjectRef_fa50f423-3ade-4deb-89a0-d79cd3f98710.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,22 +88,22 @@ For more information about resource requirements lists, see <a href="https://doc
 | **Minimum UMDF version** |  |
 | **Header** | wdfresource.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
-
-<a href="..\wdfresource\nf-wdfresource-wdfioresourcelistgetdescriptor.md">WdfIoResourceListGetDescriptor</a>
-
-<a href="..\wdfresource\nf-wdfresource-wdfioresourcerequirementslistgetioreslist.md">WdfIoResourceRequirementsListGetIoResList</a>
 
 <a href="..\wdfresource\nf-wdfresource-wdfioresourcerequirementslistremove.md">WdfIoResourceRequirementsListRemove</a>
 
 <a href="..\wdfresource\nf-wdfresource-wdfioresourcerequirementslistgetcount.md">WdfIoResourceRequirementsListGetCount</a>
 
-<a href="..\wdfresource\nf-wdfresource-wdfioresourcelistgetcount.md">WdfIoResourceListGetCount</a>
+<a href="..\wdfresource\nf-wdfresource-wdfioresourcelistgetdescriptor.md">WdfIoResourceListGetDescriptor</a>
 
 <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
+
+<a href="..\wdfresource\nf-wdfresource-wdfioresourcelistgetcount.md">WdfIoResourceListGetCount</a>
+
+<a href="..\wdfresource\nf-wdfresource-wdfioresourcerequirementslistgetioreslist.md">WdfIoResourceRequirementsListGetIoResList</a>
 
  
 

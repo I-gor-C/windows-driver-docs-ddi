@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 5c092cbd-ef05-4b3d-ac9f-20f2fbf2c37c
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : portcls/IPortWMIRegistration::RegisterWMIProvider, IPortWMIRegistration interface [Audio Devices], RegisterWMIProvider method, audio.iportwmiregistration_registerwmiprovider, IPortWMIRegistration, RegisterWMIProvider method [Audio Devices], IPortWMIRegistration interface, IPortWMIRegistration::RegisterWMIProvider, RegisterWMIProvider, audmp-routines_3a73bed7-3a9f-4be2-8d15-33f707714c94.xml, RegisterWMIProvider method [Audio Devices]
+ms.keywords : audio.iportwmiregistration_registerwmiprovider, IPortWMIRegistration interface [Audio Devices], RegisterWMIProvider method, RegisterWMIProvider method [Audio Devices], IPortWMIRegistration interface, IPortWMIRegistration, audmp-routines_3a73bed7-3a9f-4be2-8d15-33f707714c94.xml, IPortWMIRegistration::RegisterWMIProvider, portcls/IPortWMIRegistration::RegisterWMIProvider, RegisterWMIProvider method [Audio Devices], RegisterWMIProvider
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -84,15 +84,15 @@ For more information about ETW, see <a href="http://go.microsoft.com/fwlink/p/?l
 
 ## See Also
 
+<a href="http://go.microsoft.com/fwlink/p/?linkid=154129">Improve Debugging And Performance Tuning With ETW</a>
+
 <a href="..\wmilib\ns-wmilib-_wmilib_context.md">WMILIB_CONTEXT</a>
 
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn938554">Event Tracing for Windows</a>
 
 <a href="..\portcls\nn-portcls-iportwmiregistration.md">IPortWMIRegistration</a>
 
-<a href="http://go.microsoft.com/fwlink/p/?linkid=154129">Improve Debugging And Performance Tuning With ETW</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn938554">Event Tracing for Windows</a>
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
  
 

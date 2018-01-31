@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 4140a6c6-60e8-41ec-8de0-cfb56e757e34
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiasFncs_e8f17c14-47a7-42bc-ad85-cdd52ecbab79.xml, wiasSetItemPropNames, wiamdef/wiasSetItemPropNames, wiasSetItemPropNames function [Imaging Devices], image.wiassetitempropnames
+ms.keywords : wiamdef/wiasSetItemPropNames, wiasSetItemPropNames function [Imaging Devices], wiasSetItemPropNames, image.wiassetitempropnames, wiasFncs_e8f17c14-47a7-42bc-ad85-cdd52ecbab79.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2
+req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 

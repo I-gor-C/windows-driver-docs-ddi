@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddk._WHEA_PSHED_PLUGIN_REGISTRATION_PACKET
-title : _WHEA_PSHED_PLUGIN_REGISTRATION_PACKET
+title : "_WHEA_PSHED_PLUGIN_REGISTRATION_PACKET"
 author : windows-driver-content
 description : The WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure describes the data required for registering a PSHED plug-in with the PSHED.
 old-location : whea\whea_pshed_plugin_registration_packet.htm
@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 9dafa65f-26f6-42a6-a125-013c61a66ccc
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure [WHEA Drivers and Applications], _WHEA_PSHED_PLUGIN_REGISTRATION_PACKET, PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure pointer [WHEA Drivers and Applications], ntddk/WHEA_PSHED_PLUGIN_REGISTRATION_PACKET, PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET, *PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET, ntddk/PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET, whearef_9e79e188-a1ce-4d98-a15d-a45c27f9e836.xml, WHEA_PSHED_PLUGIN_REGISTRATION_PACKET, whea.whea_pshed_plugin_registration_packet
+ms.keywords : ntddk/PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET, PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure pointer [WHEA Drivers and Applications], *PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET, PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET, whea.whea_pshed_plugin_registration_packet, _WHEA_PSHED_PLUGIN_REGISTRATION_PACKET, whearef_9e79e188-a1ce-4d98-a15d-a45c27f9e836.xml, WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure [WHEA Drivers and Applications], WHEA_PSHED_PLUGIN_REGISTRATION_PACKET, ntddk/WHEA_PSHED_PLUGIN_REGISTRATION_PACKET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -68,6 +68,38 @@ A PSHED plug-in-supplied context area that is passed to the PSHED plug-in's call
 
 A bit-wise OR'ed combination of flags that specifies the functional areas in which the PSHED plug-in participates. Possible flags are:
 
+
+
+
+#### PshedFADiscovery
+
+The PSHED plug-in participates in error source discovery.
+
+
+#### PshedFAErrorSourceControl
+
+The PSHED plug-in participates in error source control.
+
+
+#### PshedFAErrorRecordPersistence
+
+The PSHED plug-in participates in error record persistence.
+
+
+#### PshedFAErrorInfoRetrieval
+
+The PSHED plug-in participates in error information retrieval.
+
+
+#### PshedFAErrorRecovery
+
+The PSHED plug-in participates in error recovery.
+
+
+#### PshedFAErrorInjection
+
+The PSHED plug-in participates in error injection.
+
 `Length`
 
 The size, in bytes, of the WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure.
@@ -93,9 +125,9 @@ A PSHED plug-in passes an initialized WHEA_PSHED_PLUGIN_REGISTRATION_PACKET stru
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_pshed_plugin_callbacks.md">WHEA_PSHED_PLUGIN_CALLBACKS</a>
-
 <a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_pshed_plugin_callbacks.md">WHEA_PSHED_PLUGIN_CALLBACKS</a>
 
  
 

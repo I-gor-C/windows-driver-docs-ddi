@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b55d0995-efd8-4a61-85e9-970559e21a88
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : condis_mcm_ref_a6a2bb4d-a82e-422f-b9f0-821519513cb4.xml, NdisMCmDeleteVc, netvista.ndismcmdeletevc, ndis/NdisMCmDeleteVc, NdisMCmDeleteVc function [Network Drivers Starting with Windows Vista]
+ms.keywords : condis_mcm_ref_a6a2bb4d-a82e-422f-b9f0-821519513cb4.xml, NdisMCmDeleteVc function [Network Drivers Starting with Windows Vista], NdisMCmDeleteVc, netvista.ndismcmdeletevc, ndis/NdisMCmDeleteVc
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -130,22 +130,22 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCM_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a>
-
 <a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
 
-<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
-
-<a href="..\ndis\nc-ndis-protocol_co_delete_vc.md">ProtocolCoDeleteVc</a>
+<a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a>
 
 <a href="..\ndis\nf-ndis-ndismcmdeactivatevc.md">NdisMCmDeactivateVc</a>
 
 <a href="..\ndis\nc-ndis-miniport_co_delete_vc.md">MiniportCoDeleteVc</a>
+
+<a href="..\ndis\nc-ndis-protocol_co_delete_vc.md">ProtocolCoDeleteVc</a>
+
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 
  
 

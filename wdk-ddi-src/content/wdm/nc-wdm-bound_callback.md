@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.typenames : "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
 req.product : Windows 10 or later.
 ---
 

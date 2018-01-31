@@ -20,7 +20,7 @@ prcomoem.h contains the following programming interfaces:
 ## Interfaces
 | Title | Description |
 | ---- |:---- |
-| [IPrintOemEngine](nn-prcomoem-iprintoemengine.md) | . |
+| [IPrintOemEngine](nn-prcomoem-iprintoemengine.md) | "." |
 
 
 
@@ -35,4 +35,4 @@ prcomoem.h contains the following programming interfaces:
 ## Enumerations
 | Title | Description |
 | ---- |:---- |
-| [tagOEMPTOPTS](ne-prcomoem-tagoemptopts.md) | . |
+| [tagOEMPTOPTS](ne-prcomoem-tagoemptopts.md) | "." |

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : CD619018-7E6D-4B45-93C3-AD89FDFEB1E9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.rtlnumberofsetbitsulongptr, wdm/RtlNumberOfSetBitsUlongPtr, RtlNumberOfSetBitsUlongPtr routine [Kernel-Mode Driver Architecture], RtlNumberOfSetBitsUlongPtr
+ms.keywords : RtlNumberOfSetBitsUlongPtr, wdm/RtlNumberOfSetBitsUlongPtr, RtlNumberOfSetBitsUlongPtr routine [Kernel-Mode Driver Architecture], kernel.rtlnumberofsetbitsulongptr
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

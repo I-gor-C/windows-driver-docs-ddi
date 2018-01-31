@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddstor._STORAGE_TEMPERATURE_DATA_DESCRIPTOR
-title : _STORAGE_TEMPERATURE_DATA_DESCRIPTOR
+title : "_STORAGE_TEMPERATURE_DATA_DESCRIPTOR"
 author : windows-driver-content
 description : This structure is used in conjunction with IOCTL_STORAGE_QUERY_PROPERTY to return temperature data from a storage device or adapter.
 old-location : storage\storage_temperature_data_descriptor.htm
@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : A6041B10-0296-4A96-B65C-C35B8DCB2B5D
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddstor/PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR, STORAGE_TEMPERATURE_DATA_DESCRIPTOR, storage.storage_temperature_data_descriptor, PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR, STORAGE_TEMPERATURE_DATA_DESCRIPTOR structure [Storage Devices], *PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR, _STORAGE_TEMPERATURE_DATA_DESCRIPTOR, PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR structure pointer [Storage Devices], ntddstor/STORAGE_TEMPERATURE_DATA_DESCRIPTOR
+ms.keywords : PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR, _STORAGE_TEMPERATURE_DATA_DESCRIPTOR, *PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR, ntddstor/PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR, storage.storage_temperature_data_descriptor, STORAGE_TEMPERATURE_DATA_DESCRIPTOR, ntddstor/STORAGE_TEMPERATURE_DATA_DESCRIPTOR, PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR structure pointer [Storage Devices], STORAGE_TEMPERATURE_DATA_DESCRIPTOR structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -101,11 +101,11 @@ Indicates the maximum temperature in degrees Celsius at which the device is capa
 
 ## See Also
 
-<a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
-
 <a href="..\ntddstor\ns-ntddstor-_storage_property_query.md">STORAGE_PROPERTY_QUERY</a>
 
 <a href="..\ntddstor\ns-ntddstor-_storage_temperature_info.md">STORAGE_TEMPERATURE_INFO</a>
+
+<a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566996">STORAGE_PROPERTY_ID</a>
 

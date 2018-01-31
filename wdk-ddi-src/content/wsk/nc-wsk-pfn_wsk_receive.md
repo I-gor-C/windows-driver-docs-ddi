@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WNODE_HEADER, *PWNODE_HEADER
+req.typenames : "*PWNODE_HEADER, WNODE_HEADER"
 req.product : Windows 10 or later.
 ---
 
@@ -82,6 +82,64 @@ A ULONG value that contains a bitwise OR of a combination of the following flags
 
 The WSK_FLAG_WAITALL and WSK_FLAG_DRAIN flags are mutually exclusive. A WSK application should not
      specify both of these flags at the same time.
+
+
+#### WSK_FLAG_WAITALL
+
+Wait until the data buffer is completely filled. If this flag is specified, the IRP specified in
+       the 
+       <i>Irp</i> parameter will not be completed until one of the following events occurs:
+       
+<ul>
+<li>
+The data buffer that is described by the WSK_BUF structure that is pointed to by the 
+         <i>Buffer</i> parameter is completely filled.
+
+</li>
+<li>
+The connection is gracefully disconnected by the remote sender.
+
+</li>
+<li>
+The connection is abortively disconnected by either the WSK application or by the remote
+         sender.
+
+</li>
+<li>
+The specified IRP is canceled.
+
+</li>
+</ul>This flag is supported by the Microsoft TCP/IP transport protocol. This flag might not be supported
+       by other transport protocols.
+
+
+#### WSK_FLAG_DRAIN
+
+Wait until the socket is disconnected, discarding any data that is received on the socket. If
+       this flag is specified, the specified IRP will not be completed until one of the following events
+       occurs:
+       
+<ul>
+<li>
+The connection is gracefully disconnected by the remote sender.
+
+</li>
+<li>
+The connection is abortively disconnected by either the WSK application or by the remote
+         sender.
+
+</li>
+<li>
+The specified IRP is canceled.
+
+</li>
+</ul>Any received data is discarded by the WSK subsystem. No received data will be copied into the data
+       buffer. The 
+       <i>Buffer</i> parameter is still required when this flag is specified, but the length of the buffer
+       that is described by the WSK_BUF structure must be zero.
+
+This flag is supported by the Microsoft TCP/IP transport protocol. This flag might not be supported
+       by other transport protocols.
 
 `Irp`
 
@@ -240,25 +298,25 @@ When specifying the WSK_FLAG_DRAIN flag to discard any additional data that is r
 | **Minimum UMDF version** |  |
 | **Header** | wsk.h (include Wsk.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wsk\ns-wsk-_wsk_provider_stream_dispatch.md">WSK_PROVIDER_STREAM_DISPATCH</a>
+<a href="..\wsk\nc-wsk-pfn_wsk_send.md">WskSend</a>
 
 <mshelp:link keywords="netvista.wsk_provider_connection_dispatch" tabindex="0"><b>
    WSK_PROVIDER_CONNECTION_DISPATCH</b></mshelp:link>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
+<a href="..\wsk\ns-wsk-_wsk_provider_stream_dispatch.md">WSK_PROVIDER_STREAM_DISPATCH</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_receive_event.md">WskReceiveEvent</a>
+<a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
 
 <a href="..\wsk\ns-wsk-_wsk_buf.md">WSK_BUF</a>
 
 <a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_send.md">WskSend</a>
+<a href="..\wsk\nc-wsk-pfn_wsk_receive_event.md">WskReceiveEvent</a>
 
  
 

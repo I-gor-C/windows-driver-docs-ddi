@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9b543d5d-ed6d-4440-b5ad-aefca69dd489
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFObject::AssignContext, wdf.iwdfobject_assigncontext, IWDFObject interface, AssignContext method, wudfddi/IWDFObject::AssignContext, umdf.iwdfobject_assigncontext, AssignContext method, AssignContext, AssignContext method, IWDFObject interface, IWDFObject, UMDFBaseObjectRef_1cc8c14a-66bd-487c-a58d-00f22f52adcc.xml
+ms.keywords : AssignContext method, AssignContext method, IWDFObject interface, AssignContext, wdf.iwdfobject_assigncontext, umdf.iwdfobject_assigncontext, IWDFObject interface, AssignContext method, IWDFObject::AssignContext, wudfddi/IWDFObject::AssignContext, IWDFObject, UMDFBaseObjectRef_1cc8c14a-66bd-487c-a58d-00f22f52adcc.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -95,13 +95,13 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560218">IWDFO
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560218">IWDFObject::RetrieveContext</a>
-
-<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556760">IObjectCleanup::OnCleanup</a>
 
 <a href="..\wudfddi\nn-wudfddi-iobjectcleanup.md">IObjectCleanup</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556760">IObjectCleanup::OnCleanup</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560218">IWDFObject::RetrieveContext</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
 
  
 

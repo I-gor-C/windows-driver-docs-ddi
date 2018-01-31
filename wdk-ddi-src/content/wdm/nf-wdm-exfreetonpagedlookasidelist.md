@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8abd72f1-0537-4624-b3d4-2de51c4d4daa
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.exfreetonpagedlookasidelist, ExFreeToNPagedLookasideList routine [Kernel-Mode Driver Architecture], ExFreeToNPagedLookasideList, wdm/ExFreeToNPagedLookasideList, k102_30577c54-40a4-41a3-abc2-f3cdcd45ef1b.xml
+ms.keywords : ExFreeToNPagedLookasideList routine [Kernel-Mode Driver Architecture], kernel.exfreetonpagedlookasidelist, ExFreeToNPagedLookasideList, k102_30577c54-40a4-41a3-abc2-f3cdcd45ef1b.xml, wdm/ExFreeToNPagedLookasideList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,18 +86,18 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | SpIrql |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556431">NPAGED_LOOKASIDE_LIST</a>
+<a href="..\wdm\nf-wdm-exallocatefromnpagedlookasidelist.md">ExAllocateFromNPagedLookasideList</a>
 
 <a href="..\wdm\nf-wdm-exdeletenpagedlookasidelist.md">ExDeleteNPagedLookasideList</a>
 
-<a href="..\wdm\nf-wdm-exallocatefromnpagedlookasidelist.md">ExAllocateFromNPagedLookasideList</a>
-
 <a href="..\wdm\nf-wdm-exinitializenpagedlookasidelist.md">ExInitializeNPagedLookasideList</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556431">NPAGED_LOOKASIDE_LIST</a>
 
  
 

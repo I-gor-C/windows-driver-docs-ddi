@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5868dd01-17ba-4edf-b665-c90d2b1aa2ba
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfworkitemflush, DFWorkItemObjectRef_620a50e7-1995-4806-b71a-932f7fc7c35a.xml, wdfworkitem/WdfWorkItemFlush, WdfWorkItemFlush method, WdfWorkItemFlush, wdf.wdfworkitemflush, PFN_WDFWORKITEMFLUSH
+ms.keywords : PFN_WDFWORKITEMFLUSH, wdfworkitem/WdfWorkItemFlush, DFWorkItemObjectRef_620a50e7-1995-4806-b71a-932f7fc7c35a.xml, kmdf.wdfworkitemflush, WdfWorkItemFlush, WdfWorkItemFlush method, wdf.wdfworkitemflush
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_WMI_PROVIDER_CONFIG, *PWDF_WMI_PROVIDER_CONFIG
+req.typenames : "*PWDF_WMI_PROVIDER_CONFIG, WDF_WMI_PROVIDER_CONFIG"
 req.product : Windows 10 or later.
 ---
 

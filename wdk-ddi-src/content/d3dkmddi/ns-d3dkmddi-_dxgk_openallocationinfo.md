@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmddi._DXGK_OPENALLOCATIONINFO
-title : _DXGK_OPENALLOCATIONINFO
+title : "_DXGK_OPENALLOCATIONINFO"
 author : windows-driver-content
 description : The DXGK_OPENALLOCATIONINFO structure contains handles to nondevice-specific and device-specific allocations that the DxgkDdiOpenAllocation function associates.
 old-location : display\dxgk_openallocationinfo.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e23b7e4e-e670-4421-aa2f-4389a74a7d6d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_OPENALLOCATIONINFO structure [Display Devices], d3dkmddi/DXGK_OPENALLOCATIONINFO, _DXGK_OPENALLOCATIONINFO, DmStructs_e03247bd-d6b8-42df-ac22-79d906d7c852.xml, DXGK_OPENALLOCATIONINFO, display.dxgk_openallocationinfo
+ms.keywords : DmStructs_e03247bd-d6b8-42df-ac22-79d906d7c852.xml, _DXGK_OPENALLOCATIONINFO, display.dxgk_openallocationinfo, DXGK_OPENALLOCATIONINFO, DXGK_OPENALLOCATIONINFO structure [Display Devices], d3dkmddi/DXGK_OPENALLOCATIONINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -81,13 +81,13 @@ typedef struct _DXGK_OPENALLOCATIONINFO {
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
-
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
-
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_openallocationinfo.md">DxgkDdiOpenAllocation</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_openallocation.md">DXGKARG_OPENALLOCATION</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
 
  
 

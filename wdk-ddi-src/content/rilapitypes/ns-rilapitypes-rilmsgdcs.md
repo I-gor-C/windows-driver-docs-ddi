@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILMSGDCS, RILMSGDCS"
+req.typenames : RILMSGDCS, *LPRILMSGDCS
 req.product : Windows 10 or later.
 ---
 

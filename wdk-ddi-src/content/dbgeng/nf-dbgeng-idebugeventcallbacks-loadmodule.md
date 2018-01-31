@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : f4efcbf3-f78a-4e0e-9741-4f9b68814e5b
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugEventCallbacks interface [Windows Debugging], LoadModule method, debugger.idebugeventcallbacks_loadmodule, IDebugEventCallbacks::LoadModule, IDebugEventCallbacks, LoadModule, LoadModule method [Windows Debugging], IDebugEventCallbacks interface, dbgeng/IDebugEventCallbacks::LoadModule, LoadModule method [Windows Debugging], ComCallbacks_3d8f0501-0915-425e-a940-aa5f41bad734.xml
+ms.keywords : IDebugEventCallbacks, LoadModule method [Windows Debugging], IDebugEventCallbacks interface, dbgeng/IDebugEventCallbacks::LoadModule, LoadModule method [Windows Debugging], ComCallbacks_3d8f0501-0915-425e-a940-aa5f41bad734.xml, IDebugEventCallbacks interface [Windows Debugging], LoadModule method, LoadModule, debugger.idebugeventcallbacks_loadmodule, IDebugEventCallbacks::LoadModule
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

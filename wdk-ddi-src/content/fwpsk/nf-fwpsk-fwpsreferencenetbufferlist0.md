@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ff387b49-fecb-41d0-aac5-0a83eb8835d6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : FwpsReferenceNetBufferList0 function [Network Drivers Starting with Windows Vista], FwpsReferenceNetBufferList0, netvista.fwpsreferencenetbufferlist0, wfp_ref_2_funct_3_fwps_R-Z_87b01939-7e75-4049-ae3a-07db074a3e62.xml, fwpsk/FwpsReferenceNetBufferList0
+ms.keywords : netvista.fwpsreferencenetbufferlist0, FwpsReferenceNetBufferList0, FwpsReferenceNetBufferList0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_3_fwps_R-Z_87b01939-7e75-4049-ae3a-07db074a3e62.xml, fwpsk/FwpsReferenceNetBufferList0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -118,15 +118,15 @@ Callout drivers should always return held packets as quickly as possible.
 | **Minimum UMDF version** |  |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
+
 <mshelp:link keywords="netvista.fwpsdereferencenetbufferlist0" tabindex="0"><b>
    FwpsDereferenceNetBufferList0</b></mshelp:link>
-
-<a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 

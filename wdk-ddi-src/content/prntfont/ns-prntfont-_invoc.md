@@ -1,6 +1,6 @@
 ---
 UID : NS:prntfont._INVOC
-title : _INVOC
+title : "_INVOC"
 author : windows-driver-content
 description : The INVOC structure is used for describing printer command strings in Unidrv font metrics files (.ufm files) and glyph translation table files (.gtt files).
 old-location : print\invoc.htm
@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 5eeaa7f7-dc99-4cf7-846c-801954cc9040
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : _INVOC, print_unidrv-pscript_fonts_1c5bebe8-a2ca-4049-bcce-defd8622761b.xml, prntfont/PINVOC, prntfont/INVOC, PINVOC, INVOC structure [Print Devices], *PINVOC, print.invoc, INVOC, PINVOC structure pointer [Print Devices]
+ms.keywords : "_INVOC, INVOC, PINVOC, prntfont/PINVOC, INVOC structure [Print Devices], *PINVOC, print_unidrv-pscript_fonts_1c5bebe8-a2ca-4049-bcce-defd8622761b.xml, print.invoc, prntfont/INVOC, PINVOC structure pointer [Print Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : INVOC, *PINVOC
+req.typenames : "*PINVOC, INVOC"
 req.product : Windows 10 or later.
 ---
 
@@ -60,6 +60,18 @@ Specifies the number of characters in the command.
 `loOffset`
 
 Indicates one of the following:
+
+
+
+
+#### ufm files:
+
+Specifies the byte offset from the beginning of the .ufm file's <a href="..\prntfont\ns-prntfont-_unidrvinfo.md">UNIDRVINFO</a> structure to beginning of the command string.
+
+
+#### gtt files:
+
+Specifies the byte offset from the beginning of the .gtt file's <a href="..\prntfont\ns-prntfont-_uni_codepageinfo.md">UNI_CODEPAGEINFO</a> structure to beginning of the command string.
 
 ## Remarks
 INVOC structures are used within <a href="..\prntfont\ns-prntfont-_unidrvinfo.md">UNIDRVINFO</a> structures.

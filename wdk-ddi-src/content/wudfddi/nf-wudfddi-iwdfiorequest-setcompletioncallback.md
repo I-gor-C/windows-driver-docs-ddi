@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 316b8b75-91ca-4866-b66d-3f66f20126df
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : umdf.iwdfiorequest_setcompletioncallback, IWDFIoRequest interface, SetCompletionCallback method, IWDFIoRequest::SetCompletionCallback, SetCompletionCallback method, IWDFIoRequest, SetCompletionCallback method, IWDFIoRequest interface, UMDFRequestObjectRef_81bdbb22-6221-472d-b2de-a1cc0b9b0c11.xml, wudfddi/IWDFIoRequest::SetCompletionCallback, SetCompletionCallback, wdf.iwdfiorequest_setcompletioncallback
+ms.keywords : SetCompletionCallback, umdf.iwdfiorequest_setcompletioncallback, wudfddi/IWDFIoRequest::SetCompletionCallback, SetCompletionCallback method, IWDFIoRequest interface, IWDFIoRequest, IWDFIoRequest::SetCompletionCallback, SetCompletionCallback method, UMDFRequestObjectRef_81bdbb22-6221-472d-b2de-a1cc0b9b0c11.xml, IWDFIoRequest interface, SetCompletionCallback method, wdf.iwdfiorequest_setcompletioncallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -87,11 +87,11 @@ If a driver that forwards an I/O request requires notification when the lower-le
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556905">IRequestCallbackRequestCompletion::OnCompletion</a>
+
 <a href="..\wudfddi\nn-wudfddi-irequestcallbackrequestcompletion.md">IRequestCallbackRequestCompletion</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556905">IRequestCallbackRequestCompletion::OnCompletion</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
 

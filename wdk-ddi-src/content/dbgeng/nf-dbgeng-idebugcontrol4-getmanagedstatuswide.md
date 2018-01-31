@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 5854BB6A-EB5F-493A-96E4-0DF298EC0332
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl4::GetManagedStatusWide, dbgeng/IDebugControl4::GetManagedStatusWide, GetManagedStatusWide, debugger.idebugcontrol4_getmanagedstatuswide, IDebugControl4, GetManagedStatusWide method [Windows Debugging], IDebugControl4 interface, GetManagedStatusWide method [Windows Debugging], IDebugControl4 interface [Windows Debugging], GetManagedStatusWide method
+ms.keywords : IDebugControl4 interface [Windows Debugging], GetManagedStatusWide method, GetManagedStatusWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4, debugger.idebugcontrol4_getmanagedstatuswide, dbgeng/IDebugControl4::GetManagedStatusWide, GetManagedStatusWide, IDebugControl4::GetManagedStatusWide, GetManagedStatusWide method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

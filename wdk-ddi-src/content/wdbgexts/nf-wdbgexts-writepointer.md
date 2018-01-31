@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 5f3d6cd6-e138-4114-8fac-03cbe1c7aa68
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.writepointer, WritePointer function [Windows Debugging], WdbgExts_Ref_ab18dbae-3a69-43a1-97dd-d0711e4db54e.xml, WritePointer, wdbgexts/WritePointer
+ms.keywords : debugger.writepointer, wdbgexts/WritePointer, WdbgExts_Ref_ab18dbae-3a69-43a1-97dd-d0711e4db54e.xml, WritePointer function [Windows Debugging], WritePointer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

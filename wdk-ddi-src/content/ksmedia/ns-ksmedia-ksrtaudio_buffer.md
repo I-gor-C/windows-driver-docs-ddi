@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : b80efaf0-ecee-40cd-befb-2139a20840a5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : KSRTAUDIO_BUFFER, KSRTAUDIO_BUFFER structure [Audio Devices], audio.ksrtaudio_buffer, PKSRTAUDIO_BUFFER, ksmedia/PKSRTAUDIO_BUFFER, aud-prop_50b4ab60-2e9a-444b-98d3-984d9084ab0b.xml, ksmedia/KSRTAUDIO_BUFFER, PKSRTAUDIO_BUFFER structure pointer [Audio Devices], *PKSRTAUDIO_BUFFER
+ms.keywords : PKSRTAUDIO_BUFFER, ksmedia/KSRTAUDIO_BUFFER, PKSRTAUDIO_BUFFER structure pointer [Audio Devices], *PKSRTAUDIO_BUFFER, audio.ksrtaudio_buffer, aud-prop_50b4ab60-2e9a-444b-98d3-984d9084ab0b.xml, KSRTAUDIO_BUFFER, KSRTAUDIO_BUFFER structure [Audio Devices], ksmedia/PKSRTAUDIO_BUFFER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSRTAUDIO_BUFFER, *PKSRTAUDIO_BUFFER
+req.typenames : "*PKSRTAUDIO_BUFFER, KSRTAUDIO_BUFFER"
 ---
 
 # KSRTAUDIO_BUFFER structure

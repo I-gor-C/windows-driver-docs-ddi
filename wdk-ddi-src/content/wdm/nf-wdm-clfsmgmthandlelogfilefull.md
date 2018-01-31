@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : acfd28c9-c6d5-4768-b095-488f174d78c0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsMgmtHandleLogFileFull, kernel.clfsmgmthandlelogfilefull, wdm/ClfsMgmtHandleLogFileFull, Clfs_management_244be38f-f0dc-45db-b0c2-ccdee1290840.xml, ClfsMgmtHandleLogFileFull routine [Kernel-Mode Driver Architecture]
+ms.keywords : wdm/ClfsMgmtHandleLogFileFull, kernel.clfsmgmthandlelogfilefull, ClfsMgmtHandleLogFileFull routine [Kernel-Mode Driver Architecture], Clfs_management_244be38f-f0dc-45db-b0c2-ccdee1290840.xml, ClfsMgmtHandleLogFileFull
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -156,16 +156,16 @@ If the <b>ClfsMgmtHandleLogFileFull</b> routine returns STATUS_PENDING, then CLF
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfsmgmtregistermanagedclient.md">ClfsMgmtRegisterManagedClient</a>
-
 <a href="..\wdm\nc-wdm-pclfs_client_advance_tail_callback.md">ClfsAdvanceTailCallback</a>
 
 <a href="..\wdm\nc-wdm-pclfs_client_lff_handler_complete_callback.md">ClfsLogGrowthCompleteCallback</a>
+
+<a href="..\wdm\nf-wdm-clfsmgmtregistermanagedclient.md">ClfsMgmtRegisterManagedClient</a>
 
  
 

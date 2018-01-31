@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : be22fb7f-408a-44ee-ae83-0f1dadcec87f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlNtStatusToDosError routine [Installable File System Drivers], RtlNtStatusToDosError, rtlref_161ea08b-d596-4a3c-ab9b-b66f757e4415.xml, ntifs/RtlNtStatusToDosError, RtlNtStatusToDosErrorNoTeb, ifsk.rtlntstatustodoserrornoteb
+ms.keywords : RtlNtStatusToDosError, ifsk.rtlntstatustodoserrornoteb, RtlNtStatusToDosError routine [Installable File System Drivers], rtlref_161ea08b-d596-4a3c-ab9b-b66f757e4415.xml, ntifs/RtlNtStatusToDosError, RtlNtStatusToDosErrorNoTeb
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,5 +74,5 @@ There is no function that provides the inverse functionality of <b>RtlNtStatusTo
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** |  |
-| **IRQL** | < DISPATCH_LEVEL |
+| **IRQL** | "< DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |

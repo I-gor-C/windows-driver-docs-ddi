@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e5c2d5d5-550e-42e5-b86a-f17e361925dc
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmSecureVirtualMemory, ntddk/MmSecureVirtualMemory, MmSecureVirtualMemory routine [Kernel-Mode Driver Architecture], k106_d85881bb-59a3-4494-afaa-55c49b71b64b.xml, kernel.mmsecurevirtualmemory
+ms.keywords : kernel.mmsecurevirtualmemory, k106_d85881bb-59a3-4494-afaa-55c49b71b64b.xml, MmSecureVirtualMemory, ntddk/MmSecureVirtualMemory, MmSecureVirtualMemory routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -104,7 +104,7 @@ While calling <b>MmSecureVirtualMemory</b> on an address range prevents the addr
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** |  |
-| **IRQL** | <=APC_LEVEL |
+| **IRQL** | "<=APC_LEVEL" |
 | **DDI compliance rules** | IrqlMmApcLte, HwStorPortProhibitedDDIs |
 
 ## See Also

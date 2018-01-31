@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e62855a0-284b-434b-88a4-1f21f1b77cf2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlDestroyHeap routine [Installable File System Drivers], rtlref_c1cb90f1-932d-46ab-badc-d960503def9c.xml, RtlDestroyHeap, ifsk.rtldestroyheap, ntifs/RtlDestroyHeap
+ms.keywords : rtlref_c1cb90f1-932d-46ab-badc-d960503def9c.xml, ifsk.rtldestroyheap, ntifs/RtlDestroyHeap, RtlDestroyHeap, RtlDestroyHeap routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,14 @@ Processes can call <b>RtlDestroyHeap</b> without first calling <b>RtlFreeHeap</b
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** |  |
-| **IRQL** | < DISPATCH_LEVEL |
+| **IRQL** | "< DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtlfreeheap.md">RtlFreeHeap</a>
-
 <a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a>
+
+<a href="..\ntifs\nf-ntifs-rtlfreeheap.md">RtlFreeHeap</a>
 
 <a href="..\ntifs\nf-ntifs-rtlcreateheap.md">RtlCreateHeap</a>
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : ec4cf252-88c4-47de-9015-bcbbd1fd5d1d
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : RemoveEngineOptions method [Windows Debugging], IDebugControl2 interface, IDebugControl2::RemoveEngineOptions, RemoveEngineOptions method [Windows Debugging], IDebugControl3 interface, debugger.removeengineoptions, RemoveEngineOptions method [Windows Debugging], IDebugControl interface [Windows Debugging], RemoveEngineOptions method, IDebugControl3 interface [Windows Debugging], RemoveEngineOptions method, RemoveEngineOptions method [Windows Debugging], IDebugControl interface, IDebugControl_b1af0528-4fc2-4ea3-90e8-c7d92b0632f4.xml, IDebugControl2 interface [Windows Debugging], RemoveEngineOptions method, dbgeng/IDebugControl3::RemoveEngineOptions, RemoveEngineOptions, dbgeng/IDebugControl2::RemoveEngineOptions, IDebugControl::RemoveEngineOptions, IDebugControl3, dbgeng/IDebugControl::RemoveEngineOptions, IDebugControl3::RemoveEngineOptions
+ms.keywords : IDebugControl3, IDebugControl3 interface [Windows Debugging], RemoveEngineOptions method, dbgeng/IDebugControl::RemoveEngineOptions, IDebugControl_b1af0528-4fc2-4ea3-90e8-c7d92b0632f4.xml, IDebugControl2::RemoveEngineOptions, IDebugControl3::RemoveEngineOptions, RemoveEngineOptions method [Windows Debugging], IDebugControl2 interface, RemoveEngineOptions method [Windows Debugging], IDebugControl interface, IDebugControl interface [Windows Debugging], RemoveEngineOptions method, debugger.removeengineoptions, IDebugControl::RemoveEngineOptions, dbgeng/IDebugControl2::RemoveEngineOptions, IDebugControl2 interface [Windows Debugging], RemoveEngineOptions method, RemoveEngineOptions method [Windows Debugging], RemoveEngineOptions method [Windows Debugging], IDebugControl3 interface, RemoveEngineOptions, dbgeng/IDebugControl3::RemoveEngineOptions
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -97,17 +97,17 @@ After the engine options have been changed, the engine sends out notification to
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537884">AddEngineOptions</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546598">GetEngineOptions</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546598">GetEngineOptions</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537884">AddEngineOptions</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556670">SetEngineOptions</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 
  
 

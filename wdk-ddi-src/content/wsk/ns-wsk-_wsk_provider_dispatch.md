@@ -1,6 +1,6 @@
 ---
 UID : NS:wsk._WSK_PROVIDER_DISPATCH
-title : _WSK_PROVIDER_DISPATCH
+title : "_WSK_PROVIDER_DISPATCH"
 author : windows-driver-content
 description : The WSK_PROVIDER_DISPATCH structure specifies the WSK subsystem's dispatch table of functions that are not specific to a particular socket.
 old-location : netvista\wsk_provider_dispatch.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 864891dd-7db5-4343-9014-c6a284f1fd7e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WSK_PROVIDER_DISPATCH structure [Network Drivers Starting with Windows Vista], WSK_PROVIDER_DISPATCH, PWSK_PROVIDER_DISPATCH, _WSK_PROVIDER_DISPATCH, *PWSK_PROVIDER_DISPATCH, PWSK_PROVIDER_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], netvista.wsk_provider_dispatch, wskref_3e9340b7-e9e6-46bd-8f28-810354655c6c.xml, wsk/PWSK_PROVIDER_DISPATCH, wsk/WSK_PROVIDER_DISPATCH
+ms.keywords : WSK_PROVIDER_DISPATCH structure [Network Drivers Starting with Windows Vista], wskref_3e9340b7-e9e6-46bd-8f28-810354655c6c.xml, wsk/WSK_PROVIDER_DISPATCH, WSK_PROVIDER_DISPATCH, PWSK_PROVIDER_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], netvista.wsk_provider_dispatch, PWSK_PROVIDER_DISPATCH, *PWSK_PROVIDER_DISPATCH, wsk/PWSK_PROVIDER_DISPATCH, _WSK_PROVIDER_DISPATCH
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWSK_PROVIDER_DISPATCH, WSK_PROVIDER_DISPATCH"
+req.typenames : WSK_PROVIDER_DISPATCH, *PWSK_PROVIDER_DISPATCH
 req.product : Windows 10 or later.
 ---
 
@@ -169,15 +169,15 @@ For more information about attaching a WSK application to the WSK subsystem, see
 
 <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
 
+<a href="..\wsk\ns-wsk-_wsk_client_dispatch.md">WSK_CLIENT_DISPATCH</a>
+
 <a href="..\wsk\nc-wsk-pfn_wsk_socket_connect.md">WskSocketConnect</a>
 
 <a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
 
-<a href="..\wsk\ns-wsk-_wsk_client_dispatch.md">WSK_CLIENT_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_client_npi.md">WSK_CLIENT_NPI</a>
 
 <a href="..\wsk\nc-wsk-pfn_wsk_control_client.md">WskControlClient</a>
-
-<a href="..\wsk\ns-wsk-_wsk_client_npi.md">WSK_CLIENT_NPI</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b356e3ac-451d-4a10-94e2-d03fcf76cb29
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDevice, CreateWdfFile method, IWDFDevice interface, IWDFDevice interface, CreateWdfFile method, CreateWdfFile method, IWDFDevice::CreateWdfFile, wudfddi/IWDFDevice::CreateWdfFile, CreateWdfFile, wdf.iwdfdevice_createwdffile, umdf.iwdfdevice_createwdffile, UMDFDeviceObjectRef_d5f035e1-d7ea-474e-9dc4-bc6b64baea2c.xml
+ms.keywords : umdf.iwdfdevice_createwdffile, CreateWdfFile method, IWDFDevice interface, IWDFDevice::CreateWdfFile, IWDFDevice interface, CreateWdfFile method, IWDFDevice, wdf.iwdfdevice_createwdffile, CreateWdfFile method, UMDFDeviceObjectRef_d5f035e1-d7ea-474e-9dc4-bc6b64baea2c.xml, wudfddi/IWDFDevice::CreateWdfFile, CreateWdfFile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method

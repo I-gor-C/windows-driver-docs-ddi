@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
 ---
 
 
@@ -162,11 +162,11 @@ On return from <b>DxgkCbQueryServices</b>, your DXGK_TIMED_OPERATION_INTERFACE s
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538228">AGP Interface</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551798">Debug Report Interface</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570086">Timed Operation Interface</a>
 
 <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551798">Debug Report Interface</a>
 
  
 

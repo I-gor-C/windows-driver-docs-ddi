@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : f739d5b8-80be-40e3-9139-93342c4fe458
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3::Reload, dbgeng/IDebugSymbols::Reload, dbgeng/IDebugSymbols3::Reload, dbgeng/IDebugSymbols2::Reload, IDebugSymbols3 interface [Windows Debugging], Reload method, IDebugSymbols2 interface [Windows Debugging], Reload method, IDebugSymbols interface [Windows Debugging], Reload method, Reload method [Windows Debugging], IDebugSymbols interface, Reload method [Windows Debugging], IDebugSymbols2::Reload, IDebugSymbols_ec5df701-b081-45c4-b2e4-10c101ce69a4.xml, IDebugSymbols3, IDebugSymbols::Reload, Reload method [Windows Debugging], IDebugSymbols3 interface, Reload, Reload method [Windows Debugging], IDebugSymbols2 interface, debugger.reload
+ms.keywords : dbgeng/IDebugSymbols2::Reload, debugger.reload, IDebugSymbols3 interface [Windows Debugging], Reload method, IDebugSymbols_ec5df701-b081-45c4-b2e4-10c101ce69a4.xml, IDebugSymbols2::Reload, IDebugSymbols3::Reload, Reload method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols::Reload, Reload method [Windows Debugging], IDebugSymbols interface, Reload method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols2 interface [Windows Debugging], Reload method, IDebugSymbols3, Reload method [Windows Debugging], dbgeng/IDebugSymbols3::Reload, IDebugSymbols::Reload, IDebugSymbols interface [Windows Debugging], Reload method, Reload
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -99,9 +99,9 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564805">.reload (Reload Module)</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
 

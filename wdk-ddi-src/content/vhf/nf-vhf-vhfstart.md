@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : F3DA4CBB-5749-4E7D-828F-398714575173
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : VhfStart, vhf/VhfStart, VhfStart method [Human Input Devices], hid.vhfstart
+ms.keywords : hid.vhfstart, VhfStart, vhf/VhfStart, VhfStart method [Human Input Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR"
+req.typenames : USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 
@@ -75,5 +75,5 @@ Virtual HID Framework (VHF) does not invoke any callback functions implemented b
 | **Minimum UMDF version** |  |
 | **Header** | vhf.h |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |

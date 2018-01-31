@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : bc27758a-a793-48a1-a6ab-bd193aa9c61a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisAllocateNetBufferPool, NdisAllocateNetBufferPool function [Network Drivers Starting with Windows Vista], netvista.ndisallocatenetbufferpool, ndis_netbuf_functions_ref_f12d38a1-161d-4209-95ea-6e66fcbef255.xml, NdisAllocateNetBufferPool
+ms.keywords : NdisAllocateNetBufferPool, NdisAllocateNetBufferPool function [Network Drivers Starting with Windows Vista], ndis_netbuf_functions_ref_f12d38a1-161d-4209-95ea-6e66fcbef255.xml, ndis/NdisAllocateNetBufferPool, netvista.ndisallocatenetbufferpool
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -78,6 +78,38 @@ A pointer to a NET_BUFFER_POOL_PARAMETERS structure that defines the parameters 
 </td>
 </tr>
 </table></span></div>This structure includes the following members:
+
+
+
+
+#### Header
+
+The 
+       <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+       NET_BUFFER_POOL_PARAMETERS structure. Set the 
+       <b>Type</b> member of the structure that 
+       <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
+       <b>Revision</b> member to NET_BUFFER_POOL_PARAMETERS_REVISION_1, and the 
+       <b>Size</b> member to NDIS_SIZEOF_NET_BUFFER_POOL_PARAMETERS_REVISION_1.
+
+
+#### PoolTag
+
+A kernel pool tag that the caller uses when it allocates 
+       <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures from this pool. The tag
+       is a string, delimited by single quotation marks, with up to four characters, usually specified in
+       reverse order. The kernel pool tag helps NDIS to identify the owner of the NET_BUFFER structures that
+       are allocated from this pool.
+
+
+#### DataSize
+
+The default data size for data buffers associated with this pool. The caller must set this value
+       if it calls the 
+       <mshelp:link keywords="netvista.ndisallocatenetbuffermdlanddata" tabindex="0"><b>
+       NdisAllocateNetBufferMdlAndData</b></mshelp:link> function. NDIS uses this value to set the size of the data
+       buffer that it allocates for the NET_BUFFER structure. If the caller does not use this feature, this
+       value should be set to zero.
 
 
 ## Return Value
@@ -128,23 +160,23 @@ Call the
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_NetBuffer_Function |
 
 ## See Also
 
 <a href="..\ndis\nf-ndis-ndisallocatenetbuffer.md">NdisAllocateNetBuffer</a>
 
+<a href="..\ndis\nf-ndis-ndisfreenetbufferpool.md">NdisFreeNetBufferPool</a>
+
 <mshelp:link keywords="netvista.ndisallocatenetbuffermdlanddata" tabindex="0"><b>
    NdisAllocateNetBufferMdlAndData</b></mshelp:link>
-
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-
-<a href="..\ndis\nf-ndis-ndisfreenetbufferpool.md">NdisFreeNetBufferPool</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
 <a href="..\ndis\nf-ndis-ndisfreenetbuffer.md">NdisFreeNetBuffer</a>
+
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 
  
 

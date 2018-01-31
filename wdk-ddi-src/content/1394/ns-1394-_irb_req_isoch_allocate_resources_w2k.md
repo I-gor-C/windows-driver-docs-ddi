@@ -1,6 +1,6 @@
 ---
 UID : NS:1394._IRB_REQ_ISOCH_ALLOCATE_RESOURCES_W2K
-title : _IRB_REQ_ISOCH_ALLOCATE_RESOURCES_W2K
+title : "_IRB_REQ_ISOCH_ALLOCATE_RESOURCES_W2K"
 author : windows-driver-content
 description : This structure contains the fields necessary for the 1394 bus driver to carry out a IsochAllocateResources request.
 old-location : ieee\irb_req_isoch_allocate_resources_w2k.htm
@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 1192D655-7900-40B2-9D5F-480ACDB94624
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IEEE.irb_req_isoch_allocate_resources_w2k, IRB_REQ_ISOCH_ALLOCATE_RESOURCES_W2K, IRB_REQ_ISOCH_ALLOCATE_RESOURCES_W2K structure [Buses], IRB_REQ_ISOCH_ALLOCATE_RESOURCES, _IRB_REQ_ISOCH_ALLOCATE_RESOURCES_W2K, 1394/IRB_REQ_ISOCH_ALLOCATE_RESOURCES_W2K
+ms.keywords : IEEE.irb_req_isoch_allocate_resources_w2k, IRB_REQ_ISOCH_ALLOCATE_RESOURCES_W2K, IRB_REQ_ISOCH_ALLOCATE_RESOURCES, _IRB_REQ_ISOCH_ALLOCATE_RESOURCES_W2K, 1394/IRB_REQ_ISOCH_ALLOCATE_RESOURCES_W2K, IRB_REQ_ISOCH_ALLOCATE_RESOURCES_W2K structure [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

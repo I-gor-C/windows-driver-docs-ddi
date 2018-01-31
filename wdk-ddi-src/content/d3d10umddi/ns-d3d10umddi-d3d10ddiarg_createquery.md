@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1042f401-fbdd-47ee-8cfc-1bca331ac722
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3d10ddiarg_createquery, UMDisplayDriver_Dx10param_Structs_92f45053-c4aa-4bcd-b2ab-570aaf95cfe3.xml, D3D10DDIARG_CREATEQUERY structure [Display Devices], D3D10DDIARG_CREATEQUERY, d3d10umddi/D3D10DDIARG_CREATEQUERY
+ms.keywords : d3d10umddi/D3D10DDIARG_CREATEQUERY, D3D10DDIARG_CREATEQUERY structure [Display Devices], display.d3d10ddiarg_createquery, UMDisplayDriver_Dx10param_Structs_92f45053-c4aa-4bcd-b2ab-570aaf95cfe3.xml, D3D10DDIARG_CREATEQUERY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -73,11 +73,11 @@ The Direct3D runtime calls the user-mode display driver's <a href="..\d3d10umddi
 
 ## See Also
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivatequerysize.md">CalcPrivateQuerySize</a>
-
 <a href="..\d3d10umddi\ne-d3d10umddi-d3d10ddi_query.md">D3D10DDI_QUERY</a>
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createquery.md">CreateQuery(D3D10)</a>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivatequerysize.md">CalcPrivateQuerySize</a>
 
  
 

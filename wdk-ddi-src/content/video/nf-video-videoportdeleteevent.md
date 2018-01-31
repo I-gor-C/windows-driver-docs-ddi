@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0952f6ab-6d57-4ded-b167-74a7ace47961
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : video/VideoPortDeleteEvent, display.videoportdeleteevent, VideoPortDeleteEvent function [Display Devices], VideoPortDeleteEvent, VideoPort_Functions_66e14d53-8a5e-4322-8576-4ac06230db31.xml
+ms.keywords : display.videoportdeleteevent, VideoPortDeleteEvent function [Display Devices], video/VideoPortDeleteEvent, VideoPortDeleteEvent, VideoPort_Functions_66e14d53-8a5e-4322-8576-4ac06230db31.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,14 +80,14 @@ This function should not be used to delete a mapped user event. To delete a mapp
 | **Minimum UMDF version** |  |
 | **Header** | video.h (include Video.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565434">EngUnmapEvent</a>
-
 <a href="..\video\nf-video-videoportcreateevent.md">VideoPortCreateEvent</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565434">EngUnmapEvent</a>
 
  
 

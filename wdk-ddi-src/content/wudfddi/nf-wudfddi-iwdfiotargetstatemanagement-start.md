@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e242b62a-7a4f-491b-b1a7-3388cf9c5a40
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfddi/IWDFIoTargetStateManagement::Start, umdf.iwdfiotargetstatemanagement_start, Start method, IWDFIoTargetStateManagement interface, Start method, Start, IWDFIoTargetStateManagement::Start, IWDFIoTargetStateManagement interface, Start method, IWDFIoTargetStateManagement, UMDFIoTargetObjectRef_931a0267-704f-44f7-8f52-0344afb86f81.xml, wdf.iwdfiotargetstatemanagement_start
+ms.keywords : umdf.iwdfiotargetstatemanagement_start, wdf.iwdfiotargetstatemanagement_start, wudfddi/IWDFIoTargetStateManagement::Start, IWDFIoTargetStateManagement, UMDFIoTargetObjectRef_931a0267-704f-44f7-8f52-0344afb86f81.xml, Start, IWDFIoTargetStateManagement::Start, IWDFIoTargetStateManagement interface, Start method, Start method, Start method, IWDFIoTargetStateManagement interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -104,9 +104,9 @@ For more information about I/O targets, see <a href="https://docs.microsoft.com/
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560289">IWDFRemoteTarget::Stop</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfiotargetstatemanagement.md">IWDFIoTargetStateManagement</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560289">IWDFRemoteTarget::Stop</a>
 
  
 

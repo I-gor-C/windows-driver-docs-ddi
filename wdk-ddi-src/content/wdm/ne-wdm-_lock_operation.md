@@ -1,6 +1,6 @@
 ---
 UID : NE:wdm._LOCK_OPERATION
-title : _LOCK_OPERATION
+title : "_LOCK_OPERATION"
 author : windows-driver-content
 description : The LOCK_OPERATION enumeration specifies the type of access that is appropriate for a type of I/O operation.
 old-location : ifsk\lock_operation.htm
@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 25b2dd6a-2e20-4221-bef4-0001bbaae1d5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.lock_operation, IoModifyAccess, wdm/IoWriteAccess, wdm/IoReadAccess, wdm/IoModifyAccess, IoReadAccess, LOCK_OPERATION, IoWriteAccess, _LOCK_OPERATION, LOCK_OPERATION enumeration [Installable File System Drivers], wdm/LOCK_OPERATION
+ms.keywords : LOCK_OPERATION enumeration [Installable File System Drivers], IoReadAccess, IoWriteAccess, wdm/IoWriteAccess, wdm/LOCK_OPERATION, wdm/IoModifyAccess, ifsk.lock_operation, wdm/IoReadAccess, _LOCK_OPERATION, LOCK_OPERATION, IoModifyAccess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -82,9 +82,9 @@ typedef enum  {
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltdecodeparameters.md">FltDecodeParameters</a>
+
+<a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
 
  
 

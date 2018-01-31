@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 9cd7c366-1745-45b0-b9e9-87a259110621
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audpc-routines_1a63a1fa-c80a-4fe4-87d6-95543e6e2f1d.xml, PcRegisterIoTimeout function [Audio Devices], portcls/PcRegisterIoTimeout, PcRegisterIoTimeout, audio.pcregisteriotimeout
+ms.keywords : audpc-routines_1a63a1fa-c80a-4fe4-87d6-95543e6e2f1d.xml, PcRegisterIoTimeout function [Audio Devices], audio.pcregisteriotimeout, PcRegisterIoTimeout, portcls/PcRegisterIoTimeout
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

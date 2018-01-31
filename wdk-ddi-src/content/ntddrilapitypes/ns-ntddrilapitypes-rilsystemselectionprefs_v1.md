@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : a2ba47e6-9dec-46b4-ac8b-a863345f228f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILSYSTEMSELECTIONPREFS_V1 structure [Network Drivers Starting with Windows Vista], netvista.rilsystemselectionprefs_v1, RILSYSTEMSELECTIONPREFS_V1, *LPRILSYSTEMSELECTIONPREFS_V1, ntddrilapitypes/RILSYSTEMSELECTIONPREFS_V1
+ms.keywords : RILSYSTEMSELECTIONPREFS_V1 structure [Network Drivers Starting with Windows Vista], RILSYSTEMSELECTIONPREFS_V1, *LPRILSYSTEMSELECTIONPREFS_V1, ntddrilapitypes/RILSYSTEMSELECTIONPREFS_V1, netvista.rilsystemselectionprefs_v1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILSYSTEMSELECTIONPREFS_V1, *LPRILSYSTEMSELECTIONPREFS_V1
+req.typenames : "*LPRILSYSTEMSELECTIONPREFS_V1, RILSYSTEMSELECTIONPREFS_V1"
 ---
 
 # RILSYSTEMSELECTIONPREFS_V1 structure

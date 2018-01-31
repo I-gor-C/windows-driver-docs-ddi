@@ -1,6 +1,6 @@
 ---
 UID : NS:printoem._GETINFO_MEMORY
-title : _GETINFO_MEMORY
+title : "_GETINFO_MEMORY"
 author : windows-driver-content
 description : The GETINFO_MEMORY structure is used as input to the UNIFONTOBJ_GetInfo callback function.
 old-location : print\getinfo_memory.htm
@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : d6730599-a8f0-4bea-9ee4-47a60249271d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : printoem/PGETINFO_MEMORY, print.getinfo_memory, printoem/GETINFO_MEMORY, _GETINFO_MEMORY, PGETINFO_MEMROY, PGETINFO_MEMORY, GETINFO_MEMORY structure [Print Devices], print_unidrv-pscript_rendering_d39a4f36-c521-4da4-8f63-5121b344d33a.xml, PGETINFO_MEMORY structure pointer [Print Devices], GETINFO_MEMORY
+ms.keywords : PGETINFO_MEMORY, print.getinfo_memory, printoem/PGETINFO_MEMORY, GETINFO_MEMORY structure [Print Devices], PGETINFO_MEMROY, printoem/GETINFO_MEMORY, GETINFO_MEMORY, print_unidrv-pscript_rendering_d39a4f36-c521-4da4-8f63-5121b344d33a.xml, PGETINFO_MEMORY structure pointer [Print Devices], _GETINFO_MEMORY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PGETINFO_MEMROY, GETINFO_MEMORY
+req.typenames : GETINFO_MEMORY, PGETINFO_MEMROY
 req.product : Windows 10 or later.
 ---
 

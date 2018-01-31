@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddndis._OFFLOAD_ALGO_INFO
-title : _OFFLOAD_ALGO_INFO
+title : "_OFFLOAD_ALGO_INFO"
 author : windows-driver-content
 description : The OFFLOAD_ALGO_INFO structure specifies an algorithm used for a security association (SA).
 old-location : netvista\offload_algo_info.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 119a8c88-f181-40f5-8a12-5d663c5a1534
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : _OFFLOAD_ALGO_INFO, POFFLOAD_ALGO_INFO, 216offload_d10cb479-3fe8-468d-925b-c8358d88ef2b.xml, *POFFLOAD_ALGO_INFO, OFFLOAD_ALGO_INFO structure [Network Drivers Starting with Windows Vista], ntddndis/POFFLOAD_ALGO_INFO, POFFLOAD_ALGO_INFO structure pointer [Network Drivers Starting with Windows Vista], ntddndis/OFFLOAD_ALGO_INFO, OFFLOAD_ALGO_INFO, netvista.offload_algo_info
+ms.keywords : POFFLOAD_ALGO_INFO, 216offload_d10cb479-3fe8-468d-925b-c8358d88ef2b.xml, _OFFLOAD_ALGO_INFO, POFFLOAD_ALGO_INFO structure pointer [Network Drivers Starting with Windows Vista], ntddndis/POFFLOAD_ALGO_INFO, *POFFLOAD_ALGO_INFO, netvista.offload_algo_info, OFFLOAD_ALGO_INFO, OFFLOAD_ALGO_INFO structure [Network Drivers Starting with Windows Vista], ntddndis/OFFLOAD_ALGO_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,6 +70,40 @@ If the algorithm is an integrity algorithm (that is, if the OFFLOAD_ALGO_INFO st
      <b>IntegrityAlgo</b>), 
      <b>algoIdentifier</b> can be one of the following values:
 
+
+
+
+#### OFFLOAD_IPSEC_CONF_NONE
+
+Specifies no confidentiality algorithm. Used for null encryption--that is, when a packet is not
+       encrypted but its ESP header contains authentication information.
+
+
+#### OFFLOAD_IPSEC_CONF_DES
+
+Specifies the DES algorithm.
+
+
+#### OFFLOAD_IPSEC_CONF_3_DES
+
+Specifies the triple-DES algorithm.
+
+
+#### OFFLOAD_IPSEC_INTEGRITY_NONE
+
+Specifies no integrity algorithm. Used when the ESP header contains no authentication
+       information.
+
+
+#### OFFLOAD_IPSEC_INTEGRITY_MD5
+
+Specifies the keyed MD5 algorithm.
+
+
+#### OFFLOAD_IPSEC_INTEGRITY_SHA
+
+Specifies the SHA 1 algorithm.
+
 `algoKeylen`
 
 The length, in bytes, of the key for the algorithm. The key is contained in the buffer at 
@@ -119,9 +153,9 @@ The OFFLOAD_ALGO_INFO structure specifies algorithm information in the
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_offload_security_association.md">OFFLOAD_SECURITY_ASSOCIATION</a>
-
 <a href="..\ntddndis\ns-ntddndis-_offload_ipsec_add_sa.md">OFFLOAD_IPSEC_ADD_SA</a>
+
+<a href="..\ntddndis\ns-ntddndis-_offload_security_association.md">OFFLOAD_SECURITY_ASSOCIATION</a>
 
  
 

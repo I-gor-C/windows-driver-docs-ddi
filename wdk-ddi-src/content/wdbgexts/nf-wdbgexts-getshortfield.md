@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : f5f00e88-b758-4f37-9fe5-5db8f20835b1
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : WdbgExts_Ref_ef67af78-e72f-440c-9ef3-d84b8cca12dc.xml, GetShortField, debugger.getshortfield, GetShortField function [Windows Debugging], wdbgexts/GetShortField
+ms.keywords : WdbgExts_Ref_ef67af78-e72f-440c-9ef3-d84b8cca12dc.xml, debugger.getshortfield, wdbgexts/GetShortField, GetShortField, GetShortField function [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -59,13 +59,51 @@ __inline ULONG64 GetShortField(
 
 The meaning of this parameter depends on the value of <i>StoreAddress</i>.
 
+
+
+
+#### If StoreAddress is non-zero:
+
+Specifies the address of the structure in the target's memory.  This address is used for subsequent calls when <i>StoreAddress</i> is zero. 
+
+
+#### If StoreAddress is zero:
+
+<i>TypeAddress</i> is ignored.  The value of <i>TypeAddress</i> from the last call when <i>StoreAddress</i> was non-zero is used to specify the address of the structure in the target's memory.
+
 `Name`
 
 The meaning of this parameter depends on the value of <i>StoreAddress</i>.
 
+
+
+
+#### If StoreAddress is non-zero:
+
+Specifies the name of the type of the structure at <i>TypeAddress</i>.
+
+
+#### If StoreAddress is zero:
+
+Specifies the name of the member in the structure to read.  The address and type of the structure are remembered from a previous call to this function with <i>StoreAddress</i> not equal to zero.  Submembers can be specified by using a period-separated path, for example, "myfield.mysubfield".
+
 `StoreAddress`
 
 Specifies the mode of this function.
+
+
+
+
+#### If StoreAddress is non-zero:
+
+Causes this function to initialize a structure for reading its members.  The address and type name for the structure is remembered.
+
+If the bit value 0x2 is set in <i>StoreAddress</i>, the address <i>TypeAddress</i> is considered a physical address; otherwise, it is considered a virtual address. 
+
+
+#### If StoreAddress is zero:
+
+Causes this function to read a member from a previously initialized structure.
 
 
 ## Return Value
@@ -197,11 +235,11 @@ If this macro succeeds, it returns the value zero.  If it fails because the call
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550953">InitTypeRead</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553539">ReadField</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550957">InitTypeReadPhysical</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550953">InitTypeRead</a>
 
  
 

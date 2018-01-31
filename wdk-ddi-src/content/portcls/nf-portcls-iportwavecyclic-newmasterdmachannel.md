@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : bbd2b6e2-e332-49ae-aa18-490fd5631479
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortWaveCyclic::NewMasterDmaChannel, NewMasterDmaChannel method [Audio Devices], NewMasterDmaChannel method [Audio Devices], IPortWaveCyclic interface, audmp-routines_831f81bd-545d-47e5-ae1a-8ecaa631497c.xml, portcls/IPortWaveCyclic::NewMasterDmaChannel, IPortWaveCyclic, NewMasterDmaChannel, IPortWaveCyclic interface [Audio Devices], NewMasterDmaChannel method, audio.iportwavecyclic_newmasterdmachannel
+ms.keywords : audmp-routines_831f81bd-545d-47e5-ae1a-8ecaa631497c.xml, audio.iportwavecyclic_newmasterdmachannel, IPortWaveCyclic interface [Audio Devices], NewMasterDmaChannel method, portcls/IPortWaveCyclic::NewMasterDmaChannel, NewMasterDmaChannel, IPortWaveCyclic::NewMasterDmaChannel, IPortWaveCyclic, NewMasterDmaChannel method [Audio Devices], IPortWaveCyclic interface, NewMasterDmaChannel method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -118,17 +118,17 @@ The <i>DmaChannel</i>, <i>OuterUnknown</i>, and <i>ResourceList</i> parameters f
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-idmachannelslave.md">IDmaChannelSlave</a>
-
 <a href="..\wdm\ns-wdm-_device_description.md">DEVICE_DESCRIPTION</a>
-
-<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
-
-<a href="..\portcls\nn-portcls-iportwavecyclic.md">IPortWaveCyclic</a>
 
 <a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a>
 
+<a href="..\portcls\nn-portcls-iportwavecyclic.md">IPortWaveCyclic</a>
+
+<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536902">IPortWaveCyclic::NewSlaveDmaChannel</a>
+
+<a href="..\portcls\nn-portcls-idmachannelslave.md">IDmaChannelSlave</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 44839b9e-f206-49e6-a9f6-14e79d1e0ae2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : AllocatePagesForMdl method [Audio Devices], IPortWaveRTStream::AllocatePagesForMdl, AllocatePagesForMdl, IPortWaveRTStream, audio.iportwavertstream_allocatepagesformdl, portcls/IPortWaveRTStream::AllocatePagesForMdl, audmp-routines_2722e5c2-7fd2-4b72-acbf-474313bca229.xml, IPortWaveRTStream interface [Audio Devices], AllocatePagesForMdl method, AllocatePagesForMdl method [Audio Devices], IPortWaveRTStream interface
+ms.keywords : IPortWaveRTStream::AllocatePagesForMdl, audmp-routines_2722e5c2-7fd2-4b72-acbf-474313bca229.xml, AllocatePagesForMdl, portcls/IPortWaveRTStream::AllocatePagesForMdl, audio.iportwavertstream_allocatepagesformdl, AllocatePagesForMdl method [Audio Devices], AllocatePagesForMdl method [Audio Devices], IPortWaveRTStream interface, IPortWaveRTStream, IPortWaveRTStream interface [Audio Devices], AllocatePagesForMdl method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method

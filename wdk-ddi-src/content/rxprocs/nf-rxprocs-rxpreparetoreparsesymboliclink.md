@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 6a05b25f-e529-469a-8bfc-e75c0f7a9a8a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rxpreparetoreparsesymboliclink, rxprocs/RxPrepareToReparseSymbolicLink, RxPrepareToReparseSymbolicLink, rxref_6726dffd-ccae-43e0-98da-14dc0d11c7c2.xml, RxPrepareToReparseSymbolicLink routine [Installable File System Drivers]
+ms.keywords : rxprocs/RxPrepareToReparseSymbolicLink, RxPrepareToReparseSymbolicLink routine [Installable File System Drivers], rxref_6726dffd-ccae-43e0-98da-14dc0d11c7c2.xml, ifsk.rxpreparetoreparsesymboliclink, RxPrepareToReparseSymbolicLink
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
+req.typenames : RX_CONTEXT, *PRX_CONTEXT
 req.product : Windows 10 or later.
 ---
 
@@ -142,7 +142,7 @@ The value of the <i>ReparseRequired</i> parameter assumes significance only if S
 | **Minimum UMDF version** |  |
 | **Header** | rxprocs.h (include Rxprocs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

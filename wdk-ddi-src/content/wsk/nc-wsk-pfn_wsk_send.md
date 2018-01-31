@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WNODE_HEADER, *PWNODE_HEADER
+req.typenames : "*PWNODE_HEADER, WNODE_HEADER"
 req.product : Windows 10 or later.
 ---
 
@@ -75,6 +75,19 @@ A pointer to an initialized
 `Flags`
 
 A ULONG value that contains a bitwise OR of a combination of the following flags:
+     
+
+
+
+
+#### WSK_FLAG_NODELAY
+
+Directs the underlying transport to immediately send the data, and any previously queued data,
+       to the remote application without delay.
+       
+
+This flag is supported by the Microsoft TCP/IP transport protocol. This flag might not be supported
+       by other transport protocols.
 
 `Irp`
 
@@ -198,25 +211,25 @@ The WSK subsystem does not perform any buffering of data when it sends data over
 | **Minimum UMDF version** |  |
 | **Header** | wsk.h (include Wsk.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wsk\ns-wsk-_wsk_provider_stream_dispatch.md">WSK_PROVIDER_STREAM_DISPATCH</a>
-
 <mshelp:link keywords="netvista.wsk_provider_connection_dispatch" tabindex="0"><b>
    WSK_PROVIDER_CONNECTION_DISPATCH</b></mshelp:link>
 
+<a href="..\wsk\ns-wsk-_wsk_provider_stream_dispatch.md">WSK_PROVIDER_STREAM_DISPATCH</a>
+
 <a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
-
-<a href="..\wsk\nc-wsk-pfn_wsk_receive_event.md">WskReceiveEvent</a>
-
-<a href="..\wsk\nc-wsk-pfn_wsk_receive.md">WskReceive</a>
 
 <a href="..\wsk\ns-wsk-_wsk_buf.md">WSK_BUF</a>
 
 <a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
+
+<a href="..\wsk\nc-wsk-pfn_wsk_receive_event.md">WskReceiveEvent</a>
+
+<a href="..\wsk\nc-wsk-pfn_wsk_receive.md">WskReceive</a>
 
  
 

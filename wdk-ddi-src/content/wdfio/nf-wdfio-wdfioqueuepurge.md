@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : bd6e9583-774f-4ca2-9c23-4d32b233daff
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIoQueuePurge method, kmdf.wdfioqueuepurge, PFN_WDFIOQUEUEPURGE, WdfIoQueuePurge, wdfio/WdfIoQueuePurge, wdf.wdfioqueuepurge, DFQueueObjectRef_611371f2-862e-41c5-9f8f-d0a61c7e731e.xml
+ms.keywords : PFN_WDFIOQUEUEPURGE, wdfio/WdfIoQueuePurge, kmdf.wdfioqueuepurge, wdf.wdfioqueuepurge, WdfIoQueuePurge, WdfIoQueuePurge method, DFQueueObjectRef_611371f2-862e-41c5-9f8f-d0a61c7e731e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -100,7 +100,7 @@ For more information about the <b>WdfIoQueuePurge</b> method, see <a href="https
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfio.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | ChangeQueueState, DriverCreate, EvtSurpriseRemoveNoSuspendQueue, KmdfIrql, KmdfIrql2, NoCancelFromEvtSurpriseRemove |
 
 ## See Also

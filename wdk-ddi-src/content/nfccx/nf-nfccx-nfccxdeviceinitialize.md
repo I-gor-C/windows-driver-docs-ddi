@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : E9282552-93AB-4380-A270-1A538CCF8C0E
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : nfpdrivers._nfccxdeviceinitialize, NfcCxDeviceInitialize method [Near-Field Proximity Drivers], NfcCxDeviceInitialize, nfccx/NfcCxDeviceInitialize
+ms.keywords : NfcCxDeviceInitialize, NfcCxDeviceInitialize method [Near-Field Proximity Drivers], nfpdrivers._nfccxdeviceinitialize, nfccx/NfcCxDeviceInitialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,9 +76,9 @@ If the operation succeeds, the function returns STATUS_SUCCESS.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a>
-
 <a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a>
+
+<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a>
 
  
 

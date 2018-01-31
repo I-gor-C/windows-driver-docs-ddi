@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 10d08fe7-13ab-4bdb-ab91-bac3822de8ee
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : strmini/StreamClassCompleteRequestAndMarkQueueReady, StreamClassCompleteRequestAndMarkQueueReady, stream.streamclasscompleterequestandmarkqueueready, strclass-routines_c94691a3-a806-4b2a-a566-7a4a9d209a6c.xml, StreamClassCompleteRequestAndMarkQueueReady routine [Streaming Media Devices]
+ms.keywords : stream.streamclasscompleterequestandmarkqueueready, StreamClassCompleteRequestAndMarkQueueReady routine [Streaming Media Devices], strmini/StreamClassCompleteRequestAndMarkQueueReady, strclass-routines_c94691a3-a806-4b2a-a566-7a4a9d209a6c.xml, StreamClassCompleteRequestAndMarkQueueReady
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : STREAM_PRIORITY, *PSTREAM_PRIORITY
+req.typenames : "*PSTREAM_PRIORITY, STREAM_PRIORITY"
 req.product : Windows 10 or later.
 ---
 

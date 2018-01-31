@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 09473106-3ab8-43ee-a424-2930b6bd3fcf
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugRegisters2::GetFrameOffset, debugger.getframeoffset, GetFrameOffset method [Windows Debugging], IDebugRegisters2 interface, GetFrameOffset method [Windows Debugging], IDebugRegisters interface, IDebugRegisters2 interface [Windows Debugging], GetFrameOffset method, dbgeng/IDebugRegisters::GetFrameOffset, GetFrameOffset method [Windows Debugging], IDebugRegisters::GetFrameOffset, IDebugRegisters2, IDebugRegisters_c3f31f5b-76d4-4910-b1a1-f3050c20e815.xml, IDebugRegisters2::GetFrameOffset, IDebugRegisters interface [Windows Debugging], GetFrameOffset method, GetFrameOffset
+ms.keywords : GetFrameOffset, IDebugRegisters_c3f31f5b-76d4-4910-b1a1-f3050c20e815.xml, IDebugRegisters interface [Windows Debugging], GetFrameOffset method, IDebugRegisters::GetFrameOffset, IDebugRegisters2::GetFrameOffset, debugger.getframeoffset, IDebugRegisters2 interface [Windows Debugging], GetFrameOffset method, dbgeng/IDebugRegisters2::GetFrameOffset, GetFrameOffset method [Windows Debugging], IDebugRegisters2 interface, dbgeng/IDebugRegisters::GetFrameOffset, IDebugRegisters2, GetFrameOffset method [Windows Debugging], IDebugRegisters interface, GetFrameOffset method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -100,11 +100,11 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546815">GetFrameOffset2</a>
+<a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRegisters</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546815">GetFrameOffset2</a>
 
  
 

@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : CONNECT_DATA, *PCONNECT_DATA
+req.typenames : "*PCONNECT_DATA, CONNECT_DATA"
 ---
 
 

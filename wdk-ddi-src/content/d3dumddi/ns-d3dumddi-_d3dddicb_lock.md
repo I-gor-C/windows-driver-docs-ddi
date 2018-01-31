@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._D3DDDICB_LOCK
-title : _D3DDDICB_LOCK
+title : "_D3DDDICB_LOCK"
 author : windows-driver-content
 description : The D3DDDICB_LOCK structure describes parameters for locking an allocation.
 old-location : display\d3dddicb_lock.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e8d563fe-937a-48cb-9c7b-f282d12a9fcf
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDICB_LOCK, display.d3dddicb_lock, D3DDDICB_LOCK structure [Display Devices], D3D_param_Structs_84ac7e9c-e228-4ace-9e1b-74af8c52af85.xml, D3DDDICB_LOCK, _D3DDDICB_LOCK
+ms.keywords : display.d3dddicb_lock, d3dumddi/D3DDDICB_LOCK, _D3DDDICB_LOCK, D3D_param_Structs_84ac7e9c-e228-4ace-9e1b-74af8c52af85.xml, D3DDDICB_LOCK, D3DDDICB_LOCK structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -104,11 +104,11 @@ If the <b>Discard</b> bit-field flag is set in the <b>Flags</b> member, the vide
 
 ## See Also
 
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_acquireswizzlingrange.md">DxgkDdiAcquireSwizzlingRange</a>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a>
 
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_lockflags.md">D3DDDICB_LOCKFLAGS</a>
-
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_acquireswizzlingrange.md">DxgkDdiAcquireSwizzlingRange</a>
 
  
 

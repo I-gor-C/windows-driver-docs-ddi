@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : 
 req.dll : 
-req.irql : _requires_same_
+req.irql : "_requires_same_"
 topictype : 
 apitype : 
 apilocation : 
@@ -79,5 +79,5 @@ This DDSI function does not compulsorily have to be implemented by the driver be
 | **Minimum UMDF version** |  |
 | **Header** | sensorscx.h |
 | **Library** |  |
-| **IRQL** | _requires_same_ |
+| **IRQL** | "_requires_same_" |
 | **DDI compliance rules** |  |

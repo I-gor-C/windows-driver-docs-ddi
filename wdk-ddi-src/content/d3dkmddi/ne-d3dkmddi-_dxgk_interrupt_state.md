@@ -1,14 +1,14 @@
 ---
 UID : NE:d3dkmddi._DXGK_INTERRUPT_STATE
-title : _DXGK_INTERRUPT_STATE
+title : "_DXGK_INTERRUPT_STATE"
 author : windows-driver-content
-description : .
+description : "."
 old-location : display\dxgk_interrupt_state.htm
 old-project : display
 ms.assetid : C72DF96B-5D12-4AC0-8FBB-904E087807DB
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGK_INTERRUPT_ENABLE, DXGK_INTERRUPT_STATE, d3dkmddi/DXGK_INTERRUPT_DISABLE, DXGK_INTERRUPT_STATE enumeration [Display Devices], d3dkmddi/DXGK_INTERRUPT_STATE, DXGK_INTERRUPT_ENABLE, _DXGK_INTERRUPT_STATE, display.dxgk_interrupt_state, DXGK_INTERRUPT_DISABLE
+ms.keywords : d3dkmddi/DXGK_INTERRUPT_STATE, DXGK_INTERRUPT_STATE enumeration [Display Devices], DXGK_INTERRUPT_ENABLE, d3dkmddi/DXGK_INTERRUPT_ENABLE, DXGK_INTERRUPT_STATE, _DXGK_INTERRUPT_STATE, DXGK_INTERRUPT_DISABLE, d3dkmddi/DXGK_INTERRUPT_DISABLE, display.dxgk_interrupt_state
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum

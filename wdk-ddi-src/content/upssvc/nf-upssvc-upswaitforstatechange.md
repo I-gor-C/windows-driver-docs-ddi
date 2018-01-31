@@ -8,7 +8,7 @@ old-project : battery
 ms.assetid : ac78dda4-6d14-441b-8e79-3245f7253875
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : battery.upswaitforstatechange, UPSWaitForStateChange function [Battery Devices], upssvc/UPSWaitForStateChange, UPS_fns_8921d5d9-c4d0-496f-b531-a697ac06da93.xml, UPSWaitForStateChange
+ms.keywords : UPS_fns_8921d5d9-c4d0-496f-b531-a697ac06da93.xml, UPSWaitForStateChange function [Battery Devices], battery.upswaitforstatechange, UPSWaitForStateChange, upssvc/UPSWaitForStateChange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -57,6 +57,28 @@ void UPSWaitForStateChange(
 `aCurrentState`
 
 Specifies the UPS state on which to wait. When the state of the UPS system changes from the specified state to any other state, the function returns. The specified value can be one of the following:
+
+
+
+
+#### UPS_ONLINE
+
+Utility-supplied power is normal.
+
+
+#### UPS_ONBATTERY
+
+Utility-supplied power is inadequate, and the UPS batteries are discharging.
+
+
+#### UPS_LOWBATTERY
+
+Utility-supplied power is inadequate, and the UPS batteries are critically low.
+
+
+#### UPS_NOCOMM
+
+Communication with the UPS is not currently established.
 
 `anInterval`
 

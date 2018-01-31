@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 0C95831F-2E20-461C-8478-9A40C1F063E2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxUsbDeviceRemoteWakeNotification method [Buses], buses._ucxusbdeviceremotewakenotification, UcxUsbDeviceRemoteWakeNotification, ucxusbdevice/UcxUsbDeviceRemoteWakeNotification
+ms.keywords : ucxusbdevice/UcxUsbDeviceRemoteWakeNotification, UcxUsbDeviceRemoteWakeNotification method [Buses], UcxUsbDeviceRemoteWakeNotification, buses._ucxusbdeviceremotewakenotification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,7 +80,7 @@ This function completes the pending remote wake request from the request driver 
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

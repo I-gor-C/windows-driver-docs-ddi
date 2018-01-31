@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBFN_USB_STRING, USBFN_USB_STRING"
+req.typenames : USBFN_USB_STRING, *PUSBFN_USB_STRING
 req.product : Windows 10 or later.
 ---
 
@@ -83,9 +83,9 @@ If the length of the entire descriptor set is greater than the  specified output
 
 ## See Also
 
-<a href="..\usbfnbase\ns-usbfnbase-_usbfn_interface_info.md">USBFN_INTERFACE_INFO</a>
-
 <a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_activate_usb_bus.md">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a>
+
+<a href="..\usbfnbase\ns-usbfnbase-_usbfn_interface_info.md">USBFN_INTERFACE_INFO</a>
 
  
 

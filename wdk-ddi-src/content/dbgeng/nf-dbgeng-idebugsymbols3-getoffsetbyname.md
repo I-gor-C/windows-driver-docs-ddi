@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : b6915215-3654-446b-b30d-b891f439a379
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSymbols2::GetOffsetByName, dbgeng/IDebugSymbols3::GetOffsetByName, GetOffsetByName, GetOffsetByName method [Windows Debugging], IDebugSymbols interface, IDebugSymbols interface [Windows Debugging], GetOffsetByName method, IDebugSymbols2::GetOffsetByName, IDebugSymbols::GetOffsetByName, GetOffsetByName method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols::GetOffsetByName, IDebugSymbols3 interface [Windows Debugging], GetOffsetByName method, IDebugSymbols3::GetOffsetByName, IDebugSymbols_ef72e546-d27f-4cdf-9eeb-53151680c2d1.xml, GetOffsetByName method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols2 interface [Windows Debugging], GetOffsetByName method, IDebugSymbols3, debugger.getoffsetbyname, GetOffsetByName method [Windows Debugging]
+ms.keywords : IDebugSymbols interface [Windows Debugging], GetOffsetByName method, IDebugSymbols3 interface [Windows Debugging], GetOffsetByName method, IDebugSymbols_ef72e546-d27f-4cdf-9eeb-53151680c2d1.xml, dbgeng/IDebugSymbols::GetOffsetByName, IDebugSymbols2::GetOffsetByName, dbgeng/IDebugSymbols3::GetOffsetByName, dbgeng/IDebugSymbols2::GetOffsetByName, IDebugSymbols2 interface [Windows Debugging], GetOffsetByName method, debugger.getoffsetbyname, IDebugSymbols::GetOffsetByName, GetOffsetByName method [Windows Debugging], IDebugSymbols interface, GetOffsetByName method [Windows Debugging], IDebugSymbols3, GetOffsetByName, IDebugSymbols3::GetOffsetByName, GetOffsetByName method [Windows Debugging], IDebugSymbols2 interface, GetOffsetByName method [Windows Debugging], IDebugSymbols3 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -129,13 +129,13 @@ For more information about symbols and symbol names, see <a href="https://msdn.m
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547183">GetNameByOffset</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547183">GetNameByOffset</a>
 
  
 

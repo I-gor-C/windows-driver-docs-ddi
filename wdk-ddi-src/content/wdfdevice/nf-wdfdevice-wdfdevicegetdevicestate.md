@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 510197cf-8eab-4e1a-8b51-c1c08c58532b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceGetDeviceState method, wdf.wdfdevicegetdevicestate, PFN_WDFDEVICEGETDEVICESTATE, DFDeviceObjectGeneralRef_459b9aad-7503-4319-be67-4b713a32559e.xml, kmdf.wdfdevicegetdevicestate, WdfDeviceGetDeviceState, wdfdevice/WdfDeviceGetDeviceState
+ms.keywords : wdf.wdfdevicegetdevicestate, DFDeviceObjectGeneralRef_459b9aad-7503-4319-be67-4b713a32559e.xml, kmdf.wdfdevicegetdevicestate, PFN_WDFDEVICEGETDEVICESTATE, wdfdevice/WdfDeviceGetDeviceState, WdfDeviceGetDeviceState, WdfDeviceGetDeviceState method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,7 +81,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also

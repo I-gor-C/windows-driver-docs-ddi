@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : C0D20E2D-5895-4FD1-9F03-9E5D1C783992
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SerCx2InitializeDevice, 2/SerCx2InitializeDevice, serports.sercx2initializedevice, SerCx2InitializeDevice method [Serial Ports]
+ms.keywords : serports.sercx2initializedevice, SerCx2InitializeDevice, 2/SerCx2InitializeDevice, SerCx2InitializeDevice method [Serial Ports]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SERCX_STATUS, *PSERCX_STATUS
+req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
 req.product : Windows 10 or later.
 ---
 
@@ -149,9 +149,9 @@ If the driver calls the <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetreque
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetrequestattributes.md">WdfDeviceInitSetRequestAttributes</a>
 
-<a href="..\sercx\ns-sercx-_sercx2_config.md">SERCX2_CONFIG</a>
-
 <a href="..\sercx\nf-sercx-sercx2initializedeviceinit.md">SerCx2InitializeDeviceInit</a>
+
+<a href="..\sercx\ns-sercx-_sercx2_config.md">SERCX2_CONFIG</a>
 
  
 

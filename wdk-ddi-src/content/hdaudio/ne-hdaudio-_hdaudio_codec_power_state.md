@@ -1,6 +1,6 @@
 ---
 UID : NE:hdaudio._HDAUDIO_CODEC_POWER_STATE
-title : _HDAUDIO_CODEC_POWER_STATE
+title : "_HDAUDIO_CODEC_POWER_STATE"
 author : windows-driver-content
 description : The HDAUDIO_CODEC_POWER_STATE enumeration defines constants that specify the different power states that HD Audio codecs can support. All states are from DEVICE_POWER_STATE except PowerCodecD3Cold.
 old-location : audio\hdaudio_codec_power_state.htm
@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 4C002B40-AD27-4FE2-B07F-5E9715E6CF1F
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : hdaudio/PowerCodecUnspecified, PowerCodecD3, hdaudio/HDAUDIO_CODEC_POWER_STATE, hdaudio/PowerCodecD2, PowerCodecD3Cold, hdaudio/PowerCodecD3, hdaudio/PowerCodecMaximum, hdaudio/PHDAUDIO_CODEC_POWER_STATE, PowerCodecMaximum, PowerCodecD0, PowerCodecD1, HDAUDIO_CODEC_POWER_STATE, hdaudio/PowerCodecD3Cold, PowerCodecUnspecified, HDAUDIO_CODEC_POWER_STATE enumeration [Audio Devices], audio.hdaudio_codec_power_state, PHDAUDIO_CODEC_POWER_STATE enumeration pointer [Audio Devices], _HDAUDIO_CODEC_POWER_STATE, hdaudio/PowerCodecD0, hdaudio/PowerCodecD1, PHDAUDIO_CODEC_POWER_STATE, *PHDAUDIO_CODEC_POWER_STATE, PowerCodecD2
+ms.keywords : PowerCodecD0, PowerCodecD3Cold, *PHDAUDIO_CODEC_POWER_STATE, hdaudio/PowerCodecD2, hdaudio/HDAUDIO_CODEC_POWER_STATE, PowerCodecMaximum, hdaudio/PowerCodecD0, _HDAUDIO_CODEC_POWER_STATE, PowerCodecUnspecified, PowerCodecD1, hdaudio/PowerCodecD3Cold, hdaudio/PowerCodecD3, HDAUDIO_CODEC_POWER_STATE, hdaudio/PHDAUDIO_CODEC_POWER_STATE, PHDAUDIO_CODEC_POWER_STATE enumeration pointer [Audio Devices], hdaudio/PowerCodecD1, PHDAUDIO_CODEC_POWER_STATE, hdaudio/PowerCodecMaximum, hdaudio/PowerCodecUnspecified, audio.hdaudio_codec_power_state, PowerCodecD2, HDAUDIO_CODEC_POWER_STATE enumeration [Audio Devices], PowerCodecD3
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum

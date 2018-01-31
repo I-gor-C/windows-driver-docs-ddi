@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 656a0c58-dd12-4417-a781-464d1670592c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfFdoInitSetDefaultChildListConfig, wdffdo/WdfFdoInitSetDefaultChildListConfig, WdfFdoInitSetDefaultChildListConfig method, PFN_WDFFDOINITSETDEFAULTCHILDLISTCONFIG, wdf.wdffdoinitsetdefaultchildlistconfig, DFDeviceObjectFdoPdoRef_676a2185-db9b-498e-84e3-52b8ac32584c.xml, kmdf.wdffdoinitsetdefaultchildlistconfig
+ms.keywords : wdf.wdffdoinitsetdefaultchildlistconfig, DFDeviceObjectFdoPdoRef_676a2185-db9b-498e-84e3-52b8ac32584c.xml, kmdf.wdffdoinitsetdefaultchildlistconfig, PFN_WDFFDOINITSETDEFAULTCHILDLISTCONFIG, wdffdo/WdfFdoInitSetDefaultChildListConfig, WdfFdoInitSetDefaultChildListConfig, WdfFdoInitSetDefaultChildListConfig method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
+req.typenames : "*PWDF_DRIVER_VERSION_AVAILABLE_PARAMS, WDF_DRIVER_VERSION_AVAILABLE_PARAMS"
 req.product : Windows 10 or later.
 ---
 

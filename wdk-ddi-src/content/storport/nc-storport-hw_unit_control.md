@@ -795,6 +795,21 @@ For the structures that contain the STOR_POWER_CONTROL_HEADER header, it has the
 </table></span></div>
 
 
+#### Version
+
+The version of the parent structure.
+
+
+#### Size
+
+The size, in bytes, of the parent structure.
+
+
+#### Address
+
+The address of the unit the control operation is specified for.
+
+
 ## Return Value
 
 Depending on the control type, <b>HwStorUnitControl</b> returns one of the following SCSI_UNIT_CONTROL_STATUS values:

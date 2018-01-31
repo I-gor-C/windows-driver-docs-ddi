@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f8992245-42db-4ca8-afdc-e123adc0a40d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfpdoinitassigndeviceid, PFN_WDFPDOINITASSIGNDEVICEID, wdfpdo/WdfPdoInitAssignDeviceID, WdfPdoInitAssignDeviceID, WdfPdoInitAssignDeviceID method, DFDeviceObjectFdoPdoRef_c0885107-9e40-4c57-ab50-c757ea58b2f9.xml, wdf.wdfpdoinitassigndeviceid
+ms.keywords : WdfPdoInitAssignDeviceID method, kmdf.wdfpdoinitassigndeviceid, PFN_WDFPDOINITASSIGNDEVICEID, DFDeviceObjectFdoPdoRef_c0885107-9e40-4c57-ab50-c757ea58b2f9.xml, wdfpdo/WdfPdoInitAssignDeviceID, WdfPdoInitAssignDeviceID, wdf.wdfpdoinitassigndeviceid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -119,11 +119,11 @@ The driver must call <b>WdfPdoInitAssignDeviceID</b> before calling <a href="..\
 
 ## See Also
 
-<a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitassigninstanceid.md">WdfPdoInitAssignInstanceID</a>
+<a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitaddhardwareid.md">WdfPdoInitAddHardwareID</a>
 
 <a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitaddcompatibleid.md">WdfPdoInitAddCompatibleID</a>
 
-<a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitaddhardwareid.md">WdfPdoInitAddHardwareID</a>
+<a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitassigninstanceid.md">WdfPdoInitAssignInstanceID</a>
 
  
 

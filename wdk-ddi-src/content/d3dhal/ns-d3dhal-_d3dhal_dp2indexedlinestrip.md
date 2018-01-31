@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dhal._D3DHAL_DP2INDEXEDLINESTRIP
-title : _D3DHAL_DP2INDEXEDLINESTRIP
+title : "_D3DHAL_DP2INDEXEDLINESTRIP"
 author : windows-driver-content
 description : D3DHAL_DP2INDEXEDLINESTRIP is parsed from the command buffer by the D3dDrawPrimitives2 callback when the D3DHAL_DP2COMMAND structure's bCommand member is set to D3DDP2OP_INDEXEDLINESTRIP, and is used to render a sequence of connected line segments using vertex indices.
 old-location : display\d3dhal_dp2indexedlinestrip.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 92809162-c39e-4dbb-9ab1-a5b6535d5beb
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DHAL_DP2INDEXEDLINESTRIP, d3dhal/D3DHAL_DP2INDEXEDLINESTRIP, display.d3dhal_dp2indexedlinestrip, _D3DHAL_DP2INDEXEDLINESTRIP, d3dhal/LPD3DHAL_DP2INDEXEDLINESTRIP, LPD3DHAL_DP2INDEXEDLINESTRIP structure pointer [Display Devices], D3DHAL_DP2INDEXEDLINESTRIP structure [Display Devices], *LPD3DHAL_DP2INDEXEDLINESTRIP, LPD3DHAL_DP2INDEXEDLINESTRIP, d3dstrct_ab23071d-9180-48d0-b14c-7c8005652968.xml
+ms.keywords : LPD3DHAL_DP2INDEXEDLINESTRIP structure pointer [Display Devices], LPD3DHAL_DP2INDEXEDLINESTRIP, *LPD3DHAL_DP2INDEXEDLINESTRIP, d3dstrct_ab23071d-9180-48d0-b14c-7c8005652968.xml, D3DHAL_DP2INDEXEDLINESTRIP, d3dhal/D3DHAL_DP2INDEXEDLINESTRIP, _D3DHAL_DP2INDEXEDLINESTRIP, D3DHAL_DP2INDEXEDLINESTRIP structure [Display Devices], d3dhal/LPD3DHAL_DP2INDEXEDLINESTRIP, display.d3dhal_dp2indexedlinestrip
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -78,15 +78,15 @@ The following figure shows a portion of a sample command buffer containing a D3D
 
 ## See Also
 
+<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2startvertex.md">D3DHAL_DP2STARTVERTEX</a>
+
 D3DDP2OP_INDEXEDLINESTRIP
+
+<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
 
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_drawprimitives2data.md">D3DHAL_DRAWPRIMITIVES2DATA</a>
 
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-
-<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
-
-<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2startvertex.md">D3DHAL_DP2STARTVERTEX</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b0107cb1-4828-4ede-813e-934b929c9874
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/IoReportTargetDeviceChange, k104_489fe1b0-1d73-4ed6-99ab-ae8f4bee52d1.xml, IoReportTargetDeviceChange routine [Kernel-Mode Driver Architecture], kernel.ioreporttargetdevicechange, IoReportTargetDeviceChange
+ms.keywords : k104_489fe1b0-1d73-4ed6-99ab-ae8f4bee52d1.xml, IoReportTargetDeviceChange routine [Kernel-Mode Driver Architecture], wdm/IoReportTargetDeviceChange, kernel.ioreporttargetdevicechange, IoReportTargetDeviceChange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

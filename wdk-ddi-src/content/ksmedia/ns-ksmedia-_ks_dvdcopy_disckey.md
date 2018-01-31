@@ -1,6 +1,6 @@
 ---
 UID : NS:ksmedia._KS_DVDCOPY_DISCKEY
-title : _KS_DVDCOPY_DISCKEY
+title : "_KS_DVDCOPY_DISCKEY"
 author : windows-driver-content
 description : The KS_DVDCOPY_DISCKEY structure is used to describe the disc key information for the DVD copyright protection authentication process.
 old-location : stream\ks_dvdcopy_disckey.htm
@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : c7015bb6-1dd1-46b7-81b3-1762e5286c74
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PKS_DVDCOPY_DISCKEY, *PKS_DVDCOPY_DISCKEY, dvdref_125d99fe-df42-4e9a-b21c-198c968ff88b.xml, KS_DVDCOPY_DISCKEY, PKS_DVDCOPY_DISCKEY structure pointer [Streaming Media Devices], ksmedia/PKS_DVDCOPY_DISCKEY, stream.ks_dvdcopy_disckey, ksmedia/KS_DVDCOPY_DISCKEY, KS_DVDCOPY_DISCKEY structure [Streaming Media Devices], _KS_DVDCOPY_DISCKEY
+ms.keywords : ksmedia/PKS_DVDCOPY_DISCKEY, _KS_DVDCOPY_DISCKEY, PKS_DVDCOPY_DISCKEY, stream.ks_dvdcopy_disckey, PKS_DVDCOPY_DISCKEY structure pointer [Streaming Media Devices], *PKS_DVDCOPY_DISCKEY, dvdref_125d99fe-df42-4e9a-b21c-198c968ff88b.xml, KS_DVDCOPY_DISCKEY structure [Streaming Media Devices], KS_DVDCOPY_DISCKEY, ksmedia/KS_DVDCOPY_DISCKEY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

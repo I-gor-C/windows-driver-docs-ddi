@@ -1,6 +1,6 @@
 ---
 UID : NS:videoagp._VIDEO_PORT_AGP_SERVICES
-title : _VIDEO_PORT_AGP_SERVICES
+title : "_VIDEO_PORT_AGP_SERVICES"
 author : windows-driver-content
 description : The VIDEO_PORT_AGP_SERVICES structure is obsolete and is supported only for backward compatibility with existing drivers. In its place, driver writers should use VIDEO_PORT_AGP_INTERFACE.
 old-location : display\video_port_agp_services.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3e7d8f8e-a213-48ca-8a90-5d861271f6a2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES structure [Display Devices], VIDEO_PORT_AGP_SERVICES, videoagp/VIDEO_PORT_AGP_SERVICES, PVIDEO_PORT_AGP_SERVICES structure pointer [Display Devices], display.video_port_agp_services, videoagp/PVIDEO_PORT_AGP_SERVICES, _VIDEO_PORT_AGP_SERVICES, Video_Structs_a667f879-7c09-4f48-9b23-920bb68a08cb.xml, PVIDEO_PORT_AGP_SERVICES"
+ms.keywords : videoagp/VIDEO_PORT_AGP_SERVICES, Video_Structs_a667f879-7c09-4f48-9b23-920bb68a08cb.xml, VIDEO_PORT_AGP_SERVICES structure [Display Devices], *PVIDEO_PORT_AGP_SERVICES, PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES, PVIDEO_PORT_AGP_SERVICES structure pointer [Display Devices], videoagp/PVIDEO_PORT_AGP_SERVICES, display.video_port_agp_services, _VIDEO_PORT_AGP_SERVICES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

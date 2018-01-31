@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 157cb12c-1b2d-45b5-8541-e16ee3449064
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksproxy/KsGetMediaTypeCount, stream.ksgetmediatypecount, ksproxy_77c6249c-2b35-4d9e-afff-b01cf5518a73.xml, KsGetMediaTypeCount, KsGetMediaTypeCount function [Streaming Media Devices]
+ms.keywords : ksproxy_77c6249c-2b35-4d9e-afff-b01cf5518a73.xml, KsGetMediaTypeCount, ksproxy/KsGetMediaTypeCount, stream.ksgetmediatypecount, KsGetMediaTypeCount function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

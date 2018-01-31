@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2F12F4E5-21C2-4DA8-9111-0087A16F0256
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoCreateStreamFileObjectEx, ntifs/IoCreateStreamFileObjectEx, IoCreateStreamFileObjectEx2, IoCreateStreamFileObjectEx routine [Installable File System Drivers], ifsk.iocreatestreamfileobjectex2
+ms.keywords : ntifs/IoCreateStreamFileObjectEx, ifsk.iocreatestreamfileobjectex2, IoCreateStreamFileObjectEx2, IoCreateStreamFileObjectEx, IoCreateStreamFileObjectEx routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,6 +66,52 @@ Pointer a <b>IO_CREATE_STREAM_FILE_OPTIONS</b> structure containing the create o
 } IO_CREATE_STREAM_FILE_OPTIONS, *PIO_CREATE_STREAM_FILE_OPTIONS;
 </code></pre>
 
+
+#### Size
+
+Size of the stream options structure. Set to <b>sizeof</b>(IO_CREATE_STREAM_FILE_OPTIONS).
+
+
+#### Flags
+
+The flags for the stream file create options. This value can be one of the following.
+
+
+<table>
+<tr>
+<th>Term</th>
+<th>Description</th>
+</tr>
+<tr>
+<td width="40%">
+<a id="IO_CREATE_STREAM_FILE_RAISE_ON_ERROR"></a><a id="io_create_stream_file_raise_on_error"></a>IO_CREATE_STREAM_FILE_RAISE_ON_ERROR
+
+</td>
+<td width="60%">
+On an error condition, <b>IoCreateStreamFileObjectEx2</b> will raise the error
+        status as an exception instead of returning it.  This flag is specified to maintain error status behavior of the other stream file object creation routines.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
+<a id="IO_CREATE_STREAM_FILE_LITE"></a><a id="io_create_stream_file_lite"></a>IO_CREATE_STREAM_FILE_LITE
+
+</td>
+<td width="60%">
+A file object is created with out a file handle. No close operation is sent for the file object when it is deleted.
+
+</td>
+</tr>
+</table> 
+
+
+#### TargetDeviceObject
+
+A pointer to the device object to set as the target for operations on the file
+        handle.  <b>TargetDeviceObject</b> must be in the same device stack as <i>DeviceObject</i> parameter.  This
+        member is optional.
+
 `FileObject`
 
 Pointer to the file object to which the new stream file is related. This parameter is optional and can be <b>NULL</b>.
@@ -115,17 +161,17 @@ If a pool allocation failure occurs, <b>IoCreateStreamFileObjectEx2</b> raises a
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548608">IRP_MJ_CLEANUP</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a>
-
-<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
 
 <a href="..\ntifs\nf-ntifs-iocreatestreamfileobjectlite.md">IoCreateStreamFileObjectLite</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548608">IRP_MJ_CLEANUP</a>
+
 <a href="..\ntifs\nf-ntifs-iocreatestreamfileobject.md">IoCreateStreamFileObject</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
 
 <a href="..\ntifs\nf-ntifs-iocreatestreamfileobjectex.md">IoCreateStreamFileObjectEx</a>
 

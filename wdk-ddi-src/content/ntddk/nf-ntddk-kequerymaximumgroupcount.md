@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b5cf231b-1a78-485f-bf26-fe50fbe63d08
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeQueryMaximumGroupCount routine [Kernel-Mode Driver Architecture], kernel.kequerymaximumgroupcount, KeQueryMaximumGroupCount, wdm/KeQueryMaximumGroupCount, k105_c1e0cc3e-f9d0-4570-8a56-b799d2ca5d14.xml
+ms.keywords : KeQueryMaximumGroupCount, wdm/KeQueryMaximumGroupCount, KeQueryMaximumGroupCount routine [Kernel-Mode Driver Architecture], kernel.kequerymaximumgroupcount, k105_c1e0cc3e-f9d0-4570-8a56-b799d2ca5d14.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -62,7 +62,7 @@ The value that is returned by <b>KeQueryMaximumGroupCount</b> remains constant d
 
 In Windows 7, the maximum number of groups in a multiprocessor system is four, but this value might change in future versions of Windows. The safest way to determine the maximum number of groups in Windows 7 or a later versions of the Windows operating system is to call <b>KeQueryMaximumGroupCount</b>. Kernel-mode drivers that call <b>KeQueryMaximumGroupCount</b> will not require code changes if the formula that is used to calculate the maximum number of groups changes in a future version of Windows.
 
-To obtain the number of active groups in a multiprocessor system, call the <a href="..\wdm\nf-wdm-kequeryactivegroupcount.md">KeQueryActiveGroupCount</a> routine.
+To obtain the number of active groups in a multiprocessor system, call the <a href="..\ntddk\nf-ntddk-kequeryactivegroupcount.md">KeQueryActiveGroupCount</a> routine.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -78,7 +78,7 @@ To obtain the number of active groups in a multiprocessor system, call the <a hr
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kequeryactivegroupcount.md">KeQueryActiveGroupCount</a>
+<a href="..\ntddk\nf-ntddk-kequeryactivegroupcount.md">KeQueryActiveGroupCount</a>
 
  
 

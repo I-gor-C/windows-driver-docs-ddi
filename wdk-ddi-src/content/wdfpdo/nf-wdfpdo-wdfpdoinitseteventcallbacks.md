@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7ce47eab-c1d7-4a0d-accb-c8a925aa3d1d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfpdo/WdfPdoInitSetEventCallbacks, wdf.wdfpdoinitseteventcallbacks, DFDeviceObjectFdoPdoRef_00002737-467e-4449-8c6c-498860a18747.xml, WdfPdoInitSetEventCallbacks, kmdf.wdfpdoinitseteventcallbacks, WdfPdoInitSetEventCallbacks method, PFN_WDFPDOINITSETEVENTCALLBACKS
+ms.keywords : DFDeviceObjectFdoPdoRef_00002737-467e-4449-8c6c-498860a18747.xml, wdf.wdfpdoinitseteventcallbacks, WdfPdoInitSetEventCallbacks method, kmdf.wdfpdoinitseteventcallbacks, PFN_WDFPDOINITSETEVENTCALLBACKS, WdfPdoInitSetEventCallbacks, wdfpdo/WdfPdoInitSetEventCallbacks
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

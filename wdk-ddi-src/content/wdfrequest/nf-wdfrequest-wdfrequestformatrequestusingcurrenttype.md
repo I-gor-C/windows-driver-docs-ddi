@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 51af6f9e-1e38-4af2-9db8-cfad41e2f435
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestFormatRequestUsingCurrentType method, wdf.wdfrequestformatrequestusingcurrenttype, kmdf.wdfrequestformatrequestusingcurrenttype, PFN_WDFREQUESTFORMATREQUESTUSINGCURRENTTYPE, DFRequestObjectRef_c84fc560-9492-448a-9886-754c2857eba5.xml, wdfrequest/WdfRequestFormatRequestUsingCurrentType, WdfRequestFormatRequestUsingCurrentType
+ms.keywords : WdfRequestFormatRequestUsingCurrentType, kmdf.wdfrequestformatrequestusingcurrenttype, WdfRequestFormatRequestUsingCurrentType method, wdf.wdfrequestformatrequestusingcurrenttype, PFN_WDFREQUESTFORMATREQUESTUSINGCURRENTTYPE, DFRequestObjectRef_c84fc560-9492-448a-9886-754c2857eba5.xml, wdfrequest/WdfRequestFormatRequestUsingCurrentType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -89,7 +89,7 @@ Call <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a> 
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, RequestFormattedValid |
 
 ## See Also

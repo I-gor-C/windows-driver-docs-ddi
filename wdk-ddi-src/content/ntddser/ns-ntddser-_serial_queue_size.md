@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddser._SERIAL_QUEUE_SIZE
-title : _SERIAL_QUEUE_SIZE
+title : "_SERIAL_QUEUE_SIZE"
 author : windows-driver-content
 description : The SERIAL_QUEUE_SIZE structure is used to resize the input buffer that the serial controller driver uses for serial receive operations.
 old-location : serports\serial_queue_size.htm
@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 5EEE0B7D-2857-42D1-A387-9D38DAC2E368
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ntddser/SERIAL_QUEUE_SIZE, *PSERIAL_QUEUE_SIZE, serports.serial_queue_size, _SERIAL_QUEUE_SIZE, PSERIAL_QUEUE_SIZE structure pointer [Serial Ports], ntddser/PSERIAL_QUEUE_SIZE, PSERIAL_QUEUE_SIZE, SERIAL_QUEUE_SIZE, SERIAL_QUEUE_SIZE structure [Serial Ports]
+ms.keywords : ntddser/PSERIAL_QUEUE_SIZE, SERIAL_QUEUE_SIZE, PSERIAL_QUEUE_SIZE, *PSERIAL_QUEUE_SIZE, SERIAL_QUEUE_SIZE structure [Serial Ports], PSERIAL_QUEUE_SIZE structure pointer [Serial Ports], _SERIAL_QUEUE_SIZE, serports.serial_queue_size, ntddser/SERIAL_QUEUE_SIZE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSERIAL_QUEUE_SIZE, SERIAL_QUEUE_SIZE"
+req.typenames : SERIAL_QUEUE_SIZE, *PSERIAL_QUEUE_SIZE
 ---
 
 # _SERIAL_QUEUE_SIZE structure

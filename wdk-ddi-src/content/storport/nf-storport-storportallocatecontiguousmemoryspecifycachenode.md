@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b2ed8c88-9ffd-4601-8fd0-c9390e9ba84d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortAllocateContiguousMemorySpecifyCacheNode routine [Storage Devices], storage.storportallocatecontiguousmemoryspecifycachenode, StorPortAllocateContiguousMemorySpecifyCacheNode, storport/StorPortAllocateContiguousMemorySpecifyCacheNode, storprt_d91d6ab4-677e-4bc0-a0b5-1c252475ecbb.xml
+ms.keywords : storprt_d91d6ab4-677e-4bc0-a0b5-1c252475ecbb.xml, storage.storportallocatecontiguousmemoryspecifycachenode, StorPortAllocateContiguousMemorySpecifyCacheNode, StorPortAllocateContiguousMemorySpecifyCacheNode routine [Storage Devices], storport/StorPortAllocateContiguousMemorySpecifyCacheNode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -149,5 +149,5 @@ If the request fails, <i>BufferPointer</i> will be set to <b>NULL</b>.
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | StorPortIrql |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 110c542a-c98a-450d-b943-d8449dcac668
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ril_deletephonebookentry, RIL_DeletePhonebookEntry method [Network Drivers Starting with Windows Vista], RIL_DeletePhonebookEntry, rilapi/RIL_DeletePhonebookEntry
+ms.keywords : rilapi/RIL_DeletePhonebookEntry, RIL_DeletePhonebookEntry method [Network Drivers Starting with Windows Vista], RIL_DeletePhonebookEntry, netvista.ril_deletephonebookentry
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
+req.typenames : "*PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER"
 req.product : Windows 10 or later.
 ---
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 07825be3-84a1-4aab-a9f0-22a45f636a04
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols_dc1ccbc7-17e4-4424-8a3d-fbb7f16d3c3b.xml, debugger.removesyntheticsymbol, IDebugSymbols3::RemoveSyntheticSymbol, RemoveSyntheticSymbol method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::RemoveSyntheticSymbol, IDebugSymbols3 interface [Windows Debugging], RemoveSyntheticSymbol method, RemoveSyntheticSymbol method [Windows Debugging], IDebugSymbols3, RemoveSyntheticSymbol
+ms.keywords : IDebugSymbols_dc1ccbc7-17e4-4424-8a3d-fbb7f16d3c3b.xml, debugger.removesyntheticsymbol, RemoveSyntheticSymbol method [Windows Debugging], IDebugSymbols3::RemoveSyntheticSymbol, IDebugSymbols3, dbgeng/IDebugSymbols3::RemoveSyntheticSymbol, RemoveSyntheticSymbol, RemoveSyntheticSymbol method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging], RemoveSyntheticSymbol method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

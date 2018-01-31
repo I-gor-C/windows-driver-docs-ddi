@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 4A87D9E2-F1FC-4CA8-834C-E545D8F0277B
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : VHF_CONFIG_INIT, hid.vhf_config_init, vhf/VHF_CONFIG_INIT, VHF_CONFIG_INIT function [Human Input Devices]
+ms.keywords : VHF_CONFIG_INIT function [Human Input Devices], vhf/VHF_CONFIG_INIT, VHF_CONFIG_INIT, hid.vhf_config_init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR"
+req.typenames : USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 

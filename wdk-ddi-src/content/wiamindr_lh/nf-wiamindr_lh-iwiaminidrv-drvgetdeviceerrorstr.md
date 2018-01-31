@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : c34a6834-8875-400c-9634-6c2b9b68164f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiamindr_lh/IWiaMiniDrv::drvGetDeviceErrorStr, IWiaMiniDrv interface [Imaging Devices], drvGetDeviceErrorStr method, IWiaMiniDrv::drvGetDeviceErrorStr, drvGetDeviceErrorStr, image.iwiaminidrv_drvgetdeviceerrorstr, MiniDrv_d5a72b62-8987-4d0a-921e-8a7f4d915d12.xml, drvGetDeviceErrorStr method [Imaging Devices], IWiaMiniDrv interface, drvGetDeviceErrorStr method [Imaging Devices], IWiaMiniDrv
+ms.keywords : drvGetDeviceErrorStr method [Imaging Devices], IWiaMiniDrv interface [Imaging Devices], drvGetDeviceErrorStr method, IWiaMiniDrv, drvGetDeviceErrorStr, wiamindr_lh/IWiaMiniDrv::drvGetDeviceErrorStr, MiniDrv_d5a72b62-8987-4d0a-921e-8a7f4d915d12.xml, image.iwiaminidrv_drvgetdeviceerrorstr, IWiaMiniDrv::drvGetDeviceErrorStr, drvGetDeviceErrorStr method [Imaging Devices], IWiaMiniDrv interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
+req.typenames : "*PSCANWINDOW, SCANWINDOW"
 req.product : Windows 10 or later.
 ---
 

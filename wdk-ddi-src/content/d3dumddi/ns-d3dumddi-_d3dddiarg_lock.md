@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._D3DDDIARG_LOCK
-title : _D3DDDIARG_LOCK
+title : "_D3DDDIARG_LOCK"
 author : windows-driver-content
 description : The D3DDDIARG_LOCK structure describes a resource or a surface within the resource to lock.
 old-location : display\d3dddiarg_lock.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 00f8b16c-3ec1-48ac-930b-17aca16cc04f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDIARG_LOCK, display.d3dddiarg_lock, D3DDDIARG_LOCK, _D3DDDIARG_LOCK, D3DDDIARG_LOCK structure [Display Devices], UMDisplayDriver_param_Structs_484ea489-6a0a-466a-b4d2-39d6f0eb5642.xml
+ms.keywords : "_D3DDDIARG_LOCK, D3DDDIARG_LOCK structure [Display Devices], UMDisplayDriver_param_Structs_484ea489-6a0a-466a-b4d2-39d6f0eb5642.xml, D3DDDIARG_LOCK, display.d3dddiarg_lock, d3dumddi/D3DDDIARG_LOCK"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -116,9 +116,9 @@ The <b>ReadOnly</b> bit-field flag must not be simultaneously set with the <b>Di
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_lockflags.md">D3DDDI_LOCKFLAGS</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lock.md">Lock</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_lockflags.md">D3DDDI_LOCKFLAGS</a>
 
  
 

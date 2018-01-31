@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5ac33177-38fc-4027-95c9-c2cf9ccdaa52
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.kequeryhardwarecounterconfiguration, KeQueryHardwareCounterConfiguration routine [Kernel-Mode Driver Architecture], KeQueryHardwareCounterConfiguration, k105_442c5acf-84a3-4078-b401-ca8cb8069c6e.xml, ntddk/KeQueryHardwareCounterConfiguration
+ms.keywords : KeQueryHardwareCounterConfiguration, k105_442c5acf-84a3-4078-b401-ca8cb8069c6e.xml, ntddk/KeQueryHardwareCounterConfiguration, kernel.kequeryhardwarecounterconfiguration, KeQueryHardwareCounterConfiguration routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -114,14 +114,14 @@ To set the hardware counter configuration to use for thread profiling, call the 
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-kesethardwarecounterconfiguration.md">KeSetHardwareCounterConfiguration</a>
-
 <a href="..\ntddk\ns-ntddk-_hardware_counter.md">HARDWARE_COUNTER</a>
+
+<a href="..\ntddk\nf-ntddk-kesethardwarecounterconfiguration.md">KeSetHardwareCounterConfiguration</a>
 
  
 

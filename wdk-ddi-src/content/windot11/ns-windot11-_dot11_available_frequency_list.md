@@ -1,6 +1,6 @@
 ---
 UID : NS:windot11._DOT11_AVAILABLE_FREQUENCY_LIST
-title : _DOT11_AVAILABLE_FREQUENCY_LIST
+title : "_DOT11_AVAILABLE_FREQUENCY_LIST"
 author : windows-driver-content
 description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location : netvista\dot11_available_frequency_list.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b8862ba3-c871-4d9b-9ee4-99ec9d0bcda9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : Native_802.11_data_types_df13c6f8-9257-493e-b8bb-c85cbbb2fea9.xml, windot11/DOT11_AVAILABLE_FREQUENCY_LIST, PDOT11_AVAILABLE_FREQUENCY_LIST structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_AVAILABLE_FREQUENCY_LIST, DOT11_AVAILABLE_FREQUENCY_LIST, DOT11_AVAILABLE_FREQUENCY_LIST structure [Network Drivers Starting with Windows Vista], PDOT11_AVAILABLE_FREQUENCY_LIST, _DOT11_AVAILABLE_FREQUENCY_LIST, netvista.dot11_available_frequency_list, windot11/PDOT11_AVAILABLE_FREQUENCY_LIST
+ms.keywords : PDOT11_AVAILABLE_FREQUENCY_LIST structure pointer [Network Drivers Starting with Windows Vista], DOT11_AVAILABLE_FREQUENCY_LIST, netvista.dot11_available_frequency_list, windot11/PDOT11_AVAILABLE_FREQUENCY_LIST, DOT11_AVAILABLE_FREQUENCY_LIST structure [Network Drivers Starting with Windows Vista], PDOT11_AVAILABLE_FREQUENCY_LIST, Native_802.11_data_types_df13c6f8-9257-493e-b8bb-c85cbbb2fea9.xml, _DOT11_AVAILABLE_FREQUENCY_LIST, windot11/DOT11_AVAILABLE_FREQUENCY_LIST, *PDOT11_AVAILABLE_FREQUENCY_LIST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,6 +70,22 @@ The miniport driver must set the members of
 
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+
+
+#### Type
+
+This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
+
+
+#### Revision
+
+This member must be set to DOT11_AVAILABLE_FREQUENCY_LIST_REVISION_1.
+
+
+#### Size
+
+This member must be set to
+       <b>sizeof</b>(DOT11_AVAILABLE_FREQUENCY_LIST).
 
 `uFrequencyValue`
 

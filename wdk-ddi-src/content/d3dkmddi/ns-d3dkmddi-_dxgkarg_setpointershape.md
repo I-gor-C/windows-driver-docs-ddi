@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmddi._DXGKARG_SETPOINTERSHAPE
-title : _DXGKARG_SETPOINTERSHAPE
+title : "_DXGKARG_SETPOINTERSHAPE"
 author : windows-driver-content
 description : The DXGKARG_SETPOINTERSHAPE structure describes the appearance of the mouse pointer and the location that it should be displayed in.
 old-location : display\dxgkarg_setpointershape.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fcb06620-8a30-4980-8733-35d7aabcc872
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxgkarg_setpointershape, DmStructs_9fab674a-0138-4c55-b17e-87cb85110325.xml, DXGKARG_SETPOINTERSHAPE, d3dkmddi/DXGKARG_SETPOINTERSHAPE, DXGKARG_SETPOINTERSHAPE structure [Display Devices], _DXGKARG_SETPOINTERSHAPE
+ms.keywords : "_DXGKARG_SETPOINTERSHAPE, DXGKARG_SETPOINTERSHAPE structure [Display Devices], DXGKARG_SETPOINTERSHAPE, d3dkmddi/DXGKARG_SETPOINTERSHAPE, display.dxgkarg_setpointershape, DmStructs_9fab674a-0138-4c55-b17e-87cb85110325.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

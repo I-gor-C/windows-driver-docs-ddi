@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 8e9a247a-f906-4f0e-8249-b67a042aada5
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortGetVirtualAddress, storage.scsiportgetvirtualaddress, scsiprt_4f474eed-75d3-47cd-9473-37d0d15310de.xml, ScsiPortGetVirtualAddress routine [Storage Devices], srb/ScsiPortGetVirtualAddress
+ms.keywords : ScsiPortGetVirtualAddress routine [Storage Devices], ScsiPortGetVirtualAddress, scsiprt_4f474eed-75d3-47cd-9473-37d0d15310de.xml, srb/ScsiPortGetVirtualAddress, storage.scsiportgetvirtualaddress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -98,9 +98,9 @@ Specifies the physical address to be mapped. This value must have been returned 
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportgetuncachedextension.md">ScsiPortGetUncachedExtension</a>
-
 <a href="..\srb\nf-srb-scsiportgetphysicaladdress.md">ScsiPortGetPhysicalAddress</a>
+
+<a href="..\srb\nf-srb-scsiportgetuncachedextension.md">ScsiPortGetUncachedExtension</a>
 
  
 

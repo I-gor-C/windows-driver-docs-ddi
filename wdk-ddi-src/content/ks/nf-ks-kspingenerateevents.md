@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : c2137849-aff0-4bf7-abab-b92e17aaef70
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinGenerateEvents, KsPinGenerateEvents function [Streaming Media Devices], avfunc_4bc7a2d8-139f-4f6e-b69c-46e05d8302e3.xml, stream.kspingenerateevents, ks/KsPinGenerateEvents
+ms.keywords : avfunc_4bc7a2d8-139f-4f6e-b69c-46e05d8302e3.xml, KsPinGenerateEvents, ks/KsPinGenerateEvents, stream.kspingenerateevents, KsPinGenerateEvents function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -134,7 +134,7 @@ The event is present in <i>Pin's </i>event list and <i>EventId </i>matches the e
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL (See Remarks) |
+| **IRQL** | "<=DISPATCH_LEVEL (See Remarks)" |
 | **DDI compliance rules** |  |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 6c3db06a-0305-480f-ab7f-38e4295ebe9b
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetExceptionFilterParameters method [Windows Debugging], IDebugControl2 interface, GetExceptionFilterParameters method [Windows Debugging], IDebugControl interface, IDebugControl3 interface [Windows Debugging], GetExceptionFilterParameters method, GetExceptionFilterParameters, dbgeng/IDebugControl3::GetExceptionFilterParameters, IDebugControl2::GetExceptionFilterParameters, IDebugControl_012d902c-ff4c-4ac8-9a35-b6cdcd1e2894.xml, IDebugControl2 interface [Windows Debugging], GetExceptionFilterParameters method, IDebugControl3::GetExceptionFilterParameters, debugger.getexceptionfilterparameters, dbgeng/IDebugControl::GetExceptionFilterParameters, IDebugControl::GetExceptionFilterParameters, IDebugControl interface [Windows Debugging], GetExceptionFilterParameters method, GetExceptionFilterParameters method [Windows Debugging], IDebugControl3 interface, IDebugControl3, GetExceptionFilterParameters method [Windows Debugging], dbgeng/IDebugControl2::GetExceptionFilterParameters
+ms.keywords : IDebugControl3, GetExceptionFilterParameters method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl::GetExceptionFilterParameters, IDebugControl3 interface [Windows Debugging], GetExceptionFilterParameters method, GetExceptionFilterParameters method [Windows Debugging], GetExceptionFilterParameters, GetExceptionFilterParameters method [Windows Debugging], IDebugControl interface, IDebugControl::GetExceptionFilterParameters, debugger.getexceptionfilterparameters, dbgeng/IDebugControl2::GetExceptionFilterParameters, dbgeng/IDebugControl3::GetExceptionFilterParameters, IDebugControl2 interface [Windows Debugging], GetExceptionFilterParameters method, IDebugControl2::GetExceptionFilterParameters, IDebugControl interface [Windows Debugging], GetExceptionFilterParameters method, IDebugControl3::GetExceptionFilterParameters, IDebugControl_012d902c-ff4c-4ac8-9a35-b6cdcd1e2894.xml, GetExceptionFilterParameters method [Windows Debugging], IDebugControl2 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -111,17 +111,17 @@ For more information about <a href="https://msdn.microsoft.com/library/windows/h
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548398">GetSpecificFilterParameters</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556683">SetExceptionFilterParameters</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548398">GetSpecificFilterParameters</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
 <a href="https://msdn.microsoft.com/fdb5059f-e7d9-4e14-aa3d-030e72c30732">sx, sxd, sxe, sxi, sxn (Set Exceptions)</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 
  
 

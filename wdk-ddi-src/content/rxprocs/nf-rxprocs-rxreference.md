@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 436cd161-6984-4101-931a-221a829f40d0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rxprocs/RxReference, ifsk.rxreference, RxReference function [Installable File System Drivers], rxref_3c87a6aa-d0c8-4308-8152-fce322dcb035.xml, RxReference
+ms.keywords : ifsk.rxreference, rxref_3c87a6aa-d0c8-4308-8152-fce322dcb035.xml, RxReference function [Installable File System Drivers], rxprocs/RxReference, RxReference
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
+req.typenames : RX_CONTEXT, *PRX_CONTEXT
 req.product : Windows 10 or later.
 ---
 
@@ -87,7 +87,7 @@ If <b>RxReference</b> is called with any other type of RDBSS data structure, the
 | **Minimum UMDF version** |  |
 | **Header** | rxprocs.h (include Rxprocs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

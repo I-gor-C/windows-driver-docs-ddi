@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b72187de-a2ac-446f-bb06-9ca380454122
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExDeleteLookasideListEx routine [Kernel-Mode Driver Architecture], k102_35b6c2b4-58a3-4900-b8dc-63ed0a53b80f.xml, kernel.exdeletelookasidelistex, wdm/ExDeleteLookasideListEx, ExDeleteLookasideListEx
+ms.keywords : wdm/ExDeleteLookasideListEx, k102_35b6c2b4-58a3-4900-b8dc-63ed0a53b80f.xml, ExDeleteLookasideListEx, ExDeleteLookasideListEx routine [Kernel-Mode Driver Architecture], kernel.exdeletelookasidelistex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,14 +79,14 @@ For more information about lookaside lists, see <a href="https://msdn.microsoft.
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exinitializelookasidelistex.md">ExInitializeLookasideListEx</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554329">LOOKASIDE_LIST_EX</a>
+
+<a href="..\wdm\nf-wdm-exinitializelookasidelistex.md">ExInitializeLookasideListEx</a>
 
  
 

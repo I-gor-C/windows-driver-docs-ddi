@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 7d1c0d8a-65db-47fd-ad6a-a83c7ed3acd9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : MiniDrvCallback, IWiaMiniDrvCallBack interface [Imaging Devices], MiniDrvCallback method, CallBack_ab4a8e02-c505-49d4-8933-27428333a00d.xml, wiamindr_lh/IWiaMiniDrvCallBack::MiniDrvCallback, IWiaMiniDrvCallBack::MiniDrvCallback, MiniDrvCallback method [Imaging Devices], IWiaMiniDrvCallBack, MiniDrvCallback method [Imaging Devices], IWiaMiniDrvCallBack interface, image.iwiaminidrvcallback_minidrvcallback
+ms.keywords : MiniDrvCallback method [Imaging Devices], IWiaMiniDrvCallBack::MiniDrvCallback, MiniDrvCallback method [Imaging Devices], IWiaMiniDrvCallBack interface, wiamindr_lh/IWiaMiniDrvCallBack::MiniDrvCallback, IWiaMiniDrvCallBack interface [Imaging Devices], MiniDrvCallback method, CallBack_ab4a8e02-c505-49d4-8933-27428333a00d.xml, IWiaMiniDrvCallBack, MiniDrvCallback, image.iwiaminidrvcallback_minidrvcallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
+req.typenames : "*PSCANWINDOW, SCANWINDOW"
 req.product : Windows 10 or later.
 ---
 

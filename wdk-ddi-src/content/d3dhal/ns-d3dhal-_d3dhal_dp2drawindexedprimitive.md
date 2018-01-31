@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dhal._D3DHAL_DP2DRAWINDEXEDPRIMITIVE
-title : _D3DHAL_DP2DRAWINDEXEDPRIMITIVE
+title : "_D3DHAL_DP2DRAWINDEXEDPRIMITIVE"
 author : windows-driver-content
 description : DirectX 8.0 and later versions only.
 old-location : display\d3dhal_dp2drawindexedprimitive.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b28290c7-2c02-4422-af7b-4188d6f54b54
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dhal/LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE, _D3DHAL_DP2DRAWINDEXEDPRIMITIVE, LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE, d3dhal/D3DHAL_DP2DRAWINDEXEDPRIMITIVE, D3DHAL_DP2DRAWINDEXEDPRIMITIVE, D3DHAL_DP2DRAWINDEXEDPRIMITIVE structure [Display Devices], *LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE, display.d3dhal_dp2drawindexedprimitive, d3dstrct_61b06507-bfbe-4733-ac52-03d27bac0a07.xml, LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE structure pointer [Display Devices]
+ms.keywords : "*LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE, D3DHAL_DP2DRAWINDEXEDPRIMITIVE, _D3DHAL_DP2DRAWINDEXEDPRIMITIVE, d3dstrct_61b06507-bfbe-4733-ac52-03d27bac0a07.xml, LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE, display.d3dhal_dp2drawindexedprimitive, d3dhal/LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE, LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE structure pointer [Display Devices], D3DHAL_DP2DRAWINDEXEDPRIMITIVE structure [Display Devices], d3dhal/D3DHAL_DP2DRAWINDEXEDPRIMITIVE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -106,13 +106,13 @@ As with vertices, the actual indices to use are not passed with the token data, 
 
 ## See Also
 
-<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
-
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2drawindexedprimitive2.md">D3DHAL_DP2DRAWINDEXEDPRIMITIVE2</a>
 
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 
 D3DDP2OP_DRAWINDEXEDPRIMITIVE
+
+<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
 
  
 

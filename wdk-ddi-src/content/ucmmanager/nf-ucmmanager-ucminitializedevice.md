@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 9159A6ED-0D85-422D-936A-13D7EC907A7C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ucmmanager/UcmInitializeDevice, buses.ucminitializedevice, UcmInitializeDevice method [Buses], UcmInitializeDevice
+ms.keywords : UcmInitializeDevice method [Buses], buses.ucminitializedevice, UcmInitializeDevice, ucmmanager/UcmInitializeDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,9 +85,9 @@ This method initializes UcmCx and allocates resources required, registers for Pn
 
 ## See Also
 
-<a href="..\ucmmanager\nf-ucmmanager-ucm_manager_config_init.md">UCM_MANAGER_CONFIG_INIT</a>
-
 <a href="..\ucmmanager\ns-ucmmanager-_ucm_manager_config.md">UCM_MANAGER_CONFIG</a>
+
+<a href="..\ucmmanager\nf-ucmmanager-ucm_manager_config_init.md">UCM_MANAGER_CONFIG_INIT</a>
 
  
 

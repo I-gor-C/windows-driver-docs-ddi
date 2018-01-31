@@ -1,6 +1,6 @@
 ---
 UID : NS:dxva._DXVA_DeinterlaceQueryModeCaps
-title : _DXVA_DeinterlaceQueryModeCaps
+title : "_DXVA_DeinterlaceQueryModeCaps"
 author : windows-driver-content
 description : The DXVA_DeinterlaceQueryModeCaps structure describes a deinterlacing mode.
 old-location : display\dxva_deinterlacequerymodecaps.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4978e4f6-23e3-4381-be4e-550292101013
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : dxvaref_a9b0a8a8-0a11-417c-a356-6b39cb1f7ddb.xml, DXVA_DeinterlaceQueryModeCaps structure [Display Devices], display.dxva_deinterlacequerymodecaps, DXVA_DeinterlaceQueryModeCaps, dxva/DXVA_DeinterlaceQueryModeCaps, _DXVA_DeinterlaceQueryModeCaps
+ms.keywords : dxvaref_a9b0a8a8-0a11-417c-a356-6b39cb1f7ddb.xml, display.dxva_deinterlacequerymodecaps, DXVA_DeinterlaceQueryModeCaps, DXVA_DeinterlaceQueryModeCaps structure [Display Devices], dxva/DXVA_DeinterlaceQueryModeCaps, _DXVA_DeinterlaceQueryModeCaps
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -78,9 +78,9 @@ The driver receives the DXVA_DeinterlaceQueryModeCaps structure with all members
 
 ## See Also
 
-<a href="..\dxva\ns-dxva-_dxva_deinterlacequeryavailablemodes.md">DXVA_DeinterlaceQueryAvailableModes</a>
-
 <a href="..\dxva\ns-dxva-_dxva_videodesc.md">DXVA_VideoDesc</a>
+
+<a href="..\dxva\ns-dxva-_dxva_deinterlacequeryavailablemodes.md">DXVA_DeinterlaceQueryAvailableModes</a>
 
 <a href="..\dxva\ns-dxva-_dxva_deinterlacecaps.md">DXVA_DeinterlaceCaps</a>
 

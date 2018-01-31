@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : afa27127-b427-4831-b5f5-3e293738c275
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntddk/KeExpandKernelStackAndCallout, kernel.keexpandkernelstackandcallout, k105_37fc85c2-2317-41a2-9daa-766c3ccf343f.xml, KeExpandKernelStackAndCallout, KeExpandKernelStackAndCallout routine [Kernel-Mode Driver Architecture]
+ms.keywords : k105_37fc85c2-2317-41a2-9daa-766c3ccf343f.xml, KeExpandKernelStackAndCallout routine [Kernel-Mode Driver Architecture], kernel.keexpandkernelstackandcallout, ntddk/KeExpandKernelStackAndCallout, KeExpandKernelStackAndCallout
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -88,14 +88,14 @@ The calling thread must not call the <a href="..\wdm\nf-wdm-psterminatesystemthr
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-psterminatesystemthread.md">PsTerminateSystemThread</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545494">ExpandedStackCall</a>
+
+<a href="..\wdm\nf-wdm-psterminatesystemthread.md">PsTerminateSystemThread</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552036">KeExpandKernelStackAndCalloutEx</a>
 

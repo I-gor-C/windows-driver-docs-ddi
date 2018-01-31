@@ -1,6 +1,6 @@
 ---
 UID : NS:windot11._DOT11_PHY_TYPE_INFO
-title : _DOT11_PHY_TYPE_INFO
+title : "_DOT11_PHY_TYPE_INFO"
 author : windows-driver-content
 description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location : netvista\dot11_phy_type_info.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9b0cbcc4-e38a-4266-afc5-8b2755d79f4c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DOT11_PHY_TYPE_INFO structure [Network Drivers Starting with Windows Vista], _DOT11_PHY_TYPE_INFO, *PDOT11_PHY_TYPE_INFO, windot11/DOT11_PHY_TYPE_INFO, windot11/PDOT11_PHY_TYPE_INFO, PDOT11_PHY_TYPE_INFO structure pointer [Network Drivers Starting with Windows Vista], Native_802.11_data_types_20e3d688-253f-416e-b9b0-8adec6bf7415.xml, DOT11_PHY_TYPE_INFO, PDOT11_PHY_TYPE_INFO, netvista.dot11_phy_type_info
+ms.keywords : PDOT11_PHY_TYPE_INFO, PDOT11_PHY_TYPE_INFO structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_phy_type_info, *PDOT11_PHY_TYPE_INFO, DOT11_PHY_TYPE_INFO structure [Network Drivers Starting with Windows Vista], DOT11_PHY_TYPE_INFO, _DOT11_PHY_TYPE_INFO, Native_802.11_data_types_20e3d688-253f-416e-b9b0-8adec6bf7415.xml, windot11/DOT11_PHY_TYPE_INFO, windot11/PDOT11_PHY_TYPE_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -84,6 +84,20 @@ If this member is <b>FALSE</b>, the 802.11 station configures the PHY using its 
 This member specifies the method used to interpret the entries in the 
      <b>ucChannelListBuffer</b> array. The data type for this member is the CH_DESCRIPTION_TYPE enumeration,
      which declares the following values:
+     
+
+
+
+
+#### ch_description_type_logical
+
+The channel entry is defined by a logical channel number to conform with the IEEE 802.11
+       standard.
+
+
+#### ch_description_type_center_frequency
+
+The channel entry is defined, in units of megahertz (MHz), by a channel center frequency.
 
 `dot11PhyType`
 
@@ -151,9 +165,9 @@ For more information about the ExtSTA operation mode, see
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a>
-
 <a href="..\windot11\ns-windot11-_dot11_scan_request_v2.md">DOT11_SCAN_REQUEST_V2</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : D3D8D948-400A-47A0-98E9-ECF5643DB5D2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UfxEndpointInitSetEventCallbacks method [Buses], UfxEndpointInitSetEventCallbacks, buses.ufxendpointinitseteventcallbacks, ufxclient/UfxEndpointInitSetEventCallbacks
+ms.keywords : ufxclient/UfxEndpointInitSetEventCallbacks, UfxEndpointInitSetEventCallbacks, UfxEndpointInitSetEventCallbacks method [Buses], buses.ufxendpointinitseteventcallbacks
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
+req.typenames : UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
 req.product : Windows 10 or later.
 ---
 

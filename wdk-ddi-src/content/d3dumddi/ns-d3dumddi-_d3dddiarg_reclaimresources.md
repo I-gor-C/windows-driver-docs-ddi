@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._D3DDDIARG_RECLAIMRESOURCES
-title : _D3DDDIARG_RECLAIMRESOURCES
+title : "_D3DDDIARG_RECLAIMRESOURCES"
 author : windows-driver-content
 description : Describes video memory resources that are to be reclaimed and that the user-mode display driver previously offered for reuse. Used with the ReclaimResources function.
 old-location : display\d3dddiarg_reclaimresources.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 58e8738c-b10a-4c93-b179-03efcb65412d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_RECLAIMRESOURCES, d3dumddi/D3DDDIARG_RECLAIMRESOURCES, D3DDDIARG_RECLAIMRESOURCES, D3DDDIARG_RECLAIMRESOURCES structure [Display Devices], display.d3dddiarg_reclaimresources
+ms.keywords : "_D3DDDIARG_RECLAIMRESOURCES, D3DDDIARG_RECLAIMRESOURCES, display.d3dddiarg_reclaimresources, D3DDDIARG_RECLAIMRESOURCES structure [Display Devices], d3dumddi/D3DDDIARG_RECLAIMRESOURCES"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

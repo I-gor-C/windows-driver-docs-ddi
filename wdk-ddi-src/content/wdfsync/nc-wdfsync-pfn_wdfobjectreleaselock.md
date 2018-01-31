@@ -89,7 +89,7 @@ For more information about synchronization locks, see <a href="https://docs.micr
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfsync.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also

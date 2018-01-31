@@ -1,6 +1,6 @@
 ---
 UID : NS:compstui._OPTPARAM
-title : _OPTPARAM
+title : "_OPTPARAM"
 author : windows-driver-content
 description : An array of OPTPARAM structures is used by CPSUI applications (including printer interface DLLs) for describing all the parameter values associated with a property sheet option. The array's address is included in an OPTTYPE structure.
 old-location : print\optparam.htm
@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : d0cd2867-783c-4a41-a819-e919d4ffc1e3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*POPTPARAM, compstui/POPTPARAM, POPTPARAM structure pointer [Print Devices], print.optparam, _OPTPARAM, POPTPARAM, compstui/OPTPARAM, OPTPARAM structure [Print Devices], OPTPARAM, cpsuifnc_1c22c283-993e-45d7-b0c7-1148eafeb13c.xml"
+ms.keywords : POPTPARAM structure pointer [Print Devices], compstui/POPTPARAM, _OPTPARAM, cpsuifnc_1c22c283-993e-45d7-b0c7-1148eafeb13c.xml, print.optparam, compstui/OPTPARAM, OPTPARAM structure [Print Devices], POPTPARAM, OPTPARAM, *POPTPARAM
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*POPTPARAM, OPTPARAM"
+req.typenames : OPTPARAM, *POPTPARAM
 ---
 
 # _OPTPARAM structure
@@ -68,6 +68,89 @@ Reserved, must be initialized to zero.
 `Flags`
 
 Optional bit flags that modify the parameter's characteristics. The following flags can be set in any combination:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### OPTPF_DISABLED
+
+If set, the parameter is not user-selectable. Can be used with the following option types:
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562825">TVOT_2STATES</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562827">TVOT_3STATES</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562833">TVOT_COMBOBOX</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562839">TVOT_LISTBOX</a>
+
+
+
+#### OPTPF_HIDE
+
+If set, the parameter not displayed in the treeview. Can be used with the following option types:
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562827">TVOT_3STATES</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562833">TVOT_COMBOBOX</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562839">TVOT_LISTBOX</a>
+
+
+
+#### OPTPF_ICONID_AS_HICON
+
+If set, the <b>IconID</b> member contains an icon handle.
+
+If not set, the <b>IconID</b> member contains an icon resource identifier.
+
+
+#### OPTPF_OVERLAY_NO_ICON
+
+If set, CPSUI overlays its IDI_CPSUI_NO icon onto the icon identified by the <b>IconID</b> member.
+
+
+#### OPTPF_OVERLAY_STOP_ICON
+
+If set, CPSUI overlays the IDI_CPSUI_STOP icon onto the icon identified by the <b>IconID</b> member.
+
+
+#### OPTPF_OVERLAY_WARNING_ICON
+
+If set, CPSUI overlays its IDI_CPSUI_WARNING icon onto the icon identified by the <b>IconID</b> member.
+
+
+#### OPTPF_USE_HDLGTEMPLATE
+
+If set, <b>lParam</b> contains a template handle.
+
+If not set, <b>lParam</b> contains a template resource identifier.
+
+(Used only if <b>Style</b> is PUSHBUTTON_TYPE_DLGPROC.)
 
 `IconID`
 

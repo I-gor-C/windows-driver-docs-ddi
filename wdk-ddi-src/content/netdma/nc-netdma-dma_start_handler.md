@@ -182,20 +182,20 @@ NetDMA calls
 | **Minimum UMDF version** |  |
 | **Header** | netdma.h (include Netdma.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\netdma\nc-netdma-dma_channel_allocate_handler.md">ProviderAllocateDmaChannel</a>
 
-<a href="..\netdma\nc-netdma-dma_reset_handler.md">ProviderResetChannel</a>
+<a href="..\netdma\nc-netdma-dma_append_handler.md">ProviderAppendDma</a>
 
-<a href="..\netdma\nc-netdma-dma_abort_handler.md">ProviderAbortDma</a>
+<a href="..\netdma\nc-netdma-dma_reset_handler.md">ProviderResetChannel</a>
 
 <a href="..\netdma\ns-netdma-_net_dma_descriptor.md">NET_DMA_DESCRIPTOR</a>
 
-<a href="..\netdma\nc-netdma-dma_append_handler.md">ProviderAppendDma</a>
+<a href="..\netdma\nc-netdma-dma_abort_handler.md">ProviderAbortDma</a>
 
  
 

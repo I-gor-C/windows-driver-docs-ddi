@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : b93f756b-50b1-450f-8d70-5d1633b61fcf
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetOutputCallbacksWide, debugger.getoutputcallbackswide, IDebugClient5::GetOutputCallbacksWide, dbgeng/IDebugClient5::GetOutputCallbacksWide, IDebugClient5 interface [Windows Debugging], GetOutputCallbacksWide method, IDebugClient5, GetOutputCallbacksWide method [Windows Debugging], GetOutputCallbacksWide method [Windows Debugging], IDebugClient5 interface
+ms.keywords : GetOutputCallbacksWide method [Windows Debugging], IDebugClient5, dbgeng/IDebugClient5::GetOutputCallbacksWide, debugger.getoutputcallbackswide, GetOutputCallbacksWide, GetOutputCallbacksWide method [Windows Debugging], IDebugClient5 interface, IDebugClient5::GetOutputCallbacksWide, IDebugClient5 interface [Windows Debugging], GetOutputCallbacksWide method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

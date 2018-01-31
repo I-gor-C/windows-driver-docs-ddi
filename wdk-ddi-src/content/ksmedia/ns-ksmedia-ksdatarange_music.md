@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 2ada5d1c-9c46-4f7b-99e5-72aa8f6fee9f
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "*PKSDATARANGE_MUSIC, PKSDATARANGE_MUSIC, PKSDATARANGE_MUSIC structure pointer [Audio Devices], ksmedia/KSDATARANGE_MUSIC, KSDATARANGE_MUSIC structure [Audio Devices], audio.ksdatarange_music, ksmedia/PKSDATARANGE_MUSIC, aud-prop_5c82e83d-000e-440e-bfcb-8daef30f5056.xml, KSDATARANGE_MUSIC"
+ms.keywords : KSDATARANGE_MUSIC, PKSDATARANGE_MUSIC structure pointer [Audio Devices], PKSDATARANGE_MUSIC, ksmedia/KSDATARANGE_MUSIC, aud-prop_5c82e83d-000e-440e-bfcb-8daef30f5056.xml, *PKSDATARANGE_MUSIC, KSDATARANGE_MUSIC structure [Audio Devices], audio.ksdatarange_music, ksmedia/PKSDATARANGE_MUSIC
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,6 +74,43 @@ Specifies the maximum number of simultaneous notes that can be played by an inte
 `Technology`
 
 Specifies the type of MIDI output device. This member can be one of the following GUIDs:
+
+
+
+
+#### KSMUSIC_TECHNOLOGY_PORT
+
+The device is a MIDI hardware port.
+
+
+#### KSMUSIC_TECHNOLOGY_SYNTH
+
+The device is a synthesizer.
+
+
+#### KSMUSIC_TECHNOLOGY_SQSYNTH
+
+The device is a square-wave synthesizer.
+
+
+#### KSMUSIC_TECHNOLOGY_FMSYNTH
+
+The device is an FM synthesizer.
+
+
+#### KSMUSIC_TECHNOLOGY_MAPPER
+
+The device is the Microsoft MIDI mapper.
+
+
+#### KSMUSIC_TECHNOLOGY_WAVETABLE
+
+The device is a hardware wavetable synthesizer.
+
+
+#### KSMUSIC_TECHNOLOGY_SWSYNTH
+
+The device is a software synthesizer.
 
 ## Remarks
 For examples of data ranges that use the KSDATARANGE_MUSIC structure, see <a href="https://msdn.microsoft.com/392eadf7-9c6e-4527-bc84-a2916623c154">MIDI Stream Data Range</a> and <a href="https://msdn.microsoft.com/e3423901-330e-4a86-a921-6678e1c45a97">DirectMusic Stream Data Range</a>.

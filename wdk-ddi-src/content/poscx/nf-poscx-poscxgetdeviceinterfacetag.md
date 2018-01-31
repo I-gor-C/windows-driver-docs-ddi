@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : CF54D922-8EEE-41CE-8CFC-0628756117BE
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : pos.poscxgetdeviceinterfacetag, PosCxGetDeviceInterfaceTag function, PosCxGetDeviceInterfaceTag, poscx/PosCxGetDeviceInterfaceTag
+ms.keywords : PosCxGetDeviceInterfaceTag function, PosCxGetDeviceInterfaceTag, pos.poscxgetdeviceinterfacetag, poscx/PosCxGetDeviceInterfaceTag
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

@@ -1,6 +1,6 @@
 ---
 UID : NS:winddiui._ATTRIBUTE_INFO_3
-title : _ATTRIBUTE_INFO_3
+title : "_ATTRIBUTE_INFO_3"
 author : windows-driver-content
 description : The ATTRIBUTE_INFO_3 structure is used as a parameter for a printer interface DLL's DrvQueryJobAttributes function. All member values are function-supplied.
 old-location : print\attribute_info_3.htm
@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : a9299c25-4210-4161-bfd6-8a13113b93e1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.attribute_info_3, PATTRIBUTE_INFO_3, ATTRIBUTE_INFO_3 structure [Print Devices], winddiui/PATTRIBUTE_INFO_3, winddiui/ATTRIBUTE_INFO_3, print_interface-graphics_473dca69-31fc-410d-a9d6-cfa5241f2c5b.xml, _ATTRIBUTE_INFO_3, *PATTRIBUTE_INFO_3, PATTRIBUTE_INFO_3 structure pointer [Print Devices], ATTRIBUTE_INFO_3
+ms.keywords : print.attribute_info_3, ATTRIBUTE_INFO_3 structure [Print Devices], *PATTRIBUTE_INFO_3, print_interface-graphics_473dca69-31fc-410d-a9d6-cfa5241f2c5b.xml, ATTRIBUTE_INFO_3, PATTRIBUTE_INFO_3, winddiui/PATTRIBUTE_INFO_3, winddiui/ATTRIBUTE_INFO_3, PATTRIBUTE_INFO_3 structure pointer [Print Devices], _ATTRIBUTE_INFO_3
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : ATTRIBUTE_INFO_3, *PATTRIBUTE_INFO_3
+req.typenames : "*PATTRIBUTE_INFO_3, ATTRIBUTE_INFO_3"
 req.product : Windows 10 or later.
 ---
 
@@ -208,15 +208,15 @@ For information about other ATTRIBUTE_INFO_3 structure members, see <a href="..\
 
 ## See Also
 
-<a href="..\winddiui\ns-winddiui-_attribute_info_4.md">ATTRIBUTE_INFO_4</a>
+<a href="..\winppi\nf-winppi-gdiendpageemf.md">GdiEndPageEMF</a>
 
 <a href="..\winddiui\nf-winddiui-drvqueryjobattributes.md">DrvQueryJobAttributes</a>
 
-<a href="..\winppi\nf-winppi-gdiendpageemf.md">GdiEndPageEMF</a>
+<a href="..\winddiui\ns-winddiui-_attribute_info_2.md">ATTRIBUTE_INFO_2</a>
+
+<a href="..\winddiui\ns-winddiui-_attribute_info_4.md">ATTRIBUTE_INFO_4</a>
 
 <a href="..\winsplp\nf-winsplp-getjobattributesex.md">GetJobAttributesEx</a>
-
-<a href="..\winddiui\ns-winddiui-_attribute_info_2.md">ATTRIBUTE_INFO_2</a>
 
  
 

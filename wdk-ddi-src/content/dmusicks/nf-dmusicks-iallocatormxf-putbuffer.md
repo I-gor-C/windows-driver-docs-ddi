@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 20daf292-9476-4435-915d-f97fba3a6ec2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PutBuffer, IAllocatorMXF, audio.iallocatormxf_putbuffer, IAllocatorMXF interface [Audio Devices], PutBuffer method, IAllocatorMXF::PutBuffer, dmusicks/IAllocatorMXF::PutBuffer, PutBuffer method [Audio Devices], IAllocatorMXF interface, audmp-routines_8afbc000-69b1-45a5-8fe3-3f6ff8d5518d.xml, PutBuffer method [Audio Devices]
+ms.keywords : audmp-routines_8afbc000-69b1-45a5-8fe3-3f6ff8d5518d.xml, IAllocatorMXF::PutBuffer, IAllocatorMXF interface [Audio Devices], PutBuffer method, PutBuffer method [Audio Devices], dmusicks/IAllocatorMXF::PutBuffer, audio.iallocatormxf_putbuffer, PutBuffer method [Audio Devices], IAllocatorMXF interface, PutBuffer, IAllocatorMXF
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -74,7 +74,7 @@ The miniport driver does not need to use this method because when the miniport d
 | **Minimum UMDF version** |  |
 | **Header** | dmusicks.h (include Dmusicks.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

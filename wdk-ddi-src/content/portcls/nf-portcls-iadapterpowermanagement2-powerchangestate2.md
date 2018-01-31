@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 72068476-5821-4646-88b3-06f3a1917fca
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.iadapterpowermanagement2_powerchangestate2, portcls/IAdapterPowerManagement2::PowerChangeState2, audmp-routines_d145e24a-5ef1-44a3-b51b-9ee2c8a89772.xml, IAdapterPowerManagement2 interface [Audio Devices], PowerChangeState2 method, PowerChangeState2, IAdapterPowerManagement2, PowerChangeState2 method [Audio Devices], IAdapterPowerManagement2 interface, PowerChangeState2 method [Audio Devices], IAdapterPowerManagement2::PowerChangeState2
+ms.keywords : IAdapterPowerManagement2 interface [Audio Devices], PowerChangeState2 method, PowerChangeState2, IAdapterPowerManagement2::PowerChangeState2, PowerChangeState2 method [Audio Devices], IAdapterPowerManagement2 interface, portcls/IAdapterPowerManagement2::PowerChangeState2, PowerChangeState2 method [Audio Devices], audio.iadapterpowermanagement2_powerchangestate2, audmp-routines_d145e24a-5ef1-44a3-b51b-9ee2c8a89772.xml, IAdapterPowerManagement2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -86,15 +86,15 @@ For more information about system power states, see <a href="https://msdn.micros
 
 ## See Also
 
-<a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a>
+<a href="..\portcls\nn-portcls-iadapterpowermanagement2.md">IAdapterPowerManagement2</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546941">Handling System Power State Requests</a>
 
-<a href="..\portcls\nn-portcls-iadapterpowermanagement2.md">IAdapterPowerManagement2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554397">Managing Power for Individual Devices</a>
+
+<a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a>
 
 <a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554397">Managing Power for Individual Devices</a>
 
  
 

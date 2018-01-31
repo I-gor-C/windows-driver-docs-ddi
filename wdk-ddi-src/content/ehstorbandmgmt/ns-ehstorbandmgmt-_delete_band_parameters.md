@@ -1,6 +1,6 @@
 ---
 UID : NS:ehstorbandmgmt._DELETE_BAND_PARAMETERS
-title : _DELETE_BAND_PARAMETERS
+title : "_DELETE_BAND_PARAMETERS"
 author : windows-driver-content
 description : A configured band is deleted according to the parameters in a DELETE_BAND_PARAMETERS structure. This structure is input for an IOCTL_EHSTOR_BANDMGMT_DELETE_BAND request.
 old-location : storage\delete_band_parameters.htm
@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6C96CF49-A7B2-4A99-8C7A-FC1C8C389C18
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : DELBAND_ERASE_BEFORE_DELETE, ehstorbandmgmt/PDELETE_BAND_PARAMETERS, PDELETE_BAND_PARAMETERS structure pointer [Storage Devices], PDELETE_BAND_PARAMETERS, storage.delete_band_parameters, _DELETE_BAND_PARAMETERS, ehstorbandmgmt/DELETE_BAND_PARAMETERS, DELETE_BAND_PARAMETERS structure [Storage Devices], *PDELETE_BAND_PARAMETERS, DELETE_BAND_PARAMETERS
+ms.keywords : "*PDELETE_BAND_PARAMETERS, DELETE_BAND_PARAMETERS structure [Storage Devices], ehstorbandmgmt/DELETE_BAND_PARAMETERS, PDELETE_BAND_PARAMETERS, PDELETE_BAND_PARAMETERS structure pointer [Storage Devices], _DELETE_BAND_PARAMETERS, storage.delete_band_parameters, ehstorbandmgmt/PDELETE_BAND_PARAMETERS, DELBAND_ERASE_BEFORE_DELETE, DELETE_BAND_PARAMETERS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,6 +76,16 @@ The offset, in bytes, of an  <b> AUTH_KEY</b> structure containing the authoriza
 
 To specify a default authentication key to the band, set   <b>AuthKeyOffset</b> = <b>EHSTOR_BANDMGR_NO_KEY</b>. If <b>Flags</b> contains <b>DELBAND_ERASE_BEFORE_DELETE</b>, <b>AuthKeyOffset</b> must be set to <b>EHSTOR_BANDMGR_NO_KEY</b>.
 
+
+#### KeySize
+
+The size of the key, in bytes, of the key data at <b>Key</b>. If <b>KeySize</b> is set to 0, a default key is used.
+
+
+#### Key
+
+A variable-length byte array containing the key data.
+
 `BandId`
 
 The identifier of a single band to return information for. <b>BandSize</b> must be 0 when a single band is selected  with <b>BandId</b>. To use <b>BandStart</b> and <b>BandSize</b> instead of <b>BandId</b> to select a band, set <b>BandId</b> = (ULONG) –1.
@@ -131,9 +141,9 @@ If <b>DELBAND_ERASE_BEFORE_DELETE</b> is set in <b>Flags</b>, then an authentica
 
 <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_erase_band.md">IOCTL_EHSTOR_BANDMGMT_ERASE_BAND</a>
 
-<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_management_capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>
-
 <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_delete_band.md">IOCTL_EHSTOR_BANDMGMT_DELETE_BAND</a>
+
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_management_capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>
 
  
 

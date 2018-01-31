@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dhal._D3DHAL_DP2STARTVERTEX
-title : _D3DHAL_DP2STARTVERTEX
+title : "_D3DHAL_DP2STARTVERTEX"
 author : windows-driver-content
 description : A D3DHAL_DP2STARTVERTEX structure follows certain D3DHAL_DP2COMMAND structures in the command buffer, and indicates the offset in the vertex buffer for the first vertex to use in D3dDrawPrimitives2.
 old-location : display\d3dhal_dp2startvertex.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 302ed135-9fde-4101-876f-1f70bed501b0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DHAL_DP2STARTVERTEX, LPD3DHAL_DP2STARTVERTEX structure pointer [Display Devices], *LPD3DHAL_DP2STARTVERTEX, d3dhal/LPD3DHAL_DP2STARTVERTEX, D3DHAL_DP2STARTVERTEX structure [Display Devices], LPD3DHAL_DP2STARTVERTEX, _D3DHAL_DP2STARTVERTEX, d3dhal/D3DHAL_DP2STARTVERTEX, display.d3dhal_dp2startvertex, d3dstrct_1dafced6-8893-45ac-b5a2-8735fe3dbd6a.xml
+ms.keywords : LPD3DHAL_DP2STARTVERTEX structure pointer [Display Devices], display.d3dhal_dp2startvertex, LPD3DHAL_DP2STARTVERTEX, d3dstrct_1dafced6-8893-45ac-b5a2-8735fe3dbd6a.xml, *LPD3DHAL_DP2STARTVERTEX, D3DHAL_DP2STARTVERTEX structure [Display Devices], d3dhal/D3DHAL_DP2STARTVERTEX, _D3DHAL_DP2STARTVERTEX, d3dhal/LPD3DHAL_DP2STARTVERTEX, D3DHAL_DP2STARTVERTEX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -90,21 +90,21 @@ D3DDP2OP_INDEXEDTRIANGLEFAN
 
 ## See Also
 
+D3DDP2OP_INDEXEDLINELIST2
+
+D3DDP2OP_INDEXEDTRIANGLESTRIP
+
 D3DDP2OP_INDEXEDLINESTRIP
-
-<a href="..\d3dhal\ns-d3dhal-_d3dhal_drawprimitives2data.md">D3DHAL_DRAWPRIMITIVES2DATA</a>
-
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
 
 D3DDP2OP_INDEXEDTRIANGLEFAN
 
-D3DDP2OP_INDEXEDTRIANGLESTRIP
-
-D3DDP2OP_INDEXEDLINELIST2
-
 D3DDP2OP_INDEXEDTRIANGLELIST2
+
+<a href="..\d3dhal\ns-d3dhal-_d3dhal_drawprimitives2data.md">D3DHAL_DRAWPRIMITIVES2DATA</a>
+
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 
  
 

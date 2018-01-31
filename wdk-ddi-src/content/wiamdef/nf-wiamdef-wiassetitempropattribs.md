@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 354d09c3-8db4-4af9-b077-8e3bcda7a6f2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiasSetItemPropAttribs function [Imaging Devices], wiasSetItemPropAttribs, image.wiassetitempropattribs, wiasFncs_f3e1e830-6569-4b0f-8e0a-deac0a95022b.xml, wiamdef/wiasSetItemPropAttribs
+ms.keywords : wiamdef/wiasSetItemPropAttribs, wiasFncs_f3e1e830-6569-4b0f-8e0a-deac0a95022b.xml, image.wiassetitempropattribs, wiasSetItemPropAttribs, wiasSetItemPropAttribs function [Imaging Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2
+req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -143,9 +143,9 @@ Reboot the system and repeat the steps necessary to produce this error. There wi
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiassetpropertyattributes.md">wiasSetPropertyAttributes</a>
-
 <a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_info.md">WIA_PROPERTY_INFO</a>
+
+<a href="..\wiamdef\nf-wiamdef-wiassetpropertyattributes.md">wiasSetPropertyAttributes</a>
 
 <a href="..\wiamdef\nf-wiamdef-wiassetitempropnames.md">wiasSetItemPropNames</a>
 

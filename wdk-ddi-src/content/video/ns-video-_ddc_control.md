@@ -1,6 +1,6 @@
 ---
 UID : NS:video._DDC_CONTROL
-title : _DDC_CONTROL
+title : "_DDC_CONTROL"
 author : windows-driver-content
 description : The DDC_CONTROL structure holds function pointers and EDID segment information needed by the VideoPortDDCMonitorHelper function, which is exported by the video port driver.
 old-location : display\ddc_control.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 993c4913-1613-4ffb-86dd-fd8846139a46
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DDC_CONTROL structure [Display Devices], Video_Structs_d3006e08-ed2e-471d-b9c1-326a35aaf8bf.xml, video/DDC_CONTROL, DDC_CONTROL, PDDC_CONTROL, video/PDDC_CONTROL, display.ddc_control, PDDC_CONTROL structure pointer [Display Devices], *PDDC_CONTROL, _DDC_CONTROL
+ms.keywords : Video_Structs_d3006e08-ed2e-471d-b9c1-326a35aaf8bf.xml, _DDC_CONTROL, DDC_CONTROL structure [Display Devices], video/DDC_CONTROL, PDDC_CONTROL structure pointer [Display Devices], video/PDDC_CONTROL, DDC_CONTROL, *PDDC_CONTROL, PDDC_CONTROL, display.ddc_control
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -77,15 +77,15 @@ Specifies the size, in bytes, of this DDC_CONTROL structure.
 
 ## See Also
 
+<a href="..\video\nc-video-pvideo_read_clock_line.md">ReadClockLine</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567383">I2C Functions</a>
-
-<a href="..\video\nc-video-pvideo_write_clock_line.md">WriteClockLine</a>
-
-<a href="..\video\nc-video-pvideo_write_data_line.md">WriteDataLine</a>
 
 <a href="..\video\nc-video-pvideo_read_data_line.md">ReadDataLine</a>
 
-<a href="..\video\nc-video-pvideo_read_clock_line.md">ReadClockLine</a>
+<a href="..\video\nc-video-pvideo_write_data_line.md">WriteDataLine</a>
+
+<a href="..\video\nc-video-pvideo_write_clock_line.md">WriteClockLine</a>
 
  
 

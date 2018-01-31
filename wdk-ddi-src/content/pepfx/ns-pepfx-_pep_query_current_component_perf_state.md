@@ -1,6 +1,6 @@
 ---
 UID : NS:pepfx._PEP_QUERY_CURRENT_COMPONENT_PERF_STATE
-title : _PEP_QUERY_CURRENT_COMPONENT_PERF_STATE
+title : "_PEP_QUERY_CURRENT_COMPONENT_PERF_STATE"
 author : windows-driver-content
 description : The PEP_QUERY_CURRENT_COMPONENT_PERF_STATE structure contains information about the current P-state in the specified P-state set.
 old-location : kernel\pep_query_current_component_perf_state.htm
@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 2A561853-B809-4BF5-911C-520A7D9C473C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : pepfx/PPEP_QUERY_CURRENT_COMPONENT_PERF_STATE, kernel.pep_query_current_component_perf_state, *PPEP_QUERY_CURRENT_COMPONENT_PERF_STATE, pepfx/PEP_QUERY_CURRENT_COMPONENT_PERF_STATE, PEP_QUERY_CURRENT_COMPONENT_PERF_STATE structure [Kernel-Mode Driver Architecture], PEP_QUERY_CURRENT_COMPONENT_PERF_STATE, _PEP_QUERY_CURRENT_COMPONENT_PERF_STATE, PPEP_QUERY_CURRENT_COMPONENT_PERF_STATE, PPEP_QUERY_CURRENT_COMPONENT_PERF_STATE structure pointer [Kernel-Mode Driver Architecture]
+ms.keywords : pepfx/PPEP_QUERY_CURRENT_COMPONENT_PERF_STATE, PEP_QUERY_CURRENT_COMPONENT_PERF_STATE, PPEP_QUERY_CURRENT_COMPONENT_PERF_STATE, *PPEP_QUERY_CURRENT_COMPONENT_PERF_STATE, _PEP_QUERY_CURRENT_COMPONENT_PERF_STATE, pepfx/PEP_QUERY_CURRENT_COMPONENT_PERF_STATE, PEP_QUERY_CURRENT_COMPONENT_PERF_STATE structure [Kernel-Mode Driver Architecture], kernel.pep_query_current_component_perf_state, PPEP_QUERY_CURRENT_COMPONENT_PERF_STATE structure pointer [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PEP_QUERY_CURRENT_COMPONENT_PERF_STATE, *PPEP_QUERY_CURRENT_COMPONENT_PERF_STATE
+req.typenames : "*PPEP_QUERY_CURRENT_COMPONENT_PERF_STATE, PEP_QUERY_CURRENT_COMPONENT_PERF_STATE"
 ---
 
 # _PEP_QUERY_CURRENT_COMPONENT_PERF_STATE structure
@@ -82,11 +82,11 @@ This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
-
 <a href="..\pepfx\ns-pepfx-_pep_device_register_v2.md">PEP_DEVICE_REGISTER_V2</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186843">PEP_DPM_QUERY_CURRENT_COMPONENT_PERF_STATE</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
 
  
 

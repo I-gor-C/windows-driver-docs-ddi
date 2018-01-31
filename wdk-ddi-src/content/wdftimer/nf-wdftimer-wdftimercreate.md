@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 577b7629-13ff-4a2d-9f9f-a140d8442bd3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdftimer/WdfTimerCreate, WdfTimerCreate, DFTimerObjectRef_3388a92e-119d-4208-9cf5-2c934435ff25.xml, kmdf.wdftimercreate, WdfTimerCreate method, wdf.wdftimercreate, PFN_WDFTIMERCREATE
+ms.keywords : wdf.wdftimercreate, wdftimer/WdfTimerCreate, WdfTimerCreate, WdfTimerCreate method, DFTimerObjectRef_3388a92e-119d-4208-9cf5-2c934435ff25.xml, kmdf.wdftimercreate, PFN_WDFTIMERCREATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -158,20 +158,20 @@ For more information about framework timer objects, see <a href="https://docs.mi
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdftimer.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
-
-<a href="..\wdftimer\nf-wdftimer-wdf_timer_config_init.md">WDF_TIMER_CONFIG_INIT</a>
-
-<a href="..\wdftimer\ns-wdftimer-_wdf_timer_config.md">WDF_TIMER_CONFIG</a>
 
 <a href="..\wdftimer\nf-wdftimer-wdftimerstart.md">WdfTimerStart</a>
 
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 
 <a href="..\wdfobject\nf-wdfobject-wdf_object_attributes_init.md">WDF_OBJECT_ATTRIBUTES_INIT</a>
+
+<a href="..\wdftimer\ns-wdftimer-_wdf_timer_config.md">WDF_TIMER_CONFIG</a>
+
+<a href="..\wdftimer\nf-wdftimer-wdf_timer_config_init.md">WDF_TIMER_CONFIG_INIT</a>
 
  
 

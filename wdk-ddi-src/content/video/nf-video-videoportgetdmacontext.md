@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1bd9a156-a366-4f35-956f-d195c41ae722
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.videoportgetdmacontext, video/VideoPortGetDmaContext, VideoPortGetDmaContext, VideoPortGetDmaContext function [Display Devices], VideoPort_Functions_97335d32-fa36-4130-a050-39fbdfc08517.xml
+ms.keywords : video/VideoPortGetDmaContext, VideoPortGetDmaContext function [Display Devices], display.videoportgetdmacontext, VideoPort_Functions_97335d32-fa36-4130-a050-39fbdfc08517.xml, VideoPortGetDmaContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

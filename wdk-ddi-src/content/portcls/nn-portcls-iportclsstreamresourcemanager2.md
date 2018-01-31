@@ -61,7 +61,7 @@ same audio miniport driver must run on previous versions of Windows. The audio m
 
 | Method | Description |
 | ---- |:---- |
-| [portcls.IPortClsStreamResourceManager2.AddStreamResource2](nf-portcls-iportclsstreamresourcemanager2-addstreamresource2.md) | AddStreamResource2 adds a stream resource. Two type of stream resources are supported: interrupts and driver-owned threads. The AddStreamResource2 method can only be used by audio waveRT miniport drivers. |
+| [portcls.IPortClsStreamResourceManager2.AddStreamResource2](nf-portcls-iportclsstreamresourcemanager2-addstreamresource2.md) | AddStreamResource2 adds a stream resource. Two type of stream resources are supported:\_interrupts and driver-owned threads. The AddStreamResource2 method can only be used by audio waveRT miniport drivers. |
 
 ## Remarks
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 7b2dcb75-f674-4a66-a483-8c3f644390c1
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.getsystemidsbyindex, GetSystemIdsByIndex, IDebugSystemObjects4 interface [Windows Debugging], GetSystemIdsByIndex method, IDebugSystemObjects4::GetSystemIdsByIndex, IDebugSystemObjects3::GetSystemIdsByIndex, dbgeng/IDebugSystemObjects4::GetSystemIdsByIndex, IDebugSystemObjects_d1d7e689-407b-4d84-b1ce-75736b761089.xml, IDebugSystemObjects3 interface [Windows Debugging], GetSystemIdsByIndex method, GetSystemIdsByIndex method [Windows Debugging], IDebugSystemObjects4, GetSystemIdsByIndex method [Windows Debugging], IDebugSystemObjects4 interface, dbgeng/IDebugSystemObjects3::GetSystemIdsByIndex, GetSystemIdsByIndex method [Windows Debugging], IDebugSystemObjects3 interface
+ms.keywords : dbgeng/IDebugSystemObjects4::GetSystemIdsByIndex, IDebugSystemObjects3::GetSystemIdsByIndex, GetSystemIdsByIndex method [Windows Debugging], GetSystemIdsByIndex method [Windows Debugging], IDebugSystemObjects3 interface, GetSystemIdsByIndex method [Windows Debugging], IDebugSystemObjects4 interface, debugger.getsystemidsbyindex, IDebugSystemObjects4 interface [Windows Debugging], GetSystemIdsByIndex method, IDebugSystemObjects4, IDebugSystemObjects_d1d7e689-407b-4d84-b1ce-75736b761089.xml, GetSystemIdsByIndex, IDebugSystemObjects4::GetSystemIdsByIndex, IDebugSystemObjects3 interface [Windows Debugging], GetSystemIdsByIndex method, dbgeng/IDebugSystemObjects3::GetSystemIdsByIndex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

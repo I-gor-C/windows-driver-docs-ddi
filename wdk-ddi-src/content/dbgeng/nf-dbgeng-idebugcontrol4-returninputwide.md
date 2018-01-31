@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 6e7f0995-14d0-4dd3-b598-2f988a2ec4fd
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.returninputwide, ReturnInputWide method [Windows Debugging], IDebugControl4 interface, ReturnInputWide method [Windows Debugging], IDebugControl4, IDebugControl4 interface [Windows Debugging], ReturnInputWide method, IDebugControl4::ReturnInputWide, dbgeng/IDebugControl4::ReturnInputWide, ReturnInputWide
+ms.keywords : IDebugControl4 interface [Windows Debugging], ReturnInputWide method, debugger.returninputwide, ReturnInputWide method [Windows Debugging], IDebugControl4::ReturnInputWide, dbgeng/IDebugControl4::ReturnInputWide, IDebugControl4, ReturnInputWide, ReturnInputWide method [Windows Debugging], IDebugControl4 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

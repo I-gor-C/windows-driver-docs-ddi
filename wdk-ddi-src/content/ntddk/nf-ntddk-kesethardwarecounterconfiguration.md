@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9677dbd7-4b6f-49a9-ac38-fdcbaeb3a6f8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeSetHardwareCounterConfiguration routine [Kernel-Mode Driver Architecture], k105_2cf79626-ed0d-4a15-bd9f-22b669ffde98.xml, KeSetHardwareCounterConfiguration, kernel.kesethardwarecounterconfiguration, ntddk/KeSetHardwareCounterConfiguration
+ms.keywords : ntddk/KeSetHardwareCounterConfiguration, KeSetHardwareCounterConfiguration, kernel.kesethardwarecounterconfiguration, k105_2cf79626-ed0d-4a15-bd9f-22b669ffde98.xml, KeSetHardwareCounterConfiguration routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -134,18 +134,18 @@ Virtualization software typically does not virtualize hardware performance count
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-halallocatehardwarecounters.md">HalAllocateHardwareCounters</a>
-
-<a href="..\ntddk\nf-ntddk-kequeryhardwarecounterconfiguration.md">KeQueryHardwareCounterConfiguration</a>
+<a href="..\ntddk\nf-ntddk-halfreehardwarecounters.md">HalFreeHardwareCounters</a>
 
 <a href="..\ntddk\ns-ntddk-_hardware_counter.md">HARDWARE_COUNTER</a>
 
-<a href="..\ntddk\nf-ntddk-halfreehardwarecounters.md">HalFreeHardwareCounters</a>
+<a href="..\ntddk\nf-ntddk-halallocatehardwarecounters.md">HalAllocateHardwareCounters</a>
+
+<a href="..\ntddk\nf-ntddk-kequeryhardwarecounterconfiguration.md">KeQueryHardwareCounterConfiguration</a>
 
  
 

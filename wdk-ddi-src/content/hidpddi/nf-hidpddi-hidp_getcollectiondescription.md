@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : F8FD0C10-115D-4ACF-8C7F-127D342EA9CD
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : HidP_GetCollectionDescription, hid.hidp_getcollectiondescription, hidpddi/HidP_GetCollectionDescription, HidP_GetCollectionDescription function [Human Input Devices]
+ms.keywords : hidpddi/HidP_GetCollectionDescription, HidP_GetCollectionDescription function [Human Input Devices], hid.hidp_getcollectiondescription, HidP_GetCollectionDescription
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -189,5 +189,5 @@ For a raw report descriptor that is specified by the <i>ReportDesc</i> parameter
 | **Minimum UMDF version** |  |
 | **Header** | hidpddi.h (include Hidpddi.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |

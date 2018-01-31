@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 0837f458-6585-4ac9-a166-e72f715238a1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PKSPROPERTY_VALUES, PKSPROPERTY_VALUES, stream.ksproperty_values, ks/PKSPROPERTY_VALUES, KSPROPERTY_VALUES structure [Streaming Media Devices], ks-struct_a9156948-e21f-41d4-bb63-9c85fdbf57f3.xml, ks/KSPROPERTY_VALUES, PKSPROPERTY_VALUES structure pointer [Streaming Media Devices], KSPROPERTY_VALUES"
+ms.keywords : KSPROPERTY_VALUES structure [Streaming Media Devices], PKSPROPERTY_VALUES, PKSPROPERTY_VALUES structure pointer [Streaming Media Devices], *PKSPROPERTY_VALUES, stream.ksproperty_values, ks-struct_a9156948-e21f-41d4-bb63-9c85fdbf57f3.xml, KSPROPERTY_VALUES, ks/KSPROPERTY_VALUES, ks/PKSPROPERTY_VALUES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -110,13 +110,13 @@ For more information, see <a href="https://msdn.microsoft.com/a385929e-1934-4d88
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksproperty_item.md">KSPROPERTY_ITEM</a>
-
 <a href="..\ks\ns-ks-ksproperty_description.md">KSPROPERTY_DESCRIPTION</a>
+
+<a href="..\ks\ns-ks-ksproperty_memberslist.md">KSPROPERTY_MEMBERSLIST</a>
 
 <a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a>
 
-<a href="..\ks\ns-ks-ksproperty_memberslist.md">KSPROPERTY_MEMBERSLIST</a>
+<a href="..\ks\ns-ks-ksproperty_item.md">KSPROPERTY_ITEM</a>
 
  
 

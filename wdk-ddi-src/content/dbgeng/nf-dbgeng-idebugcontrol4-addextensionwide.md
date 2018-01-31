@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 5c918f44-1ee7-4666-b83a-e13ce02e26db
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl4 interface [Windows Debugging], AddExtensionWide method, AddExtensionWide method [Windows Debugging], IDebugControl4 interface, dbgeng/IDebugControl4::AddExtensionWide, IDebugControl4::AddExtensionWide, debugger.addextensionwide, IDebugControl4, AddExtensionWide method [Windows Debugging], AddExtensionWide
+ms.keywords : IDebugControl4::AddExtensionWide, AddExtensionWide method [Windows Debugging], AddExtensionWide, IDebugControl4, dbgeng/IDebugControl4::AddExtensionWide, IDebugControl4 interface [Windows Debugging], AddExtensionWide method, AddExtensionWide method [Windows Debugging], IDebugControl4 interface, debugger.addextensionwide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -111,11 +111,11 @@ For more information on using extension libraries, see <a href="https://msdn.mic
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554497">RemoveExtension</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546717">GetExtensionByPath</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554497">RemoveExtension</a>
 
  
 

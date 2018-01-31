@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7DCAFA7C-6F13-4020-BCB6-D36EE164BDAA
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoFxCompleteDevicePowerNotRequired, PoFxCompleteDevicePowerNotRequired routine [Kernel-Mode Driver Architecture], wdm/PoFxCompleteDevicePowerNotRequired, kernel.pofxcompletedevicepowernotrequired
+ms.keywords : kernel.pofxcompletedevicepowernotrequired, PoFxCompleteDevicePowerNotRequired, PoFxCompleteDevicePowerNotRequired routine [Kernel-Mode Driver Architecture], wdm/PoFxCompleteDevicePowerNotRequired
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,7 +77,7 @@ PoFx calls the driver's <i>DevicePowerNotRequiredCallback</i> routine to inform 
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 09229774-14db-448b-bd49-2d39a848c9a6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DrvDocumentEvent function [Print Devices], winddiui/DrvDocumentEvent, print_interface-graphics_ffc39ed1-d1b8-4e3d-b0a3-515b90cd6c8f.xml, DrvDocumentEvent, print.drvdocumentevent
+ms.keywords : print.drvdocumentevent, DrvDocumentEvent, winddiui/DrvDocumentEvent, DrvDocumentEvent function [Print Devices], print_interface-graphics_ffc39ed1-d1b8-4e3d-b0a3-515b90cd6c8f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -395,7 +395,19 @@ Not used.
 
 `cbOut`
 
+#### If iEsc is DOCUMENTEVENT_ESCAPE:
 
+Function-supplied value that is used as the <i>cbOutput</i> parameter for <b>ExtEscape</b>.
+
+
+#### If iEsc is DOCUMENTEVENT_QUERYFILTER:
+
+Caller-supplied size, in bytes, of the buffer pointer to by <i>pvOut</i>.
+
+
+#### For all other iEsc values:
+
+Not used.
 
 `pvOut`
 
@@ -610,11 +622,11 @@ If the job is being spooled, <i>pvIn</i> --&gt; pszDevice points to the printer 
 
 ## See Also
 
-<a href="..\winddiui\ns-winddiui-_docevent_escape.md">DOCEVENT_ESCAPE</a>
-
 <a href="..\winddiui\ns-winddiui-_docevent_filter.md">DOCEVENT_FILTER</a>
 
 <a href="..\winddiui\ns-winddiui-_docevent_createdcpre.md">DOCEVENT_CREATEDCPRE</a>
+
+<a href="..\winddiui\ns-winddiui-_docevent_escape.md">DOCEVENT_ESCAPE</a>
 
  
 

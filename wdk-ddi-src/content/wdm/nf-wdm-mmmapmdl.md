@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4272f7a2-9379-40dd-a0a1-784dd25bc8bc
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmMapMdl function [Kernel-Mode Driver Architecture], wdm/MmMapMdl, kernel.mmmapmdl, MmMapMdl
+ms.keywords : MmMapMdl, wdm/MmMapMdl, kernel.mmmapmdl, MmMapMdl function [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,7 +88,7 @@ If the callback function pointed to by <i>DriverRoutine</i> was invoked, this fu
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

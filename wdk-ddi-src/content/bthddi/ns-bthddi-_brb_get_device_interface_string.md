@@ -1,6 +1,6 @@
 ---
 UID : NS:bthddi._BRB_GET_DEVICE_INTERFACE_STRING
-title : _BRB_GET_DEVICE_INTERFACE_STRING
+title : "_BRB_GET_DEVICE_INTERFACE_STRING"
 author : windows-driver-content
 description : The _BRB_GET_DEVICE_INTERFACE_STRING structure describes the device interface string for the current device object.
 old-location : bltooth\_brb_get_device_interface_string.htm
@@ -8,14 +8,14 @@ old-project : bltooth
 ms.assetid : 340e4b9a-9959-4eda-b26b-674f7fca7156
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : bth_structs_3d85c9ac-2714-4d6c-8a3e-f8908d8e5be9.xml, bthddi/_BRB_GET_DEVICE_INTERFACE_STRING, bltooth._brb_get_device_interface_string, _BRB_GET_DEVICE_INTERFACE_STRING structure [Bluetooth Devices], _BRB_GET_DEVICE_INTERFACE_STRING
+ms.keywords : bltooth._brb_get_device_interface_string, _BRB_GET_DEVICE_INTERFACE_STRING structure [Bluetooth Devices], bthddi/_BRB_GET_DEVICE_INTERFACE_STRING, _BRB_GET_DEVICE_INTERFACE_STRING, bth_structs_3d85c9ac-2714-4d6c-8a3e-f8908d8e5be9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
@@ -97,10 +97,10 @@ If the buffer pointed to by the
 
 ## See Also
 
-<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
-
 <mshelp:link keywords="bltooth.brb_get_device_interface_string" tabindex="0"><b>
    BRB_GET_DEVICE_INTERFACE_STRING</b></mshelp:link>
+
+<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
 
 <a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a>
 

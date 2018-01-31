@@ -1,6 +1,6 @@
 ---
 UID : NS:wdm._PCI_EXPRESS_AER_CAPABILITIES
-title : _PCI_EXPRESS_AER_CAPABILITIES
+title : "_PCI_EXPRESS_AER_CAPABILITIES"
 author : windows-driver-content
 description : The PCI_EXPRESS_AER_CAPABILITIES structure describes a PCI Express (PCIe) advanced error capabilities and control register of a PCIe advanced error reporting capability structure.
 old-location : pci\pci_express_aer_capabilities.htm
@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : 7cb25991-4e82-4da2-9d1f-fadc035b25a3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : PCI_EXPRESS_AER_CAPABILITIES, PPCI_EXPRESS_AER_CAPABILITIES union pointer [Buses], _PCI_EXPRESS_AER_CAPABILITIES, wdm/PPCI_EXPRESS_AER_CAPABILITIES, pci_struct_e316ea91-d32a-4726-ba80-8fc6bd8e3163.xml, PCI_EXPRESS_AER_CAPABILITIES union [Buses], wdm/PCI_EXPRESS_AER_CAPABILITIES, PCI.pci_express_aer_capabilities, *PPCI_EXPRESS_AER_CAPABILITIES, PPCI_EXPRESS_AER_CAPABILITIES
+ms.keywords : wdm/PCI_EXPRESS_AER_CAPABILITIES, PPCI_EXPRESS_AER_CAPABILITIES union pointer [Buses], *PPCI_EXPRESS_AER_CAPABILITIES, PCI_EXPRESS_AER_CAPABILITIES union [Buses], PCI_EXPRESS_AER_CAPABILITIES, PCI.pci_express_aer_capabilities, _PCI_EXPRESS_AER_CAPABILITIES, wdm/PPCI_EXPRESS_AER_CAPABILITIES, PPCI_EXPRESS_AER_CAPABILITIES, pci_struct_e316ea91-d32a-4726-ba80-8fc6bd8e3163.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -83,11 +83,11 @@ A PCI_EXPRESS_AER_CAPABILITIES structure is contained in the <a href="https://ms
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537457">PCI_EXPRESS_AER_CAPABILITY</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537472">PCI_EXPRESS_ROOTPORT_AER_CAPABILITY</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537458">PCI_EXPRESS_BRIDGE_AER_CAPABILITY</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537457">PCI_EXPRESS_AER_CAPABILITY</a>
 
  
 

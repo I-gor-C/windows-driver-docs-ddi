@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 950c2509-688e-4aaa-a12d-4106bb722bbc
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPort_Functions_bd747ea0-7963-4008-a91c-eb5598fc6bdd.xml, display.videoportallocatecommonbuffer, VideoPortAllocateCommonBuffer, VideoPortAllocateCommonBuffer function [Display Devices], video/VideoPortAllocateCommonBuffer
+ms.keywords : display.videoportallocatecommonbuffer, VideoPortAllocateCommonBuffer function [Display Devices], video/VideoPortAllocateCommonBuffer, VideoPort_Functions_bd747ea0-7963-4008-a91c-eb5598fc6bdd.xml, VideoPortAllocateCommonBuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -105,11 +105,11 @@ When the buffer is no longer needed, the video miniport driver should release it
 
 ## See Also
 
-<a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a>
 
 <a href="..\wdm\nc-wdm-pallocate_common_buffer.md">AllocateCommonBuffer</a>
+
+<a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>
 
 <a href="..\video\nf-video-videoportreleasecommonbuffer.md">VideoPortReleaseCommonBuffer</a>
 

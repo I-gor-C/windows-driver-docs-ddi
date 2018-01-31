@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDRIVER_INFO_8W, *LPDRIVER_INFO_8W, DRIVER_INFO_8W"
+req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -73,6 +73,30 @@ The handle used by the IHV Extensions DLL to reference the wireless LAN (WLAN) a
 
 The current connection phase. The data type for this member is the 
      <b>DOT11EXT_IHV_CONNECTION_PHASE</b> enumeration:
+     
+
+
+
+
+#### connection_phase_any
+
+Specifies any connection phase.
+
+
+#### connection_phase_initial_connection
+
+Specifies the connection phase before the IHV Extensions DLL initiates a pre-association
+       operation. For more information about the pre-association operation, see 
+       <mshelp:link keywords="netvista.pre_association_operations" tabindex="0">Pre-Association
+       Operations</mshelp:link>.
+
+
+#### connection_phase_post_l3_connection
+
+Specifies the connection phase after the IHV Extensions DLL completes a post-association
+       operation. For more information about the post-association operation, see 
+       <mshelp:link keywords="netvista.post_association_operations" tabindex="0">Post-Association
+       Operations</mshelp:link>.
 
 `*ppIhvUIRequest`
 
@@ -130,13 +154,13 @@ For example, if
 
 ## See Also
 
-<a href="..\wlanihv\nc-wlanihv-dot11ext_free_buffer.md">Dot11ExtFreeBuffer</a>
-
-<a href="..\wlanihv\nc-wlanihv-dot11ext_allocate_buffer.md">Dot11ExtAllocateBuffer</a>
-
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
 
 <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_ui_request.md">DOT11EXT_IHV_UI_REQUEST</a>
+
+<a href="..\wlanihv\nc-wlanihv-dot11ext_allocate_buffer.md">Dot11ExtAllocateBuffer</a>
+
+<a href="..\wlanihv\nc-wlanihv-dot11ext_free_buffer.md">Dot11ExtFreeBuffer</a>
 
  
 

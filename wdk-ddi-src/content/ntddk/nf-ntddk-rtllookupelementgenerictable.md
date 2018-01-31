@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 9182084b-ea11-48e4-acb5-06a8375d05bf
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rtlref_609e7ba3-35a1-40e8-9e94-f16605e52155.xml, RtlLookupElementGenericTable routine [Installable File System Drivers], ifsk.rtllookupelementgenerictable, RtlLookupElementGenericTable, ntddk/RtlLookupElementGenericTable
+ms.keywords : RtlLookupElementGenericTable routine [Installable File System Drivers], ntddk/RtlLookupElementGenericTable, rtlref_609e7ba3-35a1-40e8-9e94-f16605e52155.xml, RtlLookupElementGenericTable, ifsk.rtllookupelementgenerictable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -99,16 +99,16 @@ The caller-supplied <i>CompareRoutine</i> contains pageable code.
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | < DISPATCH_LEVEL (see Remarks section) |
+| **IRQL** | "< DISPATCH_LEVEL (see Remarks section)" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-rtlisgenerictableempty.md">RtlIsGenericTableEmpty</a>
+<a href="..\ntddk\nf-ntddk-rtlnumbergenerictableelements.md">RtlNumberGenericTableElements</a>
 
 <a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTable</a>
 
-<a href="..\ntddk\nf-ntddk-rtlnumbergenerictableelements.md">RtlNumberGenericTableElements</a>
+<a href="..\ntddk\nf-ntddk-rtlisgenerictableempty.md">RtlIsGenericTableEmpty</a>
 
  
 

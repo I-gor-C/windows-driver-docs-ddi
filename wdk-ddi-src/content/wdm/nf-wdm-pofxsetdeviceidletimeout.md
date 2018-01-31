@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8378D5F1-92AC-4C59-BA66-68246C011199
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoFxSetDeviceIdleTimeout routine [Kernel-Mode Driver Architecture], PoFxSetDeviceIdleTimeout, kernel.pofxsetdeviceidletimeout, wdm/PoFxSetDeviceIdleTimeout
+ms.keywords : PoFxSetDeviceIdleTimeout routine [Kernel-Mode Driver Architecture], wdm/PoFxSetDeviceIdleTimeout, kernel.pofxsetdeviceidletimeout, PoFxSetDeviceIdleTimeout
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,7 +86,7 @@ The device driver can call <b>PoFxSetDeviceIdleTimeout</b> each time a change in
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

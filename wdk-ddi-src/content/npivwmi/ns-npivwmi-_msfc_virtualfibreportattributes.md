@@ -1,6 +1,6 @@
 ---
 UID : NS:npivwmi._MSFC_VirtualFibrePortAttributes
-title : _MSFC_VirtualFibrePortAttributes
+title : "_MSFC_VirtualFibrePortAttributes"
 author : windows-driver-content
 description : The MSFC_VirtualFibrePortAttributes structure contains attribute information for a virtual port.
 old-location : storage\msfc_virtualfibreportattributes.htm
@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : FD8D6063-E6DD-4EA6-9675-774C58C08B40
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PMSFC_VirtualFibrePortAttributes, npivwmi/MSFC_VirtualFibrePortAttributes, npivwmi/PMSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes, _MSFC_VirtualFibrePortAttributes, storage.msfc_virtualfibreportattributes, MSFC_VirtualFibrePortAttributes structure [Storage Devices], PMSFC_VirtualFibrePortAttributes structure pointer [Storage Devices], MSFC_VirtualFibrePortAttributes
+ms.keywords : npivwmi/MSFC_VirtualFibrePortAttributes, _MSFC_VirtualFibrePortAttributes, MSFC_VirtualFibrePortAttributes structure [Storage Devices], npivwmi/PMSFC_VirtualFibrePortAttributes, MSFC_VirtualFibrePortAttributes, PMSFC_VirtualFibrePortAttributes, storage.msfc_virtualfibreportattributes, *PMSFC_VirtualFibrePortAttributes, PMSFC_VirtualFibrePortAttributes structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
+req.typenames : "*PMSFC_VirtualFibrePortAttributes, MSFC_VirtualFibrePortAttributes"
 ---
 
 # _MSFC_VirtualFibrePortAttributes structure

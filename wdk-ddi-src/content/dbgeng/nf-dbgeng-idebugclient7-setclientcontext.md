@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 235DA791-D4D1-486C-B136-3703E62E91E2
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : SetClientContext method [Windows Debugging], IDebugClient7 interface [Windows Debugging], SetClientContext method, IDebugClient7, dbgeng/IDebugClient7::SetClientContext, debugger.idebugclient7_setclientcontext, SetClientContext, IDebugClient7::SetClientContext, SetClientContext method [Windows Debugging], IDebugClient7 interface
+ms.keywords : dbgeng/IDebugClient7::SetClientContext, IDebugClient7::SetClientContext, IDebugClient7 interface [Windows Debugging], SetClientContext method, IDebugClient7, debugger.idebugclient7_setclientcontext, SetClientContext method [Windows Debugging], IDebugClient7 interface, SetClientContext method [Windows Debugging], SetClientContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

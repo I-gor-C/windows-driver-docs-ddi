@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 957892eb-39c5-4675-a3cd-d8f8dd3e7cdd
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_GetSystemSelectionPrefs, RIL_GetSystemSelectionPrefs method [Network Drivers Starting with Windows Vista], rilapi/RIL_GetSystemSelectionPrefs, netvista.ril_getsystemselectionprefs
+ms.keywords : rilapi/RIL_GetSystemSelectionPrefs, RIL_GetSystemSelectionPrefs method [Network Drivers Starting with Windows Vista], RIL_GetSystemSelectionPrefs, netvista.ril_getsystemselectionprefs
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
+req.typenames : "*PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER"
 req.product : Windows 10 or later.
 ---
 

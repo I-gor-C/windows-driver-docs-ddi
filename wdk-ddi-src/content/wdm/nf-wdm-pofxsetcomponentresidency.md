@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : B4216BA1-FC5C-4A3B-BB74-E071BD2048F8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoFxSetComponentResidency routine [Kernel-Mode Driver Architecture], kernel.pofxsetcomponentresidency, PoFxSetComponentResidency, wdm/PoFxSetComponentResidency
+ms.keywords : PoFxSetComponentResidency, wdm/PoFxSetComponentResidency, PoFxSetComponentResidency routine [Kernel-Mode Driver Architecture], kernel.pofxsetcomponentresidency
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -89,5 +89,5 @@ If a component is in the idle condition when <b>PoFxSetComponentResidency</b> is
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |

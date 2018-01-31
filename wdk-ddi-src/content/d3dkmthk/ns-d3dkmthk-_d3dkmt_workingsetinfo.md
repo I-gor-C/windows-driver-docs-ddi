@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmthk._D3DKMT_WORKINGSETINFO
-title : _D3DKMT_WORKINGSETINFO
+title : "_D3DKMT_WORKINGSETINFO"
 author : windows-driver-content
 description : The D3DKMT_WORKINGSETINFO structure describes information about the graphics adapter's working set that the OpenGL installable client driver (ICD) obtains by calling the D3DKMTQueryAdapterInfo function.
 old-location : display\d3dkmt_workingsetinfo.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1a5b75e4-abdd-4916-b2b5-4dbb53a525ae
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_WORKINGSETINFO, D3DKMT_WORKINGSETINFO, display.d3dkmt_workingsetinfo, OpenGL_Structs_a3992911-10eb-48fe-a755-fe14e68fbaa8.xml, D3DKMT_WORKINGSETINFO structure [Display Devices], d3dkmthk/D3DKMT_WORKINGSETINFO
+ms.keywords : OpenGL_Structs_a3992911-10eb-48fe-a755-fe14e68fbaa8.xml, _D3DKMT_WORKINGSETINFO, D3DKMT_WORKINGSETINFO structure [Display Devices], D3DKMT_WORKINGSETINFO, d3dkmthk/D3DKMT_WORKINGSETINFO, display.d3dkmt_workingsetinfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -78,9 +78,9 @@ typedef struct _D3DKMT_WORKINGSETINFO {
 
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a>
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a>
-
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_workingsetflags.md">D3DKMT_WORKINGSETFLAGS</a>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a>
 
  
 

@@ -1,6 +1,6 @@
 ---
 UID : NS:61883._CIP_FRAME
-title : _CIP_FRAME
+title : "_CIP_FRAME"
 author : windows-driver-content
 description : The CIP_FRAME structure describes a frame to be attached to an input or output plug.
 old-location : ieee\cip_frame.htm
@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : ac9efa58-fd38-43f2-85e6-577d58735847
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IEEE.cip_frame, 61883/PCIP_FRAME, PCIP_FRAME, 61883_structures_1fd796fa-88d2-4dc4-a440-89bf50b81ae8.xml, CIP_FRAME structure [Buses], CIP_FRAME, *PCIP_FRAME, PCIP_FRAME structure pointer [Buses], 61883/CIP_FRAME, _CIP_FRAME
+ms.keywords : CIP_FRAME, PCIP_FRAME, 61883/CIP_FRAME, CIP_FRAME structure [Buses], *PCIP_FRAME, 61883_structures_1fd796fa-88d2-4dc4-a440-89bf50b81ae8.xml, 61883/PCIP_FRAME, IEEE.cip_frame, PCIP_FRAME structure pointer [Buses], _CIP_FRAME
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : CIP_FRAME, *PCIP_FRAME
+req.typenames : "*PCIP_FRAME, CIP_FRAME"
 ---
 
 # _CIP_FRAME structure
@@ -85,6 +85,43 @@ For packets to be transmitted, <b>Flags</b> can be one of the following:
 
 For packets to be transmitted or received, <b>Flags</b> can also be set with the following:
 
+
+
+
+#### CIP_VALIDATE_FIRST_SOURCE
+
+Instructs the IEC-61883 protocol driver to call the client-driver-supplied function at <b>pfnValidate</b> to validate only the first source packet.
+
+
+#### CIP_VALIDATE_ALL_SOURCE
+
+Instructs the IEC-61883 protocol driver to call the client-driver-supplied function at <b>pfnValidate</b> to validate all source packets.
+
+
+#### CIP_STRIP_SOURCE_HEADER
+
+Instructs the protocol driver to strip the source header packet within a source packet.
+
+
+#### CIP_USE_SOURCE_HEADER_TIMESTAMP
+
+Instructs the protocol driver to timestamp the frame with the timestamp found within the source header packet.
+
+
+#### CIP_DV_STYLE_SYT
+
+The value at <b>TimeStamp</b> is formatted for data transmission to digital video devices (SD-DVCR, HD-DVCR, or SDL-DVCR).
+
+
+#### CIP_AUDIO_STYLE_SYT
+
+The value at <b>TimeStamp</b> is formatted for audio and music data transmission to audio devices.
+
+
+#### CIP_RESET_FRAME_ON_DISCONTINUITY
+
+Instructs the protocol driver to resume a stopped stream at the beginning of the frame instead of the next source packet.
+
 `NotifyContext`
 
 Points to an optional caller-defined context for the caller-supplied function at <b>pfnNotify</b>. If the function does not require a context, <b>NotifyContext</b> can be <b>NULL</b>.
@@ -111,6 +148,9 @@ This function uses the following prototype:
 </td>
 </tr>
 </table></span></div>
+
+
+####
 
 `pfnValidate`
 

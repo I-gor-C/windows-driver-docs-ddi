@@ -1,6 +1,6 @@
 ---
 UID : NE:wwan._WWAN_UICC_PASSTHROUGH_STATUS
-title : _WWAN_UICC_PASSTHROUGH_STATUS
+title : "_WWAN_UICC_PASSTHROUGH_STATUS"
 author : windows-driver-content
 description : The WWAN_UICC_PASSTHROUGH_STATUS enumeration defines the passthrough status of a modem miniport adapter for a UICC smart card.
 old-location : netvista\wwan_uicc_passthrough_status.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 93D35A64-8394-41C2-BFB8-C8DE93619E75
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WwanUiccPassThroughMaximum, WwanUiccPassThroughDisabled, WWAN_UICC_PASSTHROUGH_STATUS, netvista.wwan_uicc_passthrough_status, wwan/WwanUiccPassThroughEnabled, wwan/WwanUiccPassThroughMaximum, wwan/WwanUiccPassThroughDisabled, WWAN_UICC_PASSTHROUGH_STATUS enumeration [Network Drivers Starting with Windows Vista], wwan/WWAN_UICC_PASSTHROUGH_STATUS, *PWWAN_UICC_PASSTHROUGH_STATUS, WwanUiccPassThroughEnabled, _WWAN_UICC_PASSTHROUGH_STATUS
+ms.keywords : netvista.wwan_uicc_passthrough_status, wwan/WWAN_UICC_PASSTHROUGH_STATUS, WWAN_UICC_PASSTHROUGH_STATUS, WWAN_UICC_PASSTHROUGH_STATUS enumeration [Network Drivers Starting with Windows Vista], wwan/WwanUiccPassThroughMaximum, WwanUiccPassThroughDisabled, WwanUiccPassThroughMaximum, WwanUiccPassThroughEnabled, wwan/WwanUiccPassThroughDisabled, *PWWAN_UICC_PASSTHROUGH_STATUS, _WWAN_UICC_PASSTHROUGH_STATUS, wwan/WwanUiccPassThroughEnabled
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -82,9 +82,9 @@ typedef enum _WWAN_UICC_PASSTHROUGH_STATUS {
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_uicc_reset_info.md">WWAN_UICC_RESET_INFO</a>
-
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-uicc-reset-operations">MB UICC reset operations</a>
+
+<a href="..\wwan\ns-wwan-_wwan_uicc_reset_info.md">WWAN_UICC_RESET_INFO</a>
 
  
 

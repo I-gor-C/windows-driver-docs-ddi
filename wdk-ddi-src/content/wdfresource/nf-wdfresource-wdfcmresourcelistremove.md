@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f636d85d-f7bb-4ebe-b03f-3b9c3c17bacd
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfcmresourcelistremove, DFResourceObjectRef_5b1c7fce-45d2-454e-9d21-3f8d460ba99f.xml, WdfCmResourceListRemove, PFN_WDFCMRESOURCELISTREMOVE, WdfCmResourceListRemove method, kmdf.wdfcmresourcelistremove, wdfresource/WdfCmResourceListRemove
+ms.keywords : wdf.wdfcmresourcelistremove, WdfCmResourceListRemove method, DFResourceObjectRef_5b1c7fce-45d2-454e-9d21-3f8d460ba99f.xml, WdfCmResourceListRemove, wdfresource/WdfCmResourceListRemove, PFN_WDFCMRESOURCELISTREMOVE, kmdf.wdfcmresourcelistremove
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,7 +88,7 @@ For more information about resource lists, see <a href="https://docs.microsoft.c
 | **Minimum UMDF version** |  |
 | **Header** | wdfresource.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also

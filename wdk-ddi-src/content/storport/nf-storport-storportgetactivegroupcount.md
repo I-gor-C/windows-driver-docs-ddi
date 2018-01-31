@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 640dd836-a5f9-4a88-b2a3-038a66a50868
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storport/StorPortGetActiveGroupCount, storage.storportgetactivegroupcount, StorPortGetActiveGroupCount routine [Storage Devices], StorPortGetActiveGroupCount, storprt_d26e001f-a43e-4d7e-9278-9ba48a74574a.xml
+ms.keywords : StorPortGetActiveGroupCount, storage.storportgetactivegroupcount, storport/StorPortGetActiveGroupCount, StorPortGetActiveGroupCount routine [Storage Devices], storprt_d26e001f-a43e-4d7e-9278-9ba48a74574a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -105,5 +105,5 @@ The operation was successful.
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | StorPortIrql |

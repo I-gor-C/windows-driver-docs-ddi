@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : d5836240-81d4-4134-9222-c810cd8f5822
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILGETOPERATORLISTPARAMS, rilapitypes/RILGETOPERATORLISTPARAMS, RILGETOPERATORLISTPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilgetoperatorlistparams_2, *LPRILGETOPERATORLISTPARAMS
+ms.keywords : RILGETOPERATORLISTPARAMS, netvista.rilgetoperatorlistparams_2, rilapitypes/RILGETOPERATORLISTPARAMS, *LPRILGETOPERATORLISTPARAMS, RILGETOPERATORLISTPARAMS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

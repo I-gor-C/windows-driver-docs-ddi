@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 57d0969f-bc30-4235-93a5-dda51e15b4fc
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfusbtargetpipeabortsynchronously, WdfUsbTargetPipeAbortSynchronously, PFN_WDFUSBTARGETPIPEABORTSYNCHRONOUSLY, DFUsbRef_faea6716-3bb7-4f1f-93ce-36fe26bc7875.xml, wdfusb/WdfUsbTargetPipeAbortSynchronously, WdfUsbTargetPipeAbortSynchronously method, kmdf.wdfusbtargetpipeabortsynchronously
+ms.keywords : wdfusb/WdfUsbTargetPipeAbortSynchronously, PFN_WDFUSBTARGETPIPEABORTSYNCHRONOUSLY, WdfUsbTargetPipeAbortSynchronously method, DFUsbRef_faea6716-3bb7-4f1f-93ce-36fe26bc7875.xml, kmdf.wdfusbtargetpipeabortsynchronously, WdfUsbTargetPipeAbortSynchronously, wdf.wdfusbtargetpipeabortsynchronously
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
+req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
 
@@ -181,9 +181,9 @@ For more information about the <b>WdfUsbTargetPipeAbortSynchronously</b> method 
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetpiperesetsynchronously.md">WdfUsbTargetPipeResetSynchronously</a>
-
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcancelsentrequest.md">WdfRequestCancelSentRequest</a>
+
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetpiperesetsynchronously.md">WdfUsbTargetPipeResetSynchronously</a>
 
  
 

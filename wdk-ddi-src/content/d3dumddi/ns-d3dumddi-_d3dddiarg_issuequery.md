@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._D3DDDIARG_ISSUEQUERY
-title : _D3DDDIARG_ISSUEQUERY
+title : "_D3DDDIARG_ISSUEQUERY"
 author : windows-driver-content
 description : The D3DDDIARG_ISSUEQUERY structure describes how to process a query that was created by the CreateQuery function.
 old-location : display\d3dddiarg_issuequery.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : af52d1a3-b537-48d2-ab57-3f798ec83c98
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_ISSUEQUERY structure [Display Devices], UMDisplayDriver_param_Structs_3fb59dbc-e5de-4d14-9d4b-25934e4e3ded.xml, _D3DDDIARG_ISSUEQUERY, d3dumddi/D3DDDIARG_ISSUEQUERY, display.d3dddiarg_issuequery, D3DDDIARG_ISSUEQUERY
+ms.keywords : display.d3dddiarg_issuequery, D3DDDIARG_ISSUEQUERY structure [Display Devices], UMDisplayDriver_param_Structs_3fb59dbc-e5de-4d14-9d4b-25934e4e3ded.xml, _D3DDDIARG_ISSUEQUERY, D3DDDIARG_ISSUEQUERY, d3dumddi/D3DDDIARG_ISSUEQUERY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,9 +75,9 @@ For many query types, start query is never specified (that is, the <b>Begin</b> 
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_issuequeryflags.md">D3DDDI_ISSUEQUERYFLAGS</a>
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_issuequery.md">IssueQuery</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createquery.md">CreateQuery</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_issuequery.md">IssueQuery</a>
 
  
 

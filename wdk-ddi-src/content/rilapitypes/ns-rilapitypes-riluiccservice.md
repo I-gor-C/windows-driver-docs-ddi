@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ffd61de0-652a-4174-a0d2-d53c28180ea5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.riluiccservice_2, RILUICCSERVICE, rilapitypes/RILUICCSERVICE, *LPRILUICCSERVICE, RILUICCSERVICE structure [Network Drivers Starting with Windows Vista]
+ms.keywords : RILUICCSERVICE, netvista.riluiccservice_2, rilapitypes/RILUICCSERVICE, *LPRILUICCSERVICE, RILUICCSERVICE structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILUICCSERVICE, RILUICCSERVICE"
+req.typenames : RILUICCSERVICE, *LPRILUICCSERVICE
 req.product : Windows 10 or later.
 ---
 

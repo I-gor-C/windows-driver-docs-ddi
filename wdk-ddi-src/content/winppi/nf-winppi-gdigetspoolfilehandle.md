@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : c820ee94-29c2-4478-884c-49dd68cd713a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : GdiGetSpoolFileHandle, gdifnc_f7231fd8-33b0-4047-90ba-e5e2c9c37814.xml, GdiGetSpoolFileHandle function [Print Devices], print.gdigetspoolfilehandle, winppi/GdiGetSpoolFileHandle
+ms.keywords : gdifnc_f7231fd8-33b0-4047-90ba-e5e2c9c37814.xml, GdiGetSpoolFileHandle, winppi/GdiGetSpoolFileHandle, GdiGetSpoolFileHandle function [Print Devices], print.gdigetspoolfilehandle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

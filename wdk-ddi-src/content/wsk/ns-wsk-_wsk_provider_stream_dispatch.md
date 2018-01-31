@@ -1,6 +1,6 @@
 ---
 UID : NS:wsk._WSK_PROVIDER_STREAM_DISPATCH
-title : _WSK_PROVIDER_STREAM_DISPATCH
+title : "_WSK_PROVIDER_STREAM_DISPATCH"
 author : windows-driver-content
 description : The WSK_PROVIDER_STREAM_DISPATCH structure specifies the WSK subsystem's table of functions for a stream socket.
 old-location : netvista\wsk_provider_stream_dispatch.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : A10B901E-9987-40E9-976B-4CD9455E0AEE
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WSK_PROVIDER_STREAM_DISPATCH structure [Network Drivers Starting with Windows Vista], *PWSK_PROVIDER_STREAM_DISPATCH, PWSK_PROVIDER_STREAM_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], wsk/WSK_PROVIDER_STREAM_DISPATCH, PWSK_PROVIDER_STREAM_DISPATCH, _WSK_PROVIDER_STREAM_DISPATCH, netvista.wsk_provider_stream_dispatch, wsk/PWSK_PROVIDER_STREAM_DISPATCH, WSK_PROVIDER_STREAM_DISPATCH
+ms.keywords : wsk/WSK_PROVIDER_STREAM_DISPATCH, PWSK_PROVIDER_STREAM_DISPATCH, WSK_PROVIDER_STREAM_DISPATCH structure [Network Drivers Starting with Windows Vista], wsk/PWSK_PROVIDER_STREAM_DISPATCH, netvista.wsk_provider_stream_dispatch, PWSK_PROVIDER_STREAM_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], _WSK_PROVIDER_STREAM_DISPATCH, *PWSK_PROVIDER_STREAM_DISPATCH, WSK_PROVIDER_STREAM_DISPATCH
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWSK_PROVIDER_STREAM_DISPATCH, WSK_PROVIDER_STREAM_DISPATCH"
+req.typenames : WSK_PROVIDER_STREAM_DISPATCH, *PWSK_PROVIDER_STREAM_DISPATCH
 req.product : Windows 10 or later.
 ---
 
@@ -157,14 +157,14 @@ A WSK application receives a pointer to a WSK_PROVIDER_STREAM_DISPATCH structure
 
 ## See Also
 
-<a href="..\wsk\ns-wsk-_wsk_client_stream_dispatch.md">WSK_CLIENT_STREAM_DISPATCH</a>
-
-<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
-
 <mshelp:link keywords="netvista.wsk_provider_basic_dispatch" tabindex="0"><b>
     WSK_PROVIDER_BASIC_DISPATCH</b></mshelp:link>
 
+<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
+
 <a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
+
+<a href="..\wsk\ns-wsk-_wsk_client_stream_dispatch.md">WSK_CLIENT_STREAM_DISPATCH</a>
 
  
 

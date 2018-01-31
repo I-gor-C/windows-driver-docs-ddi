@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmddi._DXGK_GDIARG_STRETCHBLT
-title : _DXGK_GDIARG_STRETCHBLT
+title : "_DXGK_GDIARG_STRETCHBLT"
 author : windows-driver-content
 description : The DXGK_GDIARG_STRETCHBLT structure describes the characteristics of a GDI hardware-accelerated stretch bit-block transfer (bitblt) operation.
 old-location : display\dxgk_gdiarg_stretchblt.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 11988e4c-9f4b-44cc-bc09-ff6da62f3904
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_GDIARG_STRETCHBLT, DXGK_GDIARG_STRETCHBLT structure [Display Devices], WHITEONBLACK, _DXGK_GDIARG_STRETCHBLT, BLACKONWHITE, DmStructs_9c8014aa-fdad-474d-a1a1-182020850e17.xml, display.dxgk_gdiarg_stretchblt, d3dkmddi/DXGK_GDIARG_STRETCHBLT
+ms.keywords : DXGK_GDIARG_STRETCHBLT, BLACKONWHITE, d3dkmddi/DXGK_GDIARG_STRETCHBLT, DmStructs_9c8014aa-fdad-474d-a1a1-182020850e17.xml, display.dxgk_gdiarg_stretchblt, _DXGK_GDIARG_STRETCHBLT, WHITEONBLACK, DXGK_GDIARG_STRETCHBLT structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -134,13 +134,13 @@ int Ys = truncate((Yd â€“ DstRect.top + 0.5) * Hs/Hd + SrcRect.top)</code><
 
 ## See Also
 
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_gdiarg_alphablend.md">DXGK_GDIARG_ALPHABLEND</a>
+
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_presentationcaps.md">DXGK_PRESENTATIONCAPS</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_gdiarg_transparentblt.md">DXGK_GDIARG_TRANSPARENTBLT</a>
-
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_gdiarg_alphablend.md">DXGK_GDIARG_ALPHABLEND</a>
 
  
 

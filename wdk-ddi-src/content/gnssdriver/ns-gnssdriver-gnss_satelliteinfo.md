@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 27F537D8-45B2-43D9-A614-3558534C9DBA
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_SATELLITEINFO, GNSS_SATELLITEINFO structure [Sensor Devices], PGNSS_SATELLITEINFO structure pointer [Sensor Devices], *PGNSS_SATELLITEINFO, gnssdriver/GNSS_SATELLITEINFO, PGNSS_SATELLITEINFO, sensors.gnss_satelliteinfo, gnssdriver/PGNSS_SATELLITEINFO
+ms.keywords : PGNSS_SATELLITEINFO structure pointer [Sensor Devices], GNSS_SATELLITEINFO structure [Sensor Devices], sensors.gnss_satelliteinfo, GNSS_SATELLITEINFO, PGNSS_SATELLITEINFO, *PGNSS_SATELLITEINFO, gnssdriver/GNSS_SATELLITEINFO, gnssdriver/PGNSS_SATELLITEINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

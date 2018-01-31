@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : cfdfae5e-4669-4e88-82d2-35fb2bca3012
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/ExAllocatePoolWithQuota, k102_6f0151af-8673-4fde-a4ab-744cb25d660f.xml, ExAllocatePoolWithQuota, kernel.exallocatepoolwithquota, ExAllocatePoolWithQuota routine [Kernel-Mode Driver Architecture]
+ms.keywords : ExAllocatePoolWithQuota routine [Kernel-Mode Driver Architecture], kernel.exallocatepoolwithquota, k102_6f0151af-8673-4fde-a4ab-744cb25d660f.xml, ExAllocatePoolWithQuota, wdm/ExAllocatePoolWithQuota
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -92,18 +92,18 @@ Memory allocations of less than PAGE_SIZE are allocated within a page and do not
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL (see Remarks section) |
+| **IRQL** | "<= DISPATCH_LEVEL (see Remarks section)" |
 | **DDI compliance rules** | HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
-
-<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
-
 <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
 
 <a href="..\wdm\nf-wdm-exallocatepoolwithquotatag.md">ExAllocatePoolWithQuotaTag</a>
+
+<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
+
+<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
 
  
 

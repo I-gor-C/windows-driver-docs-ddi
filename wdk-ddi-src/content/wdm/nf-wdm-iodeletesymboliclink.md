@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 68ad19a5-4694-4b75-8062-75b06bdc16ed
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/IoDeleteSymbolicLink, IoDeleteSymbolicLink routine [Kernel-Mode Driver Architecture], kernel.iodeletesymboliclink, k104_6ff2f570-3573-4d12-b338-cca69515ef1a.xml, IoDeleteSymbolicLink
+ms.keywords : wdm/IoDeleteSymbolicLink, k104_6ff2f570-3573-4d12-b338-cca69515ef1a.xml, IoDeleteSymbolicLink routine [Kernel-Mode Driver Architecture], IoDeleteSymbolicLink, kernel.iodeletesymboliclink
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,11 +77,11 @@ Pointer to a buffered Unicode string that is the user-visible name for the symbo
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iocreateunprotectedsymboliclink.md">IoCreateUnprotectedSymbolicLink</a>
-
 <a href="..\wdm\nf-wdm-iocreatesymboliclink.md">IoCreateSymbolicLink</a>
 
 <a href="..\ntddk\nf-ntddk-iodeassignarcname.md">IoDeassignArcName</a>
+
+<a href="..\wdm\nf-wdm-iocreateunprotectedsymboliclink.md">IoCreateUnprotectedSymbolicLink</a>
 
  
 

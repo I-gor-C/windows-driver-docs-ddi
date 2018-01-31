@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dhal._D3DHAL_DP2DRAWPRIMITIVE
-title : _D3DHAL_DP2DRAWPRIMITIVE
+title : "_D3DHAL_DP2DRAWPRIMITIVE"
 author : windows-driver-content
 description : DirectX 8.0 and later versions only. D3DHAL_DRAWPRIMITIVE is parsed from the command buffer by the D3dDrawPrimitives2 callback when the D3DHAL_DP2COMMAND structure's bCommand member is set to D3DDP2OP_DRAWPRIMITIVE, and is used to render a primitive.
 old-location : display\d3dhal_dp2drawprimitive.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1dd56465-e9e8-4a79-8533-a1777cf4d8a2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : LPD3DHAL_DP2DRAWPRIMITIVE structure pointer [Display Devices], d3dstrct_2736a73d-52f8-4647-86c3-2c362dc3f669.xml, d3dhal/LPD3DHAL_DP2DRAWPRIMITIVE, LPD3DHAL_DP2DRAWPRIMITIVE, D3DHAL_DP2DRAWPRIMITIVE, d3dhal/D3DHAL_DP2DRAWPRIMITIVE, D3DHAL_DP2DRAWPRIMITIVE structure [Display Devices], *LPD3DHAL_DP2DRAWPRIMITIVE, display.d3dhal_dp2drawprimitive, _D3DHAL_DP2DRAWPRIMITIVE
+ms.keywords : display.d3dhal_dp2drawprimitive, d3dstrct_2736a73d-52f8-4647-86c3-2c362dc3f669.xml, d3dhal/LPD3DHAL_DP2DRAWPRIMITIVE, d3dhal/D3DHAL_DP2DRAWPRIMITIVE, LPD3DHAL_DP2DRAWPRIMITIVE structure pointer [Display Devices], D3DHAL_DP2DRAWPRIMITIVE structure [Display Devices], LPD3DHAL_DP2DRAWPRIMITIVE, _D3DHAL_DP2DRAWPRIMITIVE, D3DHAL_DP2DRAWPRIMITIVE, *LPD3DHAL_DP2DRAWPRIMITIVE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -81,13 +81,13 @@ The vertex data can be untransformed (if the hardware supports hardware vertex p
 
 ## See Also
 
-<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
-
-D3DDP2OP_DRAWPRIMITIVE
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_drawprimitives2data.md">D3DHAL_DRAWPRIMITIVES2DATA</a>
 
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
+D3DDP2OP_DRAWPRIMITIVE
+
+<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
 
  
 

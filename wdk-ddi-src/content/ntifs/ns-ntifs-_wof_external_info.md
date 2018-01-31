@@ -1,6 +1,6 @@
 ---
 UID : NS:ntifs._WOF_EXTERNAL_INFO
-title : _WOF_EXTERNAL_INFO
+title : "_WOF_EXTERNAL_INFO"
 author : windows-driver-content
 description : The WOF_EXTERNAL_INFO structure identifies a file backing provider and the overlay service version it supports.
 old-location : ifsk\wof_external_info.htm
@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2522CDC6-C23A-4D9C-83BA-389B7D909619
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/PWOF_EXTERNAL_INFO, PWOF_EXTERNAL_INFO, PWOF_EXTERNAL_INFO structure pointer [Installable File System Drivers], WOF_EXTERNAL_INFO, *PWOF_EXTERNAL_INFO, ifsk.wof_external_info, _WOF_EXTERNAL_INFO, ntifs/WOF_EXTERNAL_INFO, WOF_EXTERNAL_INFO structure [Installable File System Drivers]
+ms.keywords : PWOF_EXTERNAL_INFO structure pointer [Installable File System Drivers], *PWOF_EXTERNAL_INFO, WOF_EXTERNAL_INFO structure [Installable File System Drivers], PWOF_EXTERNAL_INFO, ifsk.wof_external_info, ntifs/PWOF_EXTERNAL_INFO, WOF_EXTERNAL_INFO, ntifs/WOF_EXTERNAL_INFO, _WOF_EXTERNAL_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WOF_EXTERNAL_INFO, *PWOF_EXTERNAL_INFO
+req.typenames : "*PWOF_EXTERNAL_INFO, WOF_EXTERNAL_INFO"
 ---
 
 # _WOF_EXTERNAL_INFO structure
@@ -71,9 +71,9 @@ The overlay service version. Set to WOF_CURRENT_VERSION.
 
 ## See Also
 
-<a href="..\ntifs\ns-ntifs-_wof_external_file_id.md">WOF_EXTERNAL_FILE_ID</a>
-
 <a href="..\ntifs\ns-ntifs-_wof_version_info.md">WOF_VERSION_INFO</a>
+
+<a href="..\ntifs\ns-ntifs-_wof_external_file_id.md">WOF_EXTERNAL_FILE_ID</a>
 
  
 

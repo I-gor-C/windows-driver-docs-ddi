@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 947C508E-2EB9-451D-AA8D-DCDDE27DEBE6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : winsplp/PBranchOfficeJobDataError, BranchOfficeJobDataError, *PBranchOfficeJobDataError, BranchOfficeJobDataError structure [Print Devices], winsplp/BranchOfficeJobDataError, print.branchofficejobdataerror, PBranchOfficeJobDataError structure pointer [Print Devices], PBranchOfficeJobDataError
+ms.keywords : PBranchOfficeJobDataError, winsplp/PBranchOfficeJobDataError, print.branchofficejobdataerror, BranchOfficeJobDataError, PBranchOfficeJobDataError structure pointer [Print Devices], winsplp/BranchOfficeJobDataError, *PBranchOfficeJobDataError, BranchOfficeJobDataError structure [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : BranchOfficeJobDataError, *PBranchOfficeJobDataError
+req.typenames : "*PBranchOfficeJobDataError, BranchOfficeJobDataError"
 req.product : Windows 10 or later.
 ---
 

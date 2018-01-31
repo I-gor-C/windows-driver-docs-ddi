@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSTREAM_INFO, STREAM_INFO"
+req.typenames : STREAM_INFO, *PSTREAM_INFO
 req.product : Windows 10 or later.
 ---
 

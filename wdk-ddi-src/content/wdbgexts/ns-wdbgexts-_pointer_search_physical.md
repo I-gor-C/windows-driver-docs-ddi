@@ -1,6 +1,6 @@
 ---
 UID : NS:wdbgexts._POINTER_SEARCH_PHYSICAL
-title : _POINTER_SEARCH_PHYSICAL
+title : "_POINTER_SEARCH_PHYSICAL"
 author : windows-driver-content
 description : The IG_POINTER_SEARCH_PHYSICAL Ioctl operation searches the target's physical memory for pointers lying within a specified range.
 old-location : debugger\ig_pointer_search_physical.htm
@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : fdb8376b-fbda-4bee-895e-a306fd0f632a
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : "*PPOINTER_SEARCH_PHYSICAL, WdbgExts_Ref_ce742570-c023-4e34-a8e2-aef530e61c04.xml, wdbgexts/POINTER_SEARCH_PHYSICAL, POINTER_SEARCH_PHYSICAL, wdbgexts/PPOINTER_SEARCH_PHYSICAL, PPOINTER_SEARCH_PHYSICAL structure pointer [Windows Debugging], POINTER_SEARCH_PHYSICAL structure [Windows Debugging], PPOINTER_SEARCH_PHYSICAL, _POINTER_SEARCH_PHYSICAL, debugger.ig_pointer_search_physical"
+ms.keywords : wdbgexts/PPOINTER_SEARCH_PHYSICAL, POINTER_SEARCH_PHYSICAL, PPOINTER_SEARCH_PHYSICAL, wdbgexts/POINTER_SEARCH_PHYSICAL, debugger.ig_pointer_search_physical, PPOINTER_SEARCH_PHYSICAL structure pointer [Windows Debugging], *PPOINTER_SEARCH_PHYSICAL, _POINTER_SEARCH_PHYSICAL, POINTER_SEARCH_PHYSICAL structure [Windows Debugging], WdbgExts_Ref_ce742570-c023-4e34-a8e2-aef530e61c04.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

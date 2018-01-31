@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0243de8b-0f47-4f0a-af25-beb6365386dd
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDevStateNormalize method, wdf.wdfdevstatenormalize, wdfdevice/WdfDevStateNormalize, WdfDevStateNormalize, DFDeviceObjectGeneralRef_24d4e166-f4b0-4696-b775-62d0df565a8a.xml, PFN_WDFDEVSTATENORMALIZE, kmdf.wdfdevstatenormalize
+ms.keywords : PFN_WDFDEVSTATENORMALIZE, DFDeviceObjectGeneralRef_24d4e166-f4b0-4696-b775-62d0df565a8a.xml, WdfDevStateNormalize method, kmdf.wdfdevstatenormalize, WdfDevStateNormalize, wdf.wdfdevstatenormalize, wdfdevice/WdfDevStateNormalize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

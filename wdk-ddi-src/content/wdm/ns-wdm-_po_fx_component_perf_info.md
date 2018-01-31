@@ -1,6 +1,6 @@
 ---
 UID : NS:wdm._PO_FX_COMPONENT_PERF_INFO
-title : _PO_FX_COMPONENT_PERF_INFO
+title : "_PO_FX_COMPONENT_PERF_INFO"
 author : windows-driver-content
 description : The PO_FX_COMPONENT_PERF_INFO structure describes all the sets of performance states for a single component within a device.
 old-location : kernel\po_fx_component_perf_info.htm
@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : DA9C020F-18E7-4C6C-AEBB-81B099C80CD0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.po_fx_component_perf_info, PPO_FX_COMPONENT_PERF_INFO structure pointer [Kernel-Mode Driver Architecture], PO_FX_COMPONENT_PERF_INFO, wdm/PO_FX_COMPONENT_PERF_INFO, *PPO_FX_COMPONENT_PERF_INFO, wdm/PPO_FX_COMPONENT_PERF_INFO, PO_FX_COMPONENT_PERF_INFO structure [Kernel-Mode Driver Architecture], _PO_FX_COMPONENT_PERF_INFO, PPO_FX_COMPONENT_PERF_INFO
+ms.keywords : wdm/PPO_FX_COMPONENT_PERF_INFO, PO_FX_COMPONENT_PERF_INFO, kernel.po_fx_component_perf_info, _PO_FX_COMPONENT_PERF_INFO, PPO_FX_COMPONENT_PERF_INFO structure pointer [Kernel-Mode Driver Architecture], wdm/PO_FX_COMPONENT_PERF_INFO, PO_FX_COMPONENT_PERF_INFO structure [Kernel-Mode Driver Architecture], *PPO_FX_COMPONENT_PERF_INFO, PPO_FX_COMPONENT_PERF_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,9 +76,9 @@ Most drivers are expected to define a single set of performance states per compo
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-pofxregistercomponentperfstates.md">PoFxRegisterComponentPerfStates</a>
-
 <a href="..\wdm\ns-wdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a>
+
+<a href="..\wdm\nf-wdm-pofxregistercomponentperfstates.md">PoFxRegisterComponentPerfStates</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn939352">Component-Level Performance State Management</a>
 

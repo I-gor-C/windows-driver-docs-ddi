@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : dabd472f-9877-4434-a534-e07a047e092f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisMCoIndicateReceiveNetBufferLists, netvista.ndismcoindicatereceivenetbufferlists, NdisMCoIndicateReceiveNetBufferLists, condis_sendrcv_ref_98f228ff-027c-4b60-b469-3d9ead72ed6f.xml, NdisMCoIndicateReceiveNetBufferLists function [Network Drivers Starting with Windows Vista]
+ms.keywords : NdisMCoIndicateReceiveNetBufferLists function [Network Drivers Starting with Windows Vista], NdisMCoIndicateReceiveNetBufferLists, netvista.ndismcoindicatereceivenetbufferlists, condis_sendrcv_ref_98f228ff-027c-4b60-b469-3d9ead72ed6f.xml, ndis/NdisMCoIndicateReceiveNetBufferLists
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -81,6 +81,22 @@ The number of NET_BUFFER_LIST structures that are in the linked list of structur
 Flags that define attributes for the send operation. The flags can be combined with a bitwise OR
      operation. To clear all of the flags, set this parameter to zero. 
      <b>NdisMCoIndicateReceiveNetBufferLists</b> supports the following flags:
+     
+
+
+
+
+#### NDIS_RECEIVE_FLAGS_DISPATCH_LEVEL
+
+The current IRQL is DISPATCH_LEVEL. For more information about this flag, see 
+       <a href="https://msdn.microsoft.com/ac559f4f-0138-4b9a-8f1b-44a2973fd6a1">Dispatch IRQL Tracking</a>.
+
+
+#### NDIS_RECEIVE_FLAGS_RESOURCES
+
+The miniport driver reclaims ownership of the NET_BUFFER_LIST structures and any attached
+       NET_BUFFER structures immediately after 
+       <b>NdisMCoIndicateReceiveNetBufferLists</b> returns.
 
 
 ## Return Value
@@ -144,21 +160,21 @@ The caller of
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCO_Function |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-miniport_co_create_vc.md">MiniportCoCreateVc</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+<a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
 
 <mshelp:link keywords="netvista.miniportreturnnetbufferlists" tabindex="0"><i>
    MiniportReturnNetBufferLists</i></mshelp:link>
 
-<a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
+<a href="..\ndis\nc-ndis-miniport_co_create_vc.md">MiniportCoCreateVc</a>
 
  
 

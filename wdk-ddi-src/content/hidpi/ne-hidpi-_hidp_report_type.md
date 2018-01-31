@@ -1,6 +1,6 @@
 ---
 UID : NE:hidpi._HIDP_REPORT_TYPE
-title : _HIDP_REPORT_TYPE
+title : "_HIDP_REPORT_TYPE"
 author : windows-driver-content
 description : The HIDP_REPORT_TYPE enumeration type is used to specify a HID report type.
 old-location : hid\hidp_report_type.htm
@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : adb2f0cc-f261-41d2-b30f-58286b351e4f
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : hidstrct_d25e996c-d904-410c-bacb-a79f17fad916.xml, HIDP_REPORT_TYPE enumeration [Human Input Devices], HIDP_REPORT_TYPE, hid.hidp_report_type, HidP_Input, HidP_Output, hidpi/HidP_Output, HidP_Feature, hidpi/HidP_Feature, hidpi/HidP_Input, _HIDP_REPORT_TYPE, hidpi/HIDP_REPORT_TYPE
+ms.keywords : hid.hidp_report_type, hidstrct_d25e996c-d904-410c-bacb-a79f17fad916.xml, HIDP_REPORT_TYPE enumeration [Human Input Devices], HidP_Input, HidP_Feature, HIDP_REPORT_TYPE, HidP_Output, hidpi/HidP_Feature, _HIDP_REPORT_TYPE, hidpi/HidP_Input, hidpi/HidP_Output, hidpi/HIDP_REPORT_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -81,13 +81,13 @@ typedef enum _HIDP_REPORT_TYPE {
 
 ## See Also
 
-<a href="..\hidpi\ns-hidpi-_hidp_value_caps.md">HIDP_VALUE_CAPS</a>
-
-<a href="..\hidpi\nf-hidpi-hidp_getdata.md">HidP_GetData</a>
-
 <a href="..\hidpi\nf-hidpi-hidp_setdata.md">HidP_SetData</a>
 
 <a href="..\hidpi\ns-hidpi-_hidp_button_caps.md">HIDP_BUTTON_CAPS</a>
+
+<a href="..\hidpi\ns-hidpi-_hidp_value_caps.md">HIDP_VALUE_CAPS</a>
+
+<a href="..\hidpi\nf-hidpi-hidp_getdata.md">HidP_GetData</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : F8FA91AC-9085-4C25-8798-CEB9ADB34320
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : gnssdriver/GNSS_DEVICE_CAPABILITY, PGNSS_DEVICE_CAPABILITY structure pointer [Sensor Devices], GNSS_DEVICE_CAPABILITY, GNSS_DEVICE_CAPABILITY structure [Sensor Devices], sensors.gnss_device_capability, *PGNSS_DEVICE_CAPABILITY, PGNSS_DEVICE_CAPABILITY, gnssdriver/PGNSS_DEVICE_CAPABILITY
+ms.keywords : GNSS_DEVICE_CAPABILITY, PGNSS_DEVICE_CAPABILITY, gnssdriver/PGNSS_DEVICE_CAPABILITY, GNSS_DEVICE_CAPABILITY structure [Sensor Devices], gnssdriver/GNSS_DEVICE_CAPABILITY, PGNSS_DEVICE_CAPABILITY structure pointer [Sensor Devices], *PGNSS_DEVICE_CAPABILITY, sensors.gnss_device_capability
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

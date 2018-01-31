@@ -1,6 +1,6 @@
 ---
 UID : NS:compstui._EXTPUSH
-title : _EXTPUSH
+title : "_EXTPUSH"
 author : windows-driver-content
 description : The EXTPUSH structure is used by CPSUI applications (including printer interface DLLs) for specifying an extended push button, which can be added to a property sheet page option. When the button is pushed, a new dialog can be displayed.
 old-location : print\extpush.htm
@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : c38d7eca-6486-4bb1-b0a8-7f69fe13f7db
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PEXTPUSH, _EXTPUSH, EXTPUSH structure [Print Devices], compstui/PEXTPUSH, EXTPUSH, cpsuifnc_d8f5e9ba-ef61-4adb-959f-1d0ebf456dad.xml, PEXTPUSH structure pointer [Print Devices], PEXTPUSH, print.extpush, compstui/EXTPUSH"
+ms.keywords : EXTPUSH structure [Print Devices], _EXTPUSH, compstui/EXTPUSH, PEXTPUSH, *PEXTPUSH, EXTPUSH, cpsuifnc_d8f5e9ba-ef61-4adb-959f-1d0ebf456dad.xml, print.extpush, compstui/PEXTPUSH, PEXTPUSH structure pointer [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : EXTPUSH, *PEXTPUSH
+req.typenames : "*PEXTPUSH, EXTPUSH"
 ---
 
 # _EXTPUSH structure
@@ -74,6 +74,68 @@ Reserved, must be initialized to zero.
 `Flags`
 
 Bit flags, which can be one of the following:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### EPF_ICONID_AS_HICON
+
+If set, the <b>IconID</b> member contains an icon handle.
+
+If not set, the <b>IconID</b> member contains an icon resource identifier.
+
+
+#### EPF_INCLUDE_SETUP_TITLE
+
+If set, CPSUI appends "Setup" to the string pointed to by <b>pTitle</b>.
+
+
+#### EPF_NO_DOT_DOT_DOT
+
+If set, CPSUI does not append "..." to the string pointed to by <b>pTitle</b>.
+
+
+#### EPF_OVERLAY_NO_ICON
+
+If set, CPSUI overlays its IDI_CPSUI_NO icon onto the icon identified by the <b>IconID</b> member.
+
+
+#### EPF_OVERLAY_STOP_ICON
+
+If set, CPSUI overlays the IDI_CPSUI_STOP icon onto the icon identified by the <b>IconID</b> member.
+
+
+#### EPF_OVERLAY_WARNING_ICON
+
+If set, CPSUI overlays its IDI_CPSUI_WARNING icon onto the icon identified by the <b>IconID</b> member.
+
+
+#### EPF_PUSH_TYPE_DLGPROC
+
+If set, the <b>DlgProc</b> and <b>DlgTemplateID/hDlgTemplate</b> members are valid.
+
+If not set, the <b>pfnCallBack</b> member is valid.
+
+
+#### EPF_USE_HDLGTEMPLATE
+
+If set, <b>hDlgTemplate</b> contains a template handle.
+
+If not set, <b>DlgTemplateID</b> contains a template resource identifier.
 
 `IconID`
 

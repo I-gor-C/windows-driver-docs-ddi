@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 140de330-7e6d-4f23-96cb-ea1228c8036c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExConvertExclusiveToSharedLite, wdm/ExConvertExclusiveToSharedLite, kernel.exconvertexclusivetosharedlite, k102_3c58f8e7-3da6-413d-9662-89a29928a6c1.xml, ExConvertExclusiveToSharedLite routine [Kernel-Mode Driver Architecture]
+ms.keywords : ExConvertExclusiveToSharedLite, wdm/ExConvertExclusiveToSharedLite, k102_3c58f8e7-3da6-413d-9662-89a29928a6c1.xml, kernel.exconvertexclusivetosharedlite, ExConvertExclusiveToSharedLite routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,7 +75,7 @@ The caller must have exclusive access to the given resource. During this convers
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** | IrqlExApcLte3, HwStorPortProhibitedDDIs |
 
 ## See Also

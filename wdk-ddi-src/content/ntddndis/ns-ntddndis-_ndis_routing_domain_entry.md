@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddndis._NDIS_ROUTING_DOMAIN_ENTRY
-title : _NDIS_ROUTING_DOMAIN_ENTRY
+title : "_NDIS_ROUTING_DOMAIN_ENTRY"
 author : windows-driver-content
 description : The NDIS_ROUTING_DOMAIN_ENTRY structure is used by the OID_GEN_ISOLATION_PARAMETERS OID to return the routing domain entries for a VM network adapter's port.
 old-location : netvista\ndis_routing_domain_entry.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 65E39285-AFD2-4098-A983-C7FA06505407
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddndis/PNDIS_ROUTING_DOMAIN_ENTRY, NDIS_ROUTING_DOMAIN_ENTRY, *PNDIS_ROUTING_DOMAIN_ENTRY, netvista.ndis_routing_domain_entry, _NDIS_ROUTING_DOMAIN_ENTRY, PNDIS_ROUTING_DOMAIN_ENTRY, PNDIS_ROUTING_DOMAIN_ENTRY structure pointer [Network Drivers Starting with Windows Vista], NDIS_ROUTING_DOMAIN_ENTRY structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_ROUTING_DOMAIN_ENTRY
+ms.keywords : ntddndis/PNDIS_ROUTING_DOMAIN_ENTRY, netvista.ndis_routing_domain_entry, *PNDIS_ROUTING_DOMAIN_ENTRY, _NDIS_ROUTING_DOMAIN_ENTRY, ntddndis/NDIS_ROUTING_DOMAIN_ENTRY, NDIS_ROUTING_DOMAIN_ENTRY, PNDIS_ROUTING_DOMAIN_ENTRY, NDIS_ROUTING_DOMAIN_ENTRY structure [Network Drivers Starting with Windows Vista], PNDIS_ROUTING_DOMAIN_ENTRY structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,7 +69,16 @@ A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags. This member is 
 
 The type, revision, and size of the <b>NDIS_ROUTING_DOMAIN_ENTRY</b>  structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
-The <b>Type</b> member of <b>Header</b> must be set to <b>NDIS_OBJECT_TYPE_DEFAULT</b>. To specify the version of the <b>NDIS_ROUTING_DOMAIN_ENTRY</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value:
+The <b>Type</b> member of <b>Header</b> must be set to <b>NDIS_OBJECT_TYPE_DEFAULT</b>. To specify the version of the <b>NDIS_ROUTING_DOMAIN_ENTRY</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value: 
+
+
+
+
+#### NDIS_ROUTING_DOMAIN_ENTRY_REVISION_1
+
+Original version for NDIS 6.40 and later.
+
+Set the <b>Size</b> member to <b>NDIS_SIZEOF_NDIS_ROUTING_DOMAIN_ENTRY_REVISION_1</b>.
 
 `NumIsolationEntries`
 
@@ -94,13 +103,13 @@ An <a href="..\ntddndis\ns-ntddndis-_ndis_isolation_name.md">NDIS_ISOLATION_NAME
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn383690">OID_GEN_ISOLATION_PARAMETERS</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_routing_domain_isolation_entry.md">NDIS_ROUTING_DOMAIN_ISOLATION_ENTRY</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_isolation_parameters.md">NDIS_ISOLATION_PARAMETERS</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_routing_domain_isolation_entry.md">NDIS_ROUTING_DOMAIN_ISOLATION_ENTRY</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn383683">NDIS_ROUTING_DOMAIN_ENTRY_GET_NEXT</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn383690">OID_GEN_ISOLATION_PARAMETERS</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 

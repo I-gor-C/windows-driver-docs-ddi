@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : e489601e-b016-4681-97a0-78f42004909f
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : whearef_e18a3aba-ca99-4b65-92de-1c6b8c740e31.xml, PshedAllocateMemory function [WHEA Drivers and Applications], PshedAllocateMemory, whea.pshedallocatememory, ntddk/PshedAllocateMemory
+ms.keywords : ntddk/PshedAllocateMemory, whea.pshedallocatememory, PshedAllocateMemory function [WHEA Drivers and Applications], whearef_e18a3aba-ca99-4b65-92de-1c6b8c740e31.xml, PshedAllocateMemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -74,7 +74,7 @@ A PSHED plug-in calls the <b>PshedAllocateMemory</b> function to allocate a bloc
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

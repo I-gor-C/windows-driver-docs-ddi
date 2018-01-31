@@ -1,6 +1,6 @@
 ---
 UID : NS:bthioctl._BTH_SDP_ATTRIBUTE_SEARCH_REQUEST
-title : _BTH_SDP_ATTRIBUTE_SEARCH_REQUEST
+title : "_BTH_SDP_ATTRIBUTE_SEARCH_REQUEST"
 author : windows-driver-content
 description : The BTH_SDP_ATTRIBUTE_SEARCH_REQUEST structure contains information pertinent to an SDP attribute search.
 old-location : bltooth\bth_sdp_attribute_search_request.htm
@@ -8,14 +8,14 @@ old-project : bltooth
 ms.assetid : 46198c94-df83-42bb-ad3e-181f252ccd99
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : BTH_SDP_ATTRIBUTE_SEARCH_REQUEST, *PBTH_SDP_ATTRIBUTE_SEARCH_REQUEST, bthioctl/BTH_SDP_ATTRIBUTE_SEARCH_REQUEST, _BTH_SDP_ATTRIBUTE_SEARCH_REQUEST, bltooth.bth_sdp_attribute_search_request, PBTH_SDP_ATTRIBUTE_SEARCH_REQUEST structure pointer [Bluetooth Devices], BTH_SDP_ATTRIBUTE_SEARCH_REQUEST structure [Bluetooth Devices], bthioctl/PBTH_SDP_ATTRIBUTE_SEARCH_REQUEST, PBTH_SDP_ATTRIBUTE_SEARCH_REQUEST, bth_structs_7856642e-a720-490e-9240-d61ac6f257b4.xml
+ms.keywords : bthioctl/BTH_SDP_ATTRIBUTE_SEARCH_REQUEST, PBTH_SDP_ATTRIBUTE_SEARCH_REQUEST structure pointer [Bluetooth Devices], BTH_SDP_ATTRIBUTE_SEARCH_REQUEST, _BTH_SDP_ATTRIBUTE_SEARCH_REQUEST, BTH_SDP_ATTRIBUTE_SEARCH_REQUEST structure [Bluetooth Devices], *PBTH_SDP_ATTRIBUTE_SEARCH_REQUEST, PBTH_SDP_ATTRIBUTE_SEARCH_REQUEST, bthioctl/PBTH_SDP_ATTRIBUTE_SEARCH_REQUEST, bltooth.bth_sdp_attribute_search_request, bth_structs_7856642e-a720-490e-9240-d61ac6f257b4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthioctl.h
 req.include-header : Bthioctl.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
@@ -73,7 +73,11 @@ The record handle that is returned by the remote SDP server from a previous call
 
 `searchFlags`
 
+#### 
 
+
+
+####
 
 ## Remarks
 This structure is passed as the input buffer to the 
@@ -98,11 +102,11 @@ The Bluetooth driver stack determines the number of array items in the
 
 <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_service_search.md">IOCTL_BTH_SDP_SERVICE_SEARCH</a>
 
-<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_connect.md">IOCTL_BTH_SDP_CONNECT</a>
+<a href="http://go.microsoft.com/fwlink/p/?linkid=50714">SdpAttributeRange</a>
 
 <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_attribute_search.md">IOCTL_BTH_SDP_ATTRIBUTE_SEARCH</a>
 
-<a href="http://go.microsoft.com/fwlink/p/?linkid=50714">SdpAttributeRange</a>
+<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_connect.md">IOCTL_BTH_SDP_CONNECT</a>
 
  
 

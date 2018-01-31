@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d63848e8-0e6a-4ad7-a147-8804869b9c9b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceResumeIdle method, kmdf.wdfdeviceresumeidle, PFN_WDFDEVICERESUMEIDLE, wdfdevice/WdfDeviceResumeIdle, wdf.wdfdeviceresumeidle, DFDeviceObjectGeneralRef_6078e8e8-7d4e-4714-a1b4-74fc973a678c.xml, WdfDeviceResumeIdle
+ms.keywords : PFN_WDFDEVICERESUMEIDLE, wdfdevice/WdfDeviceResumeIdle, wdf.wdfdeviceresumeidle, kmdf.wdfdeviceresumeidle, WdfDeviceResumeIdle, DFDeviceObjectGeneralRef_6078e8e8-7d4e-4714-a1b4-74fc973a678c.xml, WdfDeviceResumeIdle method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -79,16 +79,16 @@ Calling <a href="https://msdn.microsoft.com/library/windows/hardware/dn932459">W
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn932459">WdfDeviceResumeIdleWithTag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn932460">WdfDeviceStopIdleWithTag</a>
 
 <a href="https://msdn.microsoft.com/25F4EEBB-4733-498C-8704-8E015F81FE06">Debugging Power Reference Leaks in WDF</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn932460">WdfDeviceStopIdleWithTag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn932459">WdfDeviceResumeIdleWithTag</a>
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicestopidle.md">WdfDeviceStopIdle</a>
 

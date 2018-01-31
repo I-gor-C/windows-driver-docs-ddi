@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 148cf294-0410-4704-93ce-338529a214ad
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl3 interface [Windows Debugging], GetCurrentEventIndex method, GetCurrentEventIndex method [Windows Debugging], GetCurrentEventIndex, debugger.getcurrenteventindex, IDebugControl_7aec300e-651e-46c6-a4e7-d4ed2b9ca674.xml, IDebugControl3, IDebugControl3::GetCurrentEventIndex, dbgeng/IDebugControl3::GetCurrentEventIndex, GetCurrentEventIndex method [Windows Debugging], IDebugControl3 interface
+ms.keywords : GetCurrentEventIndex method [Windows Debugging], IDebugControl3, GetCurrentEventIndex, GetCurrentEventIndex method [Windows Debugging], IDebugControl3 interface, IDebugControl3::GetCurrentEventIndex, debugger.getcurrenteventindex, IDebugControl3 interface [Windows Debugging], GetCurrentEventIndex method, IDebugControl_7aec300e-651e-46c6-a4e7-d4ed2b9ca674.xml, dbgeng/IDebugControl3::GetCurrentEventIndex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -96,11 +96,11 @@ Targets that do not have fixed sets of events will always return zero to <i>Inde
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556737">SetNextEventIndex</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547906">GetNumberEvents</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 
  
 

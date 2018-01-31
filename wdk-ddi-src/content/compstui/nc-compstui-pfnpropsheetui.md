@@ -65,6 +65,52 @@ CPSUI-supplied pointer to a <a href="..\compstui\ns-compstui-_propsheetui_info.m
 CPSUI-supplied integer value that is dependent on the contents of the <b>Reason</b> member of the <a href="..\compstui\ns-compstui-_propsheetui_info.md">PROPSHEETUI_INFO</a> structure. Valid values are as follows:
 
 
+
+
+
+
+
+
+
+
+
+
+#### PROPSHEETUI_REASON_BEFORE_INIT
+
+This value is new to Windows 8 and it is provided only to the original PFNPROPSHEETUI parameter passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff546148">CommonPropertySheetUI</a>.
+
+
+#### PROPSHEETUI_REASON_DESTROY
+
+The <i>lParam</i> value is nonzero if the user has selected the property sheet's <b>OK</b> or <b>Cancel</b> button. Otherwise the value is zero.
+
+
+#### PROPSHEETUI_REASON_GET_ICON
+
+The <i>lParam</i> value is a pointer to a <a href="..\compstui\ns-compstui-_propsheetui_geticon_info.md">PROPSHEETUI_GETICON_INFO</a> structure.
+
+
+#### PROPSHEETUI_REASON_GET_INFO_HEADER
+
+The <i>lParam</i> value is a pointer to a <a href="..\compstui\ns-compstui-_propsheetui_info_header.md">PROPSHEETUI_INFO_HEADER</a> structure.
+
+
+#### PROPSHEETUI_REASON_INIT
+
+If the callback function is specified by the <i>pfnPropSheetUI</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff546148">CommonPropertySheetUI</a>, <i>lParam</i> is the <i>lParam</i> value passed to <b>CommonPropertySheetUI</b>.
+
+If the callback function is specified using the CPSFUNC_ADD_PFNPROPSHEETUI function code with CPSUI's <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> function, <i>lParam</i> is the <i>lParam2</i> value passed to <b>ComPropSheet</b>.
+
+CPSUI copies the <i>lParam</i> value into the <b>lParamInit</b> member of the function's <a href="..\compstui\ns-compstui-_propsheetui_info.md">PROPSHEETUI_INFO</a> structure.
+
+The <i>lParam</i> value must not reside on the application's stack.
+
+
+#### PROPSHEETUI_REASON_SET_RESULT
+
+The <i>lParam</i> value is a pointer to a <a href="..\compstui\ns-compstui-_setresult_info.md">SETRESULT_INFO</a> structure.
+
+
 ## Return Value
 
 If the operation succeeds, the function should return a value of one (or greater). Otherwise it should return a value less than one.

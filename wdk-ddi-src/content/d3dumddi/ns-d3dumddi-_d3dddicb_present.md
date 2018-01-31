@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._D3DDDICB_PRESENT
-title : _D3DDDICB_PRESENT
+title : "_D3DDDICB_PRESENT"
 author : windows-driver-content
 description : The D3DDDICB_PRESENT structure describes allocations that content is copied to and from.
 old-location : display\d3dddicb_present.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 086d95a3-1b3a-4e09-9a39-e1972e0e306c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDICB_PRESENT, D3DDDICB_PRESENT structure [Display Devices], _D3DDDICB_PRESENT, d3dumddi/D3DDDICB_PRESENT, D3D_param_Structs_969f252f-fe5c-4351-9c7a-746fd33cb405.xml, display.d3dddicb_present
+ms.keywords : D3D_param_Structs_969f252f-fe5c-4351-9c7a-746fd33cb405.xml, _D3DDDICB_PRESENT, D3DDDICB_PRESENT, D3DDDICB_PRESENT structure [Display Devices], display.d3dddicb_present, d3dumddi/D3DDDICB_PRESENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -118,9 +118,9 @@ The original context that the <b>hContext</b> member specifies and that the user
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_allocatecb.md">pfnAllocateCb</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_presentcb.md">pfnPresentCb</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_allocatecb.md">pfnAllocateCb</a>
 
  
 

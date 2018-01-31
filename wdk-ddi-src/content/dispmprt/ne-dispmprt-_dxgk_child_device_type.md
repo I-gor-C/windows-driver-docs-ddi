@@ -1,6 +1,6 @@
 ---
 UID : NE:dispmprt._DXGK_CHILD_DEVICE_TYPE
-title : _DXGK_CHILD_DEVICE_TYPE
+title : "_DXGK_CHILD_DEVICE_TYPE"
 author : windows-driver-content
 description : The DXGK_CHILD_DEVICE_TYPE enumeration is used to indicate the type of a child device of the display adapter.
 old-location : display\dxgk_child_device_type.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b16ba776-a6b2-46d0-9b6f-18ea17cf4fce
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : TypeVideoOutput, dispmprt/TypeVideoOutput, TypeIntegratedDisplay, DmEnums_afd3654c-ffb4-49d6-ba59-235148e59d2c.xml, DXGK_CHILD_DEVICE_TYPE, TypeOther, dispmprt/TypeOther, _DXGK_CHILD_DEVICE_TYPE, *PDXGK_CHILD_DEVICE_TYPE, dispmprt/DXGK_CHILD_DEVICE_TYPE, DXGK_CHILD_DEVICE_TYPE enumeration [Display Devices], TypeUninitialized, dispmprt/TypeUninitialized, dispmprt/PDXGK_CHILD_DEVICE_TYPE, display.dxgk_child_device_type, PDXGK_CHILD_DEVICE_TYPE enumeration pointer [Display Devices], PDXGK_CHILD_DEVICE_TYPE, dispmprt/TypeIntegratedDisplay
+ms.keywords : TypeOther, PDXGK_CHILD_DEVICE_TYPE, DXGK_CHILD_DEVICE_TYPE, dispmprt/TypeUninitialized, TypeIntegratedDisplay, DmEnums_afd3654c-ffb4-49d6-ba59-235148e59d2c.xml, TypeVideoOutput, dispmprt/TypeOther, *PDXGK_CHILD_DEVICE_TYPE, dispmprt/TypeVideoOutput, DXGK_CHILD_DEVICE_TYPE enumeration [Display Devices], display.dxgk_child_device_type, TypeUninitialized, dispmprt/TypeIntegratedDisplay, _DXGK_CHILD_DEVICE_TYPE, PDXGK_CHILD_DEVICE_TYPE enumeration pointer [Display Devices], dispmprt/PDXGK_CHILD_DEVICE_TYPE, dispmprt/DXGK_CHILD_DEVICE_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -92,9 +92,9 @@ For more information about child devices of display adapters, see <a href="https
 
 ## See Also
 
-<a href="..\dispmprt\ns-dispmprt-_dxgk_child_descriptor.md">DXGK_CHILD_DESCRIPTOR</a>
-
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
+
+<a href="..\dispmprt\ns-dispmprt-_dxgk_child_descriptor.md">DXGK_CHILD_DESCRIPTOR</a>
 
  
 

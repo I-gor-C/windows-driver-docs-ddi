@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPD3DTRANSFORMCAPS, D3DTRANSFORMCAPS"
+req.typenames : D3DTRANSFORMCAPS, *LPD3DTRANSFORMCAPS
 ---
 
 

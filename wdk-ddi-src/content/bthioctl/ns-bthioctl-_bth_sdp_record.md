@@ -1,6 +1,6 @@
 ---
 UID : NS:bthioctl._BTH_SDP_RECORD
-title : _BTH_SDP_RECORD
+title : "_BTH_SDP_RECORD"
 author : windows-driver-content
 description : The BTH_SDP_RECORD structure contains information about an SDP record that is to be added to the local SDP server.
 old-location : bltooth\bth_sdp_record.htm
@@ -8,14 +8,14 @@ old-project : bltooth
 ms.assetid : 29aeb49a-1647-46ee-a88e-f088f8a2548f
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BTH_SDP_RECORD, bth_structs_e77453a7-05d1-403d-9552-972368d7a76c.xml, BTH_SDP_RECORD, PBTH_SDP_RECORD structure pointer [Bluetooth Devices], PBTH_SDP_RECORD, bltooth.bth_sdp_record, *PBTH_SDP_RECORD, bthioctl/BTH_SDP_RECORD, BTH_SDP_RECORD structure [Bluetooth Devices], bthioctl/PBTH_SDP_RECORD
+ms.keywords : BTH_SDP_RECORD, PBTH_SDP_RECORD structure pointer [Bluetooth Devices], PBTH_SDP_RECORD, _BTH_SDP_RECORD, BTH_SDP_RECORD structure [Bluetooth Devices], bthioctl/BTH_SDP_RECORD, bltooth.bth_sdp_record, bth_structs_e77453a7-05d1-403d-9552-972368d7a76c.xml, *PBTH_SDP_RECORD, bthioctl/PBTH_SDP_RECORD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthioctl.h
 req.include-header : Bthioctl.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
@@ -58,7 +58,43 @@ typedef struct _BTH_SDP_RECORD {
 
 `fCodService`
 
+####  Possible values include:
 
+
+
+#### COD_SERVICE_AUDIO
+
+
+
+#### COD_SERVICE_CAPTURING
+
+
+
+#### COD_SERVICE_INFORMATION
+
+
+
+#### COD_SERVICE_LIMITED
+
+
+
+#### COD_SERVICE_NETWORKING
+
+
+
+#### COD_SERVICE_OBJECT_XFER
+
+
+
+#### COD_SERVICE_POSITIONING
+
+
+
+#### COD_SERVICE_RENDERING
+
+
+
+#### COD_SERVICE_TELEPHONY
 
 `fOptions`
 

@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmthk._D3DKMT_REGISTERTRIMNOTIFICATION
-title : _D3DKMT_REGISTERTRIMNOTIFICATION
+title : "_D3DKMT_REGISTERTRIMNOTIFICATION"
 author : windows-driver-content
 description : D3DKMT_REGISTERTRIMNOTIFICATION is used with D3DKMTRegisterTrimNotification to register a callback for a kernel mode device for notifications from a graphics framework (such as OpenGL).
 old-location : display\d3dkmt_registertrimnotification.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : CA5BC76B-539E-4FFF-8E02-C475D18588F6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_registertrimnotification, d3dkmthk/D3DKMT_REGISTERTRIMNOTIFICATION, D3DKMT_REGISTERTRIMNOTIFICATION structure [Display Devices], _D3DKMT_REGISTERTRIMNOTIFICATION, D3DKMT_REGISTERTRIMNOTIFICATION
+ms.keywords : D3DKMT_REGISTERTRIMNOTIFICATION structure [Display Devices], display.d3dkmt_registertrimnotification, d3dkmthk/D3DKMT_REGISTERTRIMNOTIFICATION, _D3DKMT_REGISTERTRIMNOTIFICATION, D3DKMT_REGISTERTRIMNOTIFICATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

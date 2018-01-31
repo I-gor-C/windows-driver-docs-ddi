@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 93705446-8B87-46DD-9CFE-DD0473DEE6B6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMTWaitForSynchronizationObjectFromGpu, D3DKMTWaitForSynchronizationObjectFromGpu function [Display Devices], display.d3dkmtwaitforsynchronizationobjectfromgpu, D3DKMTWaitForSynchronizationObjectFromGpu
+ms.keywords : display.d3dkmtwaitforsynchronizationobjectfromgpu, D3DKMTWaitForSynchronizationObjectFromGpu function [Display Devices], d3dkmthk/D3DKMTWaitForSynchronizationObjectFromGpu, D3DKMTWaitForSynchronizationObjectFromGpu
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

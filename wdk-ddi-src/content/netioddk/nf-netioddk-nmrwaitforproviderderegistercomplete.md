@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ec6e75e8-f24a-4d76-b6e1-af35b5402f91
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NmrWaitForProviderDeregisterComplete, NmrWaitForProviderDeregisterComplete function [Network Drivers Starting with Windows Vista], netioddk/NmrWaitForProviderDeregisterComplete, nmrref_bd063787-0438-49de-9816-e5a110528d54.xml, netvista.nmrwaitforproviderderegistercomplete
+ms.keywords : netvista.nmrwaitforproviderderegistercomplete, nmrref_bd063787-0438-49de-9816-e5a110528d54.xml, NmrWaitForProviderDeregisterComplete function [Network Drivers Starting with Windows Vista], netioddk/NmrWaitForProviderDeregisterComplete, NmrWaitForProviderDeregisterComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -143,7 +143,7 @@ A provider module typically calls the
 | **Minimum UMDF version** |  |
 | **Header** | netioddk.h (include Wsk.h) |
 | **Library** |  |
-| **IRQL** | < DISPATCH_LEVEL |
+| **IRQL** | "< DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

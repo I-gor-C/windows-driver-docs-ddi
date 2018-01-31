@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmthk._D3DKMT_RELEASEKEYEDMUTEX
-title : _D3DKMT_RELEASEKEYEDMUTEX
+title : "_D3DKMT_RELEASEKEYEDMUTEX"
 author : windows-driver-content
 description : The D3DKMT_RELEASEKEYEDMUTEX structure describes a keyed mutex that the D3DKMTReleaseKeyedMutex function releases.
 old-location : display\d3dkmt_releasekeyedmutex.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0ba40b4e-2e1d-45fa-9222-e162a39eea33
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_releasekeyedmutex, D3DKMT_RELEASEKEYEDMUTEX, _D3DKMT_RELEASEKEYEDMUTEX, d3dkmthk/D3DKMT_RELEASEKEYEDMUTEX, OpenGL_Structs_6f167c25-afb8-4ddc-9441-be713bba78f4.xml, D3DKMT_RELEASEKEYEDMUTEX structure [Display Devices]
+ms.keywords : "_D3DKMT_RELEASEKEYEDMUTEX, OpenGL_Structs_6f167c25-afb8-4ddc-9441-be713bba78f4.xml, D3DKMT_RELEASEKEYEDMUTEX structure [Display Devices], d3dkmthk/D3DKMT_RELEASEKEYEDMUTEX, display.d3dkmt_releasekeyedmutex, D3DKMT_RELEASEKEYEDMUTEX"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

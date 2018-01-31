@@ -8,14 +8,14 @@ old-project : bltooth
 ms.assetid : f5b72de2-c2e9-44ac-a2a7-04271e9253d3
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : SdpAddAttributeToTree function [Bluetooth Devices], SdpAddAttributeToTree, bth_funcs_5a46529e-8b1b-474a-a005-16f7a5562d91.xml, bltooth.sdpaddattributetotree, sdplib/SdpAddAttributeToTree
+ms.keywords : bltooth.sdpaddattributetotree, bth_funcs_5a46529e-8b1b-474a-a005-16f7a5562d91.xml, SdpAddAttributeToTree, sdplib/SdpAddAttributeToTree, SdpAddAttributeToTree function [Bluetooth Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
 req.header : sdplib.h
 req.include-header : BthSdpddi.h
 req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
@@ -100,7 +100,7 @@ For more information about the tree structure, see
 | **Minimum UMDF version** |  |
 | **Header** | sdplib.h (include BthSdpddi.h) |
 | **Library** |  |
-| **IRQL** | <= PASSIVE_LEVEL |
+| **IRQL** | "<= PASSIVE_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

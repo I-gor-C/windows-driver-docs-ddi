@@ -1,6 +1,6 @@
 ---
 UID : NS:winbio_ioctl._WINBIO_DIAGNOSTICS
-title : _WINBIO_DIAGNOSTICS
+title : "_WINBIO_DIAGNOSTICS"
 author : windows-driver-content
 description : The IOCTL_BIOMETRIC_GET_SENSOR_STATUS IOCTL returns the WINBIO_DIAGNOSTICS structure as output.
 old-location : biometric\winbio_diagnostics.htm
@@ -8,7 +8,7 @@ old-project : biometric
 ms.assetid : 06f6abf1-9b44-4cf3-96d3-2017e0f6adda
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "*PWINBIO_DIAGNOSTICS, winbio_ioctl/PWINBIO_DIAGNOSTICS, WINBIO_DIAGNOSTICS, _WINBIO_DIAGNOSTICS, WINBIO_DIAGNOSTICS structure [Biometric Devices], PWINBIO_DIAGNOSTICS structure pointer [Biometric Devices], PWINBIO_DIAGNOSTICS, biometric.winbio_diagnostics, biometric_ref_eca83e57-bec6-4d83-8596-978b73eed6de.xml, winbio_ioctl/WINBIO_DIAGNOSTICS"
+ms.keywords : PWINBIO_DIAGNOSTICS structure pointer [Biometric Devices], *PWINBIO_DIAGNOSTICS, WINBIO_DIAGNOSTICS structure [Biometric Devices], winbio_ioctl/PWINBIO_DIAGNOSTICS, biometric_ref_eca83e57-bec6-4d83-8596-978b73eed6de.xml, _WINBIO_DIAGNOSTICS, biometric.winbio_diagnostics, winbio_ioctl/WINBIO_DIAGNOSTICS, WINBIO_DIAGNOSTICS, PWINBIO_DIAGNOSTICS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WINBIO_DIAGNOSTICS, *PWINBIO_DIAGNOSTICS
+req.typenames : "*PWINBIO_DIAGNOSTICS, WINBIO_DIAGNOSTICS"
 req.product : Windows 10 or later.
 ---
 

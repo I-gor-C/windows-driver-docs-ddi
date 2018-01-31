@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c53672b7-fbe7-45f7-b3ff-30cfeefa7d52
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : STRSAFE_FILL_BEHIND_NULL, RtlStringCchCopyNExW, STRSAFE_NO_TRUNCATION, STRSAFE_NULL_ON_FAILURE, ntstrsafe/RtlStringCchCopyNExW, ntstrsafe/RtlStringCchCopyNExA, safestrings_60ae1ee7-e0ba-407d-8946-a2928d2b9b32.xml, STRSAFE_FILL_ON_FAILURE, RtlStringCchCopyNEx, STRSAFE_IGNORE_NULLS, RtlStringCchCopyNExA, RtlStringCchCopyNExW function [Kernel-Mode Driver Architecture], kernel.rtlstringcchcopynex
+ms.keywords : STRSAFE_IGNORE_NULLS, RtlStringCchCopyNExW function [Kernel-Mode Driver Architecture], STRSAFE_NO_TRUNCATION, RtlStringCchCopyNEx, STRSAFE_NULL_ON_FAILURE, RtlStringCchCopyNExA, safestrings_60ae1ee7-e0ba-407d-8946-a2928d2b9b32.xml, STRSAFE_FILL_BEHIND_NULL, kernel.rtlstringcchcopynex, STRSAFE_FILL_ON_FAILURE, ntstrsafe/RtlStringCchCopyNExW, ntstrsafe/RtlStringCchCopyNExA, RtlStringCchCopyNExW
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
+req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 

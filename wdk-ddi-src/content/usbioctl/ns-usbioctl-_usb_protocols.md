@@ -1,6 +1,6 @@
 ---
 UID : NS:usbioctl._USB_PROTOCOLS
-title : _USB_PROTOCOLS
+title : "_USB_PROTOCOLS"
 author : windows-driver-content
 description : The USB_PROTOCOLS union is used to report the Universal Serial Bus (USB) signaling protocols that are supported by the port.
 old-location : buses\usb_protocols.htm
@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : F970A7FB-DF6F-414B-8B4B-C7E4C5C620B1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PUSB_PROTOCOLS union pointer [Buses], USB_PROTOCOLS, _USB_PROTOCOLS, usbioctl/PUSB_PROTOCOLS, PUSB_PROTOCOLS, USB_PROTOCOLS union [Buses], buses.usb_protocols, *PUSB_PROTOCOLS, usbioctl/USB_PROTOCOLS
+ms.keywords : USB_PROTOCOLS, buses.usb_protocols, _USB_PROTOCOLS, usbioctl/PUSB_PROTOCOLS, usbioctl/USB_PROTOCOLS, *PUSB_PROTOCOLS, USB_PROTOCOLS union [Buses], PUSB_PROTOCOLS, PUSB_PROTOCOLS union pointer [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -77,9 +77,9 @@ A bitmask that indicates the USB signaling protocols that are supported by the p
 
 ## See Also
 
-<a href="..\usbioctl\ns-usbioctl-_usb_node_connection_information_ex_v2.md">USB_NODE_CONNECTION_INFORMATION_EX_V2</a>
-
 <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_information_ex_v2.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2</a>
+
+<a href="..\usbioctl\ns-usbioctl-_usb_node_connection_information_ex_v2.md">USB_NODE_CONNECTION_INFORMATION_EX_V2</a>
 
  
 

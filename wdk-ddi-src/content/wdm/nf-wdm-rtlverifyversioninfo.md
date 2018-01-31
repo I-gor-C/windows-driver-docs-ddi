@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7c0ca9a0-dfa4-44ab-8d3a-ab43f72c806f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/RtlVerifyVersionInfo, RtlVerifyVersionInfo, kernel.rtlverifyversioninfo, RtlVerifyVersionInfo routine [Kernel-Mode Driver Architecture], k109_c0301686-a323-499f-ac04-3bc414b016cd.xml
+ms.keywords : RtlVerifyVersionInfo, wdm/RtlVerifyVersionInfo, k109_c0301686-a323-499f-ac04-3bc414b016cd.xml, RtlVerifyVersionInfo routine [Kernel-Mode Driver Architecture], kernel.rtlverifyversioninfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -184,6 +184,190 @@ Set the <i>TypeBitMask</i> and <i>ComparisonType</i> parameters for each call to
 </ul>
 
 
+#### TypeBitMask
+
+Indicates the <i>VersionInfo</i> member for which the comparison type is set. <i>TypeBitMask</i> can be one of the following values.
+        
+<table>
+<tr>
+<th>Value</th>
+<th>Corresponding member</th>
+</tr>
+<tr>
+<td>
+VER_BUILDNUMBER
+
+</td>
+<td>
+<b>dwBuildNumber</b>
+
+</td>
+</tr>
+<tr>
+<td>
+VER_MAJORVERSION
+
+</td>
+<td>
+<b>dwMajorVersion</b>
+
+</td>
+</tr>
+<tr>
+<td>
+VER_MINORVERSION
+
+</td>
+<td>
+<b>dwMinorVersion</b>
+
+</td>
+</tr>
+<tr>
+<td>
+VER_PLATFORMID
+
+</td>
+<td>
+<b>dwPlatformId</b>
+
+</td>
+</tr>
+<tr>
+<td>
+VER_SERVICEPACKMAJOR
+
+</td>
+<td>
+<b>wServicePackMajor</b>
+
+</td>
+</tr>
+<tr>
+<td>
+VER_SERVICEPACKMINOR
+
+</td>
+<td>
+<b>wServicePackMinor</b>
+
+</td>
+</tr>
+<tr>
+<td>
+VER_SUITENAME
+
+</td>
+<td>
+<b>wSuiteMask</b>
+
+</td>
+</tr>
+<tr>
+<td>
+VER_PRODUCT_TYPE
+
+</td>
+<td>
+<b>wProductType</b>
+
+</td>
+</tr>
+</table> 
+
+
+#### ComparisonType
+
+Specifies the comparison type that <b>RtlVerifyVersionInfo</b> uses to compare the <b>VersionInfo</b> member specified by <i>TypeBitMask</i> with the corresponding attribute of the currently running operating system.
+        
+
+For all values of <i>TypeBitMask</i> other than VER_SUITENAME, <i>ComparisonType</i> is set to one of the following values.
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+VER_EQUAL
+
+</td>
+<td>
+The current value must be equal to the specified value.
+
+</td>
+</tr>
+<tr>
+<td>
+VER_GREATER
+
+</td>
+<td>
+The current value must be greater than the specified value.
+
+</td>
+</tr>
+<tr>
+<td>
+VER_GREATER_EQUAL
+
+</td>
+<td>
+The current value must be greater than or equal to the specified value.
+
+</td>
+</tr>
+<tr>
+<td>
+VER_LESS
+
+</td>
+<td>
+The current value must be less than the specified value.
+
+</td>
+</tr>
+<tr>
+<td>
+VER_LESS_EQUAL
+
+</td>
+<td>
+The current value must be less than or equal to the specified value.
+
+</td>
+</tr>
+</table> 
+
+If <i>TypeBitMask</i> is set to VER_SUITENAME, <i>ComparisonType</i> is set to of one the following values.
+<table>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+VER_AND
+
+</td>
+<td>
+All product suites specified in the <b>wSuiteMask</b> member must be present in the current system.
+
+</td>
+</tr>
+<tr>
+<td>
+VER_OR
+
+</td>
+<td>
+At least one of the specified product suites must be present in the current system.
+
+</td>
+</tr>
+</table>
+
+
 ## Return Value
 
 <b>RtlVerifyVersionInfo</b> returns one of the following status values:
@@ -261,11 +445,11 @@ If the major service pack version exceeds the minimum required, then the minor s
 
 ## See Also
 
+<a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW</a>
+
 <a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a>
 
 <a href="..\wdm\ns-wdm-_osversioninfow.md">RTL_OSVERSIONINFOW</a>
-
-<a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW</a>
 
  
 

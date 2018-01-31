@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmdt._D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION
-title : _D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION
+title : "_D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION"
 author : windows-driver-content
 description : The D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION structure contains information about the copy protection that is supported (as well as the copy protection that is currently active) on a particular VidPN present path.
 old-location : display\d3dkmdt_vidpn_present_path_copyprotection.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 661e70c6-d99e-4c5a-ad88-3dd854747de4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_512b61d6-627d-4423-93ba-0f28ac340e51.xml, D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION structure [Display Devices], display.d3dkmdt_vidpn_present_path_copyprotection, _D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION, D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION, d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION
+ms.keywords : d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION, display.d3dkmdt_vidpn_present_path_copyprotection, _D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION, DmStructs_512b61d6-627d-4423-93ba-0f28ac340e51.xml, D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION structure [Display Devices], D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

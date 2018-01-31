@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._DXVADDI_AYUVSAMPLE8
-title : _DXVADDI_AYUVSAMPLE8
+title : "_DXVADDI_AYUVSAMPLE8"
 author : windows-driver-content
 description : The DXVADDI_AYUVSAMPLE8 structure describes 8-bit Cr, Cb, and Y color values and an associated opacity.
 old-location : display\dxvaddi_ayuvsample8.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0fce82e9-0932-4838-b247-af0b2b8642d3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxvaddi_ayuvsample8, d3dumddi/DXVADDI_AYUVSAMPLE8, _DXVADDI_AYUVSAMPLE8, DXVA2_Structs_0bf70816-64a3-44cb-864a-ad94d3c9fce9.xml, DXVADDI_AYUVSAMPLE8, DXVADDI_AYUVSAMPLE8 structure [Display Devices]
+ms.keywords : DXVA2_Structs_0bf70816-64a3-44cb-864a-ad94d3c9fce9.xml, d3dumddi/DXVADDI_AYUVSAMPLE8, _DXVADDI_AYUVSAMPLE8, DXVADDI_AYUVSAMPLE8 structure [Display Devices], display.dxvaddi_ayuvsample8, DXVADDI_AYUVSAMPLE8
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -98,9 +98,9 @@ The color value is scaled according to ITU-R Rec. BT.601, which you can learn ab
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videodesc.md">DXVADDI_VIDEODESC</a>
-
 <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_decodebufferdesc.md">DXVADDI_DECODEBUFFERDESC</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videodesc.md">DXVADDI_VIDEODESC</a>
 
  
 

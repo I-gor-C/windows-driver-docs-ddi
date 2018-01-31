@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a63d1a2f-d560-492f-9b73-198e42cb4300
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : IDE_CONTROL_ACTION enumeration [Storage Devices], irb/IdePowerDown, irb/IdePowerUp, IdePowerUp, IdePowerDown, IdeStop, irb/IDE_CONTROL_ACTION, IDE_CONTROL_ACTION, irb/IdeStart, irb/IdeStop, IdeVendorDefined, storage.ide_control_action, IdeStart, structs-ATA_f5df2197-3199-4b3f-ba0a-7a92cd75e3ac.xml, irb/IdeVendorDefined
+ms.keywords : irb/IdePowerDown, IdeStop, irb/IdeVendorDefined, irb/IdePowerUp, storage.ide_control_action, structs-ATA_f5df2197-3199-4b3f-ba0a-7a92cd75e3ac.xml, IdeVendorDefined, IdeStart, irb/IdeStop, IdePowerUp, IDE_CONTROL_ACTION enumeration [Storage Devices], IdePowerDown, IDE_CONTROL_ACTION, irb/IDE_CONTROL_ACTION, irb/IdeStart
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum

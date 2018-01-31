@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6e291139-d7d3-4927-ad01-b09bddb0b945
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/CmUnRegisterCallback, kernel.cmunregistercallback, CmUnRegisterCallback, CmUnRegisterCallback routine [Kernel-Mode Driver Architecture], ConfigMgrRef_13cbc14e-4652-4a3d-a87e-f6eef883f912.xml
+ms.keywords : kernel.cmunregistercallback, wdm/CmUnRegisterCallback, CmUnRegisterCallback routine [Kernel-Mode Driver Architecture], CmUnRegisterCallback, ConfigMgrRef_13cbc14e-4652-4a3d-a87e-f6eef883f912.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,16 +76,16 @@ A driver that calls <b>CmRegisterCallback</b> or <b>CmRegisterCallbackEx</b> sho
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** | IrqlExApcLte2, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-cmregistercallbackex.md">CmRegisterCallbackEx</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
 
 <a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a>
+
+<a href="..\wdm\nf-wdm-cmregistercallbackex.md">CmRegisterCallbackEx</a>
 
  
 

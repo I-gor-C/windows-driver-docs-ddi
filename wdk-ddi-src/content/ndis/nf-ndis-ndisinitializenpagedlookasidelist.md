@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : d240f2cc-18a6-4c2d-889f-e25a9486d5fe
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisInitializeNPagedLookasideList, netvista.ndisinitializenpagedlookasidelist, NdisInitializeNPagedLookasideList, NdisInitializeNPagedLookasideList function [Network Drivers Starting with Windows Vista], ndis_lookaside_ref_edf7a9cc-c6bc-405b-88bb-c27331c38069.xml
+ms.keywords : ndis_lookaside_ref_edf7a9cc-c6bc-405b-88bb-c27331c38069.xml, netvista.ndisinitializenpagedlookasidelist, NdisInitializeNPagedLookasideList, ndis/NdisInitializeNPagedLookasideList, NdisInitializeNPagedLookasideList function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -142,7 +142,7 @@ It is more efficient for a driver to allow the
     NdisFreeToNPagedLookasideList</b></mshelp:link> functions to manage the allocation and deallocation of entries (see
     the 
     <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a> and 
-    <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> functions). However, a driver that
+    <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> functions). However, a driver that
     tracks state internally about its memory usage might supply 
     <i>Allocate</i> and 
     <i>Free</i> functions to 
@@ -161,25 +161,25 @@ Callers of
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL (see Remarks section) |
+| **IRQL** | "<= DISPATCH_LEVEL (see Remarks section)" |
 | **DDI compliance rules** | Irql_Miscellaneous_Function |
 
 ## See Also
-
-<mshelp:link keywords="netvista.ndisallocatefromnpagedlookasidelist" tabindex="0"><b>
-   NdisAllocateFromNPagedLookasideList</b></mshelp:link>
-
-<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
 
 <mshelp:link keywords="netvista.ndisdeletenpagedlookasidelist" tabindex="0"><b>
    NdisDeleteNPagedLookasideList</b></mshelp:link>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556431">NPAGED_LOOKASIDE_LIST</a>
 
+<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
+
 <mshelp:link keywords="netvista.ndisfreetonpagedlookasidelist" tabindex="0"><b>
    NdisFreeToNPagedLookasideList</b></mshelp:link>
 
-<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
+<mshelp:link keywords="netvista.ndisallocatefromnpagedlookasidelist" tabindex="0"><b>
+   NdisAllocateFromNPagedLookasideList</b></mshelp:link>
+
+<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
 
  
 

@@ -1,6 +1,6 @@
 ---
 UID : NS:wwan._WWAN_IPADDRESS_ENTRY
-title : _WWAN_IPADDRESS_ENTRY
+title : "_WWAN_IPADDRESS_ENTRY"
 author : windows-driver-content
 description : The WWAN_IPADDRESS_ENTRY structure represents either the IPV4 or IPV6 address of a PDP context.
 old-location : netvista\wwan_ipaddress_entry.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 85615799-5AA0-4D83-9246-73F3C7ABFFF6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/WWAN_IPADDRESS_ENTRY, _WWAN_IPADDRESS_ENTRY, *PWWAN_IPADDRESS_ENTRY, WWAN_IPADDRESS_ENTRY, WWAN_IPADDRESS_ENTRY structure [Network Drivers Starting with Windows Vista], PWWAN_IPADDRESS_ENTRY structure pointer [Network Drivers Starting with Windows Vista], netvista.wwan_ipaddress_entry, wwan/PWWAN_IPADDRESS_ENTRY, PWWAN_IPADDRESS_ENTRY
+ms.keywords : netvista.wwan_ipaddress_entry, *PWWAN_IPADDRESS_ENTRY, PWWAN_IPADDRESS_ENTRY structure pointer [Network Drivers Starting with Windows Vista], WWAN_IPADDRESS_ENTRY structure [Network Drivers Starting with Windows Vista], WWAN_IPADDRESS_ENTRY, _WWAN_IPADDRESS_ENTRY, wwan/PWWAN_IPADDRESS_ENTRY, PWWAN_IPADDRESS_ENTRY, wwan/WWAN_IPADDRESS_ENTRY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WWAN_IPADDRESS_ENTRY, *PWWAN_IPADDRESS_ENTRY
+req.typenames : "*PWWAN_IPADDRESS_ENTRY, WWAN_IPADDRESS_ENTRY"
 req.product : Windows 10 or later.
 ---
 

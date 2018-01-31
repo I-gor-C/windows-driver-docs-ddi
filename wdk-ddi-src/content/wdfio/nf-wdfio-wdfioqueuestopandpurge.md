@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3A9CF1BD-77F1-4F4C-AEB5-0E77B67C45D3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfio/WdfIoQueueStopAndPurge, WdfIoQueueStopAndPurge method, kmdf.wdfioqueuestopandpurge, WdfIoQueueStopAndPurge, wdf.wdfioqueuestopandpurge, PFN_WDFIOQUEUESTOPANDPURGE
+ms.keywords : wdfio/WdfIoQueueStopAndPurge, WdfIoQueueStopAndPurge, PFN_WDFIOQUEUESTOPANDPURGE, wdf.wdfioqueuestopandpurge, WdfIoQueueStopAndPurge method, kmdf.wdfioqueuestopandpurge
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -103,7 +103,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfio.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | ChangeQueueState, DriverCreate, EvtSurpriseRemoveNoSuspendQueue, NoCancelFromEvtSurpriseRemove |
 
 ## See Also
@@ -112,9 +112,9 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_canceled_on_queue.md">EvtIoCanceledOnQueue</a>
 
-<a href="..\wdfio\nf-wdfio-wdfioqueuestopandpurgesynchronously.md">WdfIoQueueStopAndPurgeSynchronously</a>
-
 <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a>
+
+<a href="..\wdfio\nf-wdfio-wdfioqueuestopandpurgesynchronously.md">WdfIoQueueStopAndPurgeSynchronously</a>
 
  
 

@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmthk._D3DKMT_VIDMM_ESCAPE
-title : _D3DKMT_VIDMM_ESCAPE
+title : "_D3DKMT_VIDMM_ESCAPE"
 author : windows-driver-content
 description : The D3DKMT_VIDMM_ESCAPE structure describes how to control the video memory manager (which is part of Dxgkrnl.sys) in a call to the D3DKMTEscape function.
 old-location : display\d3dkmt_vidmm_escape.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b9fb9960-9e6a-4c41-9c40-8ad307f83f0e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DKMT_VIDMM_ESCAPE, display.d3dkmt_vidmm_escape, d3dkmthk/D3DKMT_VIDMM_ESCAPE, D3DKMT_VIDMM_ESCAPE, D3DKMT_VIDMM_ESCAPE structure [Display Devices], OpenGL_Structs_9a9c243b-b99e-43f2-a749-afbb839fb7c0.xml
+ms.keywords : D3DKMT_VIDMM_ESCAPE, _D3DKMT_VIDMM_ESCAPE, OpenGL_Structs_9a9c243b-b99e-43f2-a749-afbb839fb7c0.xml, display.d3dkmt_vidmm_escape, d3dkmthk/D3DKMT_VIDMM_ESCAPE, D3DKMT_VIDMM_ESCAPE structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -104,9 +104,9 @@ typedef struct _D3DKMT_VIDMM_ESCAPE {
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_escape.md">D3DKMT_ESCAPE</a>
-
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_escape.md">D3DKMT_ESCAPE</a>
 
  
 

@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._DXVADDI_VIDEOSAMPLEFLAGS
-title : _DXVADDI_VIDEOSAMPLEFLAGS
+title : "_DXVADDI_VIDEOSAMPLEFLAGS"
 author : windows-driver-content
 description : The DXVADDI_VIDEOSAMPLEFLAGS structure identifies changes in the current sample frame from the previous sample frame.
 old-location : display\dxvaddi_videosampleflags.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1dca2b12-0542-43a9-abff-203ea34cff90
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVA2_Structs_8e0fce9f-8473-4bbc-9403-fb8755090a7d.xml, display.dxvaddi_videosampleflags, _DXVADDI_VIDEOSAMPLEFLAGS, DXVADDI_VIDEOSAMPLEFLAGS, d3dumddi/DXVADDI_VIDEOSAMPLEFLAGS, DXVADDI_VIDEOSAMPLEFLAGS structure [Display Devices]
+ms.keywords : d3dumddi/DXVADDI_VIDEOSAMPLEFLAGS, display.dxvaddi_videosampleflags, DXVADDI_VIDEOSAMPLEFLAGS, DXVADDI_VIDEOSAMPLEFLAGS structure [Display Devices], _DXVADDI_VIDEOSAMPLEFLAGS, DXVA2_Structs_8e0fce9f-8473-4bbc-9403-fb8755090a7d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

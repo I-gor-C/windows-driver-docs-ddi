@@ -1,6 +1,6 @@
 ---
 UID : NE:bthxddi._BTHX_HCI_PACKET_TYPE
-title : _BTHX_HCI_PACKET_TYPE
+title : "_BTHX_HCI_PACKET_TYPE"
 author : windows-driver-content
 description : The BTHX_HCI_PACKET_TYPE enumeration lists the different types of packets being sent from the Bluetooth stack to the transport driver.
 old-location : bltooth\bthx_hci_packet_type.htm
@@ -8,14 +8,14 @@ old-project : bltooth
 ms.assetid : 87265ABB-C2B7-468F-83FC-411AD9769517
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : HciPacketEvent, _BTHX_HCI_PACKET_TYPE, BTHX_HCI_PACKET_TYPE, bltooth.bthx_hci_packet_type, bthxddi/HciPacketAclData, BTHX_HCI_PACKET_TYPE enumeration [Bluetooth Devices], bthxddi/HciPacketCommand, HciPacketCommand, bthxddi/BTHX_HCI_PACKET_TYPE, bthxddi/HciPacketEvent, HciPacketAclData
+ms.keywords : "_BTHX_HCI_PACKET_TYPE, bthxddi/HciPacketCommand, bthxddi/HciPacketEvent, BTHX_HCI_PACKET_TYPE enumeration [Bluetooth Devices], HciPacketEvent, HciPacketAclData, bthxddi/BTHX_HCI_PACKET_TYPE, bthxddi/HciPacketAclData, BTHX_HCI_PACKET_TYPE, HciPacketCommand, bltooth.bthx_hci_packet_type"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
 req.header : bthxddi.h
 req.include-header : BthXDDI.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 8.
+req.target-min-winverclnt : Versions:\_Supported starting with  Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 

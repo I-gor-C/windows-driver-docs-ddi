@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5AA1C8E1-A73B-47D1-A866-9F190CFD4597
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WRITE_PORT_USHORT function, umdf.write_port_ushort, wudfddi_hwaccess/WRITE_PORT_USHORT, WRITE_PORT_USHORT, wdf.write_port_ushort
+ms.keywords : wdf.write_port_ushort, WRITE_PORT_USHORT function, wudfddi_hwaccess/WRITE_PORT_USHORT, umdf.write_port_ushort, WRITE_PORT_USHORT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UMDF_IO_TARGET_OPEN_PARAMS, *PUMDF_IO_TARGET_OPEN_PARAMS
+req.typenames : "*PUMDF_IO_TARGET_OPEN_PARAMS, UMDF_IO_TARGET_OPEN_PARAMS"
 req.product : Windows 10 or later.
 ---
 

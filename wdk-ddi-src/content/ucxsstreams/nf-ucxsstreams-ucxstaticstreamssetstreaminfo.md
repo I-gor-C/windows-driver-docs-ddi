@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UCX_ROOTHUB_CONFIG, *PUCX_ROOTHUB_CONFIG
+req.typenames : "*PUCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG"
 req.product : Windows 10 or later.
 ---
 

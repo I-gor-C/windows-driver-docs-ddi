@@ -1,6 +1,6 @@
 ---
 UID : NS:ucxroothub._UCX_ROOTHUB_CONFIG
-title : _UCX_ROOTHUB_CONFIG
+title : "_UCX_ROOTHUB_CONFIG"
 author : windows-driver-content
 description : Contains pointers to event callback functions for creating the root hub by calling UcxRootHubCreate. Initialize this structure by calling UCX_ROOTHUB_CONFIG_INIT initialization function (see Ucxclass.h).
 old-location : buses\_ucx_roothub_config.htm
@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 27E54F0D-2163-4D7C-B204-336EE0227488
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses._ucx_roothub_config, ucxroothub/P_UCX_ROOTHUB_CONFIG, ucxroothub/_UCX_ROOTHUB_CONFIG, P_UCX_ROOTHUB_CONFIG structure pointer [Buses], UCX_ROOTHUB_CONFIG, P_UCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG structure [Buses], _UCX_ROOTHUB_CONFIG, *PUCX_ROOTHUB_CONFIG
+ms.keywords : ucxroothub/P_UCX_ROOTHUB_CONFIG, *PUCX_ROOTHUB_CONFIG, P_UCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG, P_UCX_ROOTHUB_CONFIG structure pointer [Buses], _UCX_ROOTHUB_CONFIG, buses._ucx_roothub_config, UCX_ROOTHUB_CONFIG structure [Buses], ucxroothub/_UCX_ROOTHUB_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UCX_ROOTHUB_CONFIG, *PUCX_ROOTHUB_CONFIG
+req.typenames : "*PUCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG"
 req.product : Windows 10 or later.
 ---
 

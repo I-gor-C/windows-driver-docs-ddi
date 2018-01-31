@@ -1,6 +1,6 @@
 ---
 UID : NS:pcivirt._SRIOV_PROXY_QUERY_LUID_OUTPUT
-title : _SRIOV_PROXY_QUERY_LUID_OUTPUT
+title : "_SRIOV_PROXY_QUERY_LUID_OUTPUT"
 author : windows-driver-content
 description : Stores the local unique identifier of the SR_IOV device implementing the interface. This structure is the output buffer for the IOCTL_SRIOV_PROXY_QUERY_LUID request.
 old-location : pci\sriov_proxy_query_luid_output.htm
@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : 8db09aa8-240d-40b6-a28c-77158aff6c39
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : SRIOV_PROXY_QUERY_LUID_OUTPUT, SRIOV_PROXY_QUERY_LUID_OUTPUT structure [Buses], pcivirt/SRIOV_PROXY_QUERY_LUID_OUTPUT, _SRIOV_PROXY_QUERY_LUID_OUTPUT, *PSRIOV_PROXY_QUERY_LUID_OUTPUT, PCI.sriov_proxy_query_luid_output
+ms.keywords : pcivirt/SRIOV_PROXY_QUERY_LUID_OUTPUT, PCI.sriov_proxy_query_luid_output, _SRIOV_PROXY_QUERY_LUID_OUTPUT, SRIOV_PROXY_QUERY_LUID_OUTPUT structure [Buses], *PSRIOV_PROXY_QUERY_LUID_OUTPUT, SRIOV_PROXY_QUERY_LUID_OUTPUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

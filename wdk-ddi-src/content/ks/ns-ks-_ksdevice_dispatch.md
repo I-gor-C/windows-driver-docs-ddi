@@ -1,6 +1,6 @@
 ---
 UID : NS:ks._KSDEVICE_DISPATCH
-title : _KSDEVICE_DISPATCH
+title : "_KSDEVICE_DISPATCH"
 author : windows-driver-content
 description : The KSDEVICE_DISPATCH structure describes the callbacks that a client can provide to receive notification of device creation and PnP events.
 old-location : stream\ksdevice_dispatch.htm
@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 1ae7af1d-5e1c-4728-82c5-efc8d60b5df6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PKSDEVICE_DISPATCH, avstruct_7ceb03b7-6973-46bd-ad3e-32fdce7f4f11.xml, ks/PKSDEVICE_DISPATCH, KSDEVICE_DISPATCH, *PKSDEVICE_DISPATCH, ks/KSDEVICE_DISPATCH, PKSDEVICE_DISPATCH structure pointer [Streaming Media Devices], stream.ksdevice_dispatch, _KSDEVICE_DISPATCH, KSDEVICE_DISPATCH structure [Streaming Media Devices]
+ms.keywords : stream.ksdevice_dispatch, ks/PKSDEVICE_DISPATCH, PKSDEVICE_DISPATCH structure pointer [Streaming Media Devices], *PKSDEVICE_DISPATCH, avstruct_7ceb03b7-6973-46bd-ad3e-32fdce7f4f11.xml, PKSDEVICE_DISPATCH, ks/KSDEVICE_DISPATCH, _KSDEVICE_DISPATCH, KSDEVICE_DISPATCH, KSDEVICE_DISPATCH structure [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

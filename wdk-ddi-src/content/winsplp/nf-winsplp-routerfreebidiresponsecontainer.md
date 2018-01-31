@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 3998eed5-398e-4835-b917-54f5ae814ddf
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : winsplp/RouterFreeBidiResponseContainer, RouterFreeBidiResponseContainer function [Print Devices], spoolfnc_065c8a3a-5790-45f5-bf79-3af94fdd0571.xml, print.routerfreebidiresponsecontainer, RouterFreeBidiResponseContainer
+ms.keywords : RouterFreeBidiResponseContainer function [Print Devices], print.routerfreebidiresponsecontainer, spoolfnc_065c8a3a-5790-45f5-bf79-3af94fdd0571.xml, winsplp/RouterFreeBidiResponseContainer, RouterFreeBidiResponseContainer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,9 +77,9 @@ Pointer to the BIDI_RESPONSE_CONTAINER structure to be freed.
 
 ## See Also
 
-<a href="..\winsplp\nf-winsplp-routerallocbidiresponsecontainer.md">RouterAllocBidiResponseContainer</a>
-
 <a href="..\winspool\ns-winspool-_bidi_response_container.md">BIDI_RESPONSE_CONTAINER</a>
+
+<a href="..\winsplp\nf-winsplp-routerallocbidiresponsecontainer.md">RouterAllocBidiResponseContainer</a>
 
  
 

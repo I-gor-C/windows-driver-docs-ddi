@@ -69,6 +69,24 @@ void ProtocolClDropPartyComplete(
 
 Specifies the final status of the client-initiated drop-party operation, which can be one of the
      following:
+     
+
+
+
+
+#### NDIS_STATUS_SUCCESS
+
+The party has been dropped. The 
+       <i>NdisPartyHandle</i> that represented this party, which the client stored in its 
+       <i>ProtocolPartyContext</i> area, is now invalid.
+
+
+#### NDIS_STATUS_FAILURE
+
+The given party was the last remaining on the client's multipoint VC. Therefore, the client
+       should call 
+       <a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a> to drop this
+       party.
 
 `ProtocolPartyContext`
 
@@ -140,27 +158,27 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
-
 <a href="..\ndis\nf-ndis-ndiscmdroppartycomplete.md">NdisCmDropPartyComplete</a>
 
-<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
-
-<a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a>
-
 <a href="..\ndis\nf-ndis-ndismcmdroppartycomplete.md">NdisMCmDropPartyComplete</a>
-
-<a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
 
 <mshelp:link keywords="netvista.ndisfreetonpagedlookasidelist" tabindex="0"><b>
    NdisFreeToNPagedLookasideList</b></mshelp:link>
 
+<a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a>
+
 <a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a>
+
+<a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
+
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
+
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 
 <a href="..\ndis\nc-ndis-protocol_cm_drop_party.md">ProtocolCmDropParty</a>
 

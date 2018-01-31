@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5e40a31f-7730-48f0-899f-f59be654c991
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : FwpsvSwitchNotifyComplete0, netvista.fwpsvswitchnotifycomplete0, fwpsk/FwpsvSwitchNotifyComplete0, FwpsvSwitchNotifyComplete0 function [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.fwpsvswitchnotifycomplete0, FwpsvSwitchNotifyComplete0 function [Network Drivers Starting with Windows Vista], FwpsvSwitchNotifyComplete0, fwpsk/FwpsvSwitchNotifyComplete0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -90,7 +90,7 @@ If a callout driver returns STATUS_PENDING from a WFP notification function, WFP
 | **Minimum UMDF version** |  |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

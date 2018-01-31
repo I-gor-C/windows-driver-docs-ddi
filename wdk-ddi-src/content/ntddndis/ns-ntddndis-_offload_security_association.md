@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddndis._OFFLOAD_SECURITY_ASSOCIATION
-title : _OFFLOAD_SECURITY_ASSOCIATION
+title : "_OFFLOAD_SECURITY_ASSOCIATION"
 author : windows-driver-content
 description : The OFFLOAD_SECURITY_ASSOCIATION structure specifies a single security association (SA).
 old-location : netvista\offload_security_association.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2c392a13-4db4-4b22-aacf-4450eb1e191c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.offload_security_association, POFFLOAD_SECURITY_ASSOCIATION structure pointer [Network Drivers Starting with Windows Vista], POFFLOAD_SECURITY_ASSOCIATION, ntddndis/POFFLOAD_SECURITY_ASSOCIATION, *POFFLOAD_SECURITY_ASSOCIATION, 216offload_3c6a958b-81b2-4f18-b974-b0669b6294e1.xml, OFFLOAD_SECURITY_ASSOCIATION structure [Network Drivers Starting with Windows Vista], _OFFLOAD_SECURITY_ASSOCIATION, ntddndis/OFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION
+ms.keywords : "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION structure [Network Drivers Starting with Windows Vista], netvista.offload_security_association, 216offload_3c6a958b-81b2-4f18-b974-b0669b6294e1.xml, ntddndis/OFFLOAD_SECURITY_ASSOCIATION, POFFLOAD_SECURITY_ASSOCIATION structure pointer [Network Drivers Starting with Windows Vista], POFFLOAD_SECURITY_ASSOCIATION, ntddndis/POFFLOAD_SECURITY_ASSOCIATION, _OFFLOAD_SECURITY_ASSOCIATION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
+req.typenames : OFFLOAD_SECURITY_ASSOCIATION, *POFFLOAD_SECURITY_ASSOCIATION
 ---
 
 # _OFFLOAD_SECURITY_ASSOCIATION structure
@@ -69,6 +69,19 @@ The integrity (authentication) algorithm for the SA, formatted as an
 
 The Internet Protocol security (IPsec) operation for which the SA is to be used. The following
      operations are supported:
+     
+
+
+
+
+#### AUTHENTICATE
+
+The SA will be used for authentication (integrity checking).
+
+
+#### ENCRYPT
+
+The SA will be used for encryption/decryption (confidentiality).
 
 `Reserved`
 
@@ -94,12 +107,12 @@ The OFFLOAD_SECURITY_ASSOCIATION structure is used with the
 
 ## See Also
 
+<a href="..\ntddndis\ns-ntddndis-_offload_algo_info.md">OFFLOAD_ALGO_INFO</a>
+
 <mshelp:link keywords="netvista.oid_tcp_task_ipsec_add_udpesp_sa" tabindex="0">
    OID_TCP_TASK_IPSEC_ADD_UDPESP_SA</mshelp:link>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569808">OID_TCP_TASK_IPSEC_ADD_SA</a>
-
-<a href="..\ntddndis\ns-ntddndis-_offload_algo_info.md">OFFLOAD_ALGO_INFO</a>
 
  
 

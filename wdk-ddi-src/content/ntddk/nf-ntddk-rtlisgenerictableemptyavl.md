@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 9190DA2F-5530-4427-862F-00434DD9C950
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rtlisgenerictableemptyavl, RtlIsGenericTableEmptyAvl, ntddk/RtlIsGenericTableEmptyAvl, RtlIsGenericTableEmptyAvl routine [Installable File System Drivers]
+ms.keywords : ntddk/RtlIsGenericTableEmptyAvl, RtlIsGenericTableEmptyAvl routine [Installable File System Drivers], RtlIsGenericTableEmptyAvl, ifsk.rtlisgenerictableemptyavl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -80,7 +80,7 @@ Callers of <b>RtlIsGenericTableEmptyAvl</b> must be running at ≤ APC_LEVEL if 
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL (see Remarks section) |
+| **IRQL** | "<= APC_LEVEL (see Remarks section)" |
 | **DDI compliance rules** |  |
 
 ## See Also

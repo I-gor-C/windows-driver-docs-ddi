@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 1a0f8ea5-9b1f-4301-b96d-aa37b80b4ce2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfresource/WdfCmResourceListAppendDescriptor, PFN_WDFCMRESOURCELISTAPPENDDESCRIPTOR, WdfCmResourceListAppendDescriptor, WdfCmResourceListAppendDescriptor method, DFResourceObjectRef_13d42471-baa5-4985-a5fa-70336f2be352.xml, wdf.wdfcmresourcelistappenddescriptor, kmdf.wdfcmresourcelistappenddescriptor
+ms.keywords : WdfCmResourceListAppendDescriptor method, wdfresource/WdfCmResourceListAppendDescriptor, kmdf.wdfcmresourcelistappenddescriptor, DFResourceObjectRef_13d42471-baa5-4985-a5fa-70336f2be352.xml, wdf.wdfcmresourcelistappenddescriptor, WdfCmResourceListAppendDescriptor, PFN_WDFCMRESOURCELISTAPPENDDESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -125,20 +125,20 @@ For more information about resource lists, see <a href="https://docs.microsoft.c
 | **Minimum UMDF version** |  |
 | **Header** | wdfresource.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfresource\nf-wdfresource-wdfcmresourcelistinsertdescriptor.md">WdfCmResourceListInsertDescriptor</a>
-
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EvtDeviceReleaseHardware</a>
+
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a>
 
 <a href="https://msdn.microsoft.com/3210b28b-cbaa-4ad9-9ca8-3b5f03aee41e">EvtDeviceResourcesQuery</a>
 
 <a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a>
+<a href="..\wdfresource\nf-wdfresource-wdfcmresourcelistinsertdescriptor.md">WdfCmResourceListInsertDescriptor</a>
 
  
 

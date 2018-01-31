@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 351859d5-89fb-4756-a75b-fd4048cb20ef
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetExtensionFunctionWide, IDebugControl4 interface [Windows Debugging], GetExtensionFunctionWide method, IDebugControl4, IDebugControl4::GetExtensionFunctionWide, debugger.getextensionfunctionwide, dbgeng/IDebugControl4::GetExtensionFunctionWide, GetExtensionFunctionWide method [Windows Debugging], GetExtensionFunctionWide method [Windows Debugging], IDebugControl4 interface
+ms.keywords : debugger.getextensionfunctionwide, GetExtensionFunctionWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4::GetExtensionFunctionWide, GetExtensionFunctionWide, IDebugControl4, GetExtensionFunctionWide method [Windows Debugging], dbgeng/IDebugControl4::GetExtensionFunctionWide, IDebugControl4 interface [Windows Debugging], GetExtensionFunctionWide method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -110,13 +110,13 @@ For more information on using extension functions, see <a href="https://msdn.mic
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539023">CallExtension</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546717">GetExtensionByPath</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537892">AddExtension</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539023">CallExtension</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537892">AddExtension</a>
 
  
 

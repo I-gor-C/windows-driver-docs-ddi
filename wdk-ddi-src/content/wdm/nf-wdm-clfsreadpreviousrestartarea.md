@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 832da270-e1e1-41bf-a9cf-0b363c0d2d74
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/ClfsReadPreviousRestartArea, ClfsReadPreviousRestartArea, Clfs_884a8a2f-adbf-415b-968e-2f82c3f5d7fa.xml, ClfsReadPreviousRestartArea routine [Kernel-Mode Driver Architecture], kernel.clfsreadpreviousrestartarea
+ms.keywords : wdm/ClfsReadPreviousRestartArea, kernel.clfsreadpreviousrestartarea, ClfsReadPreviousRestartArea routine [Kernel-Mode Driver Architecture], ClfsReadPreviousRestartArea, Clfs_884a8a2f-adbf-415b-968e-2f82c3f5d7fa.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -98,7 +98,7 @@ With the <b>ReadPreviousLogRestartArea</b> routine, clients can implement a form
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

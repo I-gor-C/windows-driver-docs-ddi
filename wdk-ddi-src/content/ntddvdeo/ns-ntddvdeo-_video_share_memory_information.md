@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddvdeo._VIDEO_SHARE_MEMORY_INFORMATION
-title : _VIDEO_SHARE_MEMORY_INFORMATION
+title : "_VIDEO_SHARE_MEMORY_INFORMATION"
 author : windows-driver-content
 description : The VIDEO_SHARE_MEMORY_INFORMATION structure is used to communicate to the display driver that a request for a block of user-mode memory has been fulfilled.
 old-location : display\video_share_memory_information.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 004ecb65-a462-45e5-a647-9655727b202b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.video_share_memory_information, ntddvdeo/PVIDEO_SHARE_MEMORY_INFORMATION, VIDEO_SHARE_MEMORY_INFORMATION structure [Display Devices], Video_Structs_bed1b1c4-1ee2-4f6b-862e-d6dd85d11e35.xml, ntddvdeo/VIDEO_SHARE_MEMORY_INFORMATION, PVIDEO_SHARE_MEMORY_INFORMATION structure pointer [Display Devices], _VIDEO_SHARE_MEMORY_INFORMATION, VIDEO_SHARE_MEMORY_INFORMATION, *PVIDEO_SHARE_MEMORY_INFORMATION, PVIDEO_SHARE_MEMORY_INFORMATION
+ms.keywords : "*PVIDEO_SHARE_MEMORY_INFORMATION, display.video_share_memory_information, ntddvdeo/PVIDEO_SHARE_MEMORY_INFORMATION, ntddvdeo/VIDEO_SHARE_MEMORY_INFORMATION, PVIDEO_SHARE_MEMORY_INFORMATION structure pointer [Display Devices], _VIDEO_SHARE_MEMORY_INFORMATION, PVIDEO_SHARE_MEMORY_INFORMATION, Video_Structs_bed1b1c4-1ee2-4f6b-862e-d6dd85d11e35.xml, VIDEO_SHARE_MEMORY_INFORMATION, VIDEO_SHARE_MEMORY_INFORMATION structure [Display Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PVIDEO_SHARE_MEMORY_INFORMATION, VIDEO_SHARE_MEMORY_INFORMATION"
+req.typenames : VIDEO_SHARE_MEMORY_INFORMATION, *PVIDEO_SHARE_MEMORY_INFORMATION
 ---
 
 # _VIDEO_SHARE_MEMORY_INFORMATION structure

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9dce2b0a-1d0c-4c87-a32f-8bf72bb91cfe
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisCmDispatchIncomingDropParty function [Network Drivers Starting with Windows Vista], netvista.ndiscmdispatchincomingdropparty, condis_call_manager_ref_6f7730c4-030a-45a6-b873-833bf8033ce7.xml, ndis/NdisCmDispatchIncomingDropParty, NdisCmDispatchIncomingDropParty
+ms.keywords : netvista.ndiscmdispatchincomingdropparty, NdisCmDispatchIncomingDropParty function [Network Drivers Starting with Windows Vista], ndis/NdisCmDispatchIncomingDropParty, NdisCmDispatchIncomingDropParty, condis_call_manager_ref_6f7730c4-030a-45a6-b873-833bf8033ce7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -124,10 +124,15 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_CallManager_Function |
 
 ## See Also
+
+<a href="..\ndis\nc-ndis-protocol_cl_incoming_drop_party.md">ProtocolClIncomingDropParty</a>
+
+<mshelp:link keywords="netvista.ndiscmdispatchincomingclosecall" tabindex="0"><b>
+   NdisCmDispatchIncomingCloseCall</b></mshelp:link>
 
 <mshelp:link keywords="netvista.protocolcoreceivenetbufferlists" tabindex="0"><i>
    ProtocolCoReceiveNetBufferLists</i></mshelp:link>
@@ -135,12 +140,7 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
 <mshelp:link keywords="netvista.ndismcmdispatchincomingdropparty" tabindex="0"><b>
    NdisMCmDispatchIncomingDropParty</b></mshelp:link>
 
-<mshelp:link keywords="netvista.ndiscmdispatchincomingclosecall" tabindex="0"><b>
-   NdisCmDispatchIncomingCloseCall</b></mshelp:link>
-
 <a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
-
-<a href="..\ndis\nc-ndis-protocol_cl_incoming_drop_party.md">ProtocolClIncomingDropParty</a>
 
  
 

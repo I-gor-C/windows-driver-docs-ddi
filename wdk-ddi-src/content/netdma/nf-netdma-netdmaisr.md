@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 81aa5707-b614-429b-bd8e-0204eec74e0f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netdma_ref_5a9b1659-b106-4eed-931d-f2ad8b2476e9.xml, netvista.netdmaisr, NetDmaIsr function [Network Drivers Starting with Windows Vista], NetDmaIsr, netdma/NetDmaIsr
+ms.keywords : NetDmaIsr, netdma_ref_5a9b1659-b106-4eed-931d-f2ad8b2476e9.xml, netdma/NetDmaIsr, netvista.netdmaisr, NetDmaIsr function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE
+req.typenames : "*PNET_DMA_PNP_NOTIFICATION_CODE, NET_DMA_PNP_NOTIFICATION_CODE"
 ---
 
 
@@ -108,9 +108,9 @@ If the NET_DMA_INTERRUPT_ON_COMPLETION flag in the
 
 ## See Also
 
-<a href="..\netdma\nc-netdma-dma_channel_allocate_handler.md">ProviderAllocateDmaChannel</a>
-
 <a href="..\netdma\ns-netdma-_net_dma_descriptor.md">NET_DMA_DESCRIPTOR</a>
+
+<a href="..\netdma\nc-netdma-dma_channel_allocate_handler.md">ProviderAllocateDmaChannel</a>
 
  
 

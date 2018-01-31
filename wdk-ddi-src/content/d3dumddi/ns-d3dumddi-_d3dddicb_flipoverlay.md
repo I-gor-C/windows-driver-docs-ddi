@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._D3DDDICB_FLIPOVERLAY
-title : _D3DDDICB_FLIPOVERLAY
+title : "_D3DDDICB_FLIPOVERLAY"
 author : windows-driver-content
 description : The D3DDDICB_FLIPOVERLAY structure describes a new allocation to display for the overlay.
 old-location : display\d3dddicb_flipoverlay.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 709583a5-5367-4187-a560-29b2c8eedbf4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDICB_FLIPOVERLAY structure [Display Devices], D3D_param_Structs_cb3914df-9c6b-43f0-a8fa-a2f06f5b2abd.xml, _D3DDDICB_FLIPOVERLAY, display.d3dddicb_flipoverlay, D3DDDICB_FLIPOVERLAY, d3dumddi/D3DDDICB_FLIPOVERLAY
+ms.keywords : D3D_param_Structs_cb3914df-9c6b-43f0-a8fa-a2f06f5b2abd.xml, d3dumddi/D3DDDICB_FLIPOVERLAY, _D3DDDICB_FLIPOVERLAY, display.d3dddicb_flipoverlay, D3DDDICB_FLIPOVERLAY structure [Display Devices], D3DDDICB_FLIPOVERLAY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

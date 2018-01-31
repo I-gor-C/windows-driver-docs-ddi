@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 0D8198BB-583F-4828-8131-61EB17621F32
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSymbols5::GetCurrentScopeFrameIndexEx, IDebugSymbols5 interface [Windows Debugging], GetCurrentScopeFrameIndexEx method, debugger.idebugsymbols5_getcurrentscopeframeindexex, GetCurrentScopeFrameIndexEx, IDebugSymbols5, GetCurrentScopeFrameIndexEx method [Windows Debugging], IDebugSymbols5 interface, GetCurrentScopeFrameIndexEx method [Windows Debugging], IDebugSymbols5::GetCurrentScopeFrameIndexEx
+ms.keywords : IDebugSymbols5::GetCurrentScopeFrameIndexEx, IDebugSymbols5, GetCurrentScopeFrameIndexEx, GetCurrentScopeFrameIndexEx method [Windows Debugging], IDebugSymbols5 interface [Windows Debugging], GetCurrentScopeFrameIndexEx method, debugger.idebugsymbols5_getcurrentscopeframeindexex, GetCurrentScopeFrameIndexEx method [Windows Debugging], IDebugSymbols5 interface, dbgeng/IDebugSymbols5::GetCurrentScopeFrameIndexEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

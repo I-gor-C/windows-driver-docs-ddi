@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 272B83D4-AACE-419D-9DD7-A1AE1C8A931A
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportAudioEngineNode interface [Audio Devices], SetDeviceChannelMute method, IMiniportAudioEngineNode::SetDeviceChannelMute, SetDeviceChannelMute method [Audio Devices], SetDeviceChannelMute, IMiniportAudioEngineNode, SetDeviceChannelMute method [Audio Devices], IMiniportAudioEngineNode interface, audio.iminiportaudioenginenode_setdevicechannelmute, portcls/IMiniportAudioEngineNode::SetDeviceChannelMute
+ms.keywords : portcls/IMiniportAudioEngineNode::SetDeviceChannelMute, SetDeviceChannelMute method [Audio Devices], IMiniportAudioEngineNode interface, SetDeviceChannelMute method [Audio Devices], SetDeviceChannelMute, IMiniportAudioEngineNode, IMiniportAudioEngineNode interface [Audio Devices], SetDeviceChannelMute method, IMiniportAudioEngineNode::SetDeviceChannelMute, audio.iminiportaudioenginenode_setdevicechannelmute
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method

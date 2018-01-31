@@ -1,6 +1,6 @@
 ---
 UID : NS:wdm._CLFS_MGMT_CLIENT_REGISTRATION
-title : _CLFS_MGMT_CLIENT_REGISTRATION
+title : "_CLFS_MGMT_CLIENT_REGISTRATION"
 author : windows-driver-content
 description : The CLFS_MGMT_CLIENT_REGISTRATION structure is given to CLFS management by clients who manage their own logs.
 old-location : kernel\clfs_mgmt_client_registration.htm
@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4f4f7ece-efe4-49f7-a6ce-bc131d1c1968
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PCLFS_MGMT_CLIENT_REGISTRATION structure pointer [Kernel-Mode Driver Architecture], CLFS_MGMT_CLIENT_REGISTRATION, _CLFS_MGMT_CLIENT_REGISTRATION, CLFS_MGMT_CLIENT_REGISTRATION structure [Kernel-Mode Driver Architecture], kernel.clfs_mgmt_client_registration, *PCLFS_MGMT_CLIENT_REGISTRATION, kstruct_a_b4089ae7-0e80-4da0-b062-cda3d5aa65f4.xml, wdm/PCLFS_MGMT_CLIENT_REGISTRATION, wdm/CLFS_MGMT_CLIENT_REGISTRATION, PCLFS_MGMT_CLIENT_REGISTRATION
+ms.keywords : CLFS_MGMT_CLIENT_REGISTRATION, PCLFS_MGMT_CLIENT_REGISTRATION structure pointer [Kernel-Mode Driver Architecture], wdm/CLFS_MGMT_CLIENT_REGISTRATION, CLFS_MGMT_CLIENT_REGISTRATION structure [Kernel-Mode Driver Architecture], wdm/PCLFS_MGMT_CLIENT_REGISTRATION, _CLFS_MGMT_CLIENT_REGISTRATION, PCLFS_MGMT_CLIENT_REGISTRATION, kstruct_a_b4089ae7-0e80-4da0-b062-cda3d5aa65f4.xml, kernel.clfs_mgmt_client_registration, *PCLFS_MGMT_CLIENT_REGISTRATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PCLFS_MGMT_CLIENT_REGISTRATION, CLFS_MGMT_CLIENT_REGISTRATION"
+req.typenames : CLFS_MGMT_CLIENT_REGISTRATION, *PCLFS_MGMT_CLIENT_REGISTRATION
 req.product : Windows 10 or later.
 ---
 
@@ -97,11 +97,11 @@ The version of the <b>CLFS_MGMT_CLIENT_REGISTRATION</b> structure. Set this to <
 
 ## See Also
 
-<a href="..\wdm\nc-wdm-pclfs_client_log_unpinned_callback.md">ClfsLogUnpinnedCallback</a>
+<a href="..\wdm\nc-wdm-pclfs_client_lff_handler_complete_callback.md">ClfsLogGrowthCompleteCallback</a>
 
 <a href="..\wdm\nc-wdm-pclfs_client_advance_tail_callback.md">ClfsAdvanceTailCallback</a>
 
-<a href="..\wdm\nc-wdm-pclfs_client_lff_handler_complete_callback.md">ClfsLogGrowthCompleteCallback</a>
+<a href="..\wdm\nc-wdm-pclfs_client_log_unpinned_callback.md">ClfsLogUnpinnedCallback</a>
 
  
 

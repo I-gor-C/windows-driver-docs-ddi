@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmddi._DXGKARGCB_PROTECTEDSESSIONSTATUS
-title : _DXGKARGCB_PROTECTEDSESSIONSTATUS
+title : "_DXGKARGCB_PROTECTEDSESSIONSTATUS"
 author : windows-driver-content
 description : Used for information on the status of the protected session.
 old-location : display\dxgkargcb_protectedsessionstatus.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 417480C5-8B24-4504-8B2D-DB9D38E4C11B
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARGCB_PROTECTEDSESSIONSTATUS, display.dxgkargcb_protectedsessionstatus, DXGKARGCB_PROTECTEDSESSIONSTATUS, d3dkmddi/DXGKARGCB_PROTECTEDSESSIONSTATUS, DXGKARGCB_PROTECTEDSESSIONSTATUS structure [Display Devices]
+ms.keywords : display.dxgkargcb_protectedsessionstatus, d3dkmddi/DXGKARGCB_PROTECTEDSESSIONSTATUS, _DXGKARGCB_PROTECTEDSESSIONSTATUS, DXGKARGCB_PROTECTEDSESSIONSTATUS structure [Display Devices], DXGKARGCB_PROTECTEDSESSIONSTATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

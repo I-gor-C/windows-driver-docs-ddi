@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : b50a63cd-69eb-46a8-9d0b-660795c7047f
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : DeRegisterOpRegionHandler, acpi.deregisteropregionhandler, opregref_e991e152-6162-4d45-9418-282afb447d18.xml, oprghdlr/DeRegisterOpRegionHandler, DeRegisterOpRegionHandler routine [ACPI Devices]
+ms.keywords : DeRegisterOpRegionHandler, DeRegisterOpRegionHandler routine [ACPI Devices], opregref_e991e152-6162-4d45-9418-282afb447d18.xml, acpi.deregisteropregionhandler, oprghdlr/DeRegisterOpRegionHandler
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILGBATOKEN, RILGBATOKEN"
+req.typenames : RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 

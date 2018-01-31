@@ -75,10 +75,63 @@ A pointer to the protocol or intermediate driver's
 `EventType`
 
 The event being indicated as one of the following TCP_OFFLOAD_EVENT_TYPE values:
+     
+
+
+
+
+#### TcpIndicateDisconnect
+
+Indicates that the remote host initiated a graceful disconnect by sending a FIN segment on the
+       connection.
+
+
+#### TcpIndicateRetrieve
+
+Indicates that the offload target is requesting the host stack to terminate the offload of a TCP
+       connection.
+
+
+#### TcpIndicateAbort
+
+Indicates that the remote host initiated an abortive disconnect by sending an acceptable RST
+       segment on the connection.
+
+
+#### TcpIndicateSendBacklogChange
+
+Indicates a change in the preferred send backlog size.
 
 `EventSpecificInformation`
 
 Specifies additional information about the event being indicated as follows:
+     
+
+
+
+
+#### TcpIndicateDisconnect
+
+Not meaningful.
+
+
+#### TcpIndicateRetrieve
+
+Indicates the reason for the upload request as a TCP_UPLOAD_REASON value. For more information,
+       see 
+       <mshelp:link keywords="netvista.ndistcpoffloadeventhandler" tabindex="0"><b>
+       NdisTcpOffloadEventHandler</b></mshelp:link>.
+
+
+#### TcpIndicateAbort
+
+Not meaningful.
+
+
+#### TcpIndicateSendBacklogChange
+
+Specifies the optimum number of send data bytes that the host stack should have outstanding at
+       the offload target in order to achieve the best data throughput.
 
 
 ## Return Value

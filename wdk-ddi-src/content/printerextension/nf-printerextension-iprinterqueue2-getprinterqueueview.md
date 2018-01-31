@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : C565288C-B014-4A92-9F50-1641EAA30D22
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IPrinterQueue2 interface [Print Devices], GetPrinterQueueView method, print.iprinterqueue2_getprinterqueueview, IPrinterQueue2, GetPrinterQueueView method [Print Devices], IPrinterQueue2 interface, printerextension/IPrinterQueue2::GetPrinterQueueView, GetPrinterQueueView, GetPrinterQueueView method [Print Devices], IPrinterQueue2::GetPrinterQueueView
+ms.keywords : GetPrinterQueueView method [Print Devices], IPrinterQueue2 interface, print.iprinterqueue2_getprinterqueueview, printerextension/IPrinterQueue2::GetPrinterQueueView, IPrinterQueue2, GetPrinterQueueView, GetPrinterQueueView method [Print Devices], IPrinterQueue2::GetPrinterQueueView, IPrinterQueue2 interface [Print Devices], GetPrinterQueueView method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -110,9 +110,9 @@ However it is possible to move around the single view that you retrieve. In othe
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterqueueview.md">IPrinterQueueView</a>
-
 <a href="..\printerextension\nn-printerextension-iprinterqueue2.md">IPrinterQueue2</a>
+
+<a href="..\printerextension\nn-printerextension-iprinterqueueview.md">IPrinterQueueView</a>
 
  
 

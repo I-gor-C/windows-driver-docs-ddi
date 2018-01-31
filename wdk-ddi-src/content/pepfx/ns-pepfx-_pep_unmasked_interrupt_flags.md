@@ -1,6 +1,6 @@
 ---
 UID : NS:pepfx._PEP_UNMASKED_INTERRUPT_FLAGS
-title : _PEP_UNMASKED_INTERRUPT_FLAGS
+title : "_PEP_UNMASKED_INTERRUPT_FLAGS"
 author : windows-driver-content
 description : The PEP_UNMASKED_INTERRUPT_FLAGS union indicates whether an unmasked interrupt source is a primary interrupt or a secondary interrupt.
 old-location : kernel\pep_unmasked_interrupt_flags.htm
@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : A385FBF9-2222-49E0-A708-1638C0D2FF7A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PPEP_UNMASKED_INTERRUPT_FLAGS, PEP_UNMASKED_INTERRUPT_FLAGS, pepfx/PEP_UNMASKED_INTERRUPT_FLAGS, kernel.pep_unmasked_interrupt_flags, PEP_UNMASKED_INTERRUPT_FLAGS union [Kernel-Mode Driver Architecture], _PEP_UNMASKED_INTERRUPT_FLAGS"
+ms.keywords : pepfx/PEP_UNMASKED_INTERRUPT_FLAGS, PEP_UNMASKED_INTERRUPT_FLAGS, kernel.pep_unmasked_interrupt_flags, _PEP_UNMASKED_INTERRUPT_FLAGS, *PPEP_UNMASKED_INTERRUPT_FLAGS, PEP_UNMASKED_INTERRUPT_FLAGS union [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PEP_UNMASKED_INTERRUPT_FLAGS, *PPEP_UNMASKED_INTERRUPT_FLAGS
+req.typenames : "*PPEP_UNMASKED_INTERRUPT_FLAGS, PEP_UNMASKED_INTERRUPT_FLAGS"
 ---
 
 # _PEP_UNMASKED_INTERRUPT_FLAGS structure

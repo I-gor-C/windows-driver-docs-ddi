@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddndis._OFFLOAD_IPSEC_ADD_SA
-title : _OFFLOAD_IPSEC_ADD_SA
+title : "_OFFLOAD_IPSEC_ADD_SA"
 author : windows-driver-content
 description : The OFFLOAD_IPSEC_ADD_SA structure contains information for each security association (SA) that a miniport driver adds to a NIC.
 old-location : netvista\offload_ipsec_add_sa.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 592d338c-8ab0-4163-bcfa-75c941b83c3d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : OFFLOAD_IPSEC_ADD_SA, *POFFLOAD_IPSEC_ADD_SA, OFFLOAD_IPSEC_ADD_SA structure [Network Drivers Starting with Windows Vista], ntddndis/POFFLOAD_IPSEC_ADD_SA, ntddndis/OFFLOAD_IPSEC_ADD_SA, POFFLOAD_IPSEC_ADD_SA structure pointer [Network Drivers Starting with Windows Vista], 216offload_12f95ec9-ed81-43cc-b90d-fe06600ec349.xml, netvista.offload_ipsec_add_sa, _OFFLOAD_IPSEC_ADD_SA, POFFLOAD_IPSEC_ADD_SA
+ms.keywords : 216offload_12f95ec9-ed81-43cc-b90d-fe06600ec349.xml, OFFLOAD_IPSEC_ADD_SA, _OFFLOAD_IPSEC_ADD_SA, ntddndis/POFFLOAD_IPSEC_ADD_SA, POFFLOAD_IPSEC_ADD_SA structure pointer [Network Drivers Starting with Windows Vista], OFFLOAD_IPSEC_ADD_SA structure [Network Drivers Starting with Windows Vista], *POFFLOAD_IPSEC_ADD_SA, netvista.offload_ipsec_add_sa, POFFLOAD_IPSEC_ADD_SA, ntddndis/OFFLOAD_IPSEC_ADD_SA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -91,6 +91,19 @@ The IP address for the destination endpoint, such as a connector, of a tunnel. T
 
 A bitmask that indicates whether the SA that is being added is an inbound or outbound SA as
      follows:
+     
+
+
+
+
+#### OFFLOAD_INBOUND_SA
+
+Specifies an inbound SA.
+
+
+#### OFFLOAD_OUTBOUND_SA
+
+Specifies an outbound SA.
 
 `KeyLen`
 
@@ -192,13 +205,13 @@ The OFFLOAD_IPSEC_ADD_SA structure is used in the
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_offload_algo_info.md">OFFLOAD_ALGO_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569808">OID_TCP_TASK_IPSEC_ADD_SA</a>
 
-<a href="..\ntddndis\ns-ntddndis-_offload_security_association.md">OFFLOAD_SECURITY_ASSOCIATION</a>
+<a href="..\ntddndis\ns-ntddndis-_offload_algo_info.md">OFFLOAD_ALGO_INFO</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/gg155485.aspx">OID_TCP_TASK_IPSEC_DELETE_SA</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569808">OID_TCP_TASK_IPSEC_ADD_SA</a>
+<a href="..\ntddndis\ns-ntddndis-_offload_security_association.md">OFFLOAD_SECURITY_ASSOCIATION</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557028">NDIS_IPSEC_PACKET_INFO</a>
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5d8e6b87-6cfd-48ec-ac38-a75cb94cf5ac
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IddCxAdapterUpdateMaxDisplayPipelineRate method [Display Devices], IddCxAdapterUpdateMaxDisplayPipelineRate, iddcx/IddCxAdapterUpdateMaxDisplayPipelineRate, display.iddcxadapterupdatemaxdisplaypipelinerate
+ms.keywords : IddCxAdapterUpdateMaxDisplayPipelineRate method [Display Devices], display.iddcxadapterupdatemaxdisplaypipelinerate, iddcx/IddCxAdapterUpdateMaxDisplayPipelineRate, IddCxAdapterUpdateMaxDisplayPipelineRate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : NtosKrnl.exe
 req.dll : 
-req.irql : _Must_inspect_result_
+req.irql : "_Must_inspect_result_"
 topictype : 
 apitype : 
 apilocation : 
@@ -76,5 +76,5 @@ Input arguments to the function
 | **Minimum UMDF version** |  |
 | **Header** | iddcx.h |
 | **Library** |  |
-| **IRQL** | _Must_inspect_result_ |
+| **IRQL** | "_Must_inspect_result_" |
 | **DDI compliance rules** |  |

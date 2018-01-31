@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f35e1ed4-eaa9-423c-95cb-5eb96231d592
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfpdomarkmissing, WdfPdoMarkMissing method, PFN_WDFPDOMARKMISSING, DFDeviceObjectFdoPdoRef_a4198313-bd10-4b8a-a032-f253cdaccc7b.xml, wdfpdo/WdfPdoMarkMissing, WdfPdoMarkMissing, kmdf.wdfpdomarkmissing
+ms.keywords : PFN_WDFPDOMARKMISSING, kmdf.wdfpdomarkmissing, wdfpdo/WdfPdoMarkMissing, WdfPdoMarkMissing, wdf.wdfpdomarkmissing, DFDeviceObjectFdoPdoRef_a4198313-bd10-4b8a-a032-f253cdaccc7b.xml, WdfPdoMarkMissing method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -109,7 +109,7 @@ For more information about <b>WdfPdoMarkMissing</b>, see <a href="https://msdn.m
 | **Minimum UMDF version** |  |
 | **Header** | wdfpdo.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also

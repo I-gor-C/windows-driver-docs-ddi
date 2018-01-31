@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : e0263969-1c6a-4805-a647-d4b9df83ef71
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DriverUnifiedPosPowerReportingType, DriverUnifiedPosPowerReportingType enumeration, pointofservicecommontypes/DriverUnifiedPosPowerReportingType, pos.unifiedpospowerreportingtype, Advanced, UnknownPowerReportingType, pointofservicecommontypes/UnknownPowerReportingType, Standard, pointofservicecommontypes/Advanced, pointofservicecommontypes/Standard
+ms.keywords : DriverUnifiedPosPowerReportingType, pos.unifiedpospowerreportingtype, UnknownPowerReportingType, DriverUnifiedPosPowerReportingType enumeration, Standard, pointofservicecommontypes/Advanced, pointofservicecommontypes/Standard, pointofservicecommontypes/UnknownPowerReportingType, Advanced, pointofservicecommontypes/DriverUnifiedPosPowerReportingType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum

@@ -1,6 +1,6 @@
 ---
 UID : NS:ks._KSCLOCK_DISPATCH
-title : _KSCLOCK_DISPATCH
+title : "_KSCLOCK_DISPATCH"
 author : windows-driver-content
 description : The KSCLOCK_DISPATCH structure contains the callbacks required for a pin to implement a clock object.
 old-location : stream\ksclock_dispatch.htm
@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : cc9b7049-7b43-4c66-9d08-93af22d92540
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _KSCLOCK_DISPATCH, KSCLOCK_DISPATCH structure [Streaming Media Devices], ks/KSCLOCK_DISPATCH, PKSCLOCK_DISPATCH structure pointer [Streaming Media Devices], stream.ksclock_dispatch, *PKSCLOCK_DISPATCH, PKSCLOCK_DISPATCH, ks/PKSCLOCK_DISPATCH, KSCLOCK_DISPATCH, avstruct_5015e5e6-b0c5-4eb9-9e04-8631e732f8be.xml
+ms.keywords : PKSCLOCK_DISPATCH, stream.ksclock_dispatch, _KSCLOCK_DISPATCH, *PKSCLOCK_DISPATCH, KSCLOCK_DISPATCH structure [Streaming Media Devices], KSCLOCK_DISPATCH, PKSCLOCK_DISPATCH structure pointer [Streaming Media Devices], ks/KSCLOCK_DISPATCH, ks/PKSCLOCK_DISPATCH, avstruct_5015e5e6-b0c5-4eb9-9e04-8631e732f8be.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSCLOCK_DISPATCH, *PKSCLOCK_DISPATCH
+req.typenames : "*PKSCLOCK_DISPATCH, KSCLOCK_DISPATCH"
 ---
 
 # _KSCLOCK_DISPATCH structure
@@ -65,17 +65,17 @@ typedef struct _KSCLOCK_DISPATCH {
 
 ## See Also
 
+<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565092">KSPROPERTY_CLOCK_RESOLUTION</a>
 
 <a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
 
-<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
+<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
 
 <a href="..\ks\ns-ks-ksresolution.md">KSRESOLUTION</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a>
-
-<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
 
  
 

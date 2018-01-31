@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : 
 req.dll : 
-req.irql : _requires_same_
+req.irql : "_requires_same_"
 topictype : 
 apitype : 
 apilocation : 
@@ -74,5 +74,5 @@ A handle by the OS to identify the monitor that has an invalid associated swapch
 | **Minimum UMDF version** |  |
 | **Header** | iddcx.h |
 | **Library** |  |
-| **IRQL** | _requires_same_ |
+| **IRQL** | "_requires_same_" |
 | **DDI compliance rules** |  |

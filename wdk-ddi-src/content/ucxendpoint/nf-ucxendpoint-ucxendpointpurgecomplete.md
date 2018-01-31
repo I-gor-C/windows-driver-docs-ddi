@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : F640D54B-277F-4382-9478-8A7AFAD242E2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses._ucxendpointpurgecomplete, ucxendpoint/UcxEndpointPurgeComplete, UcxEndpointPurgeComplete, UcxEndpointPurgeComplete method [Buses]
+ms.keywords : ucxendpoint/UcxEndpointPurgeComplete, buses._ucxendpointpurgecomplete, UcxEndpointPurgeComplete method [Buses], UcxEndpointPurgeComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,7 +72,7 @@ This method does not return a value.
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ucxendpoint.h (include Ucxclass.h, Ucxendpoint.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

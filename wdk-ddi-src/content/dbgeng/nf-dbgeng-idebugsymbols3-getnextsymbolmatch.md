@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 0de394a0-9ae8-4ac9-970b-8575bb7dcc99
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetNextSymbolMatch method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols::GetNextSymbolMatch, IDebugSymbols interface [Windows Debugging], GetNextSymbolMatch method, IDebugSymbols3::GetNextSymbolMatch, IDebugSymbols3 interface [Windows Debugging], GetNextSymbolMatch method, GetNextSymbolMatch method [Windows Debugging], debugger.getnextsymbolmatch, GetNextSymbolMatch method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols2::GetNextSymbolMatch, IDebugSymbols::GetNextSymbolMatch, dbgeng/IDebugSymbols3::GetNextSymbolMatch, GetNextSymbolMatch method [Windows Debugging], IDebugSymbols interface, IDebugSymbols2 interface [Windows Debugging], GetNextSymbolMatch method, IDebugSymbols_9918b348-5b29-4b38-849e-3a36414b773d.xml, IDebugSymbols3, dbgeng/IDebugSymbols2::GetNextSymbolMatch, GetNextSymbolMatch
+ms.keywords : GetNextSymbolMatch method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::GetNextSymbolMatch, IDebugSymbols2 interface [Windows Debugging], GetNextSymbolMatch method, GetNextSymbolMatch method [Windows Debugging], dbgeng/IDebugSymbols::GetNextSymbolMatch, IDebugSymbols interface [Windows Debugging], GetNextSymbolMatch method, IDebugSymbols::GetNextSymbolMatch, IDebugSymbols2::GetNextSymbolMatch, debugger.getnextsymbolmatch, IDebugSymbols3 interface [Windows Debugging], GetNextSymbolMatch method, GetNextSymbolMatch method [Windows Debugging], IDebugSymbols interface, GetNextSymbolMatch, GetNextSymbolMatch method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols3, dbgeng/IDebugSymbols2::GetNextSymbolMatch, IDebugSymbols_9918b348-5b29-4b38-849e-3a36414b773d.xml, IDebugSymbols3::GetNextSymbolMatch
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -140,15 +140,15 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543008">EndSymbolMatch</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558815">StartSymbolMatch</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558815">StartSymbolMatch</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543008">EndSymbolMatch</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
 
  
 

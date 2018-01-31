@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._DXVADDI_QUERYEXTENSIONCAPSINPUT
-title : _DXVADDI_QUERYEXTENSIONCAPSINPUT
+title : "_DXVADDI_QUERYEXTENSIONCAPSINPUT"
 author : windows-driver-content
 description : The DXVADDI_QUERYEXTENSIONCAPSINPUT structure describes a capability of an extension GUID that information is requested for.
 old-location : display\dxvaddi_queryextensioncapsinput.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6907eb45-8d29-4cdc-80eb-2d8cafbbd9bd
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxvaddi_queryextensioncapsinput, DXVADDI_QUERYEXTENSIONCAPSINPUT, d3dumddi/DXVADDI_QUERYEXTENSIONCAPSINPUT, DXVA2_Structs_82433e94-79b3-4398-a38e-7f7a99cc09be.xml, _DXVADDI_QUERYEXTENSIONCAPSINPUT, DXVADDI_QUERYEXTENSIONCAPSINPUT structure [Display Devices]
+ms.keywords : display.dxvaddi_queryextensioncapsinput, DXVA2_Structs_82433e94-79b3-4398-a38e-7f7a99cc09be.xml, d3dumddi/DXVADDI_QUERYEXTENSIONCAPSINPUT, _DXVADDI_QUERYEXTENSIONCAPSINPUT, DXVADDI_QUERYEXTENSIONCAPSINPUT structure [Display Devices], DXVADDI_QUERYEXTENSIONCAPSINPUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -94,9 +94,9 @@ DXVADDI_EXTENSION_CATEGORY_ALL (0x0007)
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_privatedata.md">DXVADDI_PRIVATEDATA</a>
-
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_privatedata.md">DXVADDI_PRIVATEDATA</a>
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
 

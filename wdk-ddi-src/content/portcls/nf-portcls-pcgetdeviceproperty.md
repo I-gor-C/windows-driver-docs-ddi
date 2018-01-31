@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 75d66965-ab97-4f67-b62f-e7fedbf524a6
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.pcgetdeviceproperty, PcGetDeviceProperty, portcls/PcGetDeviceProperty, PcGetDeviceProperty function [Audio Devices], audpc-routines_c95326e5-dc8f-4a04-b31d-6c4e79cc6771.xml
+ms.keywords : PcGetDeviceProperty, audio.pcgetdeviceproperty, portcls/PcGetDeviceProperty, PcGetDeviceProperty function [Audio Devices], audpc-routines_c95326e5-dc8f-4a04-b31d-6c4e79cc6771.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -143,9 +143,9 @@ Two calls to <b>PcGetDeviceProperty</b> might be necessary to determine the requ
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-
 <a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a>
+
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
  
 

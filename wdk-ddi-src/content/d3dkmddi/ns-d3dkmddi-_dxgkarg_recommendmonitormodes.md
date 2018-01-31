@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmddi._DXGKARG_RECOMMENDMONITORMODES
-title : _DXGKARG_RECOMMENDMONITORMODES
+title : "_DXGKARG_RECOMMENDMONITORMODES"
 author : windows-driver-content
 description : The DXGKARG_RECOMMENDMONITORMODES structure contains arguments for the DxgkDdiRecommendMonitorModes function.
 old-location : display\dxgkarg_recommendmonitormodes.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 283f398e-4162-4c46-847b-834f8f303052
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_151c48fa-735a-4962-9fe7-446830441f1c.xml, DXGKARG_RECOMMENDMONITORMODES structure [Display Devices], DXGKARG_RECOMMENDMONITORMODES, display.dxgkarg_recommendmonitormodes, d3dkmddi/DXGKARG_RECOMMENDMONITORMODES, _DXGKARG_RECOMMENDMONITORMODES
+ms.keywords : DXGKARG_RECOMMENDMONITORMODES structure [Display Devices], d3dkmddi/DXGKARG_RECOMMENDMONITORMODES, DXGKARG_RECOMMENDMONITORMODES, display.dxgkarg_recommendmonitormodes, DmStructs_151c48fa-735a-4962-9fe7-446830441f1c.xml, _DXGKARG_RECOMMENDMONITORMODES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

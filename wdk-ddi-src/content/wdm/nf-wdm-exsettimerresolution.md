@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 968d57fa-7a8e-42cf-b73b-d669ecbbaf48
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExSetTimerResolution routine [Kernel-Mode Driver Architecture], kernel.exsettimerresolution, wdm/ExSetTimerResolution, ExSetTimerResolution, k102_09179649-af93-434f-92e0-844a2bdf34dc.xml
+ms.keywords : kernel.exsettimerresolution, ExSetTimerResolution, wdm/ExSetTimerResolution, k102_09179649-af93-434f-92e0-844a2bdf34dc.xml, ExSetTimerResolution routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -108,7 +108,7 @@ During the processing of an <a href="https://msdn.microsoft.com/library/windows/
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** | IrqlExApcLte2, HwStorPortProhibitedDDIs |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : eba881f8-e946-44a8-9624-37f63471fb65
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisIfFreeNetLuidIndex, netvista.ndisiffreenetluidindex, ndis/NdisIfFreeNetLuidIndex, net_if_functions_ref_040908da-c299-4265-9639-f2e65776f26b.xml, NdisIfFreeNetLuidIndex function [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.ndisiffreenetluidindex, net_if_functions_ref_040908da-c299-4265-9639-f2e65776f26b.xml, ndis/NdisIfFreeNetLuidIndex, NdisIfFreeNetLuidIndex, NdisIfFreeNetLuidIndex function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -139,9 +139,9 @@ The provider should not use the freed NET_LUID index or the associated NET_LUID 
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisifallocatenetluidindex.md">NdisIfAllocateNetLuidIndex</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a>
+
+<a href="..\ndis\nf-ndis-ndisifallocatenetluidindex.md">NdisIfAllocateNetLuidIndex</a>
 
  
 

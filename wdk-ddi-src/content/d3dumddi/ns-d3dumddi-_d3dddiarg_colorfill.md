@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._D3DDDIARG_COLORFILL
-title : _D3DDDIARG_COLORFILL
+title : "_D3DDDIARG_COLORFILL"
 author : windows-driver-content
 description : The D3DDDIARG_COLORFILL structure describes the parameters of a color-fill operation.
 old-location : display\d3dddiarg_colorfill.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4d647c59-4e00-46b3-a46f-226e475eb63d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDIARG_COLORFILL, UMDisplayDriver_param_Structs_1ad82ddb-4070-45be-81c3-c2347170fad0.xml, display.d3dddiarg_colorfill, D3DDDIARG_COLORFILL, _D3DDDIARG_COLORFILL, D3DDDIARG_COLORFILL structure [Display Devices]
+ms.keywords : d3dumddi/D3DDDIARG_COLORFILL, _D3DDDIARG_COLORFILL, UMDisplayDriver_param_Structs_1ad82ddb-4070-45be-81c3-c2347170fad0.xml, D3DDDIARG_COLORFILL, D3DDDIARG_COLORFILL structure [Display Devices], display.d3dddiarg_colorfill
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

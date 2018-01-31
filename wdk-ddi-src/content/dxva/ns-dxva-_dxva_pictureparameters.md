@@ -1,6 +1,6 @@
 ---
 UID : NS:dxva._DXVA_PictureParameters
-title : _DXVA_PictureParameters
+title : "_DXVA_PictureParameters"
 author : windows-driver-content
 description : The DXVA_PictureParameters structure is sent by the host decoder to the accelerator to provide the picture-level parameters of a compressed picture for decoding on the accelerator.
 old-location : display\dxva_pictureparameters.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e54c1d6a-b0bb-4754-9399-5f3b1b9b2534
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : dxva/DXVA_PictureParameters, dxva/LPDXVA_PictureParameters, LPDXVA_PictureParameters, DXVA_PictureParameters structure [Display Devices], LPDXVA_PictureParameters structure pointer [Display Devices], *LPDXVA_PictureParameters, display.dxva_pictureparameters, DXVA_PictureParameters, _DXVA_PictureParameters, dxvaref_10ab1c20-a070-42ad-95da-0d8a20d19228.xml
+ms.keywords : dxva/LPDXVA_PictureParameters, dxvaref_10ab1c20-a070-42ad-95da-0d8a20d19228.xml, DXVA_PictureParameters structure [Display Devices], LPDXVA_PictureParameters, _DXVA_PictureParameters, display.dxva_pictureparameters, DXVA_PictureParameters, *LPDXVA_PictureParameters, dxva/DXVA_PictureParameters, LPDXVA_PictureParameters structure pointer [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDXVA_PictureParameters, DXVA_PictureParameters"
+req.typenames : DXVA_PictureParameters, *LPDXVA_PictureParameters
 ---
 
 # _DXVA_PictureParameters structure
@@ -625,15 +625,15 @@ Certain members of this structure are constrained to specific values by the conf
 
 ## See Also
 
-<a href="..\dxva\ns-dxva-_dxva_mbctrl_p_hostresiddiff_1.md">DXVA_MBctrl_P_HostResidDiff_1</a>
-
 <a href="..\dxva\ns-dxva-_dxva_mbctrl_i_hostresiddiff_1.md">DXVA_MBctrl_I_HostResidDiff_1</a>
 
 <a href="..\dxva\ns-dxva-_dxva_configpicturedecode.md">DXVA_ConfigPictureDecode</a>
 
-<a href="..\dxva\ns-dxva-_dxva_mbctrl_i_offhostidct_1.md">DXVA_MBctrl_I_OffHostIDCT_1</a>
-
 <a href="..\dxva\ns-dxva-_dxva_mbctrl_p_offhostidct_1.md">DXVA_MBctrl_P_OffHostIDCT_1</a>
+
+<a href="..\dxva\ns-dxva-_dxva_mbctrl_p_hostresiddiff_1.md">DXVA_MBctrl_P_HostResidDiff_1</a>
+
+<a href="..\dxva\ns-dxva-_dxva_mbctrl_i_offhostidct_1.md">DXVA_MBctrl_I_OffHostIDCT_1</a>
 
  
 

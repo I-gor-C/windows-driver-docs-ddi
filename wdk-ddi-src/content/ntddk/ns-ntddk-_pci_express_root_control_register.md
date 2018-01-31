@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddk._PCI_EXPRESS_ROOT_CONTROL_REGISTER
-title : _PCI_EXPRESS_ROOT_CONTROL_REGISTER
+title : "_PCI_EXPRESS_ROOT_CONTROL_REGISTER"
 author : windows-driver-content
 description : The PCI_EXPRESS_ROOT_CONTROL_REGISTER structure describes a PCI Express (PCIe) root control register of a PCIe capability structure.
 old-location : pci\pci_express_root_control_register.htm
@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : 0f2c321c-f03b-4655-bbd1-25fcc6c52cfa
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : ntddk/PCI_EXPRESS_ROOT_CONTROL_REGISTER, PPCI_EXPRESS_ROOT_CONTROL_REGISTER union pointer [Buses], PCI_EXPRESS_ROOT_CONTROL_REGISTER, PCI_EXPRESS_ROOT_CONTROL_REGISTER union [Buses], _PCI_EXPRESS_ROOT_CONTROL_REGISTER, PPCI_EXPRESS_ROOT_CONTROL_REGISTER, *PPCI_EXPRESS_ROOT_CONTROL_REGISTER, pci_struct_ef335e30-c046-4066-8411-27bf96cbcd08.xml, PCI.pci_express_root_control_register, ntddk/PPCI_EXPRESS_ROOT_CONTROL_REGISTER
+ms.keywords : PCI_EXPRESS_ROOT_CONTROL_REGISTER union [Buses], PPCI_EXPRESS_ROOT_CONTROL_REGISTER, PCI_EXPRESS_ROOT_CONTROL_REGISTER, pci_struct_ef335e30-c046-4066-8411-27bf96cbcd08.xml, *PPCI_EXPRESS_ROOT_CONTROL_REGISTER, ntddk/PCI_EXPRESS_ROOT_CONTROL_REGISTER, PPCI_EXPRESS_ROOT_CONTROL_REGISTER union pointer [Buses], PCI.pci_express_root_control_register, _PCI_EXPRESS_ROOT_CONTROL_REGISTER, ntddk/PPCI_EXPRESS_ROOT_CONTROL_REGISTER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 1550a35f-2733-4ee8-9715-d82f96eb5da7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoReplaceFileObjectName, ifsk.ioreplacefileobjectname, ntifs/IoReplaceFileObjectName, IoReplaceFileObjectName routine [Installable File System Drivers], ioref_3e18058f-46a0-4345-9d67-2e211bbb84a8.xml
+ms.keywords : ioref_3e18058f-46a0-4345-9d67-2e211bbb84a8.xml, IoReplaceFileObjectName routine [Installable File System Drivers], ntifs/IoReplaceFileObjectName, ifsk.ioreplacefileobjectname, IoReplaceFileObjectName
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

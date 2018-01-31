@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : b9f1618a-e4f7-4eb1-952f-0f565a068dab
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : SetExpressionSyntaxByName, SetExpressionSyntaxByName method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], SetExpressionSyntaxByName method, IDebugControl_88ebbf3c-a6f7-41d1-84e8-291a8db101c2.xml, debugger.setexpressionsyntaxbyname, dbgeng/IDebugControl3::SetExpressionSyntaxByName, IDebugControl3::SetExpressionSyntaxByName, SetExpressionSyntaxByName method [Windows Debugging], IDebugControl3
+ms.keywords : dbgeng/IDebugControl3::SetExpressionSyntaxByName, IDebugControl3, IDebugControl3 interface [Windows Debugging], SetExpressionSyntaxByName method, SetExpressionSyntaxByName method [Windows Debugging], SetExpressionSyntaxByName method [Windows Debugging], IDebugControl3 interface, IDebugControl_88ebbf3c-a6f7-41d1-84e8-291a8db101c2.xml, SetExpressionSyntaxByName, debugger.setexpressionsyntaxbyname, IDebugControl3::SetExpressionSyntaxByName
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -55,6 +55,18 @@ HRESULT SetExpressionSyntaxByName(
 `AbbrevName`
 
 Specifies the abbreviated name of the syntax.  It can be one of the following strings:
+
+
+
+
+#### C++
+
+Expressions will be evaluated according to C++ syntax. For details of this syntax, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540372">C++ Numbers and Operators</a>.
+
+
+#### MASM
+
+Expressions will be evaluated according to MASM syntax. For details of this syntax, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552157">MASM Numbers and Operators</a>.
 
 
 ## Return Value
@@ -100,13 +112,13 @@ After the expression syntax has been changed, the engine sends out notification 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556696">SetExpressionSyntax</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546701">GetExpressionSyntax</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556696">SetExpressionSyntax</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543046">Evaluate</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 
  
 

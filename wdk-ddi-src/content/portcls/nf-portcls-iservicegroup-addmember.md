@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 1eddb631-db85-4243-89a4-a4ab042cee28
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : portcls/IServiceGroup::AddMember, AddMember, audio.iservicegroup_addmember, audmp-routines_0d318d56-28e9-4e42-84b3-1d0eb4110f71.xml, AddMember method [Audio Devices], IServiceGroup, IServiceGroup::AddMember, AddMember method [Audio Devices], IServiceGroup interface, IServiceGroup interface [Audio Devices], AddMember method
+ms.keywords : audmp-routines_0d318d56-28e9-4e42-84b3-1d0eb4110f71.xml, IServiceGroup interface [Audio Devices], AddMember method, AddMember method [Audio Devices], portcls/IServiceGroup::AddMember, audio.iservicegroup_addmember, IServiceGroup, AddMember, AddMember method [Audio Devices], IServiceGroup interface, IServiceGroup::AddMember
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method

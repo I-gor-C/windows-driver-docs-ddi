@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmddi._DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2
-title : _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2
+title : "_DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2"
 author : windows-driver-content
 description : DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2 is passed to the DxgkDdiCheckMultiPlaneOverlaySupport2 function to determine whether a specific multi-plane overlay configuration is supported.
 old-location : display\dxgkarg_checkmultiplaneoverlaysupport2.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 477EBC8A-04A5-4904-AC62-0FA7DB861ACC
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2, DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2, DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2 structure [Display Devices], d3dkmddi/DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2, display.dxgkarg_checkmultiplaneoverlaysupport2, *IN_OUT_PDXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2
+ms.keywords : d3dkmddi/DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2, DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2 structure [Display Devices], DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2, display.dxgkarg_checkmultiplaneoverlaysupport2, *IN_OUT_PDXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2, _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -83,9 +83,9 @@ Specifies additional information.
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_plane_with_source.md">DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE</a>
-
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_checkmultiplaneoverlaysupport2.md">DxgkDdiCheckMultiPlaneOverlaySupport2</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_plane_with_source.md">DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE</a>
 
  
 

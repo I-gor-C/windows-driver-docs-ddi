@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 8208F61E-DFD9-4AA8-B225-BEB35F80F621
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : nfpdrivers._nfccxsetllcpconfig, NfcCxSetLlcpConfig method [Near-Field Proximity Drivers], nfccx/NfcCxSetLlcpConfig, NfcCxSetLlcpConfig
+ms.keywords : nfpdrivers._nfccxsetllcpconfig, nfccx/NfcCxSetLlcpConfig, NfcCxSetLlcpConfig, NfcCxSetLlcpConfig method [Near-Field Proximity Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,9 +81,9 @@ If the operation succeeds, the function returns STATUS_SUCCESS.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a>
-
 <a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a>
+
+<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a>
 
  
 

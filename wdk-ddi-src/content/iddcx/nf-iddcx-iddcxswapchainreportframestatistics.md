@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0dd32160-93d4-4fb8-aed1-9267f38e9909
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IddCxSwapChainReportFrameStatistics method [Display Devices], iddcx/IddCxSwapChainReportFrameStatistics, IddCxSwapChainReportFrameStatistics, display.iddcxswapchainreportframestatistics
+ms.keywords : IddCxSwapChainReportFrameStatistics method [Display Devices], iddcx/IddCxSwapChainReportFrameStatistics, display.iddcxswapchainreportframestatistics, IddCxSwapChainReportFrameStatistics
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : NtosKrnl.exe
 req.dll : 
-req.irql : _Must_inspect_result_
+req.irql : "_Must_inspect_result_"
 topictype : 
 apitype : 
 apilocation : 
@@ -76,5 +76,5 @@ Input arguments to the function
 | **Minimum UMDF version** |  |
 | **Header** | iddcx.h |
 | **Library** |  |
-| **IRQL** | _Must_inspect_result_ |
+| **IRQL** | "_Must_inspect_result_" |
 | **DDI compliance rules** |  |

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : fb85aa34-5983-405b-85d3-7ebc4be49c51
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetDiskDeviceObject, ifsk.fltgetdiskdeviceobject, FltApiRef_e_to_o_830212f4-ac53-41e1-8f66-48673bdaf9e2.xml, fltkernel/FltGetDiskDeviceObject, FltGetDiskDeviceObject routine [Installable File System Drivers]
+ms.keywords : FltApiRef_e_to_o_830212f4-ac53-41e1-8f66-48673bdaf9e2.xml, FltGetDiskDeviceObject, ifsk.fltgetdiskdeviceobject, FltGetDiskDeviceObject routine [Installable File System Drivers], fltkernel/FltGetDiskDeviceObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -106,16 +106,16 @@ For more information about volume device objects, see <a href="https://msdn.micr
 | **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\fltkernel\nf-fltkernel-fltgetvolumefromdeviceobject.md">FltGetVolumeFromDeviceObject</a>
+
 <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltgetdeviceobject.md">FltGetDeviceObject</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltgetvolumefromdeviceobject.md">FltGetVolumeFromDeviceObject</a>
 
  
 

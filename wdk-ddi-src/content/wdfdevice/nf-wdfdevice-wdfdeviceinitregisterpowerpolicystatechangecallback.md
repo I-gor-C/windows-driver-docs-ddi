@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 61ddfdf9-65cf-482b-80fe-bc5a71f905cd
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFDEVICEINITREGISTERPOWERPOLICYSTATECHANGECALLBACK, DFDeviceObjectGeneralRef_207ca167-9049-4661-baea-1a17158c3e82.xml, WdfDeviceInitRegisterPowerPolicyStateChangeCallback method, wdf.wdfdeviceinitregisterpowerpolicystatechangecallback, wdfdevice/WdfDeviceInitRegisterPowerPolicyStateChangeCallback, WdfDeviceInitRegisterPowerPolicyStateChangeCallback, kmdf.wdfdeviceinitregisterpowerpolicystatechangecallback
+ms.keywords : wdf.wdfdeviceinitregisterpowerpolicystatechangecallback, PFN_WDFDEVICEINITREGISTERPOWERPOLICYSTATECHANGECALLBACK, WdfDeviceInitRegisterPowerPolicyStateChangeCallback method, DFDeviceObjectGeneralRef_207ca167-9049-4661-baea-1a17158c3e82.xml, wdfdevice/WdfDeviceInitRegisterPowerPolicyStateChangeCallback, WdfDeviceInitRegisterPowerPolicyStateChangeCallback, kmdf.wdfdeviceinitregisterpowerpolicystatechangecallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

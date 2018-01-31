@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 1f55cc21-606d-4c7c-8650-51cb686700b3
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugDataSpaces4, debugger.getnextdifferentlyvalidoffsetvirtual, IDebugDataSpaces4 interface [Windows Debugging], GetNextDifferentlyValidOffsetVirtual method, GetNextDifferentlyValidOffsetVirtual method [Windows Debugging], IDebugDataSpaces_9308b61e-2e9a-4e17-a918-8af4c1b132b8.xml, IDebugDataSpaces4::GetNextDifferentlyValidOffsetVirtual, GetNextDifferentlyValidOffsetVirtual, GetNextDifferentlyValidOffsetVirtual method [Windows Debugging], IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces4::GetNextDifferentlyValidOffsetVirtual
+ms.keywords : GetNextDifferentlyValidOffsetVirtual, IDebugDataSpaces4, IDebugDataSpaces_9308b61e-2e9a-4e17-a918-8af4c1b132b8.xml, GetNextDifferentlyValidOffsetVirtual method [Windows Debugging], IDebugDataSpaces4 interface [Windows Debugging], GetNextDifferentlyValidOffsetVirtual method, GetNextDifferentlyValidOffsetVirtual method [Windows Debugging], IDebugDataSpaces4 interface, debugger.getnextdifferentlyvalidoffsetvirtual, IDebugDataSpaces4::GetNextDifferentlyValidOffsetVirtual, dbgeng/IDebugDataSpaces4::GetNextDifferentlyValidOffsetVirtual
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

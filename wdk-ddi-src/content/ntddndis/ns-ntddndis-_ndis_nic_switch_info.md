@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddndis._NDIS_NIC_SWITCH_INFO
-title : _NDIS_NIC_SWITCH_INFO
+title : "_NDIS_NIC_SWITCH_INFO"
 author : windows-driver-content
 description : The NDIS_NIC_SWITCH_INFO structure specifies the information about a network adapter switch on a network adapter.
 old-location : netvista\ndis_nic_switch_info.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0da6927f-c940-4e46-a63a-2127bd7fa63d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_NIC_SWITCH_INFO, *PNDIS_NIC_SWITCH_INFO, NDIS_NIC_SWITCH_INFO structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_NIC_SWITCH_INFO, ntddndis/PNDIS_NIC_SWITCH_INFO, PNDIS_NIC_SWITCH_INFO structure pointer [Network Drivers Starting with Windows Vista], _NDIS_NIC_SWITCH_INFO, PNDIS_NIC_SWITCH_INFO, netvista.ndis_nic_switch_info
+ms.keywords : "_NDIS_NIC_SWITCH_INFO, *PNDIS_NIC_SWITCH_INFO, NDIS_NIC_SWITCH_INFO structure [Network Drivers Starting with Windows Vista], netvista.ndis_nic_switch_info, ntddndis/NDIS_NIC_SWITCH_INFO, PNDIS_NIC_SWITCH_INFO structure pointer [Network Drivers Starting with Windows Vista], PNDIS_NIC_SWITCH_INFO, NDIS_NIC_SWITCH_INFO, ntddndis/PNDIS_NIC_SWITCH_INFO"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_NIC_SWITCH_INFO, *PNDIS_NIC_SWITCH_INFO
+req.typenames : "*PNDIS_NIC_SWITCH_INFO, NDIS_NIC_SWITCH_INFO"
 ---
 
 # _NDIS_NIC_SWITCH_INFO structure
@@ -74,7 +74,16 @@ A ULONG value that contains a bitwise OR of configuration flags that are enabled
 
 The type, revision, and size of the <b>NDIS_NIC_SWITCH_INFO</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
-The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_NIC_SWITCH_INFO</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value:
+The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_NIC_SWITCH_INFO</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
+
+
+
+
+#### NDIS_NIC_SWITCH_INFO_REVISION_1
+
+Original version for NDIS 6.30.
+
+Set the <b>Size</b> member to NDIS_SIZEOF_NIC_SWITCH_INFO_REVISION_1.
 
 `NumActiveDefaultVPortMacAddresses`
 
@@ -159,9 +168,9 @@ For more information about the SR-IOV interface, see 	<a href="https://msdn.micr
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451815">OID_NIC_SWITCH_CREATE_SWITCH</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451816">OID_NIC_SWITCH_CREATE_VPORT</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451815">OID_NIC_SWITCH_CREATE_SWITCH</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 

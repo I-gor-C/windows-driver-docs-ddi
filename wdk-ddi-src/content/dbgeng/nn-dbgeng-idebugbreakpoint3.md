@@ -2,7 +2,7 @@
 UID : NN:dbgeng.IDebugBreakpoint3
 title : IDebugBreakpoint3
 author : windows-driver-content
-description : .
+description : "."
 old-location : debugger\idebugbreakpoint3.htm
 old-project : debugger
 ms.assetid : 42A31C23-9C02-48F6-83CC-CA017F76DE18
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugBreakpoint3 interface

@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 181B2619-A8A8-45ED-935B-B4F12A0695E0
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SerCx2CustomReceiveTransactionNewDataNotification, 2/SerCx2CustomReceiveTransactionNewDataNotification, serports.sercx2customreceivetransactionnewdatanotification, SerCx2CustomReceiveTransactionNewDataNotification method [Serial Ports]
+ms.keywords : SerCx2CustomReceiveTransactionNewDataNotification method [Serial Ports], SerCx2CustomReceiveTransactionNewDataNotification, serports.sercx2customreceivetransactionnewdatanotification, 2/SerCx2CustomReceiveTransactionNewDataNotification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SERCX_STATUS, *PSERCX_STATUS
+req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
 req.product : Windows 10 or later.
 ---
 
@@ -81,7 +81,7 @@ If a serial controller driver supports new-data notifications for custom-receive
 | **Minimum UMDF version** |  |
 | **Header** | sercx.h |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
@@ -92,9 +92,9 @@ If a serial controller driver supports new-data notifications for custom-receive
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn265249">SERCX2CUSTOMRECEIVETRANSACTION</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
-
 <a href="..\ntddser\ns-ntddser-_serial_timeouts.md">SERIAL_TIMEOUTS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
 
  
 

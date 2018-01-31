@@ -1,6 +1,6 @@
 ---
 UID : NS:ks._KSSTREAM_POINTER_OFFSET
-title : _KSSTREAM_POINTER_OFFSET
+title : "_KSSTREAM_POINTER_OFFSET"
 author : windows-driver-content
 description : The KSSTREAM_POINTER_OFFSET structure indexes bytes or mappings within a frame.
 old-location : stream\ksstream_pointer_offset.htm
@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ccbe77ee-2377-45d9-b8bf-714680c1920a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSSTREAM_POINTER_OFFSET, stream.ksstream_pointer_offset, ks/PKSSTREAM_POINTER_OFFSET, PKSSTREAM_POINTER_OFFSET, KSSTREAM_POINTER_OFFSET structure [Streaming Media Devices], _KSSTREAM_POINTER_OFFSET, ks/KSSTREAM_POINTER_OFFSET, PKSSTREAM_POINTER_OFFSET structure pointer [Streaming Media Devices], avstruct_e210364b-520e-4d21-98ea-e22f5468e911.xml, *PKSSTREAM_POINTER_OFFSET
+ms.keywords : ks/KSSTREAM_POINTER_OFFSET, ks/PKSSTREAM_POINTER_OFFSET, stream.ksstream_pointer_offset, _KSSTREAM_POINTER_OFFSET, PKSSTREAM_POINTER_OFFSET, KSSTREAM_POINTER_OFFSET, PKSSTREAM_POINTER_OFFSET structure pointer [Streaming Media Devices], KSSTREAM_POINTER_OFFSET structure [Streaming Media Devices], *PKSSTREAM_POINTER_OFFSET, avstruct_e210364b-520e-4d21-98ea-e22f5468e911.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSSTREAM_POINTER_OFFSET, *PKSSTREAM_POINTER_OFFSET
+req.typenames : "*PKSSTREAM_POINTER_OFFSET, KSSTREAM_POINTER_OFFSET"
 ---
 
 # _KSSTREAM_POINTER_OFFSET structure
@@ -69,9 +69,9 @@ See also <a href="https://msdn.microsoft.com/ba1c525b-26b0-4778-b58b-f4169cfb972
 
 ## See Also
 
-<a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a>
-
 <a href="..\ks\ns-ks-_ksmapping.md">KSMAPPING</a>
+
+<a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 1b720e3e-8858-4567-ada3-30ac0dcf9696
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdffdo/WdfFdoInitOpenRegistryKey, WdfFdoInitOpenRegistryKey, WdfFdoInitOpenRegistryKey method, wdf.wdffdoinitopenregistrykey, kmdf.wdffdoinitopenregistrykey, DFDeviceObjectFdoPdoRef_8768fe63-0134-467f-9610-0cdaf018f784.xml
+ms.keywords : wdffdo/WdfFdoInitOpenRegistryKey, WdfFdoInitOpenRegistryKey method, DFDeviceObjectFdoPdoRef_8768fe63-0134-467f-9610-0cdaf018f784.xml, WdfFdoInitOpenRegistryKey, wdf.wdffdoinitopenregistrykey, kmdf.wdffdoinitopenregistrykey
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
+req.typenames : "*PWDF_DRIVER_VERSION_AVAILABLE_PARAMS, WDF_DRIVER_VERSION_AVAILABLE_PARAMS"
 req.product : Windows 10 or later.
 ---
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 60FCFF5B-4040-423F-A9B6-2DFE7DDD9DD0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.psgeteffectiveserversilo, PsGetEffectiveServerSilo, PsGetEffectiveServerSilo routine [Kernel-Mode Driver Architecture], ntddk/PsGetEffectiveServerSilo
+ms.keywords : ntddk/PsGetEffectiveServerSilo, PsGetEffectiveServerSilo, PsGetEffectiveServerSilo routine [Kernel-Mode Driver Architecture], kernel.psgeteffectiveserversilo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c3edd10c-ea4f-4e2d-96f2-3d1cb3804512
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/RtlCaptureContext, RtlCaptureContext function [Installable File System Drivers], RtlCaptureContext, rtlref_efe764ec-89fb-43bc-945d-7fee4594c284.xml, ifsk.rtlcapturecontext
+ms.keywords : RtlCaptureContext, RtlCaptureContext function [Installable File System Drivers], ntifs/RtlCaptureContext, ifsk.rtlcapturecontext, rtlref_efe764ec-89fb-43bc-945d-7fee4594c284.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,7 +76,7 @@ For kernel-mode code, the CONTEXT structure is defined in <i>Ntddk.h</i>. For mo
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Fltkernel.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

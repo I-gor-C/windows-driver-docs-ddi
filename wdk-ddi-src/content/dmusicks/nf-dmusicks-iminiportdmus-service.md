@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : a3f8d3f2-180c-454b-8e15-57c479c00db9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportDMus interface [Audio Devices], Service method, Service method [Audio Devices], IMiniportDMus interface, IMiniportDMus, Service method [Audio Devices], audio.iminiportdmus_service, audmp-routines_0c872bc5-12b7-4e9d-b6ea-0da47cd41483.xml, IMiniportDMus::Service, Service, dmusicks/IMiniportDMus::Service
+ms.keywords : IMiniportDMus, Service, Service method [Audio Devices], IMiniportDMus interface, dmusicks/IMiniportDMus::Service, IMiniportDMus interface [Audio Devices], Service method, IMiniportDMus::Service, audmp-routines_0c872bc5-12b7-4e9d-b6ea-0da47cd41483.xml, audio.iminiportdmus_service, Service method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method

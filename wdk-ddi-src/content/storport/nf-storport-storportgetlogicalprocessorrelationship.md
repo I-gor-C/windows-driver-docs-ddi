@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 32b92771-7f23-492c-a3b0-b10032c9f80a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortGetLogicalProcessorRelationship routine [Storage Devices], storage.storportgetlogicalprocessorrelationship, storport/StorPortGetLogicalProcessorRelationship, StorPortGetLogicalProcessorRelationship, storprt_65b00469-41a4-446b-aaa5-fee877aaff3c.xml
+ms.keywords : storport/StorPortGetLogicalProcessorRelationship, StorPortGetLogicalProcessorRelationship routine [Storage Devices], storage.storportgetlogicalprocessorrelationship, storprt_65b00469-41a4-446b-aaa5-fee877aaff3c.xml, StorPortGetLogicalProcessorRelationship
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -142,5 +142,5 @@ The operation fails with this return value if one or more of the parameters are 
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | StorPortIrql |

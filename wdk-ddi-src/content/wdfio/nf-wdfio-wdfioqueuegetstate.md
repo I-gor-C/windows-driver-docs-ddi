@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 83bfddd5-fc4d-4f5c-9904-7564810f5b4c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFIOQUEUEGETSTATE, kmdf.wdfioqueuegetstate, WdfIoQueueGetState method, WdfIoQueueGetState, wdf.wdfioqueuegetstate, DFQueueObjectRef_756666e1-e5eb-4bcc-907e-65b10e580396.xml, wdfio/WdfIoQueueGetState
+ms.keywords : WdfIoQueueGetState method, DFQueueObjectRef_756666e1-e5eb-4bcc-907e-65b10e580396.xml, kmdf.wdfioqueuegetstate, PFN_WDFIOQUEUEGETSTATE, wdf.wdfioqueuegetstate, wdfio/WdfIoQueueGetState, WdfIoQueueGetState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -118,7 +118,7 @@ For more information about the <b>WdfIoQueueGetState</b> method, see <a href="ht
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfio.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also

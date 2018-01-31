@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 243b79fe-b1b2-48b4-bb0b-c56b787e7b83
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetModuleByModuleName, IDebugSymbols2 interface [Windows Debugging], GetModuleByModuleName method, IDebugSymbols interface [Windows Debugging], GetModuleByModuleName method, IDebugSymbols::GetModuleByModuleName, dbgeng/IDebugSymbols3::GetModuleByModuleName, debugger.getmodulebymodulename, IDebugSymbols3 interface [Windows Debugging], GetModuleByModuleName method, GetModuleByModuleName method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols3, GetModuleByModuleName method [Windows Debugging], IDebugSymbols interface, IDebugSymbols_1a407f12-64e8-43a3-b831-ef8c9b701537.xml, dbgeng/IDebugSymbols::GetModuleByModuleName, IDebugSymbols3::GetModuleByModuleName, GetModuleByModuleName method [Windows Debugging], dbgeng/IDebugSymbols2::GetModuleByModuleName, GetModuleByModuleName method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols2::GetModuleByModuleName
+ms.keywords : dbgeng/IDebugSymbols::GetModuleByModuleName, IDebugSymbols interface [Windows Debugging], GetModuleByModuleName method, GetModuleByModuleName method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols2 interface [Windows Debugging], GetModuleByModuleName method, GetModuleByModuleName, IDebugSymbols::GetModuleByModuleName, debugger.getmodulebymodulename, IDebugSymbols_1a407f12-64e8-43a3-b831-ef8c9b701537.xml, IDebugSymbols3::GetModuleByModuleName, dbgeng/IDebugSymbols3::GetModuleByModuleName, IDebugSymbols3, GetModuleByModuleName method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols2::GetModuleByModuleName, GetModuleByModuleName method [Windows Debugging], IDebugSymbols interface, GetModuleByModuleName method [Windows Debugging], IDebugSymbols2::GetModuleByModuleName, IDebugSymbols3 interface [Windows Debugging], GetModuleByModuleName method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -124,9 +124,9 @@ For more information about modules, see <a href="https://msdn.microsoft.com/libr
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547102">GetModuleByModuleName2</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : b50f0cf3-4cd5-4f9e-9749-49b1c9365a8f
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : ExtRemoteData, WriteBuffer method [Windows Debugging], ExtRemoteData::WriteBuffer, WriteBuffer, ExtRemoteData class [Windows Debugging], WriteBuffer method, EngExtCpp_Ref_0a08b058-ddc3-44e4-9d80-bb20d6e8f952.xml, debugger.extremotedata_writebuffer, WriteBuffer method [Windows Debugging], ExtRemoteData class
+ms.keywords : ExtRemoteData::WriteBuffer, EngExtCpp_Ref_0a08b058-ddc3-44e4-9d80-bb20d6e8f952.xml, ExtRemoteData, WriteBuffer, WriteBuffer method [Windows Debugging], ExtRemoteData class, debugger.extremotedata_writebuffer, ExtRemoteData class [Windows Debugging], WriteBuffer method, WriteBuffer method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+req.typenames : "*PSILO_DRIVER_CAPABILITIES, SILO_DRIVER_CAPABILITIES"
 ---
 
 
@@ -86,9 +86,9 @@ Specifies the number of bytes to write.  The <i>Buffer</i> buffer must be at lea
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544088">ExtRemoteData::ReadBuffer</a>
-
 <a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544088">ExtRemoteData::ReadBuffer</a>
 
  
 

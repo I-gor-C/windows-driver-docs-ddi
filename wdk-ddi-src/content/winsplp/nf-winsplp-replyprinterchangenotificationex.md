@@ -2,13 +2,13 @@
 UID : NF:winsplp.ReplyPrinterChangeNotificationEx
 title : ReplyPrinterChangeNotificationEx function
 author : windows-driver-content
-description : .
+description : "."
 old-location : print\replyprinterchangenotificationex.htm
 old-project : print
 ms.assetid : A3A906C0-FA96-4008-B904-1DA333B59833
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : winsplp/ReplyPrinterChangeNotificationEx, print.replyprinterchangenotificationex, ReplyPrinterChangeNotificationEx, ReplyPrinterChangeNotificationEx function [Print Devices]
+ms.keywords : ReplyPrinterChangeNotificationEx function [Print Devices], winsplp/ReplyPrinterChangeNotificationEx, ReplyPrinterChangeNotificationEx, print.replyprinterchangenotificationex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

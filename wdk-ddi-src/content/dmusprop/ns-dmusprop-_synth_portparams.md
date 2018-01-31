@@ -1,6 +1,6 @@
 ---
 UID : NS:dmusprop._SYNTH_PORTPARAMS
-title : _SYNTH_PORTPARAMS
+title : "_SYNTH_PORTPARAMS"
 author : windows-driver-content
 description : The SYNTH_PORTPARAMS structure contains the configuration parameters for a DirectMusic port, which is a DirectMusic term for a device that sends or receives music data.
 old-location : audio\synth_portparams.htm
@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 94c953ae-519b-4659-a4c9-a97db7dc31e9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : aud-prop_33f03864-8052-4dff-9613-1e8046450d16.xml, PSYNTH_PORTPARAMS, SYNTH_PORTPARAMS structure [Audio Devices], audio.synth_portparams, SYNTH_PORTPARAMS, _SYNTH_PORTPARAMS, dmusprop/PSYNTH_PORTPARAMS, dmusprop/SYNTH_PORTPARAMS, *PSYNTH_PORTPARAMS, PSYNTH_PORTPARAMS structure pointer [Audio Devices]
+ms.keywords : SYNTH_PORTPARAMS structure [Audio Devices], aud-prop_33f03864-8052-4dff-9613-1e8046450d16.xml, *PSYNTH_PORTPARAMS, PSYNTH_PORTPARAMS structure pointer [Audio Devices], PSYNTH_PORTPARAMS, audio.synth_portparams, SYNTH_PORTPARAMS, dmusprop/PSYNTH_PORTPARAMS, dmusprop/SYNTH_PORTPARAMS, _SYNTH_PORTPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSYNTH_PORTPARAMS, SYNTH_PORTPARAMS"
+req.typenames : SYNTH_PORTPARAMS, *PSYNTH_PORTPARAMS
 ---
 
 # _SYNTH_PORTPARAMS structure
@@ -73,6 +73,21 @@ Specifies the type of effects produced for audio output from this port. This mem
 
 If no effects are enabled, this member is set to SYNTH_EFFECT_NONE, which is zero.
 
+
+#### SYNTH_EFFECT_REVERB
+
+Reverb is enabled.
+
+
+#### SYNTH_EFFECT_CHORUS
+
+Chorus effect is enabled.
+
+
+#### SYNTH_EFFECT_DELAY
+
+Delay effect is enabled.
+
 `SampleRate`
 
 Specifies the number of samples per second for the audio data produced by the port.
@@ -84,6 +99,38 @@ Specifies whether the port's channel groups are shared. When this member is <b>T
 `ValidParams`
 
 Specifies which of the SYNTH_PORTPARAMS structure members contain valid data. This member is a bitfield whose value is either zero or the bitwise OR of one or more of the following flag bits:
+
+
+
+
+#### SYNTH_PORTPARAMS_VOICES
+
+The <b>Voices</b> field is valid.
+
+
+#### SYNTH_PORTPARAMS_CHANNELGROUPS
+
+The <b>ChannelGroups</b> field is valid.
+
+
+#### SYNTH_PORTPARAMS_AUDIOCHANNELS
+
+The <b>AudioChannels</b> field is valid.
+
+
+#### SYNTH_PORTPARAMS_SAMPLERATE
+
+The <b>SampleRate</b> field is valid.
+
+
+#### SYNTH_PORTPARAMS_EFFECT
+
+The <b>EffectsFlags</b> flag is valid.
+
+
+#### SYNTH_PORTPARAMS_SHARE
+
+The <b>Share</b> field is valid.
 
 `Voices`
 

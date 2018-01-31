@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8d934e44-c6f9-42f7-81a6-202b6c97aca2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfwmi/WdfWmiProviderGetDevice, WdfWmiProviderGetDevice, wdf.wdfwmiprovidergetdevice, PFN_WDFWMIPROVIDERGETDEVICE, WdfWmiProviderGetDevice method, DFWMIRef_697647f5-0ece-46e4-8973-07088c8c3739.xml, kmdf.wdfwmiprovidergetdevice
+ms.keywords : PFN_WDFWMIPROVIDERGETDEVICE, WdfWmiProviderGetDevice, wdfwmi/WdfWmiProviderGetDevice, kmdf.wdfwmiprovidergetdevice, DFWMIRef_697647f5-0ece-46e4-8973-07088c8c3739.xml, wdf.wdfwmiprovidergetdevice, WdfWmiProviderGetDevice method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,14 @@ A bug check occurs if the driver supplies an invalid object handle.
 | **Minimum UMDF version** |  |
 | **Header** | wdfwmi.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancegetprovider.md">WdfWmiInstanceGetProvider</a>
-
 <a href="..\wdfwmi\nf-wdfwmi-wdfwmiprovidercreate.md">WdfWmiProviderCreate</a>
+
+<a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancegetprovider.md">WdfWmiInstanceGetProvider</a>
 
  
 

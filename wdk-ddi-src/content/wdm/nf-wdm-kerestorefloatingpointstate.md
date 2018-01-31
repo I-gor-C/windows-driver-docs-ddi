@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9a9b3c9f-5371-4d70-b1f3-5038e4cabc83
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeRestoreFloatingPointState routine [Kernel-Mode Driver Architecture], KeRestoreFloatingPointState, kernel.kerestorefloatingpointstate, k105_94a36699-2129-4e69-ba6a-206452f0b723.xml, wdm/KeRestoreFloatingPointState
+ms.keywords : KeRestoreFloatingPointState routine [Kernel-Mode Driver Architecture], KeRestoreFloatingPointState, wdm/KeRestoreFloatingPointState, k105_94a36699-2129-4e69-ba6a-206452f0b723.xml, kernel.kerestorefloatingpointstate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -97,14 +97,14 @@ The <b>KeRestoreFloatingPointState</b> call that restores a saved state must be 
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL (see Remarks section) |
+| **IRQL** | "<= DISPATCH_LEVEL (see Remarks section)" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kesavefloatingpointstate.md">KeSaveFloatingPointState</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554233">KFLOATING_SAVE</a>
+
+<a href="..\wdm\nf-wdm-kesavefloatingpointstate.md">KeSaveFloatingPointState</a>
 
  
 

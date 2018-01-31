@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 29735ea8-6125-4958-8d78-12d1f13b16ea
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storprt_4ad11a47-ebb2-4eb9-a7cb-ce0b47d2ab3a.xml, StorPortFreeContiguousMemorySpecifyCache routine [Storage Devices], storport/StorPortFreeContiguousMemorySpecifyCache, storage.storportfreecontiguousmemoryspecifycache, StorPortFreeContiguousMemorySpecifyCache
+ms.keywords : StorPortFreeContiguousMemorySpecifyCache routine [Storage Devices], storprt_4ad11a47-ebb2-4eb9-a7cb-ce0b47d2ab3a.xml, storport/StorPortFreeContiguousMemorySpecifyCache, StorPortFreeContiguousMemorySpecifyCache, storage.storportfreecontiguousmemoryspecifycache
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -115,7 +115,7 @@ The operation was successful.
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | StorPortIrql |
 
 ## See Also

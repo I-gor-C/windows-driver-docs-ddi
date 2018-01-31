@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 049BDC6E-2FB2-421F-9229-320F2ED98663
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/MmIsDriverSuspectForVerifier, kernel.mmisdriversuspectforverifier, MmIsDriverSuspectForVerifier, MmIsDriverSuspectForVerifier routine [Kernel-Mode Driver Architecture]
+ms.keywords : wdm/MmIsDriverSuspectForVerifier, kernel.mmisdriversuspectforverifier, MmIsDriverSuspectForVerifier routine [Kernel-Mode Driver Architecture], MmIsDriverSuspectForVerifier
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,18 +81,18 @@ Another related routine, <a href="..\wdm\nf-wdm-mmisdriververifyingbyaddress.md"
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
 
-<a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
+<a href="..\wdm\nf-wdm-mmisdriververifying.md">MmIsDriverVerifying</a>
 
 <a href="..\wdm\nf-wdm-mmisdriververifyingbyaddress.md">MmIsDriverVerifyingByAddress</a>
 
-<a href="..\wdm\nf-wdm-mmisdriververifying.md">MmIsDriverVerifying</a>
+<a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
 
  
 

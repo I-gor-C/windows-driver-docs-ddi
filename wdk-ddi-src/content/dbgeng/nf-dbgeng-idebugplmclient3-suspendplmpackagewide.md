@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : B887CCD2-0747-483E-A4CF-632471AB19A2
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugPlmClient3 interface [Windows Debugging], SuspendPlmPackageWide method, SuspendPlmPackageWide method [Windows Debugging], SuspendPlmPackageWide method [Windows Debugging], IDebugPlmClient3 interface, dbgeng/IDebugPlmClient3::SuspendPlmPackageWide, SuspendPlmPackageWide, IDebugPlmClient3::SuspendPlmPackageWide, debugger.idebugplmclient3_suspendplmpackagewide, IDebugPlmClient3
+ms.keywords : SuspendPlmPackageWide method [Windows Debugging], IDebugPlmClient3 interface, IDebugPlmClient3, IDebugPlmClient3 interface [Windows Debugging], SuspendPlmPackageWide method, dbgeng/IDebugPlmClient3::SuspendPlmPackageWide, SuspendPlmPackageWide, IDebugPlmClient3::SuspendPlmPackageWide, debugger.idebugplmclient3_suspendplmpackagewide, SuspendPlmPackageWide method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

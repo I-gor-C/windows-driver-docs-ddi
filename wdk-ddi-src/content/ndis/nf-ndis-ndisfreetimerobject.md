@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b3edeebb-7a8f-4cd2-bd52-1b8ce044caa2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisFreeTimerObject, ndis_timer_ref_0f4b2edb-47fb-481c-a1e9-6940d15cb354.xml, NdisFreeTimerObject function [Network Drivers Starting with Windows Vista], NdisFreeTimerObject, netvista.ndisfreetimerobject
+ms.keywords : NdisFreeTimerObject function [Network Drivers Starting with Windows Vista], netvista.ndisfreetimerobject, NdisFreeTimerObject, ndis/NdisFreeTimerObject, ndis_timer_ref_0f4b2edb-47fb-481c-a1e9-6940d15cb354.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -87,7 +87,7 @@ To cancel a timer, call the
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Timer_Function |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 5790b133-dbdc-4f77-a70e-616b0902794e
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : ReadBusData method [Windows Debugging], IDebugDataSpaces2 interface, dbgeng/IDebugDataSpaces4::ReadBusData, IDebugDataSpaces4, dbgeng/IDebugDataSpaces2::ReadBusData, ReadBusData, dbgeng/IDebugDataSpaces3::ReadBusData, ReadBusData method [Windows Debugging], IDebugDataSpaces interface, IDebugDataSpaces2::ReadBusData, IDebugDataSpaces interface [Windows Debugging], ReadBusData method, debugger.readbusdata, ReadBusData method [Windows Debugging], IDebugDataSpaces3 interface, IDebugDataSpaces3::ReadBusData, ReadBusData method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces3 interface [Windows Debugging], ReadBusData method, dbgeng/IDebugDataSpaces::ReadBusData, IDebugDataSpaces4::ReadBusData, IDebugDataSpaces::ReadBusData, ReadBusData method [Windows Debugging], IDebugDataSpaces4 interface [Windows Debugging], ReadBusData method, IDebugDataSpaces_59d5bf3f-7eb5-452c-ace2-4aed701d34a6.xml, IDebugDataSpaces2 interface [Windows Debugging], ReadBusData method
+ms.keywords : ReadBusData method [Windows Debugging], IDebugDataSpaces interface, IDebugDataSpaces4::ReadBusData, dbgeng/IDebugDataSpaces4::ReadBusData, ReadBusData, IDebugDataSpaces3 interface [Windows Debugging], ReadBusData method, IDebugDataSpaces4 interface [Windows Debugging], ReadBusData method, ReadBusData method [Windows Debugging], dbgeng/IDebugDataSpaces2::ReadBusData, IDebugDataSpaces::ReadBusData, IDebugDataSpaces interface [Windows Debugging], ReadBusData method, debugger.readbusdata, IDebugDataSpaces2 interface [Windows Debugging], ReadBusData method, ReadBusData method [Windows Debugging], IDebugDataSpaces3 interface, dbgeng/IDebugDataSpaces3::ReadBusData, IDebugDataSpaces3::ReadBusData, IDebugDataSpaces4, ReadBusData method [Windows Debugging], IDebugDataSpaces2 interface, ReadBusData method [Windows Debugging], IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces::ReadBusData, IDebugDataSpaces2::ReadBusData, IDebugDataSpaces_59d5bf3f-7eb5-452c-ace2-4aed701d34a6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

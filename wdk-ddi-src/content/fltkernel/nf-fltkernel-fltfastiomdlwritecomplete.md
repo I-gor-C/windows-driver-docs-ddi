@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 7B67BB47-6F95-4B1A-A823-F796529D5C48
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.fltfastiomdlwritecomplete, FsRtlMdlWriteCompleteDev routine [Installable File System Drivers], fltkernel/FsRtlMdlWriteCompleteDev, FltFastIoMdlWriteComplete, FsRtlMdlWriteCompleteDev
+ms.keywords : FsRtlMdlWriteCompleteDev routine [Installable File System Drivers], FltFastIoMdlWriteComplete, ifsk.fltfastiomdlwritecomplete, FsRtlMdlWriteCompleteDev, fltkernel/FsRtlMdlWriteCompleteDev
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

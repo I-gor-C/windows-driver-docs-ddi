@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 77dba83d-cc25-4609-905c-7a036cb7ced9
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.debugconnect, dbgeng/DebugConnect, ClientFns_7beeb350-b8bd-44ea-b5c9-ca0da15146ae.xml, DebugConnect function [Windows Debugging], DebugConnect
+ms.keywords : debugger.debugconnect, DebugConnect function [Windows Debugging], DebugConnect, dbgeng/DebugConnect, ClientFns_7beeb350-b8bd-44ea-b5c9-ca0da15146ae.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

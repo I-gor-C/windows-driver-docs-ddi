@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmdt._D3DKMDT_VIDPN_HW_CAPABILITY
-title : _D3DKMDT_VIDPN_HW_CAPABILITY
+title : "_D3DKMDT_VIDPN_HW_CAPABILITY"
 author : windows-driver-content
 description : The D3DKMDT_VIDPN_HW_CAPABILITY structure describes the capabilities of the display miniport driver to perform display operations on a specified functional VidPN without dedicated GPU hardware support.
 old-location : display\d3dkmdt_vidpn_hw_capability.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8d881133-3ea7-43c4-99cc-d843026573d6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmdt/D3DKMDT_VIDPN_HW_CAPABILITY, display.d3dkmdt_vidpn_hw_capability, _D3DKMDT_VIDPN_HW_CAPABILITY, D3DKMDT_VIDPN_HW_CAPABILITY structure [Display Devices], D3DKMDT_VIDPN_HW_CAPABILITY, DmStructs_93529025-7af3-49d1-8f38-2b0355682743.xml
+ms.keywords : d3dkmdt/D3DKMDT_VIDPN_HW_CAPABILITY, D3DKMDT_VIDPN_HW_CAPABILITY structure [Display Devices], display.d3dkmdt_vidpn_hw_capability, DmStructs_93529025-7af3-49d1-8f38-2b0355682743.xml, _D3DKMDT_VIDPN_HW_CAPABILITY, D3DKMDT_VIDPN_HW_CAPABILITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

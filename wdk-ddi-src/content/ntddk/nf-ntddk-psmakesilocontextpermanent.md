@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 74BE4FF9-0342-4942-A58F-9C6D5F76E5F0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.psmakesilocontextpermanent, PsMakeSiloContextPermanent routine [Kernel-Mode Driver Architecture], PsMakeSiloContextPermanent, ntddk/PsMakeSiloContextPermanent
+ms.keywords : PsMakeSiloContextPermanent routine [Kernel-Mode Driver Architecture], ntddk/PsMakeSiloContextPermanent, PsMakeSiloContextPermanent, kernel.psmakesilocontextpermanent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

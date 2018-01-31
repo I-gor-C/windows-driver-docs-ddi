@@ -131,4 +131,4 @@ printoem.h contains the following programming interfaces:
 | Title | Description |
 | ---- |:---- |
 | [_EATTRIBUTE_DATATYPE](ne-printoem-_eattribute_datatype.md) | The EATTRIBUTE_DATATYPE enumerates the possible data types for a global attribute, feature attribute or option attribute. |
-| [_STDVARIABLEINDEX](ne-printoem-_stdvariableindex.md) | . |
+| [_STDVARIABLEINDEX](ne-printoem-_stdvariableindex.md) | "." |

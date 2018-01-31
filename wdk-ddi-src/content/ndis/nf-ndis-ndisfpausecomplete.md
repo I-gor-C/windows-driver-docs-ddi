@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7f5730d3-6e6c-490f-b2e5-e2d3615b4c3a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisfpausecomplete, NdisFPauseComplete, ndis/NdisFPauseComplete, filter_ndis_functions_ref_2f2cd8ef-a148-49d2-a00d-ec0acef7e310.xml, NdisFPauseComplete function [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.ndisfpausecomplete, ndis/NdisFPauseComplete, filter_ndis_functions_ref_2f2cd8ef-a148-49d2-a00d-ec0acef7e310.xml, NdisFPauseComplete, NdisFPauseComplete function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -87,14 +87,14 @@ After a pending pause operation is complete, the driver calls
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Filter_Driver_Function |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-filter_pause.md">FilterPause</a>
-
 <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
+
+<a href="..\ndis\nc-ndis-filter_pause.md">FilterPause</a>
 
  
 

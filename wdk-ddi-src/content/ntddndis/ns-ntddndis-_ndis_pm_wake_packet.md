@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddndis._NDIS_PM_WAKE_PACKET
-title : _NDIS_PM_WAKE_PACKET
+title : "_NDIS_PM_WAKE_PACKET"
 author : windows-driver-content
 description : The NDIS_PM_WAKE_PACKET structure describes a network packet (known as a wake packet) that caused the network adapter to generate a wake-up event.
 old-location : netvista\ndis_pm_wake_packet.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b3d7adcf-79cd-42f4-ada2-c57de6310020
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddndis/NDIS_PM_WAKE_PACKET, NDIS_PM_WAKE_PACKET, PNDIS_PM_WAKE_PACKET structure pointer [Network Drivers Starting with Windows Vista], PNDIS_PM_WAKE_PACKET, NDIS_PM_WAKE_PACKET structure [Network Drivers Starting with Windows Vista], *PNDIS_PM_WAKE_PACKET, _NDIS_PM_WAKE_PACKET, netvista.ndis_pm_wake_packet, ntddndis/PNDIS_PM_WAKE_PACKET
+ms.keywords : "*PNDIS_PM_WAKE_PACKET, ntddndis/PNDIS_PM_WAKE_PACKET, netvista.ndis_pm_wake_packet, _NDIS_PM_WAKE_PACKET, ntddndis/NDIS_PM_WAKE_PACKET, PNDIS_PM_WAKE_PACKET structure pointer [Network Drivers Starting with Windows Vista], NDIS_PM_WAKE_PACKET, NDIS_PM_WAKE_PACKET structure [Network Drivers Starting with Windows Vista], PNDIS_PM_WAKE_PACKET"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,7 +65,16 @@ A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags. This member is 
 
 The type, revision, and size of the <b>NDIS_PM_WAKE_PACKET</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
-The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_PM_WAKE_PACKET</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value:
+The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_PM_WAKE_PACKET</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
+
+
+
+
+#### NDIS_SIZEOF_PM_WAKE_PACKET_REVISION_1
+
+Original version for NDIS 6.30 and later.
+
+Set the <b>Size</b> member to NDIS_SIZEOF_PM_WAKE_PACKET_REVISION_1.
 
 `OriginalPacketSize`
 
@@ -107,13 +116,13 @@ The <b>NDIS_PM_WAKE_PACKET</b> structure is used in the <a href="https://msdn.mi
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569764">OID_PM_ADD_WOL_PATTERN</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_pm_counted_string.md">NDIS_PM_COUNTED_STRING</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439808">NDIS_STATUS_PM_WAKE_REASON</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_pm_wol_pattern.md">NDIS_PM_WOL_PATTERN</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_pm_counted_string.md">NDIS_PM_COUNTED_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569764">OID_PM_ADD_WOL_PATTERN</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 

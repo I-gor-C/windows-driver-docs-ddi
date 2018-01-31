@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : da6e4133-a2ba-4f8c-9490-e1f9b453b6e2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsDeleteLogByPointer, ClfsDeleteLogByPointer routine [Kernel-Mode Driver Architecture], kernel.clfsdeletelogbypointer, wdm/ClfsDeleteLogByPointer, Clfs_d5571c5c-19a0-4113-8401-910721d76191.xml
+ms.keywords : ClfsDeleteLogByPointer routine [Kernel-Mode Driver Architecture], ClfsDeleteLogByPointer, wdm/ClfsDeleteLogByPointer, Clfs_d5571c5c-19a0-4113-8401-910721d76191.xml, kernel.clfsdeletelogbypointer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,14 +79,14 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfsdeletelogfile.md">ClfsDeleteLogFile</a>
-
 <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>
+
+<a href="..\wdm\nf-wdm-clfsdeletelogfile.md">ClfsDeleteLogFile</a>
 
  
 

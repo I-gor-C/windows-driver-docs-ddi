@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 354b1854-2b3b-4fcf-81cb-fd24595cd9bb
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : wdbgexts/ReadPointer, debugger.readpointer, WdbgExts_Ref_3d78e28a-910f-4b82-a262-28d83d87c6f1.xml, ReadPointer function [Windows Debugging], ReadPointer
+ms.keywords : debugger.readpointer, WdbgExts_Ref_3d78e28a-910f-4b82-a262-28d83d87c6f1.xml, ReadPointer, ReadPointer function [Windows Debugging], wdbgexts/ReadPointer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

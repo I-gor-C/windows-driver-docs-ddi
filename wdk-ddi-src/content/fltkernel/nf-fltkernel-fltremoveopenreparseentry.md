@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : FD8C3A32-E578-47E9-9B2A-E1809D62F7B8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltAddOpenReparseEntry, FltAddOpenReparseEntry routine [Installable File System Drivers], fltkernel/FltAddOpenReparseEntry, ifsk.fltremoveopenreparseentry, FltRemoveOpenReparseEntry
+ms.keywords : FltAddOpenReparseEntry, ifsk.fltremoveopenreparseentry, fltkernel/FltAddOpenReparseEntry, FltRemoveOpenReparseEntry, FltAddOpenReparseEntry routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : NtosKrnl.exe
 req.dll : 
-req.irql : _IRQL_requires_max_(APC_LEVEL)
+req.irql : "_IRQL_requires_max_(APC_LEVEL)"
 topictype : 
 apitype : 
 apilocation : 
@@ -86,5 +86,5 @@ This routine does not return a value.
 | **Minimum UMDF version** |  |
 | **Header** | fltkernel.h |
 | **Library** |  |
-| **IRQL** | _IRQL_requires_max_(APC_LEVEL) |
+| **IRQL** | "_IRQL_requires_max_(APC_LEVEL)" |
 | **DDI compliance rules** |  |

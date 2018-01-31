@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e50199d2-948d-4572-8688-89d92961f85b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlUnicodeToMultiByteN routine [Installable File System Drivers], ifsk.rtlunicodetomultibyten, rtlref_233ec1ac-8ecc-4261-8f17-11485d03ec50.xml, ntifs/RtlUnicodeToMultiByteN, RtlUnicodeToMultiByteN
+ms.keywords : ntifs/RtlUnicodeToMultiByteN, RtlUnicodeToMultiByteN, RtlUnicodeToMultiByteN routine [Installable File System Drivers], ifsk.rtlunicodetomultibyten, rtlref_233ec1ac-8ecc-4261-8f17-11485d03ec50.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -102,16 +102,16 @@ For information about other string-handling routines, see <a href="https://msdn.
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Fltkernel.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | < DISPATCH_LEVEL |
+| **IRQL** | "< DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtlupcaseunicodetomultibyten.md">RtlUpcaseUnicodeToMultiByteN</a>
+<a href="..\ntifs\nf-ntifs-rtlunicodetomultibytesize.md">RtlUnicodeToMultiByteSize</a>
 
 <a href="..\ntifs\nf-ntifs-rtlmultibytetounicoden.md">RtlMultiByteToUnicodeN</a>
 
-<a href="..\ntifs\nf-ntifs-rtlunicodetomultibytesize.md">RtlUnicodeToMultiByteSize</a>
+<a href="..\ntifs\nf-ntifs-rtlupcaseunicodetomultibyten.md">RtlUpcaseUnicodeToMultiByteN</a>
 
  
 

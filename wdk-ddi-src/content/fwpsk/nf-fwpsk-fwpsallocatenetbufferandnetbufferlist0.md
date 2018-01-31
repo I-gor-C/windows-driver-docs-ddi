@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : d7f2d3c0-f2c9-4624-b3e1-9fbbf64c7186
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : fwpsk/FwpsAllocateNetBufferAndNetBufferList0, wfp_ref_2_funct_3_fwps_A-B_9a88a8c9-a5fb-48a9-bc42-ae30de234468.xml, FwpsAllocateNetBufferAndNetBufferList0 function [Network Drivers Starting with Windows Vista], FwpsAllocateNetBufferAndNetBufferList0, netvista.fwpsallocatenetbufferandnetbufferlist0
+ms.keywords : FwpsAllocateNetBufferAndNetBufferList0 function [Network Drivers Starting with Windows Vista], netvista.fwpsallocatenetbufferandnetbufferlist0, FwpsAllocateNetBufferAndNetBufferList0, fwpsk/FwpsAllocateNetBufferAndNetBufferList0, wfp_ref_2_funct_3_fwps_A-B_9a88a8c9-a5fb-48a9-bc42-ae30de234468.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -167,24 +167,24 @@ After the data described by the new <a href="..\ndis\ns-ndis-_net_buffer_list.md
 | **Minimum UMDF version** |  |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndisallocatenetbufferandnetbufferlist" tabindex="0"><b>
-   NdisAllocateNetBufferAndNetBufferList</b></mshelp:link>
-
-<a href="..\ndis\ns-ndis-_net_buffer_list_context.md">NET_BUFFER_LIST_CONTEXT</a>
-
-<a href="..\fwpsk\nf-fwpsk-fwpsfreenetbufferlist0.md">FwpsFreeNetBufferList0</a>
-
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff545018">Packet Injection Functions</a>
-
 <mshelp:link keywords="netvista.ndisallocatenetbufferlistpool" tabindex="0"><b>
    NdisAllocateNetBufferListPool</b></mshelp:link>
 
+<mshelp:link keywords="netvista.ndisallocatenetbufferandnetbufferlist" tabindex="0"><b>
+   NdisAllocateNetBufferAndNetBufferList</b></mshelp:link>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff545018">Packet Injection Functions</a>
+
+<a href="..\ndis\ns-ndis-_net_buffer_list_context.md">NET_BUFFER_LIST_CONTEXT</a>
+
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+<a href="..\fwpsk\nf-fwpsk-fwpsfreenetbufferlist0.md">FwpsFreeNetBufferList0</a>
 
  
 

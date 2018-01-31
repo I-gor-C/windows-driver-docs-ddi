@@ -1,6 +1,6 @@
 ---
 UID : NS:bthddi._BRB_L2CA_ACL_TRANSFER
-title : _BRB_L2CA_ACL_TRANSFER
+title : "_BRB_L2CA_ACL_TRANSFER"
 author : windows-driver-content
 description : The _BRB_L2CA_ACL_TRANSFER structure describes a buffer to read asynchronous data from, or write asynchronous data to a L2CAP channel.
 old-location : bltooth\_brb_l2ca_acl_transfer.htm
@@ -8,14 +8,14 @@ old-project : bltooth
 ms.assetid : 8ab1365a-99bd-47b3-bf3d-8f70b4a7028a
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : bltooth._brb_l2ca_acl_transfer, _BRB_L2CA_ACL_TRANSFER, bth_structs_5dfd1186-d8a1-4ec5-9ce8-028d462fcb21.xml, bthddi/_BRB_L2CA_ACL_TRANSFER, _BRB_L2CA_ACL_TRANSFER structure [Bluetooth Devices]
+ms.keywords : bltooth._brb_l2ca_acl_transfer, _BRB_L2CA_ACL_TRANSFER structure [Bluetooth Devices], bthddi/_BRB_L2CA_ACL_TRANSFER, _BRB_L2CA_ACL_TRANSFER, bth_structs_5dfd1186-d8a1-4ec5-9ce8-028d462fcb21.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
@@ -185,14 +185,14 @@ If the ACL_TRANSFER_TIMEOUT flag is set in the
 
 ## See Also
 
-<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536615">BRB_L2CA_OPEN_CHANNEL</a>
+<mshelp:link keywords="bltooth.brb_l2ca_open_channel_response" tabindex="0"><b>
+   BRB_L2CA_OPEN_CHANNEL_RESPONSE</b></mshelp:link>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536613">BRB_L2CA_ACL_TRANSFER</a>
 
-<mshelp:link keywords="bltooth.brb_l2ca_open_channel_response" tabindex="0"><b>
-   BRB_L2CA_OPEN_CHANNEL_RESPONSE</b></mshelp:link>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536615">BRB_L2CA_OPEN_CHANNEL</a>
+
+<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
 
  
 

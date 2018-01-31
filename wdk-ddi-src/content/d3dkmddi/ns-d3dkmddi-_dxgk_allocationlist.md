@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmddi._DXGK_ALLOCATIONLIST
-title : _DXGK_ALLOCATIONLIST
+title : "_DXGK_ALLOCATIONLIST"
 author : windows-driver-content
 description : The DXGK_ALLOCATIONLIST structure describes an allocation specification that is used in direct memory access (DMA) buffering.
 old-location : display\dxgk_allocationlist.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1be057dc-6a97-4798-a152-7cc6d6febda5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGK_ALLOCATIONLIST, display.dxgk_allocationlist, DXGK_ALLOCATIONLIST, DXGK_ALLOCATIONLIST structure [Display Devices], DmStructs_ed92f9cf-ad3f-4566-89ff-31d6b162f755.xml, _DXGK_ALLOCATIONLIST
+ms.keywords : display.dxgk_allocationlist, DmStructs_ed92f9cf-ad3f-4566-89ff-31d6b162f755.xml, DXGK_ALLOCATIONLIST structure [Display Devices], d3dkmddi/DXGK_ALLOCATIONLIST, _DXGK_ALLOCATIONLIST, DXGK_ALLOCATIONLIST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -89,17 +89,17 @@ In the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_openallocationinfo.md">DXGK_OPENALLOCATIONINFO</a>
-
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
-
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render.md">DxgkDdiRender</a>
-
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_openallocationinfo.md">DxgkDdiOpenAllocation</a>
 
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_openallocationinfo.md">DXGK_OPENALLOCATIONINFO</a>
+
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createallocation.md">DXGKARG_CREATEALLOCATION</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render.md">DxgkDdiRender</a>
 
  
 

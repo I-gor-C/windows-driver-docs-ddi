@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2B3C52FD-80D7-4ECA-9B33-7916FB47B0B2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltCloseSectionForDataScan routine [Installable File System Drivers], ifsk.fltclosesectionfordatascan, fltkernel/FltCloseSectionForDataScan, FltCloseSectionForDataScan
+ms.keywords : ifsk.fltclosesectionfordatascan, FltCloseSectionForDataScan, fltkernel/FltCloseSectionForDataScan, FltCloseSectionForDataScan routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -104,16 +104,16 @@ After <b>FltCloseSectionForDataScan</b> returns, operations that conflict with t
 | **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltcreatesectionfordatascan.md">FltCreateSectionForDataScan</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
 
  
 

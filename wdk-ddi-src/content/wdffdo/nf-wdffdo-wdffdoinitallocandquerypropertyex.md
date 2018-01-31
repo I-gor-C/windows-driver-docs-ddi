@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8F338F5B-2F18-4D7D-AF96-7F80A48D37FB
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdffdoinitallocandquerypropertyex, WdfFdoInitAllocAndQueryPropertyEx method, wdffdo/WdfFdoInitAllocAndQueryPropertyEx, PFN_WDFFDOINITALLOCANDQUERYPROPERTYEX, WdfFdoInitAllocAndQueryPropertyEx
+ms.keywords : wdffdo/WdfFdoInitAllocAndQueryPropertyEx, WdfFdoInitAllocAndQueryPropertyEx method, PFN_WDFFDOINITALLOCANDQUERYPROPERTYEX, wdf.wdffdoinitallocandquerypropertyex, WdfFdoInitAllocAndQueryPropertyEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
+req.typenames : "*PWDF_DRIVER_VERSION_AVAILABLE_PARAMS, WDF_DRIVER_VERSION_AVAILABLE_PARAMS"
 req.product : Windows 10 or later.
 ---
 

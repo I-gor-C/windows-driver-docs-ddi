@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c10e46a5-62e4-4d78-a672-34fc218800eb
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltApiRef_p_to_z_b304d975-533c-4794-aabc-e706fed09893.xml, fltkernel/FltSetStreamContext, FltSetStreamContext routine [Installable File System Drivers], FltSetStreamContext, ifsk.fltsetstreamcontext
+ms.keywords : fltkernel/FltSetStreamContext, FltSetStreamContext routine [Installable File System Drivers], FltApiRef_p_to_z_b304d975-533c-4794-aabc-e706fed09893.xml, FltSetStreamContext, ifsk.fltsetstreamcontext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,7 +66,19 @@ A pointer to a file object for the file stream.
 
 `Operation`
 
-A flag that specifies details of the operation to be performed. This parameter must be one of the following:
+A flag that specifies details of the operation to be performed. This parameter must be one of the following: 
+
+
+
+
+#### FLT_SET_CONTEXT_REPLACE_IF_EXISTS
+
+If a context is already set for this <i>Instance</i>, replace it with <i>NewContext</i>. Otherwise, insert <i>NewContext</i> into the list of contexts for the file stream. 
+
+
+#### FLT_SET_CONTEXT_KEEP_IF_EXISTS
+
+If a context is already set for this <i>Instance</i>, return STATUS_FLT_CONTEXT_ALREADY_DEFINED. Otherwise, insert <i>NewContext</i> into the list of contexts for the file stream.
 
 `NewContext`
 
@@ -183,20 +195,20 @@ For more information about context reference counting, see <a href="https://msdn
 | **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltdeletestreamcontext.md">FltDeleteStreamContext</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltgetstreamcontext.md">FltGetStreamContext</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltdeletestreamcontext.md">FltDeleteStreamContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetstreamcontext.md">FltGetStreamContext</a>
 
  
 

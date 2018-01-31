@@ -96,7 +96,7 @@ Most minifilter drivers never need to register a routine of type <i>PFLT_GET_OPE
 | **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include FltKernel.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmthk._D3DKMT_BRIGHTNESS_POSSIBLE_LEVELS
-title : _D3DKMT_BRIGHTNESS_POSSIBLE_LEVELS
+title : "_D3DKMT_BRIGHTNESS_POSSIBLE_LEVELS"
 author : windows-driver-content
 description : Contains information about all possible brightness levels that an integrated display panel supports.
 old-location : display\d3dkmt_brightness_possible_levels.htm

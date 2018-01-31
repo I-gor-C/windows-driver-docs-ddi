@@ -1,6 +1,6 @@
 ---
 UID : NS:wdm._COUNTED_REASON_CONTEXT
-title : _COUNTED_REASON_CONTEXT
+title : "_COUNTED_REASON_CONTEXT"
 author : windows-driver-content
 description : The COUNTED_REASON_CONTEXT structure contains one or more strings that give reasons for a power request.
 old-location : kernel\counted_reason_context.htm
@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : beb17d50-d99a-4baf-99bd-9f42fbea0478
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : COUNTED_REASON_CONTEXT structure [Kernel-Mode Driver Architecture], _COUNTED_REASON_CONTEXT, PCOUNTED_REASON_CONTEXT, wdm/PCOUNTED_REASON_CONTEXT, wdm/COUNTED_REASON_CONTEXT, COUNTED_REASON_CONTEXT, PCOUNTED_REASON_CONTEXT structure pointer [Kernel-Mode Driver Architecture], kstruct_a_52baf683-dfd2-4004-abed-e9ae6221c342.xml, *PCOUNTED_REASON_CONTEXT, kernel.counted_reason_context
+ms.keywords : kstruct_a_52baf683-dfd2-4004-abed-e9ae6221c342.xml, COUNTED_REASON_CONTEXT, _COUNTED_REASON_CONTEXT, wdm/PCOUNTED_REASON_CONTEXT, COUNTED_REASON_CONTEXT structure [Kernel-Mode Driver Architecture], PCOUNTED_REASON_CONTEXT structure pointer [Kernel-Mode Driver Architecture], kernel.counted_reason_context, PCOUNTED_REASON_CONTEXT, *PCOUNTED_REASON_CONTEXT, wdm/COUNTED_REASON_CONTEXT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : COUNTED_REASON_CONTEXT, *PCOUNTED_REASON_CONTEXT
+req.typenames : "*PCOUNTED_REASON_CONTEXT, COUNTED_REASON_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -85,7 +85,7 @@ DIAGNOSTIC_REASON_DETAILED_STRING
 The version number of the structure. Set this member to DIAGNOSTIC_REASON_VERSION.
 
 ## Remarks
-This structure is used by the <a href="..\wdm\nf-wdm-pocreatepowerrequest.md">PoCreatePowerRequest</a> routine.
+This structure is used by the <a href="..\ntifs\nf-ntifs-pocreatepowerrequest.md">PoCreatePowerRequest</a> routine.
 
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff559829">power manager</a> uses the reason string or strings contained in this structure as a diagnostic aid during functional and performance testing.
 
@@ -103,7 +103,7 @@ The DIAGNOSTIC_REASON_DETAILED_STRING flag supports localization. If the localiz
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-pocreatepowerrequest.md">PoCreatePowerRequest</a>
+<a href="..\ntifs\nf-ntifs-pocreatepowerrequest.md">PoCreatePowerRequest</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : b685f2f5-3491-471d-b1da-07a7e56bda62
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.ksaudio_mixlevel, ksmedia/KSAUDIO_MIXLEVEL, PKSAUDIO_MIXLEVEL, PKSAUDIO_MIXLEVEL structure pointer [Audio Devices], aud-prop_d80f29a4-4872-49cc-b1af-94b69be9c229.xml, *PKSAUDIO_MIXLEVEL, KSAUDIO_MIXLEVEL structure [Audio Devices], KSAUDIO_MIXLEVEL, ksmedia/PKSAUDIO_MIXLEVEL
+ms.keywords : KSAUDIO_MIXLEVEL structure [Audio Devices], PKSAUDIO_MIXLEVEL, aud-prop_d80f29a4-4872-49cc-b1af-94b69be9c229.xml, KSAUDIO_MIXLEVEL, ksmedia/PKSAUDIO_MIXLEVEL, ksmedia/KSAUDIO_MIXLEVEL, audio.ksaudio_mixlevel, *PKSAUDIO_MIXLEVEL, PKSAUDIO_MIXLEVEL structure pointer [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -87,11 +87,11 @@ This scale has a resolution of 1/65536 decibel.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537292">KSPROPERTY_AUDIO_MIX_LEVEL_TABLE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537198">KSNODETYPE_SUPERMIX</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537291">KSPROPERTY_AUDIO_MIX_LEVEL_CAPS</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537198">KSNODETYPE_SUPERMIX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537292">KSPROPERTY_AUDIO_MIX_LEVEL_TABLE</a>
 
  
 

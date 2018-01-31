@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.typenames : "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
 req.product : Windows 10 or later.
 ---
 
@@ -148,7 +148,7 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451005">Enabl
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

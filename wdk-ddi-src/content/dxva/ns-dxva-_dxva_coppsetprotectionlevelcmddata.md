@@ -1,6 +1,6 @@
 ---
 UID : NS:dxva._DXVA_COPPSetProtectionLevelCmdData
-title : _DXVA_COPPSetProtectionLevelCmdData
+title : "_DXVA_COPPSetProtectionLevelCmdData"
 author : windows-driver-content
 description : The DXVA_COPPSetProtectionLevelCmdData structure describes the protection types and levels to set on the physical connector associated with a COPP DirectX VA device.
 old-location : display\dxva_coppsetprotectionlevelcmddata.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d68d6e50-1373-43bc-a22b-dd9db47614c8
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : dxvaref_ac7e802b-dd23-49da-ab02-21d80eaabe86.xml, _DXVA_COPPSetProtectionLevelCmdData, DXVA_COPPSetProtectionLevelCmdData structure [Display Devices], dxva/DXVA_COPPSetProtectionLevelCmdData, display.dxva_coppsetprotectionlevelcmddata, DXVA_COPPSetProtectionLevelCmdData
+ms.keywords : DXVA_COPPSetProtectionLevelCmdData, display.dxva_coppsetprotectionlevelcmddata, _DXVA_COPPSetProtectionLevelCmdData, dxvaref_ac7e802b-dd23-49da-ab02-21d80eaabe86.xml, DXVA_COPPSetProtectionLevelCmdData structure [Display Devices], dxva/DXVA_COPPSetProtectionLevelCmdData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

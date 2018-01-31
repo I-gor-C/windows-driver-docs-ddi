@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7bef79ab-78d6-47b6-a3f4-d9733ffcb53d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfwmiinstancefireevent, kmdf.wdfwmiinstancefireevent, WdfWmiInstanceFireEvent method, WdfWmiInstanceFireEvent, wdfwmi/WdfWmiInstanceFireEvent, PFN_WDFWMIINSTANCEFIREEVENT, DFWMIRef_1062330c-9a9b-4bd3-a039-e1373c07ceee.xml
+ms.keywords : wdfwmi/WdfWmiInstanceFireEvent, kmdf.wdfwmiinstancefireevent, DFWMIRef_1062330c-9a9b-4bd3-a039-e1373c07ceee.xml, WdfWmiInstanceFireEvent, WdfWmiInstanceFireEvent method, wdf.wdfwmiinstancefireevent, PFN_WDFWMIINSTANCEFIREEVENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -134,16 +134,16 @@ For more information about the <b>WdfWmiInstanceFireEvent</b> method, see <a hre
 | **Minimum UMDF version** |  |
 | **Header** | wdfwmi.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancecreate.md">WdfWmiInstanceCreate</a>
+<a href="..\wdfwmi\nf-wdfwmi-wdfwmiproviderisenabled.md">WdfWmiProviderIsEnabled</a>
 
 <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_provider_function_control.md">EvtWmiProviderFunctionControl</a>
 
-<a href="..\wdfwmi\nf-wdfwmi-wdfwmiproviderisenabled.md">WdfWmiProviderIsEnabled</a>
+<a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancecreate.md">WdfWmiInstanceCreate</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2500fa22-b3f9-419d-9e37-5060b83403fb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : usbfunc_ecc1d157-942d-4d0e-9c07-9fef00cd5faf.xml, UsbBuildInterruptOrBulkTransferRequest routine [Buses], usbdlib/UsbBuildInterruptOrBulkTransferRequest, UsbBuildInterruptOrBulkTransferRequest, buses.usbbuildinterruptorbulktransferrequest
+ms.keywords : usbdlib/UsbBuildInterruptOrBulkTransferRequest, usbfunc_ecc1d157-942d-4d0e-9c07-9fef00cd5faf.xml, UsbBuildInterruptOrBulkTransferRequest, buses.usbbuildinterruptorbulktransferrequest, UsbBuildInterruptOrBulkTransferRequest routine [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.typenames : "*PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -112,9 +112,9 @@ None
 
 ## See Also
 
-<a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540134">USB device driver programming reference</a>
+
+<a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a>
 
 <a href="..\usb\ns-usb-_urb.md">URB</a>
 

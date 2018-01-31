@@ -1,6 +1,6 @@
 ---
 UID : NS:gpioclx._GPIO_DISCONNECT_IO_PINS_PARAMETERS
-title : _GPIO_DISCONNECT_IO_PINS_PARAMETERS
+title : "_GPIO_DISCONNECT_IO_PINS_PARAMETERS"
 author : windows-driver-content
 description : The GPIO_DISCONNECT_IO_PINS_PARAMETERS structure describes a set of general-purpose I/O (GPIO) pins that are to be disconnected.
 old-location : gpio\gpio_disconnect_io_pins_parameters.htm
@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : 79ABCF93-4EC3-49D5-9943-C820B0B8CF66
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GPIO_DISCONNECT_IO_PINS_PARAMETERS, PGPIO_DISCONNECT_IO_PINS_PARAMETERS, gpioclx/GPIO_DISCONNECT_IO_PINS_PARAMETERS, *PGPIO_DISCONNECT_IO_PINS_PARAMETERS, GPIO.gpio_disconnect_io_pins_parameters, _GPIO_DISCONNECT_IO_PINS_PARAMETERS, gpioclx/PGPIO_DISCONNECT_IO_PINS_PARAMETERS, GPIO_DISCONNECT_IO_PINS_PARAMETERS structure [Parallel Ports], PGPIO_DISCONNECT_IO_PINS_PARAMETERS structure pointer [Parallel Ports]
+ms.keywords : GPIO_DISCONNECT_IO_PINS_PARAMETERS structure [Parallel Ports], PGPIO_DISCONNECT_IO_PINS_PARAMETERS structure pointer [Parallel Ports], gpioclx/GPIO_DISCONNECT_IO_PINS_PARAMETERS, gpioclx/PGPIO_DISCONNECT_IO_PINS_PARAMETERS, GPIO_DISCONNECT_IO_PINS_PARAMETERS, GPIO.gpio_disconnect_io_pins_parameters, *PGPIO_DISCONNECT_IO_PINS_PARAMETERS, _GPIO_DISCONNECT_IO_PINS_PARAMETERS, PGPIO_DISCONNECT_IO_PINS_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -96,9 +96,9 @@ For example, a peripheral device driver might open a logical connection to a GPI
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439374">CLIENT_DisconnectIoPins</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439505">GPIO_CONNECT_IO_PINS_MODE</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439505">GPIO_CONNECT_IO_PINS_MODE</a>
 
  
 

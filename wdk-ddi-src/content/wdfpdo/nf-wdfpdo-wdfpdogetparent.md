@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 62a2a316-afb4-4133-b256-933ea04c0994
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfpdogetparent, PFN_WDFPDOGETPARENT, wdfpdo/WdfPdoGetParent, WdfPdoGetParent, DFDeviceObjectFdoPdoRef_19cc338e-2040-4e60-8e6f-7be6dbb33c13.xml, wdf.wdfpdogetparent, WdfPdoGetParent method
+ms.keywords : kmdf.wdfpdogetparent, WdfPdoGetParent, wdf.wdfpdogetparent, WdfPdoGetParent method, PFN_WDFPDOGETPARENT, DFDeviceObjectFdoPdoRef_19cc338e-2040-4e60-8e6f-7be6dbb33c13.xml, wdfpdo/WdfPdoGetParent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,5 +76,5 @@ A system bug check occurs if the driver supplies an invalid object handle.
 | **Minimum UMDF version** |  |
 | **Header** | wdfpdo.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |

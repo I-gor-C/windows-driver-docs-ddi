@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dhal._D3DHAL_CALLBACKS
-title : _D3DHAL_CALLBACKS
+title : "_D3DHAL_CALLBACKS"
 author : windows-driver-content
 description : D3DHAL_CALLBACKS is one of several callback structures that describe the Direct3D support provided by the driver.
 old-location : display\d3dhal_callbacks.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3b045732-a41f-47e7-9835-41e3ef54f14c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dhal/LPD3DHAL_CALLBACKS, LPD3DHAL_CALLBACKS structure pointer [Display Devices], *LPD3DHAL_CALLBACKS, LPD3DHAL_CALLBACKS, d3dstrct_2dc02d2c-6ae9-4f2e-9cb3-470926980537.xml, _D3DHAL_CALLBACKS, display.d3dhal_callbacks, D3DHAL_CALLBACKS, D3DHAL_CALLBACKS structure [Display Devices], d3dhal/D3DHAL_CALLBACKS
+ms.keywords : d3dhal/D3DHAL_CALLBACKS, D3DHAL_CALLBACKS structure [Display Devices], LPD3DHAL_CALLBACKS structure pointer [Display Devices], LPD3DHAL_CALLBACKS, d3dhal/LPD3DHAL_CALLBACKS, *LPD3DHAL_CALLBACKS, d3dstrct_2dc02d2c-6ae9-4f2e-9cb3-470926980537.xml, D3DHAL_CALLBACKS, _D3DHAL_CALLBACKS, display.d3dhal_callbacks
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : D3DHAL_CALLBACKS, *LPD3DHAL_CALLBACKS
+req.typenames : "*LPD3DHAL_CALLBACKS, D3DHAL_CALLBACKS"
 ---
 
 # _D3DHAL_CALLBACKS structure

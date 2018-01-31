@@ -86,15 +86,15 @@ This function is implemented as a C-style preprocessing macro in the <i>Ks.h</i>
 
 ## See Also
 
-<a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
+<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
+
+<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
 
 <a href="..\ks\nf-ks-ksremoveitemfromobjectbag.md">KsRemoveItemFromObjectBag</a>
 
 <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
 
-<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
-
-<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
+<a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
 
  
 

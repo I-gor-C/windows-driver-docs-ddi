@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b8e14607-a8d4-4e15-8b1d-92096879ea65
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.ioupdateshareaccess, k104_24b78a73-20f1-4d8b-be0e-67964e8dbc31.xml, IoUpdateShareAccess routine [Kernel-Mode Driver Architecture], wdm/IoUpdateShareAccess, IoUpdateShareAccess
+ms.keywords : IoUpdateShareAccess, k104_24b78a73-20f1-4d8b-be0e-67964e8dbc31.xml, kernel.ioupdateshareaccess, IoUpdateShareAccess routine [Kernel-Mode Driver Architecture], wdm/IoUpdateShareAccess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -87,11 +87,11 @@ Before calling <b>IoUpdateShareAccess</b>, the caller must successfully call <b>
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iosetshareaccess.md">IoSetShareAccess</a>
+<a href="..\wdm\nf-wdm-iocheckshareaccess.md">IoCheckShareAccess</a>
 
 <a href="..\wdm\nf-wdm-ioremoveshareaccess.md">IoRemoveShareAccess</a>
 
-<a href="..\wdm\nf-wdm-iocheckshareaccess.md">IoCheckShareAccess</a>
+<a href="..\wdm\nf-wdm-iosetshareaccess.md">IoSetShareAccess</a>
 
  
 

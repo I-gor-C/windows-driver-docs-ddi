@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 60456f6a-3de7-46ae-b486-f53041ce1508
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : umdprovider/UMDEtwLogMapAllocation, display.umdetwlogmapallocation, UMDEtwLogMapAllocation function [Display Devices], UMDEtwLogMapAllocation
+ms.keywords : UMDEtwLogMapAllocation function [Display Devices], display.umdetwlogmapallocation, umdprovider/UMDEtwLogMapAllocation, UMDEtwLogMapAllocation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -171,11 +171,11 @@ FORCEINLINE void UMDEtwLogMapAllocation(ULONGLONG hD3DAllocation,
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createresource.md">CreateResource(D3D10)</a>
 
-<a href="..\umdprovider\ns-umdprovider-_umdetw_allocation_usage.md">UMDETW_ALLOCATION_USAGE</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource.md">CreateResource</a>
 
 <a href="..\umdprovider\ne-umdprovider-_umdetw_allocation_semantic.md">UMDETW_ALLOCATION_SEMANTIC</a>
+
+<a href="..\umdprovider\ns-umdprovider-_umdetw_allocation_usage.md">UMDETW_ALLOCATION_USAGE</a>
 
  
 

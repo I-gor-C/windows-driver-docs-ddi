@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3a708949-3d4e-49b2-bef2-7151aec2b84b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfcollectionremove, PFN_WDFCOLLECTIONREMOVE, wdfcollection/WdfCollectionRemove, WdfCollectionRemove, kmdf.wdfcollectionremove, WdfCollectionRemove method, DFCollectionObjectRef_ec848e8e-f64b-4f17-997a-0d9b6c509eb0.xml
+ms.keywords : DFCollectionObjectRef_ec848e8e-f64b-4f17-997a-0d9b6c509eb0.xml, kmdf.wdfcollectionremove, WdfCollectionRemove method, WdfCollectionRemove, PFN_WDFCOLLECTIONREMOVE, wdfcollection/WdfCollectionRemove, wdf.wdfcollectionremove
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_CHILD_RETRIEVE_INFO, *PWDF_CHILD_RETRIEVE_INFO
+req.typenames : "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -86,7 +86,7 @@ For more information about object collections, see <a href="https://docs.microso
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfcollection.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also

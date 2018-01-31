@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : C01071FD-7D1D-4D6F-AFDD-355FFDA699EA
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : winsplp/AddPrintDeviceObject, AddPrintDeviceObject, AddPrintDeviceObject function [Print Devices], print.addprintdeviceobject
+ms.keywords : AddPrintDeviceObject, AddPrintDeviceObject function [Print Devices], print.addprintdeviceobject, winsplp/AddPrintDeviceObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

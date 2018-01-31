@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._DXVADDI_VIDEOSAMPLE
-title : _DXVADDI_VIDEOSAMPLE
+title : "_DXVADDI_VIDEOSAMPLE"
 author : windows-driver-content
 description : The DXVADDI_VIDEOSAMPLE structure describes the format of a video sample that is used in a video processing operation.
 old-location : display\dxvaddi_videosample.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 20495325-8ef6-4e6d-8f86-edc12537d46f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVADDI_VIDEOSAMPLE structure [Display Devices], d3dumddi/DXVADDI_VIDEOSAMPLE, display.dxvaddi_videosample, DXVA2_Structs_c3a4d002-09dc-4653-a965-9c4f587529d4.xml, DXVADDI_VIDEOSAMPLE, _DXVADDI_VIDEOSAMPLE
+ms.keywords : d3dumddi/DXVADDI_VIDEOSAMPLE, DXVADDI_VIDEOSAMPLE, DXVA2_Structs_c3a4d002-09dc-4653-a965-9c4f587529d4.xml, DXVADDI_VIDEOSAMPLE structure [Display Devices], display.dxvaddi_videosample, _DXVADDI_VIDEOSAMPLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -111,15 +111,15 @@ typedef struct _DXVADDI_VIDEOSAMPLE {
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_ayuvsample8.md">DXVADDI_AYUVSAMPLE8</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a>
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_videoprocessblt.md">D3DDDIARG_VIDEOPROCESSBLT</a>
 
 <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_fixed32.md">DXVADDI_FIXED32</a>
-
-<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_ayuvsample8.md">DXVADDI_AYUVSAMPLE8</a>
 
  
 

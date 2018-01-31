@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 69a18c4a-9e28-47fb-9d2e-206d660eea6c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlHashUnicodeString routine [Kernel-Mode Driver Architecture], kernel.rtlhashunicodestring, wdm/RtlHashUnicodeString, RtlHashUnicodeString, k109_090277b1-32f6-4c3d-b1fc-bacec35efc1d.xml
+ms.keywords : wdm/RtlHashUnicodeString, kernel.rtlhashunicodestring, RtlHashUnicodeString, RtlHashUnicodeString routine [Kernel-Mode Driver Architecture], k109_090277b1-32f6-4c3d-b1fc-bacec35efc1d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -87,7 +87,7 @@ A pointer to a ULONG variable that receives the hash value.
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

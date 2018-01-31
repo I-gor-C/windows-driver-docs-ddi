@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : c7e12c2a-3382-478b-a306-7c86c93d45d0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ril_setslotpower, RIL_SetSlotPower method [Network Drivers Starting with Windows Vista], rilapi/RIL_SetSlotPower, RIL_SetSlotPower
+ms.keywords : rilapi/RIL_SetSlotPower, netvista.ril_setslotpower, RIL_SetSlotPower, RIL_SetSlotPower method [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
+req.typenames : "*PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER"
 req.product : Windows 10 or later.
 ---
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 25e3e430-abce-4d14-a336-4cb32a4fe5df
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PKSPROPERTY_BOUNDS_LONGLONG union pointer [Streaming Media Devices], *PKSPROPERTY_BOUNDS_LONGLONG, stream.ksproperty_bounds_longlong, PKSPROPERTY_BOUNDS_LONGLONG, KSPROPERTY_BOUNDS_LONGLONG, ks/KSPROPERTY_BOUNDS_LONGLONG, ks-struct_553b35b1-55c4-404d-af6b-a9fb2bbfb6b9.xml, ks/PKSPROPERTY_BOUNDS_LONGLONG, KSPROPERTY_BOUNDS_LONGLONG union [Streaming Media Devices]
+ms.keywords : KSPROPERTY_BOUNDS_LONGLONG, PKSPROPERTY_BOUNDS_LONGLONG union pointer [Streaming Media Devices], KSPROPERTY_BOUNDS_LONGLONG union [Streaming Media Devices], *PKSPROPERTY_BOUNDS_LONGLONG, ks/PKSPROPERTY_BOUNDS_LONGLONG, stream.ksproperty_bounds_longlong, ks-struct_553b35b1-55c4-404d-af6b-a9fb2bbfb6b9.xml, PKSPROPERTY_BOUNDS_LONGLONG, ks/KSPROPERTY_BOUNDS_LONGLONG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSPROPERTY_BOUNDS_LONGLONG, *PKSPROPERTY_BOUNDS_LONGLONG
+req.typenames : "*PKSPROPERTY_BOUNDS_LONGLONG, KSPROPERTY_BOUNDS_LONGLONG"
 ---
 
 # KSPROPERTY_BOUNDS_LONGLONG structure
@@ -83,11 +83,11 @@ Also see related information in <a href="https://msdn.microsoft.com/a385929e-193
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksproperty_values.md">KSPROPERTY_VALUES</a>
+<a href="..\ks\ns-ks-ksproperty_memberslist.md">KSPROPERTY_MEMBERSLIST</a>
 
 <a href="..\ks\ns-ks-ksproperty_membersheader.md">KSPROPERTY_MEMBERSHEADER</a>
 
-<a href="..\ks\ns-ks-ksproperty_memberslist.md">KSPROPERTY_MEMBERSLIST</a>
+<a href="..\ks\ns-ks-ksproperty_values.md">KSPROPERTY_VALUES</a>
 
  
 

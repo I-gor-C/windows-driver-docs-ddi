@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._D3DDDIARG_CREATEVIDEOPROCESSDEVICE
-title : _D3DDDIARG_CREATEVIDEOPROCESSDEVICE
+title : "_D3DDDIARG_CREATEVIDEOPROCESSDEVICE"
 author : windows-driver-content
 description : The D3DDDIARG_CREATEVIDEOPROCESSDEVICE structure describes a Microsoft DirectX Video Acceleration (DirectX VA) video processing device to create.
 old-location : display\d3dddiarg_createvideoprocessdevice.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b875755c-9559-41ee-8a9b-1de05a2f1dab
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDIARG_CREATEVIDEOPROCESSDEVICE, UMDisplayDriver_param_Structs_b8b0d8fa-b750-440d-afa4-556ffb33074a.xml, _D3DDDIARG_CREATEVIDEOPROCESSDEVICE, D3DDDIARG_CREATEVIDEOPROCESSDEVICE structure [Display Devices], display.d3dddiarg_createvideoprocessdevice, D3DDDIARG_CREATEVIDEOPROCESSDEVICE
+ms.keywords : display.d3dddiarg_createvideoprocessdevice, _D3DDDIARG_CREATEVIDEOPROCESSDEVICE, D3DDDIARG_CREATEVIDEOPROCESSDEVICE structure [Display Devices], d3dumddi/D3DDDIARG_CREATEVIDEOPROCESSDEVICE, UMDisplayDriver_param_Structs_b8b0d8fa-b750-440d-afa4-556ffb33074a.xml, D3DDDIARG_CREATEVIDEOPROCESSDEVICE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

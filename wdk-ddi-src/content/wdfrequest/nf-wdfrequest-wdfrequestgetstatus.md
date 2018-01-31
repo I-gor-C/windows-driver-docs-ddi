@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 82f922a1-34c1-475b-b12a-210ae602a4bd
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfrequestgetstatus, kmdf.wdfrequestgetstatus, wdfrequest/WdfRequestGetStatus, PFN_WDFREQUESTGETSTATUS, WdfRequestGetStatus, DFRequestObjectRef_60149f5d-5523-4b88-9bba-464be280b2b7.xml, WdfRequestGetStatus method
+ms.keywords : wdf.wdfrequestgetstatus, DFRequestObjectRef_60149f5d-5523-4b88-9bba-464be280b2b7.xml, WdfRequestGetStatus, kmdf.wdfrequestgetstatus, PFN_WDFREQUESTGETSTATUS, WdfRequestGetStatus method, wdfrequest/WdfRequestGetStatus
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,7 +91,7 @@ For more information about request completion, see <a href="https://docs.microso
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, RequestGetStatusValid |
 
 ## See Also

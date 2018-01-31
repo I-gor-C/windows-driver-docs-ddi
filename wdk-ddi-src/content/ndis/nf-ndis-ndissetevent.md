@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 3f45b8d0-2d5b-4601-a307-48257cdcb4ba
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis_event_ref_3abf6ebc-6dcf-4b3e-8e39-2902b9b00adf.xml, NdisSetEvent function [Network Drivers Starting with Windows Vista], netvista.ndissetevent, ndis/NdisSetEvent, NdisSetEvent
+ms.keywords : NdisSetEvent, netvista.ndissetevent, ndis_event_ref_3abf6ebc-6dcf-4b3e-8e39-2902b9b00adf.xml, NdisSetEvent function [Network Drivers Starting with Windows Vista], ndis/NdisSetEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -82,16 +82,16 @@ After a call to
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Synch_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisinitializeevent.md">NdisInitializeEvent</a>
+<a href="..\ndis\nf-ndis-ndisresetevent.md">NdisResetEvent</a>
 
 <a href="..\ndis\nf-ndis-ndiswaitevent.md">NdisWaitEvent</a>
 
-<a href="..\ndis\nf-ndis-ndisresetevent.md">NdisResetEvent</a>
+<a href="..\ndis\nf-ndis-ndisinitializeevent.md">NdisInitializeEvent</a>
 
  
 

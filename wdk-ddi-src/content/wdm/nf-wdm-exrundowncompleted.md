@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : CF1650C2-4141-4AD7-A3FC-A800B2281A8A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.exrundowncompleted, ExRundownCompleted, wdm/ExRundownCompleted, ExRundownCompleted routine [Kernel-Mode Driver Architecture]
+ms.keywords : ExRundownCompleted routine [Kernel-Mode Driver Architecture], wdm/ExRundownCompleted, ExRundownCompleted, kernel.exrundowncompleted
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,7 +83,7 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c405771c-726f-4003-b3c6-f063dd74187e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : psref_690f1550-4753-4f39-bcf2-bdcf7b80112d.xml, ntifs/PsChargePoolQuota, PsChargePoolQuota routine [Installable File System Drivers], ifsk.pschargepoolquota, PsChargePoolQuota
+ms.keywords : PsChargePoolQuota routine [Installable File System Drivers], ifsk.pschargepoolquota, ntifs/PsChargePoolQuota, PsChargePoolQuota, psref_690f1550-4753-4f39-bcf2-bdcf7b80112d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -96,7 +96,7 @@ For more information about memory management, see <a href="https://msdn.microsof
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** |  |
-| **IRQL** | < DISPATCH_LEVEL |
+| **IRQL** | "< DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

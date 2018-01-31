@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 42979da6-d044-4d52-858f-98871c3941bc
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : ConnectProcessServerWide method [Windows Debugging], IDebugClient5 interface, ConnectProcessServerWide method [Windows Debugging], dbgeng/IDebugClient5::ConnectProcessServerWide, ConnectProcessServerWide, IDebugClient5::ConnectProcessServerWide, IDebugClient5 interface [Windows Debugging], ConnectProcessServerWide method, IDebugClient5, debugger.connectprocessserverwide
+ms.keywords : debugger.connectprocessserverwide, IDebugClient5::ConnectProcessServerWide, ConnectProcessServerWide method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient5::ConnectProcessServerWide, ConnectProcessServerWide method [Windows Debugging], IDebugClient5 interface [Windows Debugging], ConnectProcessServerWide method, ConnectProcessServerWide, IDebugClient5
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -101,25 +101,25 @@ For more information about process servers and remote debugging, see <a href="ht
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558810">StartProcessServer</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548243">GetRunningProcessDescription</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538150">AttachProcess</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541969">DisconnectProcessServer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558810">StartProcessServer</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542993">EndProcessServer</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548254">GetRunningProcessSystemIdByExecutableName</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548243">GetRunningProcessDescription</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540055">CreateProcessAndAttach2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541969">DisconnectProcessServer</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538150">AttachProcess</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548265">GetRunningProcessSystemIds</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539323">CreateProcess2</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548254">GetRunningProcessSystemIdByExecutableName</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540055">CreateProcessAndAttach2</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : bc03feaf-ee98-4b47-a659-809b5b8b9364
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlConvertLongToLuid routine [Kernel-Mode Driver Architecture], RtlConvertLongToLuid, ntddk/RtlConvertLongToLuid, k109_be3bfbe0-7a0b-43e3-a22e-2cd6e5a92f2e.xml, kernel.rtlconvertlongtoluid
+ms.keywords : RtlConvertLongToLuid routine [Kernel-Mode Driver Architecture], ntddk/RtlConvertLongToLuid, kernel.rtlconvertlongtoluid, RtlConvertLongToLuid, k109_be3bfbe0-7a0b-43e3-a22e-2cd6e5a92f2e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -79,13 +79,13 @@ Specifies the long integer to convert.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561842">RtlEqualLuid</a>
-
 <a href="..\ntddk\nf-ntddk-rtlconvertulongtoluid.md">RtlConvertULongToLuid</a>
+
+<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
 
 <a href="..\ntddk\nf-ntddk-sesingleprivilegecheck.md">SeSinglePrivilegeCheck</a>
 
-<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561842">RtlEqualLuid</a>
 
  
 

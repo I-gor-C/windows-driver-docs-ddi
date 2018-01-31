@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 76ab776d-0921-4fdb-9646-2cb97a582f6e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSAUTOMATION_TABLE structure [Streaming Media Devices], PKSAUTOMATION_TABLE, ks/KSAUTOMATION_TABLE, PKSAUTOMATION_TABLE structure pointer [Streaming Media Devices], KSAUTOMATION_TABLE_, ks/PKSAUTOMATION_TABLE, KSAUTOMATION_TABLE, stream.ksautomation_table, *PKSAUTOMATION_TABLE, avstruct_7389df5c-d86a-43b2-9daf-d0e1e8a2dfbe.xml
+ms.keywords : KSAUTOMATION_TABLE structure [Streaming Media Devices], ks/PKSAUTOMATION_TABLE, PKSAUTOMATION_TABLE, avstruct_7389df5c-d86a-43b2-9daf-d0e1e8a2dfbe.xml, KSAUTOMATION_TABLE, stream.ksautomation_table, *PKSAUTOMATION_TABLE, ks/KSAUTOMATION_TABLE, KSAUTOMATION_TABLE_, PKSAUTOMATION_TABLE structure pointer [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSAUTOMATION_TABLE, KSAUTOMATION_TABLE"
+req.typenames : KSAUTOMATION_TABLE, *PKSAUTOMATION_TABLE
 ---
 
 # KSAUTOMATION_TABLE_ structure
@@ -104,17 +104,17 @@ DEFINE_KSAUTOMATION_EVENTS (MyEventTable)</pre>
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksmethod_item.md">KSMETHOD_ITEM</a>
+<a href="..\ks\ns-ks-ksmethod_set.md">KSMETHOD_SET</a>
 
-<a href="..\ks\ns-ks-ksproperty_item.md">KSPROPERTY_ITEM</a>
+<a href="..\ks\ns-ks-ksevent_item.md">KSEVENT_ITEM</a>
+
+<a href="..\ks\ns-ks-ksmethod_item.md">KSMETHOD_ITEM</a>
 
 <a href="..\ks\ns-ks-ksevent_set.md">KSEVENT_SET</a>
 
 <a href="..\ks\ns-ks-ksproperty_set.md">KSPROPERTY_SET</a>
 
-<a href="..\ks\ns-ks-ksmethod_set.md">KSMETHOD_SET</a>
-
-<a href="..\ks\ns-ks-ksevent_item.md">KSEVENT_ITEM</a>
+<a href="..\ks\ns-ks-ksproperty_item.md">KSPROPERTY_ITEM</a>
 
  
 

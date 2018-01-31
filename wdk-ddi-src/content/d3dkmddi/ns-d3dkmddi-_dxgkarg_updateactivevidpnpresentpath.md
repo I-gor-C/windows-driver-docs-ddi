@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmddi._DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH
-title : _DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH
+title : "_DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH"
 author : windows-driver-content
 description : The DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH structure contains a D3DKMDT_VIDPN_PRESENT_PATH structure, which contains arguments for the DxgkDdiUpdateActiveVidPnPresentPath function.
 old-location : display\dxgkarg_updateactivevidpnpresentpath.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6a4d43fd-f118-4424-93e8-57f72b56f929
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH, display.dxgkarg_updateactivevidpnpresentpath, DmStructs_b8d80ff5-189d-4bd2-8b3f-f5ebeadee78f.xml, _DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH, d3dkmddi/DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH, DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH structure [Display Devices]
+ms.keywords : DmStructs_b8d80ff5-189d-4bd2-8b3f-f5ebeadee78f.xml, d3dkmddi/DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH, _DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH, DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH, DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH structure [Display Devices], display.dxgkarg_updateactivevidpnpresentpath
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

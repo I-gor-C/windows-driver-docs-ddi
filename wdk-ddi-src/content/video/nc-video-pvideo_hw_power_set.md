@@ -99,9 +99,9 @@ The driver should check the ID specified in <i>HwId</i> to determine the device 
 
 <a href="..\ntddvdeo\ns-ntddvdeo-_video_power_management.md">VIDEO_POWER_MANAGEMENT</a>
 
-<a href="..\video\nc-video-pvideo_hw_power_get.md">HwVidGetPowerState</a>
-
 <a href="..\video\nc-video-pvideo_hw_get_child_descriptor.md">HwVidGetVideoChildDescriptor</a>
+
+<a href="..\video\nc-video-pvideo_hw_power_get.md">HwVidGetPowerState</a>
 
  
 

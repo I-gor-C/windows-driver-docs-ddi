@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 59e2cd27-ec10-46e9-aa0d-4a00e2684e76
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : GetIoctlParameters method, IWDFIoRequestCompletionParams interface, GetIoctlParameters, wudfddi/IWDFIoRequestCompletionParams::GetIoctlParameters, IWDFIoRequestCompletionParams interface, GetIoctlParameters method, IWDFIoRequestCompletionParams::GetIoctlParameters, wdf.iwdfiorequestcompletionparams_getioctlparameters, UMDFRequestObjectRef_7d375866-617c-418f-b449-7931a88e7ae4.xml, umdf.iwdfiorequestcompletionparams_getioctlparameters, IWDFIoRequestCompletionParams, GetIoctlParameters method
+ms.keywords : wdf.iwdfiorequestcompletionparams_getioctlparameters, IWDFIoRequestCompletionParams, umdf.iwdfiorequestcompletionparams_getioctlparameters, wudfddi/IWDFIoRequestCompletionParams::GetIoctlParameters, GetIoctlParameters method, IWDFIoRequestCompletionParams interface, GetIoctlParameters, GetIoctlParameters method, UMDFRequestObjectRef_7d375866-617c-418f-b449-7931a88e7ae4.xml, IWDFIoRequestCompletionParams interface, GetIoctlParameters method, IWDFIoRequestCompletionParams::GetIoctlParameters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -116,9 +116,9 @@ None
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequestcompletionparams.md">IWDFIoRequestCompletionParams</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequestcompletionparams.md">IWDFIoRequestCompletionParams</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2e17e480-325a-4a7c-84b8-07775ddd52bc
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilcallmodificationinfo_2, *LPRILCALLMODIFICATIONINFO, RILCALLMODIFICATIONINFO, rilapitypes/RILCALLMODIFICATIONINFO, RILCALLMODIFICATIONINFO structure [Network Drivers Starting with Windows Vista]
+ms.keywords : RILCALLMODIFICATIONINFO, *LPRILCALLMODIFICATIONINFO, rilapitypes/RILCALLMODIFICATIONINFO, RILCALLMODIFICATIONINFO structure [Network Drivers Starting with Windows Vista], netvista.rilcallmodificationinfo_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

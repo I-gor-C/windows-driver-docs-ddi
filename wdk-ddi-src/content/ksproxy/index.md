@@ -58,17 +58,17 @@ ksproxy.h contains the following programming interfaces:
 | [_KSSTREAM_SEGMENT](ns-ksproxy-_ksstream_segment.md) | The KSSTREAM_SEGMENT structure contains information that describes an I/O operation occurring on a stream. |
 | [_PIPE_DIMENSIONS](ns-ksproxy-_pipe_dimensions.md) | The PIPE_DIMENSIONS structure is for proxy use and not recommended for application use. PIPE_DIMENSIONS contains information that describes the compression/expansion ratio of frames on various pins related to a pipe. |
 | [_PIPE_TERMINATION](ns-ksproxy-_pipe_termination.md) | The PIPE_TERMINATION structure is for proxy use and not recommended for application use. PIPE_TERMINATION contains information that describes the pin terminator of a pipe. |
-| [OPTIMAL_WEIGHT_TOTALS](ns-ksproxy-optimal_weight_totals.md) | . |
+| [OPTIMAL_WEIGHT_TOTALS](ns-ksproxy-optimal_weight_totals.md) | "." |
 
 
 ## Enumerations
 | Title | Description |
 | ---- |:---- |
-| [FRAMING_CACHE_OPS](ne-ksproxy-framing_cache_ops.md) | . |
-| [FRAMING_PROP](ne-ksproxy-framing_prop.md) | . |
-| [KS_LogicalMemoryType](ne-ksproxy-ks_logicalmemorytype.md) | . |
-| [KSALLOCATORMODE](ne-ksproxy-ksallocatormode.md) | . |
-| [KSIOOPERATION](ne-ksproxy-ksiooperation.md) | . |
-| [KSPEEKOPERATION](ne-ksproxy-kspeekoperation.md) | . |
-| [PIPE_ALLOCATOR_PLACE](ne-ksproxy-pipe_allocator_place.md) | . |
-| [PIPE_STATE](ne-ksproxy-pipe_state.md) | . |
+| [FRAMING_CACHE_OPS](ne-ksproxy-framing_cache_ops.md) | "." |
+| [FRAMING_PROP](ne-ksproxy-framing_prop.md) | "." |
+| [KS_LogicalMemoryType](ne-ksproxy-ks_logicalmemorytype.md) | "." |
+| [KSALLOCATORMODE](ne-ksproxy-ksallocatormode.md) | "." |
+| [KSIOOPERATION](ne-ksproxy-ksiooperation.md) | "." |
+| [KSPEEKOPERATION](ne-ksproxy-kspeekoperation.md) | "." |
+| [PIPE_ALLOCATOR_PLACE](ne-ksproxy-pipe_allocator_place.md) | "." |
+| [PIPE_STATE](ne-ksproxy-pipe_state.md) | "." |

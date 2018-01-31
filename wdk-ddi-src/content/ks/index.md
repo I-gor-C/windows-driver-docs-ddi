@@ -71,7 +71,7 @@ ks.h contains the following programming interfaces:
 | [PFNKSINTERSECTHANDLEREX](nc-ks-pfnksintersecthandlerex.md) | AVStream calls a minidriver's AVStrMiniIntersectHandlerEx routine to determine the highest quality intersection of two data ranges. |
 | [PFNKSIRPLISTCALLBACK](nc-ks-pfnksirplistcallback.md) | A streaming minidriver's KStrIrpListCallback routine is called to determine whether the passed in IRP should be moved from the source list to the destination list, or if IRP enumeration should be terminated. |
 | [PFNKSITEMFREECALLBACK](nc-ks-pfnksitemfreecallback.md) | A streaming minidriver's KStrItemFreeCallback routine is called to free a previously allocated create item. KStrItemFreeCallback allows the minidriver to perform any cleanup, including flushing security descriptor changes, if necessary. |
-| [PFNKSPIN](nc-ks-pfnkspin.md) | An AVStream minidriver's callback routine is called when: There is data available for a KSPIN structure to process. Use this routine to perform Pin-Centric Processing.The relevant KSPIN is serving as a sink pin and is connected to an AVStream source pin. |
+| [PFNKSPIN](nc-ks-pfnkspin.md) | An AVStream minidriver's callback routine is called when:\_There is data available for a KSPIN structure to process. Use this routine to perform Pin-Centric Processing.The relevant KSPIN is serving as a sink pin and is connected to an AVStream source pin. |
 | [PFNKSPINFRAMERETURN](nc-ks-pfnkspinframereturn.md) | An AVStream minidriver's AVStrMiniFrameReturn routine is called when an injected frame has completed its trip around the circuit and is ready to be recycled or freed. |
 | [PFNKSPINHANDSHAKE](nc-ks-pfnkspinhandshake.md) | An AVStream minidriver's AVStrMiniPinHandshake routine is called when AVStream receives a protocol handshake request that it does not handle. |
 | [PFNKSPININITIALIZEALLOCATOR](nc-ks-pfnkspininitializeallocator.md) | An AVStream minidriver's AVStrMiniInitializeAllocator routine initializes an allocator that will be associated with a pin. |
@@ -295,7 +295,7 @@ ks.h contains the following programming interfaces:
 | [KsReadFile](nf-ks-ksreadfile.md) | The KsReadFile function performs a read against the specified file object. |
 | [KsRecalculateStackDepth](nf-ks-ksrecalculatestackdepth.md) | The KsRecalculateStackDepth function recalculates the maximum stack depth required by the underlying device object based on all of the objects that have set a target device (they have added themselves to the object list on the underlying device object using the KsSetTargetDeviceObject function). If the PnP device object has been set on the underlying device header using KsSetDevicePnpAndBaseObject, that device is also taken into account when calculating the maximum stack depth. |
 | [KsReferenceBusObject](nf-ks-ksreferencebusobject.md) | References the bus Physical device object. |
-| [KsRegisterAggregatedClientUnknown](nf-ks-ksregisteraggregatedclientunknown.md) | In a manner very similar to COM, the KsRegisterAggregatedClientUnknown function aggregates two objects: the specified AVStream object and a client unknown object. |
+| [KsRegisterAggregatedClientUnknown](nf-ks-ksregisteraggregatedclientunknown.md) | In a manner very similar to COM, the KsRegisterAggregatedClientUnknown function aggregates two objects:\_the specified AVStream object and a client unknown object. |
 | [KsRegisterCountedWorker](nf-ks-ksregistercountedworker.md) | Handles clients registering for use of a thread. |
 | [KsRegisterFilterWithNoKSPins](nf-ks-ksregisterfilterwithnokspins.md) | The KsRegisterFilterWithNoKSPins function registers with DirectShow filters that have no kernel streaming pins and, therefore, do not stream in kernel mode. |
 | [KsRegisterWorker](nf-ks-ksregisterworker.md) | The KsRegisterWorker function handles clients registering for use of a thread. |
@@ -365,11 +365,11 @@ ks.h contains the following programming interfaces:
 | [_KSPIN_DISPATCH](ns-ks-_kspin_dispatch.md) | The KSPIN_DISPATCH structure describes the callbacks for which clients can register in order to receive notification of pin events. |
 | [_KSPROCESSPIN](ns-ks-_ksprocesspin.md) | The KSPROCESSPIN structure describes the process state of a specific pin. |
 | [_KSPROCESSPIN_INDEXENTRY](ns-ks-_ksprocesspin_indexentry.md) | The KSPROCESSPIN_INDEXENTRY structure is used in Filter-Centric Processing to bring together all of the input and output pins in one context. |
-| [_KSPROPERTY_GRAPHMANAGER_INTERFACE](ns-ks-_ksproperty_graphmanager_interface.md) | . |
+| [_KSPROPERTY_GRAPHMANAGER_INTERFACE](ns-ks-_ksproperty_graphmanager_interface.md) | "." |
 | [_KSSTREAM_POINTER](ns-ks-_ksstream_pointer.md) | The KSSTREAM_POINTER structure is the basic AVStream pointer into a stream. |
 | [_KSSTREAM_POINTER_OFFSET](ns-ks-_ksstream_pointer_offset.md) | The KSSTREAM_POINTER_OFFSET structure indexes bytes or mappings within a frame. |
 | [_MF_MDL_SHARED_PAYLOAD_KEY](ns-ks-_mf_mdl_shared_payload_key.md) | This union is used internally by the operating system. |
-| [BUS_INTERFACE_MEDIUMS](ns-ks-bus_interface_mediums.md) | . |
+| [BUS_INTERFACE_MEDIUMS](ns-ks-bus_interface_mediums.md) | "." |
 | [BUS_INTERFACE_REFERENCE](ns-ks-bus_interface_reference.md) | A software device enumerator exports this interface to allow drivers to reference count physical device objects (PDOs) such that the device remains active while in use and is unloaded when not in use. |
 | [KS_COMPRESSION](ns-ks-ks_compression.md) | The KS_COMPRESSION structure defines the compression of frames on an output pin. |
 | [KS_FRAMING_ITEM](ns-ks-ks_framing_item.md) | The KS_FRAMING_ITEM structure is used to declare allocator requirements on a kernel-mode pin. |
@@ -389,7 +389,7 @@ ks.h contains the following programming interfaces:
 | [KSDISPATCH_TABLE](ns-ks-ksdispatch_table.md) | The KSDISPATCH_TABLE structure contains pointers to minidriver implemented IRP dispatch routines. |
 | [KSDPC_ITEM](ns-ks-ksdpc_item.md) | The KSDPC_ITEM structure is used to store information related to any internal DPCs that might be used to generate event notification from a raised IRQL. |
 | [KSE_NODE](ns-ks-kse_node.md) | The KSE_NODE structure specifies an event request on a specific node. |
-| [KSE_PIN](ns-ks-kse_pin.md) | . |
+| [KSE_PIN](ns-ks-kse_pin.md) | "." |
 | [KSERROR](ns-ks-kserror.md) | The KSERROR structure is used to report streaming errors in both kernel and user mode to their respective quality managers. |
 | [KSEVENT_ITEM](ns-ks-ksevent_item.md) | The KSEVENT_ITEM structure describe a minidriver's support for a specific event within an event set. |
 | [KSEVENT_SET](ns-ks-ksevent_set.md) | The KSEVENT_SET structure describes the events that comprise a kernel streaming event set. |
@@ -399,7 +399,7 @@ ks.h contains the following programming interfaces:
 | [KSFASTMETHOD_ITEM](ns-ks-ksfastmethod_item.md) | Drivers provide a structure of type KSFASTMETHOD_ITEM to support fast I/O dispatching. |
 | [KSFASTPROPERTY_ITEM](ns-ks-ksfastproperty_item.md) | The KSFASTPROPERTY_ITEM structure is used with items for fast I/O dispatching. |
 | [KSFRAMETIME](ns-ks-ksframetime.md) | The KSFRAMETIME structure is supported by rendering pins, and is used to return the duration of the next &#0034;frame&#0034; of data, and flags associated with that frame. |
-| [KSGRAPHMANAGER_FUNCTIONTABLE](ns-ks-ksgraphmanager_functiontable.md) | . |
+| [KSGRAPHMANAGER_FUNCTIONTABLE](ns-ks-ksgraphmanager_functiontable.md) | "." |
 | [KSHANDSHAKE](ns-ks-kshandshake.md) | The KSHANDSHAKE structure is used to pass information back and forth while pins are handshaking in an attempt to negotiate a private interface. |
 | [KSIDENTIFIER](ns-ks-ksidentifier.md) | The KSIDENTIFIER structure specifies a GUID that uniquely identifies a related set of GUIDs, and an index value to refer to a specific member within that set. |
 | [KSINTERVAL](ns-ks-ksinterval.md) | The KSINTERVAL structure specifies a base time and time interval for recurring events. |
@@ -413,7 +413,7 @@ ks.h contains the following programming interfaces:
 | [KSP_NODE](ns-ks-ksp_node.md) | Kernel streaming clients use the KSP_NODE structure to specify the property and node type within a KSPROPERTY_TOPOLOGY_NAME property request. |
 | [KSP_PIN](ns-ks-ksp_pin.md) | Kernel streaming clients use the KSP_PIN structure to specify the property and pin type within a KSPROPSETID_Pin property request. |
 | [KSP_TIMEFORMAT](ns-ks-ksp_timeformat.md) | The KSP_TIMEFORMAT structure corresponds to KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT. |
-| [KSPIN_CINSTANCES](ns-ks-kspin_cinstances.md) | . |
+| [KSPIN_CINSTANCES](ns-ks-kspin_cinstances.md) | "." |
 | [KSPIN_CONNECT](ns-ks-kspin_connect.md) | Clients use the KSPIN_CONNECT structure to describe the connection they request from a driver in a KsCreatePin call. |
 | [KSPIN_DESCRIPTOR](ns-ks-kspin_descriptor.md) | The KSPIN_DESCRIPTOR structure describes the basic KSPROPSETID_Pin properties of a pin type. |
 | [KSPIN_MDL_CACHING_NOTIFICATION](ns-ks-kspin_mdl_caching_notification.md) | This structure is used internally by the operating system. |
@@ -456,43 +456,43 @@ ks.h contains the following programming interfaces:
 ## Enumerations
 | Title | Description |
 | ---- |:---- |
-| [KS_SEEKING_CAPABILITIES](ne-ks-ks_seeking_capabilities.md) | . |
+| [KS_SEEKING_CAPABILITIES](ne-ks-ks_seeking_capabilities.md) | "." |
 | [KS_SEEKING_FLAGS](ne-ks-ks_seeking_flags.md) | The KS_SEEKING_FLAGS enumeration lists positioning options that can be used in conjunction with the KSPROPERTY_POSITIONS structure. |
-| [KSCOMPLETION_INVOCATION](ne-ks-kscompletion_invocation.md) | . |
+| [KSCOMPLETION_INVOCATION](ne-ks-kscompletion_invocation.md) | "." |
 | [KSDEGRADE_STANDARD](ne-ks-ksdegrade_standard.md) | The KSDEGRADE_STANDARD enumeration lists different types of degradation. |
 | [KSDEVICE_THERMAL_STATE](ne-ks-ksdevice_thermal_state.md) | A KS-defined enumeration for thermal state changes. |
-| [KSEVENT_CLOCK_POSITION](ne-ks-ksevent_clock_position.md) | . |
-| [KSEVENT_CONNECTION](ne-ks-ksevent_connection.md) | . |
+| [KSEVENT_CLOCK_POSITION](ne-ks-ksevent_clock_position.md) | "." |
+| [KSEVENT_CONNECTION](ne-ks-ksevent_connection.md) | "." |
 | [KSEVENT_DEVICE](ne-ks-ksevent_device.md) | Specifies event notifications that the driver generates to indicate that a device has been lost or preempted. |
-| [KSEVENT_PINCAPS_CHANGENOTIFICATIONS](ne-ks-ksevent_pincaps_changenotifications.md) | . |
-| [KSEVENT_STREAMALLOCATOR](ne-ks-ksevent_streamallocator.md) | . |
-| [KSEVENT_VOLUMELIMIT](ne-ks-ksevent_volumelimit.md) | . |
+| [KSEVENT_PINCAPS_CHANGENOTIFICATIONS](ne-ks-ksevent_pincaps_changenotifications.md) | "." |
+| [KSEVENT_STREAMALLOCATOR](ne-ks-ksevent_streamallocator.md) | "." |
+| [KSEVENT_VOLUMELIMIT](ne-ks-ksevent_volumelimit.md) | "." |
 | [KSEVENTS_LOCKTYPE](ne-ks-ksevents_locktype.md) | The KSEVENTS_LOCKTYPE enumeration identifies the type of exclusion lock. The types are used with EventFlags in several event-set helper functions. |
-| [KSINTERFACE_FILEIO](ne-ks-ksinterface_fileio.md) | . |
-| [KSINTERFACE_STANDARD](ne-ks-ksinterface_standard.md) | . |
-| [KSIRP_REMOVAL_OPERATION](ne-ks-ksirp_removal_operation.md) | . |
-| [KSLIST_ENTRY_LOCATION](ne-ks-kslist_entry_location.md) | . |
-| [KSMETHOD_STREAMALLOCATOR](ne-ks-ksmethod_streamallocator.md) | . |
-| [KSMETHOD_STREAMIO](ne-ks-ksmethod_streamio.md) | . |
+| [KSINTERFACE_FILEIO](ne-ks-ksinterface_fileio.md) | "." |
+| [KSINTERFACE_STANDARD](ne-ks-ksinterface_standard.md) | "." |
+| [KSIRP_REMOVAL_OPERATION](ne-ks-ksirp_removal_operation.md) | "." |
+| [KSLIST_ENTRY_LOCATION](ne-ks-kslist_entry_location.md) | "." |
+| [KSMETHOD_STREAMALLOCATOR](ne-ks-ksmethod_streamallocator.md) | "." |
+| [KSMETHOD_STREAMIO](ne-ks-ksmethod_streamio.md) | "." |
 | [KSOBJECTTYPE](ne-ks-ksobjecttype.md) | The KSOBJECTTYPE enumeration lists different types of kernel streaming objects. |
 | [KSPIN_MDL_CACHING_EVENT](ne-ks-kspin_mdl_caching_event.md) | This enumeration is used internally by the operating system. |
 | [KSPPROPERTY_ALLOCATOR_MDLCACHING](ne-ks-kspproperty_allocator_mdlcaching.md) | This enumeration is used internally by the operating system. |
-| [KSPROPERTY_CLOCK](ne-ks-ksproperty_clock.md) | . |
-| [KSPROPERTY_CONNECTION](ne-ks-ksproperty_connection.md) | . |
-| [KSPROPERTY_GENERAL](ne-ks-ksproperty_general.md) | . |
-| [KSPROPERTY_GM](ne-ks-ksproperty_gm.md) | . |
-| [KSPROPERTY_MEDIASEEKING](ne-ks-ksproperty_mediaseeking.md) | . |
-| [KSPROPERTY_PIN](ne-ks-ksproperty_pin.md) | . |
-| [KSPROPERTY_QUALITY](ne-ks-ksproperty_quality.md) | . |
-| [KSPROPERTY_STREAM](ne-ks-ksproperty_stream.md) | . |
-| [KSPROPERTY_STREAMALLOCATOR](ne-ks-ksproperty_streamallocator.md) | . |
-| [KSPROPERTY_STREAMINTERFACE](ne-ks-ksproperty_streaminterface.md) | . |
-| [KSPROPERTY_TOPOLOGY](ne-ks-ksproperty_topology.md) | . |
-| [KSRESET](ne-ks-ksreset.md) | . |
-| [KSSTACK_USE](ne-ks-ksstack_use.md) | . |
-| [KSSTREAM_POINTER_STATE](ne-ks-ksstream_pointer_state.md) | . |
-| [KSTARGET_STATE](ne-ks-kstarget_state.md) | . |
-| [*PKSPIN_COMMUNICATION](ne-ks-pkspin_communication.md) | . |
+| [KSPROPERTY_CLOCK](ne-ks-ksproperty_clock.md) | "." |
+| [KSPROPERTY_CONNECTION](ne-ks-ksproperty_connection.md) | "." |
+| [KSPROPERTY_GENERAL](ne-ks-ksproperty_general.md) | "." |
+| [KSPROPERTY_GM](ne-ks-ksproperty_gm.md) | "." |
+| [KSPROPERTY_MEDIASEEKING](ne-ks-ksproperty_mediaseeking.md) | "." |
+| [KSPROPERTY_PIN](ne-ks-ksproperty_pin.md) | "." |
+| [KSPROPERTY_QUALITY](ne-ks-ksproperty_quality.md) | "." |
+| [KSPROPERTY_STREAM](ne-ks-ksproperty_stream.md) | "." |
+| [KSPROPERTY_STREAMALLOCATOR](ne-ks-ksproperty_streamallocator.md) | "." |
+| [KSPROPERTY_STREAMINTERFACE](ne-ks-ksproperty_streaminterface.md) | "." |
+| [KSPROPERTY_TOPOLOGY](ne-ks-ksproperty_topology.md) | "." |
+| [KSRESET](ne-ks-ksreset.md) | "." |
+| [KSSTACK_USE](ne-ks-ksstack_use.md) | "." |
+| [KSSTREAM_POINTER_STATE](ne-ks-ksstream_pointer_state.md) | "." |
+| [KSTARGET_STATE](ne-ks-kstarget_state.md) | "." |
+| [*PKSPIN_COMMUNICATION](ne-ks-pkspin_communication.md) | "." |
 | [*PKSPIN_DATAFLOW](ne-ks-pkspin_dataflow.md) | An instance of the KSPIN_DATAFLOW enumeration is returned by KSPROPERTY_PIN_DATAFLOW. |
 | [*PKSSTATE](ne-ks-pksstate.md) | The KSSTATE enumeration lists possible states of a kernel streaming object. |
-| [VARENUM](ne-ks-varenum.md) | . |
+| [VARENUM](ne-ks-varenum.md) | "." |

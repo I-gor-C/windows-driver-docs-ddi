@@ -1,6 +1,6 @@
 ---
 UID : NS:prntfont._WIDTHRUN
-title : _WIDTHRUN
+title : "_WIDTHRUN"
 author : windows-driver-content
 description : The WIDTHRUN structure is used to define the contents of Unidrv font metrics files (.ufm files).
 old-location : print\widthrun.htm
@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 18cc608e-b94d-4588-98e9-c22a7949a3b6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PWIDTHRUN, WIDTHRUN structure [Print Devices], WIDTHRUN, print.widthrun, prntfont/PWIDTHRUN, PWIDTHRUN, print_unidrv-pscript_fonts_68b08066-7503-4496-bfab-001aba659926.xml, prntfont/WIDTHRUN, PWIDTHRUN structure pointer [Print Devices], _WIDTHRUN"
+ms.keywords : prntfont/WIDTHRUN, WIDTHRUN, print.widthrun, prntfont/PWIDTHRUN, PWIDTHRUN structure pointer [Print Devices], _WIDTHRUN, WIDTHRUN structure [Print Devices], PWIDTHRUN, *PWIDTHRUN, print_unidrv-pscript_fonts_68b08066-7503-4496-bfab-001aba659926.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WIDTHRUN, *PWIDTHRUN
+req.typenames : "*PWIDTHRUN, WIDTHRUN"
 req.product : Windows 10 or later.
 ---
 
@@ -98,9 +98,9 @@ For East Asian device fonts, the <b>fwdAveCharWidth</b> and <b>fwdMaxCharInc</b>
 
 ## See Also
 
-<a href="..\prntfont\ns-prntfont-_widthtable.md">WIDTHTABLE</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567418">IFIMETRICS</a>
+
+<a href="..\prntfont\ns-prntfont-_widthtable.md">WIDTHTABLE</a>
 
  
 

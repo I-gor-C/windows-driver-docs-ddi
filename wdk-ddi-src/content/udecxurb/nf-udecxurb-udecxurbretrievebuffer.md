@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : C2AE51AE-EEB6-49BB-A6E4-BBCE6A25C905
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : udecxurb/UdecxUrbRetrieveBuffer, UdecxUrbRetrieveBuffer function [Buses], buses.udecxurbretrievebuffer, UdecxUrbRetrieveBuffer
+ms.keywords : udecxurb/UdecxUrbRetrieveBuffer, buses.udecxurbretrievebuffer, UdecxUrbRetrieveBuffer, UdecxUrbRetrieveBuffer function [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -115,9 +115,9 @@ The transfer buffer MDL was not valid.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
 
 <a href="..\udecxurb\nf-udecxurb-udecxurbsetbytescompleted.md">UdecxUrbSetBytesCompleted</a>
 

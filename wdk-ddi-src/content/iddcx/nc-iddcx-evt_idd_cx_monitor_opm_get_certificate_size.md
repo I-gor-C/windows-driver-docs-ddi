@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : 
 req.dll : 
-req.irql : _requires_same_
+req.irql : "_requires_same_"
 topictype : 
 apitype : 
 apilocation : 
@@ -84,5 +84,5 @@ Output arguments returned by <b>EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE_SIZE</b>.
 | **Minimum UMDF version** |  |
 | **Header** | iddcx.h |
 | **Library** |  |
-| **IRQL** | _requires_same_ |
+| **IRQL** | "_requires_same_" |
 | **DDI compliance rules** |  |

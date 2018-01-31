@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3668aa5a-1cb4-4ee1-91bd-bf2f3fa30622
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFResourceObjectRef_7f7c29e8-231a-48ec-b4e3-01989ad994b0.xml, wdf.wdfioresourcerequirementslistremove, PFN_WDFIORESOURCEREQUIREMENTSLISTREMOVE, WdfIoResourceRequirementsListRemove method, kmdf.wdfioresourcerequirementslistremove, WdfIoResourceRequirementsListRemove, wdfresource/WdfIoResourceRequirementsListRemove
+ms.keywords : wdfresource/WdfIoResourceRequirementsListRemove, PFN_WDFIORESOURCEREQUIREMENTSLISTREMOVE, wdf.wdfioresourcerequirementslistremove, kmdf.wdfioresourcerequirementslistremove, WdfIoResourceRequirementsListRemove method, WdfIoResourceRequirementsListRemove, DFResourceObjectRef_7f7c29e8-231a-48ec-b4e3-01989ad994b0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,7 +88,7 @@ For more information about resource requirements lists, see <a href="https://doc
 | **Minimum UMDF version** |  |
 | **Header** | wdfresource.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also

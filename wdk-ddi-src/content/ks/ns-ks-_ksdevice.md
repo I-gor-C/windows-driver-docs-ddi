@@ -1,6 +1,6 @@
 ---
 UID : NS:ks._KSDEVICE
-title : _KSDEVICE
+title : "_KSDEVICE"
 author : windows-driver-content
 description : The KSDEVICE structure describes a WDM functional device that is managed by AVStream.
 old-location : stream\ksdevice.htm
@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 95b80298-a3b4-416b-8744-88873ac30037
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSDEVICE, avstruct_0f140861-d58a-48cf-9bac-679acbd30d02.xml, ks/PKSDEVICE, _KSDEVICE, KSDEVICE structure [Streaming Media Devices], ks/KSDEVICE, *PKSDEVICE, PKSDEVICE structure pointer [Streaming Media Devices], PKSDEVICE, stream.ksdevice
+ms.keywords : stream.ksdevice, *PKSDEVICE, ks/KSDEVICE, PKSDEVICE structure pointer [Streaming Media Devices], PKSDEVICE, _KSDEVICE, KSDEVICE, ks/PKSDEVICE, KSDEVICE structure [Streaming Media Devices], avstruct_0f140861-d58a-48cf-9bac-679acbd30d02.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSDEVICE, *PKSDEVICE
+req.typenames : "*PKSDEVICE, KSDEVICE"
 ---
 
 # _KSDEVICE structure
@@ -74,19 +74,19 @@ As mentioned above, <b>Context</b> is initialized to <b>NULL</b> at create time.
 
 ## See Also
 
-<a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
-
-<a href="..\ks\ns-ks-_ksdevice_descriptor.md">KSDEVICE_DESCRIPTOR</a>
-
-<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
-
 <a href="..\ks\ns-ks-_ksdevice_dispatch.md">KSDEVICE_DISPATCH</a>
+
+<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
 
 <a href="..\ks\nf-ks-ksgetdevicefordeviceobject.md">KsGetDeviceForDeviceObject</a>
 
 <a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>
 
-<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
+<a href="..\ks\ns-ks-_ksdevice_descriptor.md">KSDEVICE_DESCRIPTOR</a>
+
+<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
+
+<a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
 
  
 

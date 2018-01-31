@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILCALLRTT, RILCALLRTT"
+req.typenames : RILCALLRTT, *LPRILCALLRTT
 req.product : Windows 10 or later.
 ---
 

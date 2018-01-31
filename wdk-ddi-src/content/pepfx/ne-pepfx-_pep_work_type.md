@@ -1,6 +1,6 @@
 ---
 UID : NE:pepfx._PEP_WORK_TYPE
-title : _PEP_WORK_TYPE
+title : "_PEP_WORK_TYPE"
 author : windows-driver-content
 description : The PEP_WORK_TYPE enumeration describes the type of work that the platform extension plug-in (PEP) is requesting.
 old-location : kernel\pep_work_type.htm
@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5AED6B9E-5DB8-44AF-925C-4B587D100040
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PepWorkAcpiNotify, PepWorkRequestIdleState, pepfx/PepWorkRequestPowerControl, *PPEP_WORK_TYPE, _PEP_WORK_TYPE, PepWorkCompleteIdleState, pepfx/PepWorkDeviceIdle, pepfx/PepWorkCompletePerfState, pepfx/PepWorkCompleteIdleState, PepWorkDevicePower, pepfx/PepWorkActiveComplete, pepfx/PepWorkAcpiEvaluateControlMethodComplete, PepWorkAcpiEvaluateControlMethodComplete, PEP_WORK_TYPE enumeration [Kernel-Mode Driver Architecture], pepfx/PepWorkAcpiNotify, pepfx/PEP_WORK_TYPE, PEP_WORK_TYPE, PepWorkRequestPowerControl, pepfx/PepWorkRequestIdleState, pepfx/PepWorkMax, PepWorkCompletePerfState, pepfx/PepWorkDevicePower, kernel.pep_work_type, PepWorkActiveComplete, PepWorkDeviceIdle, PepWorkMax
+ms.keywords : pepfx/PepWorkDevicePower, PepWorkDeviceIdle, PepWorkDevicePower, PepWorkAcpiNotify, pepfx/PepWorkActiveComplete, PepWorkAcpiEvaluateControlMethodComplete, PepWorkRequestPowerControl, PEP_WORK_TYPE enumeration [Kernel-Mode Driver Architecture], pepfx/PepWorkRequestIdleState, PepWorkCompletePerfState, pepfx/PepWorkMax, PepWorkRequestIdleState, kernel.pep_work_type, pepfx/PepWorkDeviceIdle, pepfx/PepWorkAcpiNotify, pepfx/PEP_WORK_TYPE, *PPEP_WORK_TYPE, PepWorkCompleteIdleState, pepfx/PepWorkAcpiEvaluateControlMethodComplete, pepfx/PepWorkCompletePerfState, PepWorkActiveComplete, PEP_WORK_TYPE, pepfx/PepWorkRequestPowerControl, _PEP_WORK_TYPE, pepfx/PepWorkCompleteIdleState, PepWorkMax
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -106,15 +106,15 @@ This enumeration is used by the <a href="..\pepfx\ns-pepfx-_pep_work_information
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a>
-
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186852">PEP_DPM_REQUEST_COMPONENT_PERF_STATE</a>
-
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186659">PEP_NOTIFY_ACPI_EVALUATE_CONTROL_METHOD</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439564">PowerControlCallback</a>
 
+<a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a>
+
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186759">PEP_DPM_NOTIFY_COMPONENT_IDLE_STATE</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186659">PEP_NOTIFY_ACPI_EVALUATE_CONTROL_METHOD</a>
 
  
 

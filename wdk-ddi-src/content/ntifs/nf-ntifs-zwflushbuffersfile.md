@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b6ac1458-775d-4f73-86a1-30bfbf2256cc
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ZwFlushBuffersFile routine [Kernel-Mode Driver Architecture], kernel.zwflushbuffersfile, ZwFlushBuffersFile, NtFlushBuffersFile, ntifs/NtFlushBuffersFile, ntifs/ZwFlushBuffersFile, k111_4d1d812f-cead-4300-96cb-c2e8a916ac8a.xml
+ms.keywords : ntifs/ZwFlushBuffersFile, k111_4d1d812f-cead-4300-96cb-c2e8a916ac8a.xml, ZwFlushBuffersFile, ntifs/NtFlushBuffersFile, NtFlushBuffersFile, kernel.zwflushbuffersfile, ZwFlushBuffersFile routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -117,6 +117,8 @@ Callers of <b>ZwFlushBuffersFile</b> must be running at IRQL = PASSIVE_LEVEL and
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
 <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549235">IRP_MJ_FLUSH_BUFFERS</a>
@@ -124,8 +126,6 @@ Callers of <b>ZwFlushBuffersFile</b> must be running at IRQL = PASSIVE_LEVEL and
 <a href="..\fltkernel\nf-fltkernel-fltflushbuffers.md">FltFlushBuffers</a>
 
 <a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
  
 

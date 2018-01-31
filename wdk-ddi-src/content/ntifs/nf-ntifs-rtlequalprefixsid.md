@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 6db96d3b-721f-40d5-8f8d-54cdd33f85c8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rtlref_67b0c7e1-647f-426a-8d9d-dde2d98b0cc3.xml, ifsk.rtlequalprefixsid, RtlEqualPrefixSid routine [Installable File System Drivers], RtlEqualPrefixSid, ntifs/RtlEqualPrefixSid
+ms.keywords : ifsk.rtlequalprefixsid, RtlEqualPrefixSid, RtlEqualPrefixSid routine [Installable File System Drivers], rtlref_67b0c7e1-647f-426a-8d9d-dde2d98b0cc3.xml, ntifs/RtlEqualPrefixSid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,18 +85,18 @@ For more information about security and access control, see the documentation on
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ntifs\nf-ntifs-rtlvalidsid.md">RtlValidSid</a>
 
 <a href="..\ntifs\nf-ntifs-rtlequalsid.md">RtlEqualSid</a>
 
 <a href="..\ntifs\nf-ntifs-rtlcopysid.md">RtlCopySid</a>
 
 <a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-
-<a href="..\ntifs\nf-ntifs-rtlvalidsid.md">RtlValidSid</a>
 
  
 

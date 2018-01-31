@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b76acae1-3c37-4095-bf8b-1785dc90f378
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFObject::RetrieveContext, RetrieveContext method, umdf.iwdfobject_retrievecontext, wudfddi/IWDFObject::RetrieveContext, UMDFBaseObjectRef_e12f4a9b-d71b-4fc1-96df-0244b7513f32.xml, IWDFObject interface, RetrieveContext method, RetrieveContext, RetrieveContext method, IWDFObject interface, wdf.iwdfobject_retrievecontext, IWDFObject
+ms.keywords : IWDFObject interface, RetrieveContext method, RetrieveContext method, IWDFObject interface, IWDFObject::RetrieveContext, umdf.iwdfobject_retrievecontext, wdf.iwdfobject_retrievecontext, wudfddi/IWDFObject::RetrieveContext, IWDFObject, RetrieveContext, UMDFBaseObjectRef_e12f4a9b-d71b-4fc1-96df-0244b7513f32.xml, RetrieveContext method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -82,11 +82,11 @@ Because the context is not a Component Object Model (COM) interface, the driver 
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560208">IWDFObject::AssignContext</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558957">IWDFIoQueue::GetDevice</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
 
  
 

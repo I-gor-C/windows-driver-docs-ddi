@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 505d6986-c59d-46b3-8437-29fc6a808ccd
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storprt_7d3583a5-211d-414e-880d-31c04145d3ab.xml, storport/StorPortValidateRange, storage.storportvalidaterange, StorPortValidateRange, StorPortValidateRange routine [Storage Devices]
+ms.keywords : storport/StorPortValidateRange, storage.storportvalidaterange, StorPortValidateRange routine [Storage Devices], storprt_7d3583a5-211d-414e-880d-31c04145d3ab.xml, StorPortValidateRange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

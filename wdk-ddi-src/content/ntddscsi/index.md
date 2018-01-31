@@ -21,8 +21,8 @@ ntddscsi.h contains the following programming interfaces:
 ## IOCTLs
 | Title | Description |
 | ---- |:---- |
-| [IOCTL_ATA_PASS_THROUGH](ni-ntddscsi-ioctl_ata_pass_through.md) | Allows an application to send almost any ATA command to a target device, with the following restrictions: If a class driver for the target type of device exists, the application must send the request to the class driver. |
-| [IOCTL_ATA_PASS_THROUGH_DIRECT](ni-ntddscsi-ioctl_ata_pass_through_direct.md) | Allows an application to send almost any ATA command to a target device, with the following restrictions: If a class driver for the target type of device exists, the application must send the request to the class driver. |
+| [IOCTL_ATA_PASS_THROUGH](ni-ntddscsi-ioctl_ata_pass_through.md) | Allows an application to send almost any ATA command to a target device, with the following restrictions:\_If a class driver for the target type of device exists, the application must send the request to the class driver. |
+| [IOCTL_ATA_PASS_THROUGH_DIRECT](ni-ntddscsi-ioctl_ata_pass_through_direct.md) | Allows an application to send almost any ATA command to a target device, with the following restrictions:\_If a class driver for the target type of device exists, the application must send the request to the class driver. |
 | [IOCTL_MINIPORT_PROCESS_SERVICE_IRP](ni-ntddscsi-ioctl_miniport_process_service_irp.md) | This IOCTL is used by a user-mode application or kernel-mode driver that requires notification when something of interest happens in the virtual miniport. |
 | [IOCTL_MPIO_PASS_THROUGH_PATH](ni-ntddscsi-ioctl_mpio_pass_through_path.md) | This I/O control code allows an application or kernel driver to send a SCSI command to a designated real LUN. |
 | [IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT](ni-ntddscsi-ioctl_mpio_pass_through_path_direct.md) | This I/O control code allows an application or kernel driver to send a SCSI command to a designated real LUN. |

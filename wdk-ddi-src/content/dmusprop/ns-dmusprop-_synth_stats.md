@@ -1,6 +1,6 @@
 ---
 UID : NS:dmusprop._SYNTH_STATS
-title : _SYNTH_STATS
+title : "_SYNTH_STATS"
 author : windows-driver-content
 description : The SYNTH_STATS structure specifies synthesizer performance statistics such as the number of voices playing, CPU usage, number of notes lost, amount of free memory, and peak volume level.
 old-location : audio\synth_stats.htm
@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : bbe3552b-0289-4f7f-bdaa-8a6437594247
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : dmusprop/PSYNTH_STATS, PSYNTH_STATS structure pointer [Audio Devices], aud-prop_04ed015d-56c6-4275-8025-66e67ee6ce87.xml, _SYNTH_STATS, dmusprop/SYNTH_STATS, PSYNTH_STATS, SYNTH_STATS structure [Audio Devices], audio.synth_stats, *PSYNTH_STATS, SYNTH_STATS
+ms.keywords : SYNTH_STATS, audio.synth_stats, dmusprop/PSYNTH_STATS, SYNTH_STATS structure [Audio Devices], aud-prop_04ed015d-56c6-4275-8025-66e67ee6ce87.xml, PSYNTH_STATS structure pointer [Audio Devices], _SYNTH_STATS, dmusprop/SYNTH_STATS, *PSYNTH_STATS, PSYNTH_STATS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSYNTH_STATS, SYNTH_STATS"
+req.typenames : SYNTH_STATS, *PSYNTH_STATS
 ---
 
 # _SYNTH_STATS structure
@@ -81,6 +81,38 @@ Specifies the total CPU usage (all voices), which is expressed as a percentage (
 
 Specifies which members of the SYNTH_STATS structure contain valid data. This member is a bitfield whose value is either zero or a bitwise OR of one or more of the following flag bits:
 
+
+
+
+#### SYNTH_STATS_VOICES
+
+The <b>Voices</b> field contains valid data.
+
+
+#### SYNTH_STATS_TOTAL_CPU
+
+The <b>TotalCPU</b> field contains valid data.
+
+
+#### SYNTH_STATS_CPU_PER_VOICE
+
+The <b>CPUPerVoice</b> field contains valid data.
+
+
+#### SYNTH_STATS_LOST_NOTES
+
+The <b>LostNotes </b>field contains valid data.
+
+
+#### SYNTH_STATS_PEAK_VOLUME
+
+The <b>PeakVolume </b>field contains valid data.
+
+
+#### SYNTH_STATS_FREE_MEMORY
+
+The <b>FreeMemory</b> field contains valid data.
+
 `Voices`
 
 Specifies the average number of voices playing.
@@ -100,9 +132,9 @@ The SYNTH_STATS structure is similar to the DMUS_SYNTHSTATS structure, which is 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537406">KSPROPERTY_SYNTH_RUNNINGSTATS</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537405">KSPROPERTY_SYNTH_PORTPARAMETERS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537406">KSPROPERTY_SYNTH_RUNNINGSTATS</a>
 
  
 

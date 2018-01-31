@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : B65DC4AD-FB24-4F1D-A1E9-F9B38160908E
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SerCx2SystemDmaReceiveInitializeTransactionComplete, SerCx2SystemDmaReceiveInitializeTransactionComplete method [Serial Ports], serports.sercx2systemdmareceiveinitializetransactioncomplete, 2/SerCx2SystemDmaReceiveInitializeTransactionComplete
+ms.keywords : SerCx2SystemDmaReceiveInitializeTransactionComplete method [Serial Ports], serports.sercx2systemdmareceiveinitializetransactioncomplete, SerCx2SystemDmaReceiveInitializeTransactionComplete, 2/SerCx2SystemDmaReceiveInitializeTransactionComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SERCX_STATUS, *PSERCX_STATUS
+req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
 req.product : Windows 10 or later.
 ---
 
@@ -84,16 +84,16 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 | **Minimum UMDF version** |  |
 | **Header** | sercx.h |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\sercx\nf-sercx-sercx2systemdmareceivecreate.md">SerCx2SystemDmaReceiveCreate</a>
 
-<a href="..\sercx\nc-sercx-evt_sercx2_system_dma_receive_initialize_transaction.md">EvtSerCx2SystemDmaReceiveInitializeTransaction</a>
-
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2SYSTEMDMARECEIVE</a>
+
+<a href="..\sercx\nc-sercx-evt_sercx2_system_dma_receive_initialize_transaction.md">EvtSerCx2SystemDmaReceiveInitializeTransaction</a>
 
  
 

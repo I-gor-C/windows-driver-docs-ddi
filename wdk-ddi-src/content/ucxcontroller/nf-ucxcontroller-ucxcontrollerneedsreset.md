@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : FAE099E4-6BE9-4637-934F-9F86FFDCAA6A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxControllerNeedsReset, ucxcontroller/UcxControllerNeedsReset, UcxControllerNeedsReset method [Buses], buses._ucxcontrollerneedsreset
+ms.keywords : UcxControllerNeedsReset, buses._ucxcontrollerneedsreset, ucxcontroller/UcxControllerNeedsReset, UcxControllerNeedsReset method [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,7 +73,7 @@ If the operation is successful, the method returns TRUE. Otherwise it returns FA
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ucxcontroller.h (include Ucxclass.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

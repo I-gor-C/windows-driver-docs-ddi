@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 57220a12-e53d-482a-afb6-09bfbbf0d870
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDriverMiniportUnload method, DFDriverObjectRef_aac24375-fae4-4310-b273-d3d2f4c13d69.xml, wdfminiport/WdfDriverMiniportUnload, WdfDriverMiniportUnload, kmdf.wdfdriverminiportunload, wdf.wdfdriverminiportunload
+ms.keywords : WdfDriverMiniportUnload method, DFDriverObjectRef_aac24375-fae4-4310-b273-d3d2f4c13d69.xml, wdf.wdfdriverminiportunload, kmdf.wdfdriverminiportunload, wdfminiport/WdfDriverMiniportUnload, WdfDriverMiniportUnload
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_MEMORY_DESCRIPTOR, WDF_MEMORY_DESCRIPTOR"
+req.typenames : WDF_MEMORY_DESCRIPTOR, *PWDF_MEMORY_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 
@@ -81,18 +81,18 @@ For more information about miniport drivers, see <a href="https://docs.microsoft
 | **Minimum UMDF version** |  |
 | **Header** | wdfminiport.h (include Wdfminiport.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 
 ## See Also
 
-<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
-
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_unload.md">EvtDriverUnload</a>
 
-<a href="..\wdfminiport\nf-wdfminiport-wdfdeviceminiportcreate.md">WdfDeviceMiniportCreate</a>
+<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
 
 <a href="..\wdfdriver\nf-wdfdriver-wdfgetdriver.md">WdfGetDriver</a>
+
+<a href="..\wdfminiport\nf-wdfminiport-wdfdeviceminiportcreate.md">WdfDeviceMiniportCreate</a>
 
  
 

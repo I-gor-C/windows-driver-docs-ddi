@@ -183,7 +183,7 @@ The PEP can call this routine at IRQL &lt;= HIGH_LEVEL.
 | **Minimum UMDF version** |  |
 | **Header** | pepfx.h |
 | **Library** |  |
-| **IRQL** | <= HIGH_LEVEL |
+| **IRQL** | "<= HIGH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

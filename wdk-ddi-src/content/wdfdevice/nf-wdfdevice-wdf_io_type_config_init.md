@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 45D60409-EAE5-43A0-9E90-0B2F9FC31840
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_IO_TYPE_CONFIG_INIT function, wdf.wdf_io_type_config_init, WDF_IO_TYPE_CONFIG_INIT, wdfdevice/WDF_IO_TYPE_CONFIG_INIT
+ms.keywords : WDF_IO_TYPE_CONFIG_INIT, wdfdevice/WDF_IO_TYPE_CONFIG_INIT, WDF_IO_TYPE_CONFIG_INIT function, wdf.wdf_io_type_config_init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,9 +82,9 @@ The <b>WDF_IO_TYPE_CONFIG_INIT</b> function zeros the specified <a href="..\wdfd
 
 ## See Also
 
-<a href="..\wdfdevice\ns-wdfdevice-_wdf_io_type_config.md">WDF_IO_TYPE_CONFIG</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotypeex.md">WdfDeviceInitSetIoTypeEx</a>
+
+<a href="..\wdfdevice\ns-wdfdevice-_wdf_io_type_config.md">WDF_IO_TYPE_CONFIG</a>
 
  
 

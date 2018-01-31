@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d57fee0b-2dd3-4fad-bc7e-d413c08e2441
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.rtlunicodestringinitex, safestrings_fab7496b-3acf-416d-8425-6936a73f1ca7.xml, RtlUnicodeStringInitEx, ntstrsafe/RtlUnicodeStringInitEx, RtlUnicodeStringInitEx function [Kernel-Mode Driver Architecture]
+ms.keywords : RtlUnicodeStringInitEx, RtlUnicodeStringInitEx function [Kernel-Mode Driver Architecture], ntstrsafe/RtlUnicodeStringInitEx, safestrings_fab7496b-3acf-416d-8425-6936a73f1ca7.xml, kernel.rtlunicodestringinitex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
+req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 
@@ -64,7 +64,14 @@ Optional. A pointer to a null-terminated string constant. This string pointer wi
 
 `dwFlags`
 
-The following flag is defined:
+The following flag is defined: 
+
+
+
+
+#### STRSAFE_IGNORE_NULLS
+
+If this flag is set, the source pointer can be <b>NULL</b>. <b>RtlUnicodeStringInitEx</b> treats <b>NULL</b> source buffer pointers like empty strings (TEXT("")), which can be copied.
 
 
 ## Return Value
@@ -139,9 +146,9 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringinit.md">RtlUnicodeStringInit</a>
-
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringinit.md">RtlUnicodeStringInit</a>
 
  
 

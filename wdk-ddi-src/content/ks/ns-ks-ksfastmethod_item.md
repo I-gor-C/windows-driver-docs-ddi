@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 71e59c73-d77d-4b10-9d13-f5d21338eb94
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSFASTMETHOD_ITEM structure [Streaming Media Devices], ks/PKSFASTMETHOD_ITEM, *PKSFASTMETHOD_ITEM, PKSFASTMETHOD_ITEM structure pointer [Streaming Media Devices], ks/KSFASTMETHOD_ITEM, KSFASTMETHOD_ITEM, PKSFASTMETHOD_ITEM, ks-struct_1280212d-776c-4f9d-a00b-d880785c4cdf.xml, stream.ksfastmethod_item
+ms.keywords : PKSFASTMETHOD_ITEM structure pointer [Streaming Media Devices], PKSFASTMETHOD_ITEM, stream.ksfastmethod_item, KSFASTMETHOD_ITEM structure [Streaming Media Devices], ks/PKSFASTMETHOD_ITEM, KSFASTMETHOD_ITEM, *PKSFASTMETHOD_ITEM, ks-struct_1280212d-776c-4f9d-a00b-d880785c4cdf.xml, ks/KSFASTMETHOD_ITEM
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,9 +70,9 @@ Contains the identifier of the method and the flags describing the type of metho
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksmethod_item.md">KSMETHOD_ITEM</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567173">KStrFastHandler</a>
+
+<a href="..\ks\ns-ks-ksmethod_item.md">KSMETHOD_ITEM</a>
 
  
 

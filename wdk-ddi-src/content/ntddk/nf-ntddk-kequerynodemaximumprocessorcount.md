@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 56688002-d481-45a6-bfb0-e7761f9ae055
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k105_15c5df15-b04a-41bd-9aec-2e402e2824a9.xml, wdm/KeQueryNodeMaximumProcessorCount, KeQueryNodeMaximumProcessorCount, kernel.kequerynodemaximumprocessorcount, KeQueryNodeMaximumProcessorCount routine [Kernel-Mode Driver Architecture]
+ms.keywords : k105_15c5df15-b04a-41bd-9aec-2e402e2824a9.xml, KeQueryNodeMaximumProcessorCount routine [Kernel-Mode Driver Architecture], KeQueryNodeMaximumProcessorCount, wdm/KeQueryNodeMaximumProcessorCount, kernel.kequerynodemaximumprocessorcount
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -54,7 +54,7 @@ USHORT KeQueryNodeMaximumProcessorCount(
 
 `NodeNumber`
 
-The node number. If a NUMA multiprocessor system contains <i>n</i> nodes, valid node numbers are in the range 0 to <i>n</i>-1. To get the highest node number (<i>n</i>-1) in the system, call the <a href="..\wdm\nf-wdm-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a> routine.
+The node number. If a NUMA multiprocessor system contains <i>n</i> nodes, valid node numbers are in the range 0 to <i>n</i>-1. To get the highest node number (<i>n</i>-1) in the system, call the <a href="..\ntddk\nf-ntddk-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a> routine.
 
 
 ## Return Value
@@ -81,7 +81,7 @@ The count returned by this routine includes any logical processors that can be d
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a>
+<a href="..\ntddk\nf-ntddk-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a>
 
  
 

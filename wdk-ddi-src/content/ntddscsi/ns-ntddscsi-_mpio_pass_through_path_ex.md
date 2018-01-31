@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddscsi._MPIO_PASS_THROUGH_PATH_EX
-title : _MPIO_PASS_THROUGH_PATH_EX
+title : "_MPIO_PASS_THROUGH_PATH_EX"
 author : windows-driver-content
 description : The MPIO_PASS_THROUGH_PATH_EX structure is used together with an IOCTL_MPIO_PASS_THROUGH_PATH_EX request to instruct the port driver to send an embedded SCSI command to the target device.
 old-location : storage\mpio_pass_through_path_ex.htm
@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : DAEA7A9C-3ACD-49E5-A634-A844D9694412
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : MPIO_PASS_THROUGH_PATH_EX, *PMPIO_PASS_THROUGH_PATH_EX, ntddscsi/PMPIO_PASS_THROUGH_PATH_EX, ntddscsi/MPIO_PASS_THROUGH_PATH_EX, PMPIO_PASS_THROUGH_PATH_EX structure pointer [Storage Devices], MPIO_PASS_THROUGH_PATH_EX structure [Storage Devices], _MPIO_PASS_THROUGH_PATH_EX, storage.mpio_pass_through_path_ex, PMPIO_PASS_THROUGH_PATH_EX
+ms.keywords : ntddscsi/PMPIO_PASS_THROUGH_PATH_EX, PMPIO_PASS_THROUGH_PATH_EX, storage.mpio_pass_through_path_ex, MPIO_PASS_THROUGH_PATH_EX structure [Storage Devices], _MPIO_PASS_THROUGH_PATH_EX, *PMPIO_PASS_THROUGH_PATH_EX, PMPIO_PASS_THROUGH_PATH_EX structure pointer [Storage Devices], ntddscsi/MPIO_PASS_THROUGH_PATH_EX, MPIO_PASS_THROUGH_PATH_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : MPIO_PASS_THROUGH_PATH_EX, *PMPIO_PASS_THROUGH_PATH_EX
+req.typenames : "*PMPIO_PASS_THROUGH_PATH_EX, MPIO_PASS_THROUGH_PATH_EX"
 ---
 
 # _MPIO_PASS_THROUGH_PATH_EX structure
@@ -58,7 +58,11 @@ typedef struct _MPIO_PASS_THROUGH_PATH_EX {
 
 `Flags`
 
+#### 
 
+
+
+####
 
 `Length`
 
@@ -95,17 +99,17 @@ Should be zero.
 
 <a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_direct_ex.md">SCSI_PASS_THROUGH_DIRECT_EX</a>
 
-<a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_ex.md">SCSI_PASS_THROUGH_EX</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_direct_ex.md">IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</a>
 
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_mpio_pass_through_path_ex.md">IOCTL_MPIO_PASS_THROUGH_PATH_EX</a>
 
-<a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
-
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_mpio_pass_through_path_direct_ex.md">IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT_EX</a>
 
-<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_ex.md">IOCTL_SCSI_PASS_THROUGH_EX</a>
+<a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_ex.md">SCSI_PASS_THROUGH_EX</a>
 
-<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_direct_ex.md">IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</a>
+<a href="..\srb\ns-srb-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
+
+<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_ex.md">IOCTL_SCSI_PASS_THROUGH_EX</a>
 
  
 

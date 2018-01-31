@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 8284fdd4-26de-4622-b164-f33aee1d8742
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisCoSendNetBufferLists, NdisCoSendNetBufferLists, condis_sendrcv_ref_6d1dfac7-b538-402c-ae8b-04f74bd188e9.xml, NdisCoSendNetBufferLists function [Network Drivers Starting with Windows Vista], netvista.ndiscosendnetbufferlists
+ms.keywords : netvista.ndiscosendnetbufferlists, condis_sendrcv_ref_6d1dfac7-b538-402c-ae8b-04f74bd188e9.xml, NdisCoSendNetBufferLists function [Network Drivers Starting with Windows Vista], NdisCoSendNetBufferLists, ndis/NdisCoSendNetBufferLists
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -72,6 +72,25 @@ A pointer to a linked list of
 Flags that define attributes for the send operation. The flags can be combined with a bitwise OR
      operation. To clear all of the flags, set this parameter to zero. 
      <b>NdisCoSendNetBufferLists</b> supports the following flags:
+     
+
+
+
+
+#### NDIS_SEND_FLAGS_DISPATCH_LEVEL
+
+The current IRQL is DISPATCH_LEVEL. For more information about this flag, see 
+       <a href="https://msdn.microsoft.com/ac559f4f-0138-4b9a-8f1b-44a2973fd6a1">Dispatch IRQL Tracking</a>.
+
+
+#### NDIS_SEND_FLAGS_CHECK_FOR_LOOPBACK
+
+NDIS should check for loopback. By default, NDIS does not loop back data to the driver that
+       submitted the send request. An overlying driver can override this behavior by setting
+       NDIS_SEND_FLAGS_CHECK_FOR_LOOPBACK. When this flag is set, NDIS identifies all of the NET_BUFFER
+       structures that contain data that matches the receive criteria for the binding. NDIS indicates
+       NET_BUFFER structures that match the criteria to the overlying driver. This flag does not affect
+       checking for loopback, or looping back, on other bindings.
 
 
 ## Return Value
@@ -165,35 +184,35 @@ Until NDIS calls
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Connection_Function |
 
 ## See Also
 
+<mshelp:link keywords="netvista.ndisallocatenetbufferandnetbufferlist" tabindex="0"><b>
+   NdisAllocateNetBufferAndNetBufferList</b></mshelp:link>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
+
 <mshelp:link keywords="netvista.ndismcosendnetbufferlistscomplete" tabindex="0"><b>
    NdisMCoSendNetBufferListsComplete</b></mshelp:link>
 
-<mshelp:link keywords="netvista.ndisallocatenetbufferandnetbufferlist" tabindex="0"><b>
-   NdisAllocateNetBufferAndNetBufferList</b></mshelp:link>
+<mshelp:link keywords="netvista.ndisallocateclonenetbufferlist" tabindex="0"><b>
+   NdisAllocateCloneNetBufferList</b></mshelp:link>
+
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferlist.md">NdisAllocateNetBufferList</a>
+
+<a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
+
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+<mshelp:link keywords="netvista.miniportcosendnetbufferlists" tabindex="0"><i>
+   MiniportCoSendNetBufferLists</i></mshelp:link>
 
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 
 <mshelp:link keywords="netvista.protocolcosendnetbufferlistscomplete" tabindex="0"><i>
    ProtocolCoSendNetBufferListsComplete</i></mshelp:link>
-
-<mshelp:link keywords="netvista.ndisallocateclonenetbufferlist" tabindex="0"><b>
-   NdisAllocateCloneNetBufferList</b></mshelp:link>
-
-<mshelp:link keywords="netvista.miniportcosendnetbufferlists" tabindex="0"><i>
-   MiniportCoSendNetBufferLists</i></mshelp:link>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
-
-<a href="..\ndis\nf-ndis-ndisallocatenetbufferlist.md">NdisAllocateNetBufferList</a>
-
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-
-<a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
 
  
 

@@ -1,6 +1,6 @@
 ---
 UID : NE:d3dkmddi._DXGK_CONNECTION_STATUS
-title : _DXGK_CONNECTION_STATUS
+title : "_DXGK_CONNECTION_STATUS"
 author : windows-driver-content
 description : Enumeration indicating the connection status values which can be reported.
 old-location : display\dxgk_connection_status.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : D78A845E-1F5D-42F7-9391-8F3F6555B7E5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/TargetStatusJoined, *PDXGK_CONNECTION_STATUS, _DXGK_CONNECTION_STATUS, d3dkmddi/ConnectionStatusUninitialized, TargetStatusDisconnected, display.dxgk_connection_status, d3dkmddi/LinkConfigurationFailed, LinkConfigurationStarted, LinkConfigurationSucceeded, DXGK_CONNECTION_STATUS, d3dkmddi/MonitorStatusConnected, d3dkmddi/DXGK_CONNECTION_STATUS, ConnectionStatusUninitialized, MonitorStatusDisconnected, d3dkmddi/TargetStatusConnected, TargetStatusJoined, TargetStatusConnected, LinkConfigurationFailed, d3dkmddi/LinkConfigurationSucceeded, d3dkmddi/LinkConfigurationStarted, d3dkmddi/MonitorStatusDisconnected, MonitorStatusConnected, DXGK_CONNECTION_STATUS enumeration [Display Devices], MonitorStatusUnknown, d3dkmddi/TargetStatusDisconnected, d3dkmddi/MonitorStatusUnknown
+ms.keywords : DXGK_CONNECTION_STATUS enumeration [Display Devices], MonitorStatusConnected, *PDXGK_CONNECTION_STATUS, _DXGK_CONNECTION_STATUS, d3dkmddi/TargetStatusDisconnected, TargetStatusJoined, TargetStatusConnected, ConnectionStatusUninitialized, d3dkmddi/LinkConfigurationSucceeded, d3dkmddi/LinkConfigurationStarted, LinkConfigurationStarted, d3dkmddi/MonitorStatusDisconnected, d3dkmddi/MonitorStatusConnected, DXGK_CONNECTION_STATUS, MonitorStatusUnknown, TargetStatusDisconnected, d3dkmddi/LinkConfigurationFailed, d3dkmddi/TargetStatusConnected, d3dkmddi/ConnectionStatusUninitialized, d3dkmddi/DXGK_CONNECTION_STATUS, MonitorStatusDisconnected, d3dkmddi/TargetStatusJoined, LinkConfigurationFailed, d3dkmddi/MonitorStatusUnknown, display.dxgk_connection_status, LinkConfigurationSucceeded
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDXGK_CONNECTION_STATUS, DXGK_CONNECTION_STATUS"
+req.typenames : DXGK_CONNECTION_STATUS, *PDXGK_CONNECTION_STATUS
 ---
 
 # _DXGK_CONNECTION_STATUS Enumeration

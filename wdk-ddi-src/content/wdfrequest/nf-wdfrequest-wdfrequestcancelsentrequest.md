@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 24319054-5e5c-4330-86e5-b1527c48eaf2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestCancelSentRequest, wdf.wdfrequestcancelsentrequest, wdfrequest/WdfRequestCancelSentRequest, kmdf.wdfrequestcancelsentrequest, DFRequestObjectRef_203c9cb4-5e9d-4a6b-b30d-b60b8eadf6db.xml, WdfRequestCancelSentRequest method, PFN_WDFREQUESTCANCELSENTREQUEST
+ms.keywords : WdfRequestCancelSentRequest method, DFRequestObjectRef_203c9cb4-5e9d-4a6b-b30d-b60b8eadf6db.xml, PFN_WDFREQUESTCANCELSENTREQUEST, wdf.wdfrequestcancelsentrequest, kmdf.wdfrequestcancelsentrequest, WdfRequestCancelSentRequest, wdfrequest/WdfRequestCancelSentRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -87,20 +87,20 @@ For more information about request cancellation, see <a href="https://docs.micro
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, EvtIoStopCancel, EvtIoStopCompleteOrStopAck, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a>
-
 <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_cancel.md">EvtRequestCancel</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestmarkcancelable.md">WdfRequestMarkCancelable</a>
 
 <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a>
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestmarkcancelableex.md">WdfRequestMarkCancelableEx</a>
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestmarkcancelable.md">WdfRequestMarkCancelable</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a>
 
  
 

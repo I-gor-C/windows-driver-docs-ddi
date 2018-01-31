@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddndis._NDIS_QOS_CAPABILITIES
-title : _NDIS_QOS_CAPABILITIES
+title : "_NDIS_QOS_CAPABILITIES"
 author : windows-driver-content
 description : The NDIS_QOS_CAPABILITIES structure specifies the NDIS Quality of Service (QoS) capabilities of a network adapter that supports the IEEE 802.1 Data Center Bridging (DCB) interface.
 old-location : netvista\ndis_qos_capabilities.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 23698bb8-3fb6-4e60-aaac-75c2e3341d54
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_QOS_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], NDIS_QOS_CAPABILITIES structure [Network Drivers Starting with Windows Vista], netvista.ndis_qos_capabilities, _NDIS_QOS_CAPABILITIES, ntddndis/PNDIS_QOS_CAPABILITIES, NDIS_QOS_CAPABILITIES, ntddndis/NDIS_QOS_CAPABILITIES, PNDIS_QOS_CAPABILITIES
+ms.keywords : NDIS_QOS_CAPABILITIES structure [Network Drivers Starting with Windows Vista], netvista.ndis_qos_capabilities, ntddndis/PNDIS_QOS_CAPABILITIES, PNDIS_QOS_CAPABILITIES, NDIS_QOS_CAPABILITIES, _NDIS_QOS_CAPABILITIES, PNDIS_QOS_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_QOS_CAPABILITIES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PNDIS_QOS_CAPABILITIES, NDIS_QOS_CAPABILITIES
+req.typenames : NDIS_QOS_CAPABILITIES, PNDIS_QOS_CAPABILITIES
 ---
 
 # _NDIS_QOS_CAPABILITIES structure
@@ -59,11 +59,44 @@ typedef struct _NDIS_QOS_CAPABILITIES {
 
 A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags that specify the NDIS QoS capabilities that a network adapter supports. The following flags are defined:
 
+
+
+
+#### NDIS_QOS_CAPABILITIES_STRICT_TSA_SUPPORTED
+
+If this flag is set, the network adapter supports the strict priority transmission selection algorithm (TSA). For more information about this algorithm, see <a href="https://msdn.microsoft.com/7C7A34CA-673C-4EFC-970D-08458AA83EAD">Strict Priority Algorithm</a>.
+<div class="alert"><b>Note</b>  In order to be compliant with DCB, the network adapter must support the strict priority TSA.</div><div> </div>
+
+#### NDIS_QOS_CAPABILITIES_MACSEC_BYPASS_SUPPORTED
+
+If this flag is set, the network adapter supports the ability to bypass media access control security (MACsec) processing. For more information about MACsec, refer to the 802.1AE-2006 standard.
+
+
+#### NDIS_QOS_CAPABILITIES_CEE_DCBX_SUPPORTED
+
+If this flag is set, the network adapter and miniport driver supports the protocols that pre-date the IEEE 802.1Qaz Data Center Bridging Exchange (DCBX) protocol. These protocols include the Converged Enhanced Ethernet (CEE) suite of protocols.
+
+
+#### NDIS_QOS_CAPABILITIES_IEEE_DCBX_SUPPORTED
+
+If this flag is set, the network adapter and miniport driver supports the IEEE 802.1Qaz DCBX protocol.  The DCBX protocol allows DCB parameters to be exchanged between two directly connected peers. This allows these peers to adapt and tune these parameters in order to optimize data transfer over the connection. 
+For more information about this protocol, see <a href="https://msdn.microsoft.com/FEB3FDBB-8A3C-4907-A6D0-CB5E94BCFEFF">Overview of Data Center Bridging</a>.
+<div class="alert"><b>Note</b>  If this flag is set, the miniport driver must reject any send requests for DCBX packets.</div><div> </div>
+
 `Header`
 
 The type, revision, and size of the <b>NDIS_QOS_CAPABILITIES</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
-The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_QOS_CAPABILITIES. To specify the version of the <b>NDIS_QOS_CAPABILITIES</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value:
+The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_QOS_CAPABILITIES. To specify the version of the <b>NDIS_QOS_CAPABILITIES</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
+
+
+
+
+#### NDIS_QOS_CAPABILITIES_REVISION_1
+
+Original version for NDIS 6.30 and later.
+
+Set the <b>Size</b> member to NDIS_SIZEOF_QOS_CAPABILITIES_REVISION_1.
 
 `MaxNumEtsCapableTrafficClasses`
 
@@ -116,16 +149,16 @@ The miniport driver  calls <mshelp:link keywords="netvista.ndismsetminiportattri
 
 ## See Also
 
+<a href="..\ndis\ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes.md">NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451827">OID_QOS_CURRENT_CAPABILITIES</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451828">OID_QOS_HARDWARE_CAPABILITIES</a>
 
 <mshelp:link keywords="netvista.ndismsetminiportattributes" tabindex="0"><b>
     NdisMSetMiniportAttributes</b></mshelp:link>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451828">OID_QOS_HARDWARE_CAPABILITIES</a>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-<a href="..\ndis\ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes.md">NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES</a>
 
 <b></b>
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b301e9f6-264d-43d9-a344-b34dcd659d04
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfInterruptWdmGetInterrupt method, DFInterruptObjectRef_72a56280-07d3-43c1-99f9-68dc3323fe86.xml, wdf.wdfinterruptwdmgetinterrupt, wdfinterrupt/WdfInterruptWdmGetInterrupt, WdfInterruptWdmGetInterrupt, kmdf.wdfinterruptwdmgetinterrupt
+ms.keywords : wdfinterrupt/WdfInterruptWdmGetInterrupt, wdf.wdfinterruptwdmgetinterrupt, WdfInterruptWdmGetInterrupt, kmdf.wdfinterruptwdmgetinterrupt, DFInterruptObjectRef_72a56280-07d3-43c1-99f9-68dc3323fe86.xml, WdfInterruptWdmGetInterrupt method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_INTERRUPT_PRIORITY, WDF_INTERRUPT_PRIORITY"
+req.typenames : WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
 req.product : Windows 10 or later.
 ---
 
@@ -81,7 +81,7 @@ For more information about handling interrupts in framework-based drivers, see <
 | **Minimum UMDF version** |  |
 | **Header** | wdfinterrupt.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DIRQL |
+| **IRQL** | "<= DIRQL" |
 | **DDI compliance rules** | DriverCreate |
 
 ## See Also

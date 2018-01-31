@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 65129c6e-5c69-409b-95f5-07b98a494533
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSystemObjects interface [Windows Debugging], SetCurrentProcessId method, SetCurrentProcessId method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects_e588cabd-e079-4dc0-ab0f-085181414985.xml, IDebugSystemObjects2::SetCurrentProcessId, SetCurrentProcessId method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects2 interface [Windows Debugging], SetCurrentProcessId method, dbgeng/IDebugSystemObjects4::SetCurrentProcessId, dbgeng/IDebugSystemObjects::SetCurrentProcessId, SetCurrentProcessId method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects4::SetCurrentProcessId, IDebugSystemObjects4, SetCurrentProcessId, SetCurrentProcessId method [Windows Debugging], IDebugSystemObjects2 interface, debugger.setcurrentprocessid, IDebugSystemObjects3 interface [Windows Debugging], SetCurrentProcessId method, IDebugSystemObjects::SetCurrentProcessId, SetCurrentProcessId method [Windows Debugging], dbgeng/IDebugSystemObjects2::SetCurrentProcessId, dbgeng/IDebugSystemObjects3::SetCurrentProcessId, IDebugSystemObjects4 interface [Windows Debugging], SetCurrentProcessId method, IDebugSystemObjects3::SetCurrentProcessId
+ms.keywords : IDebugSystemObjects_e588cabd-e079-4dc0-ab0f-085181414985.xml, SetCurrentProcessId method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects2 interface [Windows Debugging], SetCurrentProcessId method, debugger.setcurrentprocessid, IDebugSystemObjects interface [Windows Debugging], SetCurrentProcessId method, dbgeng/IDebugSystemObjects4::SetCurrentProcessId, IDebugSystemObjects3 interface [Windows Debugging], SetCurrentProcessId method, IDebugSystemObjects4::SetCurrentProcessId, IDebugSystemObjects4, SetCurrentProcessId, IDebugSystemObjects::SetCurrentProcessId, dbgeng/IDebugSystemObjects2::SetCurrentProcessId, SetCurrentProcessId method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects3::SetCurrentProcessId, dbgeng/IDebugSystemObjects::SetCurrentProcessId, IDebugSystemObjects2::SetCurrentProcessId, dbgeng/IDebugSystemObjects3::SetCurrentProcessId, IDebugSystemObjects4 interface [Windows Debugging], SetCurrentProcessId method, SetCurrentProcessId method [Windows Debugging], SetCurrentProcessId method [Windows Debugging], IDebugSystemObjects3 interface, SetCurrentProcessId method [Windows Debugging], IDebugSystemObjects2 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 UID : NS:irb._IDE_CHANNEL_INTERFACE
-title : _IDE_CHANNEL_INTERFACE
+title : "_IDE_CHANNEL_INTERFACE"
 author : windows-driver-content
 description : The IDE_CHANNEL_INTERFACE structure contains interface information for the indicated channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location : storage\ide_channel_interface.htm
@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0a742dc2-fa1a-4b93-a136-52f4571bde22
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-ATA_8641c5e5-fe37-4576-a500-1f6a2cdbb23b.xml, storage.ide_channel_interface, irb/IDE_CHANNEL_INTERFACE, PIDE_CHANNEL_INTERFACE structure pointer [Storage Devices], IDE_CHANNEL_INTERFACE structure [Storage Devices], irb/PIDE_CHANNEL_INTERFACE, _IDE_CHANNEL_INTERFACE, *PIDE_CHANNEL_INTERFACE, IDE_CHANNEL_INTERFACE, PIDE_CHANNEL_INTERFACE
+ms.keywords : IDE_CHANNEL_INTERFACE structure [Storage Devices], structs-ATA_8641c5e5-fe37-4576-a500-1f6a2cdbb23b.xml, IDE_CHANNEL_INTERFACE, irb/IDE_CHANNEL_INTERFACE, PIDE_CHANNEL_INTERFACE, *PIDE_CHANNEL_INTERFACE, PIDE_CHANNEL_INTERFACE structure pointer [Storage Devices], irb/PIDE_CHANNEL_INTERFACE, storage.ide_channel_interface, _IDE_CHANNEL_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -95,7 +95,7 @@ Reserved for future use. The miniport driver must not use this field.
 
 `ReservedUlong`
 
-
+####
 
 `Version`
 
@@ -112,17 +112,17 @@ The port driver sets this member to sizeof(IDE_CHANNEL_INTERFACE). The miniport 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557462">IdeHwBuildIo</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558998">IdeHwReset</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559003">IdeHwStartIo</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557467">IdeHwInitialize</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558992">IdeHwInterrupt</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558998">IdeHwReset</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557462">IdeHwBuildIo</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557467">IdeHwInitialize</a>
 
  
 

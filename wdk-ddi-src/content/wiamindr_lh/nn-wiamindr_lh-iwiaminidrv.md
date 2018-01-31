@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
+req.typenames : "*PSCANWINDOW, SCANWINDOW"
 req.product : Windows 10 or later.
 ---
 

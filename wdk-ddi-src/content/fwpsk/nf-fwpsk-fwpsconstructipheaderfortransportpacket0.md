@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : badb7e91-1d5f-42c3-973b-c7d756d24a01
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : FwpsConstructIpHeaderForTransportPacket0, fwpsk/FwpsConstructIpHeaderForTransportPacket0, FwpsConstructIpHeaderForTransportPacket0 function [Network Drivers Starting with Windows Vista], netvista.fwpsconstructipheaderfortransportpacket0, wfp_ref_2_funct_3_fwps_C_6c1cec4b-8792-49b0-bd89-eb3614b71567.xml
+ms.keywords : fwpsk/FwpsConstructIpHeaderForTransportPacket0, FwpsConstructIpHeaderForTransportPacket0 function [Network Drivers Starting with Windows Vista], FwpsConstructIpHeaderForTransportPacket0, wfp_ref_2_funct_3_fwps_C_6c1cec4b-8792-49b0-bd89-eb3614b71567.xml, netvista.fwpsconstructipheaderfortransportpacket0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,6 +83,19 @@ TBD
 `addressFamily`
 
 One of the following address families:
+     
+
+
+
+
+#### AF_INET
+
+The IPv4 address family.
+
+
+#### AF_INET6
+
+The IPv6 address family.
 
 `sourceAddress`
 
@@ -277,26 +290,26 @@ Call
 | **Minimum UMDF version** |  |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544964">CMSGHDR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543746">AF_INET6</a>
+
+<a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
 
 <mshelp:link keywords="netvista.fwpsinjecttransportreceiveasync0" tabindex="0"><b>
    FwpsInjectTransportReceiveAsync0</b></mshelp:link>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543744">AF_INET</a>
 
-<a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
-
 <mshelp:link keywords="netvista.fwps_incoming_metadata_values0" tabindex="0"><b>
    FWPS_INCOMING_METADATA_VALUES0</b></mshelp:link>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543746">AF_INET6</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544964">CMSGHDR</a>
 
  
 

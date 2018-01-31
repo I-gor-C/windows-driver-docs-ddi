@@ -1,6 +1,6 @@
 ---
 UID : NS:irb._IDE_CHANNEL_CONFIGURATION
-title : _IDE_CHANNEL_CONFIGURATION
+title : "_IDE_CHANNEL_CONFIGURATION"
 author : windows-driver-content
 description : The IDE_CHANNEL_CONFIGURATION structure contains configuration information for the indicated channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location : storage\ide_channel_configuration.htm
@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1ca9a198-ac6b-4837-9503-68eb7ca36527
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : irb/IDE_CHANNEL_CONFIGURATION, IDE_CHANNEL_CONFIGURATION, IDE_CHANNEL_CONFIGURATION structure [Storage Devices], storage.ide_channel_configuration, *PIDE_CHANNEL_CONFIGURATION, PIDE_CHANNEL_CONFIGURATION structure pointer [Storage Devices], PIDE_CHANNEL_CONFIGURATION, irb/PIDE_CHANNEL_CONFIGURATION, structs-ATA_79456267-9b2d-4f9a-beff-e44915bda026.xml, _IDE_CHANNEL_CONFIGURATION
+ms.keywords : IDE_CHANNEL_CONFIGURATION structure [Storage Devices], irb/PIDE_CHANNEL_CONFIGURATION, IDE_CHANNEL_CONFIGURATION, structs-ATA_79456267-9b2d-4f9a-beff-e44915bda026.xml, *PIDE_CHANNEL_CONFIGURATION, storage.ide_channel_configuration, PIDE_CHANNEL_CONFIGURATION structure pointer [Storage Devices], _IDE_CHANNEL_CONFIGURATION, irb/IDE_CHANNEL_CONFIGURATION, PIDE_CHANNEL_CONFIGURATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : IDE_CHANNEL_CONFIGURATION, *PIDE_CHANNEL_CONFIGURATION
+req.typenames : "*PIDE_CHANNEL_CONFIGURATION, IDE_CHANNEL_CONFIGURATION"
 ---
 
 # _IDE_CHANNEL_CONFIGURATION structure
@@ -123,7 +123,7 @@ The miniport driver should set this field to the number of requests the channel 
 
 `SupportedAdvances`
 
-
+####
 
 `SupportsWmi`
 

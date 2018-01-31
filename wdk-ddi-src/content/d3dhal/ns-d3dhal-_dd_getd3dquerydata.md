@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dhal._DD_GETD3DQUERYDATA
-title : _DD_GETD3DQUERYDATA
+title : "_DD_GETD3DQUERYDATA"
 author : windows-driver-content
 description : DirectX 9.0 and later versions only. DD_GETD3DQUERYDATA is the data structure pointed to by the lpvData field of DD_GETDRIVERINFODATA for DD_GETDRIVERINFO2DATA queries with the type D3DGDI2_TYPE_GETD3DQUERY.
 old-location : display\dd_getd3dquerydata.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a3bacd56-c25a-45d1-bd9f-b19bc1f95c8f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _DD_GETD3DQUERYDATA, d3dhal/DD_GETD3DQUERYDATA, DD_GETD3DQUERYDATA, display.dd_getd3dquerydata, DD_GETD3DQUERYDATA structure [Display Devices], d3dstrct_ec5ab755-9f1e-4add-bcf1-73bcb01988e6.xml
+ms.keywords : display.dd_getd3dquerydata, d3dhal/DD_GETD3DQUERYDATA, DD_GETD3DQUERYDATA structure [Display Devices], _DD_GETD3DQUERYDATA, DD_GETD3DQUERYDATA, d3dstrct_ec5ab755-9f1e-4add-bcf1-73bcb01988e6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,13 +79,13 @@ For more information about D3DQUERYTYPE, see the DirectX SDK documentation.
 
 ## See Also
 
-D3DDP2OP_CREATEQUERY
-
 <a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551550">DD_GETDRIVERINFODATA</a>
+D3DDP2OP_CREATEQUERY
 
 <a href="..\d3dhal\ns-d3dhal-_dd_getd3dquerycountdata.md">DD_GETD3DQUERYCOUNTDATA</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551550">DD_GETDRIVERINFODATA</a>
 
  
 

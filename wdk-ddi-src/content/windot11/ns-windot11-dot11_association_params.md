@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 74382195-ee1d-4b01-b882-2f357d801a25
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PDOT11_ASSOCIATION_PARAMS structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_ASSOCIATION_PARAMS, DOT11_ASSOCIATION_PARAMS structure [Network Drivers Starting with Windows Vista], DOT11_ASSOCIATION_PARAMS, windot11/PDOT11_ASSOCIATION_PARAMS, windot11/DOT11_ASSOCIATION_PARAMS, Native_802.11_data_types_08a8e9e4-9b11-47f6-a3e0-baa25a63bd6f.xml, PDOT11_ASSOCIATION_PARAMS, netvista.dot11_association_params
+ms.keywords : PDOT11_ASSOCIATION_PARAMS, PDOT11_ASSOCIATION_PARAMS structure pointer [Network Drivers Starting with Windows Vista], Native_802.11_data_types_08a8e9e4-9b11-47f6-a3e0-baa25a63bd6f.xml, DOT11_ASSOCIATION_PARAMS, DOT11_ASSOCIATION_PARAMS structure [Network Drivers Starting with Windows Vista], *PDOT11_ASSOCIATION_PARAMS, windot11/DOT11_ASSOCIATION_PARAMS, windot11/PDOT11_ASSOCIATION_PARAMS, netvista.dot11_association_params
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_ASSOCIATION_PARAMS, DOT11_ASSOCIATION_PARAMS"
+req.typenames : DOT11_ASSOCIATION_PARAMS, *PDOT11_ASSOCIATION_PARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -85,6 +85,22 @@ The miniport driver must set the members of
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
+
+#### Type
+
+This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
+
+
+#### Revision
+
+This member must be set to DOT11_ASSOCIATION_PARAMS_REVISION_1.
+
+
+#### Size
+
+This member must be set to 
+       <b>sizeof</b>(DOT11_ASSOCIATION_PARAMS).
+
 `uAssocRequestIEsLength`
 
 The length of the additional IEs, in bytes, that the operating system requests be added to the
@@ -110,9 +126,9 @@ This structure is used with
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569104">OID_DOT11_ASSOCIATION_PARAMS</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
  
 

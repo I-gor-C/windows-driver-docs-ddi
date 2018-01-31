@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : F7AA10E3-5F56-4751-A603-54A0BFB00927
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ucxsstreams/UcxStaticStreamsCreate, UcxStaticStreamsCreate method [Buses], buses._ucxstaticstreamscreate, UcxStaticStreamsCreate
+ms.keywords : buses._ucxstaticstreamscreate, ucxsstreams/UcxStaticStreamsCreate, UcxStaticStreamsCreate method [Buses], UcxStaticStreamsCreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UCX_ROOTHUB_CONFIG, *PUCX_ROOTHUB_CONFIG
+req.typenames : "*PUCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG"
 req.product : Windows 10 or later.
 ---
 

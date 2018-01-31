@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSYNTH_STATS, SYNTH_STATS"
+req.typenames : SYNTH_STATS, *PSYNTH_STATS
 ---
 
 
@@ -129,13 +129,13 @@ The driver indicates <b>NDIS_STATUS_FAILURE</b> if none of the preceding values 
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-miniport_pause.md">MiniportPause</a>
-
-<a href="..\ndis\nc-ndis-miniport_restart.md">MiniportRestart</a>
-
 <a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_driver_wdi_characteristics.md">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>
 
 <a href="..\ndis\ns-ndis-_ndis_miniport_restart_parameters.md">NDIS_MINIPORT_RESTART_PARAMETERS</a>
+
+<a href="..\ndis\nc-ndis-miniport_restart.md">MiniportRestart</a>
+
+<a href="..\ndis\nc-ndis-miniport_pause.md">MiniportPause</a>
 
  
 

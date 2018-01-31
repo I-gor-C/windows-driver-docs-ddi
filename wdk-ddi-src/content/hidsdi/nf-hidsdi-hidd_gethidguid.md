@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 552b607e-65c7-4595-9adb-b9c2f4301afd
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : hidsdi/HidD_GetHidGuid, HidD_GetHidGuid, hidfunc_61242b6f-b794-48c7-84b8-ef8d0d4e69af.xml, HidD_GetHidGuid routine [Human Input Devices], hid.hidd_gethidguid
+ms.keywords : hid.hidd_gethidguid, hidfunc_61242b6f-b794-48c7-84b8-ef8d0d4e69af.xml, HidD_GetHidGuid, HidD_GetHidGuid routine [Human Input Devices], hidsdi/HidD_GetHidGuid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

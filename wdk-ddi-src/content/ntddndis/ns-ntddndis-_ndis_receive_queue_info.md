@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddndis._NDIS_RECEIVE_QUEUE_INFO
-title : _NDIS_RECEIVE_QUEUE_INFO
+title : "_NDIS_RECEIVE_QUEUE_INFO"
 author : windows-driver-content
 description : The NDIS_RECEIVE_QUEUE_INFO structure contains information about a receive queue on a network adapter.
 old-location : netvista\ndis_receive_queue_info.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7cdc45d4-e8aa-437a-b6fc-8b8c0dc17585
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : virtual_machine_queue_ref_5052da2e-c93a-40f9-b129-07538556ef29.xml, NDIS_RECEIVE_QUEUE_INFO structure [Network Drivers Starting with Windows Vista], NDIS_RECEIVE_QUEUE_INFO, PNDIS_RECEIVE_QUEUE_INFO, ntddndis/PNDIS_RECEIVE_QUEUE_INFO, netvista.ndis_receive_queue_info, ntddndis/NDIS_RECEIVE_QUEUE_INFO, PNDIS_RECEIVE_QUEUE_INFO structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_RECEIVE_QUEUE_INFO, _NDIS_RECEIVE_QUEUE_INFO
+ms.keywords : "_NDIS_RECEIVE_QUEUE_INFO, netvista.ndis_receive_queue_info, *PNDIS_RECEIVE_QUEUE_INFO, ntddndis/PNDIS_RECEIVE_QUEUE_INFO, NDIS_RECEIVE_QUEUE_INFO, virtual_machine_queue_ref_5052da2e-c93a-40f9-b129-07538556ef29.xml, PNDIS_RECEIVE_QUEUE_INFO, PNDIS_RECEIVE_QUEUE_INFO structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_RECEIVE_QUEUE_INFO, NDIS_RECEIVE_QUEUE_INFO structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,7 +74,22 @@ A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags. This member is 
 
 The type, revision, and size of the <b>NDIS_RECEIVE_QUEUE_INFO</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
-The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_RECEIVE_QUEUE_INFO</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to one of the following values:
+The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_RECEIVE_QUEUE_INFO</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to one of the following values: 
+
+
+
+
+#### NDIS_RECEIVE_QUEUE_INFO_REVISION_2
+
+Added additional members for NDIS 6.30.
+<div class="alert"><b>Note</b>  Revision 2 of this structure is  supported only on Windows Server 2012 and later versions of Windows Server.</div><div> </div>Set the <b>Size</b> member to <b>NDIS_SIZEOF_RECEIVE_QUEUE_INFO_REVISION_2</b>.
+
+
+#### NDIS_RECEIVE_QUEUE_INFO_REVISION_1
+
+Original version for NDIS 6.20.
+
+Set the <b>Size</b> member to <b>NDIS_SIZEOF_RECEIVE_QUEUE_INFO_REVISION_1</b>.
 
 `InterruptCoalescingDomainId`
 
@@ -170,11 +185,11 @@ With a successful return from the <mshelp:link keywords="netvista.oid_receive_fi
 
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-enum-queues">OID_RECEIVE_FILTER_ENUM_QUEUES</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-set-filter">OID_RECEIVE_FILTER_SET_FILTER</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569785">OID_RECEIVE_FILTER_CLEAR_FILTER</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
  
 

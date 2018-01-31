@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 32cc50bc-a93b-43ec-98c7-bfaaebbe6c28
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDmaObjectRef_a8d61436-75d3-4c14-a81b-6ba7adb3c442.xml, PFN_WDFDMATRANSACTIONGETBYTESTRANSFERRED, wdfdmatransaction/WdfDmaTransactionGetBytesTransferred, WdfDmaTransactionGetBytesTransferred method, kmdf.wdfdmatransactiongetbytestransferred, WdfDmaTransactionGetBytesTransferred, wdf.wdfdmatransactiongetbytestransferred
+ms.keywords : kmdf.wdfdmatransactiongetbytestransferred, WdfDmaTransactionGetBytesTransferred, PFN_WDFDMATRANSACTIONGETBYTESTRANSFERRED, DFDmaObjectRef_a8d61436-75d3-4c14-a81b-6ba7adb3c442.xml, wdfdmatransaction/WdfDmaTransactionGetBytesTransferred, wdf.wdfdmatransactiongetbytestransferred, WdfDmaTransactionGetBytesTransferred method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_DMA_SYSTEM_PROFILE_CONFIG, *PWDF_DMA_SYSTEM_PROFILE_CONFIG
+req.typenames : "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
 req.product : Windows 10 or later.
 ---
 
@@ -79,18 +79,18 @@ Framework-based drivers typically call <b>WdfDmaTransactionGetBytesTransferred</
 | **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcompletewithinformation.md">WdfRequestCompleteWithInformation</a>
-
-<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactiondmacompleted.md">WdfDmaTransactionDmaCompleted</a>
+<a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_dpc.md">EvtInterruptDpc</a>
 
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>
 
-<a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_dpc.md">EvtInterruptDpc</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcompletewithinformation.md">WdfRequestCompleteWithInformation</a>
+
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactiondmacompleted.md">WdfDmaTransactionDmaCompleted</a>
 
  
 

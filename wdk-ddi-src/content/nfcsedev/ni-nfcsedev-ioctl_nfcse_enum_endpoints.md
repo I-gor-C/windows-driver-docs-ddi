@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
+req.typenames : "*PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE"
 ---
 
 # IOCTL_NFCSE_ENUM_ENDPOINTS IOCTL

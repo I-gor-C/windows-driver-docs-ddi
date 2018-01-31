@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 86e9662e-d308-4e3a-98c1-4134186f1bad
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : FwpsNetBufferListAssociateContext1 function [Network Drivers Starting with Windows Vista], netvista.fwpsnetbufferlistassociatecontext1, fwpsk/FwpsNetBufferListAssociateContext1, FwpsNetBufferListAssociateContext1
+ms.keywords : netvista.fwpsnetbufferlistassociatecontext1, fwpsk/FwpsNetBufferListAssociateContext1, FwpsNetBufferListAssociateContext1, FwpsNetBufferListAssociateContext1 function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -160,15 +160,12 @@ This function is essentially identical to the previous version,
 | **Minimum UMDF version** |  |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/a151256b-d69f-4abb-bf68-644f157dfdd7">Using Packet Tagging</a>
-
-<mshelp:link keywords="netvista.fwpsnetbufferlistremovecontext0" tabindex="0"><b>
-   FwpsNetBufferListRemoveContext0</b></mshelp:link>
 
 <mshelp:link keywords="netvista.fwpsnetbufferlistretrievecontext0" tabindex="0"><b>
    FwpsNetBufferListRetrieveContext0</b></mshelp:link>
@@ -176,9 +173,12 @@ This function is essentially identical to the previous version,
 <mshelp:link keywords="netvista.fwpsnetbufferlistgettagforcontext0" tabindex="0"><b>
    FwpsNetBufferListGetTagForContext0</b></mshelp:link>
 
+<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext0.md">FwpsNetBufferListAssociateContext0</a>
+
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
-<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext0.md">FwpsNetBufferListAssociateContext0</a>
+<mshelp:link keywords="netvista.fwpsnetbufferlistremovecontext0" tabindex="0"><b>
+   FwpsNetBufferListRemoveContext0</b></mshelp:link>
 
 <a href="..\fwpsk\nc-fwpsk-fwps_net_buffer_list_notify_fn1.md">FWPS_NET_BUFFER_LIST_NOTIFY_FN1</a>
 

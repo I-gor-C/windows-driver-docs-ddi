@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : fc0f5a3b-3ab0-4103-85a2-f7b5ce64ec79
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_GetAllAdditionalNumberStrings, rilapi/RIL_GetAllAdditionalNumberStrings, netvista.ril_getalladditionalnumberstrings, RIL_GetAllAdditionalNumberStrings method [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.ril_getalladditionalnumberstrings, RIL_GetAllAdditionalNumberStrings, RIL_GetAllAdditionalNumberStrings method [Network Drivers Starting with Windows Vista], rilapi/RIL_GetAllAdditionalNumberStrings
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
+req.typenames : "*PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER"
 req.product : Windows 10 or later.
 ---
 

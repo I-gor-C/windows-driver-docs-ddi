@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dukmdt._D3DDDICB_LOCK2FLAGS
-title : _D3DDDICB_LOCK2FLAGS
+title : "_D3DDDICB_LOCK2FLAGS"
 author : windows-driver-content
 description : D3DDDICB_LOCK2FLAGS is used by the Lock2 kernel function to determine how an allocation is locked.
 old-location : display\d3dddicb_lock2flags.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1F802912-F99B-4C04-9ABD-8FCC50FD3859
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDICB_LOCK2FLAGS, D3DDDICB_LOCK2FLAGS, display.d3dddicb_lock2flags, D3DDDICB_LOCK2FLAGS structure [Display Devices], d3dukmdt/D3DDDICB_LOCK2FLAGS
+ms.keywords : D3DDDICB_LOCK2FLAGS structure [Display Devices], d3dukmdt/D3DDDICB_LOCK2FLAGS, _D3DDDICB_LOCK2FLAGS, display.d3dddicb_lock2flags, D3DDDICB_LOCK2FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,9 @@ typedef struct _D3DDDICB_LOCK2FLAGS {
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtlock2.md">Lock2</a>
-
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtlock.md">Lock</a>
+
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtlock2.md">Lock2</a>
 
  
 

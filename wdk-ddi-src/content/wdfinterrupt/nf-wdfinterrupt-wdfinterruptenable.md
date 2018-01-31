@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e2ffab7f-b6bf-4707-9a3d-9619330b2af1
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfinterruptenable, PFN_WDFINTERRUPTENABLE, kmdf.wdfinterruptenable, wdfinterrupt/WdfInterruptEnable, WdfInterruptEnable method, DFInterruptObjectRef_4fa737c9-fae4-4d3c-9a27-165f5348c66c.xml, WdfInterruptEnable
+ms.keywords : kmdf.wdfinterruptenable, DFInterruptObjectRef_4fa737c9-fae4-4d3c-9a27-165f5348c66c.xml, wdf.wdfinterruptenable, PFN_WDFINTERRUPTENABLE, WdfInterruptEnable method, wdfinterrupt/WdfInterruptEnable, WdfInterruptEnable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_INTERRUPT_PRIORITY, WDF_INTERRUPT_PRIORITY"
+req.typenames : WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
 req.product : Windows 10 or later.
 ---
 

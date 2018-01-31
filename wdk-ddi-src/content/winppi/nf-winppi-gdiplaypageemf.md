@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : e0122858-0c9d-4aa8-a394-89d65fb98fda
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : gdifnc_b1c27aba-d367-481a-8012-6c2f957ff11e.xml, winppi/GdiPlayPageEMF, GdiPlayPageEMF function [Print Devices], GdiPlayPageEMF, print.gdiplaypageemf
+ms.keywords : GdiPlayPageEMF function [Print Devices], winppi/GdiPlayPageEMF, print.gdiplaypageemf, gdifnc_b1c27aba-d367-481a-8012-6c2f957ff11e.xml, GdiPlayPageEMF
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

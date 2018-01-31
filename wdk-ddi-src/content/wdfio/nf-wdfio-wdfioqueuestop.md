@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 50ff8064-b28c-4b2b-89d2-bad5e503b2d6
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIoQueueStop method, kmdf.wdfioqueuestop, wdf.wdfioqueuestop, WdfIoQueueStop, PFN_WDFIOQUEUESTOP, wdfio/WdfIoQueueStop, DFQueueObjectRef_c1ac397c-5601-4976-9c42-41b118d429c1.xml
+ms.keywords : DFQueueObjectRef_c1ac397c-5601-4976-9c42-41b118d429c1.xml, wdfio/WdfIoQueueStop, kmdf.wdfioqueuestop, WdfIoQueueStop method, wdf.wdfioqueuestop, PFN_WDFIOQUEUESTOP, WdfIoQueueStop
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,16 +95,16 @@ For more information about the <b>WdfIoQueueStop</b> method, see <a href="https:
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfio.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | ChangeQueueState, DriverCreate, EvtSurpriseRemoveNoSuspendQueue, KmdfIrql, KmdfIrql2, NoCancelFromEvtSurpriseRemove |
 
 ## See Also
 
-<a href="..\wdfio\nf-wdfio-wdfioqueuestopsynchronously.md">WdfIoQueueStopSynchronously</a>
+<a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a>
 
 <a href="..\wdfio\nf-wdfio-wdfioqueuestart.md">WdfIoQueueStart</a>
 
-<a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a>
+<a href="..\wdfio\nf-wdfio-wdfioqueuestopsynchronously.md">WdfIoQueueStopSynchronously</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e8584c60-57ba-4b9c-949f-041bb37dfb13
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlUpcaseUnicodeChar, RtlUpcaseUnicodeChar routine [Kernel-Mode Driver Architecture], wdm/RtlUpcaseUnicodeChar, kernel.rtlupcaseunicodechar, k109_81806669-d742-4cb9-b4dd-d7e40fef171a.xml
+ms.keywords : RtlUpcaseUnicodeChar routine [Kernel-Mode Driver Architecture], kernel.rtlupcaseunicodechar, k109_81806669-d742-4cb9-b4dd-d7e40fef171a.xml, RtlUpcaseUnicodeChar, wdm/RtlUpcaseUnicodeChar
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,7 +72,7 @@ Specifies the character to convert.
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

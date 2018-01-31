@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e1e8605c-b3d1-40db-bb33-fc1f7ed51617
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltApiRef_p_to_z_889de924-a441-479f-9818-da016dd3feb3.xml, ifsk.fltsetvolumecontext, FltSetVolumeContext, FltSetVolumeContext function [Installable File System Drivers], fltkernel/FltSetVolumeContext
+ms.keywords : fltkernel/FltSetVolumeContext, FltApiRef_p_to_z_889de924-a441-479f-9818-da016dd3feb3.xml, FltSetVolumeContext, ifsk.fltsetvolumecontext, FltSetVolumeContext function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -61,7 +61,19 @@ Opaque volume pointer for the volume.
 
 `Operation`
 
-Flag specifying details of the operation to be performed. This parameter must be one of the following:
+Flag specifying details of the operation to be performed. This parameter must be one of the following: 
+
+
+
+
+#### FLT_SET_CONTEXT_REPLACE_IF_EXISTS
+
+If a context is already set, replace it with <i>NewContext</i>. Otherwise, insert <i>NewContext</i> into the list of contexts for the volume. 
+
+
+#### FLT_SET_CONTEXT_KEEP_IF_EXISTS
+
+If a context is already set, return STATUS_FLT_CONTEXT_ALREADY_DEFINED. Otherwise, insert <i>NewContext</i> into the list of contexts for the volume.
 
 `NewContext`
 
@@ -163,20 +175,20 @@ For more information about context reference counting, see <a href="https://msdn
 | **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltgetvolumecontext.md">FltGetVolumeContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltdeletevolumecontext.md">FltDeleteVolumeContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetvolumecontext.md">FltGetVolumeContext</a>
 
  
 

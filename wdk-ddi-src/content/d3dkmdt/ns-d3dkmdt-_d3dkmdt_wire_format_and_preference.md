@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmdt._D3DKMDT_WIRE_FORMAT_AND_PREFERENCE
-title : _D3DKMDT_WIRE_FORMAT_AND_PREFERENCE
+title : "_D3DKMDT_WIRE_FORMAT_AND_PREFERENCE"
 author : windows-driver-content
 description : Holds information about the preferred pixel encoding format.
 old-location : display\d3dkmdt_wire_format_and_preference.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 24CC6A10-6462-4681-B340-E887B679F456
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmdt/D3DKMDT_WIRE_FORMAT_AND_PREFERENCE, D3DKMDT_WIRE_FORMAT_AND_PREFERENCE union [Display Devices], PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE, PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE union pointer [Display Devices], *PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE, _D3DKMDT_WIRE_FORMAT_AND_PREFERENCE, d3dkmdt/PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE, D3DKMDT_WIRE_FORMAT_AND_PREFERENCE, display.d3dkmdt_wire_format_and_preference
+ms.keywords : D3DKMDT_WIRE_FORMAT_AND_PREFERENCE, display.d3dkmdt_wire_format_and_preference, d3dkmdt/D3DKMDT_WIRE_FORMAT_AND_PREFERENCE, PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE, D3DKMDT_WIRE_FORMAT_AND_PREFERENCE union [Display Devices], *PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE, _D3DKMDT_WIRE_FORMAT_AND_PREFERENCE, d3dkmdt/PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE, PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE union pointer [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE, D3DKMDT_WIRE_FORMAT_AND_PREFERENCE"
+req.typenames : D3DKMDT_WIRE_FORMAT_AND_PREFERENCE, *PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE
 ---
 
 # _D3DKMDT_WIRE_FORMAT_AND_PREFERENCE structure

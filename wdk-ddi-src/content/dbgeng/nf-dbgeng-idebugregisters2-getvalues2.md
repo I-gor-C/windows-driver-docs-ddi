@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 182e55ec-1a99-4bd6-bcf6-d5e8302b9eae
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetValues2 method [Windows Debugging], debugger.getvalues2, IDebugRegisters2::GetValues2, GetValues2 method [Windows Debugging], IDebugRegisters2 interface, dbgeng/IDebugRegisters2::GetValues2, GetValues2, IDebugRegisters2 interface [Windows Debugging], GetValues2 method, IDebugRegisters2, IDebugRegisters_de7a1e67-5ffe-48f8-a19d-63858c500389.xml
+ms.keywords : GetValues2 method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters_de7a1e67-5ffe-48f8-a19d-63858c500389.xml, GetValues2 method [Windows Debugging], dbgeng/IDebugRegisters2::GetValues2, debugger.getvalues2, GetValues2, IDebugRegisters2::GetValues2, IDebugRegisters2, IDebugRegisters2 interface [Windows Debugging], GetValues2 method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

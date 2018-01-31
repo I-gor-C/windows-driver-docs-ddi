@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 69524144-fc55-4721-a753-6452566a8b26
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndismcmderegistersapcomplete, condis_mcm_ref_c7c4035b-8227-418a-895d-9b14027ce4c4.xml, NdisMCmDeregisterSapComplete macro [Network Drivers Starting with Windows Vista], ndis/NdisMCmDeregisterSapComplete, NdisMCmDeregisterSapComplete
+ms.keywords : NdisMCmDeregisterSapComplete macro [Network Drivers Starting with Windows Vista], ndis/NdisMCmDeregisterSapComplete, NdisMCmDeregisterSapComplete, netvista.ndismcmderegistersapcomplete, condis_mcm_ref_c7c4035b-8227-418a-895d-9b14027ce4c4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -97,19 +97,19 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCM_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiscmderegistersapcomplete.md">NdisCmDeregisterSapComplete</a>
+<a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a>
+
+<a href="..\ndis\nc-ndis-protocol_cm_deregister_sap.md">ProtocolCmDeregisterSap</a>
 
 <mshelp:link keywords="netvista.protocolclderegistersapcomplete" tabindex="0"><i>
    ProtocolClDeregisterSapComplete</i></mshelp:link>
 
-<a href="..\ndis\nc-ndis-protocol_cm_deregister_sap.md">ProtocolCmDeregisterSap</a>
-
-<a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a>
+<a href="..\ndis\nf-ndis-ndiscmderegistersapcomplete.md">NdisCmDeregisterSapComplete</a>
 
  
 

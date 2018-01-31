@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0d0dea63-de0d-4421-b123-ce31ac6af1d9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : FwpsFreeCloneNetBufferList0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsFreeCloneNetBufferList0, FwpsFreeCloneNetBufferList0, netvista.fwpsfreeclonenetbufferlist0, wfp_ref_2_funct_3_fwps_D-H_23efae1d-62cd-4559-b332-08ff843c3ab6.xml
+ms.keywords : wfp_ref_2_funct_3_fwps_D-H_23efae1d-62cd-4559-b332-08ff843c3ab6.xml, FwpsFreeCloneNetBufferList0 function [Network Drivers Starting with Windows Vista], netvista.fwpsfreeclonenetbufferlist0, fwpsk/FwpsFreeCloneNetBufferList0, FwpsFreeCloneNetBufferList0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -92,15 +92,15 @@ A callout driver calls the
 | **Minimum UMDF version** |  |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
 <mshelp:link keywords="netvista.fwpsallocateclonenetbufferlist0" tabindex="0"><b>
    FwpsAllocateCloneNetBufferList0</b></mshelp:link>
-
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
  
 

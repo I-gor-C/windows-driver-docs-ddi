@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : b5aeb972-3e52-4cdc-842b-7848bb2f8dc7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxCancelTimerRequest routine [Installable File System Drivers], rxref_f9950992-18a5-4418-a18d-e105ecdc74ff.xml, rxtimer/RxCancelTimerRequest, RxCancelTimerRequest, ifsk.rxcanceltimerrequest
+ms.keywords : ifsk.rxcanceltimerrequest, rxtimer/RxCancelTimerRequest, RxCancelTimerRequest routine [Installable File System Drivers], RxCancelTimerRequest, rxref_f9950992-18a5-4418-a18d-e105ecdc74ff.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
+req.typenames : RX_CONTEXT, *PRX_CONTEXT
 req.product : Windows 10 or later.
 ---
 
@@ -87,7 +87,7 @@ If the recurrent timer is not found, this routine will return STATUS_NOT_FOUND.
 | **Minimum UMDF version** |  |
 | **Header** | rxtimer.h (include Rxtimer.h, Rxworkq.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

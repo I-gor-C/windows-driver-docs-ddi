@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dukmdt._D3DDDI_MULTISAMPLINGMETHOD
-title : _D3DDDI_MULTISAMPLINGMETHOD
+title : "_D3DDDI_MULTISAMPLINGMETHOD"
 author : windows-driver-content
 description : The D3DDDI_MULTISAMPLINGMETHOD structure describes a multiple-sampling method.
 old-location : display\d3dddi_multisamplingmethod.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2838cb87-0cd5-4351-a477-00f75eca0896
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_MULTISAMPLINGMETHOD structure [Display Devices], _D3DDDI_MULTISAMPLINGMETHOD, D3DDDI_MULTISAMPLINGMETHOD, display.d3dddi_multisamplingmethod, d3dukmdt/D3DDDI_MULTISAMPLINGMETHOD, D3D_other_Structs_752f8e91-d298-437a-80c4-005e21ec0ddd.xml
+ms.keywords : display.d3dddi_multisamplingmethod, _D3DDDI_MULTISAMPLINGMETHOD, D3D_other_Structs_752f8e91-d298-437a-80c4-005e21ec0ddd.xml, D3DDDI_MULTISAMPLINGMETHOD structure [Display Devices], D3DDDI_MULTISAMPLINGMETHOD, d3dukmdt/D3DDDI_MULTISAMPLINGMETHOD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -73,11 +73,11 @@ The driver can partition its quality levels for a given multiple-sampling method
 
 ## See Also
 
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_describeallocation.md">DxgkDdiDescribeAllocation</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_describeallocation.md">DXGKARG_DESCRIBEALLOCATION</a>
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_describeallocation.md">DxgkDdiDescribeAllocation</a>
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
 
  
 

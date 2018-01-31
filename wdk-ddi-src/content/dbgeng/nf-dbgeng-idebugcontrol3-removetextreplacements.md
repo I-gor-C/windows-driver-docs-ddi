@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : f753542a-c9e6-423f-80e4-c7e2e0f36a04
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : RemoveTextReplacements method [Windows Debugging], IDebugControl2 interface, debugger.removetextreplacements, dbgeng/IDebugControl2::RemoveTextReplacements, IDebugControl2::RemoveTextReplacements, RemoveTextReplacements method [Windows Debugging], IDebugControl3 interface, RemoveTextReplacements method [Windows Debugging], IDebugControl2 interface [Windows Debugging], RemoveTextReplacements method, IDebugControl_ba950bc7-3ed5-4e2e-913d-c743e1190482.xml, IDebugControl3 interface [Windows Debugging], RemoveTextReplacements method, dbgeng/IDebugControl3::RemoveTextReplacements, RemoveTextReplacements, IDebugControl3, IDebugControl3::RemoveTextReplacements
+ms.keywords : IDebugControl3::RemoveTextReplacements, IDebugControl3, IDebugControl2 interface [Windows Debugging], RemoveTextReplacements method, debugger.removetextreplacements, dbgeng/IDebugControl2::RemoveTextReplacements, dbgeng/IDebugControl3::RemoveTextReplacements, RemoveTextReplacements, RemoveTextReplacements method [Windows Debugging], RemoveTextReplacements method [Windows Debugging], IDebugControl2 interface, RemoveTextReplacements method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], RemoveTextReplacements method, IDebugControl2::RemoveTextReplacements, IDebugControl_ba950bc7-3ed5-4e2e-913d-c743e1190482.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -92,17 +92,17 @@ For an overview of aliases used by the <a href="https://msdn.microsoft.com/fa52a
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547988">GetNumberTextReplacements</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553268">OutputTextReplacements</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556818">SetTextReplacement</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537997">ad (Delete Alias)</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537997">ad (Delete Alias)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556818">SetTextReplacement</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553268">OutputTextReplacements</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 
  
 

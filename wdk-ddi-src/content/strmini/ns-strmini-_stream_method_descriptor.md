@@ -1,14 +1,14 @@
 ---
 UID : NS:strmini._STREAM_METHOD_DESCRIPTOR
-title : _STREAM_METHOD_DESCRIPTOR
+title : "_STREAM_METHOD_DESCRIPTOR"
 author : windows-driver-content
-description : .
+description : "."
 old-location : stream\stream_method_descriptor.htm
 old-project : stream
 ms.assetid : 2C35EF9F-143C-4DE2-93D0-5BCF8AADF11B
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PSTREAM_METHOD_DESCRIPTOR structure pointer [Streaming Media Devices], strmini/PSTREAM_METHOD_DESCRIPTOR, STREAM_METHOD_DESCRIPTOR, strmini/STREAM_METHOD_DESCRIPTOR, PSTREAM_METHOD_DESCRIPTOR, STREAM_METHOD_DESCRIPTOR structure [Streaming Media Devices], stream.stream_method_descriptor, *PSTREAM_METHOD_DESCRIPTOR, _STREAM_METHOD_DESCRIPTOR
+ms.keywords : "*PSTREAM_METHOD_DESCRIPTOR, strmini/STREAM_METHOD_DESCRIPTOR, _STREAM_METHOD_DESCRIPTOR, PSTREAM_METHOD_DESCRIPTOR structure pointer [Streaming Media Devices], strmini/PSTREAM_METHOD_DESCRIPTOR, STREAM_METHOD_DESCRIPTOR structure [Streaming Media Devices], PSTREAM_METHOD_DESCRIPTOR, stream.stream_method_descriptor, STREAM_METHOD_DESCRIPTOR"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : STREAM_METHOD_DESCRIPTOR, *PSTREAM_METHOD_DESCRIPTOR
+req.typenames : "*PSTREAM_METHOD_DESCRIPTOR, STREAM_METHOD_DESCRIPTOR"
 req.product : Windows 10 or later.
 ---
 

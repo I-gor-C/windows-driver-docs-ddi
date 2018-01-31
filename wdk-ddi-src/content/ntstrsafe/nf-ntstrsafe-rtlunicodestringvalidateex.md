@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 864935c4-28b8-4738-ac83-e51e6988248b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntstrsafe/RtlUnicodeStringValidateEx, safestrings_dcb45919-f329-4637-b09b-f944ad034502.xml, kernel.rtlunicodestringvalidateex, RtlUnicodeStringValidateEx function [Kernel-Mode Driver Architecture], RtlUnicodeStringValidateEx
+ms.keywords : RtlUnicodeStringValidateEx, RtlUnicodeStringValidateEx function [Kernel-Mode Driver Architecture], safestrings_dcb45919-f329-4637-b09b-f944ad034502.xml, ntstrsafe/RtlUnicodeStringValidateEx, kernel.rtlunicodestringvalidateex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
+req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 
@@ -59,7 +59,14 @@ Optional. A pointer to a <b>UNICODE_STRING</b> structure to be validated. This p
 
 `dwFlags`
 
-The following flag is defined:
+The following flag is defined: 
+
+
+
+
+#### STRSAFE_IGNORE_NULLS
+
+If this flag is set, the source pointer can be <b>NULL</b>. <b>RtlUnicodeStringValidateEx</b> treats <b>NULL</b> source buffer pointers like empty strings (TEXT("")).
 
 
 ## Return Value
@@ -124,9 +131,9 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringvalidate.md">RtlUnicodeStringValidate</a>
-
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringvalidate.md">RtlUnicodeStringValidate</a>
 
  
 

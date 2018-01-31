@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6d73ce17-1fbc-4d12-87f0-ac10889b85be
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGateTerminateOr function [Streaming Media Devices], KsGateTerminateOr, ks/KsGateTerminateOr, avfunc_b2bf57c5-4f08-456a-bbac-217531cf5bc3.xml, stream.ksgateterminateor
+ms.keywords : KsGateTerminateOr, stream.ksgateterminateor, ks/KsGateTerminateOr, KsGateTerminateOr function [Streaming Media Devices], avfunc_b2bf57c5-4f08-456a-bbac-217531cf5bc3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,11 +79,11 @@ Logical gates should be deleted in a front to back manner. <b>KsGateTerminateOr<
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksgateterminateand.md">KsGateTerminateAnd</a>
+<a href="..\ks\nf-ks-ksgateinitializeand.md">KsGateInitializeAnd</a>
 
 <a href="..\ks\nf-ks-ksgateinitializeor.md">KsGateInitializeOr</a>
 
-<a href="..\ks\nf-ks-ksgateinitializeand.md">KsGateInitializeAnd</a>
+<a href="..\ks\nf-ks-ksgateterminateand.md">KsGateTerminateAnd</a>
 
  
 

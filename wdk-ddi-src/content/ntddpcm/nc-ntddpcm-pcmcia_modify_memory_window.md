@@ -94,6 +94,9 @@ Specifies the width of bus access to the PCMCIA memory card. <i>BusWidth</i> mus
 
 If <i>Enable</i> is <b>FALSE</b>, <i>BusWidth</i> is not used.
 
+
+#### PCMCIA_MEMORY_8BIT_ACCESS
+
 `IsAttributeMemory`
 
 
@@ -118,7 +121,7 @@ Callers of this routine must be running at IRQL &lt;= DISPATCH_LEVEL. To maintai
 | **Minimum UMDF version** |  |
 | **Header** | ntddpcm.h (include Ntddpcm.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL (See Remarks section.) |
+| **IRQL** | "<=DISPATCH_LEVEL (See Remarks section.)" |
 | **DDI compliance rules** |  |
 
 ## See Also

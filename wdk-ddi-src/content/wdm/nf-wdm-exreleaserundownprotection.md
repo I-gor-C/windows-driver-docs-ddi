@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 442FD107-04D4-4194-B64A-21699A70B4B6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExReleaseRundownProtection routine [Kernel-Mode Driver Architecture], kernel.exreleaserundownprotection, wdm/ExReleaseRundownProtection, ExReleaseRundownProtection
+ms.keywords : ExReleaseRundownProtection routine [Kernel-Mode Driver Architecture], ExReleaseRundownProtection, kernel.exreleaserundownprotection, wdm/ExReleaseRundownProtection
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,7 +77,7 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** | HwStorPortProhibitedDDIs |
 
 ## See Also

@@ -1,6 +1,6 @@
 ---
 UID : NE:ucmtypes._UCM_TYPEC_PARTNER
-title : _UCM_TYPEC_PARTNER
+title : "_UCM_TYPEC_PARTNER"
 author : windows-driver-content
 description : Defines the state of the Type-C connector.
 old-location : buses\ucm_type_c_port_state.htm
@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 4779E943-5C13-4DE2-AF8F-37657F0F99C0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcmTypeCPartnerStateDebugAccessory, _UCM_TYPEC_PARTNER, ucmtypes/UcmTypeCPartnerStateInvalid, UCM_TYPEC_PARTNER, ucmtypes/UcmTypeCPartnerStateUfp, UcmTypeCPartnerStateDfp, ucmtypes/UcmTypeCPartnerStatePoweredCableWithUfp, UcmTypeCPartnerStateAudioAccessory, ucmtypes/UcmTypeCPartnerStatePoweredCableNoUfp, buses.ucm_type_c_port_state, ucmtypes/UCM_TYPEC_PARTNER, ucmtypes/UcmTypeCPartnerStateDfp, ucmtypes/UcmTypeCPartnerStateDebugAccessory, UcmTypeCPartnerStateInvalid, UcmTypeCPartnerStatePoweredCableNoUfp, UCM_TYPEC_PARTNER enumeration [Buses], UcmTypeCPartnerStatePoweredCableWithUfp, ucmtypes/UcmTypeCPartnerStateAudioAccessory, UcmTypeCPartnerStateUfp
+ms.keywords : UcmTypeCPartnerStatePoweredCableNoUfp, ucmtypes/UcmTypeCPartnerStateAudioAccessory, UcmTypeCPartnerStateDfp, UcmTypeCPartnerStatePoweredCableWithUfp, ucmtypes/UcmTypeCPartnerStateDfp, ucmtypes/UcmTypeCPartnerStateInvalid, ucmtypes/UcmTypeCPartnerStateUfp, UcmTypeCPartnerStateInvalid, ucmtypes/UCM_TYPEC_PARTNER, UcmTypeCPartnerStateUfp, buses.ucm_type_c_port_state, _UCM_TYPEC_PARTNER, ucmtypes/UcmTypeCPartnerStatePoweredCableWithUfp, UcmTypeCPartnerStateAudioAccessory, ucmtypes/UcmTypeCPartnerStateDebugAccessory, UcmTypeCPartnerStateDebugAccessory, UCM_TYPEC_PARTNER, UCM_TYPEC_PARTNER enumeration [Buses], ucmtypes/UcmTypeCPartnerStatePoweredCableNoUfp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -106,9 +106,9 @@ typedef enum _UCM_TYPEC_PARTNER {
 
 ## See Also
 
-<a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypecattach.md">UcmConnectorTypeCAttach</a>
-
 <a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_typec_attach_params.md">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a>
+
+<a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypecattach.md">UcmConnectorTypeCAttach</a>
 
  
 

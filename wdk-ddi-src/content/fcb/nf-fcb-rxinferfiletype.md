@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 340b304c-5484-4d98-9ef4-8814c68443a0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rxinferfiletype, fcb/RxInferFileType, RxInferFileType, rxref_e020604c-fa08-40f3-895d-425347c73307.xml, RxInferFileType function [Installable File System Drivers]
+ms.keywords : ifsk.rxinferfiletype, rxref_e020604c-fa08-40f3-895d-425347c73307.xml, RxInferFileType function [Installable File System Drivers], fcb/RxInferFileType, RxInferFileType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -117,7 +117,7 @@ The <b>RxInferFileType</b> routine is not called internally by RDBSS. The <b>RxI
 | **Minimum UMDF version** |  |
 | **Header** | fcb.h (include Rxcontx.h, Nodetype.h, Mrxfcb.h, Fcb.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

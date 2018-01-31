@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 2B5492CD-B24D-44B5-BDAE-0B43A1AF1FCA
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmCopyMemory routine [Kernel-Mode Driver Architecture], kernel.mmcopymemory, ntddk/MmCopyMemory, MmCopyMemory
+ms.keywords : MmCopyMemory, ntddk/MmCopyMemory, MmCopyMemory routine [Kernel-Mode Driver Architecture], kernel.mmcopymemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -116,7 +116,7 @@ If memory at the virtual address specified by <i>SourceAddress</i> is not reside
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

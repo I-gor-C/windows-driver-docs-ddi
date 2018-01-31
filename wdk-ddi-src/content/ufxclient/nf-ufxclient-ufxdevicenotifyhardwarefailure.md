@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2EEA262C-5186-4450-A01D-212278ED710B
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ufxclient/UfxDeviceNotifyHardwareFailure, UfxDeviceNotifyHardwareFailure, buses.ufxdevicenotifyhardwarefailure, UfxDeviceNotifyHardwareFailure method [Buses]
+ms.keywords : UfxDeviceNotifyHardwareFailure method [Buses], ufxclient/UfxDeviceNotifyHardwareFailure, buses.ufxdevicenotifyhardwarefailure, UfxDeviceNotifyHardwareFailure
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
+req.typenames : UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
 req.product : Windows 10 or later.
 ---
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 0e3beb72-2b00-41be-a7b4-341bcf065e92
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PKSFRAMETIME, ks/PKSFRAMETIME, PKSFRAMETIME structure pointer [Streaming Media Devices], stream.ksframetime, KSFRAMETIME structure [Streaming Media Devices], PKSFRAMETIME, KSFRAMETIME, ks-struct_3abc9b81-d7e7-455c-a577-2efa7c986cc5.xml, ks/KSFRAMETIME"
+ms.keywords : ks-struct_3abc9b81-d7e7-455c-a577-2efa7c986cc5.xml, ks/KSFRAMETIME, PKSFRAMETIME, *PKSFRAMETIME, KSFRAMETIME, stream.ksframetime, KSFRAMETIME structure [Streaming Media Devices], ks/PKSFRAMETIME, PKSFRAMETIME structure pointer [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSFRAMETIME, KSFRAMETIME"
+req.typenames : KSFRAMETIME, *PKSFRAMETIME
 ---
 
 # KSFRAMETIME structure

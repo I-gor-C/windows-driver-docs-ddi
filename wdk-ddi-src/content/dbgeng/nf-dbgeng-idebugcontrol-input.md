@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 8a37bce1-762b-4a08-a677-ed2e484c1bba
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl interface [Windows Debugging], Input method, Input method [Windows Debugging], IDebugControl interface, IDebugControl_10615761-d032-439f-955b-220def3835a9.xml, IDebugControl::Input, debugger.input, Input method [Windows Debugging], dbgeng/IDebugControl::Input, IDebugControl, Input
+ms.keywords : debugger.input, IDebugControl interface [Windows Debugging], Input method, dbgeng/IDebugControl::Input, IDebugControl_10615761-d032-439f-955b-220def3835a9.xml, IDebugControl::Input, Input method [Windows Debugging], IDebugControl, Input, Input method [Windows Debugging], IDebugControl interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -118,9 +118,9 @@ For an overview of input in the debugger engine, see <a href="https://msdn.micro
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550970">InputWide</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550970">InputWide</a>
 
  
 

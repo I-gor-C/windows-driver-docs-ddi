@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddndis._NDIS_SRIOV_PROBED_BARS_INFO
-title : _NDIS_SRIOV_PROBED_BARS_INFO
+title : "_NDIS_SRIOV_PROBED_BARS_INFO"
 author : windows-driver-content
 description : The NDIS_SRIOV_PROBED_BARS_INFO structure specifies the values of the PCI Express (PCIe) Base Address Registers (BARs) of a network adapter that supports the single root I/O virtualization (SR-IOV) interface.
 old-location : netvista\ndis_sriov_probed_bars_info.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9f37d9e7-ae8b-448e-a535-f34b01c2bf8a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_SRIOV_PROBED_BARS_INFO, _NDIS_SRIOV_PROBED_BARS_INFO, PNDIS_SRIOV_PROBED_BARS_INFO, NDIS_SRIOV_PROBED_BARS_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_SRIOV_PROBED_BARS_INFO structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_SRIOV_PROBED_BARS_INFO, netvista.ndis_sriov_probed_bars_info, ntddndis/NDIS_SRIOV_PROBED_BARS_INFO, ntddndis/PNDIS_SRIOV_PROBED_BARS_INFO
+ms.keywords : ntddndis/NDIS_SRIOV_PROBED_BARS_INFO, NDIS_SRIOV_PROBED_BARS_INFO, _NDIS_SRIOV_PROBED_BARS_INFO, *PNDIS_SRIOV_PROBED_BARS_INFO, PNDIS_SRIOV_PROBED_BARS_INFO, NDIS_SRIOV_PROBED_BARS_INFO structure [Network Drivers Starting with Windows Vista], netvista.ndis_sriov_probed_bars_info, ntddndis/PNDIS_SRIOV_PROBED_BARS_INFO, PNDIS_SRIOV_PROBED_BARS_INFO structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -67,7 +67,16 @@ For more information, see the Remarks section.
 
 The type, revision, and size of the <b>NDIS_SRIOV_PROBED_BARS_INFO</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
-The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SRIOV_PROBED_BARS_INFO</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value:
+The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SRIOV_PROBED_BARS_INFO</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
+
+
+
+
+#### NDIS_SRIOV_PROBED_BARS_INFO_REVISION_1
+
+Original version for NDIS 6.30 and later.
+
+Set the <b>Size</b> member to NDIS_SIZEOF_SRIOV_PROBED_BARS_INFO_REVISION_1.
 
 ## Remarks
 The <b>NDIS_SRIOV_PROBED_BARS_INFO</b> structure is used in OID query requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451870">OID_SRIOV_PROBED_BARS</a>.  Each

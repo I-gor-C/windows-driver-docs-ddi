@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 965bb4c7-826d-425b-b10d-2d5a29ca0f91
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndismapfile, ndis/NdisMapFile, VOID, ndis_file_ref_5bc73f64-8379-45bb-a37b-fe9a946af119.xml, NdisMapFile, NdisMapFile function [Network Drivers Starting with Windows Vista]
+ms.keywords : NdisMapFile, NdisMapFile function [Network Drivers Starting with Windows Vista], ndis/NdisMapFile, VOID, ndis_file_ref_5bc73f64-8379-45bb-a37b-fe9a946af119.xml, netvista.ndismapfile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -60,6 +60,20 @@ VOID NdisMapFile(
 
 A pointer to a caller-supplied variable in which this function returns the status of the mapping
      operation, which can be one of the following:
+     
+
+
+
+
+#### NDIS_STATUS_SUCCESS
+
+The caller has exclusive access to the file contents until the 
+       <a href="..\ndis\nf-ndis-ndisunmapfile.md">NdisUnmapFile</a> function is called.
+
+
+#### NDIS_STATUS_ALREADY_MAPPED
+
+The caller cannot access the file contents at this time.
 
 `MappedBuffer`
 
@@ -103,18 +117,18 @@ A miniport driver can call
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Miscellaneous_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisopenfile.md">NdisOpenFile</a>
-
 <a href="..\ndis\nf-ndis-ndisclosefile.md">NdisCloseFile</a>
+
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
 <a href="..\ndis\nf-ndis-ndisunmapfile.md">NdisUnmapFile</a>
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+<a href="..\ndis\nf-ndis-ndisopenfile.md">NdisOpenFile</a>
 
  
 

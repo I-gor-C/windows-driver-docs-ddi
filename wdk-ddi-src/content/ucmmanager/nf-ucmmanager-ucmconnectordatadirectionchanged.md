@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 62ED07DF-2DDC-42FD-80C3-75AB3DE839AD
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ucmmanager/UcmConnectorDataDirectionChanged, UcmConnectorDataDirectionChanged method [Buses], UcmConnectorDataDirectionChanged, buses.ucmconnectordatadirectionchanged
+ms.keywords : UcmConnectorDataDirectionChanged, ucmmanager/UcmConnectorDataDirectionChanged, buses.ucmconnectordatadirectionchanged, UcmConnectorDataDirectionChanged method [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

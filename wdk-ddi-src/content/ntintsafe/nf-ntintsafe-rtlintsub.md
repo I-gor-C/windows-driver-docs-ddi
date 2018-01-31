@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 68BBD6B8-5C7C-4FE5-97F7-473A9510400F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlIntSub function [Kernel-Mode Driver Architecture], ntintsafe/RtlIntSub, kernel.rtlintsub, RtlIntSub
+ms.keywords : RtlIntSub, RtlIntSub function [Kernel-Mode Driver Architecture], kernel.rtlintsub, ntintsafe/RtlIntSub
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

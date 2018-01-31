@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_TRI_STATE, WDF_TRI_STATE"
+req.typenames : WDF_TRI_STATE, *PWDF_TRI_STATE
 req.product : Windows 10 or later.
 ---
 

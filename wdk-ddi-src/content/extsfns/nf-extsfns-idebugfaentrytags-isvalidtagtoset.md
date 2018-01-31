@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 83B5C54F-182B-4D2F-8ED2-7A0B529F1D2E
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IsValidTagToSet, IDebugFAEntryTags interface [Windows Debugging], IsValidTagToSet method, debugger.idebugfaentrytags_isvalidtagtoset, IsValidTagToSet method [Windows Debugging], IDebugFAEntryTags, IDebugFAEntryTags::IsValidTagToSet, extsfns/IDebugFAEntryTags::IsValidTagToSet, IsValidTagToSet method [Windows Debugging], IDebugFAEntryTags interface
+ms.keywords : IDebugFAEntryTags interface [Windows Debugging], IsValidTagToSet method, IsValidTagToSet, IsValidTagToSet method [Windows Debugging], debugger.idebugfaentrytags_isvalidtagtoset, IDebugFAEntryTags, extsfns/IDebugFAEntryTags::IsValidTagToSet, IDebugFAEntryTags::IsValidTagToSet, IsValidTagToSet method [Windows Debugging], IDebugFAEntryTags interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -78,9 +78,9 @@ This method returns TRUE if it is OK to set the data of the specified tag. Other
 
 <a href="..\extsfns\nn-extsfns-idebugfaentrytags.md">IDebugFAEntryTags</a>
 
-<a href="..\extsfns\nc-extsfns-ext_analysis_plugin.md">_EFN_Analyze</a>
-
 <a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
+
+<a href="..\extsfns\nc-extsfns-ext_analysis_plugin.md">_EFN_Analyze</a>
 
 <a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a>
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : BE2E35B0-1C34-4740-ABED-4E96F8908174
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoFxSetComponentWake, wdm/PoFxSetComponentWake, kernel.pofxsetcomponentwake, PoFxSetComponentWake routine [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.pofxsetcomponentwake, PoFxSetComponentWake routine [Kernel-Mode Driver Architecture], wdm/PoFxSetComponentWake, PoFxSetComponentWake
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -92,7 +92,7 @@ If a component is in the idle condition when <b>PoFxSetComponentWake</b> is call
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

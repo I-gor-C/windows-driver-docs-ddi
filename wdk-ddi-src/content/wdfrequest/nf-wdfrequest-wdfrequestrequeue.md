@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 955859d2-7c4f-454c-8621-84bacf0b9770
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfrequestrequeue, DFRequestObjectRef_a51243a8-1412-4765-93a1-7a8f3ab17814.xml, WdfRequestRequeue, PFN_WDFREQUESTREQUEUE, WdfRequestRequeue method, kmdf.wdfrequestrequeue, wdfrequest/WdfRequestRequeue
+ms.keywords : WdfRequestRequeue, wdfrequest/WdfRequestRequeue, DFRequestObjectRef_a51243a8-1412-4765-93a1-7a8f3ab17814.xml, kmdf.wdfrequestrequeue, PFN_WDFREQUESTREQUEUE, WdfRequestRequeue method, wdf.wdfrequestrequeue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -135,5 +135,5 @@ For more information about <b>WdfRequestRequeue</b>, see <a href="https://docs.m
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2 |

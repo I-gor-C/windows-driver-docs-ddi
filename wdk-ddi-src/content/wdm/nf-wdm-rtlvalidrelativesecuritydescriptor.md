@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1fb993f0-4289-4406-8a56-47b12c73f4e6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.rtlvalidrelativesecuritydescriptor, RtlValidRelativeSecurityDescriptor, wdm/RtlValidRelativeSecurityDescriptor, RtlValidRelativeSecurityDescriptor routine [Kernel-Mode Driver Architecture], k109_b261fb47-147f-4e39-81fb-bdbc31d53681.xml
+ms.keywords : RtlValidRelativeSecurityDescriptor routine [Kernel-Mode Driver Architecture], kernel.rtlvalidrelativesecuritydescriptor, k109_b261fb47-147f-4e39-81fb-bdbc31d53681.xml, wdm/RtlValidRelativeSecurityDescriptor, RtlValidRelativeSecurityDescriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,7 +85,7 @@ To check the validity of a security descriptor in absolute format, use <a href="
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

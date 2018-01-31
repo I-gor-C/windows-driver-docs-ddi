@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : STORAGE_DIAGNOSTIC_MP_REQUEST, *PSTORAGE_DIAGNOSTIC_MP_REQUEST
+req.typenames : "*PSTORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST"
 ---
 
 
@@ -81,7 +81,7 @@ The caller must be running at IRQL &lt;= DISPATCH_LEVEL when it acknowledges tha
 | **Minimum UMDF version** |  |
 | **Header** | ntddsd.h (include Ntddsd.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL (See Remarks section.) |
+| **IRQL** | "<=DISPATCH_LEVEL (See Remarks section.)" |
 | **DDI compliance rules** |  |
 
 ## See Also

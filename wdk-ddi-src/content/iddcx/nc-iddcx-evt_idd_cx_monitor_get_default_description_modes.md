@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : 
 req.dll : 
-req.irql : _requires_same_
+req.irql : "_requires_same_"
 topictype : 
 apitype : 
 apilocation : 
@@ -87,5 +87,5 @@ The driver must create at least one monitor mode for the monitor description.
 | **Minimum UMDF version** |  |
 | **Header** | iddcx.h |
 | **Library** |  |
-| **IRQL** | _requires_same_ |
+| **IRQL** | "_requires_same_" |
 | **DDI compliance rules** |  |

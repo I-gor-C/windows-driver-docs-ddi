@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 01B625EB-AB6D-496F-95F2-22845460324A
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisFSynchronousOidRequest, netvista.ndisfsynchronousoidrequest, NdisFSynchronousOidRequest, NdisFSynchronousOidRequest function [Network Drivers Starting with Windows Vista]
+ms.keywords : NdisFSynchronousOidRequest function [Network Drivers Starting with Windows Vista], netvista.ndisfsynchronousoidrequest, ndis/NdisFSynchronousOidRequest, NdisFSynchronousOidRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -76,5 +76,5 @@ None
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 63ee7f5c-ca95-4c2d-be17-56a769188f8c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : winsplp/PSHOWUIPARAMS, *PSHOWUIPARAMS, SHOWUIPARAMS structure [Print Devices], PSHOWUIPARAMS structure pointer [Print Devices], spoolfnc_bf6ce7c8-8b86-40c9-9b03-64c3e3366a04.xml, print.showuiparams, SHOWUIPARAMS, winsplp/SHOWUIPARAMS, PSHOWUIPARAMS
+ms.keywords : print.showuiparams, SHOWUIPARAMS structure [Print Devices], winsplp/PSHOWUIPARAMS, PSHOWUIPARAMS structure pointer [Print Devices], winsplp/SHOWUIPARAMS, SHOWUIPARAMS, spoolfnc_bf6ce7c8-8b86-40c9-9b03-64c3e3366a04.xml, *PSHOWUIPARAMS, PSHOWUIPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSHOWUIPARAMS, SHOWUIPARAMS"
+req.typenames : SHOWUIPARAMS, *PSHOWUIPARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -72,9 +72,9 @@ Specifies the type of user interface element. This member can be set to a single
 
 ## See Also
 
-<a href="..\winsplp\nf-winsplp-splpromptuiinuserssession.md">SplPromptUIInUsersSession</a>
-
 <a href="..\winsplp\ns-winsplp-messagebox_params.md">MESSAGEBOX_PARAMS</a>
+
+<a href="..\winsplp\nf-winsplp-splpromptuiinuserssession.md">SplPromptUIInUsersSession</a>
 
  
 

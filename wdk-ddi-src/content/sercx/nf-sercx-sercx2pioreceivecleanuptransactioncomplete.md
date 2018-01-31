@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 8C0874CD-EAFD-4443-B394-AAA4DD265835
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SerCx2PioReceiveCleanupTransactionComplete, 2/SerCx2PioReceiveCleanupTransactionComplete, serports.sercx2pioreceivecleanuptransactioncomplete, SerCx2PioReceiveCleanupTransactionComplete method [Serial Ports]
+ms.keywords : SerCx2PioReceiveCleanupTransactionComplete method [Serial Ports], SerCx2PioReceiveCleanupTransactionComplete, serports.sercx2pioreceivecleanuptransactioncomplete, 2/SerCx2PioReceiveCleanupTransactionComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SERCX_STATUS, *PSERCX_STATUS
+req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
 req.product : Windows 10 or later.
 ---
 
@@ -79,14 +79,14 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 | **Minimum UMDF version** |  |
 | **Header** | sercx.h |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_cleanup_transaction.md">EvtSerCx2PioReceiveCleanupTransaction</a>
-
 <a href="..\sercx\nf-sercx-sercx2pioreceivecreate.md">SerCx2PioReceiveCreate</a>
+
+<a href="..\sercx\nc-sercx-evt_sercx2_pio_receive_cleanup_transaction.md">EvtSerCx2PioReceiveCleanupTransaction</a>
 
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2PIORECEIVE</a>
 

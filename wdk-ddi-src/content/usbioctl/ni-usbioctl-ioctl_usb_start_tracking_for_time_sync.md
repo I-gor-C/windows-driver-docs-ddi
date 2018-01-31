@@ -76,7 +76,7 @@ The driver stack disables those interrupts when it receives and completes the <a
 | ---- |:---- |
 | **Windows Driver kit version** |  |
 | **Header** | usbioctl.h |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 
 ## See Also
 

@@ -93,11 +93,11 @@ Returns <b>STATUS_SUCCESS</b> upon successful completion. If the driver instead 
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_cancelcommand.md">DXGKARG_CANCELCOMMAND</a>
-
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_vidschcaps.md">DXGK_VIDSCHCAPS</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_cancelcommand.md">DXGKARG_CANCELCOMMAND</a>
 
  
 

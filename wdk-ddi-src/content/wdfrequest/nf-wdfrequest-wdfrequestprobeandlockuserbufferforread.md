@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 68fbaa04-ca7a-46b4-a7ca-c3d44443c2af
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestProbeAndLockUserBufferForRead method, WdfRequestProbeAndLockUserBufferForRead, wdfrequest/WdfRequestProbeAndLockUserBufferForRead, wdf.wdfrequestprobeandlockuserbufferforread, kmdf.wdfrequestprobeandlockuserbufferforread, DFRequestObjectRef_01a2309b-8cae-4a38-9e47-68619f422af2.xml, PFN_WDFREQUESTPROBEANDLOCKUSERBUFFERFORREAD
+ms.keywords : DFRequestObjectRef_01a2309b-8cae-4a38-9e47-68619f422af2.xml, PFN_WDFREQUESTPROBEANDLOCKUSERBUFFERFORREAD, kmdf.wdfrequestprobeandlockuserbufferforread, wdfrequest/WdfRequestProbeAndLockUserBufferForRead, WdfRequestProbeAndLockUserBufferForRead method, wdf.wdfrequestprobeandlockuserbufferforread, WdfRequestProbeAndLockUserBufferForRead
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -175,9 +175,9 @@ For more information about <b>WdfRequestProbeAndLockUserBufferForRead</b>, see <
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestprobeandlockuserbufferforwrite.md">WdfRequestProbeAndLockUserBufferForWrite</a>
-
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveunsafeuserinputbuffer.md">WdfRequestRetrieveUnsafeUserInputBuffer</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestprobeandlockuserbufferforwrite.md">WdfRequestProbeAndLockUserBufferForWrite</a>
 
 <a href="..\wdfmemory\nf-wdfmemory-wdfmemorygetbuffer.md">WdfMemoryGetBuffer</a>
 

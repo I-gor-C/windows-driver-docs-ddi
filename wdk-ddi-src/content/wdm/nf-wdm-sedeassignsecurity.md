@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c7060b86-8ff6-4229-94e0-7965ae59aa90
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/SeDeassignSecurity, k110_9c1ca048-addd-4343-bfee-34e905b143b3.xml, SeDeassignSecurity, SeDeassignSecurity routine [Kernel-Mode Driver Architecture], kernel.sedeassignsecurity
+ms.keywords : k110_9c1ca048-addd-4343-bfee-34e905b143b3.xml, kernel.sedeassignsecurity, wdm/SeDeassignSecurity, SeDeassignSecurity routine [Kernel-Mode Driver Architecture], SeDeassignSecurity
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

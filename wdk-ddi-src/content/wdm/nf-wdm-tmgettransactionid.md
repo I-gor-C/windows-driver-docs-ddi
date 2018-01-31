@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8ff4dd86-d828-4e1d-bde5-ab312187a8d7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ktm_ref_cbb12580-5399-4d81-ab6c-9d0235208681.xml, TmGetTransactionId routine [Kernel-Mode Driver Architecture], kernel.tmgettransactionid, TmGetTransactionId, wdm/TmGetTransactionId
+ms.keywords : wdm/TmGetTransactionId, TmGetTransactionId, ktm_ref_cbb12580-5399-4d81-ab6c-9d0235208681.xml, kernel.tmgettransactionid, TmGetTransactionId routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,13 +85,13 @@ For information about when to use KTM's <b>Tm<i>Xxx</i></b> routines instead of 
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwopentransaction.md">ZwOpenTransaction</a>
+<a href="..\wdm\nf-wdm-zwqueryinformationtransaction.md">ZwQueryInformationTransaction</a>
 
 <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
 
 <a href="..\wdm\nf-wdm-zwcreatetransaction.md">ZwCreateTransaction</a>
 
-<a href="..\wdm\nf-wdm-zwqueryinformationtransaction.md">ZwQueryInformationTransaction</a>
+<a href="..\wdm\nf-wdm-zwopentransaction.md">ZwOpenTransaction</a>
 
  
 

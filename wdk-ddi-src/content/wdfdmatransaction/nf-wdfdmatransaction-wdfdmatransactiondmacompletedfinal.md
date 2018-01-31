@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : de16eaf4-11f0-428b-8833-1d1e6ef78853
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDmaObjectRef_ceac647e-264e-416b-947f-61cc95e6d4ab.xml, PFN_WDFDMATRANSACTIONDMACOMPLETEDFINAL, WdfDmaTransactionDmaCompletedFinal method, wdf.wdfdmatransactiondmacompletedfinal, wdfdmatransaction/WdfDmaTransactionDmaCompletedFinal, WdfDmaTransactionDmaCompletedFinal, kmdf.wdfdmatransactiondmacompletedfinal
+ms.keywords : wdf.wdfdmatransactiondmacompletedfinal, DFDmaObjectRef_ceac647e-264e-416b-947f-61cc95e6d4ab.xml, WdfDmaTransactionDmaCompletedFinal, kmdf.wdfdmatransactiondmacompletedfinal, wdfdmatransaction/WdfDmaTransactionDmaCompletedFinal, PFN_WDFDMATRANSACTIONDMACOMPLETEDFINAL, WdfDmaTransactionDmaCompletedFinal method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_DMA_SYSTEM_PROFILE_CONFIG, *PWDF_DMA_SYSTEM_PROFILE_CONFIG
+req.typenames : "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
 req.product : Windows 10 or later.
 ---
 
@@ -97,16 +97,16 @@ For more information about completing DMA transfers, see <a href="https://msdn.m
 | **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>
+
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactiondmacompletedwithlength.md">WdfDmaTransactionDmaCompletedWithLength</a>
 
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactiondmacompleted.md">WdfDmaTransactionDmaCompleted</a>
-
-<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>
 
  
 

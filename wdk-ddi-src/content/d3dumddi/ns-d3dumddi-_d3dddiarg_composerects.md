@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._D3DDDIARG_COMPOSERECTS
-title : _D3DDDIARG_COMPOSERECTS
+title : "_D3DDDIARG_COMPOSERECTS"
 author : windows-driver-content
 description : The D3DDDIARG_COMPOSERECTS structure describes the parameters that are used to compose rectangular areas.
 old-location : display\d3dddiarg_composerects.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9360f9c4-e30e-4fc0-ade7-1d98ff8b1d1b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDIARG_COMPOSERECTS, D3DDDIARG_COMPOSERECTS, UMDisplayDriver_param_Structs_2f10ffa4-f55f-490b-9aa4-08c0c3e3d924.xml, d3dumddi/D3DDDIARG_COMPOSERECTS, D3DDDIARG_COMPOSERECTS structure [Display Devices], display.d3dddiarg_composerects
+ms.keywords : d3dumddi/D3DDDIARG_COMPOSERECTS, D3DDDIARG_COMPOSERECTS structure [Display Devices], D3DDDIARG_COMPOSERECTS, display.d3dddiarg_composerects, _D3DDDIARG_COMPOSERECTS, UMDisplayDriver_param_Structs_2f10ffa4-f55f-490b-9aa4-08c0c3e3d924.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

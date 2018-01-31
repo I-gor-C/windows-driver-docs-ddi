@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : D1564DB7-57D9-44B2-8ED2-1170CA4C22EE
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.pofxregistercoredevice, pepfx/PoFxRegisterCoreDevice, PoFxRegisterCoreDevice, PoFxRegisterCoreDevice routine [Kernel-Mode Driver Architecture]
+ms.keywords : pepfx/PoFxRegisterCoreDevice, PoFxRegisterCoreDevice, PoFxRegisterCoreDevice routine [Kernel-Mode Driver Architecture], kernel.pofxregistercoredevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

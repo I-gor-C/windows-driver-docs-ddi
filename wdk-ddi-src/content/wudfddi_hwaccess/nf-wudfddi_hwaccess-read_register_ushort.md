@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 75DDFC2A-EF7F-4652-B0D0-8BF1583B3679
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : READ_REGISTER_USHORT, umdf.read_register_ushort, wdf.read_register_ushort, wudfddi_hwaccess/READ_REGISTER_USHORT, READ_REGISTER_USHORT function
+ms.keywords : wdf.read_register_ushort, READ_REGISTER_USHORT, wudfddi_hwaccess/READ_REGISTER_USHORT, umdf.read_register_ushort, READ_REGISTER_USHORT function
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UMDF_IO_TARGET_OPEN_PARAMS, *PUMDF_IO_TARGET_OPEN_PARAMS
+req.typenames : "*PUMDF_IO_TARGET_OPEN_PARAMS, UMDF_IO_TARGET_OPEN_PARAMS"
 req.product : Windows 10 or later.
 ---
 

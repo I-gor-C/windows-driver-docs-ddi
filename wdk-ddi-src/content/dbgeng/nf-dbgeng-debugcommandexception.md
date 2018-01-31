@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 6DC67840-B985-45D0-8E81-671C3DC1EBC2
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : DebugCommandException, debugger.debugcommandexception, dbgeng/DebugCommandException, DebugCommandException function [Windows Debugging]
+ms.keywords : debugger.debugcommandexception, DebugCommandException function [Windows Debugging], DebugCommandException, dbgeng/DebugCommandException
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

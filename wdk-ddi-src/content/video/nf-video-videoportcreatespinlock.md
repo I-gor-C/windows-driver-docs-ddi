@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : bb5f3b3e-3358-4181-9c4d-1871be1a7b7b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortCreateSpinLock, display.videoportcreatespinlock, VideoPort_Functions_64ab2562-155d-4cec-8612-42aca51d909b.xml, video/VideoPortCreateSpinLock, VideoPortCreateSpinLock function [Display Devices]
+ms.keywords : VideoPort_Functions_64ab2562-155d-4cec-8612-42aca51d909b.xml, video/VideoPortCreateSpinLock, display.videoportcreatespinlock, VideoPortCreateSpinLock function [Display Devices], VideoPortCreateSpinLock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

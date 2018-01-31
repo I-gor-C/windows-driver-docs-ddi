@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ddc2f96b-fa2c-43c1-960f-7f8e06a5b22d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis_work_items_ref_50b3859f-f34b-4cae-b7ef-935f1aae82cb.xml, ndis/NdisFreeIoWorkItem, NdisFreeIoWorkItem function [Network Drivers Starting with Windows Vista], NdisFreeIoWorkItem, netvista.ndisfreeioworkitem
+ms.keywords : ndis/NdisFreeIoWorkItem, netvista.ndisfreeioworkitem, NdisFreeIoWorkItem, ndis_work_items_ref_50b3859f-f34b-4cae-b7ef-935f1aae82cb.xml, NdisFreeIoWorkItem function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -80,18 +80,18 @@ None
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Init_NdisAllocateIoWorkItem, Irql_Miscellaneous_Function |
 
 ## See Also
-
-<a href="..\wdm\nf-wdm-iofreeworkitem.md">IoFreeWorkItem</a>
 
 <a href="https://msdn.microsoft.com/4f966ff3-2092-495f-863f-50f079085fa6">NDIS I/O Work Items</a>
 
 <a href="..\ndis\nf-ndis-ndisallocateioworkitem.md">NdisAllocateIoWorkItem</a>
 
 <a href="..\ndis\nf-ndis-ndisqueueioworkitem.md">NdisQueueIoWorkItem</a>
+
+<a href="..\wdm\nf-wdm-iofreeworkitem.md">IoFreeWorkItem</a>
 
  
 

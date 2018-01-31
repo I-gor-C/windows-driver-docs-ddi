@@ -1,6 +1,6 @@
 ---
 UID : NS:dxva._DXVA_MVvalue
-title : _DXVA_MVvalue
+title : "_DXVA_MVvalue"
 author : windows-driver-content
 description : The DXVA_MVvalue structure is sent by the host decoder to the accelerator to specify the two-dimensional motion vector value.
 old-location : display\dxva_mvvalue.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 33b68e74-64ca-49e0-b469-96d430c2a5c0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : dxva/DXVA_MVvalue, LPDXVA_MVvalue structure pointer [Display Devices], display.dxva_mvvalue, DXVA_MVvalue, dxvaref_4eeb8072-1676-479e-b92c-05d8ba9c4586.xml, LPDXVA_MVvalue, *LPDXVA_MVvalue, DXVA_MVvalue structure [Display Devices], dxva/LPDXVA_MVvalue, _DXVA_MVvalue
+ms.keywords : DXVA_MVvalue structure [Display Devices], _DXVA_MVvalue, dxva/LPDXVA_MVvalue, *LPDXVA_MVvalue, dxvaref_4eeb8072-1676-479e-b92c-05d8ba9c4586.xml, DXVA_MVvalue, LPDXVA_MVvalue, dxva/DXVA_MVvalue, display.dxva_mvvalue, LPDXVA_MVvalue structure pointer [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

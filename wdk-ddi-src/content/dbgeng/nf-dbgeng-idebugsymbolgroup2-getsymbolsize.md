@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : f35bbbeb-585b-47b0-ae36-bd37fe9e1bbc
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetSymbolSize, dbgeng/IDebugSymbolGroup2::GetSymbolSize, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolSize method, GetSymbolSize method [Windows Debugging], ComOther_a6e69468-38f9-449d-9bd7-0ef52585f2aa.xml, GetSymbolSize method [Windows Debugging], IDebugSymbolGroup2 interface, debugger.getsymbolsize, IDebugSymbolGroup2, IDebugSymbolGroup2::GetSymbolSize
+ms.keywords : GetSymbolSize, IDebugSymbolGroup2::GetSymbolSize, GetSymbolSize method [Windows Debugging], IDebugSymbolGroup2 interface, ComOther_a6e69468-38f9-449d-9bd7-0ef52585f2aa.xml, GetSymbolSize method [Windows Debugging], IDebugSymbolGroup2, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolSize method, debugger.getsymbolsize, dbgeng/IDebugSymbolGroup2::GetSymbolSize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : F175ED42-3DB6-4568-96CA-EFC283B14887
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storport/StorPortPoFxSetComponentLatency, StorPortPoFxSetComponentLatency routine [Storage Devices], storage.storportpofxsetcomponentlatency, StorPortPoFxSetComponentLatency
+ms.keywords : StorPortPoFxSetComponentLatency, StorPortPoFxSetComponentLatency routine [Storage Devices], storport/StorPortPoFxSetComponentLatency, storage.storportpofxsetcomponentlatency
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -149,7 +149,7 @@ The current IRQL &gt; DISPATCH_LEVEL.
 | **Minimum UMDF version** |  |
 | **Header** | storport.h |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

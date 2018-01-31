@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 46e666a6-be4c-40fb-b9e1-00ced9fb4d05
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeRegisterNmiCallback routine [Kernel-Mode Driver Architecture], kernel.keregisternmicallback, KeRegisterNmiCallback, wdm/KeRegisterNmiCallback, k105_4abdb9bc-8548-42f3-8305-c116ce15e0a4.xml
+ms.keywords : k105_4abdb9bc-8548-42f3-8305-c116ce15e0a4.xml, kernel.keregisternmicallback, KeRegisterNmiCallback routine [Kernel-Mode Driver Architecture], KeRegisterNmiCallback, wdm/KeRegisterNmiCallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -96,7 +96,7 @@ The callback routine must be able to be run at IRQL = HIGH_LEVEL.
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL (see Remarks section) |
+| **IRQL** | "<= APC_LEVEL (see Remarks section)" |
 | **DDI compliance rules** | IrqlKeApcLte2, HwStorPortProhibitedDDIs |
 
 ## See Also

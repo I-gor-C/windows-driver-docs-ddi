@@ -1,6 +1,6 @@
 ---
 UID : NE:d3dkmddi._DXGK_PAGETABLEUPDATEMODE
-title : _DXGK_PAGETABLEUPDATEMODE
+title : "_DXGK_PAGETABLEUPDATEMODE"
 author : windows-driver-content
 description : DXGK_PAGETABLEUPDATEMODE is used as part of a DxgkDdiBuildPagingBuffer operation to indicate which member of the related DXGK_PAGETABLEUPDATEADDRESS structure contains the address of the page table to update.
 old-location : display\dxgk_pagetableupdatemode.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : E7C823B1-457E-4B86-B44B-DC5BD48CF98E
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_PAGETABLEUPDATE_GPU_VIRTUAL, DXGK_PAGETABLEUPDATEMODE, DXGK_PAGETABLEUPDATE_CPU_VIRTUAL, d3dkmddi/DXGK_PAGETABLEUPDATEMODE, d3dkmddi/DXGK_PAGETABLEUPDATE_GPU_PHYSICAL, _DXGK_PAGETABLEUPDATEMODE, d3dkmddi/DXGK_PAGETABLEUPDATE_GPU_VIRTUAL, DXGK_PAGETABLEUPDATE_GPU_PHYSICAL, DXGK_PAGETABLEUPDATEMODE enumeration [Display Devices], d3dkmddi/DXGK_PAGETABLEUPDATE_CPU_VIRTUAL, display.dxgk_pagetableupdatemode
+ms.keywords : DXGK_PAGETABLEUPDATE_GPU_VIRTUAL, DXGK_PAGETABLEUPDATEMODE, d3dkmddi/DXGK_PAGETABLEUPDATE_GPU_VIRTUAL, display.dxgk_pagetableupdatemode, d3dkmddi/DXGK_PAGETABLEUPDATEMODE, _DXGK_PAGETABLEUPDATEMODE, d3dkmddi/DXGK_PAGETABLEUPDATE_GPU_PHYSICAL, DXGK_PAGETABLEUPDATE_GPU_PHYSICAL, DXGK_PAGETABLEUPDATEMODE enumeration [Display Devices], DXGK_PAGETABLEUPDATE_CPU_VIRTUAL, d3dkmddi/DXGK_PAGETABLEUPDATE_CPU_VIRTUAL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -81,9 +81,9 @@ typedef enum _DXGK_PAGETABLEUPDATEMODE {
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_pagetableupdateaddress.md">DXGK_PAGETABLEUPDATEADDRESS</a>
-
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_buildpagingbuffer.md">DxgkDdiBuildPagingBuffer</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_pagetableupdateaddress.md">DXGK_PAGETABLEUPDATEADDRESS</a>
 
  
 

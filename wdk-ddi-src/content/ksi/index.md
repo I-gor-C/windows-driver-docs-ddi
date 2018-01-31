@@ -24,11 +24,11 @@ ksi.h contains the following programming interfaces:
 ## Structures
 | Title | Description |
 | ---- |:---- |
-| [KSCLOCKINSTANCE](ns-ksi-ksclockinstance.md) | . |
-| [KSIDEFAULTCLOCK](ns-ksi-ksidefaultclock.md) | . |
+| [KSCLOCKINSTANCE](ns-ksi-ksclockinstance.md) | "." |
+| [KSIDEFAULTCLOCK](ns-ksi-ksidefaultclock.md) | "." |
 
 
 ## Enumerations
 | Title | Description |
 | ---- |:---- |
-| [KSPROPERTY_SERVICE](ne-ksi-ksproperty_service.md) | . |
+| [KSPROPERTY_SERVICE](ne-ksi-ksproperty_service.md) | "." |

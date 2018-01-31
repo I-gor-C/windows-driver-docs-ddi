@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 40f4dfca-7ee6-48d2-b0a4-8a563587b2ab
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILPOSITIONINFOLTE, rilapitypes/RILPOSITIONINFOLTE, RILPOSITIONINFOLTE structure [Network Drivers Starting with Windows Vista], *LPRILPOSITIONINFOLTE, netvista.rilpositioninfolte
+ms.keywords : rilapitypes/RILPOSITIONINFOLTE, RILPOSITIONINFOLTE structure [Network Drivers Starting with Windows Vista], netvista.rilpositioninfolte, RILPOSITIONINFOLTE, *LPRILPOSITIONINFOLTE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

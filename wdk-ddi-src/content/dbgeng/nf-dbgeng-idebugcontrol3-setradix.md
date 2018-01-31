@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 7346733d-2ac7-4eee-9f9c-ea6e1ee2ce5d
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugControl::SetRadix, IDebugControl2 interface [Windows Debugging], SetRadix method, IDebugControl_f0462fa8-da93-414b-b4b1-246a50572bb2.xml, SetRadix method [Windows Debugging], dbgeng/IDebugControl3::SetRadix, IDebugControl3, IDebugControl3::SetRadix, dbgeng/IDebugControl2::SetRadix, IDebugControl::SetRadix, IDebugControl3 interface [Windows Debugging], SetRadix method, IDebugControl interface [Windows Debugging], SetRadix method, SetRadix method [Windows Debugging], IDebugControl2 interface, SetRadix, SetRadix method [Windows Debugging], IDebugControl3 interface, SetRadix method [Windows Debugging], IDebugControl interface, IDebugControl2::SetRadix, debugger.setradix
+ms.keywords : IDebugControl3, IDebugControl::SetRadix, SetRadix method [Windows Debugging], debugger.setradix, SetRadix method [Windows Debugging], IDebugControl interface, IDebugControl3::SetRadix, IDebugControl2 interface [Windows Debugging], SetRadix method, IDebugControl2::SetRadix, IDebugControl3 interface [Windows Debugging], SetRadix method, SetRadix method [Windows Debugging], IDebugControl3 interface, SetRadix, dbgeng/IDebugControl::SetRadix, SetRadix method [Windows Debugging], IDebugControl2 interface, IDebugControl_f0462fa8-da93-414b-b4b1-246a50572bb2.xml, IDebugControl interface [Windows Debugging], SetRadix method, dbgeng/IDebugControl2::SetRadix, dbgeng/IDebugControl3::SetRadix
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -134,15 +134,15 @@ For more information about the default radix, see <a href="https://msdn.microsof
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548218">GetRadix</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548218">GetRadix</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552287">n (Set Number Base)</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 
  
 

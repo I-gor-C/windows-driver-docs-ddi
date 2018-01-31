@@ -1,6 +1,6 @@
 ---
 UID : NS:winsplp._MONITOR
-title : _MONITOR
+title : "_MONITOR"
 author : windows-driver-content
 description : The MONITOR structure is obsolete and is supported only for compatibility reasons.
 old-location : print\monitor.htm
@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 0b0dc06f-51c2-429f-a9bb-079f8a61411d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : winsplp/LPMONITOR, *LPMONITOR, LPMONITOR structure pointer [Print Devices], MONITOR structure [Print Devices], LPMONITOR, MONITOR, print.monitor, winsplp/MONITOR, _MONITOR, spoolfnc_c7b3aeed-d00f-4728-967d-bbe1a8512a42.xml
+ms.keywords : LPMONITOR, _MONITOR, winsplp/LPMONITOR, MONITOR, spoolfnc_c7b3aeed-d00f-4728-967d-bbe1a8512a42.xml, *LPMONITOR, winsplp/MONITOR, LPMONITOR structure pointer [Print Devices], MONITOR structure [Print Devices], print.monitor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPMONITOR, MONITOR"
+req.typenames : MONITOR, *LPMONITOR
 req.product : Windows 10 or later.
 ---
 
@@ -208,9 +208,9 @@ Pointer to the print monitor's <a href="..\winsplp\nf-winsplp-xcvopenport.md">Xc
 
 ## See Also
 
-<a href="..\winsplp\ns-winsplp-_monitor2.md">MONITOR2</a>
-
 <a href="..\winsplp\ns-winsplp-_monitorui.md">MONITORUI</a>
+
+<a href="..\winsplp\ns-winsplp-_monitor2.md">MONITOR2</a>
 
  
 

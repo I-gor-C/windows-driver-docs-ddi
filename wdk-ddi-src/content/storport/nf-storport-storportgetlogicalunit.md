@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c8972d8b-9eba-4276-af63-1096a76b104f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storport/StorPortGetLogicalUnit, StorPortGetLogicalUnit routine [Storage Devices], storage.storportgetlogicalunit, storprt_065c9617-06c6-4795-9743-14cd5803d9f9.xml, StorPortGetLogicalUnit
+ms.keywords : StorPortGetLogicalUnit routine [Storage Devices], storport/StorPortGetLogicalUnit, storage.storportgetlogicalunit, StorPortGetLogicalUnit, storprt_065c9617-06c6-4795-9743-14cd5803d9f9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

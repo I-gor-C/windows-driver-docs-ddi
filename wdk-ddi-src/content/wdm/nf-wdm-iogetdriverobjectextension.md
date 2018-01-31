@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ce983953-53fc-4a32-8072-8a9f74d11ae3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoGetDriverObjectExtension, k104_37d4bd5d-6090-49b8-ab45-c898871f22e8.xml, kernel.iogetdriverobjectextension, wdm/IoGetDriverObjectExtension, IoGetDriverObjectExtension routine [Kernel-Mode Driver Architecture]
+ms.keywords : k104_37d4bd5d-6090-49b8-ab45-c898871f22e8.xml, kernel.iogetdriverobjectextension, wdm/IoGetDriverObjectExtension, IoGetDriverObjectExtension routine [Kernel-Mode Driver Architecture], IoGetDriverObjectExtension
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,7 +80,7 @@ Drivers call <b>IoGetDriverObjectExtension</b> to retrieve a pointer to a previo
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

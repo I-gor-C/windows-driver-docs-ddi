@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d85bab78-0e9e-4e71-a09b-40954df81c87
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoInitializeRemoveLock, IoInitializeRemoveLock routine [Kernel-Mode Driver Architecture], kernel.ioinitializeremovelock, wdm/IoInitializeRemoveLock, k104_b9b844b1-4bb4-4a52-8274-c5a3441f6267.xml
+ms.keywords : IoInitializeRemoveLock routine [Kernel-Mode Driver Architecture], IoInitializeRemoveLock, kernel.ioinitializeremovelock, k104_b9b844b1-4bb4-4a52-8274-c5a3441f6267.xml, wdm/IoInitializeRemoveLock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -103,11 +103,11 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-ioacquireremovelock.md">IoAcquireRemoveLock</a>
+
 <a href="..\wdm\nf-wdm-ioreleaseremovelock.md">IoReleaseRemoveLock</a>
 
 <a href="..\wdm\nf-wdm-ioreleaseremovelockandwait.md">IoReleaseRemoveLockAndWait</a>
-
-<a href="..\wdm\nf-wdm-ioacquireremovelock.md">IoAcquireRemoveLock</a>
 
 <a href="..\wdm\nf-wdm-ioinitializeremovelock.md">IoInitializeRemoveLock</a>
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 652B92C2-EF04-482A-BB57-9F64F947EE4F
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.ipnpcallbackhardware2_onreleasehardware, OnReleaseHardware method, wudfddi/IPnpCallbackHardware2::OnReleaseHardware, IPnpCallbackHardware2 interface, OnReleaseHardware method, IPnpCallbackHardware2::OnReleaseHardware, OnReleaseHardware method, IPnpCallbackHardware2 interface, OnReleaseHardware, umdf.ipnpcallbackhardware2_onreleasehardware, IPnpCallbackHardware2
+ms.keywords : OnReleaseHardware method, umdf.ipnpcallbackhardware2_onreleasehardware, IPnpCallbackHardware2 interface, OnReleaseHardware method, wdf.ipnpcallbackhardware2_onreleasehardware, OnReleaseHardware, OnReleaseHardware method, IPnpCallbackHardware2 interface, wudfddi/IPnpCallbackHardware2::OnReleaseHardware, IPnpCallbackHardware2, IPnpCallbackHardware2::OnReleaseHardware
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 38601573-750f-46fc-ae04-cef0d90d9ea9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExFlushLookasideListEx, kernel.exflushlookasidelistex, k102_bb02a725-bc22-4c22-91f2-0232c1cb0f1f.xml, ExFlushLookasideListEx routine [Kernel-Mode Driver Architecture], wdm/ExFlushLookasideListEx
+ms.keywords : kernel.exflushlookasidelistex, k102_bb02a725-bc22-4c22-91f2-0232c1cb0f1f.xml, ExFlushLookasideListEx routine [Kernel-Mode Driver Architecture], wdm/ExFlushLookasideListEx, ExFlushLookasideListEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,14 +77,14 @@ For more information about lookaside lists, see <a href="https://msdn.microsoft.
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exinitializelookasidelistex.md">ExInitializeLookasideListEx</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554329">LOOKASIDE_LIST_EX</a>
+
+<a href="..\wdm\nf-wdm-exinitializelookasidelistex.md">ExInitializeLookasideListEx</a>
 
  
 

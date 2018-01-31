@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._GETENCRYPTIONBLTKEY
-title : _GETENCRYPTIONBLTKEY
+title : "_GETENCRYPTIONBLTKEY"
 author : windows-driver-content
 description : The _GETENCRYPTIONBLTKEY structure describes an encrypted bit-block transfer (bitblt) session for which the GetEncryptionBltKey function retrieves the encryption key.
 old-location : display\d3dddiarg_getencryptionbltkey.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6f481646-b665-46cb-b551-10515b8603c5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_GETENCRYPTIONBLTKEY, _GETENCRYPTIONBLTKEY, _GETENCRYPTIONBLTKEY structure [Display Devices], d3dumddi/_GETENCRYPTIONBLTKEY, UMDisplayDriver_param_Structs_ecaf1a03-2c4a-450e-a17a-2cc309e7c2e4.xml, display.d3dddiarg_getencryptionbltkey, D3DDDIARG_GETENCRYPTIONBLTKEY structure [Display Devices]
+ms.keywords : D3DDDIARG_GETENCRYPTIONBLTKEY structure [Display Devices], UMDisplayDriver_param_Structs_ecaf1a03-2c4a-450e-a17a-2cc309e7c2e4.xml, display.d3dddiarg_getencryptionbltkey, _GETENCRYPTIONBLTKEY structure [Display Devices], d3dumddi/_GETENCRYPTIONBLTKEY, D3DDDIARG_GETENCRYPTIONBLTKEY, _GETENCRYPTIONBLTKEY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,9 +76,9 @@ typedef struct _GETENCRYPTIONBLTKEY {
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getencryptionbltkey.md">GetEncryptionBltKey</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcryptosession.md">CreateCryptoSession</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getencryptionbltkey.md">GetEncryptionBltKey</a>
 
  
 

@@ -1,6 +1,6 @@
 ---
 UID : NS:ntifs._TOKEN_DEFAULT_DACL
-title : _TOKEN_DEFAULT_DACL
+title : "_TOKEN_DEFAULT_DACL"
 author : windows-driver-content
 description : The TOKEN_DEFAULT_DACL structure specifies a discretionary access-control list (DACL).
 old-location : ifsk\token_default_dacl.htm
@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : db4c23e1-4a49-4864-9eab-36abb2581e58
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/TOKEN_DEFAULT_DACL, PTOKEN_DEFAULT_DACL structure pointer [Installable File System Drivers], TOKEN_DEFAULT_DACL structure [Installable File System Drivers], ifsk.token_default_dacl, securitystructures_a79d9155-eff5-457f-8036-c3d718b36c4e.xml, *PTOKEN_DEFAULT_DACL, ntifs/PTOKEN_DEFAULT_DACL, _TOKEN_DEFAULT_DACL, PTOKEN_DEFAULT_DACL, TOKEN_DEFAULT_DACL
+ms.keywords : ntifs/TOKEN_DEFAULT_DACL, ifsk.token_default_dacl, TOKEN_DEFAULT_DACL, securitystructures_a79d9155-eff5-457f-8036-c3d718b36c4e.xml, ntifs/PTOKEN_DEFAULT_DACL, *PTOKEN_DEFAULT_DACL, PTOKEN_DEFAULT_DACL structure pointer [Installable File System Drivers], _TOKEN_DEFAULT_DACL, PTOKEN_DEFAULT_DACL, TOKEN_DEFAULT_DACL structure [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PTOKEN_DEFAULT_DACL, TOKEN_DEFAULT_DACL"
+req.typenames : TOKEN_DEFAULT_DACL, *PTOKEN_DEFAULT_DACL
 ---
 
 # _TOKEN_DEFAULT_DACL structure
@@ -70,11 +70,11 @@ The <b>SeQueryInformationToken</b> support routine retrieves the default DACL fo
 
 <a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a>
 
-<a href="..\ntifs\nf-ntifs-zwsetinformationtoken.md">ZwSetInformationToken</a>
+<a href="..\ntifs\nf-ntifs-zwqueryinformationtoken.md">ZwQueryInformationToken</a>
 
 <a href="..\wdm\ns-wdm-_acl.md">ACL</a>
 
-<a href="..\ntifs\nf-ntifs-zwqueryinformationtoken.md">ZwQueryInformationToken</a>
+<a href="..\ntifs\nf-ntifs-zwsetinformationtoken.md">ZwSetInformationToken</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 6a970bec-c773-498e-b93a-2bd9f625e194
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WcsGetUsePerUserProfiles function [Print Devices], WcsGetUsePerUserProfiles, print.wcsgetuseperuserprofiles, icm/WcsGetUsePerUserProfiles, colorfnc_b80783e5-17c0-4069-90ba-71ea82a2d7d5.xml
+ms.keywords : icm/WcsGetUsePerUserProfiles, WcsGetUsePerUserProfiles, colorfnc_b80783e5-17c0-4069-90ba-71ea82a2d7d5.xml, print.wcsgetuseperuserprofiles, WcsGetUsePerUserProfiles function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -61,6 +61,23 @@ A pointer to a string that contains the friendly name of the device.
 `dwDeviceClass`
 
 A flag value that specifies the class of the device. This parameter must take one of the following values:
+
+
+
+
+#### CLASS_MONITOR
+
+Specifies a display device.
+
+
+#### CLASS_PRINTER
+
+Specifies a printer.
+
+
+#### CLASS_SCANNER
+
+Specifies an image capture device.
 
 `pUsePerUserProfiles`
 

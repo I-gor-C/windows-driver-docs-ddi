@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : b85c37ff-b8f0-43df-bce2-f8a85ec050a7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortWavePciStream interface [Audio Devices], TerminatePacket method, TerminatePacket method [Audio Devices], IPortWavePciStream interface, audio.iportwavepcistream_terminatepacket, TerminatePacket, IPortWavePciStream, portcls/IPortWavePciStream::TerminatePacket, IPortWavePciStream::TerminatePacket, TerminatePacket method [Audio Devices], audmp-routines_7991fb3b-ea9a-4c58-acd5-7563752f415e.xml
+ms.keywords : TerminatePacket method [Audio Devices], IPortWavePciStream interface, IPortWavePciStream::TerminatePacket, IPortWavePciStream interface [Audio Devices], TerminatePacket method, TerminatePacket, audmp-routines_7991fb3b-ea9a-4c58-acd5-7563752f415e.xml, audio.iportwavepcistream_terminatepacket, IPortWavePciStream, portcls/IPortWavePciStream::TerminatePacket, TerminatePacket method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -73,5 +73,5 @@ Changing the state of a capture stream from KSSTATE_RUN to KSSTATE_STOP automati
 | **Minimum UMDF version** |  |
 | **Header** | portcls.h (include Portcls.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |

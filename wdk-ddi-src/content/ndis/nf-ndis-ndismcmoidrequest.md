@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : c5523dff-4957-4265-82ef-2fbc009e6bef
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMCmOidRequest function [Network Drivers Starting with Windows Vista], netvista.ndismcmoidrequest, NdisMCmOidRequest, ndis/NdisMCmOidRequest, condis_request_ref_951cd477-8d0a-4882-921d-f394ac04f9cc.xml
+ms.keywords : NdisMCmOidRequest, NdisMCmOidRequest function [Network Drivers Starting with Windows Vista], ndis/NdisMCmOidRequest, netvista.ndismcmoidrequest, condis_request_ref_951cd477-8d0a-4882-921d-f394ac04f9cc.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -257,25 +257,25 @@ For more information about the OIDs that are defined to use with
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCM_Function |
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
-
 <a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a>
-
-<a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a>
-
-<a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a>
-
-<a href="..\ndis\nc-ndis-protocol_co_oid_request.md">ProtocolCoOidRequest</a>
-
-<a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a>
 
 <mshelp:link keywords="netvista.protocolcooidrequestcomplete" tabindex="0"><i>
    ProtocolCoOidRequestComplete</i></mshelp:link>
+
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
+
+<a href="..\ndis\nc-ndis-protocol_co_oid_request.md">ProtocolCoOidRequest</a>
+
+<a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a>
+
+<a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a>
+
+<a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a>
 
  
 

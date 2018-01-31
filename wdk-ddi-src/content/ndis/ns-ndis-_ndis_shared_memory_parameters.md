@@ -1,6 +1,6 @@
 ---
 UID : NS:ndis._NDIS_SHARED_MEMORY_PARAMETERS
-title : _NDIS_SHARED_MEMORY_PARAMETERS
+title : "_NDIS_SHARED_MEMORY_PARAMETERS"
 author : windows-driver-content
 description : The NDIS_SHARED_MEMORY_PARAMETERS structure specifies the shared memory parameters for a shared memory allocation request.
 old-location : netvista\ndis_shared_memory_parameters.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 286b08f6-179e-426e-ae65-b108529d049a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_SHARED_MEMORY_PARAMETERS structure [Network Drivers Starting with Windows Vista], _NDIS_SHARED_MEMORY_PARAMETERS, netvista.ndis_shared_memory_parameters, ndis/NDIS_SHARED_MEMORY_PARAMETERS, *PNDIS_SHARED_MEMORY_PARAMETERS, PNDIS_SHARED_MEMORY_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], PNDIS_SHARED_MEMORY_PARAMETERS, ndis_shared_memory_ref_76b2c89f-c221-42de-ae92-ad10cf2297f2.xml, NDIS_SHARED_MEMORY_PARAMETERS, ndis/PNDIS_SHARED_MEMORY_PARAMETERS
+ms.keywords : PNDIS_SHARED_MEMORY_PARAMETERS, ndis/NDIS_SHARED_MEMORY_PARAMETERS, ndis/PNDIS_SHARED_MEMORY_PARAMETERS, ndis_shared_memory_ref_76b2c89f-c221-42de-ae92-ad10cf2297f2.xml, netvista.ndis_shared_memory_parameters, PNDIS_SHARED_MEMORY_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SHARED_MEMORY_PARAMETERS, NDIS_SHARED_MEMORY_PARAMETERS structure [Network Drivers Starting with Windows Vista], NDIS_SHARED_MEMORY_PARAMETERS, *PNDIS_SHARED_MEMORY_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -67,12 +67,36 @@ typedef struct _NDIS_SHARED_MEMORY_PARAMETERS {
 `Flags`
 
 A UCHAR value that contains a bitwise OR of the following value:
+     
+
+
+
+
+#### NDIS_SHARED_MEM_PARAMETERS_CONTIGOUS
+
+The shared memory is in a contiguous block of memory.
 
 `Header`
 
 The type, revision, and size of the NDIS_SHARED_MEMORY_PARAMETERS structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
-The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the NDIS_SHARED_MEMORY_PARAMETERS structure, the driver must set the <b>Revision</b> member of <b>Header</b> to one of the following values:
+The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the NDIS_SHARED_MEMORY_PARAMETERS structure, the driver must set the <b>Revision</b> member of <b>Header</b> to one of the following values: 
+
+
+
+
+#### NDIS_SHARED_MEMORY_PARAMETERS_REVISION_2
+
+Added <b>VPortId</b> for NDIS 6.30.
+
+Set the <b>Size</b> member to NDIS_SIZEOF_SHARED_MEMORY_PARAMETERS_REVISION_2.
+
+
+#### NDIS_SHARED_MEMORY_PARAMETERS_REVISION_1
+
+Original version for NDIS 6.20.
+
+Set the <b>Size</b> member to NDIS_SIZEOF_SHARED_MEMORY_PARAMETERS_REVISION_1.
 
 `Length`
 
@@ -144,13 +168,13 @@ NDIS drivers pass this structure to the
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_scatter_gather_list.md">SCATTER_GATHER_LIST</a>
-
 <a href="..\ndis\nc-ndis-allocate_shared_memory_handler.md">NetAllocateSharedMemory</a>
 
 <a href="..\ndis\nf-ndis-ndisallocatesharedmemory.md">NdisAllocateSharedMemory</a>
 
 <a href="..\ndis\ne-ndis-_ndis_shared_memory_usage.md">NDIS_SHARED_MEMORY_USAGE</a>
+
+<a href="..\wdm\ns-wdm-_scatter_gather_list.md">SCATTER_GATHER_LIST</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 

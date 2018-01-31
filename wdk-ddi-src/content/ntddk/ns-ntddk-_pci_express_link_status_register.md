@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddk._PCI_EXPRESS_LINK_STATUS_REGISTER
-title : _PCI_EXPRESS_LINK_STATUS_REGISTER
+title : "_PCI_EXPRESS_LINK_STATUS_REGISTER"
 author : windows-driver-content
 description : The PCI_EXPRESS_LINK_STATUS_REGISTER structure describes a PCI Express (PCIe) link status register of a PCIe capability structure.
 old-location : pci\pci_express_link_status_register.htm
@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : c3431e89-4a47-44e6-98d8-eae444ea1915
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : PCI.pci_express_link_status_register, PPCI_EXPRESS_LINK_STATUS_REGISTER union pointer [Buses], PCI_EXPRESS_LINK_STATUS_REGISTER, ntddk/PCI_EXPRESS_LINK_STATUS_REGISTER, PPCI_EXPRESS_LINK_STATUS_REGISTER, *PPCI_EXPRESS_LINK_STATUS_REGISTER, ntddk/PPCI_EXPRESS_LINK_STATUS_REGISTER, _PCI_EXPRESS_LINK_STATUS_REGISTER, PCI_EXPRESS_LINK_STATUS_REGISTER union [Buses], pci_struct_41d11df3-521f-4709-a30e-be70ad36db8f.xml
+ms.keywords : PCI_EXPRESS_LINK_STATUS_REGISTER union [Buses], ntddk/PCI_EXPRESS_LINK_STATUS_REGISTER, PCI_EXPRESS_LINK_STATUS_REGISTER, ntddk/PPCI_EXPRESS_LINK_STATUS_REGISTER, PPCI_EXPRESS_LINK_STATUS_REGISTER, *PPCI_EXPRESS_LINK_STATUS_REGISTER, PPCI_EXPRESS_LINK_STATUS_REGISTER union pointer [Buses], _PCI_EXPRESS_LINK_STATUS_REGISTER, PCI.pci_express_link_status_register, pci_struct_41d11df3-521f-4709-a30e-be70ad36db8f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PCI_EXPRESS_LINK_STATUS_REGISTER, *PPCI_EXPRESS_LINK_STATUS_REGISTER
+req.typenames : "*PPCI_EXPRESS_LINK_STATUS_REGISTER, PCI_EXPRESS_LINK_STATUS_REGISTER"
 ---
 
 # _PCI_EXPRESS_LINK_STATUS_REGISTER structure

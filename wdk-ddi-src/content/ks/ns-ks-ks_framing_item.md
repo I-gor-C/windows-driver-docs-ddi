@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : cd7d4ef7-f8ad-467f-aa5b-28b131941094
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSALLOCATOR_FLAG_DEVICE_SPECIFIC, ks/PKS_FRAMING_ITEM, KS_FRAMING_ITEM, KSALLOCATOR_FLAG_CAN_ALLOCATE, stream.ks_framing_item, KSALLOCATOR_FLAG_PARTIAL_READ_SUPPORT, ks/KS_FRAMING_ITEM, KSALLOCATOR_FLAG_INSIST_ON_FRAMESIZE_RATIO, *PKS_FRAMING_ITEM, KS_FRAMING_ITEM structure [Streaming Media Devices], PKS_FRAMING_ITEM, PKS_FRAMING_ITEM structure pointer [Streaming Media Devices], ks-struct_8ddb4478-636f-4cd4-b4c1-663a20070cef.xml, KSALLOCATOR_REQUIREMENTF_PREFERENCES_ONLY
+ms.keywords : ks-struct_8ddb4478-636f-4cd4-b4c1-663a20070cef.xml, KSALLOCATOR_FLAG_CAN_ALLOCATE, KS_FRAMING_ITEM, KSALLOCATOR_REQUIREMENTF_PREFERENCES_ONLY, stream.ks_framing_item, ks/PKS_FRAMING_ITEM, PKS_FRAMING_ITEM, *PKS_FRAMING_ITEM, KSALLOCATOR_FLAG_INSIST_ON_FRAMESIZE_RATIO, ks/KS_FRAMING_ITEM, PKS_FRAMING_ITEM structure pointer [Streaming Media Devices], KSALLOCATOR_FLAG_DEVICE_SPECIFIC, KSALLOCATOR_FLAG_PARTIAL_READ_SUPPORT, KS_FRAMING_ITEM structure [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKS_FRAMING_ITEM, KS_FRAMING_ITEM"
+req.typenames : KS_FRAMING_ITEM, *PKS_FRAMING_ITEM
 ---
 
 # KS_FRAMING_ITEM structure
@@ -127,6 +127,25 @@ GUID_61883_CLASS
 `Flags`
 
 Similar to the <b>OptionsFlags</b> and <b>RequirementsFlags</b> union in the <a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a> structure, with the addition of the following flags that add support for pipes.
+
+
+#### )
+
+
+
+#### )
+
+
+
+#### )
+
+
+
+#### )
+
+
+
+#### )
 
 `Frames`
 
@@ -233,15 +252,15 @@ Each <a href="..\ks\ns-ks-ksallocator_framing_ex.md">KSALLOCATOR_FRAMING_EX</a> 
 
 ## See Also
 
-<a href="..\ks\ns-ks-ks_compression.md">KS_COMPRESSION</a>
-
 <a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a>
 
-<a href="..\ks\ns-ks-ksallocator_framing_ex.md">KSALLOCATOR_FRAMING_EX</a>
+<a href="..\ks\ns-ks-ks_compression.md">KS_COMPRESSION</a>
+
+<a href="..\ks\ns-ks-ks_framing_range_weighted.md">KS_FRAMING_RANGE_WEIGHTED</a>
 
 <a href="..\ks\ns-ks-ks_framing_range.md">KS_FRAMING_RANGE</a>
 
-<a href="..\ks\ns-ks-ks_framing_range_weighted.md">KS_FRAMING_RANGE_WEIGHTED</a>
+<a href="..\ks\ns-ks-ksallocator_framing_ex.md">KSALLOCATOR_FRAMING_EX</a>
 
  
 

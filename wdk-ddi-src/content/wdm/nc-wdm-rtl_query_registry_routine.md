@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.typenames : "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
 req.product : Windows 10 or later.
 ---
 
@@ -112,9 +112,9 @@ For more information about the <b>RTL_QUERY_REGISTRY_TABLE</b> structure, see <a
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_key_value_basic_information.md">KEY_VALUE_BASIC_INFORMATION</a>
-
 <a href="..\wdm\nf-wdm-rtlqueryregistryvalues.md">RtlQueryRegistryValues</a>
+
+<a href="..\wdm\ns-wdm-_key_value_basic_information.md">KEY_VALUE_BASIC_INFORMATION</a>
 
  
 

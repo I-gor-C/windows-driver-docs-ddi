@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 18ad2c76-110f-45a9-986b-67e7c81f256f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoReuseIrp routine [Kernel-Mode Driver Architecture], IoReuseIrp, wdm/IoReuseIrp, k104_548c8bd2-bc09-4ee6-b373-d244f1f11daa.xml, kernel.ioreuseirp
+ms.keywords : IoReuseIrp, kernel.ioreuseirp, IoReuseIrp routine [Kernel-Mode Driver Architecture], wdm/IoReuseIrp, k104_548c8bd2-bc09-4ee6-b373-d244f1f11daa.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,18 +84,18 @@ See <a href="https://msdn.microsoft.com/library/windows/hardware/ff561107">Reusi
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Ntddk.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | IoReuseIrp, IoReuseIrp2, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
-
-<a href="..\ntddk\nf-ntddk-iomakeassociatedirp.md">IoMakeAssociatedIrp</a>
+<a href="..\wdm\nf-wdm-ioinitializeirp.md">IoInitializeIrp</a>
 
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 
-<a href="..\wdm\nf-wdm-ioinitializeirp.md">IoInitializeIrp</a>
+<a href="..\ntddk\nf-ntddk-iomakeassociatedirp.md">IoMakeAssociatedIrp</a>
+
+<a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
 
  
 

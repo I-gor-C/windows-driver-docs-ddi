@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2bf6fb1b-e2d6-496d-808e-e739951cc7c5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/FsRtlCreateSectionForDataScan, FsRtlCreateSectionForDataScan routine [Installable File System Drivers], fsrtlref_5117d865-19da-4ec5-8b20-cccab94eb013.xml, FsRtlCreateSectionForDataScan, ifsk.fsrtlcreatesectionfordatascan
+ms.keywords : ntifs/FsRtlCreateSectionForDataScan, FsRtlCreateSectionForDataScan, FsRtlCreateSectionForDataScan routine [Installable File System Drivers], ifsk.fsrtlcreatesectionfordatascan, fsrtlref_5117d865-19da-4ec5-8b20-cccab94eb013.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -311,20 +311,20 @@ For more information on creating mapped sections and views of memory, see <a hre
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
-
 <a href="..\wdm\nf-wdm-zwcreatesection.md">ZwCreateSection</a>
+
+<a href="..\ntifs\nf-ntifs-mmforcesectionclosed.md">MmForceSectionClosed</a>
 
 <a href="..\ntifs\nf-ntifs-ccpurgecachesection.md">CcPurgeCacheSection</a>
 
-<a href="..\ntifs\nf-ntifs-mmflushimagesection.md">MmFlushImageSection</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 
-<a href="..\ntifs\nf-ntifs-mmforcesectionclosed.md">MmForceSectionClosed</a>
+<a href="..\ntifs\nf-ntifs-mmflushimagesection.md">MmFlushImageSection</a>
 
  
 

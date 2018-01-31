@@ -1,6 +1,6 @@
 ---
 UID : NS:wdm._PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS
-title : _PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS
+title : "_PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS"
 author : windows-driver-content
 description : The PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS structure describes a PCI Express (PCIe) uncorrectable error status register of a PCIe advanced error reporting capability structure.
 old-location : pci\pci_express_uncorrectable_error_status.htm
@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : 9d7dcdee-052a-4082-a337-be3a35c5eef9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : wdm/PPCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS, PPCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS, PCI.pci_express_uncorrectable_error_status, *PPCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS, PPCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS union pointer [Buses], pci_struct_9341a010-06c8-46ee-931f-2a67756c12d2.xml, PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS union [Buses], _PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS, wdm/PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS, PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS
+ms.keywords : wdm/PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS, *PPCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS, PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS union [Buses], PCI.pci_express_uncorrectable_error_status, PPCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS, PPCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS union pointer [Buses], wdm/PPCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS, _PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS, PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS, pci_struct_9341a010-06c8-46ee-931f-2a67756c12d2.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS, *PPCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS
+req.typenames : "*PPCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS, PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS"
 req.product : Windows 10 or later.
 ---
 
@@ -92,11 +92,11 @@ A PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS structure is contained in the <a href="
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537457">PCI_EXPRESS_AER_CAPABILITY</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537472">PCI_EXPRESS_ROOTPORT_AER_CAPABILITY</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537458">PCI_EXPRESS_BRIDGE_AER_CAPABILITY</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537457">PCI_EXPRESS_AER_CAPABILITY</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 8320d4d1-f282-4977-96e7-de6f63d86ec4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/PsDereferenceImpersonationToken, psref_8d62cb23-83a3-45fd-8b35-f7e38dd1548d.xml, PsDereferenceImpersonationToken routine [Installable File System Drivers], PsDereferenceImpersonationToken, ifsk.psdereferenceimpersonationtoken
+ms.keywords : psref_8d62cb23-83a3-45fd-8b35-f7e38dd1548d.xml, ifsk.psdereferenceimpersonationtoken, PsDereferenceImpersonationToken routine [Installable File System Drivers], ntifs/PsDereferenceImpersonationToken, PsDereferenceImpersonationToken
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,14 @@ For more information about security and access control, see the documentation on
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** |  |
-| **IRQL** | < DISPATCH_LEVEL |
+| **IRQL** | "< DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-psreferenceimpersonationtoken.md">PsReferenceImpersonationToken</a>
-
 <a href="..\ntifs\nf-ntifs-psimpersonateclient.md">PsImpersonateClient</a>
+
+<a href="..\ntifs\nf-ntifs-psreferenceimpersonationtoken.md">PsReferenceImpersonationToken</a>
 
  
 

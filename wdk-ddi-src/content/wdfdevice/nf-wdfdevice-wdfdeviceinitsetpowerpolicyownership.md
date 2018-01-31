@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4db198f5-9472-476d-bb0c-4858a3f98672
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceInitSetPowerPolicyOwnership method, wdf.wdfdeviceinitsetpowerpolicyownership, wdfdevice/WdfDeviceInitSetPowerPolicyOwnership, kmdf.wdfdeviceinitsetpowerpolicyownership, WdfDeviceInitSetPowerPolicyOwnership, DFDeviceObjectGeneralRef_0c94f8f0-3b23-404a-83c2-1742785ff17d.xml, PFN_WDFDEVICEINITSETPOWERPOLICYOWNERSHIP
+ms.keywords : wdfdevice/WdfDeviceInitSetPowerPolicyOwnership, wdf.wdfdeviceinitsetpowerpolicyownership, kmdf.wdfdeviceinitsetpowerpolicyownership, DFDeviceObjectGeneralRef_0c94f8f0-3b23-404a-83c2-1742785ff17d.xml, WdfDeviceInitSetPowerPolicyOwnership method, WdfDeviceInitSetPowerPolicyOwnership, PFN_WDFDEVICEINITSETPOWERPOLICYOWNERSHIP
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -100,7 +100,7 @@ For more information about calling <b>WdfDeviceInitSetPowerPolicyOwnership</b>, 
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, FDOPowerPolicyOwnerAPI, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI |
 
 ## See Also

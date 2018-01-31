@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a9343e09-0b7b-4ed8-9b30-63ee0b38d13d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltIsDirectory, FltIsDirectory routine [Installable File System Drivers], ifsk.fltisdirectory, FltApiRef_e_to_o_cdcea60b-c299-4445-9c96-126210f2a43e.xml, fltkernel/FltIsDirectory
+ms.keywords : FltApiRef_e_to_o_cdcea60b-c299-4445-9c96-126210f2a43e.xml, FltIsDirectory, FltIsDirectory routine [Installable File System Drivers], fltkernel/FltIsDirectory, ifsk.fltisdirectory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -102,7 +102,7 @@ This error code is returned if the file system does not support stream contexts.
 | **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include FltKernel.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

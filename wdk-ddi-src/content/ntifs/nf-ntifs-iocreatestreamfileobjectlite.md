@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 79c6438c-ba8c-4fc5-8c3f-5865a51869b7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoCreateStreamFileObjectLite routine [Installable File System Drivers], ntifs/IoCreateStreamFileObjectLite, ifsk.iocreatestreamfileobjectlite, IoCreateStreamFileObjectLite, ioref_0e35141f-7028-47b0-8dc1-0bd9d1c4e0be.xml
+ms.keywords : ntifs/IoCreateStreamFileObjectLite, ifsk.iocreatestreamfileobjectlite, ioref_0e35141f-7028-47b0-8dc1-0bd9d1c4e0be.xml, IoCreateStreamFileObjectLite routine [Installable File System Drivers], IoCreateStreamFileObjectLite
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -89,22 +89,22 @@ If a pool allocation failure occurs, <b>IoCreateStreamFileObjectLite</b> raises 
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548608">IRP_MJ_CLEANUP</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a>
 
-<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
-
-<a href="..\ntifs\nf-ntifs-iocreatestreamfileobject.md">IoCreateStreamFileObject</a>
+<a href="..\ntifs\nf-ntifs-iocreatestreamfileobjectex.md">IoCreateStreamFileObjectEx</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
 
-<a href="..\ntifs\nf-ntifs-iocreatestreamfileobjectex.md">IoCreateStreamFileObjectEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548608">IRP_MJ_CLEANUP</a>
+
+<a href="..\ntifs\nf-ntifs-iocreatestreamfileobject.md">IoCreateStreamFileObject</a>
+
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
 
  
 

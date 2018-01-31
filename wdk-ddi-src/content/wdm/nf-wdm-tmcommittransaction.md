@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8d17de44-2fd9-4e20-8a9b-2647c9917709
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : TmCommitTransaction routine [Kernel-Mode Driver Architecture], TmCommitTransaction, wdm/TmCommitTransaction, kernel.tmcommittransaction, ktm_ref_e5e36a40-1ee7-469c-acd9-8e7a44017853.xml
+ms.keywords : ktm_ref_e5e36a40-1ee7-469c-acd9-8e7a44017853.xml, kernel.tmcommittransaction, TmCommitTransaction, TmCommitTransaction routine [Kernel-Mode Driver Architecture], wdm/TmCommitTransaction
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -150,13 +150,13 @@ For information about when to use KTM's <b>Tm<i>Xxx</i></b> routines instead of 
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwopentransaction.md">ZwOpenTransaction</a>
+<a href="..\wdm\nf-wdm-zwcreatetransaction.md">ZwCreateTransaction</a>
 
 <a href="..\wdm\nf-wdm-zwcommittransaction.md">ZwCommitTransaction</a>
 
 <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
 
-<a href="..\wdm\nf-wdm-zwcreatetransaction.md">ZwCreateTransaction</a>
+<a href="..\wdm\nf-wdm-zwopentransaction.md">ZwOpenTransaction</a>
 
  
 

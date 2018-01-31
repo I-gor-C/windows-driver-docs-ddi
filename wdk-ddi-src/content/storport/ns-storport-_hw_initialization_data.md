@@ -1,6 +1,6 @@
 ---
 UID : NS:storport._HW_INITIALIZATION_DATA
-title : _HW_INITIALIZATION_DATA
+title : "_HW_INITIALIZATION_DATA"
 author : windows-driver-content
 description : The HW_INITIALIZATION_DATA (Storport) structure contains information particular to each miniport driver and the hardware that the miniport driver manages.
 old-location : storage\hw_initialization_data__storport_.htm
@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 54f460da-2dfb-4a9d-9b25-edb90f3bfdd5
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-storport_c3d0ed59-9662-409d-acc3-6c2358837a01.xml, ADDRESS_TYPE_FLAG_BTL8, storport/PHW_INITIALIZATION_DATA, STOR_FEATURE_VIRTUAL_MINIPORT, storage.hw_initialization_data__storport_, _HW_INITIALIZATION_DATA, _HW_INITIALIZATION_DATA structure [Storage Devices], STOR_FEATURE_DEVICE_DESCRIPTOR_FROM_ATA_INFO_VPD, *PHW_INITIALIZATION_DATA, STOR_FEATURE_DUMP_POINTERS, STOR_MAP_NO_BUFFERS, STOR_MAP_ALL_BUFFERS_INCLUDING_READ_WRITE, STOR_FEATURE_ATA_PASS_THROUGH, STOR_FEATURE_FULL_PNP_DEVICE_CAPABILITIES, STOR_MAP_ALL_BUFFERS, STOR_FEATURE_DEVICE_NAME_NO_SUFFIX, STOR_FEATURE_DUMP_RESUME_CAPABLE, HW_INITIALIZATION_DATA structure [Storage Devices], PHW_INITIALIZATION_DATA structure pointer [Storage Devices], storport/HW_INITIALIZATION_DATA, SRB_TYPE_FLAG_SCSI_REQUEST_BLOCK, HW_INITIALIZATION_DATA, SRB_TYPE_FLAG_STORAGE_REQUEST_BLOCK, PHW_INITIALIZATION_DATA, STOR_FEATURE_SET_ADAPTER_INTERFACE_TYPE, STOR_MAP_NON_READ_WRITE_BUFFERS
+ms.keywords : STOR_MAP_ALL_BUFFERS_INCLUDING_READ_WRITE, SRB_TYPE_FLAG_STORAGE_REQUEST_BLOCK, *PHW_INITIALIZATION_DATA, _HW_INITIALIZATION_DATA structure [Storage Devices], storage.hw_initialization_data__storport_, STOR_FEATURE_SET_ADAPTER_INTERFACE_TYPE, storport/HW_INITIALIZATION_DATA, STOR_MAP_ALL_BUFFERS, STOR_FEATURE_VIRTUAL_MINIPORT, STOR_MAP_NON_READ_WRITE_BUFFERS, STOR_MAP_NO_BUFFERS, SRB_TYPE_FLAG_SCSI_REQUEST_BLOCK, structs-storport_c3d0ed59-9662-409d-acc3-6c2358837a01.xml, STOR_FEATURE_DEVICE_NAME_NO_SUFFIX, STOR_FEATURE_DUMP_RESUME_CAPABLE, storport/PHW_INITIALIZATION_DATA, HW_INITIALIZATION_DATA, STOR_FEATURE_DEVICE_DESCRIPTOR_FROM_ATA_INFO_VPD, _HW_INITIALIZATION_DATA, ADDRESS_TYPE_FLAG_BTL8, PHW_INITIALIZATION_DATA structure pointer [Storage Devices], STOR_FEATURE_FULL_PNP_DEVICE_CAPABILITIES, HW_INITIALIZATION_DATA structure [Storage Devices], PHW_INITIALIZATION_DATA, STOR_FEATURE_DUMP_POINTERS, STOR_FEATURE_ATA_PASS_THROUGH
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -262,23 +262,23 @@ Starting in Windows 8, both physical and virtual Storport miniports use <b>HW_I
 
 ## See Also
 
-<a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a>
-
-<a href="..\storport\nc-storport-hw_reset_bus.md">HwStorResetBus</a>
-
-<a href="..\storport\nc-storport-hw_buildio.md">HwStorBuildIo</a>
-
-<a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a>
+<a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
 
 <a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
 
+<a href="..\storport\nc-storport-hw_interrupt.md">HwStorInterrupt</a>
+
+<a href="..\storport\nc-storport-hw_buildio.md">HwStorBuildIo</a>
+
 <a href="..\storport\nc-storport-hw_adapter_control.md">HwStorAdapterControl</a>
 
-<a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
+<a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a>
 
 <a href="..\storport\ns-storport-_virtual_hw_initialization_data.md">VIRTUAL_HW_INITIALIZATION_DATA</a>
 
-<a href="..\storport\nc-storport-hw_interrupt.md">HwStorInterrupt</a>
+<a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a>
+
+<a href="..\storport\nc-storport-hw_reset_bus.md">HwStorResetBus</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 1f3dc15f-14b5-4797-83be-ba3a01a1551b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoIsSystemThread, ntifs/IoIsSystemThread, IoIsSystemThread routine [Installable File System Drivers], ifsk.ioissystemthread, ioref_3e14f3af-c985-43a4-bc57-927483597c79.xml
+ms.keywords : IoIsSystemThread, ntifs/IoIsSystemThread, ioref_3e14f3af-c985-43a4-bc57-927483597c79.xml, IoIsSystemThread routine [Installable File System Drivers], ifsk.ioissystemthread
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,14 +74,14 @@ For more information about using system threads and managing synchronization wit
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\ntifs\nf-ntifs-psissystemthread.md">PsIsSystemThread</a>
 
-<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
+<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
 
  
 

@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddser._SERIAL_HANDFLOW
-title : _SERIAL_HANDFLOW
+title : "_SERIAL_HANDFLOW"
 author : windows-driver-content
 description : The SERIAL_HANDFLOW structure specifies the handshake and flow control settings for a serial port.
 old-location : serports\serial_handflow.htm
@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : E13148B7-8FCE-4407-80F6-286F0EF65B5C
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PSERIAL_HANDFLOW, SERIAL_HANDFLOW structure [Serial Ports], ntddser/PSERIAL_HANDFLOW, ntddser/SERIAL_HANDFLOW, *PSERIAL_HANDFLOW, serports.serial_handflow, SERIAL_HANDFLOW, _SERIAL_HANDFLOW, PSERIAL_HANDFLOW structure pointer [Serial Ports]
+ms.keywords : "*PSERIAL_HANDFLOW, PSERIAL_HANDFLOW structure pointer [Serial Ports], serports.serial_handflow, SERIAL_HANDFLOW structure [Serial Ports], ntddser/SERIAL_HANDFLOW, ntddser/PSERIAL_HANDFLOW, _SERIAL_HANDFLOW, PSERIAL_HANDFLOW, SERIAL_HANDFLOW"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SERIAL_HANDFLOW, *PSERIAL_HANDFLOW
+req.typenames : "*PSERIAL_HANDFLOW, SERIAL_HANDFLOW"
 ---
 
 # _SERIAL_HANDFLOW structure
@@ -167,9 +167,9 @@ SerCx2 and SerCx support only subsets of the flags that are defined for the <b>C
 
 ## See Also
 
-<a href="..\ntddser\ni-ntddser-ioctl_serial_set_handflow.md">IOCTL_SERIAL_SET_HANDFLOW</a>
-
 <a href="..\ntddser\ni-ntddser-ioctl_serial_get_handflow.md">IOCTL_SERIAL_GET_HANDFLOW</a>
+
+<a href="..\ntddser\ni-ntddser-ioctl_serial_set_handflow.md">IOCTL_SERIAL_SET_HANDFLOW</a>
 
  
 

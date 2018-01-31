@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : d6d90a4a-a67d-4ef3-82b8-7146970e30f3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.usbd_parsedescriptors, usbdlib/USBD_ParseDescriptors, USBD_ParseDescriptors, USBD_ParseDescriptors routine [Buses], usbfunc_a66c16e5-451c-4d5b-a621-4c4969200acd.xml
+ms.keywords : USBD_ParseDescriptors, usbdlib/USBD_ParseDescriptors, USBD_ParseDescriptors routine [Buses], usbfunc_a66c16e5-451c-4d5b-a621-4c4969200acd.xml, buses.usbd_parsedescriptors
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.typenames : "*PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -73,6 +73,23 @@ Pointer to the address within the configuration descriptor, provided at <i>Descr
 Specifies the descriptor type code as assigned by USB. The following values are valid for USB-defined descriptor types:
 
 
+
+
+#### USB_STRING_DESCRIPTOR_TYPE
+
+Specifies that the descriptor being searched for is a string descriptor.
+
+
+#### USB_INTERFACE_DESCRIPTOR_TYPE
+
+Specifies that the descriptor being searched for is an interface descriptor.
+
+
+#### USB_ENDPOINT_DESCRIPTOR_TYPE
+
+Specifies that the descriptor being searched for is an endpoint descriptor.
+
+
 ## Return Value
 
 <b>USBD_ParseDescriptors</b> returns a pointer to a <a href="..\usbspec\ns-usbspec-_usb_common_descriptor.md">USB_COMMON_DESCRIPTOR</a> structure that is the head of the first descriptor that matches the given search criteria, or <b>NULL</b> is returned if no match is found:
@@ -92,7 +109,7 @@ When this routine parses the configuration descriptor looking for the descriptor
 | **Minimum UMDF version** |  |
 | **Header** | usbdlib.h (include Usbdlib.h) |
 | **Library** |  |
-| **IRQL** | < DISPATCH_LEVEL |
+| **IRQL** | "< DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

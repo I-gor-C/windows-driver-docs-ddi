@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8cde623d-a255-45ff-ab1e-bdd0c14a02a0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFPREDEVICEREMOVE, DFCoinstallerRef_6eeb3b62-08ef-4d17-a6af-9945a3737f0d.xml, WdfPreDeviceRemove, WdfPreDeviceRemove function, wdf.wdfpredeviceremove, wdfinstaller/WdfPreDeviceRemove, kmdf.wdfpredeviceremove
+ms.keywords : WdfPreDeviceRemove, wdf.wdfpredeviceremove, wdfinstaller/WdfPreDeviceRemove, WdfPreDeviceRemove function, PFN_WDFPREDEVICEREMOVE, DFCoinstallerRef_6eeb3b62-08ef-4d17-a6af-9945a3737f0d.xml, kmdf.wdfpredeviceremove
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS"
+req.typenames : WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
 req.product : Windows 10 or later.
 ---
 

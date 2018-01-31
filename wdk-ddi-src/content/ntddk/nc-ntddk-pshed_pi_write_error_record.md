@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA
+req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 
@@ -65,6 +65,13 @@ A pointer to the context area that was specified in the <b>Context</b> member of
 `Flags`
 
 A bit-wise OR'ed combination of flags that affect the write operation. A possible flag is:
+
+
+
+
+#### WHEA_WRITE_FLAG_DUMMY
+
+The write operation is a dummy write operation. No data is to be written to the system's persistent data storage.
 
 `RecordLength`
 
@@ -124,20 +131,20 @@ The PSHED calls a PSHED plug-in's <i>WriteErrorRecord</i> callback function at I
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** |  |
-| **IRQL** | <= HIGH_LEVEL (See Remarks section) |
+| **IRQL** | "<= HIGH_LEVEL (See Remarks section)" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_error_record.md">WHEA_ERROR_RECORD</a>
-
 <a href="..\ntddk\nc-ntddk-pshed_pi_clear_error_record.md">ClearErrorRecord</a>
-
-<a href="..\ntddk\ns-ntddk-_whea_pshed_plugin_registration_packet.md">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a>
 
 <a href="..\ntddk\nc-ntddk-pshed_pi_read_error_record.md">ReadErrorRecord</a>
 
 <a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_pshed_plugin_registration_packet.md">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_error_record.md">WHEA_ERROR_RECORD</a>
 
  
 

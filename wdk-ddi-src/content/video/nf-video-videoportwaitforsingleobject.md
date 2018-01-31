@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 574aa79e-c8ef-44de-8d0b-a550698a32e0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortWaitForSingleObject, display.videoportwaitforsingleobject, VideoPort_Functions_a1678f59-0c1c-4b0a-b1e6-2dbb71c8a7c2.xml, VideoPortWaitForSingleObject function [Display Devices], video/VideoPortWaitForSingleObject
+ms.keywords : VideoPort_Functions_a1678f59-0c1c-4b0a-b1e6-2dbb71c8a7c2.xml, video/VideoPortWaitForSingleObject, display.videoportwaitforsingleobject, VideoPortWaitForSingleObject, VideoPortWaitForSingleObject function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -126,5 +126,5 @@ Callers of <b>VideoPortWaitForSingleObject</b> must be running at IRQL &lt;= DIS
 | **Minimum UMDF version** |  |
 | **Header** | video.h (include Video.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL (see Remarks section) |
+| **IRQL** | "<= DISPATCH_LEVEL (see Remarks section)" |
 | **DDI compliance rules** |  |

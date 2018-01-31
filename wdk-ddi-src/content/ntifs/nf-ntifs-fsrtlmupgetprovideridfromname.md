@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a572398c-1755-4fc6-844b-85059d4d02cb
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlMupGetProviderIdFromName routine [Installable File System Drivers], FsRtlMupGetProviderIdFromName, ifsk.fsrtlmupgetprovideridfromname, ntifs/FsRtlMupGetProviderIdFromName, fsrtlref_40c084cd-454c-4e09-afc1-fca3a78bf614.xml
+ms.keywords : FsRtlMupGetProviderIdFromName, FsRtlMupGetProviderIdFromName routine [Installable File System Drivers], ifsk.fsrtlmupgetprovideridfromname, ntifs/FsRtlMupGetProviderIdFromName, fsrtlref_40c084cd-454c-4e09-afc1-fca3a78bf614.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -122,7 +122,7 @@ To get the provider identifier of a network redirector from a file object, a fil
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

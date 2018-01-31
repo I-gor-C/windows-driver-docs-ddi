@@ -1,6 +1,6 @@
 ---
 UID : NS:ndis._NDIS_DEVICE_OBJECT_ATTRIBUTES
-title : _NDIS_DEVICE_OBJECT_ATTRIBUTES
+title : "_NDIS_DEVICE_OBJECT_ATTRIBUTES"
 author : windows-driver-content
 description : The NDIS_DEVICE_OBJECT_ATTRIBUTES structure defines the attributes of a device that an NDIS filter or miniport driver can pass to the NdisRegisterDeviceEx function.
 old-location : netvista\ndis_device_object_attributes.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 658e1597-eacf-4e9e-9f10-37f7646d38ad
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis_devices_ref_85d7040d-1d34-42e4-ab6b-ef03ed95eeb9.xml, *PNDIS_DEVICE_OBJECT_ATTRIBUTES, NDIS_DEVICE_OBJECT_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], netvista.ndis_device_object_attributes, ndis/PNDIS_DEVICE_OBJECT_ATTRIBUTES, _NDIS_DEVICE_OBJECT_ATTRIBUTES, ndis/NDIS_DEVICE_OBJECT_ATTRIBUTES, PNDIS_DEVICE_OBJECT_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], NDIS_DEVICE_OBJECT_ATTRIBUTES, PNDIS_DEVICE_OBJECT_ATTRIBUTES
+ms.keywords : "_NDIS_DEVICE_OBJECT_ATTRIBUTES, ndis/NDIS_DEVICE_OBJECT_ATTRIBUTES, *PNDIS_DEVICE_OBJECT_ATTRIBUTES, ndis/PNDIS_DEVICE_OBJECT_ATTRIBUTES, NDIS_DEVICE_OBJECT_ATTRIBUTES, netvista.ndis_device_object_attributes, PNDIS_DEVICE_OBJECT_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], PNDIS_DEVICE_OBJECT_ATTRIBUTES, ndis_devices_ref_85d7040d-1d34-42e4-ab6b-ef03ed95eeb9.xml, NDIS_DEVICE_OBJECT_ATTRIBUTES structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_DEVICE_OBJECT_ATTRIBUTES, NDIS_DEVICE_OBJECT_ATTRIBUTES"
+req.typenames : NDIS_DEVICE_OBJECT_ATTRIBUTES, *PNDIS_DEVICE_OBJECT_ATTRIBUTES
 ---
 
 # _NDIS_DEVICE_OBJECT_ATTRIBUTES structure
@@ -122,6 +122,16 @@ A driver must not supply entry points for PnP or Power Management handlers, beca
      device object is not for a physical device and therefore does not receive PnP or Power Management
      IRPs.
 
+
+#### DeviceObject
+
+The device object for the dispatch routine.
+
+
+#### Irp
+
+The IRP for the dispatch routine.
+
 `SymbolicName`
 
 A pointer to a variable of type NDIS_STRING that contains a Unicode string that is the
@@ -147,11 +157,11 @@ An NDIS filter or miniport driver can call the
 
 ## See Also
 
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
 <a href="..\ndis\nf-ndis-ndisregisterdeviceex.md">NdisRegisterDeviceEx</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

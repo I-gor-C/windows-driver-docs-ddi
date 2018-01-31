@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : F35F80E7-E1B6-4219-96AF-687E0014CCB3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDmaTransactionFreeResources, kmdf.wdfdmatransactionfreeresources, WdfDmaTransactionFreeResources method, wdfdmatransaction/WdfDmaTransactionFreeResources, PFN_WDFDMATRANSACTIONFREERESOURCES, wdf.wdfdmatransactionfreeresources
+ms.keywords : wdfdmatransaction/WdfDmaTransactionFreeResources, kmdf.wdfdmatransactionfreeresources, WdfDmaTransactionFreeResources, WdfDmaTransactionFreeResources method, wdf.wdfdmatransactionfreeresources, PFN_WDFDMATRANSACTIONFREERESOURCES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_DMA_SYSTEM_PROFILE_CONFIG, *PWDF_DMA_SYSTEM_PROFILE_CONFIG
+req.typenames : "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
 req.product : Windows 10 or later.
 ---
 
@@ -87,7 +87,7 @@ For more information about system-mode DMA, see <a href="https://msdn.microsoft.
 | **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 
 ## See Also

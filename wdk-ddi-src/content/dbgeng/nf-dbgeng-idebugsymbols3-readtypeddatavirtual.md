@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 526bebd8-95af-4f6f-a381-eb60273d1af5
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols::ReadTypedDataVirtual, ReadTypedDataVirtual method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::ReadTypedDataVirtual, debugger.readtypeddatavirtual, ReadTypedDataVirtual method [Windows Debugging], ReadTypedDataVirtual method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols2::ReadTypedDataVirtual, IDebugSymbols3 interface [Windows Debugging], ReadTypedDataVirtual method, dbgeng/IDebugSymbols::ReadTypedDataVirtual, dbgeng/IDebugSymbols2::ReadTypedDataVirtual, IDebugSymbols_c7a6fee6-d6bc-4dd6-923a-7e789801091f.xml, IDebugSymbols2 interface [Windows Debugging], ReadTypedDataVirtual method, dbgeng/IDebugSymbols3::ReadTypedDataVirtual, IDebugSymbols3, ReadTypedDataVirtual method [Windows Debugging], IDebugSymbols interface, ReadTypedDataVirtual, IDebugSymbols interface [Windows Debugging], ReadTypedDataVirtual method
+ms.keywords : dbgeng/IDebugSymbols3::ReadTypedDataVirtual, ReadTypedDataVirtual method [Windows Debugging], IDebugSymbols interface, ReadTypedDataVirtual method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::ReadTypedDataVirtual, IDebugSymbols_c7a6fee6-d6bc-4dd6-923a-7e789801091f.xml, ReadTypedDataVirtual, IDebugSymbols::ReadTypedDataVirtual, IDebugSymbols interface [Windows Debugging], ReadTypedDataVirtual method, dbgeng/IDebugSymbols2::ReadTypedDataVirtual, IDebugSymbols3 interface [Windows Debugging], ReadTypedDataVirtual method, IDebugSymbols3, IDebugSymbols2 interface [Windows Debugging], ReadTypedDataVirtual method, debugger.readtypeddatavirtual, ReadTypedDataVirtual method [Windows Debugging], IDebugSymbols2::ReadTypedDataVirtual, ReadTypedDataVirtual method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols::ReadTypedDataVirtual
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

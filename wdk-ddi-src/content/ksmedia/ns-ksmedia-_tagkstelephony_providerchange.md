@@ -1,6 +1,6 @@
 ---
 UID : NS:ksmedia._tagKSTELEPHONY_PROVIDERCHANGE
-title : _tagKSTELEPHONY_PROVIDERCHANGE
+title : "_tagKSTELEPHONY_PROVIDERCHANGE"
 author : windows-driver-content
 description : The KSTELEPHONY_PROVIDERCHANGE structure specifies the phone call type and provider change operation to use for the KSPROPERTY_TELEPHONY_PROVIDERCHANGE property.
 old-location : audio\kstelephony_providerchange.htm
@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 07928837-321C-4501-BDFF-4611BF6912F6
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PKSTELEPHONY_PROVIDERCHANGE structure pointer [Audio Devices], *PKSTELEPHONY_PROVIDERCHANGE, ksmedia/KSTELEPHONY_PROVIDERCHANGE, audio.kstelephony_providerchange, KSTELEPHONY_PROVIDERCHANGE structure [Audio Devices], _tagKSTELEPHONY_PROVIDERCHANGE, ksmedia/PKSTELEPHONY_PROVIDERCHANGE, KSTELEPHONY_PROVIDERCHANGE, PKSTELEPHONY_PROVIDERCHANGE
+ms.keywords : audio.kstelephony_providerchange, KSTELEPHONY_PROVIDERCHANGE structure [Audio Devices], ksmedia/KSTELEPHONY_PROVIDERCHANGE, PKSTELEPHONY_PROVIDERCHANGE, ksmedia/PKSTELEPHONY_PROVIDERCHANGE, KSTELEPHONY_PROVIDERCHANGE, PKSTELEPHONY_PROVIDERCHANGE structure pointer [Audio Devices], _tagKSTELEPHONY_PROVIDERCHANGE, *PKSTELEPHONY_PROVIDERCHANGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSTELEPHONY_PROVIDERCHANGE, *PKSTELEPHONY_PROVIDERCHANGE
+req.typenames : "*PKSTELEPHONY_PROVIDERCHANGE, KSTELEPHONY_PROVIDERCHANGE"
 ---
 
 # _tagKSTELEPHONY_PROVIDERCHANGE structure

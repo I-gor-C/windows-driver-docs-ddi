@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 3bc84b15-7c13-4ad9-b9a1-6abd5a7389eb
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : WriteIo method [Windows Debugging], IDebugDataSpaces3 interface, IDebugDataSpaces4, IDebugDataSpaces_d36b33ec-db19-4df1-8813-b77f22705279.xml, dbgeng/IDebugDataSpaces4::WriteIo, debugger.writeio, WriteIo method [Windows Debugging], IDebugDataSpaces3::WriteIo, IDebugDataSpaces::WriteIo, IDebugDataSpaces4::WriteIo, WriteIo method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces3 interface [Windows Debugging], WriteIo method, dbgeng/IDebugDataSpaces2::WriteIo, dbgeng/IDebugDataSpaces3::WriteIo, IDebugDataSpaces interface [Windows Debugging], WriteIo method, WriteIo method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces2::WriteIo, WriteIo method [Windows Debugging], IDebugDataSpaces interface, dbgeng/IDebugDataSpaces::WriteIo, IDebugDataSpaces2 interface [Windows Debugging], WriteIo method, IDebugDataSpaces4 interface [Windows Debugging], WriteIo method, WriteIo
+ms.keywords : IDebugDataSpaces4::WriteIo, IDebugDataSpaces4 interface [Windows Debugging], WriteIo method, dbgeng/IDebugDataSpaces3::WriteIo, WriteIo method [Windows Debugging], IDebugDataSpaces3 interface, WriteIo, dbgeng/IDebugDataSpaces2::WriteIo, dbgeng/IDebugDataSpaces4::WriteIo, IDebugDataSpaces2::WriteIo, WriteIo method [Windows Debugging], IDebugDataSpaces2 interface, WriteIo method [Windows Debugging], IDebugDataSpaces_d36b33ec-db19-4df1-8813-b77f22705279.xml, WriteIo method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces::WriteIo, IDebugDataSpaces3 interface [Windows Debugging], WriteIo method, IDebugDataSpaces interface [Windows Debugging], WriteIo method, IDebugDataSpaces4, IDebugDataSpaces2 interface [Windows Debugging], WriteIo method, debugger.writeio, WriteIo method [Windows Debugging], IDebugDataSpaces interface, dbgeng/IDebugDataSpaces::WriteIo, IDebugDataSpaces3::WriteIo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

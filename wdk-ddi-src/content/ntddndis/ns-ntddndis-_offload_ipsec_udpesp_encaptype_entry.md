@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddndis._OFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY
-title : _OFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY
+title : "_OFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY"
 author : windows-driver-content
 description : The OFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY structure specifies the UDP-ESP encapsulation type and destination port of a parser entry.
 old-location : netvista\offload_ipsec_udpesp_encaptype_entry.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : a1e5ae2e-b183-4ccc-8413-1359c4e8a6bc
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : POFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY structure pointer [Network Drivers Starting with Windows Vista], _OFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY, ntddndis/POFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY, OFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY, OFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY structure [Network Drivers Starting with Windows Vista], POFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY, ntddndis/OFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY, 216offload_de874753-3127-47fb-8768-a5e2bd6eb96d.xml, netvista.offload_ipsec_udpesp_encaptype_entry, *POFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY
+ms.keywords : "_OFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY, *POFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY, ntddndis/OFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY, ntddndis/POFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY, OFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY, POFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY, POFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY structure pointer [Network Drivers Starting with Windows Vista], 216offload_de874753-3127-47fb-8768-a5e2bd6eb96d.xml, netvista.offload_ipsec_udpesp_encaptype_entry, OFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,6 +66,21 @@ For an inbound SA (Flags = OFFLOAD_INBOUND_SA), specifies the destination port t
 
 The UDP-ESP encapsulation type for packets protected by the security associations (SAs) that are
      being offloaded:
+     
+
+
+
+
+#### IPSEC_UDPESP_ENCAPTYPE_IKE
+
+This value is reserved.
+
+
+#### IPSEC_UDPESP_E\NCAPTYPE_OTHER
+
+UDP encapsulation for packets on port 4500. For more information, see 
+       <mshelp:link keywords="netxp.udp_esp_encapsulation_types__ndis_5_1_" tabindex="0">UDP-ESP Encapsulation
+       Types</mshelp:link>.
 
 ## Remarks
 The OFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY structure is used with the 

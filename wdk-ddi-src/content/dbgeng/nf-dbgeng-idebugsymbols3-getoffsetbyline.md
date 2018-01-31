@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 347e0d45-8be1-4e4e-8a6a-44d5c914bf0f
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3::GetOffsetByLine, IDebugSymbols::GetOffsetByLine, IDebugSymbols interface [Windows Debugging], GetOffsetByLine method, GetOffsetByLine method [Windows Debugging], dbgeng/IDebugSymbols3::GetOffsetByLine, GetOffsetByLine method [Windows Debugging], IDebugSymbols2 interface, GetOffsetByLine method [Windows Debugging], IDebugSymbols3 interface, GetOffsetByLine method [Windows Debugging], IDebugSymbols interface, IDebugSymbols2 interface [Windows Debugging], GetOffsetByLine method, IDebugSymbols3 interface [Windows Debugging], GetOffsetByLine method, IDebugSymbols_1aa7fddc-6a33-469e-828f-45ff0f31aae7.xml, GetOffsetByLine, IDebugSymbols2::GetOffsetByLine, dbgeng/IDebugSymbols::GetOffsetByLine, IDebugSymbols3, debugger.getoffsetbyline, dbgeng/IDebugSymbols2::GetOffsetByLine
+ms.keywords : dbgeng/IDebugSymbols::GetOffsetByLine, IDebugSymbols::GetOffsetByLine, IDebugSymbols2::GetOffsetByLine, debugger.getoffsetbyline, IDebugSymbols3::GetOffsetByLine, GetOffsetByLine method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols2::GetOffsetByLine, GetOffsetByLine method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::GetOffsetByLine, IDebugSymbols3, GetOffsetByLine, GetOffsetByLine method [Windows Debugging], IDebugSymbols interface, IDebugSymbols interface [Windows Debugging], GetOffsetByLine method, IDebugSymbols2 interface [Windows Debugging], GetOffsetByLine method, GetOffsetByLine method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], GetOffsetByLine method, IDebugSymbols_1aa7fddc-6a33-469e-828f-45ff0f31aae7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

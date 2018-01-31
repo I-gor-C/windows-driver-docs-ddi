@@ -1,6 +1,6 @@
 ---
 UID : NS:poclass._BATTERY_STATUS
-title : _BATTERY_STATUS
+title : "_BATTERY_STATUS"
 author : windows-driver-content
 description : The BATTERY_STATUS structure is used by battery miniclass drivers to return status information in response to a call to BatteryMiniQueryStatus.
 old-location : battery\battery_status.htm
@@ -8,7 +8,7 @@ old-project : battery
 ms.assetid : 48df787b-f9f6-45d1-872c-ceeda3087af6
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PBATTERY_STATUS structure pointer [Battery Devices], PBATTERY_STATUS, battery.battery_status, *PBATTERY_STATUS, BATTERY_STATUS, _BATTERY_STATUS, BATTERY_STATUS structure [Battery Devices], bat-struct_11dfaf25-0f90-4c5b-8017-15fb2124423b.xml, poclass/BATTERY_STATUS, poclass/PBATTERY_STATUS
+ms.keywords : BATTERY_STATUS structure [Battery Devices], PBATTERY_STATUS, battery.battery_status, _BATTERY_STATUS, BATTERY_STATUS, poclass/BATTERY_STATUS, *PBATTERY_STATUS, PBATTERY_STATUS structure pointer [Battery Devices], bat-struct_11dfaf25-0f90-4c5b-8017-15fb2124423b.xml, poclass/PBATTERY_STATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : BATTERY_STATUS, *PBATTERY_STATUS
+req.typenames : "*PBATTERY_STATUS, BATTERY_STATUS"
 ---
 
 # _BATTERY_STATUS structure

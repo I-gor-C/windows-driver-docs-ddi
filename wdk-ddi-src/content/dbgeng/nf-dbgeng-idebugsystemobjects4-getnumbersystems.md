@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 27465cd9-77bc-4c9e-bac6-bd471ca93261
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetNumberSystems method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects3::GetNumberSystems, GetNumberSystems method [Windows Debugging], debugger.getnumbersystems, dbgeng/IDebugSystemObjects3::GetNumberSystems, dbgeng/IDebugSystemObjects4::GetNumberSystems, IDebugSystemObjects_821c2f0e-0863-4300-b26e-93e86ad9f0dd.xml, IDebugSystemObjects3 interface [Windows Debugging], GetNumberSystems method, IDebugSystemObjects4::GetNumberSystems, GetNumberSystems method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects4 interface [Windows Debugging], GetNumberSystems method, GetNumberSystems, IDebugSystemObjects4
+ms.keywords : dbgeng/IDebugSystemObjects4::GetNumberSystems, GetNumberSystems method [Windows Debugging], IDebugSystemObjects4 interface, dbgeng/IDebugSystemObjects3::GetNumberSystems, IDebugSystemObjects4::GetNumberSystems, IDebugSystemObjects_821c2f0e-0863-4300-b26e-93e86ad9f0dd.xml, IDebugSystemObjects3::GetNumberSystems, GetNumberSystems method [Windows Debugging], IDebugSystemObjects3 interface [Windows Debugging], GetNumberSystems method, IDebugSystemObjects4, IDebugSystemObjects4 interface [Windows Debugging], GetNumberSystems method, GetNumberSystems, GetNumberSystems method [Windows Debugging], IDebugSystemObjects3 interface, debugger.getnumbersystems
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

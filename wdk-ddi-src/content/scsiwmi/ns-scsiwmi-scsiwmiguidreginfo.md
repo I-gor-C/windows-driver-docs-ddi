@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7116445e-751b-478a-8e58-8f5c90d06b9b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : scsiwmi/PSCSIWMIGUIDREGINFO, PSCSIWMIGUIDREGINFO, structs-scsibus_3688cdd5-2515-4fd8-8eae-37689dac26c0.xml, SCSIWMIGUIDREGINFO structure [Storage Devices], *PSCSIWMIGUIDREGINFO, scsiwmi/SCSIWMIGUIDREGINFO, SCSIWMIGUIDREGINFO, PSCSIWMIGUIDREGINFO structure pointer [Storage Devices], storage.scsiwmiguidreginfo
+ms.keywords : storage.scsiwmiguidreginfo, PSCSIWMIGUIDREGINFO, scsiwmi/SCSIWMIGUIDREGINFO, structs-scsibus_3688cdd5-2515-4fd8-8eae-37689dac26c0.xml, scsiwmi/PSCSIWMIGUIDREGINFO, SCSIWMIGUIDREGINFO, SCSIWMIGUIDREGINFO structure [Storage Devices], PSCSIWMIGUIDREGINFO structure pointer [Storage Devices], *PSCSIWMIGUIDREGINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCSIWMIGUIDREGINFO, SCSIWMIGUIDREGINFO"
+req.typenames : SCSIWMIGUIDREGINFO, *PSCSIWMIGUIDREGINFO
 req.product : Windows 10 or later.
 ---
 
@@ -57,7 +57,24 @@ typedef struct {
 
 `Flags`
 
-Indicates characteristics of the block. The SCSI port driver sets all but the following WMIREG_FLAG_<i>XXX</i> on behalf of the miniport driver. A miniport driver might set one or more of the following flags:
+Indicates characteristics of the block. The SCSI port driver sets all but the following WMIREG_FLAG_<i>XXX</i> on behalf of the miniport driver. A miniport driver might set one or more of the following flags: 
+
+
+
+
+#### WMIREG_FLAG_EVENT_ONLY_GUID
+
+The block can be enabled or disabled as an event only, and cannot be queried or set. If this flag is clear, the block can also be queried or set. 
+
+
+#### WMIREG_FLAG_EXPENSIVE
+
+Requests the port driver send an enable-collection SRB the first time a data consumer opens the data block and a disable-collection SRB when the last data consumer closes the data block. This is recommended if collecting such data affects performance. A miniport driver need not collect the data until a data consumer explicitly requests it by opening the block. 
+
+
+#### WMIREG_FLAG_REMOVE_GUID
+
+Removes support for a previously registered block when set.
 
 `Guid`
 
@@ -84,9 +101,9 @@ For more information about defining blocks, <a href="https://msdn.microsoft.com/
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557344">HwScsiWmiQueryReginfo</a>
-
 <a href="..\scsiwmi\ns-scsiwmi-_scsiwmilib_context.md">SCSI_WMILIB_CONTEXT</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557344">HwScsiWmiQueryReginfo</a>
 
 <a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a>
 

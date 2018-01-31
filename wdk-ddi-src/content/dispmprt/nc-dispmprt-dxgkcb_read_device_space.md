@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
 ---
 
 
@@ -67,6 +67,28 @@ A handle that represents a display adapter. The display miniport driver previous
 `DataType`
 
 The type of read transaction to be performed. This parameter must be one of the following values, which are defined in <i>Dispmprt.h</i>.
+
+
+
+
+#### DXGK_WHICHSPACE_BRIDGE
+
+Read from the PCI Express (PCIe) root port's configuration space.
+
+
+#### DXGK_WHICHSPACE_CONFIG
+
+Read from the display adapter's configuration space.
+
+
+#### DXGK_WHICHSPACE_MCH
+
+Read from the configuration space of a memory controller hub that is a peer to the adapter's parent bus.
+
+
+#### DXGK_WHICHSPACE_ROM
+
+Read from the display adapter's expansion ROM.
 
 `Buffer`
 

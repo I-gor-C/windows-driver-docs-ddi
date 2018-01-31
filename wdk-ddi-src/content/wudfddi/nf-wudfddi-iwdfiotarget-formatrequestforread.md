@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8a1b61c8-8b85-4224-ae20-3788eb0babe4
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoTarget::FormatRequestForRead, wdf.iwdfiotarget_formatrequestforread, IWDFIoTarget interface, FormatRequestForRead method, wudfddi/IWDFIoTarget::FormatRequestForRead, umdf.iwdfiotarget_formatrequestforread, FormatRequestForRead method, IWDFIoTarget interface, FormatRequestForRead method, IWDFIoTarget, FormatRequestForRead, UMDFIoTargetObjectRef_49d4b6d7-0cd7-4d8a-9b16-7ecc89f82f1e.xml
+ms.keywords : UMDFIoTargetObjectRef_49d4b6d7-0cd7-4d8a-9b16-7ecc89f82f1e.xml, wdf.iwdfiotarget_formatrequestforread, FormatRequestForRead method, FormatRequestForRead method, IWDFIoTarget interface, umdf.iwdfiotarget_formatrequestforread, IWDFIoTarget, wudfddi/IWDFIoTarget::FormatRequestForRead, IWDFIoTarget interface, FormatRequestForRead method, FormatRequestForRead, IWDFIoTarget::FormatRequestForRead
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -99,15 +99,15 @@ A pointer to the device offset that is used for the read. This parameter is opti
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
+<a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
-
-<a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
 
  
 

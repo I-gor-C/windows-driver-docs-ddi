@@ -79,7 +79,7 @@ Callers of this routine must be running at IRQL &lt;= DISPATCH_LEVEL. To maintai
 | **Minimum UMDF version** |  |
 | **Header** | ntddpcm.h (include Ntddpcm.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL (See Remarks section.) |
+| **IRQL** | "<=DISPATCH_LEVEL (See Remarks section.)" |
 | **DDI compliance rules** |  |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : e599d960-aefb-4b68-8149-7e93150d90d5
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetDescriptionWide, debugger.getdescriptionwide, GetDescriptionWide method [Windows Debugging], IDebugRegisters2, IDebugRegisters2 interface [Windows Debugging], GetDescriptionWide method, dbgeng/IDebugRegisters2::GetDescriptionWide, IDebugRegisters2::GetDescriptionWide, GetDescriptionWide method [Windows Debugging], IDebugRegisters2 interface
+ms.keywords : GetDescriptionWide method [Windows Debugging], IDebugRegisters2 interface, GetDescriptionWide method [Windows Debugging], IDebugRegisters2::GetDescriptionWide, dbgeng/IDebugRegisters2::GetDescriptionWide, GetDescriptionWide, IDebugRegisters2 interface [Windows Debugging], GetDescriptionWide method, IDebugRegisters2, debugger.getdescriptionwide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

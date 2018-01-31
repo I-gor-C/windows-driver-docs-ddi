@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : f82416c9-1f4a-4083-b4df-f0d97eae2127
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetInstructionOffset method [Windows Debugging], IDebugRegisters interface [Windows Debugging], GetInstructionOffset method, IDebugRegisters::GetInstructionOffset, IDebugRegisters2::GetInstructionOffset, debugger.getinstructionoffset, IDebugRegisters2, GetInstructionOffset, IDebugRegisters2 interface [Windows Debugging], GetInstructionOffset method, GetInstructionOffset method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters_229180dd-2da4-4ff1-9284-520bef0b6843.xml, dbgeng/IDebugRegisters2::GetInstructionOffset, GetInstructionOffset method [Windows Debugging], IDebugRegisters interface, dbgeng/IDebugRegisters::GetInstructionOffset
+ms.keywords : IDebugRegisters interface [Windows Debugging], GetInstructionOffset method, IDebugRegisters2::GetInstructionOffset, dbgeng/IDebugRegisters2::GetInstructionOffset, GetInstructionOffset, GetInstructionOffset method [Windows Debugging], dbgeng/IDebugRegisters::GetInstructionOffset, debugger.getinstructionoffset, IDebugRegisters_229180dd-2da4-4ff1-9284-520bef0b6843.xml, GetInstructionOffset method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters2 interface [Windows Debugging], GetInstructionOffset method, GetInstructionOffset method [Windows Debugging], IDebugRegisters interface, IDebugRegisters::GetInstructionOffset, IDebugRegisters2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -100,11 +100,11 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRegisters</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546933">GetInstructionOffset2</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRegisters</a>
 
  
 

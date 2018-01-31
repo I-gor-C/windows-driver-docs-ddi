@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 41788885-d8a1-4459-82a0-261b39862530
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisretrieveulong, NdisRetrieveUlong, ndis/NdisRetrieveUlong, NdisRetrieveUlong macro [Network Drivers Starting with Windows Vista], ndis_memory_ref_929d856f-6798-499a-aa9a-0f5e7181b972.xml
+ms.keywords : ndis/NdisRetrieveUlong, netvista.ndisretrieveulong, NdisRetrieveUlong macro [Network Drivers Starting with Windows Vista], ndis_memory_ref_929d856f-6798-499a-aa9a-0f5e7181b972.xml, NdisRetrieveUlong
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

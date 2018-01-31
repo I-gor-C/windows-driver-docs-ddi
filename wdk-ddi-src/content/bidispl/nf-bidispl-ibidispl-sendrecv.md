@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 0c91abd0-5e49-4e23-a50f-9d1dacf9d868
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IBidiSpl::SendRecv, _win32_IBidiSpl_SendRecv, gdi.ibidispl_ibidispl__sendrecv, IBidiSpl interface [Print Devices], IBidiSpl::SendRecv method, IBidiSpl::SendRecv method [Print Devices], IBidiSpl interface, SendRecv, IBidiSpl::IBidiSpl::SendRecv, print.ibidispl_ibidispl__sendrecv, IBidiSpl::SendRecv method [Print Devices], bidispl/IBidiSpl::IBidiSpl::SendRecv, IBidiSpl
+ms.keywords : gdi.ibidispl_ibidispl__sendrecv, IBidiSpl, bidispl/IBidiSpl::IBidiSpl::SendRecv, _win32_IBidiSpl_SendRecv, IBidiSpl interface [Print Devices], IBidiSpl::SendRecv method, IBidiSpl::IBidiSpl::SendRecv, print.ibidispl_ibidispl__sendrecv, IBidiSpl::SendRecv method [Print Devices], IBidiSpl::SendRecv method [Print Devices], IBidiSpl interface, SendRecv, IBidiSpl::SendRecv
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -33,9 +33,10 @@ topictype :
 apitype : 
 apilocation : 
 apiname : 
+-	IBidiSpl.IBidiSpl : :SendRecv
 product : Windows
 targetos : Windows
-req.typenames : MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
+req.typenames : "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
 ---
 
 
@@ -157,11 +158,11 @@ The BIDI_ACTION_* values are case insensitive strings.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
+
 <a href="..\bidispl\nn-bidispl-ibidispl.md">IBidiSpl</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
-
-<a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1034384f-6295-42ca-bf78-47c383417500
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlStringCbCatW, safestrings_31bee145-512e-4daa-87c3-98abc5e88b2b.xml, RtlStringCbCat, RtlStringCbCatA, kernel.rtlstringcbcat, ntstrsafe/RtlStringCbCatA, ntstrsafe/RtlStringCbCatW, RtlStringCbCatW function [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.rtlstringcbcat, RtlStringCbCatW, ntstrsafe/RtlStringCbCatA, ntstrsafe/RtlStringCbCatW, RtlStringCbCatW function [Kernel-Mode Driver Architecture], RtlStringCbCat, RtlStringCbCatA, safestrings_31bee145-512e-4daa-87c3-98abc5e88b2b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE"
+req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 
@@ -193,11 +193,11 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatexw.md">RtlStringCchCatEx</a>
-
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatexw.md">RtlStringCbCatEx</a>
 
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatnexw.md">RtlStringCbCatNEx</a>
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatexw.md">RtlStringCchCatEx</a>
 
  
 

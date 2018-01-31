@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : 
 req.dll : 
-req.irql : _requires_same_
+req.irql : "_requires_same_"
 topictype : 
 apitype : 
 apilocation : 
@@ -85,5 +85,5 @@ The OS always provides the IDDCX_PATH for every connected monitor even if it is 
 | **Minimum UMDF version** |  |
 | **Header** | iddcx.h |
 | **Library** |  |
-| **IRQL** | _requires_same_ |
+| **IRQL** | "_requires_same_" |
 | **DDI compliance rules** |  |

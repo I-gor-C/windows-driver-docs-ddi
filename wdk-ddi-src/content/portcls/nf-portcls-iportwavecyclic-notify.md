@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 318ba587-e34f-4f9f-bdf9-3e7c402456c5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : portcls/IPortWaveCyclic::Notify, IPortWaveCyclic::Notify, IPortWaveCyclic interface [Audio Devices], Notify method, IPortWaveCyclic, Notify, Notify method [Audio Devices], IPortWaveCyclic interface, audmp-routines_8b2252d3-100f-4e4a-b5ca-cdaf0c12834e.xml, Notify method [Audio Devices], audio.iportwavecyclic_notify
+ms.keywords : IPortWaveCyclic::Notify, Notify method [Audio Devices], IPortWaveCyclic interface, portcls/IPortWaveCyclic::Notify, IPortWaveCyclic, audmp-routines_8b2252d3-100f-4e4a-b5ca-cdaf0c12834e.xml, Notify, audio.iportwavecyclic_notify, IPortWaveCyclic interface [Audio Devices], Notify method, Notify method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method

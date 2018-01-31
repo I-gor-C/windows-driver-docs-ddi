@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e25db70f-04bf-4fb1-8ff5-2beb4c825797
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlVolumeDeviceToDosName routine [Kernel-Mode Driver Architecture], k109_a95aea8c-1156-4852-b4eb-38d2f141fcca.xml, RtlVolumeDeviceToDosName, ntddk/RtlVolumeDeviceToDosName, kernel.rtlvolumedevicetodosname
+ms.keywords : kernel.rtlvolumedevicetodosname, ntddk/RtlVolumeDeviceToDosName, k109_a95aea8c-1156-4852-b4eb-38d2f141fcca.xml, RtlVolumeDeviceToDosName, RtlVolumeDeviceToDosName routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

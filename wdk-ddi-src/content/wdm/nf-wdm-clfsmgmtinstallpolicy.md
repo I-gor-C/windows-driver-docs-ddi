@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0a492a86-e732-4302-b35d-9b2a5eb05445
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsMgmtInstallPolicy routine [Kernel-Mode Driver Architecture], ClfsMgmtInstallPolicy, wdm/ClfsMgmtInstallPolicy, Clfs_management_44c8b983-a3bb-4fe3-9022-3e669ba5af2b.xml, kernel.clfsmgmtinstallpolicy
+ms.keywords : ClfsMgmtInstallPolicy routine [Kernel-Mode Driver Architecture], Clfs_management_44c8b983-a3bb-4fe3-9022-3e669ba5af2b.xml, kernel.clfsmgmtinstallpolicy, wdm/ClfsMgmtInstallPolicy, ClfsMgmtInstallPolicy
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -199,7 +199,7 @@ The log policy that is installed applies to the physical log, even if the <i>Log
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

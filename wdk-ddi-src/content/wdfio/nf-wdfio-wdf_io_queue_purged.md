@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : dbb061a6-a770-411c-9c3a-8453662b4362
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_IO_QUEUE_PURGED function, kmdf.wdf_io_queue_purged, DFQueueObjectRef_2d745708-c310-494a-aedc-362bdc930650.xml, wdfio/WDF_IO_QUEUE_PURGED, wdf.wdf_io_queue_purged, WDF_IO_QUEUE_PURGED
+ms.keywords : WDF_IO_QUEUE_PURGED function, wdf.wdf_io_queue_purged, kmdf.wdf_io_queue_purged, WDF_IO_QUEUE_PURGED, wdfio/WDF_IO_QUEUE_PURGED, DFQueueObjectRef_2d745708-c310-494a-aedc-362bdc930650.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,13 +86,13 @@ For more information about I/O queue states, see <a href="..\wudfddi_types\ne-wu
 
 ## See Also
 
-<a href="..\wdfio\nf-wdfio-wdf_io_queue_stopped.md">WDF_IO_QUEUE_STOPPED</a>
+<a href="..\wdfio\nf-wdfio-wdf_io_queue_ready.md">WDF_IO_QUEUE_READY</a>
 
 <a href="..\wdfio\nf-wdfio-wdf_io_queue_idle.md">WDF_IO_QUEUE_IDLE</a>
 
-<a href="..\wdfio\nf-wdfio-wdf_io_queue_drained.md">WDF_IO_QUEUE_DRAINED</a>
+<a href="..\wdfio\nf-wdfio-wdf_io_queue_stopped.md">WDF_IO_QUEUE_STOPPED</a>
 
-<a href="..\wdfio\nf-wdfio-wdf_io_queue_ready.md">WDF_IO_QUEUE_READY</a>
+<a href="..\wdfio\nf-wdfio-wdf_io_queue_drained.md">WDF_IO_QUEUE_DRAINED</a>
 
  
 

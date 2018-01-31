@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : F3DD5912-46E5-43E5-A920-940FC8FCD83F
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.idebugplmclient3_launchanddebugplmappwide, LaunchAndDebugPlmAppWide method [Windows Debugging], IDebugPlmClient3 interface, IDebugPlmClient3, IDebugPlmClient3 interface [Windows Debugging], LaunchAndDebugPlmAppWide method, LaunchAndDebugPlmAppWide, dbgeng/IDebugPlmClient3::LaunchAndDebugPlmAppWide, LaunchAndDebugPlmAppWide method [Windows Debugging], IDebugPlmClient3::LaunchAndDebugPlmAppWide
+ms.keywords : LaunchAndDebugPlmAppWide, LaunchAndDebugPlmAppWide method [Windows Debugging], IDebugPlmClient3 interface, dbgeng/IDebugPlmClient3::LaunchAndDebugPlmAppWide, IDebugPlmClient3 interface [Windows Debugging], LaunchAndDebugPlmAppWide method, LaunchAndDebugPlmAppWide method [Windows Debugging], IDebugPlmClient3::LaunchAndDebugPlmAppWide, IDebugPlmClient3, debugger.idebugplmclient3_launchanddebugplmappwide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

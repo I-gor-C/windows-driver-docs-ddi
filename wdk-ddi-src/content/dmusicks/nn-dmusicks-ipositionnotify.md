@@ -2,7 +2,40 @@
 UID : NN:dmusicks.IPositionNotify
 title : IPositionNotify
 author : windows-driver-content
-description : 
+description : PositionNotify
+old-location : audio\ipositionnotify.htm
+old-project : audio
+ms.assetid : DB18BD9D-4BAA-48D8-BA30-E4F7EF4CDEE5
+ms.author : windowsdriverdev
+ms.date : 12/14/2017
+ms.keywords : audio.ipositionnotify, IPositionNotify interface [Audio Devices], IPositionNotify interface [Audio Devices], described, IPositionNotify, dmusicks/IPositionNotify
+ms.prod : windows-hardware
+ms.technology : windows-devices
+ms.topic : interface
+req.header : dmusicks.h
+req.include-header : 
+req.target-type : Windows
+req.target-min-winverclnt : 
+req.target-min-winversvr : 
+req.kmdf-ver : 
+req.umdf-ver : 
+req.ddi-compliance : 
+req.unicode-ansi : 
+req.idl : 
+req.max-support : 
+req.namespace : 
+req.assembly : 
+req.type-library : 
+req.lib : dmusicks.h
+req.dll : 
+req.irql : 
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DMUS_STREAM_TYPE
 ---
 
 # IPositionNotify interface
@@ -25,7 +58,7 @@ description :
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Windows Driver kit version** |  |
-| **Target platform** |  |
+| **Target platform** | Windows |
 | **Minimum UMDF version** |  |
-| **Header** |  |
+| **Header** | dmusicks.h |
 | **DLL** |  |

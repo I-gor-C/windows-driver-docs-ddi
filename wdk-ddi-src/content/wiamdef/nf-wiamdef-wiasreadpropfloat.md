@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 042ef9d9-a980-41eb-a396-e03658ea072a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiasReadPropFloat function [Imaging Devices], image.wiasreadpropfloat, wiasFncs_9b143e96-64a5-4de3-b40d-c542bc440dc0.xml, wiamdef/wiasReadPropFloat, wiasReadPropFloat
+ms.keywords : wiamdef/wiasReadPropFloat, image.wiasreadpropfloat, wiasReadPropFloat, wiasReadPropFloat function [Imaging Devices], wiasFncs_9b143e96-64a5-4de3-b40d-c542bc440dc0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2
+req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -97,15 +97,15 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiasreadpropstr.md">wiasReadPropStr</a>
+<a href="..\wiamdef\nf-wiamdef-wiasreadpropbin.md">wiasReadPropBin</a>
 
 <a href="..\wiamdef\nf-wiamdef-wiaswritepropfloat.md">wiasWritePropFloat</a>
 
-<a href="..\wiamdef\nf-wiamdef-wiasreadpropguid.md">wiasReadPropGuid</a>
-
 <a href="..\wiamdef\nf-wiamdef-wiasreadproplong.md">wiasReadPropLong</a>
 
-<a href="..\wiamdef\nf-wiamdef-wiasreadpropbin.md">wiasReadPropBin</a>
+<a href="..\wiamdef\nf-wiamdef-wiasreadpropguid.md">wiasReadPropGuid</a>
+
+<a href="..\wiamdef\nf-wiamdef-wiasreadpropstr.md">wiasReadPropStr</a>
 
  
 

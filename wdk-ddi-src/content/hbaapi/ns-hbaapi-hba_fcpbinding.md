@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e06b82f7-2b48-47e8-b6fa-c86b790e8019
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_FCPBinding, HBA_FCPBINDING, *PHBA_FCPBINDING, storage.hba_fcpbinding, structs-Fibre_c02a809a-3b65-4e19-93e0-c72a0aead81c.xml, hbaapi/HBA_FCPBinding, HBA_FCPBINDING structure [Storage Devices], PHBA_FCPBINDING structure pointer [Storage Devices], PHBA_FCPBINDING, HBA_FCPBinding structure [Storage Devices], hbaapi/PHBA_FCPBINDING
+ms.keywords : PHBA_FCPBINDING structure pointer [Storage Devices], hbaapi/HBA_FCPBinding, *PHBA_FCPBINDING, HBA_FCPBINDING structure [Storage Devices], HBA_FCPBINDING, PHBA_FCPBINDING, HBA_FCPBinding, hbaapi/PHBA_FCPBINDING, structs-Fibre_c02a809a-3b65-4e19-93e0-c72a0aead81c.xml, storage.hba_fcpbinding, HBA_FCPBinding structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PHBA_FCPBINDING, HBA_FCPBINDING"
+req.typenames : HBA_FCPBINDING, *PHBA_FCPBINDING
 ---
 
 # HBA_FCPBinding structure
@@ -71,9 +71,9 @@ Indicates the number of bindings.
 
 ## See Also
 
-<a href="..\hbapiwmi\ns-hbapiwmi-_hbafcpbindingentry.md">HBAFCPBindingEntry</a>
-
 <a href="..\hbaapi\ns-hbaapi-hba_fcpbindingentry.md">HBA_FCPBindingEntry</a>
+
+<a href="..\hbapiwmi\ns-hbapiwmi-_hbafcpbindingentry.md">HBAFCPBindingEntry</a>
 
  
 

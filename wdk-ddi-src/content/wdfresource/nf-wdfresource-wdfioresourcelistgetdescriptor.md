@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 1722e6f6-7509-4ae1-b394-3c69f4596e6d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfresource/WdfIoResourceListGetDescriptor, DFResourceObjectRef_6cb56ab5-abf5-4915-a48f-a3c91d657806.xml, wdf.wdfioresourcelistgetdescriptor, WdfIoResourceListGetDescriptor method, WdfIoResourceListGetDescriptor, kmdf.wdfioresourcelistgetdescriptor, PFN_WDFIORESOURCELISTGETDESCRIPTOR
+ms.keywords : wdf.wdfioresourcelistgetdescriptor, WdfIoResourceListGetDescriptor method, WdfIoResourceListGetDescriptor, PFN_WDFIORESOURCELISTGETDESCRIPTOR, DFResourceObjectRef_6cb56ab5-abf5-4915-a48f-a3c91d657806.xml, kmdf.wdfioresourcelistgetdescriptor, wdfresource/WdfIoResourceListGetDescriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,7 +86,7 @@ For more information about resource requirements lists and logical configuration
 | **Minimum UMDF version** |  |
 | **Header** | wdfresource.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also

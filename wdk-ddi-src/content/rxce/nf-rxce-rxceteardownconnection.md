@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 71b48983-af12-4361-8cf9-adec1afffb65
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rxref_bf951adb-b63e-49f6-8325-f67adb2cdbf0.xml, rxce/RxCeTearDownConnection, RxCeTearDownConnection, ifsk.rxceteardownconnection, RxCeTearDownConnection function [Installable File System Drivers]
+ms.keywords : rxce/RxCeTearDownConnection, RxCeTearDownConnection function [Installable File System Drivers], RxCeTearDownConnection, ifsk.rxceteardownconnection, rxref_bf951adb-b63e-49f6-8325-f67adb2cdbf0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.typenames : RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -103,7 +103,7 @@ When <b>RxCeTearDownConnection</b> is successful, the data members in the RXCE_C
 | **Minimum UMDF version** |  |
 | **Header** | rxce.h (include Rxce.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

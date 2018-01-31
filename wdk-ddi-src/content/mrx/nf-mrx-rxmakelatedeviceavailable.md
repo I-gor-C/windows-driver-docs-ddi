@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 0818907f-3346-42a2-b123-3298ea8f9a1d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rxmakelatedeviceavailable, RxMakeLateDeviceAvailable, rxref_7586550f-6abe-4e18-8154-09936c3f0488.xml, RxMakeLateDeviceAvailable routine [Installable File System Drivers], mrx/RxMakeLateDeviceAvailable
+ms.keywords : rxref_7586550f-6abe-4e18-8154-09936c3f0488.xml, RxMakeLateDeviceAvailable, ifsk.rxmakelatedeviceavailable, RxMakeLateDeviceAvailable routine [Installable File System Drivers], mrx/RxMakeLateDeviceAvailable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+req.typenames : "*PSetDSMCounters_IN, SetDSMCounters_IN"
 ---
 
 
@@ -74,5 +74,5 @@ None
 | **Minimum UMDF version** |  |
 | **Header** | mrx.h (include Mrx.h, Rxstruc.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |

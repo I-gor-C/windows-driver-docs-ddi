@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f0104e8b-9a2f-4f52-a431-bec7de3be968
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfdeviceinitsetioincallercontextcallback, WdfDeviceInitSetIoInCallerContextCallback method, PFN_WDFDEVICEINITSETIOINCALLERCONTEXTCALLBACK, DFDeviceObjectGeneralRef_6ef62fc4-094a-4fe7-8ecb-7205566aef77.xml, wdf.wdfdeviceinitsetioincallercontextcallback, WdfDeviceInitSetIoInCallerContextCallback, wdfdevice/WdfDeviceInitSetIoInCallerContextCallback
+ms.keywords : wdfdevice/WdfDeviceInitSetIoInCallerContextCallback, DFDeviceObjectGeneralRef_6ef62fc4-094a-4fe7-8ecb-7205566aef77.xml, WdfDeviceInitSetIoInCallerContextCallback method, wdf.wdfdeviceinitsetioincallercontextcallback, PFN_WDFDEVICEINITSETIOINCALLERCONTEXTCALLBACK, WdfDeviceInitSetIoInCallerContextCallback, kmdf.wdfdeviceinitsetioincallercontextcallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,7 +84,7 @@ For more information about the <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_
 | **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | ChildDeviceInitAPI, ControlDeviceInitAPI, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI |
 
 ## See Also

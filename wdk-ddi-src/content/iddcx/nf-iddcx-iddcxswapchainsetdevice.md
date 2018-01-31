@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f1e96d8a-910e-4808-b9a3-e8c530158872
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IddCxSwapChainSetDevice, display.iddcxswapchainsetdevice, IddCxSwapChainSetDevice method [Display Devices], iddcx/IddCxSwapChainSetDevice
+ms.keywords : display.iddcxswapchainsetdevice, IddCxSwapChainSetDevice method [Display Devices], iddcx/IddCxSwapChainSetDevice, IddCxSwapChainSetDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : NtosKrnl.exe
 req.dll : 
-req.irql : _Must_inspect_result_
+req.irql : "_Must_inspect_result_"
 topictype : 
 apitype : 
 apilocation : 
@@ -76,5 +76,5 @@ Input arguments to the function
 | **Minimum UMDF version** |  |
 | **Header** | iddcx.h |
 | **Library** |  |
-| **IRQL** | _Must_inspect_result_ |
+| **IRQL** | "_Must_inspect_result_" |
 | **DDI compliance rules** |  |

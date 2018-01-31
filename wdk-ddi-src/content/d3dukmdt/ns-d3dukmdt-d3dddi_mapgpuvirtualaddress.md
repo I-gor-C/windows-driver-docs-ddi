@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : A23F5847-0DA9-4F3F-B1C1-DACCA35DBC53
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : Write, Zero, D3DDDI_MAPGPUVIRTUALADDRESS structure [Display Devices], Execute, D3DDDI_MAPGPUVIRTUALADDRESS, d3dukmdt/D3DDDI_MAPGPUVIRTUALADDRESS, display.d3dddi_mapgpuvirtualaddress, NoAccess
+ms.keywords : D3DDDI_MAPGPUVIRTUALADDRESS structure [Display Devices], d3dukmdt/D3DDDI_MAPGPUVIRTUALADDRESS, Zero, Execute, Write, NoAccess, display.d3dddi_mapgpuvirtualaddress, D3DDDI_MAPGPUVIRTUALADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -181,13 +181,13 @@ The virtual address assigned to the allocation.
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_mapgpuvirtualaddresscb.md">pfnMapGpuVirtualAddressCb</a>
+<a href="https://msdn.microsoft.com/08328e82-d1cc-4c50-bc96-7382232676ab">DxgkDdiUpdatePageTable</a>
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_reservegpuvirtualaddresscb.md">pfnReserveGpuVirtualAddressCb</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_mapgpuvirtualaddresscb.md">pfnMapGpuVirtualAddressCb</a>
 
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddigpuvirtualaddress_protection_type.md">D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE</a>
 
-<a href="https://msdn.microsoft.com/08328e82-d1cc-4c50-bc96-7382232676ab">DxgkDdiUpdatePageTable</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_reservegpuvirtualaddresscb.md">pfnReserveGpuVirtualAddressCb</a>
 
  
 

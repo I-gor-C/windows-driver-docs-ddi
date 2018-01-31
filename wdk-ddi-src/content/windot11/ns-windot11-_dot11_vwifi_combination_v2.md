@@ -1,6 +1,6 @@
 ---
 UID : NS:windot11._DOT11_VWIFI_COMBINATION_V2
-title : _DOT11_VWIFI_COMBINATION_V2
+title : "_DOT11_VWIFI_COMBINATION_V2"
 author : windows-driver-content
 description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location : netvista\dot11_vwifi_combination_v2.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b30b868d-3012-4bdc-80f4-ffae2ebaa4d6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : windot11/PDOT11_VWIFI_COMBINATION_V2, netvista.dot11_vwifi_combination_v2, DOT11_VWIFI_COMBINATION_V2, PDOT11_VWIFI_COMBINATION_V2, Native_802.11_data_types_1210442c-19be-406c-bec5-12ad170fc90b.xml, _DOT11_VWIFI_COMBINATION_V2, windot11/DOT11_VWIFI_COMBINATION_V2, DOT11_VWIFI_COMBINATION_V2 structure [Network Drivers Starting with Windows Vista], PDOT11_VWIFI_COMBINATION_V2 structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_VWIFI_COMBINATION_V2
+ms.keywords : DOT11_VWIFI_COMBINATION_V2 structure [Network Drivers Starting with Windows Vista], PDOT11_VWIFI_COMBINATION_V2 structure pointer [Network Drivers Starting with Windows Vista], Native_802.11_data_types_1210442c-19be-406c-bec5-12ad170fc90b.xml, _DOT11_VWIFI_COMBINATION_V2, windot11/PDOT11_VWIFI_COMBINATION_V2, PDOT11_VWIFI_COMBINATION_V2, windot11/DOT11_VWIFI_COMBINATION_V2, *PDOT11_VWIFI_COMBINATION_V2, netvista.dot11_vwifi_combination_v2, DOT11_VWIFI_COMBINATION_V2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,6 +71,22 @@ The miniport driver must set the members of
 
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+
+
+#### Type
+
+This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
+
+
+#### Revision
+
+This member must be set to DOT11_VWIFI_COMBINATION_REVISION_2.
+
+
+#### Size
+
+This member must be set to 
+       sizeof(DOT11_VWIFI_COMBINATION_V2).
 
 `uNumAdhoc`
 

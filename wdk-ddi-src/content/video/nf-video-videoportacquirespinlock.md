@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2e61ffb7-1720-47b2-b943-54ffa596cb08
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.videoportacquirespinlock, VideoPortAcquireSpinLock function [Display Devices], VideoPort_Functions_c25b68ac-032b-4b1c-bb15-93957f2e345c.xml, VideoPortAcquireSpinLock, video/VideoPortAcquireSpinLock
+ms.keywords : VideoPortAcquireSpinLock function [Display Devices], VideoPortAcquireSpinLock, VideoPort_Functions_c25b68ac-032b-4b1c-bb15-93957f2e345c.xml, display.videoportacquirespinlock, video/VideoPortAcquireSpinLock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -103,14 +103,14 @@ The caller should release the spin lock with <b>VideoPortReleaseSpinLock</b> as 
 | **Minimum UMDF version** |  |
 | **Header** | video.h (include Video.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\video\nf-video-videoportreleasespinlock.md">VideoPortReleaseSpinLock</a>
-
 <a href="..\video\nf-video-videoportacquirespinlockatdpclevel.md">VideoPortAcquireSpinLockAtDpcLevel</a>
+
+<a href="..\video\nf-video-videoportreleasespinlock.md">VideoPortReleaseSpinLock</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 7453EEB1-F974-4AEB-93C4-A75A79E1FE19
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.fltpropagateactivityidtothread, FltPropagateActivityIdToThread routine [Installable File System Drivers], FltPropagateActivityIdToThread, fltkernel/FltPropagateActivityIdToThread
+ms.keywords : FltPropagateActivityIdToThread routine [Installable File System Drivers], FltPropagateActivityIdToThread, fltkernel/FltPropagateActivityIdToThread, ifsk.fltpropagateactivityidtothread
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -126,7 +126,7 @@ The <b>FltPropagateActivityIdToThread</b> routine is  used by trace aware minifi
 | **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

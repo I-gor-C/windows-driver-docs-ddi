@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6ebb1955-1ffc-4869-84c8-69d672ac782e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFWorkItemObjectRef_d01f85c6-ab9e-413a-8352-49db7ae053d0.xml, WdfWorkItemGetParentObject method, kmdf.wdfworkitemgetparentobject, WdfWorkItemGetParentObject, wdfworkitem/WdfWorkItemGetParentObject, PFN_WDFWORKITEMGETPARENTOBJECT, wdf.wdfworkitemgetparentobject
+ms.keywords : wdf.wdfworkitemgetparentobject, kmdf.wdfworkitemgetparentobject, wdfworkitem/WdfWorkItemGetParentObject, WdfWorkItemGetParentObject, WdfWorkItemGetParentObject method, DFWorkItemObjectRef_d01f85c6-ab9e-413a-8352-49db7ae053d0.xml, PFN_WDFWORKITEMGETPARENTOBJECT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_WMI_PROVIDER_CONFIG, *PWDF_WMI_PROVIDER_CONFIG
+req.typenames : "*PWDF_WMI_PROVIDER_CONFIG, WDF_WMI_PROVIDER_CONFIG"
 req.product : Windows 10 or later.
 ---
 
@@ -79,14 +79,14 @@ For more information about work items, see <a href="https://docs.microsoft.com/e
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfworkitem.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
-
 <a href="..\wdfworkitem\nf-wdfworkitem-wdfworkitemcreate.md">WdfWorkItemCreate</a>
+
+<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 
  
 

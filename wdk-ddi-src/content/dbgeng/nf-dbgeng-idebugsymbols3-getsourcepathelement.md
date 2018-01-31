@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 69507aed-ff32-46f2-8efb-68c1a7288bfb
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetSourcePathElement method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols::GetSourcePathElement, GetSourcePathElement, debugger.getsourcepathelement, dbgeng/IDebugSymbols::GetSourcePathElement, GetSourcePathElement method [Windows Debugging], IDebugSymbols interface, IDebugSymbols3 interface [Windows Debugging], GetSourcePathElement method, IDebugSymbols_517435f9-812c-43c2-bf82-5924de7955a2.xml, IDebugSymbols2 interface [Windows Debugging], GetSourcePathElement method, IDebugSymbols2::GetSourcePathElement, GetSourcePathElement method [Windows Debugging], dbgeng/IDebugSymbols2::GetSourcePathElement, IDebugSymbols3::GetSourcePathElement, IDebugSymbols3, IDebugSymbols interface [Windows Debugging], GetSourcePathElement method, GetSourcePathElement method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols3::GetSourcePathElement
+ms.keywords : IDebugSymbols3 interface [Windows Debugging], GetSourcePathElement method, debugger.getsourcepathelement, IDebugSymbols3::GetSourcePathElement, GetSourcePathElement method [Windows Debugging], GetSourcePathElement method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols2::GetSourcePathElement, IDebugSymbols interface [Windows Debugging], GetSourcePathElement method, IDebugSymbols::GetSourcePathElement, IDebugSymbols2 interface [Windows Debugging], GetSourcePathElement method, GetSourcePathElement, dbgeng/IDebugSymbols3::GetSourcePathElement, GetSourcePathElement method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, IDebugSymbols_517435f9-812c-43c2-bf82-5924de7955a2.xml, dbgeng/IDebugSymbols::GetSourcePathElement, dbgeng/IDebugSymbols2::GetSourcePathElement, GetSourcePathElement method [Windows Debugging], IDebugSymbols interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -124,15 +124,15 @@ For more information about manipulating the source path, see <a href="https://ms
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548358">GetSourcePath</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538102">AppendSourcePath</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548358">GetSourcePath</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
 
  
 

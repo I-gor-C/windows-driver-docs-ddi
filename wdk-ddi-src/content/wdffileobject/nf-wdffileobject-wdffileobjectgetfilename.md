@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9d4e45c7-ed1f-476a-8522-4213ac42a3c3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfFileObjectGetFileName method, wdf.wdffileobjectgetfilename, DFFileObjectRef_07be4c38-fa04-41d3-8f8e-f7ec5ed6ff18.xml, kmdf.wdffileobjectgetfilename, wdffileobject/WdfFileObjectGetFileName, PFN_WDFFILEOBJECTGETFILENAME, WdfFileObjectGetFileName
+ms.keywords : PFN_WDFFILEOBJECTGETFILENAME, kmdf.wdffileobjectgetfilename, DFFileObjectRef_07be4c38-fa04-41d3-8f8e-f7ec5ed6ff18.xml, wdffileobject/WdfFileObjectGetFileName, wdf.wdffileobjectgetfilename, WdfFileObjectGetFileName method, WdfFileObjectGetFileName
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS"
+req.typenames : WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
 req.product : Windows 10 or later.
 ---
 
@@ -96,9 +96,9 @@ For more information about reference strings, see <a href="..\wdm\nf-wdm-ioregis
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreatedeviceinterface.md">WdfDeviceCreateDeviceInterface</a>
-
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreatedeviceinterface.md">WdfDeviceCreateDeviceInterface</a>
 
  
 

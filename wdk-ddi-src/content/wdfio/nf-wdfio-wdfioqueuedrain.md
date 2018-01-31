@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 376579c6-545d-4f5a-8ba4-0046c0b2b755
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfio/WdfIoQueueDrain, wdf.wdfioqueuedrain, WdfIoQueueDrain method, WdfIoQueueDrain, kmdf.wdfioqueuedrain, PFN_WDFIOQUEUEDRAIN, DFQueueObjectRef_39ca90c2-1fc9-4f1c-b05f-d46f668a3cd1.xml
+ms.keywords : DFQueueObjectRef_39ca90c2-1fc9-4f1c-b05f-d46f668a3cd1.xml, WdfIoQueueDrain, PFN_WDFIOQUEUEDRAIN, WdfIoQueueDrain method, wdf.wdfioqueuedrain, wdfio/WdfIoQueueDrain, kmdf.wdfioqueuedrain
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -99,7 +99,7 @@ After a driver has drained an I/O queue, it can restart the queue by calling <a 
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfio.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | ChangeQueueState, DriverCreate, EvtSurpriseRemoveNoSuspendQueue, KmdfIrql, KmdfIrql2, NoCancelFromEvtSurpriseRemove |
 
 ## See Also

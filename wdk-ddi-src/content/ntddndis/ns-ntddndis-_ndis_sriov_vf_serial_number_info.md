@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddndis._NDIS_SRIOV_VF_SERIAL_NUMBER_INFO
-title : _NDIS_SRIOV_VF_SERIAL_NUMBER_INFO
+title : "_NDIS_SRIOV_VF_SERIAL_NUMBER_INFO"
 author : windows-driver-content
 description : The NDIS_SRIOV_VF_SERIAL_NUMBER_INFO structure contains the serial number associated with a PCI Express (PCIe) Virtual Function (VF) network adapter. This adapter is exposed in the guest operating system of a Hyper-V child partition.
 old-location : netvista\ndis_sriov_vf_serial_number_info.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ff20b137-4b3c-4e7b-b464-81e15b536081
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_SRIOV_VF_SERIAL_NUMBER_INFO structure pointer [Network Drivers Starting with Windows Vista], NDIS_SRIOV_VF_SERIAL_NUMBER_INFO, ntddndis/NDIS_SRIOV_VF_SERIAL_NUMBER_INFO, ntddndis/PNDIS_SRIOV_VF_SERIAL_NUMBER_INFO, PNDIS_SRIOV_VF_SERIAL_NUMBER_INFO, netvista.ndis_sriov_vf_serial_number_info, NDIS_SRIOV_VF_SERIAL_NUMBER_INFO structure [Network Drivers Starting with Windows Vista], _NDIS_SRIOV_VF_SERIAL_NUMBER_INFO, *PNDIS_SRIOV_VF_SERIAL_NUMBER_INFO
+ms.keywords : PNDIS_SRIOV_VF_SERIAL_NUMBER_INFO, *PNDIS_SRIOV_VF_SERIAL_NUMBER_INFO, NDIS_SRIOV_VF_SERIAL_NUMBER_INFO, ntddndis/NDIS_SRIOV_VF_SERIAL_NUMBER_INFO, PNDIS_SRIOV_VF_SERIAL_NUMBER_INFO structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_SRIOV_VF_SERIAL_NUMBER_INFO, _NDIS_SRIOV_VF_SERIAL_NUMBER_INFO, NDIS_SRIOV_VF_SERIAL_NUMBER_INFO structure [Network Drivers Starting with Windows Vista], netvista.ndis_sriov_vf_serial_number_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -56,7 +56,16 @@ typedef struct _NDIS_SRIOV_VF_SERIAL_NUMBER_INFO {
 
 The type, revision, and size of the <b>NDIS_SRIOV_VF_SERIAL_NUMBER_INFO</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
-NDIS sets the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SRIOV_VF_SERIAL_NUMBER_INFO</b> structure, NDIS sets the <b>Revision</b> member of <b>Header</b> to the following value:
+NDIS sets the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SRIOV_VF_SERIAL_NUMBER_INFO</b> structure, NDIS sets the <b>Revision</b> member of <b>Header</b> to the following value: 
+
+
+
+
+#### NDIS_SRIOV_VF_SERIAL_NUMBER_INFO_REVISION_1
+
+Original version for NDIS 6.30 and later.
+
+Set the <b>Size</b> member to NDIS_SIZEOF_SRIOV_VF_SERIAL_NUMBER_INFO_REVISION_1.
 
 `SerialNumber`
 

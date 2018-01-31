@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ded54c88-3da0-42ec-88be-865d3cb87651
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/KeClearEvent, KeClearEvent routine [Kernel-Mode Driver Architecture], KeClearEvent, kernel.keclearevent, k105_1ea5c68a-0b59-48ec-911b-058b6a3e586b.xml
+ms.keywords : wdm/KeClearEvent, kernel.keclearevent, k105_1ea5c68a-0b59-48ec-911b-058b6a3e586b.xml, KeClearEvent routine [Kernel-Mode Driver Architecture], KeClearEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,7 +79,7 @@ For more information about event objects, see <a href="https://msdn.microsoft.co
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | IoBuildDeviceIoControlSetEvent, IrqlKeDispatchLte, HwStorPortProhibitedDDIs |
 
 ## See Also

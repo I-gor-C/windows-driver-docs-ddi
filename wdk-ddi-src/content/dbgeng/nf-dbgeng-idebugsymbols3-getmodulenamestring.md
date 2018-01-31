@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 4264f5e1-08f5-4878-9e10-b98859043515
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetModuleNameString, IDebugSymbols2 interface [Windows Debugging], GetModuleNameString method, dbgeng/IDebugSymbols3::GetModuleNameString, IDebugSymbols2::GetModuleNameString, dbgeng/IDebugSymbols2::GetModuleNameString, debugger.getmodulenamestring, IDebugSymbols3 interface [Windows Debugging], GetModuleNameString method, IDebugSymbols3::GetModuleNameString, IDebugSymbols_e00a93fb-08c4-4f37-9915-577a22d9c889.xml, IDebugSymbols3, GetModuleNameString method [Windows Debugging], IDebugSymbols3 interface, GetModuleNameString method [Windows Debugging], IDebugSymbols2 interface, GetModuleNameString method [Windows Debugging]
+ms.keywords : debugger.getmodulenamestring, GetModuleNameString method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols3 interface [Windows Debugging], GetModuleNameString method, dbgeng/IDebugSymbols3::GetModuleNameString, IDebugSymbols_e00a93fb-08c4-4f37-9915-577a22d9c889.xml, dbgeng/IDebugSymbols2::GetModuleNameString, GetModuleNameString, GetModuleNameString method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols2::GetModuleNameString, IDebugSymbols3::GetModuleNameString, IDebugSymbols3, IDebugSymbols2 interface [Windows Debugging], GetModuleNameString method, GetModuleNameString method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -190,9 +190,9 @@ For more information about modules, see <a href="https://msdn.microsoft.com/libr
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547146">GetModuleNames</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
 
  
 

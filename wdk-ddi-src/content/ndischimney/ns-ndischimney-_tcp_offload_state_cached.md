@@ -1,6 +1,6 @@
 ---
 UID : NS:ndischimney._TCP_OFFLOAD_STATE_CACHED
-title : _TCP_OFFLOAD_STATE_CACHED
+title : "_TCP_OFFLOAD_STATE_CACHED"
 author : windows-driver-content
 description : The TCP_OFFLOAD_STATE_CACHED structure contains the cached variables of a TCP connection state object.
 old-location : netvista\tcp_offload_state_cached.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 953154eb-e6f3-4013-a68f-1a358953c7ad
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : TCP_OFFLOAD_STATE_CACHED, _TCP_OFFLOAD_STATE_CACHED, ndischimney/PTCP_OFFLOAD_STATE_CACHED, PTCP_OFFLOAD_STATE_CACHED structure pointer [Network Drivers Starting with Windows Vista], PTCP_OFFLOAD_STATE_CACHED, tcp_chim_struct_43b44d70-521b-483d-800f-ed9528499ca3.xml, netvista.tcp_offload_state_cached, ndischimney/TCP_OFFLOAD_STATE_CACHED, TCP_OFFLOAD_STATE_CACHED structure [Network Drivers Starting with Windows Vista], *PTCP_OFFLOAD_STATE_CACHED
+ms.keywords : PTCP_OFFLOAD_STATE_CACHED structure pointer [Network Drivers Starting with Windows Vista], *PTCP_OFFLOAD_STATE_CACHED, TCP_OFFLOAD_STATE_CACHED, ndischimney/PTCP_OFFLOAD_STATE_CACHED, PTCP_OFFLOAD_STATE_CACHED, _TCP_OFFLOAD_STATE_CACHED, TCP_OFFLOAD_STATE_CACHED structure [Network Drivers Starting with Windows Vista], tcp_chim_struct_43b44d70-521b-483d-800f-ed9528499ca3.xml, netvista.tcp_offload_state_cached, ndischimney/TCP_OFFLOAD_STATE_CACHED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PTCP_OFFLOAD_STATE_CACHED, TCP_OFFLOAD_STATE_CACHED"
+req.typenames : TCP_OFFLOAD_STATE_CACHED, *PTCP_OFFLOAD_STATE_CACHED
 ---
 
 # _TCP_OFFLOAD_STATE_CACHED structure
@@ -67,7 +67,44 @@ typedef struct _TCP_OFFLOAD_STATE_CACHED {
 
 `Flags`
 
-A bitmask that can be set to zero or any of the following flags, combined with bitwise OR:
+A bitmask that can be set to zero or any of the following flags, combined with bitwise OR: 
+     
+
+
+
+
+#### TCP_FLAG_KEEP_ALIVE_ENABLED
+
+The host stack sets this flag to enable the keepalive option on the connection. The host stack
+       clears this flag to disable the keepalive option on the connection. For more information about the
+       keepalive option, see RFC 1122.
+
+
+#### TCP_FLAG_NAGLING_ENABLED
+
+The host stack sets this flag to enable the Nagle algorithm on the connection. The host stack
+       clears this flag to disable the Nagle algorithm on the connection. For more information about the
+       Nagle algorithm, see RFC 896.
+
+
+#### TCP_FLAG_KEEP_ALIVE_RESTART
+
+The host stack sets this flag to cause the offload target to reset its keepalive timer to
+       zero.
+
+
+#### TCP_FLAG_MAX_RT_RESTART
+
+The host stack sets this flag to cause the offload target to reset the TotalRT variable in the
+       TCP delegated state for the connection to zero.
+
+
+#### TCP_FLAG_UPDATE_RCV_WND
+
+The host stack sets this flag to indicate that the default receive window size (InitialRcvWnd in
+       the TCP_OFFLOAD_STATE_CACHED structure) has changed. If the value of InitialRcvWnd differs from the
+       offload target's currrent receive window size (RcvWnd in the TCP_OFFLOAD_STATE_DELEGATED structure),
+       the offload target must advertise a new receive window size to the peer.
 
 `FlowLabel`
 
@@ -219,13 +256,13 @@ Reset that connection's delegated KeepaliveTimeoutDelta variable when the host s
 
 <a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
 
-<a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_delegated.md">TCP_OFFLOAD_STATE_DELEGATED</a>
-
-<a href="..\ndischimney\nc-ndischimney-w_update_offload_handler.md">MiniportUpdateOffload</a>
+<a href="..\ndischimney\ns-ndischimney-_offload_state_header.md">OFFLOAD_STATE_HEADER</a>
 
 <a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_const.md">TCP_OFFLOAD_STATE_CONST</a>
 
-<a href="..\ndischimney\ns-ndischimney-_offload_state_header.md">OFFLOAD_STATE_HEADER</a>
+<a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_delegated.md">TCP_OFFLOAD_STATE_DELEGATED</a>
+
+<a href="..\ndischimney\nc-ndischimney-w_update_offload_handler.md">MiniportUpdateOffload</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 

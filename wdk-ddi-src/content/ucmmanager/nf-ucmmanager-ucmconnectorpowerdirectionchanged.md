@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : D1DB20DF-C0FD-4215-8227-CBBB18AF8BE3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcmConnectorPowerDirectionChanged, ucmmanager/UcmConnectorPowerDirectionChanged, buses.ucmconnectorpowerdirectionchanged, UcmConnectorPowerDirectionChanged method [Buses]
+ms.keywords : buses.ucmconnectorpowerdirectionchanged, UcmConnectorPowerDirectionChanged, ucmmanager/UcmConnectorPowerDirectionChanged, UcmConnectorPowerDirectionChanged method [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

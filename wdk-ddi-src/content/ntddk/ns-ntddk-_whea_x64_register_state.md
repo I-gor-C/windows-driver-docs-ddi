@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddk._WHEA_X64_REGISTER_STATE
-title : _WHEA_X64_REGISTER_STATE
+title : "_WHEA_X64_REGISTER_STATE"
 author : windows-driver-content
 description : The WHEA_X64_REGISTER_STATE structure describes the state of an x64 processor's registers.
 old-location : whea\whea_x64_register_state.htm
@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 690c900f-fba8-4712-9a05-bfbe633dd9cf
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : whea.whea_x64_register_state, whearef_2602d89a-de68-4dd9-ba4b-bb42fc0f258b.xml, WHEA_X64_REGISTER_STATE, ntddk/WHEA_X64_REGISTER_STATE, *PWHEA_X64_REGISTER_STATE, PWHEA_X64_REGISTER_STATE structure pointer [WHEA Drivers and Applications], PWHEA_X64_REGISTER_STATE, ntddk/PWHEA_X64_REGISTER_STATE, _WHEA_X64_REGISTER_STATE, WHEA_X64_REGISTER_STATE structure [WHEA Drivers and Applications]
+ms.keywords : PWHEA_X64_REGISTER_STATE structure pointer [WHEA Drivers and Applications], ntddk/PWHEA_X64_REGISTER_STATE, PWHEA_X64_REGISTER_STATE, whearef_2602d89a-de68-4dd9-ba4b-bb42fc0f258b.xml, WHEA_X64_REGISTER_STATE structure [WHEA Drivers and Applications], _WHEA_X64_REGISTER_STATE, WHEA_X64_REGISTER_STATE, *PWHEA_X64_REGISTER_STATE, whea.whea_x64_register_state, ntddk/WHEA_X64_REGISTER_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -145,6 +145,16 @@ A WHEA128A structure that contains the state of the global descriptor table regi
 </td>
 </tr>
 </table></span></div>
+
+
+#### Low
+
+The low order 64 bits of the 128-bit value.
+
+
+#### High
+
+The high order 64 bits of the 128-bit value.
 
 `Gs`
 

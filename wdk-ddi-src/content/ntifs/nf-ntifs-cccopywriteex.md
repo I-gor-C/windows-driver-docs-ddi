@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : A8945F1C-56CF-494F-9E50-11C7A713E5F0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/CcCopyWriteEx, CcCopyWriteEx routine [Installable File System Drivers], ifsk.cccopywriteex, CcCopyWriteEx
+ms.keywords : CcCopyWriteEx routine [Installable File System Drivers], ntifs/CcCopyWriteEx, CcCopyWriteEx, ifsk.cccopywriteex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -105,7 +105,7 @@ To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcIniti
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

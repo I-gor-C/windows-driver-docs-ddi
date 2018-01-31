@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 26c5c998-fb10-45c3-b28c-91a759fa941e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfdeviceinitsetdevicetype, WdfDeviceInitSetDeviceType, wdf.wdfdeviceinitsetdevicetype, PFN_WDFDEVICEINITSETDEVICETYPE, wdfdevice/WdfDeviceInitSetDeviceType, WdfDeviceInitSetDeviceType method, DFDeviceObjectGeneralRef_872eb4dd-0d40-46ed-a7ed-4eae8ec67240.xml
+ms.keywords : wdfdevice/WdfDeviceInitSetDeviceType, WdfDeviceInitSetDeviceType method, wdf.wdfdeviceinitsetdevicetype, DFDeviceObjectGeneralRef_872eb4dd-0d40-46ed-a7ed-4eae8ec67240.xml, kmdf.wdfdeviceinitsetdevicetype, PFN_WDFDEVICEINITSETDEVICETYPE, WdfDeviceInitSetDeviceType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -89,5 +89,5 @@ The device type that a driver specifies determines the default priority boost va
 | **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI |

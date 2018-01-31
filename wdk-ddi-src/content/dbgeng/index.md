@@ -32,7 +32,7 @@ dbgeng.h contains the following programming interfaces:
 | [IDebugAdvanced4](nn-dbgeng-idebugadvanced4.md) | IDebugAdvanced4 interface |
 | [IDebugBreakpoint](nn-dbgeng-idebugbreakpoint.md) | IDebugBreakpoint interface |
 | [IDebugBreakpoint2](nn-dbgeng-idebugbreakpoint2.md) | IDebugBreakpoint2 interface |
-| [IDebugBreakpoint3](nn-dbgeng-idebugbreakpoint3.md) | . |
+| [IDebugBreakpoint3](nn-dbgeng-idebugbreakpoint3.md) | "." |
 | [IDebugClient](nn-dbgeng-idebugclient.md) | IDebugClient interface |
 | [IDebugClient2](nn-dbgeng-idebugclient2.md) | IDebugClient2 interface |
 | [IDebugClient3](nn-dbgeng-idebugclient3.md) | IDebugClient3 interface |
@@ -44,9 +44,9 @@ dbgeng.h contains the following programming interfaces:
 | [IDebugControl2](nn-dbgeng-idebugcontrol2.md) | IDebugControl2 interface |
 | [IDebugControl3](nn-dbgeng-idebugcontrol3.md) | IDebugControl3 interface |
 | [IDebugControl4](nn-dbgeng-idebugcontrol4.md) | IDebugControl4 interface |
-| [IDebugControl5](nn-dbgeng-idebugcontrol5.md) | . |
-| [IDebugControl6](nn-dbgeng-idebugcontrol6.md) | . |
-| [IDebugControl7](nn-dbgeng-idebugcontrol7.md) | . |
+| [IDebugControl5](nn-dbgeng-idebugcontrol5.md) | "." |
+| [IDebugControl6](nn-dbgeng-idebugcontrol6.md) | "." |
+| [IDebugControl7](nn-dbgeng-idebugcontrol7.md) | "." |
 | [IDebugDataSpaces](nn-dbgeng-idebugdataspaces.md) | IDebugDataSpaces interface |
 | [IDebugDataSpaces2](nn-dbgeng-idebugdataspaces2.md) | IDebugDataSpaces2 interface |
 | [IDebugDataSpaces3](nn-dbgeng-idebugdataspaces3.md) | IDebugDataSpaces3 interface |

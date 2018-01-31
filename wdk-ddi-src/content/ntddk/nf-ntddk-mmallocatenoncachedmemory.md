@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : aabad72e-2636-47cd-9986-f50ab5101e68
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k106_a52baa62-3e10-4158-98e5-5e4dce16ee6a.xml, MmAllocateNonCachedMemory, MmAllocateNonCachedMemory routine [Kernel-Mode Driver Architecture], ntddk/MmAllocateNonCachedMemory, kernel.mmallocatenoncachedmemory
+ms.keywords : k106_a52baa62-3e10-4158-98e5-5e4dce16ee6a.xml, ntddk/MmAllocateNonCachedMemory, MmAllocateNonCachedMemory, MmAllocateNonCachedMemory routine [Kernel-Mode Driver Architecture], kernel.mmallocatenoncachedmemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -79,18 +79,18 @@ The physical memory pages that <b>MmAllocateNonCachedMemory</b> returns are typi
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** |  |
-| **IRQL** | <=APC_LEVEL |
+| **IRQL** | "<=APC_LEVEL" |
 | **DDI compliance rules** | IrqlMmApcLte, HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo |
 
 ## See Also
 
 <a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycache.md">MmAllocateContiguousMemorySpecifyCache</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552087">KeGetDcacheFillSize</a>
+<a href="..\wdm\nc-wdm-pallocate_common_buffer.md">AllocateCommonBuffer</a>
 
 <a href="..\ntddk\nf-ntddk-mmfreenoncachedmemory.md">MmFreeNonCachedMemory</a>
 
-<a href="..\wdm\nc-wdm-pallocate_common_buffer.md">AllocateCommonBuffer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552087">KeGetDcacheFillSize</a>
 
 <a href="..\wdm\nf-wdm-mmallocatecontiguousmemory.md">MmAllocateContiguousMemory</a>
 

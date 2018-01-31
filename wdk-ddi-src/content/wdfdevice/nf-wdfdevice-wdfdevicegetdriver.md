@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 774cce7b-37bf-495b-8087-915b164745ba
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceGetDriver, DFDeviceObjectGeneralRef_821bd67e-0a04-4664-91e1-4fa608a8b93e.xml, wdf.wdfdevicegetdriver, WdfDeviceGetDriver, PFN_WDFDEVICEGETDRIVER, WdfDeviceGetDriver method, kmdf.wdfdevicegetdriver
+ms.keywords : WdfDeviceGetDriver method, wdf.wdfdevicegetdriver, PFN_WDFDEVICEGETDRIVER, DFDeviceObjectGeneralRef_821bd67e-0a04-4664-91e1-4fa608a8b93e.xml, wdfdevice/WdfDeviceGetDriver, kmdf.wdfdevicegetdriver, WdfDeviceGetDriver
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,7 +76,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also

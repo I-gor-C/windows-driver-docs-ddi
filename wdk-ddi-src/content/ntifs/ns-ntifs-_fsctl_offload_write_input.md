@@ -1,6 +1,6 @@
 ---
 UID : NS:ntifs._FSCTL_OFFLOAD_WRITE_INPUT
-title : _FSCTL_OFFLOAD_WRITE_INPUT
+title : "_FSCTL_OFFLOAD_WRITE_INPUT"
 author : windows-driver-content
 description : The FSCTL_OFFLOAD_WRITE_INPUT structure contains the input for the FSCTL_OFFLOAD_WRITE control code request.
 old-location : ifsk\fsctl_offload_write_input.htm
@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 4ADBBBDC-02DD-4D1A-B697-6286D7513B2E
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PFSCTL_OFFLOAD_WRITE_INPUT, ifsk.fsctl_offload_write_input, FSCTL_OFFLOAD_WRITE_INPUT, ntifs/FSCTL_OFFLOAD_WRITE_INPUT, PFSCTL_OFFLOAD_WRITE_INPUT structure pointer [Installable File System Drivers], _FSCTL_OFFLOAD_WRITE_INPUT, *PFSCTL_OFFLOAD_WRITE_INPUT, ntifs/PFSCTL_OFFLOAD_WRITE_INPUT, FSCTL_OFFLOAD_WRITE_INPUT structure [Installable File System Drivers]
+ms.keywords : ntifs/FSCTL_OFFLOAD_WRITE_INPUT, PFSCTL_OFFLOAD_WRITE_INPUT, _FSCTL_OFFLOAD_WRITE_INPUT, FSCTL_OFFLOAD_WRITE_INPUT structure [Installable File System Drivers], PFSCTL_OFFLOAD_WRITE_INPUT structure pointer [Installable File System Drivers], FSCTL_OFFLOAD_WRITE_INPUT, *PFSCTL_OFFLOAD_WRITE_INPUT, ntifs/PFSCTL_OFFLOAD_WRITE_INPUT, ifsk.fsctl_offload_write_input
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PFSCTL_OFFLOAD_WRITE_INPUT, FSCTL_OFFLOAD_WRITE_INPUT"
+req.typenames : FSCTL_OFFLOAD_WRITE_INPUT, *PFSCTL_OFFLOAD_WRITE_INPUT
 ---
 
 # _FSCTL_OFFLOAD_WRITE_INPUT structure
@@ -93,13 +93,13 @@ The position in the data associated with <b>Token</b> to begin writing from.
 
 ## See Also
 
-<a href="..\ntddstor\ns-ntddstor-_storage_offload_token.md">STORAGE_OFFLOAD_TOKEN</a>
-
 <a href="..\ntifs\ns-ntifs-_fsctl_offload_write_output.md">FSCTL_OFFLOAD_WRITE_OUTPUT</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451101">FSCTL_OFFLOAD_READ</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451122">FSCTL_OFFLOAD_WRITE</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451101">FSCTL_OFFLOAD_READ</a>
+<a href="..\ntddstor\ns-ntddstor-_storage_offload_token.md">STORAGE_OFFLOAD_TOKEN</a>
 
  
 

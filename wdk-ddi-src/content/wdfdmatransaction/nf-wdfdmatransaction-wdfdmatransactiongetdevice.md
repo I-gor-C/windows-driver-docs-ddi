@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : fa4d523b-4af2-4a6e-aaa6-d84c829b567d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfdmatransactiongetdevice, wdf.wdfdmatransactiongetdevice, DFDmaObjectRef_eb3ef52a-cba0-4754-8dad-d113b200f949.xml, WdfDmaTransactionGetDevice method, WdfDmaTransactionGetDevice, wdfdmatransaction/WdfDmaTransactionGetDevice, PFN_WDFDMATRANSACTIONGETDEVICE
+ms.keywords : WdfDmaTransactionGetDevice, WdfDmaTransactionGetDevice method, kmdf.wdfdmatransactiongetdevice, wdf.wdfdmatransactiongetdevice, wdfdmatransaction/WdfDmaTransactionGetDevice, DFDmaObjectRef_eb3ef52a-cba0-4754-8dad-d113b200f949.xml, PFN_WDFDMATRANSACTIONGETDEVICE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_DMA_SYSTEM_PROFILE_CONFIG, *PWDF_DMA_SYSTEM_PROFILE_CONFIG
+req.typenames : "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
 req.product : Windows 10 or later.
 ---
 
@@ -79,7 +79,7 @@ For more information about completing DMA transfers, see <a href="https://msdn.m
 | **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also

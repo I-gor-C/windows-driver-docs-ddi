@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : e5e2061f-5133-4645-8e07-659f08473a51
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetUshort, debugger.extremotedata_getushort, GetUshort method [Windows Debugging], ExtRemoteData class, GetUshort method [Windows Debugging], ExtRemoteData, EngExtCpp_Ref_5429785d-2f76-434d-96c6-4fa7298aa32e.xml, ExtRemoteData::GetUshort, ExtRemoteData class [Windows Debugging], GetUshort method
+ms.keywords : ExtRemoteData class [Windows Debugging], GetUshort method, ExtRemoteData, GetUshort method [Windows Debugging], GetUshort, EngExtCpp_Ref_5429785d-2f76-434d-96c6-4fa7298aa32e.xml, GetUshort method [Windows Debugging], ExtRemoteData class, debugger.extremotedata_getushort, ExtRemoteData::GetUshort
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+req.typenames : "*PSILO_DRIVER_CAPABILITIES, SILO_DRIVER_CAPABILITIES"
 ---
 
 

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 83733c17-1f1f-4be6-ae14-aa921e481a73
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audmp-routines_428c97a0-498d-4732-a2cc-5be2af2aa64c.xml, AddEntryFromParent method [Audio Devices], audio.iresourcelist_addentryfromparent, portcls/IResourceList::AddEntryFromParent, AddEntryFromParent method [Audio Devices], IResourceList interface, IResourceList interface [Audio Devices], AddEntryFromParent method, IResourceList, AddEntryFromParent, IResourceList::AddEntryFromParent
+ms.keywords : portcls/IResourceList::AddEntryFromParent, IResourceList::AddEntryFromParent, AddEntryFromParent method [Audio Devices], AddEntryFromParent, IResourceList interface [Audio Devices], AddEntryFromParent method, AddEntryFromParent method [Audio Devices], IResourceList interface, IResourceList, audmp-routines_428c97a0-498d-4732-a2cc-5be2af2aa64c.xml, audio.iresourcelist_addentryfromparent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -119,11 +119,11 @@ The <i>Parent</i> parameter follows the <a href="https://msdn.microsoft.com/e6b1
 
 ## See Also
 
+<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536988">IResourceList::NumberOfEntriesOfType</a>
 
 <a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
-
-<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
 
  
 

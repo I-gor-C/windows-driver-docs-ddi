@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4f142e5f-7d8a-47e0-8757-8c6e527a2472
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksgenerateevent, ks/KsGenerateEvent, KsGenerateEvent, KsGenerateEvent function [Streaming Media Devices], ksfunc_929fd3d4-2f02-4106-b8cd-25c3fb13ba05.xml
+ms.keywords : stream.ksgenerateevent, KsGenerateEvent, ksfunc_929fd3d4-2f02-4106-b8cd-25c3fb13ba05.xml, ks/KsGenerateEvent, KsGenerateEvent function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,11 +79,11 @@ A device determines when event notifications are generated using the <a href="..
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspingenerateevents.md">KsPinGenerateEvents</a>
+<a href="..\ks\nf-ks-kspinaddevent.md">KsPinAddEvent</a>
 
 <a href="..\ks\nf-ks-ksfilteraddevent.md">KsFilterAddEvent</a>
 
-<a href="..\ks\nf-ks-kspinaddevent.md">KsPinAddEvent</a>
+<a href="..\ks\nf-ks-kspingenerateevents.md">KsPinGenerateEvents</a>
 
 <a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a>
 

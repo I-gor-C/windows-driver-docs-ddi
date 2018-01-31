@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
+req.typenames : "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
 ---
 
 # IOCTL_MOUNTDEV_LINK_DELETED IOCTL

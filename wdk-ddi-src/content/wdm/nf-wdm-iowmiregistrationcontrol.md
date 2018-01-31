@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : fe135118-1992-43c7-8492-81f9febd79b9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoWMIRegistrationControl, kernel.iowmiregistrationcontrol, k104_69efd10b-fb1a-4d66-939d-6ade4185605d.xml, wdm/IoWMIRegistrationControl, IoWMIRegistrationControl routine [Kernel-Mode Driver Architecture]
+ms.keywords : wdm/IoWMIRegistrationControl, kernel.iowmiregistrationcontrol, IoWMIRegistrationControl routine [Kernel-Mode Driver Architecture], IoWMIRegistrationControl, k104_69efd10b-fb1a-4d66-939d-6ade4185605d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -174,11 +174,11 @@ If a device is removed suddenly (for example, in a surprise removal), causing th
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551760">IRP_MN_SURPRISE_REMOVAL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551734">IRP_MN_REGINFO_EX</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551738">IRP_MN_REMOVE_DEVICE</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551734">IRP_MN_REGINFO_EX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551760">IRP_MN_SURPRISE_REMOVAL</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551731">IRP_MN_REGINFO</a>
 

@@ -1,6 +1,6 @@
 ---
 UID : NS:ntifs._FILE_LEVEL_TRIM
-title : _FILE_LEVEL_TRIM
+title : "_FILE_LEVEL_TRIM"
 author : windows-driver-content
 description : The FILE_LEVEL_TRIM structure contains an array of byte ranges to trim for a file.
 old-location : ifsk\file_level_trim.htm
@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 72FD2A3B-B246-41BA-BEB6-169C214C32D7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : _FILE_LEVEL_TRIM, FILE_LEVEL_TRIM structure [Installable File System Drivers], ntifs/FILE_LEVEL_TRIM, PFILE_LEVEL_TRIM, FILE_LEVEL_TRIM, ifsk.file_level_trim, ntifs/PFILE_LEVEL_TRIM, PFILE_LEVEL_TRIM structure pointer [Installable File System Drivers], *PFILE_LEVEL_TRIM
+ms.keywords : PFILE_LEVEL_TRIM, _FILE_LEVEL_TRIM, ntifs/FILE_LEVEL_TRIM, PFILE_LEVEL_TRIM structure pointer [Installable File System Drivers], *PFILE_LEVEL_TRIM, ntifs/PFILE_LEVEL_TRIM, ifsk.file_level_trim, FILE_LEVEL_TRIM, FILE_LEVEL_TRIM structure [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : FILE_LEVEL_TRIM, *PFILE_LEVEL_TRIM
+req.typenames : "*PFILE_LEVEL_TRIM, FILE_LEVEL_TRIM"
 ---
 
 # _FILE_LEVEL_TRIM structure
@@ -76,9 +76,9 @@ Array of trim ranges for a file.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451098">FSCTL_FILE_LEVEL_TRIM</a>
-
 <a href="..\ntifs\ns-ntifs-_file_level_trim_range.md">FILE_LEVEL_TRIM_RANGE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451098">FSCTL_FILE_LEVEL_TRIM</a>
 
  
 

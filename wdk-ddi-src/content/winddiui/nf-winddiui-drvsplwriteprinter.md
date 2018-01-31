@@ -2,13 +2,13 @@
 UID : NF:winddiui.DrvSplWritePrinter
 title : DrvSplWritePrinter function
 author : windows-driver-content
-description : .
+description : "."
 old-location : print\drvsplwriteprinter.htm
 old-project : print
 ms.assetid : c42bb90a-3c38-4c0c-b523-10e740a027c4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : winddiui/DrvSplWritePrinter, print_interface-graphics_a59ea0df-c5d8-4a84-8b57-21dfa4f382c4.xml, DrvSplWritePrinter function [Print Devices], print.drvsplwriteprinter, DrvSplWritePrinter
+ms.keywords : print_interface-graphics_a59ea0df-c5d8-4a84-8b57-21dfa4f382c4.xml, winddiui/DrvSplWritePrinter, print.drvsplwriteprinter, DrvSplWritePrinter, DrvSplWritePrinter function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

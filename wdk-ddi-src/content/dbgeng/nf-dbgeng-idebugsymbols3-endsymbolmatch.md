@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 02cc9db2-173a-4d5d-a465-098391336100
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : EndSymbolMatch method [Windows Debugging], IDebugSymbols interface, EndSymbolMatch method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], EndSymbolMatch method, EndSymbolMatch, IDebugSymbols2::EndSymbolMatch, EndSymbolMatch method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols3, debugger.endsymbolmatch, IDebugSymbols::EndSymbolMatch, EndSymbolMatch method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging], EndSymbolMatch method, IDebugSymbols3::EndSymbolMatch, dbgeng/IDebugSymbols2::EndSymbolMatch, dbgeng/IDebugSymbols3::EndSymbolMatch, IDebugSymbols2 interface [Windows Debugging], EndSymbolMatch method, dbgeng/IDebugSymbols::EndSymbolMatch, IDebugSymbols_1661cc8a-ad5c-4cd3-83fe-f829bd07e453.xml
+ms.keywords : EndSymbolMatch method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols_1661cc8a-ad5c-4cd3-83fe-f829bd07e453.xml, dbgeng/IDebugSymbols3::EndSymbolMatch, IDebugSymbols2 interface [Windows Debugging], EndSymbolMatch method, IDebugSymbols2::EndSymbolMatch, IDebugSymbols::EndSymbolMatch, debugger.endsymbolmatch, EndSymbolMatch method [Windows Debugging], IDebugSymbols3 interface, EndSymbolMatch, EndSymbolMatch method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], EndSymbolMatch method, IDebugSymbols3, IDebugSymbols3::EndSymbolMatch, EndSymbolMatch method [Windows Debugging], IDebugSymbols interface, dbgeng/IDebugSymbols2::EndSymbolMatch, IDebugSymbols interface [Windows Debugging], EndSymbolMatch method, dbgeng/IDebugSymbols::EndSymbolMatch
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -98,15 +98,15 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547856">GetNextSymbolMatch</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558815">StartSymbolMatch</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558815">StartSymbolMatch</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547856">GetNextSymbolMatch</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
 
  
 

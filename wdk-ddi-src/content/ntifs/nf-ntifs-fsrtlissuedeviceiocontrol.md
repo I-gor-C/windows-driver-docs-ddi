@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3BB31389-EB1B-4443-9FCF-70B420D71126
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlIssueDeviceIoControl routine [Installable File System Drivers], ifsk.fsrtlissuedeviceiocontrol, ntifs/FsRtlIssueDeviceIoControl, FsRtlIssueDeviceIoControl
+ms.keywords : ifsk.fsrtlissuedeviceiocontrol, FsRtlIssueDeviceIoControl, ntifs/FsRtlIssueDeviceIoControl, FsRtlIssueDeviceIoControl routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -106,7 +106,7 @@ A pointer to a <b>ULONG</b> status value to receive the information field value 
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

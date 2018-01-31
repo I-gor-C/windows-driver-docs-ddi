@@ -33,7 +33,7 @@ printerextension.h contains the following programming interfaces:
 | [IPrinterQueueView](nn-printerextension-iprinterqueueview.md) | Provides a way to change the range of print jobs being monitored. |
 | [IPrinterQueueViewEvent](nn-printerextension-iprinterqueueviewevent.md) | Provides the signature of the event handler. |
 | [IPrinterScriptablePropertyBag](nn-printerextension-iprinterscriptablepropertybag.md) | The IPrinterScriptablePropertyBag interface is the property bag interface passed to script clients. |
-| [IPrinterScriptablePropertyBag2](nn-printerextension-iprinterscriptablepropertybag2.md) | . |
+| [IPrinterScriptablePropertyBag2](nn-printerextension-iprinterscriptablepropertybag2.md) | "." |
 | [IPrinterScriptableStream](nn-printerextension-iprinterscriptablestream.md) | The IPrinterScriptableStream interface builds on IPrinterScriptableSequentialStream and adds IStream-like semantics. |
 | [IPrinterScriptContext](nn-printerextension-iprinterscriptcontext.md) | Passed to all third-party constraints JavaScript functions, and provides access to relevant objects. |
 | [IPrintJob](nn-printerextension-iprintjob.md) | Contains properties that represent a print job. |

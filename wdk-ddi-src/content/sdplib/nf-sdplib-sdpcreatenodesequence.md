@@ -8,14 +8,14 @@ old-project : bltooth
 ms.assetid : 9e02f32b-cd39-4953-9698-a1800bedf0e2
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : sdplib/SdpCreateNodeSequence, bth_funcs_646168a7-522f-425c-99b7-706b84e02e20.xml, SdpCreateNodeSequence function [Bluetooth Devices], SdpCreateNodeSequence, bltooth.sdpcreatenodesequence
+ms.keywords : SdpCreateNodeSequence, bth_funcs_646168a7-522f-425c-99b7-706b84e02e20.xml, sdplib/SdpCreateNodeSequence, bltooth.sdpcreatenodesequence, SdpCreateNodeSequence function [Bluetooth Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
 req.header : sdplib.h
 req.include-header : BthSdpddi.h
 req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
@@ -85,16 +85,16 @@ A sequence node can be added as a top-level attribute of an SDP record by callin
 | **Minimum UMDF version** |  |
 | **Header** | sdplib.h (include BthSdpddi.h) |
 | **Library** |  |
-| **IRQL** | <= PASSIVE_LEVEL |
+| **IRQL** | "<= PASSIVE_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\sdplib\nf-sdplib-sdpaddattributetotree.md">SdpAddAttributeToTree</a>
 
-<a href="..\sdplib\nf-sdplib-sdpappendnodetocontainernode.md">SdpAppendNodeToContainerNode</a>
-
 <a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
+
+<a href="..\sdplib\nf-sdplib-sdpappendnodetocontainernode.md">SdpAppendNodeToContainerNode</a>
 
  
 

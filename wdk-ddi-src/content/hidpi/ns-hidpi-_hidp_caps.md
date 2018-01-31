@@ -1,6 +1,6 @@
 ---
 UID : NS:hidpi._HIDP_CAPS
-title : _HIDP_CAPS
+title : "_HIDP_CAPS"
 author : windows-driver-content
 description : The HIDP_CAPS structure contains information about a top-level collection's capability.
 old-location : hid\hidp_caps.htm
@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : ec4d4b7b-acf6-4839-9a61-1883eddce3f4
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : HIDP_CAPS, hid.hidp_caps, PHIDP_CAPS structure pointer [Human Input Devices], hidstrct_2ef93e42-2fd2-4dff-87fb-11f1d1342b07.xml, hidpi/PHIDP_CAPS, HIDP_CAPS structure [Human Input Devices], PHIDP_CAPS, hidpi/HIDP_CAPS, _HIDP_CAPS, *PHIDP_CAPS
+ms.keywords : hidstrct_2ef93e42-2fd2-4dff-87fb-11f1d1342b07.xml, HIDP_CAPS, hidpi/HIDP_CAPS, PHIDP_CAPS structure pointer [Human Input Devices], _HIDP_CAPS, PHIDP_CAPS, hidpi/PHIDP_CAPS, HIDP_CAPS structure [Human Input Devices], *PHIDP_CAPS, hid.hidp_caps
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -143,23 +143,23 @@ Callers of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff53
 
 ## See Also
 
-<a href="..\hidpi\nf-hidpi-hidp_getbuttoncaps.md">HidP_GetButtonCaps</a>
-
-<a href="..\hidpi\nf-hidpi-hidp_getspecificvaluecaps.md">HidP_GetSpecificValueCaps</a>
-
-<a href="..\hidpi\nf-hidpi-hidp_getlinkcollectionnodes.md">HidP_GetLinkCollectionNodes</a>
-
-<a href="..\hidpi\ns-hidpi-_hidp_button_caps.md">HIDP_BUTTON_CAPS</a>
-
-<a href="..\hidpi\ns-hidpi-_hidp_link_collection_node.md">HIDP_LINK_COLLECTION_NODE</a>
+<a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a>
 
 <a href="..\hidpi\nf-hidpi-hidp_getvaluecaps.md">HidP_GetValueCaps</a>
 
+<a href="..\hidpi\nf-hidpi-hidp_getlinkcollectionnodes.md">HidP_GetLinkCollectionNodes</a>
+
+<a href="..\hidpi\nf-hidpi-hidp_getbuttoncaps.md">HidP_GetButtonCaps</a>
+
 <a href="..\hidpi\ns-hidpi-_hidp_value_caps.md">HIDP_VALUE_CAPS</a>
 
-<a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a>
-
 <a href="..\hidpi\nf-hidpi-hidp_getspecificbuttoncaps.md">HidP_GetSpecificButtonCaps</a>
+
+<a href="..\hidpi\ns-hidpi-_hidp_button_caps.md">HIDP_BUTTON_CAPS</a>
+
+<a href="..\hidpi\nf-hidpi-hidp_getspecificvaluecaps.md">HidP_GetSpecificValueCaps</a>
+
+<a href="..\hidpi\ns-hidpi-_hidp_link_collection_node.md">HIDP_LINK_COLLECTION_NODE</a>
 
  
 

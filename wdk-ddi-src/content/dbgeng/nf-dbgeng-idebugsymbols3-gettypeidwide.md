@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 4b0f4de6-b800-4bc0-ae1d-97d877e3b91e
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetTypeIdWide, debugger.gettypeidwide, GetTypeIdWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetTypeIdWide, IDebugSymbols3 interface [Windows Debugging], GetTypeIdWide method, IDebugSymbols3, GetTypeIdWide method [Windows Debugging], dbgeng/IDebugSymbols3::GetTypeIdWide
+ms.keywords : debugger.gettypeidwide, GetTypeIdWide method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::GetTypeIdWide, IDebugSymbols3::GetTypeIdWide, GetTypeIdWide, IDebugSymbols3, GetTypeIdWide method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], GetTypeIdWide method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -122,9 +122,9 @@ For more information about symbols and symbol names, see <a href="https://msdn.m
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549173">GetSymbolTypeId</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548062">GetOffsetTypeId</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549173">GetSymbolTypeId</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 

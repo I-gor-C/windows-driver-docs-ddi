@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 624a0fcb-472f-4a91-934e-02f83d1049c4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.streamclassfilterreenumeratestreams, strmini/StreamClassFilterReenumerateStreams, StreamClassFilterReenumerateStreams, StreamClassFilterReenumerateStreams function [Streaming Media Devices], strclass-routines_972c0c03-67fc-4d5b-b699-08a8bc0a50e2.xml
+ms.keywords : stream.streamclassfilterreenumeratestreams, strclass-routines_972c0c03-67fc-4d5b-b699-08a8bc0a50e2.xml, StreamClassFilterReenumerateStreams function [Streaming Media Devices], strmini/StreamClassFilterReenumerateStreams, StreamClassFilterReenumerateStreams
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : STREAM_PRIORITY, *PSTREAM_PRIORITY
+req.typenames : "*PSTREAM_PRIORITY, STREAM_PRIORITY"
 req.product : Windows 10 or later.
 ---
 

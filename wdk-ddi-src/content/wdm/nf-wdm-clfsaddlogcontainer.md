@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 05ab9817-3f49-4ab5-b35d-1c89f5fe6e44
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsAddLogContainer routine [Kernel-Mode Driver Architecture], kernel.clfsaddlogcontainer, ClfsAddLogContainer, Clfs_30478f90-41d2-4a83-8291-83b90601dc11.xml, wdm/ClfsAddLogContainer
+ms.keywords : ClfsAddLogContainer, wdm/ClfsAddLogContainer, kernel.clfsaddlogcontainer, Clfs_30478f90-41d2-4a83-8291-83b90601dc11.xml, ClfsAddLogContainer routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -109,14 +109,14 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfsremovelogcontainer.md">ClfsRemoveLogContainer</a>
-
 <a href="..\wdm\nf-wdm-clfsaddlogcontainerset.md">ClfsAddLogContainerSet</a>
+
+<a href="..\wdm\nf-wdm-clfsremovelogcontainer.md">ClfsRemoveLogContainer</a>
 
  
 

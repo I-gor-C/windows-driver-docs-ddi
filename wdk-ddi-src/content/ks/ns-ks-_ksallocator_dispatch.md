@@ -1,6 +1,6 @@
 ---
 UID : NS:ks._KSALLOCATOR_DISPATCH
-title : _KSALLOCATOR_DISPATCH
+title : "_KSALLOCATOR_DISPATCH"
 author : windows-driver-content
 description : The KSALLOCATOR_DISPATCH structure contains the callbacks required for a pin to implement its own kernel-level allocator.
 old-location : stream\ksallocator_dispatch.htm
@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6e6e6dde-3b41-44a7-b51d-1b1f06db0853
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSALLOCATOR_DISPATCH, ks/PKSALLOCATOR_DISPATCH, PKSALLOCATOR_DISPATCH structure pointer [Streaming Media Devices], stream.ksallocator_dispatch, KSALLOCATOR_DISPATCH structure [Streaming Media Devices], avstruct_73d2c793-a55a-45f3-af31-fc18240ca1df.xml, *PKSALLOCATOR_DISPATCH, _KSALLOCATOR_DISPATCH, PKSALLOCATOR_DISPATCH, ks/KSALLOCATOR_DISPATCH
+ms.keywords : KSALLOCATOR_DISPATCH, *PKSALLOCATOR_DISPATCH, PKSALLOCATOR_DISPATCH, ks/KSALLOCATOR_DISPATCH, _KSALLOCATOR_DISPATCH, stream.ksallocator_dispatch, ks/PKSALLOCATOR_DISPATCH, PKSALLOCATOR_DISPATCH structure pointer [Streaming Media Devices], KSALLOCATOR_DISPATCH structure [Streaming Media Devices], avstruct_73d2c793-a55a-45f3-af31-fc18240ca1df.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSALLOCATOR_DISPATCH, KSALLOCATOR_DISPATCH"
+req.typenames : KSALLOCATOR_DISPATCH, *PKSALLOCATOR_DISPATCH
 ---
 
 # _KSALLOCATOR_DISPATCH structure

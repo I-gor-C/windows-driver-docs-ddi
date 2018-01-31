@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 81511d81-206c-420b-a956-42cf68b57fc4
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestForwardToParentDeviceIoQueue, DFRequestObjectRef_0bfa4a8a-7b79-4256-84df-5bdabfff234b.xml, WdfRequestForwardToParentDeviceIoQueue method, PFN_WDFREQUESTFORWARDTOPARENTDEVICEIOQUEUE, wdf.wdfrequestforwardtoparentdeviceioqueue, wdfrequest/WdfRequestForwardToParentDeviceIoQueue, kmdf.wdfrequestforwardtoparentdeviceioqueue
+ms.keywords : kmdf.wdfrequestforwardtoparentdeviceioqueue, WdfRequestForwardToParentDeviceIoQueue method, DFRequestObjectRef_0bfa4a8a-7b79-4256-84df-5bdabfff234b.xml, PFN_WDFREQUESTFORWARDTOPARENTDEVICEIOQUEUE, wdfrequest/WdfRequestForwardToParentDeviceIoQueue, wdf.wdfrequestforwardtoparentdeviceioqueue, WdfRequestForwardToParentDeviceIoQueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -176,7 +176,7 @@ For more information about <b>WdfRequestForwardToParentDeviceIoQueue</b>, see <a
 | **Minimum UMDF version** |  |
 | **Header** | wdfrequest.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 
 ## See Also

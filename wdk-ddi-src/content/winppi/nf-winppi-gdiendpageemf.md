@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : e15344a5-32ed-43a8-93c2-d5201617d595
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.gdiendpageemf, GdiEndPageEMF, GdiEndPageEMF function [Print Devices], gdifnc_867f18b8-1764-41a4-a7c1-e43fa72a3d27.xml, winppi/GdiEndPageEMF
+ms.keywords : gdifnc_867f18b8-1764-41a4-a7c1-e43fa72a3d27.xml, winppi/GdiEndPageEMF, GdiEndPageEMF function [Print Devices], print.gdiendpageemf, GdiEndPageEMF
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -61,6 +61,13 @@ Caller-supplied spool file handle, obtained by a previous call to <a href="..\wi
 `dwOptimization`
 
 Caller-supplied flags. The following flag is defined:
+
+
+
+
+#### EMF_PP_COLOR_OPTIMIZATION
+
+Enable color optimization. For more information, see Remarks.
 
 
 ## Return Value

@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : DE51CB88-E761-40DC-B437-7572CD95FB4A
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_Supl_Cert_Inject, GNSS_SUPL_CERT_ACTION, gnssdriver/GNSS_Supl_Cert_Delete, gnssdriver/GNSS_SUPL_CERT_ACTION, GNSS_Supl_Cert_Purge, GNSS_Supl_Cert_Delete, gnssdriver/GNSS_Supl_Cert_Purge, gnssdriver/GNSS_Supl_Cert_Inject, sensors.gnss_supl_cert_action, GNSS_SUPL_CERT_ACTION enumeration [Sensor Devices]
+ms.keywords : gnssdriver/GNSS_Supl_Cert_Purge, sensors.gnss_supl_cert_action, GNSS_SUPL_CERT_ACTION enumeration [Sensor Devices], GNSS_Supl_Cert_Delete, GNSS_Supl_Cert_Inject, gnssdriver/GNSS_Supl_Cert_Delete, GNSS_Supl_Cert_Purge, gnssdriver/GNSS_Supl_Cert_Inject, gnssdriver/GNSS_SUPL_CERT_ACTION, GNSS_SUPL_CERT_ACTION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 66ec7c51-3d2c-4a25-a356-4df06ee1b1f5
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3 interface [Windows Debugging], GetModuleByModuleNameWide method, IDebugSymbols3::GetModuleByModuleNameWide, GetModuleByModuleNameWide, dbgeng/IDebugSymbols3::GetModuleByModuleNameWide, debugger.getmodulebymodulenamewide, GetModuleByModuleNameWide method [Windows Debugging], IDebugSymbols3, GetModuleByModuleNameWide method [Windows Debugging], IDebugSymbols3 interface
+ms.keywords : debugger.getmodulebymodulenamewide, IDebugSymbols3::GetModuleByModuleNameWide, GetModuleByModuleNameWide, GetModuleByModuleNameWide method [Windows Debugging], GetModuleByModuleNameWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging], GetModuleByModuleNameWide method, dbgeng/IDebugSymbols3::GetModuleByModuleNameWide, IDebugSymbols3
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

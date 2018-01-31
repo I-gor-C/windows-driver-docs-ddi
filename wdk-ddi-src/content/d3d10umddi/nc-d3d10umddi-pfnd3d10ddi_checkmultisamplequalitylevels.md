@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+req.typenames : SETRESULT_INFO, *PSETRESULT_INFO
 ---
 
 
@@ -105,9 +105,9 @@ If the driver receives 0 or greater than 32 in <i>SampleCount</i>, the driver al
 
 ## See Also
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi_devicefuncs.md">D3D10DDI_DEVICEFUNCS</a>
-
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md">pfnSetErrorCb</a>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddi_devicefuncs.md">D3D10DDI_DEVICEFUNCS</a>
 
  
 

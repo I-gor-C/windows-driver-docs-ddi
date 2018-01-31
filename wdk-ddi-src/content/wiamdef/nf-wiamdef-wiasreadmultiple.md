@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 814642f7-24df-4d64-bc2b-d76d84b2a6d3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiasFncs_c6d42143-4cd8-4f9a-bbf4-aec0ce2c0615.xml, wiasReadMultiple function [Imaging Devices], wiasReadMultiple, image.wiasreadmultiple, wiamdef/wiasReadMultiple
+ms.keywords : wiasReadMultiple, image.wiasreadmultiple, wiasFncs_c6d42143-4cd8-4f9a-bbf4-aec0ce2c0615.xml, wiasReadMultiple function [Imaging Devices], wiamdef/wiasReadMultiple
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2
+req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 

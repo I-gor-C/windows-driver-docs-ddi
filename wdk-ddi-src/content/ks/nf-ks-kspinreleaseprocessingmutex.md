@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9a117c5b-26a4-4fdb-b51e-933b8f105a81
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinReleaseProcessingMutex function [Streaming Media Devices], ks/KsPinReleaseProcessingMutex, KsPinReleaseProcessingMutex, avfunc_22421ea0-8973-4921-a0cb-f1d824f76357.xml, stream.kspinreleaseprocessingmutex
+ms.keywords : ks/KsPinReleaseProcessingMutex, KsPinReleaseProcessingMutex function [Streaming Media Devices], stream.kspinreleaseprocessingmutex, avfunc_22421ea0-8973-4921-a0cb-f1d824f76357.xml, KsPinReleaseProcessingMutex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,9 +79,9 @@ Minidrivers that must suspend processing for a long time should not use this mut
 
 ## See Also
 
-<a href="..\ks\ns-ks-_ksgate.md">KSGATE</a>
-
 <a href="..\ks\nf-ks-kspinacquireprocessingmutex.md">KsPinAcquireProcessingMutex</a>
+
+<a href="..\ks\ns-ks-_ksgate.md">KSGATE</a>
 
  
 

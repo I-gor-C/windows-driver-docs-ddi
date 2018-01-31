@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : f100f872-6db2-4b6d-a9c0-abbbfee0a621
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxDriverEntry routine [Installable File System Drivers], rxprocs/RxDriverEntry, RxDriverEntry, rxref_a882d71c-b6c3-4454-a45b-37b312af2069.xml, ifsk.rxdriverentry
+ms.keywords : rxprocs/RxDriverEntry, ifsk.rxdriverentry, rxref_a882d71c-b6c3-4454-a45b-37b312af2069.xml, RxDriverEntry routine [Installable File System Drivers], RxDriverEntry
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
+req.typenames : RX_CONTEXT, *PRX_CONTEXT
 req.product : Windows 10 or later.
 ---
 
@@ -168,28 +168,28 @@ For a non-monolithic network mini-redirector driver (the Microsoft SMB redirecto
 | **Minimum UMDF version** |  |
 | **Header** | rxprocs.h (include Rxprocs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\mrx\nf-mrx-rxstartminirdr.md">RxStartMinirdr</a>
-
-<a href="..\rxstruc\nf-rxstruc-rxunregisterminirdr.md">RxUnregisterMinirdr</a>
+<a href="..\mrx\nf-mrx-rxpunregisterminirdr.md">RxpUnregisterMinirdr</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559933">PsGetCurrentProcess</a>
 
+<a href="..\rxstruc\nf-rxstruc-rxunregisterminirdr.md">RxUnregisterMinirdr</a>
+
+<a href="..\mrx\nf-mrx-__rxfillandinstallfastiodispatch.md">__RxFillAndInstallFastIoDispatch</a>
+
 <a href="..\ntifs\nf-ntifs-ccsetreadaheadgranularity.md">CcSetReadAheadGranularity</a>
+
+<a href="..\mrx\nf-mrx-rxregisterminirdr.md">RxRegisterMinirdr</a>
 
 <a href="..\mrx\nf-mrx-rxstopminirdr.md">RxStopMinirdr</a>
 
 <a href="..\mrx\nf-mrx-rxsetdomainformailslotbroadcast.md">RxSetDomainForMailslotBroadcast</a>
 
-<a href="..\mrx\nf-mrx-rxpunregisterminirdr.md">RxpUnregisterMinirdr</a>
-
-<a href="..\mrx\nf-mrx-rxregisterminirdr.md">RxRegisterMinirdr</a>
-
-<a href="..\mrx\nf-mrx-__rxfillandinstallfastiodispatch.md">__RxFillAndInstallFastIoDispatch</a>
+<a href="..\mrx\nf-mrx-rxstartminirdr.md">RxStartMinirdr</a>
 
  
 

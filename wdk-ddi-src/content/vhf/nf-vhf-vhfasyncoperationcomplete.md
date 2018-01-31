@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : F28E6FC0-C2FE-4119-82D9-C38289340D3D
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : vhf/VhfAsyncOperationComplete, VhfAsyncOperationComplete method [Human Input Devices], VhfAsyncOperationComplete, hid._vhfasyncoperationcomplete
+ms.keywords : hid._vhfasyncoperationcomplete, VhfAsyncOperationComplete method [Human Input Devices], VhfAsyncOperationComplete, vhf/VhfAsyncOperationComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR"
+req.typenames : USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 
@@ -80,7 +80,7 @@ The HID source driver can call  from the event callback or at a later time after
 | **Minimum UMDF version** |  |
 | **Header** | vhf.h |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

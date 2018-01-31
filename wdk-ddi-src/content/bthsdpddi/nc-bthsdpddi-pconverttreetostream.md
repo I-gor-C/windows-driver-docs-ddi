@@ -15,7 +15,7 @@ ms.topic : callback
 req.header : bthsdpddi.h
 req.include-header : BthSdpddi.h
 req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
@@ -106,7 +106,7 @@ The
 
 <b>SdpConvertTreeToStream</b> allocates the necessary memory to store the stream version of the SDP
     record. When the memory is no longer needed, the caller is responsible for freeing the memory using the 
-    <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> driver support routine.
+    <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> driver support routine.
 
 Bluetooth profile drivers can obtain a pointer to this function through the 
     <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_parse_interface.md">BTHDDI_SDP_PARSE_INTERFACE</a>.
@@ -120,16 +120,16 @@ Bluetooth profile drivers can obtain a pointer to this function through the
 | **Minimum UMDF version** |  |
 | **Header** | bthsdpddi.h (include BthSdpddi.h) |
 | **Library** |  |
-| **IRQL** | <= PASSIVE_LEVEL |
+| **IRQL** | "<= PASSIVE_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_parse_interface.md">BTHDDI_SDP_PARSE_INTERFACE</a>
-
 <a href="..\bthsdpddi\nc-bthsdpddi-pconvertstreamtotree.md">SdpConvertStreamToTree</a>
 
-<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
+<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
+
+<a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_parse_interface.md">BTHDDI_SDP_PARSE_INTERFACE</a>
 
  
 

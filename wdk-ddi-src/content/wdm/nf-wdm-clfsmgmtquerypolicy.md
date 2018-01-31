@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c9cc9124-ee15-40df-b149-a9f3b26d7c24
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : Clfs_management_6f3ccba5-05e5-4022-9849-220aeefbde77.xml, wdm/ClfsMgmtQueryPolicy, kernel.clfsmgmtquerypolicy, ClfsMgmtQueryPolicy routine [Kernel-Mode Driver Architecture], ClfsMgmtQueryPolicy
+ms.keywords : ClfsMgmtQueryPolicy routine [Kernel-Mode Driver Architecture], kernel.clfsmgmtquerypolicy, ClfsMgmtQueryPolicy, wdm/ClfsMgmtQueryPolicy, Clfs_management_6f3ccba5-05e5-4022-9849-220aeefbde77.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -172,7 +172,7 @@ This routine might also return other <a href="https://msdn.microsoft.com/library
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2a7ebedd-0042-4624-9c9b-721cccfb0c4f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMSetupDmaTransfer macro [Network Drivers Starting with Windows Vista], ndis/NdisMSetupDmaTransfer, NdisMSetupDmaTransfer, netvista.ndismsetupdmatransfer, dma_ref_b6de5799-dca5-4c30-aa3a-e20e1eac4f0f.xml
+ms.keywords : NdisMSetupDmaTransfer, NdisMSetupDmaTransfer macro [Network Drivers Starting with Windows Vista], ndis/NdisMSetupDmaTransfer, dma_ref_b6de5799-dca5-4c30-aa3a-e20e1eac4f0f.xml, netvista.ndismsetupdmatransfer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -131,16 +131,16 @@ When the transfer is complete, the miniport driver must call the
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Miniport_Driver_Function |
 
 ## See Also
 
 <a href="..\ndis\nc-ndis-miniport_send_net_buffer_lists.md">MiniportSendNetBufferLists</a>
 
-<a href="..\ndis\nf-ndis-ndismcompletedmatransfer.md">NdisMCompleteDmaTransfer</a>
-
 <a href="..\ndis\nf-ndis-ndismregisterdmachannel.md">NdisMRegisterDmaChannel</a>
+
+<a href="..\ndis\nf-ndis-ndismcompletedmatransfer.md">NdisMCompleteDmaTransfer</a>
 
  
 

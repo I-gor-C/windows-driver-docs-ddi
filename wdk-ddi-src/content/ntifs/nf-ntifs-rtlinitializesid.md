@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 6b87483f-8d5e-4e1d-839d-2271990dcbaa
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rtlref_fbcc1ed7-4929-415f-9644-b8d9521a5c1a.xml, RtlInitializeSid routine [Installable File System Drivers], ifsk.rtlinitializesid, RtlInitializeSid, ntifs/RtlInitializeSid
+ms.keywords : RtlInitializeSid routine [Installable File System Drivers], ntifs/RtlInitializeSid, ifsk.rtlinitializesid, rtlref_fbcc1ed7-4929-415f-9644-b8d9521a5c1a.xml, RtlInitializeSid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -114,16 +114,16 @@ For more information about security and access control, see the documentation on
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** |  |
-| **IRQL** | < DISPATCH_LEVEL |
+| **IRQL** | "< DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\ntifs\nf-ntifs-rtlsubauthoritysid.md">RtlSubAuthoritySid</a>
 
-<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-
 <a href="..\ntifs\ns-ntifs-_sid_identifier_authority.md">SID_IDENTIFIER_AUTHORITY</a>
+
+<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : DCC4EB4C-B9A0-4E25-B3BD-4CAB07022A7B
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : VhfReadReportSubmit, vhf/VhfReadReportSubmit, VhfReadReportSubmit method [Human Input Devices], hid.vhfreadreportsubmit
+ms.keywords : hid.vhfreadreportsubmit, VhfReadReportSubmit method [Human Input Devices], vhf/VhfReadReportSubmit, VhfReadReportSubmit
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR"
+req.typenames : USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 
@@ -84,7 +84,7 @@ If the HID source driver does not implement the <a href="..\vhf\nc-vhf-evt_vhf_r
 | **Minimum UMDF version** |  |
 | **Header** | vhf.h |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 676A458E-A6E0-4F09-AAF2-21EA122EF74D
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceWdmAssignPowerFrameworkSettings, kmdf.wdfdevicewdmassignpowerframeworksettings, WdfDeviceWdmAssignPowerFrameworkSettings method, PFN_WDFDEVICEWDMASSIGNPOWERFRAMEWORKSETTINGS, WdfDeviceWdmAssignPowerFrameworkSettings, wdf.wdfdevicewdmassignpowerframeworksettings
+ms.keywords : wdfdevice/WdfDeviceWdmAssignPowerFrameworkSettings, PFN_WDFDEVICEWDMASSIGNPOWERFRAMEWORKSETTINGS, wdf.wdfdevicewdmassignpowerframeworksettings, kmdf.wdfdevicewdmassignpowerframeworksettings, WdfDeviceWdmAssignPowerFrameworkSettings method, WdfDeviceWdmAssignPowerFrameworkSettings
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -141,13 +141,13 @@ For more information, see <a href="https://msdn.microsoft.com/F96214C9-702D-402E
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdf_power_framework_settings_init.md">WDF_POWER_FRAMEWORK_SETTINGS_INIT</a>
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_post_po_fx_register_device.md">EvtDeviceWdmPostPoFxRegisterDevice</a>
 
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_pre_po_fx_unregister_device.md">EvtDeviceWdmPrePoFxUnregisterDevice</a>
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_post_po_fx_register_device.md">EvtDeviceWdmPostPoFxRegisterDevice</a>
-
 <a href="..\wdfdevice\ns-wdfdevice-_wdf_power_framework_settings.md">WDF_POWER_FRAMEWORK_SETTINGS</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdf_power_framework_settings_init.md">WDF_POWER_FRAMEWORK_SETTINGS_INIT</a>
 
  
 

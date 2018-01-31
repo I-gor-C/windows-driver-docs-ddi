@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 24852B9A-5156-41BB-87F9-81B147A85AC2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlGetSupportedFeatures, ntifs/FsRtlGetSupportedFeatures, FsRtlGetSupportedFeatures routine [Installable File System Drivers], SUPPORTED_FS_FEATURES_OFFLOAD_READ, SUPPORTED_FS_FEATURES_OFFLOAD_WRITE, ifsk.fsrtlgetsupportedfeatures
+ms.keywords : FsRtlGetSupportedFeatures routine [Installable File System Drivers], SUPPORTED_FS_FEATURES_OFFLOAD_READ, ntifs/FsRtlGetSupportedFeatures, SUPPORTED_FS_FEATURES_OFFLOAD_WRITE, ifsk.fsrtlgetsupportedfeatures, FsRtlGetSupportedFeatures
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -137,5 +137,5 @@ The device object specified by <i>DeviceObject</i> is not in a file system devic
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |

@@ -8,14 +8,14 @@ old-project : bltooth
 ms.assetid : 26c71c08-3b9a-474f-a232-d7f675582d27
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : SdpFindAttributeInTree, bltooth.sdpfindattributeintree, bth_funcs_8daefa96-6201-462a-9c91-485c5f9eaa98.xml, sdplib/SdpFindAttributeInTree, SdpFindAttributeInTree function [Bluetooth Devices]
+ms.keywords : SdpFindAttributeInTree, bth_funcs_8daefa96-6201-462a-9c91-485c5f9eaa98.xml, bltooth.sdpfindattributeintree, SdpFindAttributeInTree function [Bluetooth Devices], sdplib/SdpFindAttributeInTree
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
 req.header : sdplib.h
 req.include-header : BthSdpddi.h
 req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
@@ -93,7 +93,7 @@ Bluetooth profile drivers can obtain a pointer to this function through the
 | **Minimum UMDF version** |  |
 | **Header** | sdplib.h (include BthSdpddi.h) |
 | **Library** |  |
-| **IRQL** | <= PASSIVE_LEVEL |
+| **IRQL** | "<= PASSIVE_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

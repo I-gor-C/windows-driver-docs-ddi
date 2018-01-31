@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7f7eac7e-f512-4446-a83b-92d313c14420
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisInitializeEvent function [Network Drivers Starting with Windows Vista], NdisInitializeEvent, ndis/NdisInitializeEvent, ndis_event_ref_35523d4a-3084-43ea-9dc0-6e9017b9ed22.xml, netvista.ndisinitializeevent
+ms.keywords : NdisInitializeEvent function [Network Drivers Starting with Windows Vista], netvista.ndisinitializeevent, NdisInitializeEvent, ndis/NdisInitializeEvent, ndis_event_ref_35523d4a-3084-43ea-9dc0-6e9017b9ed22.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -96,13 +96,13 @@ While driver functions that must run at IRQL &lt;= DISPATCH_LEVEL can call the
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+<a href="..\ndis\nf-ndis-ndisresetevent.md">NdisResetEvent</a>
 
 <a href="..\ndis\nf-ndis-ndissetevent.md">NdisSetEvent</a>
 
 <a href="..\ndis\nf-ndis-ndiswaitevent.md">NdisWaitEvent</a>
 
-<a href="..\ndis\nf-ndis-ndisresetevent.md">NdisResetEvent</a>
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
  
 

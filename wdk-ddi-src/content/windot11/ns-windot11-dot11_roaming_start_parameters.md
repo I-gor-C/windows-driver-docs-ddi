@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 23a0eabc-9eac-4375-b2ca-66b70deaba82
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : Native_802.11_data_types_7635397d-74dc-44d0-af58-47048361367d.xml, windot11/PDOT11_ROAMING_START_PARAMETERS, windot11/DOT11_ROAMING_START_PARAMETERS, PDOT11_ROAMING_START_PARAMETERS, PDOT11_ROAMING_START_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], DOT11_ROAMING_START_PARAMETERS structure [Network Drivers Starting with Windows Vista], netvista.dot11_roaming_start_parameters, DOT11_ROAMING_START_PARAMETERS, *PDOT11_ROAMING_START_PARAMETERS
+ms.keywords : Native_802.11_data_types_7635397d-74dc-44d0-af58-47048361367d.xml, windot11/PDOT11_ROAMING_START_PARAMETERS, DOT11_ROAMING_START_PARAMETERS structure [Network Drivers Starting with Windows Vista], windot11/DOT11_ROAMING_START_PARAMETERS, PDOT11_ROAMING_START_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_ROAMING_START_PARAMETERS, PDOT11_ROAMING_START_PARAMETERS, netvista.dot11_roaming_start_parameters, DOT11_ROAMING_START_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_ROAMING_START_PARAMETERS, DOT11_ROAMING_START_PARAMETERS"
+req.typenames : DOT11_ROAMING_START_PARAMETERS, *PDOT11_ROAMING_START_PARAMETERS
 req.product : Windows 10 or later.
 ---
 
@@ -109,6 +109,22 @@ The miniport driver must set the members of
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
+
+#### Type
+
+This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
+
+
+#### Revision
+
+This member must be set to DOT11_ROAMING_START_PARAMETERS_REVISION_1.
+
+
+#### Size
+
+This member must be set to 
+       sizeof(DOT11_ROAMING_START_PARAMETERS).
+
 `uRoamingReason`
 
 The reason that the 802.11 station is roaming, which is formatted as a 
@@ -128,17 +144,17 @@ For more information about the roaming operation, see
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547652">DOT11_ASSOC_STATUS</a>
+<a href="..\windot11\ns-windot11-_dot11_mac_address.md">DOT11_MAC_ADDRESS</a>
 
 <a href="..\wlantypes\ns-wlantypes-_dot11_ssid.md">DOT11_SSID</a>
 
-<a href="..\windot11\ns-windot11-_dot11_mac_address.md">DOT11_MAC_ADDRESS</a>
-
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-desired-bss-type">OID_DOT11_DESIRED_BSS_TYPE</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567360">NDIS_STATUS_DOT11_ROAMING_START</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547652">DOT11_ASSOC_STATUS</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
  
 

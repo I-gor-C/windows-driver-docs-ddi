@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5469c6aa-90df-4379-b670-23aaa6919055
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : virtual_machine_queue_ref_afe96cc4-b307-4953-9587-65b6bec35b18.xml, ndis/NdisGetHypervisorInfo, NdisGetHypervisorInfo function [Network Drivers Starting with Windows Vista], netvista.ndisgethypervisorinfo, NdisGetHypervisorInfo
+ms.keywords : netvista.ndisgethypervisorinfo, virtual_machine_queue_ref_afe96cc4-b307-4953-9587-65b6bec35b18.xml, ndis/NdisGetHypervisorInfo, NdisGetHypervisorInfo, NdisGetHypervisorInfo function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -139,7 +139,7 @@ If another vendor's hypervisor is present, the <b>PartitionType</b> member is se
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b3318695-e9f2-480a-9133-9008ef0002b7
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDevice, ConfigureRequestDispatching, wdf.iwdfdevice_configurerequestdispatching, IWDFDevice::ConfigureRequestDispatching, umdf.iwdfdevice_configurerequestdispatching, ConfigureRequestDispatching method, IWDFDevice interface, UMDFDeviceObjectRef_1fbf31c6-856c-45d2-aa86-3b36372821c8.xml, wudfddi/IWDFDevice::ConfigureRequestDispatching, ConfigureRequestDispatching method, IWDFDevice interface, ConfigureRequestDispatching method
+ms.keywords : UMDFDeviceObjectRef_1fbf31c6-856c-45d2-aa86-3b36372821c8.xml, wdf.iwdfdevice_configurerequestdispatching, ConfigureRequestDispatching method, IWDFDevice interface, IWDFDevice, umdf.iwdfdevice_configurerequestdispatching, ConfigureRequestDispatching method, ConfigureRequestDispatching, IWDFDevice::ConfigureRequestDispatching, IWDFDevice interface, ConfigureRequestDispatching method, wudfddi/IWDFDevice::ConfigureRequestDispatching
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -89,11 +89,11 @@ A BOOL value that specifies whether requests of the specified type are queued. <
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
 
-<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
 
  
 

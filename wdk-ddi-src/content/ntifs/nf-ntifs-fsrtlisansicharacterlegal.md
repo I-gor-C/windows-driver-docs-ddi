@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e270e4a9-90dc-4e9b-abdf-079c331ad71c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/FsRtlIsAnsiCharacterLegal, ifsk.fsrtlisansicharacterlegal, fsrtlref_dad0349c-b705-4a0a-a1ea-359517e65eae.xml, FsRtlIsAnsiCharacterLegal function [Installable File System Drivers], FsRtlIsAnsiCharacterLegal
+ms.keywords : fsrtlref_dad0349c-b705-4a0a-a1ea-359517e65eae.xml, ntifs/FsRtlIsAnsiCharacterLegal, FsRtlIsAnsiCharacterLegal, FsRtlIsAnsiCharacterLegal function [Installable File System Drivers], ifsk.fsrtlisansicharacterlegal
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -86,9 +86,9 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegalhpfs.md">FsRtlIsAnsiCharacterLegalHpfs</a>
-
 <a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegalntfs.md">FsRtlIsAnsiCharacterLegalNtfs</a>
+
+<a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegalhpfs.md">FsRtlIsAnsiCharacterLegalHpfs</a>
 
 <a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegalfat.md">FsRtlIsAnsiCharacterLegalFat</a>
 

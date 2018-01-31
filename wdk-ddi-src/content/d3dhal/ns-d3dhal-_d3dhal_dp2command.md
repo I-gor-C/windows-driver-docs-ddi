@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dhal._D3DHAL_DP2COMMAND
-title : _D3DHAL_DP2COMMAND
+title : "_D3DHAL_DP2COMMAND"
 author : windows-driver-content
 description : One or more D3DHAL_DP2COMMAND structures are parsed from the command buffer by the D3dDrawPrimitives2 callback, which uses the information it receives to draw one or more primitives.
 old-location : display\d3dhal_dp2command.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3fa32e5c-32d5-4e26-82b5-45dbf5389f2b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "*LPD3DHAL_DP2COMMAND, display.d3dhal_dp2command, d3dhal/D3DHAL_DP2COMMAND, D3DHAL_DP2COMMAND, LPD3DHAL_DP2COMMAND structure pointer [Display Devices], D3DHAL_DP2COMMAND structure [Display Devices], d3dstrct_9497e802-c325-4d08-ba6c-f482d17da6c5.xml, _D3DHAL_DP2COMMAND, d3dhal/LPD3DHAL_DP2COMMAND, LPD3DHAL_DP2COMMAND"
+ms.keywords : LPD3DHAL_DP2COMMAND, d3dhal/LPD3DHAL_DP2COMMAND, display.d3dhal_dp2command, D3DHAL_DP2COMMAND structure [Display Devices], d3dhal/D3DHAL_DP2COMMAND, D3DHAL_DP2COMMAND, _D3DHAL_DP2COMMAND, *LPD3DHAL_DP2COMMAND, d3dstrct_9497e802-c325-4d08-ba6c-f482d17da6c5.xml, LPD3DHAL_DP2COMMAND structure pointer [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : D3DHAL_DP2COMMAND, *LPD3DHAL_DP2COMMAND
+req.typenames : "*LPD3DHAL_DP2COMMAND, D3DHAL_DP2COMMAND"
 ---
 
 # _D3DHAL_DP2COMMAND structure
@@ -75,13 +75,13 @@ Reserved for system use and should be ignored by the driver.
 
 ## See Also
 
-D3DDP2OP_RENDERSTATE
-
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 
-<a href="..\d3dhal\ne-d3dhal-_d3dhal_dp2operation.md">D3DHAL_DP2OPERATION</a>
-
 D3DDP2OP_TEXTURESTAGESTATE
+
+D3DDP2OP_RENDERSTATE
+
+<a href="..\d3dhal\ne-d3dhal-_d3dhal_dp2operation.md">D3DHAL_DP2OPERATION</a>
 
  
 

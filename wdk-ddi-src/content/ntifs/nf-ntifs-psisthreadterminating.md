@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2b82b060-79ea-4add-b559-af37c954537e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/PsIsThreadTerminating, PsIsThreadTerminating routine [Installable File System Drivers], psref_55824a18-3df1-4d43-bc9c-77da8ee6cf6c.xml, ifsk.psisthreadterminating, PsIsThreadTerminating
+ms.keywords : psref_55824a18-3df1-4d43-bc9c-77da8ee6cf6c.xml, ntifs/PsIsThreadTerminating, PsIsThreadTerminating, PsIsThreadTerminating routine [Installable File System Drivers], ifsk.psisthreadterminating
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,7 +74,7 @@ For more information about using system threads and managing synchronization wit
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

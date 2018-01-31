@@ -73,6 +73,19 @@ A handle to the call manager's AF context area that the call manager supplied to
 
 The clients final status for the AF close notification. 
      <i>Status</i> can be one of the following:
+     
+
+
+
+
+#### NDIS_STATUS_SUCCESS
+
+The client successfully closed its address family.
+
+
+#### NDIS_STATUS_XXX
+
+The client failed the request for some driver-determined reason.
 
 
 ## Return Value
@@ -140,7 +153,7 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
@@ -148,10 +161,10 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 <mshelp:link keywords="netvista.ndismcmnotifycloseaddressfamily" tabindex="0"><b>
    NdisMCmNotifyCloseAddressFamily</b></mshelp:link>
 
-<a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a>
-
 <mshelp:link keywords="netvista.ndiscmnotifycloseaddressfamily" tabindex="0"><b>
    NdisCmNotifyCloseAddressFamily</b></mshelp:link>
+
+<a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a>
 
  
 

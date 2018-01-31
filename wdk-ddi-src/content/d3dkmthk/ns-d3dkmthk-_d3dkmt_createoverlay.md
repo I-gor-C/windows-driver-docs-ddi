@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmthk._D3DKMT_CREATEOVERLAY
-title : _D3DKMT_CREATEOVERLAY
+title : "_D3DKMT_CREATEOVERLAY"
 author : windows-driver-content
 description : The D3DKMT_CREATEOVERLAY structure describes overlay hardware.
 old-location : display\d3dkmt_createoverlay.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b020b06c-72e2-4322-a5db-fcfc46db429e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_createoverlay, _D3DKMT_CREATEOVERLAY, OpenGL_Structs_0e2cd78f-0999-48a3-8a7d-329ddb46b46f.xml, D3DKMT_CREATEOVERLAY, d3dkmthk/D3DKMT_CREATEOVERLAY, D3DKMT_CREATEOVERLAY structure [Display Devices]
+ms.keywords : D3DKMT_CREATEOVERLAY, D3DKMT_CREATEOVERLAY structure [Display Devices], d3dkmthk/D3DKMT_CREATEOVERLAY, OpenGL_Structs_0e2cd78f-0999-48a3-8a7d-329ddb46b46f.xml, display.d3dkmt_createoverlay, _D3DKMT_CREATEOVERLAY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

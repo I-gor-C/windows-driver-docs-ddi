@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 00f776f7-83c5-4856-a1d3-8b76122d3986
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : Clfs_d8f1a522-ef50-47fe-bd39-f18f2f176a3b.xml, kernel.clfsadvancelogbase, ClfsAdvanceLogBase, ClfsAdvanceLogBase routine [Kernel-Mode Driver Architecture], wdm/ClfsAdvanceLogBase
+ms.keywords : Clfs_d8f1a522-ef50-47fe-bd39-f18f2f176a3b.xml, ClfsAdvanceLogBase routine [Kernel-Mode Driver Architecture], kernel.clfsadvancelogbase, ClfsAdvanceLogBase, wdm/ClfsAdvanceLogBase
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,7 +91,7 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

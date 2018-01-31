@@ -1,6 +1,6 @@
 ---
 UID : NS:bthddi._BRB_L2CA_OPEN_ENHANCED_CHANNEL
-title : _BRB_L2CA_OPEN_ENHANCED_CHANNEL
+title : "_BRB_L2CA_OPEN_ENHANCED_CHANNEL"
 author : windows-driver-content
 description : The _BRB_L2CA_OPEN_ENHANCED_CHANNEL structure is used to open an enhanced L2CAP channel to a remote device, or send a response for accepting/rejecting an incoming enhanced L2CAP connection request that was initiated by a remote device.
 old-location : bltooth\_brb_l2ca_open_enhanced_channel.htm
@@ -8,14 +8,14 @@ old-project : bltooth
 ms.assetid : 34CA2A3E-871F-46D4-962A-8EE8D7B8DA15
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : bltooth._brb_l2ca_open_enhanced_channel, BRB_L2CA_OPEN_ENHANCED_CHANNEL structure [Bluetooth Devices], PBRB_L2CA_OPEN_ENHANCED_CHANNEL, bthddi/_BRB_L2CA_OPEN_ENHANCED_CHANNEL, bltooth.brb_l2ca_open_enhanced_channel, BRB_L2CA_OPEN_ENHANCED_CHANNEL, _BRB_L2CA_OPEN_ENHANCED_CHANNEL, bthddi/PBRB_L2CA_OPEN_ENHANCED_CHANNEL, _BRB_L2CA_OPEN_ENHANCED_CHANNEL structure [Bluetooth Devices], PBRB_L2CA_OPEN_ENHANCED_CHANNEL structure pointer [Bluetooth Devices]
+ms.keywords : "_BRB_L2CA_OPEN_ENHANCED_CHANNEL, PBRB_L2CA_OPEN_ENHANCED_CHANNEL structure pointer [Bluetooth Devices], _BRB_L2CA_OPEN_ENHANCED_CHANNEL structure [Bluetooth Devices], bthddi/PBRB_L2CA_OPEN_ENHANCED_CHANNEL, BRB_L2CA_OPEN_ENHANCED_CHANNEL, BRB_L2CA_OPEN_ENHANCED_CHANNEL structure [Bluetooth Devices], bltooth.brb_l2ca_open_enhanced_channel, PBRB_L2CA_OPEN_ENHANCED_CHANNEL, bthddi/_BRB_L2CA_OPEN_ENHANCED_CHANNEL, bltooth._brb_l2ca_open_enhanced_channel"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows 8 and later versions of Windows
+req.target-min-winverclnt : Versions:\_Supported in Windows 8 and later versions of Windows
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
@@ -231,7 +231,11 @@ The profile driver indicates its preference that users not be prompted for a PIN
 
 `ChannelHandle`
 
+#### 
 
+
+
+####
 
 `ConfigIn`
 

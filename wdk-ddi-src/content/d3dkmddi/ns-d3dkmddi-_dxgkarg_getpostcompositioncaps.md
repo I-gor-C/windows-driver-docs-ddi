@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmddi._DXGKARG_GETPOSTCOMPOSITIONCAPS
-title : _DXGKARG_GETPOSTCOMPOSITIONCAPS
+title : "_DXGKARG_GETPOSTCOMPOSITIONCAPS"
 author : windows-driver-content
 description : Arguments for the DxgkDdiGetPostCompositionCaps function.
 old-location : display\dxgkarg_getpostcompositioncaps.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0C8A0F83-9D12-46F1-A8B1-3BCF219A3BF7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGKARG_GETPOSTCOMPOSITIONCAPS, display.dxgkarg_getpostcompositioncaps, _DXGKARG_GETPOSTCOMPOSITIONCAPS, DXGKARG_GETPOSTCOMPOSITIONCAPS, *IN_OUT_PDXGKARG_GETPOSTCOMPOSITIONCAPS, DXGKARG_GETPOSTCOMPOSITIONCAPS structure [Display Devices]
+ms.keywords : d3dkmddi/DXGKARG_GETPOSTCOMPOSITIONCAPS, _DXGKARG_GETPOSTCOMPOSITIONCAPS, DXGKARG_GETPOSTCOMPOSITIONCAPS, *IN_OUT_PDXGKARG_GETPOSTCOMPOSITIONCAPS, display.dxgkarg_getpostcompositioncaps, DXGKARG_GETPOSTCOMPOSITIONCAPS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

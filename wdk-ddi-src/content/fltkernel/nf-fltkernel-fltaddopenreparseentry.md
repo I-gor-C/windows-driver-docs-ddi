@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : D58AB46A-0D87-45B5-8C58-E99ED0F906D2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fltkernel/FltAddOpenReparseEntry, FltAddOpenReparseEntry, ifsk.fltaddopenreparseentry, FltAddOpenReparseEntry routine [Installable File System Drivers]
+ms.keywords : FltAddOpenReparseEntry, fltkernel/FltAddOpenReparseEntry, ifsk.fltaddopenreparseentry, FltAddOpenReparseEntry routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : NtosKrnl.exe
 req.dll : 
-req.irql : _IRQL_requires_max_(APC_LEVEL)
+req.irql : "_IRQL_requires_max_(APC_LEVEL)"
 topictype : 
 apitype : 
 apilocation : 
@@ -116,7 +116,7 @@ Use <a href="..\fltkernel\nf-fltkernel-fltremoveopenreparseentry.md">FltRemoveOp
 | **Minimum UMDF version** |  |
 | **Header** | fltkernel.h |
 | **Library** |  |
-| **IRQL** | _IRQL_requires_max_(APC_LEVEL) |
+| **IRQL** | "_IRQL_requires_max_(APC_LEVEL)" |
 | **DDI compliance rules** |  |
 
 ## See Also

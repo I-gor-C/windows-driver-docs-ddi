@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : a78acf5d-07ec-487c-97bd-daca8d08863c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMGetOffloadHandlers function [Network Drivers Starting with Windows Vista], NdisMGetOffloadHandlers, netvista.ndismgetoffloadhandlers, tcp_chim_ndis_func_6cfee4fb-432c-4f03-b28d-947dbc95ae48.xml, ndischimney/NdisMGetOffloadHandlers
+ms.keywords : ndischimney/NdisMGetOffloadHandlers, NdisMGetOffloadHandlers, netvista.ndismgetoffloadhandlers, NdisMGetOffloadHandlers function [Network Drivers Starting with Windows Vista], tcp_chim_ndis_func_6cfee4fb-432c-4f03-b28d-947dbc95ae48.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,6 +75,11 @@ A chimney type that is one of the following NDIS_CHIMNEY_OFFLOAD_TYPE values:
 
 All other NDIS_CHIMNEY_OFFLOAD_TYPE values are currently reserved.
 
+
+#### NdisTcpChimneyOffload
+
+The TCP chimney offload type.
+
 `OffloadHandlers`
 
 A pointer to a variable supplied by the offload target. The size of this variable is 
@@ -96,6 +101,14 @@ A pointer to a variable supplied by the offload target. The size of this variabl
 </td>
 </tr>
 </table></span></div>This structure contains the following member:
+
+
+
+
+#### Header
+
+Specifies an NDIS object header, which is formatted as an 
+       <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 
 ## Return Value
@@ -205,12 +218,12 @@ The offload target copies the entry points from the chimney-specific structure i
 
 <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
 <mshelp:link keywords="netvista.ndis_tcp_offload_event_handlers" tabindex="0"><b>
    NDIS_TCP_OFFLOAD_EVENT_HANDLERS</b></mshelp:link>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
  
 

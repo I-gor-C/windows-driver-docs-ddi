@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dhal._DD_GETEXTENDEDMODEDATA
-title : _DD_GETEXTENDEDMODEDATA
+title : "_DD_GETEXTENDEDMODEDATA"
 author : windows-driver-content
 description : DirectX 9.0 and later versions only. DD_GETEXTENDEDMODEDATA is the data structure pointed to by the lpvData field of DD_GETDRIVERINFODATA for DD_GETDRIVERINFO2DATA queries with the type D3DGDI2_TYPE_GETEXTENDEDMODE.
 old-location : display\dd_getextendedmodedata.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 50b2a1fd-4214-4ad8-b087-f48c14dbe587
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dhal/DD_GETEXTENDEDMODEDATA, d3dstrct_a39e1e5a-9b07-48eb-a7c6-40bcac8a21d6.xml, DD_GETEXTENDEDMODEDATA structure [Display Devices], display.dd_getextendedmodedata, _DD_GETEXTENDEDMODEDATA, DD_GETEXTENDEDMODEDATA
+ms.keywords : d3dhal/DD_GETEXTENDEDMODEDATA, DD_GETEXTENDEDMODEDATA structure [Display Devices], _DD_GETEXTENDEDMODEDATA, display.dd_getextendedmodedata, DD_GETEXTENDEDMODEDATA, d3dstrct_a39e1e5a-9b07-48eb-a7c6-40bcac8a21d6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -85,11 +85,11 @@ For more information about D3DDISPLAYMODE, see the DirectX SDK documentation.
 
 ## See Also
 
-<a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551550">DD_GETDRIVERINFODATA</a>
 
 <a href="..\d3dhal\ns-d3dhal-_dd_getextendedmodecountdata.md">DD_GETEXTENDEDMODECOUNTDATA</a>
+
+<a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a>
 
  
 

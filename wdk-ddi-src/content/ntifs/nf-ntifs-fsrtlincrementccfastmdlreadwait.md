@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a3a811dc-1dbf-4656-b7ec-bad818f6d1f1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fsrtlref_6ab13976-a131-41bf-970c-f2a554d87d92.xml, ifsk.fsrtlincrementccfastmdlreadwait, ntifs/FsRtlIncrementCcFastMdlReadWait, FsRtlIncrementCcFastMdlReadWait, FsRtlIncrementCcFastMdlReadWait routine [Installable File System Drivers]
+ms.keywords : FsRtlIncrementCcFastMdlReadWait routine [Installable File System Drivers], fsrtlref_6ab13976-a131-41bf-970c-f2a554d87d92.xml, ifsk.fsrtlincrementccfastmdlreadwait, FsRtlIncrementCcFastMdlReadWait, ntifs/FsRtlIncrementCcFastMdlReadWait
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,7 +77,7 @@ File system drivers should not increment the <b>CcFastMdlReadWait</b> performanc
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include FltKernel.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

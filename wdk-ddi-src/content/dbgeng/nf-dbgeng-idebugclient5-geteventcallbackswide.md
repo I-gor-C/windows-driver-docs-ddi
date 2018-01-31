@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 254eb89f-c330-4fca-8c58-6dbe56861743
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugClient5 interface [Windows Debugging], GetEventCallbacksWide method, GetEventCallbacksWide, IDebugClient5::GetEventCallbacksWide, GetEventCallbacksWide method [Windows Debugging], dbgeng/IDebugClient5::GetEventCallbacksWide, GetEventCallbacksWide method [Windows Debugging], IDebugClient5 interface, IDebugClient5, debugger.geteventcallbackswide
+ms.keywords : GetEventCallbacksWide method [Windows Debugging], IDebugClient5::GetEventCallbacksWide, GetEventCallbacksWide, dbgeng/IDebugClient5::GetEventCallbacksWide, GetEventCallbacksWide method [Windows Debugging], IDebugClient5 interface, debugger.geteventcallbackswide, IDebugClient5 interface [Windows Debugging], GetEventCallbacksWide method, IDebugClient5
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -102,11 +102,11 @@ For more information about callbacks, see <a href="https://msdn.microsoft.com/90
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugeventcallbacks.md">IDebugEventCallbacks</a>
+<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556671">SetEventCallbacks</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
+<a href="..\dbgeng\nn-dbgeng-idebugeventcallbacks.md">IDebugEventCallbacks</a>
 
  
 

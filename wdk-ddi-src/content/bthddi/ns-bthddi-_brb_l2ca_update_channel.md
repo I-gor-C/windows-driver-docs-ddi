@@ -1,6 +1,6 @@
 ---
 UID : NS:bthddi._BRB_L2CA_UPDATE_CHANNEL
-title : _BRB_L2CA_UPDATE_CHANNEL
+title : "_BRB_L2CA_UPDATE_CHANNEL"
 author : windows-driver-content
 description : The _BRB_L2CA_UPDATE_CHANNEL structure describes an update to the link characteristics of an open L2CAP channel to a remote device or to ascertain when certain channel attributes have changed.
 old-location : bltooth\_brb_l2ca_update_channel.htm
@@ -8,14 +8,14 @@ old-project : bltooth
 ms.assetid : 0186dc75-6d37-4adb-8337-6daa634bd936
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BRB_L2CA_UPDATE_CHANNEL, _BRB_L2CA_UPDATE_CHANNEL structure [Bluetooth Devices], bthddi/_BRB_L2CA_UPDATE_CHANNEL, bth_structs_7ee8d85e-5cf3-4820-a325-6abe0777b22a.xml, bltooth._brb_l2ca_update_channel
+ms.keywords : "_BRB_L2CA_UPDATE_CHANNEL, bthddi/_BRB_L2CA_UPDATE_CHANNEL, bth_structs_7ee8d85e-5cf3-4820-a325-6abe0777b22a.xml, _BRB_L2CA_UPDATE_CHANNEL structure [Bluetooth Devices], bltooth._brb_l2ca_update_channel"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
@@ -115,14 +115,14 @@ By building and sending a <b>BRB_L2CA_UPDATE_CHANNEL</b> request, profile driver
 
 ## See Also
 
-<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536620">BRB_L2CA_UPDATE_CHANNEL</a>
+<mshelp:link keywords="bltooth.brb_l2ca_open_channel_response" tabindex="0"><b>
+   BRB_L2CA_OPEN_CHANNEL_RESPONSE</b></mshelp:link>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536615">BRB_L2CA_OPEN_CHANNEL</a>
 
-<mshelp:link keywords="bltooth.brb_l2ca_open_channel_response" tabindex="0"><b>
-   BRB_L2CA_OPEN_CHANNEL_RESPONSE</b></mshelp:link>
+<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536620">BRB_L2CA_UPDATE_CHANNEL</a>
 
  
 

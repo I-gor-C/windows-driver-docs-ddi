@@ -1,6 +1,6 @@
 ---
 UID : NS:ntdddisk._DISK_DETECTION_INFO
-title : _DISK_DETECTION_INFO
+title : "_DISK_DETECTION_INFO"
 author : windows-driver-content
 description : The DISK_DETECTION_INFO structure contains the detected drive parameters that are supplied by an x86 PC BIOS on boot.
 old-location : storage\disk_detection_info.htm
@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 67a508cf-79c4-4c86-9ad3-fa7cca99cf5f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DISK_DETECTION_INFO, DISK_DETECTION_INFO structure [Storage Devices], DISK_DETECTION_INFO, ntdddisk/DISK_DETECTION_INFO, PDISK_DETECTION_INFO structure pointer [Storage Devices], PDISK_DETECTION_INFO, *PDISK_DETECTION_INFO, structs-disk_04ca1cb1-3995-47d9-9b5a-0e54ea98dbd6.xml, storage.disk_detection_info, ntdddisk/PDISK_DETECTION_INFO
+ms.keywords : PDISK_DETECTION_INFO structure pointer [Storage Devices], DISK_DETECTION_INFO structure [Storage Devices], storage.disk_detection_info, PDISK_DETECTION_INFO, _DISK_DETECTION_INFO, ntdddisk/DISK_DETECTION_INFO, ntdddisk/PDISK_DETECTION_INFO, DISK_DETECTION_INFO, structs-disk_04ca1cb1-3995-47d9-9b5a-0e54ea98dbd6.xml, *PDISK_DETECTION_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -95,11 +95,11 @@ Contains the quantity, in bytes, of retrieved detect information.
 
 ## See Also
 
+<a href="..\ntdddisk\ns-ntdddisk-_disk_geometry_ex.md">DISK_GEOMETRY_EX</a>
+
 <a href="..\ntdddisk\ns-ntdddisk-_disk_int13_info.md">DISK_INT13_INFO</a>
 
 <a href="..\ntdddisk\ns-ntdddisk-_disk_ex_int13_info.md">DISK_EX_INT13_INFO</a>
-
-<a href="..\ntdddisk\ns-ntdddisk-_disk_geometry_ex.md">DISK_GEOMETRY_EX</a>
 
  
 

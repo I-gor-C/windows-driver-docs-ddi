@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2c7d31a3-081a-420a-ab61-33700155d858
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfusbtargetdevicegetinterface, WdfUsbTargetDeviceGetInterface method, PFN_WDFUSBTARGETDEVICEGETINTERFACE, DFUsbRef_b2c7b272-fe4a-4422-9e98-e756cdf3f264.xml, wdf.wdfusbtargetdevicegetinterface, wdfusb/WdfUsbTargetDeviceGetInterface, WdfUsbTargetDeviceGetInterface
+ms.keywords : WdfUsbTargetDeviceGetInterface, wdfusb/WdfUsbTargetDeviceGetInterface, PFN_WDFUSBTARGETDEVICEGETINTERFACE, WdfUsbTargetDeviceGetInterface method, wdf.wdfusbtargetdevicegetinterface, kmdf.wdfusbtargetdevicegetinterface, DFUsbRef_b2c7b272-fe4a-4422-9e98-e756cdf3f264.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
+req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
 
@@ -84,7 +84,7 @@ For more information about the <b>WdfUsbTargetDeviceGetInterface</b> method and 
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2 |
 
 ## See Also

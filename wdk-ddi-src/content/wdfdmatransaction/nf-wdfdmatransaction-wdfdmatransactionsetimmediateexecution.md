@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : BC260058-1E33-43BA-B75E-79540E36A08D
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdmatransactionsetimmediateexecution, wdfdmatransaction/WdfDmaTransactionSetImmediateExecution, PFN_WDFDMATRANSACTIONSETIMMEDIATEEXECUTION, WdfDmaTransactionSetImmediateExecution, kmdf.wdfdmatransactionsetimmediateexecution, WdfDmaTransactionSetImmediateExecution method
+ms.keywords : WdfDmaTransactionSetImmediateExecution, kmdf.wdfdmatransactionsetimmediateexecution, WdfDmaTransactionSetImmediateExecution method, wdfdmatransaction/WdfDmaTransactionSetImmediateExecution, PFN_WDFDMATRANSACTIONSETIMMEDIATEEXECUTION, wdf.wdfdmatransactionsetimmediateexecution
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_DMA_SYSTEM_PROFILE_CONFIG, *PWDF_DMA_SYSTEM_PROFILE_CONFIG
+req.typenames : "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
 req.product : Windows 10 or later.
 ---
 
@@ -92,16 +92,16 @@ If your driver calls this method on an operating system earlier than Windows 8,
 | **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 
 ## See Also
 
-<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionrelease.md">WdfDmaTransactionRelease</a>
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionallocateresources.md">WdfDmaTransactionAllocateResources</a>
 
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionexecute.md">WdfDmaTransactionExecute</a>
 
-<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionallocateresources.md">WdfDmaTransactionAllocateResources</a>
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionrelease.md">WdfDmaTransactionRelease</a>
 
  
 

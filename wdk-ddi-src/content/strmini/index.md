@@ -62,19 +62,19 @@ strmini.h contains the following programming interfaces:
 | [_HW_STREAM_REQUEST_BLOCK](ns-strmini-_hw_stream_request_block.md) | The stream class driver uses the HW_STREAM_REQUEST_BLOCK structure to pass information to and from the minidriver, using minidriver provided callbacks. |
 | [_HW_TIME_CONTEXT](ns-strmini-_hw_time_context.md) | The class driver passes an HW_TIME_CONTEXT structure as a parameter to be filled in by a stream's StrMiniClock routine, or returns a completed HW_TIME_CONTEXT structure when it responds to a StreamClassQueryMasterClock or StreamClassQueryMasterClockSync request. |
 | [_STREAM_DATA_INTERSECT_INFO](ns-strmini-_stream_data_intersect_info.md) | STREAM_DATA_INTERSECT_INFO describes the parameters of a data intersection operation. |
-| [_STREAM_METHOD_DESCRIPTOR](ns-strmini-_stream_method_descriptor.md) | . |
+| [_STREAM_METHOD_DESCRIPTOR](ns-strmini-_stream_method_descriptor.md) | "." |
 | [_STREAM_PROPERTY_DESCRIPTOR](ns-strmini-_stream_property_descriptor.md) | STREAM_PROPERTY_DESCRIPTOR specifies the parameters of property get/set requests that the class driver passes to the minidriver. |
-| [_STREAM_TIME_REFERENCE](ns-strmini-_stream_time_reference.md) | . |
-| [KSSCATTER_GATHER](ns-strmini-ksscatter_gather.md) | . |
+| [_STREAM_TIME_REFERENCE](ns-strmini-_stream_time_reference.md) | "." |
+| [KSSCATTER_GATHER](ns-strmini-ksscatter_gather.md) | "." |
 
 
 ## Enumerations
 | Title | Description |
 | ---- |:---- |
-| [_SRB_COMMAND](ne-strmini-_srb_command.md) | . |
-| [_STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE](ne-strmini-_stream_minidriver_device_notification_type.md) | . |
-| [_STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE](ne-strmini-_stream_minidriver_stream_notification_type.md) | . |
+| [_SRB_COMMAND](ne-strmini-_srb_command.md) | "." |
+| [_STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE](ne-strmini-_stream_minidriver_device_notification_type.md) | "." |
+| [_STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE](ne-strmini-_stream_minidriver_stream_notification_type.md) | "." |
 | [_STREAM_PRIORITY](ne-strmini-_stream_priority.md) | TD. |
 | [STREAM_BUFFER_TYPE](ne-strmini-stream_buffer_type.md) | This enumeration defines the buffer types for StreamClassGetPhysicalAddress. |
 | [STREAM_DEBUG_LEVEL](ne-strmini-stream_debug_level.md) | The STREAM_DEBUG_LEVEL enumeration lists incrementally increasing levels of debugger output. |
-| [TIME_FUNCTION](ne-strmini-time_function.md) | . |
+| [TIME_FUNCTION](ne-strmini-time_function.md) | "." |

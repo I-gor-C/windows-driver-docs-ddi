@@ -1,6 +1,6 @@
 ---
 UID : NS:pepfx._PEP_ACPI_EVALUATE_CONTROL_METHOD
-title : _PEP_ACPI_EVALUATE_CONTROL_METHOD
+title : "_PEP_ACPI_EVALUATE_CONTROL_METHOD"
 author : windows-driver-content
 description : The PEP_ACPI_EVALUATE_CONTROL_METHOD structure specifies an ACPI control method to evaluate, an input argument to supply to this method, and an output buffer for the result of the evaluation.
 old-location : kernel\pep_acpi_evaluate_control_method.htm
@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : FFCC5947-1DD5-4AD5-A414-94BDC013D1A7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PPEP_ACPI_EVALUATE_CONTROL_METHOD, PEP_ACPI_EVALUATE_CONTROL_METHOD structure [Kernel-Mode Driver Architecture], _PEP_ACPI_EVALUATE_CONTROL_METHOD, *PPEP_ACPI_EVALUATE_CONTROL_METHOD, PEP_ACPI_EVALUATE_CONTROL_METHOD, kernel.pep_acpi_evaluate_control_method, pepfx/PPEP_ACPI_EVALUATE_CONTROL_METHOD, pepfx/PEP_ACPI_EVALUATE_CONTROL_METHOD, PPEP_ACPI_EVALUATE_CONTROL_METHOD structure pointer [Kernel-Mode Driver Architecture]
+ms.keywords : PPEP_ACPI_EVALUATE_CONTROL_METHOD, PPEP_ACPI_EVALUATE_CONTROL_METHOD structure pointer [Kernel-Mode Driver Architecture], pepfx/PPEP_ACPI_EVALUATE_CONTROL_METHOD, *PPEP_ACPI_EVALUATE_CONTROL_METHOD, pepfx/PEP_ACPI_EVALUATE_CONTROL_METHOD, _PEP_ACPI_EVALUATE_CONTROL_METHOD, kernel.pep_acpi_evaluate_control_method, PEP_ACPI_EVALUATE_CONTROL_METHOD structure [Kernel-Mode Driver Architecture], PEP_ACPI_EVALUATE_CONTROL_METHOD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -141,13 +141,13 @@ This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
-
 <a href="..\acpiioct\ns-acpiioct-_acpi_method_argument_v1.md">ACPI_METHOD_ARGUMENT</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186689">PEP_NOTIFY_ACPI_REGISTER_DEVICE</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186659">PEP_NOTIFY_ACPI_EVALUATE_CONTROL_METHOD</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
 
  
 

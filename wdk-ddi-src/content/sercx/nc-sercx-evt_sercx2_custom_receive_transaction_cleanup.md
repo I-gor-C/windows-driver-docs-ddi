@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR"
+req.typenames : SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
 req.product : Windows 10 or later.
 ---
 
@@ -87,9 +87,9 @@ For more information, see <a href="https://msdn.microsoft.com/29849A8C-6656-444C
 
 ## See Also
 
-<a href="..\sercx\nf-sercx-sercx2customreceivetransactioncleanupcomplete.md">SerCx2CustomReceiveTransactionCleanupComplete</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn265249">SERCX2CUSTOMRECEIVETRANSACTION</a>
+
+<a href="..\sercx\nf-sercx-sercx2customreceivetransactioncleanupcomplete.md">SerCx2CustomReceiveTransactionCleanupComplete</a>
 
 <a href="..\sercx\nf-sercx-sercx2customreceivetransactioncreate.md">SerCx2CustomReceiveTransactionCreate</a>
 

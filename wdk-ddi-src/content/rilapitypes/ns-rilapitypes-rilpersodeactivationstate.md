@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : fb8950ef-7e46-45eb-b23f-5431488e1954
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILPERSODEACTIVATIONSTATE structure [Network Drivers Starting with Windows Vista], rilapitypes/RILPERSODEACTIVATIONSTATE, RILPERSODEACTIVATIONSTATE, netvista.rilpersodeactivationstate_2, *LPRILPERSODEACTIVATIONSTATE
+ms.keywords : "*LPRILPERSODEACTIVATIONSTATE, RILPERSODEACTIVATIONSTATE, netvista.rilpersodeactivationstate_2, rilapitypes/RILPERSODEACTIVATIONSTATE, RILPERSODEACTIVATIONSTATE structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILPERSODEACTIVATIONSTATE, RILPERSODEACTIVATIONSTATE"
+req.typenames : RILPERSODEACTIVATIONSTATE, *LPRILPERSODEACTIVATIONSTATE
 req.product : Windows 10 or later.
 ---
 

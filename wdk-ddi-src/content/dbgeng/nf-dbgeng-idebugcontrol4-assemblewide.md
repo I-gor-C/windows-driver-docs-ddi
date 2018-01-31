@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 6ba291d7-c3e7-4f76-afc3-bf200bae2a8f
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugControl4::AssembleWide, AssembleWide method [Windows Debugging], IDebugControl4 interface, AssembleWide method [Windows Debugging], IDebugControl4, IDebugControl4::AssembleWide, IDebugControl4 interface [Windows Debugging], AssembleWide method, debugger.assemblewide, AssembleWide
+ms.keywords : AssembleWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4::AssembleWide, IDebugControl4 interface [Windows Debugging], AssembleWide method, debugger.assemblewide, IDebugControl4, dbgeng/IDebugControl4::AssembleWide, AssembleWide method [Windows Debugging], AssembleWide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

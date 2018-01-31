@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 1351efd1-1f7f-4f4b-b0ce-d9f08fba6613
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetDeviceObject, ifsk.fltgetdeviceobject, fltkernel/FltGetDeviceObject, FltApiRef_e_to_o_0ef7e26f-6eb6-42e3-a469-4d4fa0c8e659.xml, FltGetDeviceObject routine [Installable File System Drivers]
+ms.keywords : FltApiRef_e_to_o_0ef7e26f-6eb6-42e3-a469-4d4fa0c8e659.xml, fltkernel/FltGetDeviceObject, FltGetDeviceObject routine [Installable File System Drivers], ifsk.fltgetdeviceobject, FltGetDeviceObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -104,7 +104,7 @@ To get an opaque pointer for the corresponding volume for a given device object,
 | **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

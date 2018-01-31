@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddndis._NDIS_QOS_CLASSIFICATION_ELEMENT
-title : _NDIS_QOS_CLASSIFICATION_ELEMENT
+title : "_NDIS_QOS_CLASSIFICATION_ELEMENT"
 author : windows-driver-content
 description : The NDIS_QOS_CLASSIFICATION_ELEMENT structure specifies an NDIS Quality of Service (QoS) traffic classification for a network adapter that supports the IEEE 802.1 Data Center Bridging (DCB) interface.Each traffic classification specifies the following:A classification condition that is based on a data pattern within the egress packet data.Starting with NDIS 6.30, classification conditions are based on a 16-bit value, such as a UDP or TCP destination port or a media access control (MAC) EtherType.A classification action that defines the traffic class to be used to handle the egress packet.Starting with NDIS 6.30, classification actions specify an 802.1p priority level.For example, a traffic classification could specify that all egress packets for destination TCP port number 3260 (condition) are assigned an 802.1p priority level 3 (action).
 old-location : netvista\ndis_qos_classification_element.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2677dc3a-7685-40bf-94c3-2efecf21e9a8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_QOS_CLASSIFICATION_ELEMENT structure [Network Drivers Starting with Windows Vista], _NDIS_QOS_CLASSIFICATION_ELEMENT, ntddndis/NDIS_QOS_CLASSIFICATION_ELEMENT, PNDIS_QOS_CLASSIFICATION_ELEMENT, ntddndis/PNDIS_QOS_CLASSIFICATION_ELEMENT, NDIS_QOS_CLASSIFICATION_ELEMENT, PNDIS_QOS_CLASSIFICATION_ELEMENT structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_qos_classification_element
+ms.keywords : PNDIS_QOS_CLASSIFICATION_ELEMENT, _NDIS_QOS_CLASSIFICATION_ELEMENT, ntddndis/NDIS_QOS_CLASSIFICATION_ELEMENT, PNDIS_QOS_CLASSIFICATION_ELEMENT structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_QOS_CLASSIFICATION_ELEMENT, NDIS_QOS_CLASSIFICATION_ELEMENT structure [Network Drivers Starting with Windows Vista], NDIS_QOS_CLASSIFICATION_ELEMENT, netvista.ndis_qos_classification_element
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -102,11 +102,29 @@ For more information, see <a href="https://docs.microsoft.com/">Guidelines for S
 
 A <b>ULONG</b> value that contains a bitwise OR of flags that specify the state of the NDIS QoS traffic classifications that a miniport driver supports. The following flags are defined:
 
+
+
+
+#### NDIS_QOS_CLASSIFICATION_ENFORCED_BY_MINIPORT
+
+If this flag is set, the miniport driver accepts the traffic classification parameters that are specified in the <b>NDIS_QOS_CLASSIFICATION_ELEMENT</b> structure. If the driver accepts the parameters, it must configure the network adapter to perform the traffic classification as specified by the parameters.
+<div class="alert"><b>Note</b>  This flag is set only in the <b>NDIS_QOS_CLASSIFICATION_ELEMENT</b> structures that the miniport driver returns to NDIS from an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451835">OID_QOS_PARAMETERS</a> OID method request.
+</div><div> </div>
+
 `Header`
 
 The type, revision, and size of the <b>NDIS_QOS_CLASSIFICATION_ELEMENT</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
-The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_QOS_CLASSIFICATION_ELEMENT. To specify the version of the <b>NDIS_QOS_CLASSIFICATION_ELEMENT</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value:
+The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_QOS_CLASSIFICATION_ELEMENT. To specify the version of the <b>NDIS_QOS_CLASSIFICATION_ELEMENT</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
+
+
+
+
+#### NDIS_QOS_CLASSIFICATION_ELEMENT_REVISION_1
+
+Original version for NDIS 6.30.
+
+Set the <b>Size</b> member to NDIS_SIZEOF_QOS_CLASSIFICATION_ELEMENT_REVISION_1.
 
 ## Remarks
 A traffic classification specifies a <i>condition</i> and an <i>action</i> that the network adapter applies to egress packet data. When the adapter inspects the egress packet data and finds a matching classification condition, it applies the corresponding action to the egress packet.
@@ -234,13 +252,13 @@ For more information on NDIS QoS traffic classes, see <a href="https://msdn.micr
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_qos_parameters.md">NDIS_QOS_PARAMETERS</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439812">NDIS_STATUS_QOS_REMOTE_PARAMETERS_CHANGE</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451835">OID_QOS_PARAMETERS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439810">NDIS_STATUS_QOS_OPERATIONAL_PARAMETERS_CHANGE</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451841">OID_QOS_REMOTE_PARAMETERS</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439810">NDIS_STATUS_QOS_OPERATIONAL_PARAMETERS_CHANGE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439812">NDIS_STATUS_QOS_REMOTE_PARAMETERS_CHANGE</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 

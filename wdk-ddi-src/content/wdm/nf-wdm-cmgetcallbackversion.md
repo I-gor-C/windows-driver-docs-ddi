@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4b7aba14-bc6a-4d3d-bcc5-53fd122794a1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.cmgetcallbackversion, ConfigMgrRef_f15e2e9c-8b84-40b2-abb4-b37a6d38f920.xml, CmGetCallbackVersion, wdm/CmGetCallbackVersion, CmGetCallbackVersion routine [Kernel-Mode Driver Architecture]
+ms.keywords : CmGetCallbackVersion routine [Kernel-Mode Driver Architecture], ConfigMgrRef_f15e2e9c-8b84-40b2-abb4-b37a6d38f920.xml, CmGetCallbackVersion, kernel.cmgetcallbackversion, wdm/CmGetCallbackVersion
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -92,18 +92,18 @@ For more information on the differences between versions, see <a href="https://m
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
-
-<a href="..\wdm\ns-wdm-_reg_post_create_key_information.md">REG_POST_CREATE_KEY_INFORMATION</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560967">REG_POST_OPEN_KEY_INFORMATION</a>
 
 <a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
+
+<a href="..\wdm\ns-wdm-_reg_post_create_key_information.md">REG_POST_CREATE_KEY_INFORMATION</a>
+
+<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
 
  
 

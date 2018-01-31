@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 495191f4-a5c6-4223-8c5d-e4c0ecb0cc5d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndismgetbusdata, ndis/NdisMGetBusData, hardware_configuration_ref_e2ffab8c-2dba-4b49-a7dc-246a4792ca43.xml, NdisMGetBusData function [Network Drivers Starting with Windows Vista], NdisMGetBusData
+ms.keywords : netvista.ndismgetbusdata, ndis/NdisMGetBusData, NdisMGetBusData function [Network Drivers Starting with Windows Vista], NdisMGetBusData, hardware_configuration_ref_e2ffab8c-2dba-4b49-a7dc-246a4792ca43.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -105,9 +105,9 @@ This function replaces the NDIS 5.1
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551727">IRP_MN_READ_CONFIG</a>
-
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551727">IRP_MN_READ_CONFIG</a>
 
 <a href="..\ndis\nf-ndis-ndismsetbusdata.md">NdisMSetBusData</a>
 

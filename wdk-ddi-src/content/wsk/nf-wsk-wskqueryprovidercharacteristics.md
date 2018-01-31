@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b8a81d7e-abab-4343-a044-ac9dd913c7f2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WskQueryProviderCharacteristics function [Network Drivers Starting with Windows Vista], wsk/WskQueryProviderCharacteristics, netvista.wskqueryprovidercharacteristics, WskQueryProviderCharacteristics, wskref_dbe0fc4a-6df6-46aa-a17b-d3835f5d429b.xml
+ms.keywords : WskQueryProviderCharacteristics, netvista.wskqueryprovidercharacteristics, wsk/WskQueryProviderCharacteristics, WskQueryProviderCharacteristics function [Network Drivers Starting with Windows Vista], wskref_dbe0fc4a-6df6-46aa-a17b-d3835f5d429b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WNODE_HEADER, *PWNODE_HEADER
+req.typenames : "*PWNODE_HEADER, WNODE_HEADER"
 req.product : Windows 10 or later.
 ---
 
@@ -124,14 +124,14 @@ WSK clients can use this function to determine the WSK NPI versions supported by
 | **Minimum UMDF version** |  |
 | **Header** | wsk.h (include Wsk.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wsk\ns-wsk-_wsk_provider_characteristics.md">WSK_PROVIDER_CHARACTERISTICS</a>
-
 <a href="..\wsk\ns-wsk-_wsk_registration.md">WSK_REGISTRATION</a>
+
+<a href="..\wsk\ns-wsk-_wsk_provider_characteristics.md">WSK_PROVIDER_CHARACTERISTICS</a>
 
  
 

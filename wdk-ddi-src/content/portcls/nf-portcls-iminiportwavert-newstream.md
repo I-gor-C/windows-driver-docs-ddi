@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : efd2eea8-2b05-49a2-b136-a3e1e3e739c5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : portcls/IMiniportWaveRT::NewStream, NewStream method [Audio Devices], audmp-routines_f6e65bf7-d19d-42fc-a0f0-2d2c83e88250.xml, IMiniportWaveRT::NewStream, audio.iminiportwavert_newstream, IMiniportWaveRT, NewStream, NewStream method [Audio Devices], IMiniportWaveRT interface, IMiniportWaveRT interface [Audio Devices], NewStream method
+ms.keywords : IMiniportWaveRT, audmp-routines_f6e65bf7-d19d-42fc-a0f0-2d2c83e88250.xml, NewStream method [Audio Devices], IMiniportWaveRT interface, NewStream method [Audio Devices], NewStream, IMiniportWaveRT::NewStream, audio.iminiportwavert_newstream, portcls/IMiniportWaveRT::NewStream, IMiniportWaveRT interface [Audio Devices], NewStream method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -115,15 +115,15 @@ The <i>DataFormat</i> parameter, which specifies the data format of the stream, 
 
 ## See Also
 
-IMiniportWaveRTStream
+<a href="..\portcls\nn-portcls-iminiportwavertstream.md">IPortWaveRTStream</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536749">IMiniportWaveRTStream::GetPosition</a>
 
-<a href="..\portcls\nn-portcls-iminiportwavert.md">IMiniportWaveRT</a>
-
-<a href="..\portcls\nn-portcls-iminiportwavertstream.md">IPortWaveRTStream</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536756">IMiniportWaveRTStream::SetState</a>
+
+IMiniportWaveRTStream
+
+<a href="..\portcls\nn-portcls-iminiportwavert.md">IMiniportWaveRT</a>
 
  
 

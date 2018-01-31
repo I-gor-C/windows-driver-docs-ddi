@@ -1,6 +1,6 @@
 ---
 UID : NS:video._VPOSVERSIONINFO
-title : _VPOSVERSIONINFO
+title : "_VPOSVERSIONINFO"
 author : windows-driver-content
 description : The VPOSVERSIONINFO structure contains version information about the currently running operating system.
 old-location : display\vposversioninfo.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b6335df5-81d9-4a00-8e97-0ebebb987d32
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : Video_Structs_893105be-4f14-4903-aae1-85ffe8ef8a2b.xml, display.vposversioninfo, _VPOSVERSIONINFO, video/VPOSVERSIONINFO, *PVPOSVERSIONINFO, PVPOSVERSIONINFO structure pointer [Display Devices], VPOSVERSIONINFO structure [Display Devices], PVPOSVERSIONINFO, VPOSVERSIONINFO, video/PVPOSVERSIONINFO
+ms.keywords : "*PVPOSVERSIONINFO, video/VPOSVERSIONINFO, video/PVPOSVERSIONINFO, display.vposversioninfo, PVPOSVERSIONINFO, PVPOSVERSIONINFO structure pointer [Display Devices], VPOSVERSIONINFO structure [Display Devices], VPOSVERSIONINFO, _VPOSVERSIONINFO, Video_Structs_893105be-4f14-4903-aae1-85ffe8ef8a2b.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

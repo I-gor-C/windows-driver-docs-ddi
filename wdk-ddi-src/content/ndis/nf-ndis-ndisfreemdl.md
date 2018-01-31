@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 612a66fa-0e0c-4eee-99b0-9bc09437b026
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisFreeMdl, NdisFreeMdl function [Network Drivers Starting with Windows Vista], ndis_netbuf_functions_ref_0631fdd9-0961-43a9-a7a8-7d41e9d17220.xml, ndis/NdisFreeMdl, netvista.ndisfreemdl
+ms.keywords : ndis/NdisFreeMdl, ndis_netbuf_functions_ref_0631fdd9-0961-43a9-a7a8-7d41e9d17220.xml, NdisFreeMdl function [Network Drivers Starting with Windows Vista], netvista.ndisfreemdl, NdisFreeMdl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -73,7 +73,7 @@ None
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_NetBuffer_Function, NdisAllocateMdl |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : B4124FF4-50CC-474A-B42F-17BCF698AB59
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : TmRenameTransactionManager, wdm/TmRenameTransactionManager, TmRenameTransactionManager routine [Kernel-Mode Driver Architecture], kernel.tmrenametransactionmanager_
+ms.keywords : TmRenameTransactionManager routine [Kernel-Mode Driver Architecture], kernel.tmrenametransactionmanager_, TmRenameTransactionManager, wdm/TmRenameTransactionManager
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,5 +78,5 @@ The <b>TmRenameTransactionManager</b> routine returns an NTSTATUS value. If the 
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |

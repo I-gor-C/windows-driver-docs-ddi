@@ -1,6 +1,6 @@
 ---
 UID : NS:ntdddisk._DISK_GEOMETRY
-title : _DISK_GEOMETRY
+title : "_DISK_GEOMETRY"
 author : windows-driver-content
 description : The DISK_GEOMETRY structure is obsolete and provided only to support existing drivers.
 old-location : storage\disk_geometry.htm
@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f92d1f63-4361-4775-88f8-be1c9bf781ef
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : DISK_GEOMETRY structure [Storage Devices], structs-disk_3ad908b7-8f42-4a06-914e-92b631cc1a56.xml, storage.disk_geometry, PDISK_GEOMETRY structure pointer [Storage Devices], *PDISK_GEOMETRY, DISK_GEOMETRY, ntdddisk/DISK_GEOMETRY, PDISK_GEOMETRY, ntdddisk/PDISK_GEOMETRY, _DISK_GEOMETRY
+ms.keywords : DISK_GEOMETRY, ntdddisk/PDISK_GEOMETRY, storage.disk_geometry, structs-disk_3ad908b7-8f42-4a06-914e-92b631cc1a56.xml, ntdddisk/DISK_GEOMETRY, DISK_GEOMETRY structure [Storage Devices], PDISK_GEOMETRY, *PDISK_GEOMETRY, PDISK_GEOMETRY structure pointer [Storage Devices], _DISK_GEOMETRY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDISK_GEOMETRY, DISK_GEOMETRY"
+req.typenames : DISK_GEOMETRY, *PDISK_GEOMETRY
 ---
 
 # _DISK_GEOMETRY structure
@@ -91,11 +91,11 @@ Indicates the number of tracks in a cylinder.
 
 ## See Also
 
-<a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_media_types.md">IOCTL_DISK_GET_MEDIA_TYPES</a>
-
 <a href="..\ntdddisk\ns-ntdddisk-_disk_geometry_ex.md">DISK_GEOMETRY_EX</a>
 
 <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_drive_geometry.md">IOCTL_DISK_GET_DRIVE_GEOMETRY</a>
+
+<a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_media_types.md">IOCTL_DISK_GET_MEDIA_TYPES</a>
 
  
 

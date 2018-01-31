@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 025046e2-ffa1-4210-b4aa-ab3d6b211066
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdeviceadddependentusagedeviceobject, WdfDeviceAddDependentUsageDeviceObject method, WdfDeviceAddDependentUsageDeviceObject, DFDeviceObjectGeneralRef_b31f8226-abd2-49a0-af66-ace2d05a6f17.xml, kmdf.wdfdeviceadddependentusagedeviceobject, PFN_WDFDEVICEADDDEPENDENTUSAGEDEVICEOBJECT, wdfdevice/WdfDeviceAddDependentUsageDeviceObject
+ms.keywords : DFDeviceObjectGeneralRef_b31f8226-abd2-49a0-af66-ace2d05a6f17.xml, wdf.wdfdeviceadddependentusagedeviceobject, wdfdevice/WdfDeviceAddDependentUsageDeviceObject, PFN_WDFDEVICEADDDEPENDENTUSAGEDEVICEOBJECT, WdfDeviceAddDependentUsageDeviceObject method, kmdf.wdfdeviceadddependentusagedeviceobject, WdfDeviceAddDependentUsageDeviceObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -120,7 +120,7 @@ For more information about special files, see <a href="https://msdn.microsoft.co
 | **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also

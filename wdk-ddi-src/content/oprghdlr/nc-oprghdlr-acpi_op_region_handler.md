@@ -28,14 +28,14 @@ req.assembly :
 req.type-library : 
 req.lib : 
 req.dll : 
-req.irql : (See Remarks section)
+req.irql : "(See Remarks section)"
 topictype : 
 apitype : 
 apilocation : 
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILGBATOKEN, RILGBATOKEN"
+req.typenames : RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 
@@ -183,7 +183,7 @@ For detailed information about constraints on operation regions, see the <a href
 | **Minimum UMDF version** |  |
 | **Header** | oprghdlr.h (include Oprghdlr.h) |
 | **Library** |  |
-| **IRQL** | (See Remarks section) |
+| **IRQL** | "(See Remarks section)" |
 | **DDI compliance rules** |  |
 
 ## See Also

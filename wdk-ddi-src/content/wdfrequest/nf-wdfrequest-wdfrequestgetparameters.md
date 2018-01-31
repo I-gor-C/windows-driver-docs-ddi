@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7d9924a9-23b6-4bec-95f0-cebc3e99fda4
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFRequestObjectRef_f3d44f7e-60b9-4a64-b5b8-a68ab5240376.xml, PFN_WDFREQUESTGETPARAMETERS, kmdf.wdfrequestgetparameters, WdfRequestGetParameters, wdfrequest/WdfRequestGetParameters, WdfRequestGetParameters method, wdf.wdfrequestgetparameters
+ms.keywords : WdfRequestGetParameters, wdfrequest/WdfRequestGetParameters, wdf.wdfrequestgetparameters, PFN_WDFREQUESTGETPARAMETERS, DFRequestObjectRef_f3d44f7e-60b9-4a64-b5b8-a68ab5240376.xml, kmdf.wdfrequestgetparameters, WdfRequestGetParameters method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,14 +86,14 @@ For more information about <b>WdfRequestGetParameters</b>, see <a href="https://
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, evtioresumegetparam, evtiostopgetparam, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestwdmgetirp.md">WdfRequestWdmGetIrp</a>
-
 <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_parameters.md">WDF_REQUEST_PARAMETERS</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestwdmgetirp.md">WdfRequestWdmGetIrp</a>
 
 <a href="..\wdfrequest\nf-wdfrequest-wdf_request_parameters_init.md">WDF_REQUEST_PARAMETERS_INIT</a>
 

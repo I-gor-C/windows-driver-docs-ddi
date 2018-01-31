@@ -30,7 +30,7 @@ req.assembly :
 req.type-library : 
 req.lib : NtDll.lib (user mode); NtosKrnl.lib (kernel mode)
 req.dll : NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
-req.irql : "<= DIRQL"
+req.irql : <= DIRQL
 req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 

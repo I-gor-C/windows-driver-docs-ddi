@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 19B472D0-D607-4874-ADB9-232C379B0DFD
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDevice3 interface, ReadFromHardware method, ReadFromHardware, ReadFromHardware method, IWDFDevice3 interface, IWDFDevice3, ReadFromHardware method, wdf.iwdfdevice3_readfromhardware, IWDFDevice3::ReadFromHardware, umdf.iwdfdevice3_readfromhardware, wudfddi/IWDFDevice3::ReadFromHardware
+ms.keywords : wdf.iwdfdevice3_readfromhardware, IWDFDevice3::ReadFromHardware, IWDFDevice3, ReadFromHardware method, IWDFDevice3 interface, ReadFromHardware method, ReadFromHardware method, IWDFDevice3 interface, ReadFromHardware, wudfddi/IWDFDevice3::ReadFromHardware, umdf.iwdfdevice3_readfromhardware
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method

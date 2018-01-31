@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddk._WHEA_GENERIC_ERROR_BLOCKSTATUS
-title : _WHEA_GENERIC_ERROR_BLOCKSTATUS
+title : "_WHEA_GENERIC_ERROR_BLOCKSTATUS"
 author : windows-driver-content
 description : The WHEA_GENERIC_ERROR_BLOCKSTATUS union indicates what kind of error data is reported in a generic error status block.
 old-location : whea\whea_generic_error_blockstatus.htm
@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 38c8422d-7307-4acd-81f0-931d2e128cb9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PWHEA_GENERIC_ERROR_BLOCKSTATUS union pointer [WHEA Drivers and Applications], WHEA_GENERIC_ERROR_BLOCKSTATUS, *PWHEA_GENERIC_ERROR_BLOCKSTATUS, _WHEA_GENERIC_ERROR_BLOCKSTATUS, whea.whea_generic_error_blockstatus, ntddk/WHEA_GENERIC_ERROR_BLOCKSTATUS, PWHEA_GENERIC_ERROR_BLOCKSTATUS, ntddk/PWHEA_GENERIC_ERROR_BLOCKSTATUS, WHEA_GENERIC_ERROR_BLOCKSTATUS union [WHEA Drivers and Applications], whearef_2137a60a-daff-4a33-a516-c9ae87e2f11c.xml
+ms.keywords : whea.whea_generic_error_blockstatus, whearef_2137a60a-daff-4a33-a516-c9ae87e2f11c.xml, PWHEA_GENERIC_ERROR_BLOCKSTATUS union pointer [WHEA Drivers and Applications], WHEA_GENERIC_ERROR_BLOCKSTATUS, *PWHEA_GENERIC_ERROR_BLOCKSTATUS, _WHEA_GENERIC_ERROR_BLOCKSTATUS, ntddk/WHEA_GENERIC_ERROR_BLOCKSTATUS, WHEA_GENERIC_ERROR_BLOCKSTATUS union [WHEA Drivers and Applications], PWHEA_GENERIC_ERROR_BLOCKSTATUS, ntddk/PWHEA_GENERIC_ERROR_BLOCKSTATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -80,9 +80,9 @@ A WHEA_GENERIC_ERROR_BLOCKSTATUS union is contained within the <a href="..\ntddk
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_generic_error_data_entry_v2.md">WHEA_GENERIC_ERROR_DATA_ENTRY</a>
-
 <a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_generic_error_data_entry_v2.md">WHEA_GENERIC_ERROR_DATA_ENTRY</a>
 
  
 

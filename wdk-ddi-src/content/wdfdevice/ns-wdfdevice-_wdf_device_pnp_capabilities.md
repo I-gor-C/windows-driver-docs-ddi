@@ -1,6 +1,6 @@
 ---
 UID : NS:wdfdevice._WDF_DEVICE_PNP_CAPABILITIES
-title : _WDF_DEVICE_PNP_CAPABILITIES
+title : "_WDF_DEVICE_PNP_CAPABILITIES"
 author : windows-driver-content
 description : The WDF_DEVICE_PNP_CAPABILITIES structure describes a device's Plug and Play capabilities.
 old-location : wdf\wdf_device_pnp_capabilities.htm
@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0857e32e-9962-44ca-9d61-b98b09073c16
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectGeneralRef_58325ea6-665b-4cf2-bf99-d47636013ee1.xml, wdfdevice/PWDF_DEVICE_PNP_CAPABILITIES, WDF_DEVICE_PNP_CAPABILITIES, kmdf.wdf_device_pnp_capabilities, wdfdevice/WDF_DEVICE_PNP_CAPABILITIES, PWDF_DEVICE_PNP_CAPABILITIES, WDF_DEVICE_PNP_CAPABILITIES structure, _WDF_DEVICE_PNP_CAPABILITIES, wdf.wdf_device_pnp_capabilities, PWDF_DEVICE_PNP_CAPABILITIES structure pointer, *PWDF_DEVICE_PNP_CAPABILITIES
+ms.keywords : "_WDF_DEVICE_PNP_CAPABILITIES, wdfdevice/PWDF_DEVICE_PNP_CAPABILITIES, PWDF_DEVICE_PNP_CAPABILITIES structure pointer, PWDF_DEVICE_PNP_CAPABILITIES, wdf.wdf_device_pnp_capabilities, DFDeviceObjectGeneralRef_58325ea6-665b-4cf2-bf99-d47636013ee1.xml, *PWDF_DEVICE_PNP_CAPABILITIES, WDF_DEVICE_PNP_CAPABILITIES, WDF_DEVICE_PNP_CAPABILITIES structure, kmdf.wdf_device_pnp_capabilities, wdfdevice/WDF_DEVICE_PNP_CAPABILITIES"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -73,6 +73,48 @@ The interpretation of this number is bus-specific. If the address is unknown or 
 
 The following list describes the information that certain bus drivers store in the <b>Address</b> member for their child devices:
 
+
+
+
+#### 1394
+
+Does not supply an address because the addresses are volatile. Defaults to 0xFFFFFFFF. 
+
+
+#### EISA
+
+Slot Number (0-F).
+
+
+#### IDE
+
+For an IDE device, the address contains the target ID and LUN. For an IDE channel, the address is 0 if the channel is the primary channel or 1 if the channel is the secondary channel).
+
+
+#### ISApnp
+
+Does not supply an address. Defaults to 0xFFFFFFFF.
+
+
+#### PC Card (PCMCIA)
+
+The socket number (typically 0x00 or 0x40).
+
+
+#### PCI
+
+The device number in the high word and the function number in the low word.
+
+
+#### SCSI
+
+The target ID.
+
+
+#### USB
+
+The port number.
+
 `DockDevice`
 
 A WDF_TRI_STATE-typed value that indicates, if set to <b>WdfTrue</b>, that the device is a docking station.
@@ -134,9 +176,9 @@ To initialize a WDF_DEVICE_PNP_CAPABILITIES structure, a driver should call <a h
 
 ## See Also
 
-<a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitassignrawdevice.md">WdfPdoInitAssignRawDevice</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetpowercapabilities.md">WdfDeviceSetPowerCapabilities</a>
+
+<a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitassignrawdevice.md">WdfPdoInitAssignRawDevice</a>
 
  
 

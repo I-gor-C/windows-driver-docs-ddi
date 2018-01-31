@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 688A1DF3-F801-47C3-8403-9FA5D96BD428
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : VmbChannelDisable function [Network Drivers Starting with Windows Vista], netvista.vmbchanneldisable, vmbuskernelmodeclientlibapi/VmbChannelDisable, VmbChannelDisable
+ms.keywords : VmbChannelDisable function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbChannelDisable, netvista.vmbchanneldisable, VmbChannelDisable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

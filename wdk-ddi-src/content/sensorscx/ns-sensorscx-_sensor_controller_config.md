@@ -1,6 +1,6 @@
 ---
 UID : NS:sensorscx._SENSOR_CONTROLLER_CONFIG
-title : _SENSOR_CONTROLLER_CONFIG
+title : "_SENSOR_CONTROLLER_CONFIG"
 author : windows-driver-content
 description : This structure contains pointers to callback functions that must be implemented by the driver, and passed on to the class extension to call.
 old-location : sensors\sensor_controller_config.htm
@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : EEAC4D16-D0B8-4147-AD2D-7EE60853EBDD
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "*PSENSOR_CONTROLLER_CONFIG, PSENSOR_CONTROLLER_CONFIG structure pointer [Sensor Devices], PSENSOR_CONTROLLER_CONFIG, sensors.sensor_controller_config, SENSOR_CONTROLLER_CONFIG structure [Sensor Devices], SENSOR_CONTROLLER_CONFIG, _SENSOR_CONTROLLER_CONFIG, sensorscx/PSENSOR_CONTROLLER_CONFIG, sensorscx/SENSOR_CONTROLLER_CONFIG"
+ms.keywords : "_SENSOR_CONTROLLER_CONFIG, sensors.sensor_controller_config, PSENSOR_CONTROLLER_CONFIG structure pointer [Sensor Devices], *PSENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG structure [Sensor Devices], sensorscx/SENSOR_CONTROLLER_CONFIG, PSENSOR_CONTROLLER_CONFIG, sensorscx/PSENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -128,6 +128,38 @@ This callback function handles IOCTLs outside of the class extension.<div class=
     _In_ size_t InputBufferLength,
     _In_ ULONG IoControlCode);</pre>
 
+
+
+#### Sensor
+
+A reference to a sensor object.
+
+
+
+
+#### Request
+
+A handle to a framework request object that represents the I/O request.
+
+
+#### OutputBufferLength
+
+The length of the output buffer (in bytes).
+
+
+
+
+#### InputBufferLength
+
+The length of the input buffer (in bytes).
+
+
+
+
+#### IoControlCode
+
+The code that indicates which device I/O control function is to be executed.
+
 `EvtSensorDisableWake`
 
 
@@ -147,6 +179,29 @@ This callback function returns the properties of a given data field associated w
     _Inout_opt_ PSENSOR_COLLECTION_LIST pProperties,
     _Out_ PULONG pSize);</pre>
 
+
+
+#### Sensor
+
+A reference to a sensor object.
+
+
+
+
+#### pDataField
+
+A reference to a data field.
+
+
+#### pProperties
+
+A list of properties associated with the pDataField.
+
+
+#### pSize
+
+The size of pDataField.
+
 `EvtSensorGetDataInterval`
 
 This callback function returns the data interval for a specified sensor.
@@ -155,6 +210,19 @@ This callback function returns the data interval for a specified sensor.
 <pre class="syntax">NTSTATUS EVT_SENSOR_DRIVER_GET_DATA_INTERVAL(
     _In_ SENSOROBJECT Sensor,
     _Out_ PULONG pDataRateMs);</pre>
+
+
+
+#### Sensor
+
+A reference to a sensor object.
+
+
+
+
+#### pDataRateMs
+
+The data interval for the specified sensor.
 
 `EvtSensorGetDataThresholds`
 
@@ -166,6 +234,24 @@ This callback function returns the thresholds that are associated with a sensor.
     _Inout_opt_ PSENSOR_COLLECTION_LIST pThresholds,
     _Out_ PULONG pSize);</pre>
 
+
+
+#### Sensor
+
+A reference to a sensor object.
+
+
+
+
+#### pThresholds
+
+A list of threshold properties and their values associated with the sensor.
+
+
+#### pSize
+
+The size of pThresholds.
+
 `EvtSensorGetProperties`
 
 This callback function returns the properties for a given sensor.
@@ -176,6 +262,24 @@ This callback function returns the properties for a given sensor.
     _Inout_opt_ PSENSOR_COLLECTION_LIST pProperties,
     _Out_ PULONG pSize);</pre>
 
+
+
+#### Sensor
+
+A reference to a sensor object.
+
+
+
+
+#### pProperties
+
+A list of properties and their values for the specified sensor.
+
+
+#### pSize
+
+The size of pProperties.
+
 `EvtSensorGetSupportedDataFields`
 
 This callback function returns a list of data fields supported by the specified sensor.
@@ -185,6 +289,22 @@ This callback function returns a list of data fields supported by the specified 
     _In_ SENSOROBJECT Sensor,
     _Inout_opt_ PSENSOR_PROPERTY_LIST pDataFields,
     _Out_ PULONG pSize);</pre>
+
+
+
+#### Sensor
+
+A reference to a sensor object.
+
+
+#### pDataFields
+
+A list of data fields that are supported by the given sensor.
+
+
+#### pSize
+
+The size of pFields.
 
 `EvtSensorSetBatchLatency`
 
@@ -197,6 +317,17 @@ NTSTATUS EVT_SENSOR_DRIVER_SET_BATCH_LATENCY(
 
 typedef EVT_SENSOR_DRIVER_SET_BATCH_LATENCY *PFN_SENSOR_DRIVER_SET_BATCH_LATENCY;</pre>
 
+
+
+#### Sensor
+
+A reference to a sensor object.
+
+
+#### BatchLatencyMs
+
+The batch latency, expressed in milliseconds.
+
 `EvtSensorSetDataInterval`
 
 This callback function sets the data interval for a specified sensor.
@@ -205,6 +336,19 @@ This callback function sets the data interval for a specified sensor.
 <pre class="syntax">NTSTATUS EVT_SENSOR_DRIVER_SET_DATA_INTERVAL(
     _In_ SENSOROBJECT Sensor,
     _In_ ULONG DataRateMs);</pre>
+
+
+
+#### Sensor
+
+A reference to a sensor object.
+
+
+
+
+#### DataRateMs
+
+The data interval for to set for the sensor.
 
 `EvtSensorSetDataThresholds`
 
@@ -215,6 +359,19 @@ This callback function stops the sensor.
     _In_ SENSOROBJECT Sensor,
     _In_ PSENSOR_COLLECTION_LIST pThresholds);</pre>
 
+
+
+#### Sensor
+
+A reference to a sensor object.
+
+
+
+
+#### pThresholds
+
+A list of threshold properties and their values associated with the sensor.
+
 `EvtSensorStart`
 
 This callback function starts the sensor based on the default properties specified by the driver, or properties set by the class extension.
@@ -222,6 +379,12 @@ This callback function starts the sensor based on the default properties specifi
 
 <pre class="syntax">NTSTATUS EVT_SENSOR_DRIVER_START_SENSOR(
     _In_ SENSOROBJECT Sensor);</pre>
+
+
+
+#### Sensor
+
+A reference to a sensor object.
 
 `EvtSensorStartHistory`
 
@@ -242,6 +405,12 @@ This callback function stops the sensor.
 
 <pre class="syntax">NTSTATUS EVT_SENSOR_DRIVER_STOP_SENSOR(
     _In_ SENSOROBJECT Sensor);</pre>
+
+
+
+#### Sensor
+
+A reference to a sensor object.
 
 `EvtSensorStopHistory`
 

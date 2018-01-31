@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 28BA4B54-F493-4D79-89DF-D890EBCF1E9C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoRegisterBootDriverCallback, kernel.ioregisterbootdrivercallback, ntddk/IoRegisterBootDriverCallback, IoRegisterBootDriverCallback routine [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.ioregisterbootdrivercallback, IoRegisterBootDriverCallback routine [Kernel-Mode Driver Architecture], ntddk/IoRegisterBootDriverCallback, IoRegisterBootDriverCallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -115,11 +115,11 @@ To be notified of boot-start driver initialization operations, an <i>early launc
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_bdcb_image_information.md">BDCB_IMAGE_INFORMATION</a>
+<a href="..\ntddk\ne-ntddk-_bdcb_callback_type.md">BDCB_CALLBACK_TYPE</a>
 
 <a href="..\ntddk\nf-ntddk-iounregisterbootdrivercallback.md">IoUnRegisterBootDriverCallback</a>
 
-<a href="..\ntddk\ne-ntddk-_bdcb_callback_type.md">BDCB_CALLBACK_TYPE</a>
+<a href="..\ntddk\ns-ntddk-_bdcb_image_information.md">BDCB_IMAGE_INFORMATION</a>
 
  
 

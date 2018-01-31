@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 375af8a1-9e05-4830-9074-6313b4e082d9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wfp_ref_2_funct_2_fwpm_79b78030-bb8c-462d-98fc-6f3818dead3d.xml, FwpmBfeStateSubscribeChanges0 function [Network Drivers Starting with Windows Vista], FwpmBfeStateSubscribeChanges0, fwpmk/FwpmBfeStateSubscribeChanges0, netvista.fwpmbfestatesubscribechanges0
+ms.keywords : FwpmBfeStateSubscribeChanges0 function [Network Drivers Starting with Windows Vista], fwpmk/FwpmBfeStateSubscribeChanges0, FwpmBfeStateSubscribeChanges0, wfp_ref_2_funct_2_fwpm_79b78030-bb8c-462d-98fc-6f3818dead3d.xml, netvista.fwpmbfestatesubscribechanges0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,6 +85,41 @@ callback(
 </td>
 </tr>
 </table></span></div>
+
+
+#### Context
+
+The pointer that was passed in the 
+       <i>Context</i> parameter when the callout driver called the 
+       <b>FwpmBfeStateSubscribeChanges0</b> function.
+
+
+#### newState
+
+The new state of the filter engine. This parameter contains one of the following values:
+       
+
+
+
+
+#### FWPM_SERVICE_STOPPED
+
+The filter engine is not running.
+
+
+#### FWPM_SERVICE_START_PENDING
+
+The filter engine is starting.
+
+
+#### FWPM_SERVICE_STOP_PENDING
+
+The filter engine is stopping.
+
+
+#### FWPM_SERVICE_RUNNING
+
+The filter engine is running.
 
 `context`
 
@@ -170,12 +205,12 @@ A callout driver must deregister the callback function by calling the
 
 ## See Also
 
-<a href="..\fwpmk\nf-fwpmk-fwpmengineopen0.md">FwpmEngineOpen0</a>
-
 <a href="..\fwpmk\nf-fwpmk-fwpmbfestateget0.md">FwpmBfeStateGet0</a>
 
 <mshelp:link keywords="netvista.fwpmbfestateunsubscribechanges0" tabindex="0"><b>
    FwpmBfeStateUnsubscribeChanges0</b></mshelp:link>
+
+<a href="..\fwpmk\nf-fwpmk-fwpmengineopen0.md">FwpmEngineOpen0</a>
 
  
 

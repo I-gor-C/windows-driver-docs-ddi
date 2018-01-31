@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d88797c6-c06c-4c3b-a3e4-baf412e051ef
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlFindSetBitsAndClear, k109_a6043f35-d317-434a-93c1-1c44aa9e8cd4.xml, kernel.rtlfindsetbitsandclear, RtlFindSetBitsAndClear routine [Kernel-Mode Driver Architecture], wdm/RtlFindSetBitsAndClear
+ms.keywords : kernel.rtlfindsetbitsandclear, RtlFindSetBitsAndClear routine [Kernel-Mode Driver Architecture], RtlFindSetBitsAndClear, k109_a6043f35-d317-434a-93c1-1c44aa9e8cd4.xml, wdm/RtlFindSetBitsAndClear
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -87,24 +87,24 @@ Callers of <b>RtlFindSetBitsAndClear</b> must be running at IRQL &lt;= APC_LEVEL
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL (See Remarks section) |
+| **IRQL** | "<= APC_LEVEL (See Remarks section)" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlnumberofsetbits.md">RtlNumberOfSetBits</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a>
-
 <a href="..\wdm\nf-wdm-rtlfindsetbits.md">RtlFindSetBits</a>
 
-<a href="..\wdm\nf-wdm-rtlclearbits.md">RtlClearBits</a>
+<a href="..\wdm\nf-wdm-rtlnumberofsetbits.md">RtlNumberOfSetBits</a>
+
+<a href="..\wdm\nf-wdm-rtlarebitsset.md">RtlAreBitsSet</a>
 
 <a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a>
 
+<a href="..\wdm\nf-wdm-rtlclearbits.md">RtlClearBits</a>
+
 <a href="..\wdm\nf-wdm-rtlclearallbits.md">RtlClearAllBits</a>
 
-<a href="..\wdm\nf-wdm-rtlarebitsset.md">RtlAreBitsSet</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 345003fc-fdc3-4529-bb15-c9e380e77bba
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectGeneralRef_bfed99aa-ad4c-4339-aeb9-f7d73039f0b9.xml, kmdf.wdfdevicesetdeviceinterfacestate, PFN_WDFDEVICESETDEVICEINTERFACESTATE, wdfdevice/WdfDeviceSetDeviceInterfaceState, WdfDeviceSetDeviceInterfaceState method, wdf.wdfdevicesetdeviceinterfacestate, WdfDeviceSetDeviceInterfaceState
+ms.keywords : PFN_WDFDEVICESETDEVICEINTERFACESTATE, wdfdevice/WdfDeviceSetDeviceInterfaceState, WdfDeviceSetDeviceInterfaceState, WdfDeviceSetDeviceInterfaceState method, wdf.wdfdevicesetdeviceinterfacestate, DFDeviceObjectGeneralRef_bfed99aa-ad4c-4339-aeb9-f7d73039f0b9.xml, kmdf.wdfdevicesetdeviceinterfacestate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -99,9 +99,9 @@ For more information about device interfaces and the <b>WdfDeviceSetDeviceInterf
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreatedeviceinterface.md">WdfDeviceCreateDeviceInterface</a>
-
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreatedeviceinterface.md">WdfDeviceCreateDeviceInterface</a>
 
  
 

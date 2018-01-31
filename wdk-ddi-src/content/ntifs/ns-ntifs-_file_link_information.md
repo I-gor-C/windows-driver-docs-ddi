@@ -1,6 +1,6 @@
 ---
 UID : NS:ntifs._FILE_LINK_INFORMATION
-title : _FILE_LINK_INFORMATION
+title : "_FILE_LINK_INFORMATION"
 author : windows-driver-content
 description : The FILE_LINK_INFORMATION structure is used to create an NTFS hard link to an existing file.
 old-location : ifsk\file_link_information.htm
@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c0c47dc7-d672-4094-af17-9de2b01886aa
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.file_link_information, *PFILE_LINK_INFORMATION, _FILE_LINK_INFORMATION, ntifs/FILE_LINK_INFORMATION, ntifs/PFILE_LINK_INFORMATION, FILE_LINK_INFORMATION, PFILE_LINK_INFORMATION, fileinformationstructures_6702855e-5076-41aa-a6c8-e9569c782646.xml, FILE_LINK_INFORMATION structure [Installable File System Drivers], PFILE_LINK_INFORMATION structure pointer [Installable File System Drivers]
+ms.keywords : FILE_LINK_INFORMATION, PFILE_LINK_INFORMATION structure pointer [Installable File System Drivers], PFILE_LINK_INFORMATION, ntifs/FILE_LINK_INFORMATION, ifsk.file_link_information, fileinformationstructures_6702855e-5076-41aa-a6c8-e9569c782646.xml, *PFILE_LINK_INFORMATION, FILE_LINK_INFORMATION structure [Installable File System Drivers], ntifs/PFILE_LINK_INFORMATION, _FILE_LINK_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PFILE_LINK_INFORMATION, FILE_LINK_INFORMATION"
+req.typenames : FILE_LINK_INFORMATION, *PFILE_LINK_INFORMATION
 ---
 
 # _FILE_LINK_INFORMATION structure
@@ -101,13 +101,13 @@ This structure must be aligned on a LONG (4-byte) boundary.
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a>
 
 <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549366">IRP_MJ_SET_INFORMATION</a>
+<a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549366">IRP_MJ_SET_INFORMATION</a>
 
  
 

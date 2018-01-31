@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 42519c60-6dc6-4c20-a2e8-954d9610a982
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisReadNetworkAddress, netvista.ndisreadnetworkaddress, NdisReadNetworkAddress function [Network Drivers Starting with Windows Vista], NdisReadNetworkAddress, ndis_configuration_ref_459fbfae-4235-4f60-9b10-02c60defc236.xml
+ms.keywords : ndis/NdisReadNetworkAddress, netvista.ndisreadnetworkaddress, ndis_configuration_ref_459fbfae-4235-4f60-9b10-02c60defc236.xml, NdisReadNetworkAddress, NdisReadNetworkAddress function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -61,6 +61,21 @@ VOID NdisReadNetworkAddress(
 
 A pointer to a caller-supplied variable in which this function returns the status of the call as
      one of the following:
+     
+
+
+
+
+#### NDIS_STATUS_SUCCESS
+
+The caller can use the address returned at 
+       <i>NetworkAddress</i> for the NIC.
+
+
+#### NDIS_STATUS_FAILURE
+
+There was no NIC address information available in the caller's registry 
+       <b>Parameters</b> key or the value stored was not a string.
 
 `NetworkAddress`
 
@@ -139,9 +154,9 @@ Note that NDIS does not validate the value at
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiscloseconfiguration.md">NdisCloseConfiguration</a>
-
 <a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>
+
+<a href="..\ndis\nf-ndis-ndiscloseconfiguration.md">NdisCloseConfiguration</a>
 
  
 

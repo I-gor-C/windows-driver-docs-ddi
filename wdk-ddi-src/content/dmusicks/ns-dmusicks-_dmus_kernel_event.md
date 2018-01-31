@@ -1,6 +1,6 @@
 ---
 UID : NS:dmusicks._DMUS_KERNEL_EVENT
-title : _DMUS_KERNEL_EVENT
+title : "_DMUS_KERNEL_EVENT"
 author : windows-driver-content
 description : The DMUS_KERNEL_EVENT structure is used to package time-stamped music events.
 old-location : audio\dmus_kernel_event.htm
@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 652f64e2-310b-46c9-8b00-c827a7475b07
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : dmusicks/PDMUS_KERNEL_EVENT, aud-prop_b0db54b3-fff3-46f2-abd7-beb4fe189f8f.xml, audio.dmus_kernel_event, *PDMUS_KERNEL_EVENT, DMUS_KERNEL_EVENT, dmusicks/DMUS_KERNEL_EVENT, PDMUS_KERNEL_EVENT, PDMUS_KERNEL_EVENT structure pointer [Audio Devices], DMUS_KERNEL_EVENT structure [Audio Devices], _DMUS_KERNEL_EVENT
+ms.keywords : audio.dmus_kernel_event, DMUS_KERNEL_EVENT structure [Audio Devices], DMUS_KERNEL_EVENT, PDMUS_KERNEL_EVENT structure pointer [Audio Devices], *PDMUS_KERNEL_EVENT, PDMUS_KERNEL_EVENT, dmusicks/PDMUS_KERNEL_EVENT, _DMUS_KERNEL_EVENT, aud-prop_b0db54b3-fff3-46f2-abd7-beb4fe189f8f.xml, dmusicks/DMUS_KERNEL_EVENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -100,6 +100,23 @@ Specifies which channel group (set of 16 MIDI channels) receives or originated t
 
 Specifies whether an event is a package and whether this event concludes the message. A package encapsulates a list of events that should be dealt with atomically. This member is a bitfield that can be set to the bitwise OR of one or more of the following flag bits:
 
+
+
+
+#### DMUS_KEF_EVENT_COMPLETE (zero)
+
+Specifies messages in which the entire message is contained either in <b>uData.abData</b> or in the buffer pointed to by <b>uData.pbData</b>. The former includes all short messages, and potentially includes very brief SysEx messages (see Microsoft Windows SDK documentation) as well. Keep in mind that <b>sizeof</b>(PBYTE) can be 8 instead of 4 on 64-bit versions of Windows.
+
+
+#### DMUS_KEF_EVENT_INCOMPLETE
+
+Specifies that this event is an incomplete package or SysEx message (see Windows SDK documentation). This flag specifies that the message continues beyond this event. During MIDI capture, the miniport driver can send "uncooked" MIDI events (raw MIDI input data) to the capture sink by specifying this flag.
+
+
+#### DMUS_KEF_PACKAGE_EVENT
+
+Specifies that this event is a package. The <b>uData.pPackageEvt</b> field contains a pointer to a chain of events which should be dealt with atomically.
+
 ## Remarks
 The DMUS_KERNEL_EVENT structure is used by WDM audio drivers that provide kernel streaming support for DirectMusic.
 
@@ -131,9 +148,9 @@ Presentation time does not advance during the states KSSTATE_PAUSE and KSSTATE_S
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536791">IMXF::PutMessage</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536494">IAllocatorMXF::GetMessage</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536791">IMXF::PutMessage</a>
 
  
 

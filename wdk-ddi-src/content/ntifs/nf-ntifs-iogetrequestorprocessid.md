@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 73fe40ee-f1fe-419b-a866-6c40604f7716
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.iogetrequestorprocessid, IoGetRequestorProcessId routine [Installable File System Drivers], ntifs/IoGetRequestorProcessId, IoGetRequestorProcessId, ioref_a08b37d7-b999-4e40-a0aa-c62744fee6dd.xml
+ms.keywords : IoGetRequestorProcessId, ioref_a08b37d7-b999-4e40-a0aa-c62744fee6dd.xml, IoGetRequestorProcessId routine [Installable File System Drivers], ntifs/IoGetRequestorProcessId, ifsk.iogetrequestorprocessid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,7 +78,7 @@ For more information about using system threads and managing synchronization wit
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

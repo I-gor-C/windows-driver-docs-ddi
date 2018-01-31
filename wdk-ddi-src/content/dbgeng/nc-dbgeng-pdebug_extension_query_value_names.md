@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -150,9 +150,9 @@ Value names must start with <b>$$</b> and have a terminating NULL character. The
 
 <i>DebugExtensionProvideValue</i>
 
-<i>DebugExtensionUninitialize</i>
-
 <a href="..\dbgeng\nc-dbgeng-pdebug_extension_initialize.md">DebugExtensionInitialize</a>
+
+<i>DebugExtensionUninitialize</i>
 
  
 

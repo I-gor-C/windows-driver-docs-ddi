@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : b909c11c-de56-43e8-b339-b92249bc7e1c
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SetNotificationFreq method [Audio Devices], IMiniportWaveCyclicStream::SetNotificationFreq, SetNotificationFreq method [Audio Devices], IMiniportWaveCyclicStream interface, audmp-routines_9db148da-326d-4176-a852-83fa1e453246.xml, IMiniportWaveCyclicStream interface [Audio Devices], SetNotificationFreq method, IMiniportWaveCyclicStream, SetNotificationFreq, audio.iminiportwavecyclicstream_setnotificationfreq, portcls/IMiniportWaveCyclicStream::SetNotificationFreq
+ms.keywords : IMiniportWaveCyclicStream, portcls/IMiniportWaveCyclicStream::SetNotificationFreq, audio.iminiportwavecyclicstream_setnotificationfreq, SetNotificationFreq, SetNotificationFreq method [Audio Devices], IMiniportWaveCyclicStream::SetNotificationFreq, SetNotificationFreq method [Audio Devices], IMiniportWaveCyclicStream interface, IMiniportWaveCyclicStream interface [Audio Devices], SetNotificationFreq method, audmp-routines_9db148da-326d-4176-a852-83fa1e453246.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -86,11 +86,11 @@ In all current Windows releases, the WaveCyclic port driver specifies an <i>Inte
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iminiportwavecyclicstream.md">IMiniportWaveCyclicStream</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536903">IPortWaveCyclic::Notify</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536723">IMiniportWaveCyclic::NewStream</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536903">IPortWaveCyclic::Notify</a>
+<a href="..\portcls\nn-portcls-iminiportwavecyclicstream.md">IMiniportWaveCyclicStream</a>
 
 <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
 

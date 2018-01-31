@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 127c4e48-87db-4735-8d3d-e01fed6a9cf0
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : ComCallbacks_72cb31db-cc24-41b7-b891-65921c50ce12.xml, SessionStatus method [Windows Debugging], IDebugEventCallbacks interface, IDebugEventCallbacks, IDebugEventCallbacks::SessionStatus, SessionStatus, SessionStatus method [Windows Debugging], dbgeng/IDebugEventCallbacks::SessionStatus, IDebugEventCallbacks interface [Windows Debugging], SessionStatus method, debugger.idebugeventcallbacks_sessionstatus
+ms.keywords : IDebugEventCallbacks, IDebugEventCallbacks interface [Windows Debugging], SessionStatus method, IDebugEventCallbacks::SessionStatus, SessionStatus method [Windows Debugging], IDebugEventCallbacks interface, SessionStatus, debugger.idebugeventcallbacks_sessionstatus, SessionStatus method [Windows Debugging], dbgeng/IDebugEventCallbacks::SessionStatus, ComCallbacks_72cb31db-cc24-41b7-b891-65921c50ce12.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

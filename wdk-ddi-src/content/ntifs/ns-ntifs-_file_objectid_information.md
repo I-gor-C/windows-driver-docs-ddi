@@ -1,6 +1,6 @@
 ---
 UID : NS:ntifs._FILE_OBJECTID_INFORMATION
-title : _FILE_OBJECTID_INFORMATION
+title : "_FILE_OBJECTID_INFORMATION"
 author : windows-driver-content
 description : The FILE_OBJECTID_INFORMATION structure is used to query for object ID information for the files in a directory on an NTFS volume.
 old-location : ifsk\file_objectid_information.htm
@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : bbbaf48b-78c3-4a4b-801b-2fe3c0112a68
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PFILE_OBJECTID_INFORMATION structure pointer [Installable File System Drivers], FILE_OBJECTID_INFORMATION structure [Installable File System Drivers], *PFILE_OBJECTID_INFORMATION, ntifs/PFILE_OBJECTID_INFORMATION, FILE_OBJECTID_INFORMATION, fileinformationstructures_330b72bc-0a91-45d2-b4c9-04d065e0545e.xml, _FILE_OBJECTID_INFORMATION, ifsk.file_objectid_information, ntifs/FILE_OBJECTID_INFORMATION, PFILE_OBJECTID_INFORMATION
+ms.keywords : "*PFILE_OBJECTID_INFORMATION, _FILE_OBJECTID_INFORMATION, PFILE_OBJECTID_INFORMATION, ntifs/FILE_OBJECTID_INFORMATION, ifsk.file_objectid_information, ntifs/PFILE_OBJECTID_INFORMATION, FILE_OBJECTID_INFORMATION, FILE_OBJECTID_INFORMATION structure [Installable File System Drivers], fileinformationstructures_330b72bc-0a91-45d2-b4c9-04d065e0545e.xml, PFILE_OBJECTID_INFORMATION structure pointer [Installable File System Drivers]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : FILE_OBJECTID_INFORMATION, *PFILE_OBJECTID_INFORMATION
+req.typenames : "*PFILE_OBJECTID_INFORMATION, FILE_OBJECTID_INFORMATION"
 ---
 
 # _FILE_OBJECTID_INFORMATION structure
@@ -101,9 +101,9 @@ This structure must be aligned on a LONG (4-byte) boundary.
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-zwquerydirectoryfile.md">ZwQueryDirectoryFile</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a>
+
+<a href="..\ntifs\nf-ntifs-zwquerydirectoryfile.md">ZwQueryDirectoryFile</a>
 
 <a href="..\ntifs\ns-ntifs-_file_internal_information.md">FILE_INTERNAL_INFORMATION</a>
 

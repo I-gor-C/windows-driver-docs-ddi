@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 90be986b-e63e-4ae3-a0f3-87f6f58583dc
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/KeResetEvent, KeResetEvent, KeResetEvent routine [Kernel-Mode Driver Architecture], kernel.keresetevent, k105_d2a27b37-56af-46a4-8a48-da507261f77a.xml
+ms.keywords : KeResetEvent routine [Kernel-Mode Driver Architecture], wdm/KeResetEvent, kernel.keresetevent, KeResetEvent, k105_d2a27b37-56af-46a4-8a48-da507261f77a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,22 +79,22 @@ For more information about event objects, see <a href="https://msdn.microsoft.co
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | IrqlKeDispatchLte, HwStorPortProhibitedDDIs |
 
 ## See Also
 
 <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
 
-<a href="..\wdm\nf-wdm-keinitializeevent.md">KeInitializeEvent</a>
-
-<a href="..\wdm\nf-wdm-kereadstateevent.md">KeReadStateEvent</a>
+<a href="..\wdm\nf-wdm-keclearevent.md">KeClearEvent</a>
 
 <a href="..\wdm\nf-wdm-kesetevent.md">KeSetEvent</a>
 
-<a href="..\wdm\nf-wdm-keclearevent.md">KeClearEvent</a>
-
 <a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
+
+<a href="..\wdm\nf-wdm-kereadstateevent.md">KeReadStateEvent</a>
+
+<a href="..\wdm\nf-wdm-keinitializeevent.md">KeInitializeEvent</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4536B3AB-6170-4819-975A-47D9A6223EAE
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PDQueueTypeUnknown, ndis/PDQueueTypeReceive, NDIS_PD_QUEUE_TYPE, PDQueueTypeReceive, ndis/PDQueueTypeMax, NDIS_PD_QUEUE_TYPE enumeration [Network Drivers Starting with Windows Vista], PDQueueTypeMax, ndis/NDIS_PD_QUEUE_TYPE, netvista.ndis_pd_queue_type, ndis/PDQueueTypeTransmit, ndis/PDQueueTypeUnknown, PDQueueTypeTransmit
+ms.keywords : ndis/NDIS_PD_QUEUE_TYPE, PDQueueTypeReceive, ndis/PDQueueTypeTransmit, ndis/PDQueueTypeMax, NDIS_PD_QUEUE_TYPE enumeration [Network Drivers Starting with Windows Vista], netvista.ndis_pd_queue_type, ndis/PDQueueTypeUnknown, NDIS_PD_QUEUE_TYPE, ndis/PDQueueTypeReceive, PDQueueTypeMax, PDQueueTypeTransmit, PDQueueTypeUnknown
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -87,9 +87,9 @@ typedef enum _NDIS_PD_QUEUE_TYPE {
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-ndis_pd_allocate_queue.md">NdisPDAllocateQueue</a>
-
 <a href="..\ndis\ns-ndis-_ndis_pd_queue_parameters.md">NDIS_PD_QUEUE_PARAMETERS</a>
+
+<a href="..\ndis\nc-ndis-ndis_pd_allocate_queue.md">NdisPDAllocateQueue</a>
 
  
 

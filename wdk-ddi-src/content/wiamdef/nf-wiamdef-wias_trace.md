@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 9f6b06bf-60d3-4ec2-8c49-405bff2ccb5e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WIAS_TRACE, IWiaLog_c755ea6c-c312-4b15-be83-a437358b83a9.xml, WIAS_TRACE macro [Imaging Devices], wiamdef/WIAS_TRACE, image.wias_trace
+ms.keywords : IWiaLog_c755ea6c-c312-4b15-be83-a437358b83a9.xml, wiamdef/WIAS_TRACE, WIAS_TRACE macro [Imaging Devices], image.wias_trace, WIAS_TRACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2
+req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 

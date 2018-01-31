@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES
-title : _D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES
+title : "_D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES"
 author : windows-driver-content
 description : Used by the user-mode display driver to specify overlay plane attributes.
 old-location : display\d3dddi_multiplane_overlay_attributes.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6f758785-5d7f-4d63-82c7-93ced5de3da4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : _D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES, D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES, display.d3dddi_multiplane_overlay_attributes, d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES, D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES structure [Display Devices]
+ms.keywords : D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES, D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES structure [Display Devices], _D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES, d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES, display.d3dddi_multiplane_overlay_attributes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -138,19 +138,19 @@ Specifies YUV range and conversion info given as a value from the <a href="..\d3
 
 ## See Also
 
-<a href="..\d3dumddi\ne-d3dumddi-_d3dddi_multiplane_overlay_blend.md">D3DDDI_MULTIPLANE_OVERLAY_BLEND</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
 
-<a href="..\d3dumddi\ne-d3dumddi-_d3dddi_multiplane_overlay_flags.md">D3DDDI_MULTIPLANE_OVERLAY_FLAGS</a>
-
 <a href="..\d3dumddi\ne-d3dumddi-d3dddi_multiplane_overlay_video_frame_format.md">D3DDDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT</a>
-
-<a href="..\d3dumddi\ne-d3dumddi-d3dddi_multiplane_overlay_ycbcr_flags.md">D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS</a>
 
 <a href="..\d3dumddi\ne-d3dumddi-d3dddi_multiplane_overlay_stretch_quality.md">D3DDDI_MULTIPLANE_OVERLAY_STRETCH_QUALITY</a>
 
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_rotation.md">D3DDDI_ROTATION</a>
+
+<a href="..\d3dumddi\ne-d3dumddi-_d3dddi_multiplane_overlay_blend.md">D3DDDI_MULTIPLANE_OVERLAY_BLEND</a>
+
+<a href="..\d3dumddi\ne-d3dumddi-d3dddi_multiplane_overlay_ycbcr_flags.md">D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS</a>
+
+<a href="..\d3dumddi\ne-d3dumddi-_d3dddi_multiplane_overlay_flags.md">D3DDDI_MULTIPLANE_OVERLAY_FLAGS</a>
 
  
 

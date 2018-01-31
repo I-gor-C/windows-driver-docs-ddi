@@ -1,6 +1,6 @@
 ---
 UID : NS:bthxddi._BTHX_HCI_READ_WRITE_CONTEXT
-title : _BTHX_HCI_READ_WRITE_CONTEXT
+title : "_BTHX_HCI_READ_WRITE_CONTEXT"
 author : windows-driver-content
 description : The BTHX_HCI_READ_WRITE_CONTEXT structure is used as an input/output structure for the IOCTL_BTHX_READ_HCI and IOCTL_BTHX_WRITE_HCI IOCTLs.
 old-location : bltooth\bthx_hci_read_write_context.htm
@@ -8,14 +8,14 @@ old-project : bltooth
 ms.assetid : EC31A704-A264-4A77-B979-BFA59B42BA94
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : BTHX_HCI_READ_WRITE_CONTEXT, *PBTHX_HCI_READ_WRITE_CONTEXT, bltooth.bthx_hci_read_write_context, PBTHX_HCI_READ_WRITE_CONTEXT structure pointer [Bluetooth Devices], PBTHX_HCI_READ_WRITE_CONTEXT, BTHX_HCI_READ_WRITE_CONTEXT structure [Bluetooth Devices], bthxddi/BTHX_HCI_READ_WRITE_CONTEXT, _BTHX_HCI_READ_WRITE_CONTEXT, bthxddi/PBTHX_HCI_READ_WRITE_CONTEXT
+ms.keywords : PBTHX_HCI_READ_WRITE_CONTEXT structure pointer [Bluetooth Devices], BTHX_HCI_READ_WRITE_CONTEXT, _BTHX_HCI_READ_WRITE_CONTEXT, bltooth.bthx_hci_read_write_context, bthxddi/PBTHX_HCI_READ_WRITE_CONTEXT, *PBTHX_HCI_READ_WRITE_CONTEXT, BTHX_HCI_READ_WRITE_CONTEXT structure [Bluetooth Devices], PBTHX_HCI_READ_WRITE_CONTEXT, bthxddi/BTHX_HCI_READ_WRITE_CONTEXT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthxddi.h
 req.include-header : BthXDDI.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 8.
+req.target-min-winverclnt : Versions:\_Supported starting with  Windows 8.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : BTHX_HCI_READ_WRITE_CONTEXT, *PBTHX_HCI_READ_WRITE_CONTEXT
+req.typenames : "*PBTHX_HCI_READ_WRITE_CONTEXT, BTHX_HCI_READ_WRITE_CONTEXT"
 ---
 
 # _BTHX_HCI_READ_WRITE_CONTEXT structure

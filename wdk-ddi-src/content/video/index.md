@@ -134,7 +134,7 @@ video.h contains the following programming interfaces:
 | [VideoPortReadRegisterUchar](nf-video-videoportreadregisteruchar.md) | The VideoPortReadRegisterUchar function reads a byte from a mapped register. |
 | [VideoPortReadRegisterUlong](nf-video-videoportreadregisterulong.md) | The VideoPortReadRegisterUlong function reads a ULONG value from a mapped register range. |
 | [VideoPortReadRegisterUshort](nf-video-videoportreadregisterushort.md) | The VideoPortReadRegisterUshort function reads a USHORT value from a mapped register range. |
-| [VideoPortReadStateEvent](nf-video-videoportreadstateevent.md) | The VideoPortReadStateEvent function returns the current state of a given event object: signaled or nonsignaled. |
+| [VideoPortReadStateEvent](nf-video-videoportreadstateevent.md) | The VideoPortReadStateEvent function returns the current state of a given event object:\_signaled or nonsignaled. |
 | [VideoPortRegisterBugcheckCallback](nf-video-videoportregisterbugcheckcallback.md) | The VideoPortRegisterBugcheckCallback function allows a video miniport driver to register for, or hook, a callback that is invoked when a specified bug check occurs. |
 | [VideoPortReleaseBuffer](nf-video-videoportreleasebuffer.md) | The VideoPortReleaseBuffer function is obsolete in Windows 2000 and later. In its place, video miniport drivers should instead use VideoPortFreePool. VideoPortReleaseBuffer deallocates a block of paged pool memory. |
 | [VideoPortReleaseCommonBuffer](nf-video-videoportreleasecommonbuffer.md) | The VideoPortReleaseCommonBuffer function frees a common buffer that was previously allocated by VideoPortAllocateCommonBuffer. |

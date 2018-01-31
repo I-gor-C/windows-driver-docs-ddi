@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 80f1f1bd-57da-46b2-9967-9ba4b08ea057
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortPutDmaAdapter, VideoPort_Functions_3de2fb91-53a9-4a1d-9dcd-91e3c0d645ab.xml, display.videoportputdmaadapter, VideoPortPutDmaAdapter function [Display Devices], video/VideoPortPutDmaAdapter
+ms.keywords : VideoPortPutDmaAdapter, VideoPortPutDmaAdapter function [Display Devices], display.videoportputdmaadapter, VideoPort_Functions_3de2fb91-53a9-4a1d-9dcd-91e3c0d645ab.xml, video/VideoPortPutDmaAdapter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,9 +85,9 @@ A miniport driver should call this function only if it will not use the same VP_
 
 ## See Also
 
-<a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a>
+
+<a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>
 
  
 

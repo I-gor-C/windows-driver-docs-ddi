@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : dc0bade2-7781-4c08-aea5-0ff4809d3321
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugClient5::StartProcessServer, StartProcessServer method [Windows Debugging], IDebugClient interface, IDebugClient5, dbgeng/IDebugClient::StartProcessServer, IDebugClient2 interface [Windows Debugging], StartProcessServer method, StartProcessServer method [Windows Debugging], IDebugClient3 interface, debugger.startprocessserver, IDebugClient::StartProcessServer, StartProcessServer, dbgeng/IDebugClient2::StartProcessServer, IDebugClient2::StartProcessServer, IDebugClient5 interface [Windows Debugging], StartProcessServer method, StartProcessServer method [Windows Debugging], IDebugClient5 interface, IDebugClient3 interface [Windows Debugging], StartProcessServer method, IDebugClient4 interface [Windows Debugging], StartProcessServer method, StartProcessServer method [Windows Debugging], dbgeng/IDebugClient3::StartProcessServer, IDebugClient interface [Windows Debugging], StartProcessServer method, IDebugClient_de137b80-ffd7-4399-85a3-50b3c870c28c.xml, dbgeng/IDebugClient4::StartProcessServer, dbgeng/IDebugClient5::StartProcessServer, IDebugClient4::StartProcessServer, IDebugClient3::StartProcessServer, StartProcessServer method [Windows Debugging], IDebugClient2 interface, StartProcessServer method [Windows Debugging], IDebugClient4 interface
+ms.keywords : StartProcessServer method [Windows Debugging], IDebugClient4 interface, StartProcessServer method [Windows Debugging], IDebugClient3 interface, IDebugClient5::StartProcessServer, StartProcessServer method [Windows Debugging], IDebugClient interface [Windows Debugging], StartProcessServer method, dbgeng/IDebugClient4::StartProcessServer, IDebugClient2::StartProcessServer, dbgeng/IDebugClient5::StartProcessServer, dbgeng/IDebugClient::StartProcessServer, IDebugClient4 interface [Windows Debugging], StartProcessServer method, StartProcessServer method [Windows Debugging], IDebugClient2 interface, dbgeng/IDebugClient2::StartProcessServer, IDebugClient4::StartProcessServer, StartProcessServer method [Windows Debugging], IDebugClient5 interface, debugger.startprocessserver, StartProcessServer, IDebugClient5 interface [Windows Debugging], StartProcessServer method, IDebugClient5, IDebugClient2 interface [Windows Debugging], StartProcessServer method, IDebugClient3 interface [Windows Debugging], StartProcessServer method, IDebugClient::StartProcessServer, IDebugClient_de137b80-ffd7-4399-85a3-50b3c870c28c.xml, dbgeng/IDebugClient3::StartProcessServer, IDebugClient3::StartProcessServer, StartProcessServer method [Windows Debugging], IDebugClient interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -112,21 +112,21 @@ For more information about process servers and remote debugging, see <a href="ht
 
 <a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugclient3.md">IDebugClient3</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
+<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541969">DisconnectProcessServer</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542993">EndProcessServer</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugclient.md">IDebugClient</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539237">ConnectProcessServer</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561230">WaitForProcessServerEnd</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542993">EndProcessServer</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient.md">IDebugClient</a>
 
  
 

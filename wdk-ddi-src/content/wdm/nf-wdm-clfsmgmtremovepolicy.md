@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6f0ae6fc-4f2f-4a1a-ac2f-93689f6b7d50
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsMgmtRemovePolicy, Clfs_management_70e3d576-6891-4379-a25b-d880222db235.xml, kernel.clfsmgmtremovepolicy, wdm/ClfsMgmtRemovePolicy, ClfsMgmtRemovePolicy routine [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.clfsmgmtremovepolicy, ClfsMgmtRemovePolicy, wdm/ClfsMgmtRemovePolicy, Clfs_management_70e3d576-6891-4379-a25b-d880222db235.xml, ClfsMgmtRemovePolicy routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -151,7 +151,7 @@ This routine might also return other <a href="https://msdn.microsoft.com/library
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

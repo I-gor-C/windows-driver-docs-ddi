@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 92955e1e-6c5b-4e8e-a365-65ff4d0889a5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisCmDeregisterSapComplete, netvista.ndiscmderegistersapcomplete, NdisCmDeregisterSapComplete function [Network Drivers Starting with Windows Vista], ndis/NdisCmDeregisterSapComplete, condis_call_manager_ref_d8a656de-56d5-4b84-8179-636b72f1313b.xml
+ms.keywords : NdisCmDeregisterSapComplete, netvista.ndiscmderegistersapcomplete, condis_call_manager_ref_d8a656de-56d5-4b84-8179-636b72f1313b.xml, ndis/NdisCmDeregisterSapComplete, NdisCmDeregisterSapComplete function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -97,19 +97,19 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_CallManager_Function |
 
 ## See Also
+
+<a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a>
+
+<a href="..\ndis\nc-ndis-protocol_cm_deregister_sap.md">ProtocolCmDeregisterSap</a>
 
 <a href="..\ndis\nf-ndis-ndismcmderegistersapcomplete.md">NdisMCmDeregisterSapComplete</a>
 
 <mshelp:link keywords="netvista.protocolclderegistersapcomplete" tabindex="0"><i>
    ProtocolClDeregisterSapComplete</i></mshelp:link>
-
-<a href="..\ndis\nc-ndis-protocol_cm_deregister_sap.md">ProtocolCmDeregisterSap</a>
-
-<a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a>
 
  
 

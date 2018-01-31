@@ -2,7 +2,7 @@
 UID : NI:usbioctl.IOCTL_USB_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC
 title : IOCTL_USB_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC
 author : windows-driver-content
-description : .
+description : "."
 old-location : buses\_ioctl_usb_get_frame_number_and_qpc_for_time_sync.htm
 old-project : usbref
 ms.assetid : 701A7ED2-F35F-4B6B-BC91-ADCF60E294D2
@@ -90,7 +90,7 @@ In order to predict QPC  values with accuracy, the USB driver stack might poll t
 | ---- |:---- |
 | **Windows Driver kit version** |  |
 | **Header** | usbioctl.h |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 
 ## See Also
 

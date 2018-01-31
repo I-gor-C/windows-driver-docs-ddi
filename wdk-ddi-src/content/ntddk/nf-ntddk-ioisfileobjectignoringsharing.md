@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 1398056B-6AC3-4F92-8981-58C193907D6F
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoIsFileObjectIgnoringSharing, ntddk/IoIsFileObjectIgnoringSharing, ifsk.ioisfileobjectignoringsharing, IoIsFileObjectIgnoringSharing routine [Installable File System Drivers]
+ms.keywords : IoIsFileObjectIgnoringSharing routine [Installable File System Drivers], IoIsFileObjectIgnoringSharing, ntddk/IoIsFileObjectIgnoringSharing, ifsk.ioisfileobjectignoringsharing
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR"
+req.typenames : SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
 req.product : Windows 10 or later.
 ---
 
@@ -110,9 +110,9 @@ The following is a list of the IOCTLs that this callback function must be prepar
 
 ## See Also
 
-<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
-
 <a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a>
+
+<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
 
  
 

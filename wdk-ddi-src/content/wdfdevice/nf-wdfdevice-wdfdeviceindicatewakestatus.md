@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6581a309-1a6d-4795-a55c-327215ea18ee
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceIndicateWakeStatus, DFDeviceObjectGeneralRef_8b314bb3-74d4-4ef6-b1a0-f45fb498c468.xml, wdf.wdfdeviceindicatewakestatus, WdfDeviceIndicateWakeStatus, kmdf.wdfdeviceindicatewakestatus, WdfDeviceIndicateWakeStatus method, PFN_WDFDEVICEINDICATEWAKESTATUS
+ms.keywords : kmdf.wdfdeviceindicatewakestatus, WdfDeviceIndicateWakeStatus method, wdfdevice/WdfDeviceIndicateWakeStatus, DFDeviceObjectGeneralRef_8b314bb3-74d4-4ef6-b1a0-f45fb498c468.xml, wdf.wdfdeviceindicatewakestatus, PFN_WDFDEVICEINDICATEWAKESTATUS, WdfDeviceIndicateWakeStatus
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -129,5 +129,5 @@ For more information about calling the <b>WdfDeviceIndicateWakeStatus</b> method
 | **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |

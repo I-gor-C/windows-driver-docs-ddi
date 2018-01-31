@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 126741ba-b373-466e-986d-44e33c841eee
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : ComOther_0fb1a5d9-2c1f-4966-9838-e7d0ae17a43f.xml, dbgeng/IDebugBreakpoint::SetFlags, IDebugBreakpoint2, SetFlags method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint2::SetFlags, dbgeng/IDebugBreakpoint2::SetFlags, debugger.setflags, IDebugBreakpoint interface [Windows Debugging], SetFlags method, SetFlags method [Windows Debugging], IDebugBreakpoint2 interface, SetFlags method [Windows Debugging], IDebugBreakpoint::SetFlags, SetFlags, IDebugBreakpoint2 interface [Windows Debugging], SetFlags method
+ms.keywords : SetFlags method [Windows Debugging], IDebugBreakpoint2 interface, SetFlags method [Windows Debugging], IDebugBreakpoint2, IDebugBreakpoint interface [Windows Debugging], SetFlags method, IDebugBreakpoint2::SetFlags, debugger.setflags, dbgeng/IDebugBreakpoint::SetFlags, dbgeng/IDebugBreakpoint2::SetFlags, IDebugBreakpoint2 interface [Windows Debugging], SetFlags method, IDebugBreakpoint::SetFlags, ComOther_0fb1a5d9-2c1f-4966-9838-e7d0ae17a43f.xml, SetFlags, SetFlags method [Windows Debugging], IDebugBreakpoint interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 3d129a30-a892-4f4d-b8e3-f277d97980f4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DrvSplDeviceCaps function [Print Devices], print.drvspldevicecaps, DrvSplDeviceCaps, winddiui/DrvSplDeviceCaps, print_interface-graphics_8c345fd4-e513-44ff-94b0-2f035db6a022.xml
+ms.keywords : print.drvspldevicecaps, DrvSplDeviceCaps function [Print Devices], DrvSplDeviceCaps, print_interface-graphics_8c345fd4-e513-44ff-94b0-2f035db6a022.xml, winddiui/DrvSplDeviceCaps
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

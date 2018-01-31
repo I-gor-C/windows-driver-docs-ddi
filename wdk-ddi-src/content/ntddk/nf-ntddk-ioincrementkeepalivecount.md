@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : A80754BD-0F23-4EE9-898F-30743AA82C72
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoIncrementKeepAliveCount, kernel.ioincrementkeepalivecount, ntddk/IoIncrementKeepAliveCount, IoIncrementKeepAliveCount routine [Kernel-Mode Driver Architecture]
+ms.keywords : IoIncrementKeepAliveCount routine [Kernel-Mode Driver Architecture], kernel.ioincrementkeepalivecount, IoIncrementKeepAliveCount, ntddk/IoIncrementKeepAliveCount
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

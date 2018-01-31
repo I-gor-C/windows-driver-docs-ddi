@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 576193fc-756f-40fb-abdd-65c088687cb5
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3 interface [Windows Debugging], GetOffsetByNameWide method, debugger.getoffsetbynamewide, dbgeng/IDebugSymbols3::GetOffsetByNameWide, GetOffsetByNameWide method [Windows Debugging], IDebugSymbols3 interface, GetOffsetByNameWide method [Windows Debugging], IDebugSymbols3::GetOffsetByNameWide, GetOffsetByNameWide, IDebugSymbols3
+ms.keywords : GetOffsetByNameWide method [Windows Debugging], GetOffsetByNameWide, GetOffsetByNameWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging], GetOffsetByNameWide method, IDebugSymbols3, dbgeng/IDebugSymbols3::GetOffsetByNameWide, debugger.getoffsetbynamewide, IDebugSymbols3::GetOffsetByNameWide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

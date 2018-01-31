@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 7dea199f-ef98-4f7b-a3e4-de52fc23c8ef
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlNumberGenericTableElements, ifsk.rtlnumbergenerictableelements, RtlNumberGenericTableElements routine [Installable File System Drivers], ntddk/RtlNumberGenericTableElements, rtlref_f12988ba-01c3-4a34-8967-aafaf5b605f8.xml
+ms.keywords : ntddk/RtlNumberGenericTableElements, RtlNumberGenericTableElements routine [Installable File System Drivers], rtlref_f12988ba-01c3-4a34-8967-aafaf5b605f8.xml, ifsk.rtlnumbergenerictableelements, RtlNumberGenericTableElements
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -82,7 +82,7 @@ Callers of <b>RtlNumberGenericTableElements</b> must be running at IRQL &lt; DIS
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | < DISPATCH_LEVEL (see Remarks section) |
+| **IRQL** | "< DISPATCH_LEVEL (see Remarks section)" |
 | **DDI compliance rules** |  |
 
 ## See Also

@@ -1,6 +1,6 @@
 ---
 UID : NS:bthddi._SCO_INDICATION_PARAMETERS
-title : _SCO_INDICATION_PARAMETERS
+title : "_SCO_INDICATION_PARAMETERS"
 author : windows-driver-content
 description : The SCO_INDICATION_PARAMETERS structure describes indication parameters about a SCO connect or disconnect notification.
 old-location : bltooth\sco_indication_parameters.htm
@@ -8,14 +8,14 @@ old-project : bltooth
 ms.assetid : 2d3ae219-8a40-476c-b8eb-94f4c0566527
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : bth_structs_73ebf679-d092-4b0a-a54f-84539b8c85ae.xml, bltooth.sco_indication_parameters, _SCO_INDICATION_PARAMETERS, bthddi/SCO_INDICATION_PARAMETERS, PSCO_INDICATION_PARAMETERS, SCO_INDICATION_PARAMETERS structure [Bluetooth Devices], bthddi/PSCO_INDICATION_PARAMETERS, *PSCO_INDICATION_PARAMETERS, PSCO_INDICATION_PARAMETERS structure pointer [Bluetooth Devices], SCO_INDICATION_PARAMETERS
+ms.keywords : bthddi/SCO_INDICATION_PARAMETERS, bthddi/PSCO_INDICATION_PARAMETERS, *PSCO_INDICATION_PARAMETERS, _SCO_INDICATION_PARAMETERS, SCO_INDICATION_PARAMETERS structure [Bluetooth Devices], PSCO_INDICATION_PARAMETERS structure pointer [Bluetooth Devices], bltooth.sco_indication_parameters, bth_structs_73ebf679-d092-4b0a-a54f-84539b8c85ae.xml, SCO_INDICATION_PARAMETERS, PSCO_INDICATION_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
@@ -75,7 +75,7 @@ A connection handle to the remote device. This handle is only valid for notifica
 
 `Parameters`
 
-
+####
 
 ## Remarks
 A profile driver's 

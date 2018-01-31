@@ -1,6 +1,6 @@
 ---
 UID : NE:ntifs._OBJECT_INFORMATION_CLASS
-title : _OBJECT_INFORMATION_CLASS
+title : "_OBJECT_INFORMATION_CLASS"
 author : windows-driver-content
 description : The OBJECT_INFORMATION_CLASS enumeration type represents the type of information to supply about an object.
 old-location : ifsk\object_information_class.htm
@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : fbcca01d-2dd6-405a-9ec2-709652e9dcd6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/ObjectBasicInformation, ObjectTypeInformation, objectstructures_60aa943f-6a91-429d-8c9d-1554f1bcf03e.xml, ntifs/ObjectTypeInformation, ntifs/OBJECT_INFORMATION_CLASS, OBJECT_INFORMATION_CLASS, OBJECT_INFORMATION_CLASS enumeration [Installable File System Drivers], ifsk.object_information_class, _OBJECT_INFORMATION_CLASS, ObjectBasicInformation
+ms.keywords : objectstructures_60aa943f-6a91-429d-8c9d-1554f1bcf03e.xml, ObjectBasicInformation, ntifs/OBJECT_INFORMATION_CLASS, ObjectTypeInformation, _OBJECT_INFORMATION_CLASS, OBJECT_INFORMATION_CLASS enumeration [Installable File System Drivers], ntifs/ObjectTypeInformation, OBJECT_INFORMATION_CLASS, ntifs/ObjectBasicInformation, ifsk.object_information_class
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -75,11 +75,11 @@ typedef enum _OBJECT_INFORMATION_CLASS {
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-zwqueryobject.md">ZwQueryObject</a>
+<a href="..\ntifs\ns-ntifs-__public_object_type_information.md">PUBLIC_OBJECT_TYPE_INFORMATION</a>
 
 <a href="..\ntifs\ns-ntifs-_public_object_basic_information.md">PUBLIC_OBJECT_BASIC_INFORMATION</a>
 
-<a href="..\ntifs\ns-ntifs-__public_object_type_information.md">PUBLIC_OBJECT_TYPE_INFORMATION</a>
+<a href="..\ntifs\nf-ntifs-zwqueryobject.md">ZwQueryObject</a>
 
  
 

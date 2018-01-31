@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 4B5301B6-8C10-4C8E-A9D2-28D2484A907A
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : serports.sercxprogresstransmit, SerCxProgressTransmit method [Serial Ports], SerCxProgressTransmit, 1/SerCxProgressTransmit
+ms.keywords : serports.sercxprogresstransmit, 1/SerCxProgressTransmit, SerCxProgressTransmit method [Serial Ports], SerCxProgressTransmit
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SERCX_STATUS, *PSERCX_STATUS
+req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
 req.product : Windows 10 or later.
 ---
 
@@ -131,16 +131,16 @@ If the <b>SerCxProgressTransmit</b> call does not complete all outstanding work 
 | **Minimum UMDF version** |  |
 | **Header** | sercx.h |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\ntddser\ns-ntddser-_serial_timeouts.md">SERIAL_TIMEOUTS</a>
 
-<a href="..\sercx\nf-sercx-sercxretrievetransmitbuffer.md">SerCxRetrieveTransmitBuffer</a>
-
 <a href="..\sercx\ne-sercx-_sercx_status.md">SERCX_STATUS</a>
+
+<a href="..\sercx\nf-sercx-sercxretrievetransmitbuffer.md">SerCxRetrieveTransmitBuffer</a>
 
  
 

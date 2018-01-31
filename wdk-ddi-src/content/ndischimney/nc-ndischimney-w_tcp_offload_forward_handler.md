@@ -165,9 +165,9 @@ The host stack allocates the NET_BUFFER_LIST and associated structures that NDIS
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-
 <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
+
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
 <mshelp:link keywords="netvista.ndistcpoffloadforwardcomplete" tabindex="0"><b>
    NdisTcpOffloadForwardComplete</b></mshelp:link>

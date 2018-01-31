@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2e076f2f-59e3-43ca-b83e-3079bbf41df3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIoTargetGetDevice method, wdf.wdfiotargetgetdevice, WdfIoTargetGetDevice, kmdf.wdfiotargetgetdevice, wdfiotarget/WdfIoTargetGetDevice, PFN_WDFIOTARGETGETDEVICE, DFIOTargetRef_796e5254-23b4-4ed1-b02b-66c5c8560769.xml
+ms.keywords : DFIOTargetRef_796e5254-23b4-4ed1-b02b-66c5c8560769.xml, WdfIoTargetGetDevice, PFN_WDFIOTARGETGETDEVICE, wdf.wdfiotargetgetdevice, wdfiotarget/WdfIoTargetGetDevice, kmdf.wdfiotargetgetdevice, WdfIoTargetGetDevice method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,16 +81,16 @@ For more information about I/O targets, see <a href="https://msdn.microsoft.com/
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfiotarget.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicegetiotarget.md">WdfUsbTargetDeviceGetIoTarget</a>
+
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a>
-
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicegetiotarget.md">WdfUsbTargetDeviceGetIoTarget</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 73891793-e59f-4c67-af93-07929d7c7326
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfChildListEndScan, kmdf.wdfchildlistendscan, DFDeviceObjectChildListRef_ffd03c13-6074-4679-bb87-b2c028fc8ded.xml, WdfChildListEndScan method, wdfchildlist/WdfChildListEndScan, PFN_WDFCHILDLISTENDSCAN, wdf.wdfchildlistendscan
+ms.keywords : kmdf.wdfchildlistendscan, WdfChildListEndScan, PFN_WDFCHILDLISTENDSCAN, DFDeviceObjectChildListRef_ffd03c13-6074-4679-bb87-b2c028fc8ded.xml, wdf.wdfchildlistendscan, WdfChildListEndScan method, wdfchildlist/WdfChildListEndScan
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,16 +81,16 @@ For more information about child lists, see <a href="https://docs.microsoft.com/
 | **Minimum UMDF version** |  |
 | **Header** | wdfchildlist.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
+<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginscan.md">WdfChildListBeginScan</a>
+
 <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistenditeration.md">WdfChildListEndIteration</a>
 
 <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginiteration.md">WdfChildListBeginIteration</a>
-
-<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginscan.md">WdfChildListBeginScan</a>
 
  
 

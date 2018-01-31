@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : c02be0a4-f82a-4895-bbae-21f6ffdc5466
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl_5511971f-2155-4ba3-b0f3-9bcd91b29555.xml, IDebugControl2 interface [Windows Debugging], GetActualProcessorType method, IDebugControl interface [Windows Debugging], GetActualProcessorType method, dbgeng/IDebugControl2::GetActualProcessorType, GetActualProcessorType method [Windows Debugging], IDebugControl2 interface, GetActualProcessorType, GetActualProcessorType method [Windows Debugging], debugger.getactualprocessortype, GetActualProcessorType method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl::GetActualProcessorType, GetActualProcessorType method [Windows Debugging], IDebugControl interface, IDebugControl3 interface [Windows Debugging], GetActualProcessorType method, IDebugControl3::GetActualProcessorType, IDebugControl::GetActualProcessorType, dbgeng/IDebugControl3::GetActualProcessorType, IDebugControl3, IDebugControl2::GetActualProcessorType
+ms.keywords : IDebugControl3, GetActualProcessorType method [Windows Debugging], IDebugControl interface, GetActualProcessorType method [Windows Debugging], IDebugControl2 interface, IDebugControl::GetActualProcessorType, IDebugControl3 interface [Windows Debugging], GetActualProcessorType method, dbgeng/IDebugControl::GetActualProcessorType, dbgeng/IDebugControl3::GetActualProcessorType, IDebugControl3::GetActualProcessorType, IDebugControl_5511971f-2155-4ba3-b0f3-9bcd91b29555.xml, debugger.getactualprocessortype, IDebugControl interface [Windows Debugging], GetActualProcessorType method, GetActualProcessorType method [Windows Debugging], IDebugControl3 interface, GetActualProcessorType, IDebugControl2::GetActualProcessorType, GetActualProcessorType method [Windows Debugging], IDebugControl2 interface [Windows Debugging], GetActualProcessorType method, dbgeng/IDebugControl2::GetActualProcessorType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -152,15 +152,15 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546670">GetExecutingProcessorType</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546595">GetEffectiveProcessorType</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546670">GetExecutingProcessorType</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 
  
 

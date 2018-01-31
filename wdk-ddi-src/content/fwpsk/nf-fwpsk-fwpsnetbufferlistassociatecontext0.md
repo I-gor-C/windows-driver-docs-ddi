@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 31135396-303b-4b94-8616-a4b7be207fa1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.fwpsnetbufferlistassociatecontext0, FwpsNetBufferListAssociateContext0, fwpsk/FwpsNetBufferListAssociateContext0, wfp_ref_2_funct_3_fwps_J-Q_f30e27fe-3146-4393-b967-fdb7bbfd6370.xml, FwpsNetBufferListAssociateContext0 function [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.fwpsnetbufferlistassociatecontext0, FwpsNetBufferListAssociateContext0 function [Network Drivers Starting with Windows Vista], FwpsNetBufferListAssociateContext0, wfp_ref_2_funct_3_fwps_J-Q_f30e27fe-3146-4393-b967-fdb7bbfd6370.xml, fwpsk/FwpsNetBufferListAssociateContext0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -155,25 +155,25 @@ Before calling this function, the
 | **Minimum UMDF version** |  |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/a151256b-d69f-4abb-bf68-644f157dfdd7">Using Packet Tagging</a>
 
-<mshelp:link keywords="netvista.fwpsnetbufferlistremovecontext0" tabindex="0"><b>
-   FwpsNetBufferListRemoveContext0</b></mshelp:link>
-
 <mshelp:link keywords="netvista.fwpsnetbufferlistretrievecontext0" tabindex="0"><b>
    FwpsNetBufferListRetrieveContext0</b></mshelp:link>
-
-<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext1.md">FwpsNetBufferListAssociateContext1</a>
 
 <mshelp:link keywords="netvista.fwpsnetbufferlistgettagforcontext0" tabindex="0"><b>
    FwpsNetBufferListGetTagForContext0</b></mshelp:link>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+<mshelp:link keywords="netvista.fwpsnetbufferlistremovecontext0" tabindex="0"><b>
+   FwpsNetBufferListRemoveContext0</b></mshelp:link>
+
+<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext1.md">FwpsNetBufferListAssociateContext1</a>
 
  
 

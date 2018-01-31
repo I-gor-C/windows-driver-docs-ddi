@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : aa69cc11-66c7-4d23-b596-c37472af484a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilcallrtt, RILCALLRTT, *LPRILCALLRTT, ntddrilapitypes/RILCALLRTT, RILCALLRTT structure [Network Drivers Starting with Windows Vista]
+ms.keywords : ntddrilapitypes/RILCALLRTT, RILCALLRTT, *LPRILCALLRTT, netvista.rilcallrtt, RILCALLRTT structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILCALLRTT, RILCALLRTT"
+req.typenames : RILCALLRTT, *LPRILCALLRTT
 ---
 
 # RILCALLRTT structure

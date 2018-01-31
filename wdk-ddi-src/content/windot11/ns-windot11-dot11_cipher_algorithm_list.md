@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b6d96a82-f744-4663-8373-886f4245c106
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : Native_802.11_data_types_704d7a5a-0cf5-459f-af0c-06dfdc936a9e.xml, netvista.dot11_cipher_algorithm_list, DOT11_CIPHER_ALGORITHM_LIST, PDOT11_CIPHER_ALGORITHM_LIST, windot11/PDOT11_CIPHER_ALGORITHM_LIST, *PDOT11_CIPHER_ALGORITHM_LIST, windot11/DOT11_CIPHER_ALGORITHM_LIST, PDOT11_CIPHER_ALGORITHM_LIST structure pointer [Network Drivers Starting with Windows Vista], DOT11_CIPHER_ALGORITHM_LIST structure [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.dot11_cipher_algorithm_list, DOT11_CIPHER_ALGORITHM_LIST structure [Network Drivers Starting with Windows Vista], windot11/PDOT11_CIPHER_ALGORITHM_LIST, Native_802.11_data_types_704d7a5a-0cf5-459f-af0c-06dfdc936a9e.xml, PDOT11_CIPHER_ALGORITHM_LIST structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_CIPHER_ALGORITHM_LIST, DOT11_CIPHER_ALGORITHM_LIST, PDOT11_CIPHER_ALGORITHM_LIST, *PDOT11_CIPHER_ALGORITHM_LIST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_CIPHER_ALGORITHM_LIST, DOT11_CIPHER_ALGORITHM_LIST"
+req.typenames : DOT11_CIPHER_ALGORITHM_LIST, *PDOT11_CIPHER_ALGORITHM_LIST
 req.product : Windows 10 or later.
 ---
 
@@ -81,6 +81,22 @@ The miniport driver must set the members of
 
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+
+
+#### Type
+
+This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
+
+
+#### Revision
+
+This member must be set to DOT11_CIPHER_ALGORITHM_LIST_REVISION_1.
+
+
+#### Size
+
+This member must be set to 
+       sizeof(DOT11_CIPHER_ALGORITHM_LIST).
 
 `uNumOfEntries`
 
@@ -172,15 +188,15 @@ Return NDIS_STATUS_SUCCESS from its
 
 ## See Also
 
-<a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>
+<mshelp:link keywords="netvista.oid_dot11_supported_multicast_algorithm_pair" tabindex="0">
+   OID_DOT11_SUPPORTED_MULTICAST_ALGORITHM_PAIR</mshelp:link>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>
 
 <mshelp:link keywords="netvista.oid_dot11_supported_unicast_algorithm_pair" tabindex="0">
    OID_DOT11_SUPPORTED_UNICAST_ALGORITHM_PAIR</mshelp:link>
 
-<mshelp:link keywords="netvista.oid_dot11_supported_multicast_algorithm_pair" tabindex="0">
-   OID_DOT11_SUPPORTED_MULTICAST_ALGORITHM_PAIR</mshelp:link>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
  
 

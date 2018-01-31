@@ -1,6 +1,6 @@
 ---
 UID : NS:dxva._DXVA_COPPStatusSignalingCmdData
-title : _DXVA_COPPStatusSignalingCmdData
+title : "_DXVA_COPPStatusSignalingCmdData"
 author : windows-driver-content
 description : The DXVA_COPPStatusSignalingCmdData structure describes how the signal that goes through the physical connector associated with the DirectX VA COPP device is protected.
 old-location : display\dxva_coppstatussignalingcmddata.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3065dddc-e084-4273-93eb-62a51763e213
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVA_COPPStatusSignalingCmdData, _DXVA_COPPStatusSignalingCmdData, display.dxva_coppstatussignalingcmddata, dxva/DXVA_COPPStatusSignalingCmdData, dxvaref_6a90a0a1-2173-4698-9e3d-83db1d5062f2.xml, DXVA_COPPStatusSignalingCmdData structure [Display Devices]
+ms.keywords : display.dxva_coppstatussignalingcmddata, DXVA_COPPStatusSignalingCmdData structure [Display Devices], DXVA_COPPStatusSignalingCmdData, dxvaref_6a90a0a1-2173-4698-9e3d-83db1d5062f2.xml, _DXVA_COPPStatusSignalingCmdData, dxva/DXVA_COPPStatusSignalingCmdData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -136,13 +136,13 @@ Specifies a value that indicates attributes of the connected display monitor tha
 
 ## See Also
 
-<a href="..\dxva\ns-dxva-_dxva_coppsetprotectionlevelcmddata.md">DXVA_COPPSetProtectionLevelCmdData</a>
-
-<a href="..\dxva\ns-dxva-_dxva_coppstatusoutput.md">DXVA_COPPStatusOutput</a>
+<a href="..\dxva\ns-dxva-_dxva_coppstatusinput.md">DXVA_COPPStatusInput</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539652">COPPQueryStatus</a>
 
-<a href="..\dxva\ns-dxva-_dxva_coppstatusinput.md">DXVA_COPPStatusInput</a>
+<a href="..\dxva\ns-dxva-_dxva_coppstatusoutput.md">DXVA_COPPStatusOutput</a>
+
+<a href="..\dxva\ns-dxva-_dxva_coppsetprotectionlevelcmddata.md">DXVA_COPPSetProtectionLevelCmdData</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 7e95a16e-e62d-49df-9889-fab0a85f9cbc
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugAdvanced3, dbgeng/IDebugAdvanced2::GetSystemObjectInformation, IDebugAdvanced2 interface [Windows Debugging], GetSystemObjectInformation method, IDebugAdvanced2::GetSystemObjectInformation, GetSystemObjectInformation method [Windows Debugging], IDebugAdvanced2 interface, GetSystemObjectInformation method [Windows Debugging], GetSystemObjectInformation method [Windows Debugging], IDebugAdvanced3 interface, IDebugAdvanced3 interface [Windows Debugging], GetSystemObjectInformation method, dbgeng/IDebugAdvanced3::GetSystemObjectInformation, IDebugAdvanced_a1f6b5cc-0b56-417f-b515-45c999499ba7.xml, GetSystemObjectInformation, debugger.getsystemobjectinformation, IDebugAdvanced3::GetSystemObjectInformation
+ms.keywords : IDebugAdvanced2::GetSystemObjectInformation, IDebugAdvanced3::GetSystemObjectInformation, GetSystemObjectInformation method [Windows Debugging], IDebugAdvanced3 interface [Windows Debugging], GetSystemObjectInformation method, GetSystemObjectInformation method [Windows Debugging], IDebugAdvanced3 interface, debugger.getsystemobjectinformation, IDebugAdvanced3, IDebugAdvanced2 interface [Windows Debugging], GetSystemObjectInformation method, GetSystemObjectInformation, dbgeng/IDebugAdvanced2::GetSystemObjectInformation, dbgeng/IDebugAdvanced3::GetSystemObjectInformation, GetSystemObjectInformation method [Windows Debugging], IDebugAdvanced2 interface, IDebugAdvanced_a1f6b5cc-0b56-417f-b515-45c999499ba7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -81,9 +81,23 @@ Returns details of the thread specified by engine thread ID.
 
 Specifies a 64-bit argument.  This parameter has the following interpretations depending on the value of <i>Which</i>:
 
+
+
+
+#### DEBUG_SYSOBJINFO_THREAD_BASIC_INFORMATION
+
+Not used.
+
 `Arg32`
 
 Specifies a 32-bit argument.  This parameter has the following interpretations depending on the value of <i>Which</i>:
+
+
+
+
+#### DEBUG_SYSOBJINFO_THREAD_BASIC_INFORMATION
+
+The engine thread ID of the desired thread.
 
 `Buffer`
 
@@ -163,9 +177,9 @@ The method was successful. However, the information would not fit in the buffer 
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugadvanced2.md">IDebugAdvanced2</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsystemobjects.md">IDebugSystemObjects</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugadvanced2.md">IDebugAdvanced2</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugadvanced3.md">IDebugAdvanced3</a>
 

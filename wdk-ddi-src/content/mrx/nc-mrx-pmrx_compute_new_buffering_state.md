@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+req.typenames : "*PSetDSMCounters_IN, SetDSMCounters_IN"
 ---
 
 
@@ -111,9 +111,9 @@ The Server Message Block (SMB) redirector uses <i>MRxComputeNewBufferingState</i
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550687">MRxGetConnectionId</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549850">MRxCompleteBufferingStateChangeRequest</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550687">MRxGetConnectionId</a>
 
  
 

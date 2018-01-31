@@ -1,6 +1,6 @@
 ---
 UID : NS:usbspec._USB_COMMON_DESCRIPTOR
-title : _USB_COMMON_DESCRIPTOR
+title : "_USB_COMMON_DESCRIPTOR"
 author : windows-driver-content
 description : The USB_COMMON_DESCRIPTOR structure contains the head of the first descriptor that matches the search criteria in a call to USBD_ParseDescriptors.
 old-location : buses\usb_common_descriptor.htm
@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 1ea51976-c786-4ca3-aaa3-a44fa8697efa
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : usbstrct_be74945b-60a4-44cc-9c7b-e1eb5cc25525.xml, usbspec/USB_COMMON_DESCRIPTOR, PUSB_COMMON_DESCRIPTOR structure pointer [Buses], usbspec/PUSB_COMMON_DESCRIPTOR, USB_COMMON_DESCRIPTOR structure [Buses], PUSB_COMMON_DESCRIPTOR, *PUSB_COMMON_DESCRIPTOR, buses.usb_common_descriptor, USB_COMMON_DESCRIPTOR, _USB_COMMON_DESCRIPTOR
+ms.keywords : "*PUSB_COMMON_DESCRIPTOR, USB_COMMON_DESCRIPTOR structure [Buses], PUSB_COMMON_DESCRIPTOR, usbspec/USB_COMMON_DESCRIPTOR, PUSB_COMMON_DESCRIPTOR structure pointer [Buses], usbspec/PUSB_COMMON_DESCRIPTOR, usbstrct_be74945b-60a4-44cc-9c7b-e1eb5cc25525.xml, buses.usb_common_descriptor, _USB_COMMON_DESCRIPTOR, USB_COMMON_DESCRIPTOR"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -72,9 +72,9 @@ Specifies the entire length of the descriptor, not of this structure.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-
 <a href="..\usbdlib\nf-usbdlib-usbd_parsedescriptors.md">USBD_ParseDescriptors</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
 
  
 

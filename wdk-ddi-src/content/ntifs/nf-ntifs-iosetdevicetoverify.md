@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 509eb91d-7f34-4ebb-bc37-56889c15a1b3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoSetDeviceToVerify, ioref_58eab192-eab0-42ee-8c2b-4fe1ad0fb703.xml, ntifs/IoSetDeviceToVerify, IoSetDeviceToVerify routine [Installable File System Drivers], ifsk.iosetdevicetoverify
+ms.keywords : ioref_58eab192-eab0-42ee-8c2b-4fe1ad0fb703.xml, ifsk.iosetdevicetoverify, IoSetDeviceToVerify routine [Installable File System Drivers], ntifs/IoSetDeviceToVerify, IoSetDeviceToVerify
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,18 +85,18 @@ For more information about removable-media devices, see <a href="https://msdn.mi
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | IrqlIoDispatch |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
+<a href="..\ntifs\nf-ntifs-ioverifyvolume.md">IoVerifyVolume</a>
 
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 
-<a href="..\ntifs\nf-ntifs-iogetdevicetoverify.md">IoGetDeviceToVerify</a>
+<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
 
-<a href="..\ntifs\nf-ntifs-ioverifyvolume.md">IoVerifyVolume</a>
+<a href="..\ntifs\nf-ntifs-iogetdevicetoverify.md">IoGetDeviceToVerify</a>
 
  
 

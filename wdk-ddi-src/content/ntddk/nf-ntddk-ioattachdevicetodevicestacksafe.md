@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : bc403fc7-7862-4c4c-8a82-bd5c740b270e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.ioattachdevicetodevicestacksafe, ntddk/IoAttachDeviceToDeviceStackSafe, IoAttachDeviceToDeviceStackSafe, IoAttachDeviceToDeviceStackSafe routine [Installable File System Drivers], ioref_1db91288-e8ad-4796-9052-333bf37f01d1.xml
+ms.keywords : IoAttachDeviceToDeviceStackSafe, ntddk/IoAttachDeviceToDeviceStackSafe, ifsk.ioattachdevicetodevicestacksafe, IoAttachDeviceToDeviceStackSafe routine [Installable File System Drivers], ioref_1db91288-e8ad-4796-9052-333bf37f01d1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -94,7 +94,7 @@ At the moment immediately after it is attached to the top of the stack, the <i>S
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

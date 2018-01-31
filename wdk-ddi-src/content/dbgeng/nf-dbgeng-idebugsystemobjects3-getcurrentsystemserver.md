@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 7956E4F6-7FB5-4349-81D2-4953108557D2
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetCurrentSystemServer, IDebugSystemObjects3, GetCurrentSystemServer method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentSystemServer method, debugger.idebugsystemobjects3_getcurrentsystemserver, GetCurrentSystemServer method [Windows Debugging], IDebugSystemObjects3::GetCurrentSystemServer, dbgeng/IDebugSystemObjects3::GetCurrentSystemServer
+ms.keywords : GetCurrentSystemServer method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects3::GetCurrentSystemServer, GetCurrentSystemServer, IDebugSystemObjects3, dbgeng/IDebugSystemObjects3::GetCurrentSystemServer, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentSystemServer method, GetCurrentSystemServer method [Windows Debugging], debugger.idebugsystemobjects3_getcurrentsystemserver
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

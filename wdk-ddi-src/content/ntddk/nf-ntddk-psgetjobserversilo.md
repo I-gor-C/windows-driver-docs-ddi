@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8EBCBC06-8373-43EA-91F5-6C8A439C0EAD
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PsGetJobServerSilo routine [Kernel-Mode Driver Architecture], kernel.psgetjobserversilo, ntddk/PsGetJobServerSilo, PsGetJobServerSilo
+ms.keywords : PsGetJobServerSilo, ntddk/PsGetJobServerSilo, kernel.psgetjobserversilo, PsGetJobServerSilo routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

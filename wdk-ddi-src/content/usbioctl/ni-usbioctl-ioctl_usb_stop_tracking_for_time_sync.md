@@ -72,7 +72,7 @@ The size of the <a href="..\usbioctl\ns-usbioctl-_usb_stop_tracking_for_time_syn
 | ---- |:---- |
 | **Windows Driver kit version** |  |
 | **Header** | usbioctl.h |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 
 ## See Also
 

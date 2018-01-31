@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 18242351-3dec-40df-b112-2335253903d2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMCoOidRequestComplete function [Network Drivers Starting with Windows Vista], NdisMCoOidRequestComplete, netvista.ndismcooidrequestcomplete, ndis/NdisMCoOidRequestComplete, condis_request_ref_516edd5f-ceae-4330-87b1-48a3a383e736.xml
+ms.keywords : NdisMCoOidRequestComplete, netvista.ndismcooidrequestcomplete, condis_request_ref_516edd5f-ceae-4330-87b1-48a3a383e736.xml, NdisMCoOidRequestComplete function [Network Drivers Starting with Windows Vista], ndis/NdisMCoOidRequestComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -107,23 +107,23 @@ A call to
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCO_Function |
 
 ## See Also
+
+<mshelp:link keywords="netvista.protocolcooidrequestcomplete" tabindex="0"><i>
+   ProtocolCoOidRequestComplete</i></mshelp:link>
 
 <a href="..\ndis\nf-ndis-ndiscooidrequest.md">NdisCoOidRequest</a>
 
 <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 
-<a href="..\ndis\nc-ndis-miniport_co_create_vc.md">MiniportCoCreateVc</a>
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
 <a href="..\ndis\nc-ndis-miniport_co_oid_request.md">MiniportCoOidRequest</a>
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-
-<mshelp:link keywords="netvista.protocolcooidrequestcomplete" tabindex="0"><i>
-   ProtocolCoOidRequestComplete</i></mshelp:link>
+<a href="..\ndis\nc-ndis-miniport_co_create_vc.md">MiniportCoCreateVc</a>
 
  
 

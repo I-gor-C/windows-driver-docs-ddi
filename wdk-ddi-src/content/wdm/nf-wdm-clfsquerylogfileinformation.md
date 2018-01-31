@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a907f219-9e4a-415f-821c-d419b7fde729
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsQueryLogFileInformation routine [Kernel-Mode Driver Architecture], ClfsQueryLogFileInformation, wdm/ClfsQueryLogFileInformation, Clfs_ff89b511-dc33-4407-b967-170b82cb70c3.xml, kernel.clfsquerylogfileinformation
+ms.keywords : Clfs_ff89b511-dc33-4407-b967-170b82cb70c3.xml, ClfsQueryLogFileInformation, kernel.clfsquerylogfileinformation, ClfsQueryLogFileInformation routine [Kernel-Mode Driver Architecture], wdm/ClfsQueryLogFileInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -164,7 +164,7 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

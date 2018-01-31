@@ -1,6 +1,6 @@
 ---
 UID : NS:sdpnode._SDP_TREE_ROOT_NODE
-title : _SDP_TREE_ROOT_NODE
+title : "_SDP_TREE_ROOT_NODE"
 author : windows-driver-content
 description : The SDP_TREE_ROOT_NODE structure is the root element of a tree-based representation of an SDP record.
 old-location : bltooth\sdp_tree_root_node.htm
@@ -8,14 +8,14 @@ old-project : bltooth
 ms.assetid : bde75364-387b-4f57-8942-1cf32652c02d
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : PSDP_TREE_ROOT_NODE, SDP_TREE_ROOT_NODE structure [Bluetooth Devices], PSDP_TREE_ROOT_NODE structure pointer [Bluetooth Devices], SDP_TREE_ROOT_NODE, _SDP_TREE_ROOT_NODE, bth_structs_b2bdb873-03b0-4c3a-910c-06277f6be663.xml, sdpnode/PSDP_TREE_ROOT_NODE, *PSDP_TREE_ROOT_NODE, bltooth.sdp_tree_root_node, sdpnode/SDP_TREE_ROOT_NODE
+ms.keywords : "*PSDP_TREE_ROOT_NODE, bltooth.sdp_tree_root_node, PSDP_TREE_ROOT_NODE, _SDP_TREE_ROOT_NODE, PSDP_TREE_ROOT_NODE structure pointer [Bluetooth Devices], sdpnode/SDP_TREE_ROOT_NODE, bth_structs_b2bdb873-03b0-4c3a-910c-06277f6be663.xml, sdpnode/PSDP_TREE_ROOT_NODE, SDP_TREE_ROOT_NODE, SDP_TREE_ROOT_NODE structure [Bluetooth Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : sdpnode.h
 req.include-header : Sdpnode.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SDP_TREE_ROOT_NODE, *PSDP_TREE_ROOT_NODE
+req.typenames : "*PSDP_TREE_ROOT_NODE, SDP_TREE_ROOT_NODE"
 req.product : Windows 10 or later.
 ---
 
@@ -99,17 +99,17 @@ The
 
 ## See Also
 
-<a href="..\sdplib\nf-sdplib-sdpcreatenodetree.md">SdpCreateNodeTree</a>
+<a href="..\bthsdpddi\nc-bthsdpddi-pconvertstreamtotree.md">SdpConvertStreamToTree</a>
 
 <a href="..\bthsdpddi\nc-bthsdpddi-pconverttreetostream.md">SdpConvertTreeToStream</a>
 
+<a href="..\sdplib\nf-sdplib-sdpaddattributetotree.md">SdpAddAttributeToTree</a>
+
 <a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
 
+<a href="..\sdplib\nf-sdplib-sdpcreatenodetree.md">SdpCreateNodeTree</a>
+
 <a href="..\sdplib\nf-sdplib-sdpfindattributeintree.md">SdpFindAttributeInTree</a>
-
-<a href="..\bthsdpddi\nc-bthsdpddi-pconvertstreamtotree.md">SdpConvertStreamToTree</a>
-
-<a href="..\sdplib\nf-sdplib-sdpaddattributetotree.md">SdpAddAttributeToTree</a>
 
  
 

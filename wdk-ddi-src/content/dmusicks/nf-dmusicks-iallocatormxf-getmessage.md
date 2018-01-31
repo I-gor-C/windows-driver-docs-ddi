@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : d5b56926-bcfb-4411-b24d-cc0758852510
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IAllocatorMXF interface [Audio Devices], GetMessage method, IAllocatorMXF, IAllocatorMXF::GetMessage, GetMessage method [Audio Devices], dmusicks/IAllocatorMXF::GetMessage, GetMessage, audmp-routines_24207ff5-69a9-47bd-a756-78c2a218080e.xml, GetMessage method [Audio Devices], IAllocatorMXF interface, audio.iallocatormxf_getmessage
+ms.keywords : IAllocatorMXF interface [Audio Devices], GetMessage method, audmp-routines_24207ff5-69a9-47bd-a756-78c2a218080e.xml, audio.iallocatormxf_getmessage, dmusicks/IAllocatorMXF::GetMessage, GetMessage method [Audio Devices], IAllocatorMXF interface, GetMessage, GetMessage method [Audio Devices], IAllocatorMXF, IAllocatorMXF::GetMessage
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -78,7 +78,7 @@ For more information about the allocator, see <a href="https://msdn.microsoft.co
 | **Minimum UMDF version** |  |
 | **Header** | dmusicks.h (include Dmusicks.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

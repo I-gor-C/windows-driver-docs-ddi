@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 332f6921-1ad2-42ae-9728-001f243b8cff
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortRegistryChannelSubkeyWriteDeferred, irb/AtaPortRegistryChannelSubkeyWriteDeferred, storage.ataportregistrychannelsubkeywritedeferred, atartns_ddf14e05-c641-4382-88b4-18abb54e0f17.xml, AtaPortRegistryChannelSubkeyWriteDeferred routine [Storage Devices]
+ms.keywords : irb/AtaPortRegistryChannelSubkeyWriteDeferred, AtaPortRegistryChannelSubkeyWriteDeferred, atartns_ddf14e05-c641-4382-88b4-18abb54e0f17.xml, AtaPortRegistryChannelSubkeyWriteDeferred routine [Storage Devices], storage.ataportregistrychannelsubkeywritedeferred
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -147,9 +147,9 @@ The miniport driver must not reuse the buffer that is pointed to by <i>Buffer</i
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportregistryfreebuffer.md">AtaPortRegistryFreeBuffer</a>
-
 <a href="..\irb\nf-irb-ataportregistryallocatebuffer.md">AtaPortRegistryAllocateBuffer</a>
+
+<a href="..\irb\nf-irb-ataportregistryfreebuffer.md">AtaPortRegistryFreeBuffer</a>
 
  
 

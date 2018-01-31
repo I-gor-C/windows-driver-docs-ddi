@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 0EDC524E-12BB-49AD-AA12-A7D9CF7D2F9C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses._ucxendpointnopingresponseerror, UcxEndpointNoPingResponseError, ucxendpoint/UcxEndpointNoPingResponseError, UcxEndpointNoPingResponseError method [Buses]
+ms.keywords : UcxEndpointNoPingResponseError method [Buses], UcxEndpointNoPingResponseError, ucxendpoint/UcxEndpointNoPingResponseError, buses._ucxendpointnopingresponseerror
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,7 +73,7 @@ This method does not return a value.
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ucxendpoint.h (include Ucxclass.h, Ucxendpoint.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

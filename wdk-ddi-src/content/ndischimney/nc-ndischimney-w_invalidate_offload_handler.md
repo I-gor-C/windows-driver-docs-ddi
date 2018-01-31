@@ -129,15 +129,15 @@ Eventually, the host stack will
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndis_miniport_offload_block_list" tabindex="0"><b>
-   NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</b></mshelp:link>
-
-<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
+<mshelp:link keywords="netvista.ndisminvalidateoffloadcomplete" tabindex="0"><b>
+   NdisMInvalidateOffloadComplete</b></mshelp:link>
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
-<mshelp:link keywords="netvista.ndisminvalidateoffloadcomplete" tabindex="0"><b>
-   NdisMInvalidateOffloadComplete</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
+
+<mshelp:link keywords="netvista.ndis_miniport_offload_block_list" tabindex="0"><b>
+   NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</b></mshelp:link>
 
  
 

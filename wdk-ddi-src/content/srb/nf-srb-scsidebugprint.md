@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : bbf3ea14-1802-4433-9043-73bfc0c447bf
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : scsiprt_ef011e55-85be-4ec8-8ba3-3838417bcd15.xml, ScsiDebugPrint routine [Storage Devices], storage.scsidebugprint, srb/ScsiDebugPrint, ScsiDebugPrint
+ms.keywords : storage.scsidebugprint, ScsiDebugPrint routine [Storage Devices], scsiprt_ef011e55-85be-4ec8-8ba3-3838417bcd15.xml, ScsiDebugPrint, srb/ScsiDebugPrint
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

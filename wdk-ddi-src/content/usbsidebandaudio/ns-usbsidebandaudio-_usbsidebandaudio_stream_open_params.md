@@ -1,6 +1,6 @@
 ---
 UID : NS:usbsidebandaudio._USBSIDEBANDAUDIO_STREAM_OPEN_PARAMS
-title : _USBSIDEBANDAUDIO_STREAM_OPEN_PARAMS
+title : "_USBSIDEBANDAUDIO_STREAM_OPEN_PARAMS"
 author : windows-driver-content
 description : TBD.
 old-location : audio\usbsidebandaudio_stream_open_params.htm
@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : B7FFCD5B-ED00-4B56-806F-61AB43481578
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : USBSIDEBANDAUDIO_STREAM_OPEN_PARAMS structure [Audio Devices], usbsidebandaudio/PUSBSIDEBANDAUDIO_STREAM_OPEN_PARAMS, audio.usbsidebandaudio_stream_open_params, USBSIDEBANDAUDIO_STREAM_OPEN_PARAMS, *PUSBSIDEBANDAUDIO_STREAM_OPEN_PARAMS, usbsidebandaudio/USBSIDEBANDAUDIO_STREAM_OPEN_PARAMS, _USBSIDEBANDAUDIO_STREAM_OPEN_PARAMS, PUSBSIDEBANDAUDIO_STREAM_OPEN_PARAMS, PUSBSIDEBANDAUDIO_STREAM_OPEN_PARAMS structure pointer [Audio Devices]
+ms.keywords : USBSIDEBANDAUDIO_STREAM_OPEN_PARAMS, usbsidebandaudio/PUSBSIDEBANDAUDIO_STREAM_OPEN_PARAMS, PUSBSIDEBANDAUDIO_STREAM_OPEN_PARAMS, *PUSBSIDEBANDAUDIO_STREAM_OPEN_PARAMS, _USBSIDEBANDAUDIO_STREAM_OPEN_PARAMS, usbsidebandaudio/USBSIDEBANDAUDIO_STREAM_OPEN_PARAMS, audio.usbsidebandaudio_stream_open_params, PUSBSIDEBANDAUDIO_STREAM_OPEN_PARAMS structure pointer [Audio Devices], USBSIDEBANDAUDIO_STREAM_OPEN_PARAMS structure [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBSIDEBANDAUDIO_STREAM_OPEN_PARAMS, USBSIDEBANDAUDIO_STREAM_OPEN_PARAMS"
+req.typenames : USBSIDEBANDAUDIO_STREAM_OPEN_PARAMS, *PUSBSIDEBANDAUDIO_STREAM_OPEN_PARAMS
 req.product : Windows 10 or later.
 ---
 

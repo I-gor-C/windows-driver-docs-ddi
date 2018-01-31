@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmddi._DXGK_ENGINESTATUS
-title : _DXGK_ENGINESTATUS
+title : "_DXGK_ENGINESTATUS"
 author : windows-driver-content
 description : Indicates the progress of a node within an active physical display adapter (engine) specified by a DXGKARG_QUERYENGINESTATUS structure.
 old-location : display\dxgk_enginestatus.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e052e3bc-688e-4aa8-b987-88ed6963774a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxgk_enginestatus, DXGK_ENGINESTATUS structure [Display Devices], d3dkmddi/DXGK_ENGINESTATUS, DXGK_ENGINESTATUS, _DXGK_ENGINESTATUS
+ms.keywords : DXGK_ENGINESTATUS structure [Display Devices], d3dkmddi/DXGK_ENGINESTATUS, _DXGK_ENGINESTATUS, display.dxgk_enginestatus, DXGK_ENGINESTATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

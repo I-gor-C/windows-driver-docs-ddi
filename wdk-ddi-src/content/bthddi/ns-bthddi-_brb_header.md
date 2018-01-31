@@ -1,6 +1,6 @@
 ---
 UID : NS:bthddi._BRB_HEADER
-title : _BRB_HEADER
+title : "_BRB_HEADER"
 author : windows-driver-content
 description : The BRB_HEADER structure contains header information about a Bluetooth request block (BRB), including information about the BRB type that the Bluetooth driver stack uses to determine which kind of BRB type to process.
 old-location : bltooth\brb_header.htm
@@ -8,14 +8,14 @@ old-project : bltooth
 ms.assetid : c6da4cc9-294b-4cb7-80c8-8adee8d4c40b
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : _BRB_HEADER, bltooth.brb_header, BRB_HEADER structure [Bluetooth Devices], bth_structs_69a21ba7-b425-45ec-bb2d-dd76a6cb8342.xml, BRB_HEADER, bthddi/BRB_HEADER
+ms.keywords : bltooth.brb_header, BRB_HEADER structure [Bluetooth Devices], bthddi/BRB_HEADER, bth_structs_69a21ba7-b425-45ec-bb2d-dd76a6cb8342.xml, BRB_HEADER, _BRB_HEADER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
@@ -202,9 +202,9 @@ Profile drivers should not modify any of the members of the BRB_HEADER structure
 
 ## See Also
 
-<a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a>
-
 <a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a>
+
+<a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a>
 
 <a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>
 

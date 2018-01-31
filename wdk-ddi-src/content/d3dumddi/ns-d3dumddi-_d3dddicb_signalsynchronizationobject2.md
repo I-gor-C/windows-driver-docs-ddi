@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2
-title : _D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2
+title : "_D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2"
 author : windows-driver-content
 description : Describes the parameters that are required to set up signaling in a call to the pfnSignalSynchronizationObject2Cb function.
 old-location : display\d3dddicb_signalsynchronizationobject2.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : cb8df28d-1d44-446b-83a8-b4191213973d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddicb_signalsynchronizationobject2, _D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2, D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2, D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2 structure [Display Devices], d3dumddi/D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2
+ms.keywords : "_D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2, D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2 structure [Display Devices], D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2, d3dumddi/D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2, display.d3dddicb_signalsynchronizationobject2"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 28363041-4adc-4348-a1a5-2b9c11750286
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilaccesstechnology, ntddrilapitypes/RILACCESSTECHNOLOGY, RILACCESSTECHNOLOGY structure [Network Drivers Starting with Windows Vista], *LPRILACCESSTECHNOLOGY, RILACCESSTECHNOLOGY
+ms.keywords : RILACCESSTECHNOLOGY structure [Network Drivers Starting with Windows Vista], RILACCESSTECHNOLOGY, ntddrilapitypes/RILACCESSTECHNOLOGY, *LPRILACCESSTECHNOLOGY, netvista.rilaccesstechnology
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILACCESSTECHNOLOGY, *LPRILACCESSTECHNOLOGY
+req.typenames : "*LPRILACCESSTECHNOLOGY, RILACCESSTECHNOLOGY"
 ---
 
 # RILACCESSTECHNOLOGY structure

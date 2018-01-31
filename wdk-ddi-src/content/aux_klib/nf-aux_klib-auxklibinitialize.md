@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7e15cbe1-17f7-4df7-9273-9a365d309d03
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.auxklibinitialize, aux_klib_d83fd3ae-3a26-4798-9ef8-1530adb78543.xml, AuxKlibInitialize, AuxKlibInitialize routine [Kernel-Mode Driver Architecture], aux_klib/AuxKlibInitialize
+ms.keywords : kernel.auxklibinitialize, aux_klib_d83fd3ae-3a26-4798-9ef8-1530adb78543.xml, aux_klib/AuxKlibInitialize, AuxKlibInitialize routine [Kernel-Mode Driver Architecture], AuxKlibInitialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PREPORT_ZONES_EXT_DATA, REPORT_ZONES_EXT_DATA"
+req.typenames : REPORT_ZONES_EXT_DATA, *PREPORT_ZONES_EXT_DATA
 ---
 
 

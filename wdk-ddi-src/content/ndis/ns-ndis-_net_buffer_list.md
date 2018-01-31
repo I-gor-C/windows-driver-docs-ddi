@@ -1,6 +1,6 @@
 ---
 UID : NS:ndis._NET_BUFFER_LIST
-title : _NET_BUFFER_LIST
+title : "_NET_BUFFER_LIST"
 author : windows-driver-content
 description : The NET_BUFFER_LIST structure specifies a linked list of NET_BUFFER structures.
 old-location : netvista\net_buffer_list.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 3b61a424-33f8-4b33-aaef-f68f0026ce27
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNET_BUFFER_LIST structure pointer [Network Drivers Starting with Windows Vista], ndis/NET_BUFFER_LIST, _NET_BUFFER_LIST, ndis/PNET_BUFFER_LIST, NET_BUFFER_LIST, ndis_netbuf_structures_ref_7320b98f-6600-44e4-a6e8-a7d7becaaa32.xml, netvista.net_buffer_list, *PNET_BUFFER_LIST, PNET_BUFFER_LIST, NET_BUFFER_LIST structure [Network Drivers Starting with Windows Vista]
+ms.keywords : PNET_BUFFER_LIST structure pointer [Network Drivers Starting with Windows Vista], ndis_netbuf_structures_ref_7320b98f-6600-44e4-a6e8-a7d7becaaa32.xml, NET_BUFFER_LIST, ndis/PNET_BUFFER_LIST, NET_BUFFER_LIST structure [Network Drivers Starting with Windows Vista], PNET_BUFFER_LIST, ndis/NET_BUFFER_LIST, _NET_BUFFER_LIST, *PNET_BUFFER_LIST, netvista.net_buffer_list
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNET_BUFFER_LIST, NET_BUFFER_LIST"
+req.typenames : NET_BUFFER_LIST, *PNET_BUFFER_LIST
 ---
 
 # _NET_BUFFER_LIST structure
@@ -104,6 +104,30 @@ Use the following functions and macros to access data in the NET_BUFFER_LIST_CON
 Attributes of the NET_BUFFER_LIST structure. The following definitions specify a bit mask for a set
       of flags:
 
+
+
+
+#### NBL_FLAGS_PROTOCOL_RESERVED
+
+This set is reserved for protocol drivers.
+<div class="alert"><b>Note</b>  Starting with NDIS 6.30, two additional bits are available for protocol use: 0x00000003.  A NDIS 6.30 protocol may use these bits if and only if <a href="..\ndis\nf-ndis-ndisgetversion.md">NdisGetVersion</a> returns a value greater than or equal to <b>NDIS_RUNTIME_VERSION_630</b>.  Protocols must not use these bits on earlier versions of NDIS, because prior to 6.30, NDIS uses them internally.</div><div> </div>
+
+#### NBL_FLAGS_MINIPORT_RESERVED
+
+This set is reserved for miniport drivers.
+
+
+#### NBL_FLAGS_SCRATCH
+
+The current owner of the NET_BUFFER_LIST structure, either NDIS or an NDIS driver, can use this
+        set. When the current owner relinquishes ownership, NDIS or another driver can overwrite these
+        flags.
+
+
+#### NBL_FLAGS_NDIS_RESERVED
+
+This set is reserved for NDIS.
+
 `MiniportReserved`
 
 Reserved for use by miniport drivers.
@@ -132,6 +156,74 @@ A driver can set the following flags even if it does not split the associated Et
 
 If the header-data split provider does not split the associated Ethernet frame, the miniport driver
      must indicate the NET_BUFFER_LIST structure with the following flags cleared:
+
+
+
+
+#### NDIS_NBL_FLAGS_SEND_READ_ONLY
+
+If set, the NET_BUFFER_LIST structure and its data are read-only for send operations.
+
+
+#### NDIS_NBL_FLAGS_RECV_READ_ONLY
+
+If set, the NET_BUFFER_LIST structure and its data are read-only for receive operations.
+
+
+#### NDIS_NBL_FLAGS_IS_IPV4
+
+All of the Ethernet frames in this NET_BUFFER_LIST structure are IPv4 frames. If this flag is
+       set, the header-data split provider must not set the NDIS_NBL_FLAGS_IS_IPV6 flag.
+
+
+#### NDIS_NBL_FLAGS_IS_IPV6
+
+All of the Ethernet frames in this NET_BUFFER_LIST structure are IPv6 frames. If this flag is
+       set, the header-data split provider must not set the NDIS_NBL_FLAGS_IS_IPV4 flag.
+
+
+#### NDIS_NBL_FLAGS_IS_TCP
+
+All of the Ethernet frames in this NET_BUFFER_LIST structure are TCP frames. If this flag is
+       set, the header-data split provider must not set the NDIS_NBL_FLAGS_IS_UDP flag, and the provider must
+       set the NDIS_NBL_FLAGS_IS_IPV4 flag or the NDIS_NBL_FLAGS_IS_IPV6 flag.
+
+
+#### NDIS_NBL_FLAGS_IS_UDP
+
+All of the Ethernet frames in this NET_BUFFER_LIST structure are UDP frames. If this flag is
+       set, the header-data split provider must not set the NDIS_NBL_FLAGS_IS_TCP flag, and the provider must
+       set the NDIS_NBL_FLAGS_IS_IPV4 flag or the NDIS_NBL_FLAGS_IS_IPV6 flag.
+
+
+#### NDIS_NBL_FLAGS_IS_LOOPBACK_PACKET
+
+All of the packets that are associated with this NET_BUFFER_LIST structure are loopback
+       packets.
+
+
+#### NDIS_NBL_FLAGS_HD_SPLIT
+
+The header and data are split in all of the Ethernet frames that are associated with this
+       NET_BUFFER_LIST structure.
+
+
+#### NDIS_NBL_FLAGS_SPLIT_AT_UPPER_LAYER_PROTOCOL_HEADER
+
+All of the Ethernet frames in this NET_BUFFER_LIST are split at the beginning of the upper layer
+       protocol header. If this flag is set, the header-data split provider must set the
+       NDIS_NBL_FLAGS_IS_IPV4 flag or the NDIS_NBL_FLAGS_IS_IPV6 flag. Also, the provider can set the
+       NDIS_NBL_FLAGS_IS_TCP flag or the NDIS_NBL_FLAGS_IS_UDP flag, but the provider must not set the
+       NDIS_NBL_FLAGS_SPLIT_AT_UPPER_LAYER_PROTOCOL_PAYLOAD flag.
+
+
+#### NDIS_NBL_FLAGS_SPLIT_AT_UPPER_LAYER_PROTOCOL_PAYLOAD
+
+All of the Ethernet frames in this NET_BUFFER_LIST structure are split at the beginning of the
+       TCP or UDP payload. If this flag is set, the header-data split provider must set the
+       NDIS_NBL_FLAGS_IS_IPV4 flag or the NDIS_NBL_FLAGS_IS_IPV6 flag. Also, the provider must set the
+       NDIS_NBL_FLAGS_IS_TCP flag or the NDIS_NBL_FLAGS_IS_UDP flag, but the provider must not set the
+       NDIS_NBL_FLAGS_SPLIT_AT_UPPER_LAYER_PROTOCOL_HEADER flag.
 
 `NdisPoolHandle`
 
@@ -184,6 +276,26 @@ A handle that NDIS provided to the driver in a binding or attaching operation by
 NDIS uses 
      <b>SourceHandle</b> to return the NET_BUFFER_LIST structure to the driver that sent the NET_BUFFER_LIST
      structure.
+
+
+#### Miniport Driver
+
+
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+
+
+#### Protocol Driver
+
+
+<a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
+
+
+
+#### Filter Driver
+
+
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
 
 ## Remarks
 NDIS drivers can call any of the following functions to allocate and initialize a NET_BUFFER_LIST
@@ -311,70 +423,70 @@ For more information on how to use net buffers, see
 
 ## See Also
 
+<mshelp:link keywords="netvista.ndisallocatenetbufferlistcontext" tabindex="0"><b>
+   NdisAllocateNetBufferListContext</b></mshelp:link>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564620">NdisTestNblFlag</a>
+
+<a href="..\ndis\nf-ndis-ndisgeneratepartialcancelid.md">NdisGeneratePartialCancelId</a>
+
+<a href="..\ndis\nf-ndis-ndisgetpoolfromnetbufferlist.md">NdisGetPoolFromNetBufferList</a>
+
+<a href="..\ndis\ne-ndis-_ndis_net_buffer_list_info.md">NDIS_NET_BUFFER_LIST_INFO</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568395">NET_BUFFER_LIST_FLAGS</a>
+
+<mshelp:link keywords="netvista.ndisallocateclonenetbufferlist" tabindex="0"><b>
+   NdisAllocateCloneNetBufferList</b></mshelp:link>
+
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferlist.md">NdisAllocateNetBufferList</a>
+
+<mshelp:link keywords="netvista.net_buffer_list_context_data_size" tabindex="0"><b>
+   NET_BUFFER_LIST_CONTEXT_DATA_SIZE</b></mshelp:link>
+
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+
+<mshelp:link keywords="netvista.ndisallocatenetbufferandnetbufferlist" tabindex="0"><b>
+   NdisAllocateNetBufferAndNetBufferList</b></mshelp:link>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561630">NdisClearNblFlag</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568394">NET_BUFFER_LIST_FIRST_NB</a>
+
+<mshelp:link keywords="netvista.net_buffer_list_protocol_reserved" tabindex="0"><b>
+   NET_BUFFER_LIST_PROTOCOL_RESERVED</b></mshelp:link>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564626">NdisTestNblFlags</a>
+
+<a href="..\ndis\nf-ndis-ndisfreenetbufferlistcontext.md">NdisFreeNetBufferListContext</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
+
+<a href="..\ndis\nf-ndis-ndiscancelsendnetbufferlists.md">NdisCancelSendNetBufferLists</a>
 
 <mshelp:link keywords="netvista.net_buffer_list_context_data_start" tabindex="0"><b>
    NET_BUFFER_LIST_CONTEXT_DATA_START</b></mshelp:link>
+
+<a href="..\ndis\ns-ndis-_net_buffer_list_header.md">NET_BUFFER_LIST_HEADER</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564542">NdisSetNblFlag</a>
+
+<a href="..\ndis\nf-ndis-ndissendnetbufferlists.md">NdisSendNetBufferLists</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568404">NET_BUFFER_LIST_NEXT_NBL</a>
 
 <mshelp:link keywords="netvista.ndisallocatefragmentnetbufferlist" tabindex="0"><b>
    NdisAllocateFragmentNetBufferList</b></mshelp:link>
 
-<a href="..\ndis\nf-ndis-ndisgeneratepartialcancelid.md">NdisGeneratePartialCancelId</a>
-
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-
 <a href="..\ndis\ns-ndis-_net_buffer_list_context.md">NET_BUFFER_LIST_CONTEXT</a>
 
-<mshelp:link keywords="netvista.ndisallocateclonenetbufferlist" tabindex="0"><b>
-   NdisAllocateCloneNetBufferList</b></mshelp:link>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
-
-<a href="..\ndis\nf-ndis-ndiscancelsendnetbufferlists.md">NdisCancelSendNetBufferLists</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561630">NdisClearNblFlag</a>
-
-<a href="..\ndis\ns-ndis-_net_buffer_list_header.md">NET_BUFFER_LIST_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568411">NET_BUFFER_LIST_STATUS</a>
 
 <mshelp:link keywords="netvista.ndisallocatereassemblednetbufferlist" tabindex="0"><b>
    NdisAllocateReassembledNetBufferList</b></mshelp:link>
 
-<a href="..\ndis\ne-ndis-_ndis_net_buffer_list_info.md">NDIS_NET_BUFFER_LIST_INFO</a>
-
 <mshelp:link keywords="netvista.net_buffer_list_miniport_reserved" tabindex="0"><b>
    NET_BUFFER_LIST_MINIPORT_RESERVED</b></mshelp:link>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568395">NET_BUFFER_LIST_FLAGS</a>
-
-<mshelp:link keywords="netvista.ndisallocatenetbufferandnetbufferlist" tabindex="0"><b>
-   NdisAllocateNetBufferAndNetBufferList</b></mshelp:link>
-
-<a href="..\ndis\nf-ndis-ndisfreenetbufferlistcontext.md">NdisFreeNetBufferListContext</a>
-
-<a href="..\ndis\nf-ndis-ndisgetpoolfromnetbufferlist.md">NdisGetPoolFromNetBufferList</a>
-
-<mshelp:link keywords="netvista.ndisallocatenetbufferlistcontext" tabindex="0"><b>
-   NdisAllocateNetBufferListContext</b></mshelp:link>
-
-<a href="..\ndis\nf-ndis-ndisallocatenetbufferlist.md">NdisAllocateNetBufferList</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568411">NET_BUFFER_LIST_STATUS</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564626">NdisTestNblFlags</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564620">NdisTestNblFlag</a>
-
-<mshelp:link keywords="netvista.net_buffer_list_protocol_reserved" tabindex="0"><b>
-   NET_BUFFER_LIST_PROTOCOL_RESERVED</b></mshelp:link>
-
-<a href="..\ndis\nf-ndis-ndissendnetbufferlists.md">NdisSendNetBufferLists</a>
-
-<mshelp:link keywords="netvista.net_buffer_list_context_data_size" tabindex="0"><b>
-   NET_BUFFER_LIST_CONTEXT_DATA_SIZE</b></mshelp:link>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564542">NdisSetNblFlag</a>
 
  
 

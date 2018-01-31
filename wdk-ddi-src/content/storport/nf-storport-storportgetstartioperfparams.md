@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c3314ac6-2b46-417f-a87b-64e27df9686d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortGetStartIoPerfParams, storage.storportgetstartioperfparams, storport/StorPortGetStartIoPerfParams, StorPortGetStartIoPerfParams routine [Storage Devices], storprt_ad7184c9-2f69-4571-ba56-28b5a3b353d7.xml
+ms.keywords : StorPortGetStartIoPerfParams routine [Storage Devices], storprt_ad7184c9-2f69-4571-ba56-28b5a3b353d7.xml, StorPortGetStartIoPerfParams, storport/StorPortGetStartIoPerfParams, storage.storportgetstartioperfparams
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -125,7 +125,7 @@ The structure pointed to by <i>StartIoPerfParams</i> is not valid because the va
 
 ## Remarks
 
-Starting in Windows 8, the <i>Srb</i> parameter may point to either <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> or <a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>. If the function identifier in the <b>Function</b> field of <i>Srb</i> is <b>SRB_FUNCTION_STORAGE_REQUEST_BLOCK</b>, the SRB is a <b>STORAGE_REQUEST_BLOCK</b> request structure.
+Starting in Windows 8, the <i>Srb</i> parameter may point to either <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> or <a href="..\srb\ns-srb-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>. If the function identifier in the <b>Function</b> field of <i>Srb</i> is <b>SRB_FUNCTION_STORAGE_REQUEST_BLOCK</b>, the SRB is a <b>STORAGE_REQUEST_BLOCK</b> request structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -141,11 +141,11 @@ Starting in Windows 8, the <i>Srb</i> parameter may point to either <a href="..
 
 ## See Also
 
-<a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
-
 <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
 
 <a href="..\storport\ns-storport-_startio_performance_parameters.md">STARTIO_PERFORMANCE_PARAMETERS</a>
+
+<a href="..\srb\ns-srb-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
 
  
 

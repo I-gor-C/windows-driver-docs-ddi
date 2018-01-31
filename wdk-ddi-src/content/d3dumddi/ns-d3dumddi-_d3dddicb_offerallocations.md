@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._D3DDDICB_OFFERALLOCATIONS
-title : _D3DDDICB_OFFERALLOCATIONS
+title : "_D3DDDICB_OFFERALLOCATIONS"
 author : windows-driver-content
 description : Defines the video memory allocations that the driver offers for reuse. Used with the pfnOfferAllocationsCb function.
 old-location : display\d3dddicb_offerallocations.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 26f3cd7b-ae2e-4632-bfb2-e62839346f83
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDICB_OFFERALLOCATIONS, D3DDDICB_OFFERALLOCATIONS structure [Display Devices], d3dumddi/D3DDDICB_OFFERALLOCATIONS, display.d3dddicb_offerallocations, _D3DDDICB_OFFERALLOCATIONS
+ms.keywords : display.d3dddicb_offerallocations, d3dumddi/D3DDDICB_OFFERALLOCATIONS, _D3DDDICB_OFFERALLOCATIONS, D3DDDICB_OFFERALLOCATIONS, D3DDDICB_OFFERALLOCATIONS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,11 +86,11 @@ If the user-mode driver uses the array specified by <b>HandleList</b> to offer a
 
 ## See Also
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createresource.md">CreateResource(D3D11)</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451693">pfnOfferAllocationsCb</a>
 
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_offer_priority.md">D3DDDI_OFFER_PRIORITY</a>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createresource.md">CreateResource(D3D11)</a>
 
  
 

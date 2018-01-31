@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmddi._DXGK_MONITORDESCRIPTORSET_INTERFACE
-title : _DXGK_MONITORDESCRIPTORSET_INTERFACE
+title : "_DXGK_MONITORDESCRIPTORSET_INTERFACE"
 author : windows-driver-content
 description : The DXGK_MONITORDESCRIPTORSET_INTERFACE structure contains pointers to functions that belong to the Monitor Descriptor Set Interface, which is implemented by the video present network (VidPN) manager.
 old-location : display\dxgk_monitordescriptorset_interface.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ac492a44-f14e-4b66-9ec1-4f1b04806646
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGK_MONITORDESCRIPTORSET_INTERFACE, _DXGK_MONITORDESCRIPTORSET_INTERFACE, DmStructs_da0cca60-6df0-480b-8e02-0affe5eb5cfd.xml, display.dxgk_monitordescriptorset_interface, DXGK_MONITORDESCRIPTORSET_INTERFACE structure [Display Devices], DXGK_MONITORDESCRIPTORSET_INTERFACE
+ms.keywords : DmStructs_da0cca60-6df0-480b-8e02-0affe5eb5cfd.xml, d3dkmddi/DXGK_MONITORDESCRIPTORSET_INTERFACE, display.dxgk_monitordescriptorset_interface, _DXGK_MONITORDESCRIPTORSET_INTERFACE, DXGK_MONITORDESCRIPTORSET_INTERFACE structure [Display Devices], DXGK_MONITORDESCRIPTORSET_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -81,11 +81,11 @@ A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_r
 
 ## See Also
 
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_acquirefirstdescriptorinfo.md">pfnAcquireFirstDescriptorInfo</a>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_acquirenextdescriptorinfo.md">pfnAcquireNextDescriptorInfo</a>
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_releasedescriptorinfo.md">pfnReleaseDescriptorInfo</a>
-
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_acquirefirstdescriptorinfo.md">pfnAcquireFirstDescriptorInfo</a>
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_getnumdescriptors.md">pfnGetNumDescriptors</a>
 

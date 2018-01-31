@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 89bfe36a-6674-43b7-a889-24fe15771aea
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugRegisters2::SetPseudoValues, SetPseudoValues method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters_db4bc070-c017-479f-b9ca-4b2abe513d7f.xml, debugger.setpseudovalues, IDebugRegisters2::SetPseudoValues, IDebugRegisters2, SetPseudoValues, SetPseudoValues method [Windows Debugging], IDebugRegisters2 interface [Windows Debugging], SetPseudoValues method
+ms.keywords : debugger.setpseudovalues, IDebugRegisters2 interface [Windows Debugging], SetPseudoValues method, IDebugRegisters2::SetPseudoValues, SetPseudoValues, SetPseudoValues method [Windows Debugging], IDebugRegisters2 interface, dbgeng/IDebugRegisters2::SetPseudoValues, IDebugRegisters_db4bc070-c017-479f-b9ca-4b2abe513d7f.xml, SetPseudoValues method [Windows Debugging], IDebugRegisters2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

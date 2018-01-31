@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : CA84F931-5EB9-49D0-9EA5-288900A8DE46
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3 interface [Windows Debugging], GetSourceEntriesByOffset method, IDebugSymbols3::GetSourceEntriesByOffset, debugger.idebugsymbols3_getsourceentriesbyoffset, GetSourceEntriesByOffset method [Windows Debugging], IDebugSymbols3 interface, GetSourceEntriesByOffset method [Windows Debugging], GetSourceEntriesByOffset, IDebugSymbols3, dbgeng/IDebugSymbols3::GetSourceEntriesByOffset
+ms.keywords : GetSourceEntriesByOffset method [Windows Debugging], IDebugSymbols3 interface, GetSourceEntriesByOffset, IDebugSymbols3::GetSourceEntriesByOffset, debugger.idebugsymbols3_getsourceentriesbyoffset, dbgeng/IDebugSymbols3::GetSourceEntriesByOffset, IDebugSymbols3, GetSourceEntriesByOffset method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], GetSourceEntriesByOffset method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 269bbb79-c730-4b78-bf46-d502f23f039b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsSetDevicePnpAndBaseObject function [Streaming Media Devices], ksfunc_eff06a34-a458-4426-972c-6a0fbf0f7846.xml, stream.kssetdevicepnpandbaseobject, ks/KsSetDevicePnpAndBaseObject, KsSetDevicePnpAndBaseObject
+ms.keywords : ksfunc_eff06a34-a458-4426-972c-6a0fbf0f7846.xml, KsSetDevicePnpAndBaseObject, stream.kssetdevicepnpandbaseobject, ks/KsSetDevicePnpAndBaseObject, KsSetDevicePnpAndBaseObject function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,9 +86,9 @@ None
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksallocatedeviceheader.md">KsAllocateDeviceHeader</a>
-
 <a href="..\ks\nf-ks-ksrecalculatestackdepth.md">KsRecalculateStackDepth</a>
+
+<a href="..\ks\nf-ks-ksallocatedeviceheader.md">KsAllocateDeviceHeader</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 597bff1e-0bc1-4c18-9156-661a46cf8e7a
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.getinterrupt, GetInterrupt method [Windows Debugging], IDebugControl interface, IDebugControl2::GetInterrupt, dbgeng/IDebugControl2::GetInterrupt, IDebugControl::GetInterrupt, IDebugControl interface [Windows Debugging], GetInterrupt method, IDebugControl3::GetInterrupt, IDebugControl_059bd637-c75b-4b52-a382-c645cb4b25b9.xml, GetInterrupt method [Windows Debugging], IDebugControl3 interface, GetInterrupt method [Windows Debugging], IDebugControl2 interface [Windows Debugging], GetInterrupt method, dbgeng/IDebugControl3::GetInterrupt, dbgeng/IDebugControl::GetInterrupt, IDebugControl3 interface [Windows Debugging], GetInterrupt method, GetInterrupt method [Windows Debugging], IDebugControl2 interface, GetInterrupt, IDebugControl3
+ms.keywords : IDebugControl3::GetInterrupt, IDebugControl3, GetInterrupt method [Windows Debugging], IDebugControl interface, IDebugControl::GetInterrupt, IDebugControl_059bd637-c75b-4b52-a382-c645cb4b25b9.xml, IDebugControl interface [Windows Debugging], GetInterrupt method, GetInterrupt method [Windows Debugging], IDebugControl2::GetInterrupt, GetInterrupt, GetInterrupt method [Windows Debugging], IDebugControl2 interface, IDebugControl3 interface [Windows Debugging], GetInterrupt method, dbgeng/IDebugControl::GetInterrupt, IDebugControl2 interface [Windows Debugging], GetInterrupt method, debugger.getinterrupt, dbgeng/IDebugControl3::GetInterrupt, GetInterrupt method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl2::GetInterrupt
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -106,13 +106,13 @@ Examples of user interrupts include pressing Ctrl+C or pressing the <b>Stop</b> 
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556722">SetInterrupt</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556722">SetInterrupt</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
  
 

@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmddi._DXGK_DEVICEINFOFLAGS
-title : _DXGK_DEVICEINFOFLAGS
+title : "_DXGK_DEVICEINFOFLAGS"
 author : windows-driver-content
 description : The DXGK_DEVICEINFOFLAGS structure identifies, in bit-field flags, information about a graphics device.
 old-location : display\dxgk_deviceinfoflags.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 26d0aad9-86d0-4d97-978a-1e15285d3369
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_69e769da-b68e-4df6-94dd-95e11bc88b0c.xml, display.dxgk_deviceinfoflags, d3dkmddi/DXGK_DEVICEINFOFLAGS, DXGK_DEVICEINFOFLAGS, DXGK_DEVICEINFOFLAGS structure [Display Devices], _DXGK_DEVICEINFOFLAGS
+ms.keywords : DXGK_DEVICEINFOFLAGS, DmStructs_69e769da-b68e-4df6-94dd-95e11bc88b0c.xml, DXGK_DEVICEINFOFLAGS structure [Display Devices], display.dxgk_deviceinfoflags, _DXGK_DEVICEINFOFLAGS, d3dkmddi/DXGK_DEVICEINFOFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

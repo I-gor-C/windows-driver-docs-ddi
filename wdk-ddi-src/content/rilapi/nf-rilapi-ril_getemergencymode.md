@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 3c95d10b-5db6-40d0-9caa-518235e81d6d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapi/RIL_GetEmergencyMode, RIL_GetEmergencyMode method [Network Drivers Starting with Windows Vista], netvista.ril_getemergencymode, RIL_GetEmergencyMode
+ms.keywords : RIL_GetEmergencyMode method [Network Drivers Starting with Windows Vista], netvista.ril_getemergencymode, rilapi/RIL_GetEmergencyMode, RIL_GetEmergencyMode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
+req.typenames : "*PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER"
 req.product : Windows 10 or later.
 ---
 

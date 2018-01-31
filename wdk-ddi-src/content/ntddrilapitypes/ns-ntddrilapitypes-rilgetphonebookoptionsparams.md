@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : a6c71f2d-baf7-4293-ae13-38625be3ab3f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RILGETPHONEBOOKOPTIONSPARAMS, RILGETPHONEBOOKOPTIONSPARAMS, RILGETPHONEBOOKOPTIONSPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILGETPHONEBOOKOPTIONSPARAMS, netvista.rilgetphonebookoptionsparams
+ms.keywords : ntddrilapitypes/RILGETPHONEBOOKOPTIONSPARAMS, RILGETPHONEBOOKOPTIONSPARAMS, *LPRILGETPHONEBOOKOPTIONSPARAMS, netvista.rilgetphonebookoptionsparams, RILGETPHONEBOOKOPTIONSPARAMS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

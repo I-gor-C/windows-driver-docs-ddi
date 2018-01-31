@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 87d9f307-996b-47df-b3dd-368fef6c1042
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols_ecccfdc4-2942-480c-9f78-c21c4ed46c90.xml, AddSyntheticModule method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::AddSyntheticModule, IDebugSymbols3 interface [Windows Debugging], AddSyntheticModule method, debugger.addsyntheticmodule, dbgeng/IDebugSymbols3::AddSyntheticModule, AddSyntheticModule, AddSyntheticModule method [Windows Debugging], IDebugSymbols3
+ms.keywords : IDebugSymbols_ecccfdc4-2942-480c-9f78-c21c4ed46c90.xml, AddSyntheticModule, AddSyntheticModule method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], AddSyntheticModule method, IDebugSymbols3, AddSyntheticModule method [Windows Debugging], IDebugSymbols3 interface, debugger.addsyntheticmodule, dbgeng/IDebugSymbols3::AddSyntheticModule, IDebugSymbols3::AddSyntheticModule
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

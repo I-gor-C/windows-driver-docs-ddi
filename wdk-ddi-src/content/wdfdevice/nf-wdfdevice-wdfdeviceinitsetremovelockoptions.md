@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0BCF4141-BE4E-42C0-8986-BE039B27F5D5
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdeviceinitsetremovelockoptions, kmdf.wdfdeviceinitsetremovelockoptions, PFN_WDFDEVICEINITSETREMOVELOCKOPTIONS, WdfDeviceInitSetRemoveLockOptions method, WdfDeviceInitSetRemoveLockOptions, wdfdevice/WdfDeviceInitSetRemoveLockOptions
+ms.keywords : wdfdevice/WdfDeviceInitSetRemoveLockOptions, WdfDeviceInitSetRemoveLockOptions method, kmdf.wdfdeviceinitsetremovelockoptions, wdf.wdfdeviceinitsetremovelockoptions, PFN_WDFDEVICEINITSETREMOVELOCKOPTIONS, WdfDeviceInitSetRemoveLockOptions
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -100,7 +100,7 @@ For more information about remove locks, see <a href="https://msdn.microsoft.com
 | **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 
 ## See Also

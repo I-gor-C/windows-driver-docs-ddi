@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBFN_USB_STRING, USBFN_USB_STRING"
+req.typenames : USBFN_USB_STRING, *PUSBFN_USB_STRING
 req.product : Windows 10 or later.
 ---
 
@@ -78,9 +78,9 @@ This request must be sent after sending the <a href="..\usbfnioctl\ni-usbfnioctl
 
 ## See Also
 
-<a href="..\usbfnbase\ns-usbfnbase-_usbfn_usb_string.md">USBFN_USB_STRING</a>
-
 <a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_activate_usb_bus.md">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a>
+
+<a href="..\usbfnbase\ns-usbfnbase-_usbfn_usb_string.md">USBFN_USB_STRING</a>
 
  
 

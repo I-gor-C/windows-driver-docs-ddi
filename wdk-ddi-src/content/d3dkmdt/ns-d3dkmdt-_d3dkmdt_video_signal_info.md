@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmdt._D3DKMDT_VIDEO_SIGNAL_INFO
-title : _D3DKMDT_VIDEO_SIGNAL_INFO
+title : "_D3DKMDT_VIDEO_SIGNAL_INFO"
 author : windows-driver-content
 description : The D3DKMDT_VIDEO_SIGNAL_INFO structure contains information about a video signal driven by a video output on a display adapter.
 old-location : display\d3dkmdt_video_signal_info.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 38d0a655-265b-46e0-8af3-de6757025588
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_10882170-8ccd-481d-bb36-b0a1f706e395.xml, d3dkmdt/D3DKMDT_VIDEO_SIGNAL_INFO, _D3DKMDT_VIDEO_SIGNAL_INFO, display.d3dkmdt_video_signal_info, D3DKMDT_VIDEO_SIGNAL_INFO structure [Display Devices], D3DKMDT_VIDEO_SIGNAL_INFO
+ms.keywords : DmStructs_10882170-8ccd-481d-bb36-b0a1f706e395.xml, d3dkmdt/D3DKMDT_VIDEO_SIGNAL_INFO, D3DKMDT_VIDEO_SIGNAL_INFO structure [Display Devices], _D3DKMDT_VIDEO_SIGNAL_INFO, display.d3dkmdt_video_signal_info, D3DKMDT_VIDEO_SIGNAL_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : a9dea258-601b-4ff7-b03b-b3f22d86f314
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetDeviceAllocAndQueryString, wdfusb/WdfUsbTargetDeviceAllocAndQueryString, wdf.wdfusbtargetdeviceallocandquerystring, PFN_WDFUSBTARGETDEVICEALLOCANDQUERYSTRING, kmdf.wdfusbtargetdeviceallocandquerystring, DFUsbRef_708583a1-a585-402f-afd6-5df4457b0a25.xml, WdfUsbTargetDeviceAllocAndQueryString method
+ms.keywords : WdfUsbTargetDeviceAllocAndQueryString method, WdfUsbTargetDeviceAllocAndQueryString, kmdf.wdfusbtargetdeviceallocandquerystring, PFN_WDFUSBTARGETDEVICEALLOCANDQUERYSTRING, wdf.wdfusbtargetdeviceallocandquerystring, DFUsbRef_708583a1-a585-402f-afd6-5df4457b0a25.xml, wdfusb/WdfUsbTargetDeviceAllocAndQueryString
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
+req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
 
@@ -169,10 +169,6 @@ For more information about the <b>WdfUsbTargetDeviceAllocAndQueryString</b> meth
 
 ## See Also
 
-<a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a>
-
-<a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a>
-
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
 
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
@@ -180,6 +176,10 @@ For more information about the <b>WdfUsbTargetDeviceAllocAndQueryString</b> meth
 <a href="..\usbspec\ns-usbspec-_usb_configuration_descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a>
 
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicequerystring.md">WdfUsbTargetDeviceQueryString</a>
+
+<a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a>
+
+<a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a>
 
  
 

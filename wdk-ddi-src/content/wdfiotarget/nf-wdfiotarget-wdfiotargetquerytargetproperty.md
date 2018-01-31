@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 00987914-9fe2-4245-b463-ef362e31679d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIoTargetQueryTargetProperty, wdfiotarget/WdfIoTargetQueryTargetProperty, PFN_WDFIOTARGETQUERYTARGETPROPERTY, WdfIoTargetQueryTargetProperty method, kmdf.wdfiotargetquerytargetproperty, DFIOTargetRef_33739a99-4af2-4e90-92e5-b75e785f1c2c.xml, wdf.wdfiotargetquerytargetproperty
+ms.keywords : DFIOTargetRef_33739a99-4af2-4e90-92e5-b75e785f1c2c.xml, WdfIoTargetQueryTargetProperty method, wdfiotarget/WdfIoTargetQueryTargetProperty, wdf.wdfiotargetquerytargetproperty, PFN_WDFIOTARGETQUERYTARGETPROPERTY, kmdf.wdfiotargetquerytargetproperty, WdfIoTargetQueryTargetProperty
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -151,15 +151,15 @@ For more information about I/O targets, see <a href="https://msdn.microsoft.com/
 
 ## See Also
 
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
+
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetallocandquerytargetproperty.md">WdfIoTargetAllocAndQueryTargetProperty</a>
 
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a>
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicequeryproperty.md">WdfDeviceQueryProperty</a>
 
 <a href="https://msdn.microsoft.com/a17b4a88-45e8-45e7-b879-2f41b97be368">DEVICE_REGISTRY_PROPERTY</a>
-
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a>
 
  
 

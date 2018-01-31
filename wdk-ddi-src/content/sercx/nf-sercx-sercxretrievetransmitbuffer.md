@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 64494AB9-6F7F-4374-9081-8D65BA7D34E1
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SerCxRetrieveTransmitBuffer method [Serial Ports], SerCxRetrieveTransmitBuffer, 1/SerCxRetrieveTransmitBuffer, serports.sercxretrievetransmitbuffer
+ms.keywords : SerCxRetrieveTransmitBuffer, serports.sercxretrievetransmitbuffer, SerCxRetrieveTransmitBuffer method [Serial Ports], 1/SerCxRetrieveTransmitBuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SERCX_STATUS, *PSERCX_STATUS
+req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
 req.product : Windows 10 or later.
 ---
 
@@ -124,14 +124,14 @@ The serial controller driver calls this method to acquire a buffer that contains
 | **Minimum UMDF version** |  |
 | **Header** | sercx.h |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\sercx\nf-sercx-sercx_buffer_descriptor_init.md">SERCX_BUFFER_DESCRIPTOR_INIT</a>
-
 <a href="..\sercx\ns-sercx-sercx_buffer_descriptor.md">SERCX_BUFFER_DESCRIPTOR</a>
+
+<a href="..\sercx\nf-sercx-sercx_buffer_descriptor_init.md">SERCX_BUFFER_DESCRIPTOR_INIT</a>
 
  
 

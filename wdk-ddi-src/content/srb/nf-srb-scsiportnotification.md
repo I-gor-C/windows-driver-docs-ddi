@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 27da3881-4c47-492c-868e-ce72210e9d6f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortNotification routine [Storage Devices], ScsiPortNotification, storage.scsiportnotification, srb/ScsiPortNotification, scsiprt_0e410e4a-e7bb-448b-9d4d-c2a5db63fe02.xml
+ms.keywords : scsiprt_0e410e4a-e7bb-448b-9d4d-c2a5db63fe02.xml, storage.scsiportnotification, ScsiPortNotification routine [Storage Devices], srb/ScsiPortNotification, ScsiPortNotification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : Scsiport.lib; Storport.lib
 req.dll : 
-req.irql : (See Remarks section)
+req.irql : "(See Remarks section)"
 topictype : 
 apitype : 
 apilocation : 
@@ -411,20 +411,20 @@ A miniport driver that is registered as a WMI data provider can call <b>ScsiPort
 | **Minimum UMDF version** |  |
 | **Header** | srb.h (include Miniport.h, Scsi.h) |
 | **Library** |  |
-| **IRQL** | (See Remarks section) |
+| **IRQL** | "(See Remarks section)" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557327">HwScsiTimer</a>
+<a href="..\wdm\nf-wdm-iowmiregistrationcontrol.md">IoWMIRegistrationControl</a>
 
 <a href="..\srb\nf-srb-scsiportcompleterequest.md">ScsiPortCompleteRequest</a>
 
-<a href="..\wdm\nf-wdm-iowmiregistrationcontrol.md">IoWMIRegistrationControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557288">HwScsiDisableInterruptsCallback</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557327">HwScsiTimer</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557295">HwScsiEnableInterruptsCallback</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557288">HwScsiDisableInterruptsCallback</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 46c4a592-b3d4-479d-b5db-06202b5be290
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IddCxSwapChainFinishedProcessingFrame method [Display Devices], IddCxSwapChainFinishedProcessingFrame, iddcx/IddCxSwapChainFinishedProcessingFrame, display.iddcxswapchainfinishedprocessingframe
+ms.keywords : iddcx/IddCxSwapChainFinishedProcessingFrame, display.iddcxswapchainfinishedprocessingframe, IddCxSwapChainFinishedProcessingFrame, IddCxSwapChainFinishedProcessingFrame method [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : NtosKrnl.exe
 req.dll : 
-req.irql : _Must_inspect_result_
+req.irql : "_Must_inspect_result_"
 topictype : 
 apitype : 
 apilocation : 
@@ -74,5 +74,5 @@ If the driver copies the buffer to a staging surface so it can lock and copy the
 | **Minimum UMDF version** |  |
 | **Header** | iddcx.h |
 | **Library** |  |
-| **IRQL** | _Must_inspect_result_ |
+| **IRQL** | "_Must_inspect_result_" |
 | **DDI compliance rules** |  |

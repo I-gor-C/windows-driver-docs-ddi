@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 62cb451d-1170-4462-94ac-0477adc5946b
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IInterruptSync interface [Audio Devices], Connect method, portcls/IInterruptSync::Connect, IInterruptSync, Connect method [Audio Devices], Connect, Connect method [Audio Devices], IInterruptSync interface, audio.iinterruptsync_connect, IInterruptSync::Connect, audmp-routines_10f66201-af8d-42ff-a854-04f5cb90f2cc.xml
+ms.keywords : IInterruptSync::Connect, portcls/IInterruptSync::Connect, Connect, Connect method [Audio Devices], IInterruptSync interface [Audio Devices], Connect method, IInterruptSync, audio.iinterruptsync_connect, audmp-routines_10f66201-af8d-42ff-a854-04f5cb90f2cc.xml, Connect method [Audio Devices], IInterruptSync interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -76,11 +76,11 @@ This method connects the synchronization object to the interrupt that was specif
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-ioconnectinterrupt.md">IoConnectInterrupt</a>
+<a href="..\portcls\nf-portcls-pcnewinterruptsync.md">PcNewInterruptSync</a>
 
 <a href="..\portcls\nn-portcls-iinterruptsync.md">IInterruptSync</a>
 
-<a href="..\portcls\nf-portcls-pcnewinterruptsync.md">PcNewInterruptSync</a>
+<a href="..\wdm\nf-wdm-ioconnectinterrupt.md">IoConnectInterrupt</a>
 
  
 

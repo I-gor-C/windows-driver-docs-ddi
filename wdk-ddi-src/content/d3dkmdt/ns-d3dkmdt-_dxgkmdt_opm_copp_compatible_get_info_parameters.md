@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmdt._DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS
-title : _DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS
+title : "_DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS"
 author : windows-driver-content
 description : The DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS structure contains parameters that are used to retrieve information from a protected output object in a call to the DxgkDdiOPMGetCOPPCompatibleInformation function.
 old-location : display\dxgkmdt_opm_copp_compatible_get_info_parameters.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 51422f72-5dae-43d0-9bf2-c24403addb56
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_2e356de0-a1ca-4f75-a3f2-c72be3bdf87f.xml, DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, _DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS structure [Display Devices], *PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, d3dkmdt/PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, d3dkmdt/DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, display.dxgkmdt_opm_copp_compatible_get_info_parameters, PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS structure pointer [Display Devices]
+ms.keywords : DmStructs_2e356de0-a1ca-4f75-a3f2-c72be3bdf87f.xml, DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, display.dxgkmdt_opm_copp_compatible_get_info_parameters, PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, d3dkmdt/DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, _DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS structure pointer [Display Devices], *PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, d3dkmdt/PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS"
+req.typenames : DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, *PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS
 ---
 
 # _DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS structure

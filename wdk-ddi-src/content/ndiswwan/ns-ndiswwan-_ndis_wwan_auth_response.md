@@ -1,6 +1,6 @@
 ---
 UID : NS:ndiswwan._NDIS_WWAN_AUTH_RESPONSE
-title : _NDIS_WWAN_AUTH_RESPONSE
+title : "_NDIS_WWAN_AUTH_RESPONSE"
 author : windows-driver-content
 description : The NDIS_WWAN_AUTH_RESPONSE structure represents a response from one of the authentication methods.
 old-location : netvista\ndis_wwan_auth_response.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9F991E80-5155-45CE-9547-7354EE7EC4DB
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_WWAN_AUTH_RESPONSE, PNDIS_WWAN_AUTH_RESPONSE structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_AUTH_RESPONSE, *PNDIS_WWAN_AUTH_RESPONSE, netvista.ndis_wwan_auth_response, ndiswwan/NDIS_WWAN_AUTH_RESPONSE, PNDIS_WWAN_AUTH_RESPONSE, NDIS_WWAN_AUTH_RESPONSE structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_AUTH_RESPONSE
+ms.keywords : "_NDIS_WWAN_AUTH_RESPONSE, ndiswwan/PNDIS_WWAN_AUTH_RESPONSE, *PNDIS_WWAN_AUTH_RESPONSE, ndiswwan/NDIS_WWAN_AUTH_RESPONSE, PNDIS_WWAN_AUTH_RESPONSE structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_AUTH_RESPONSE structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_AUTH_RESPONSE, netvista.ndis_wwan_auth_response, NDIS_WWAN_AUTH_RESPONSE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_WWAN_AUTH_RESPONSE, *PNDIS_WWAN_AUTH_RESPONSE
+req.typenames : "*PNDIS_WWAN_AUTH_RESPONSE, NDIS_WWAN_AUTH_RESPONSE"
 ---
 
 # _NDIS_WWAN_AUTH_RESPONSE structure
@@ -158,9 +158,9 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/hh439821">NDIS_
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_auth_response.md">WWAN_AUTH_RESPONSE</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439821">NDIS_STATUS_WWAN_AUTH_RESPONSE</a>
+
+<a href="..\wwan\ns-wwan-_wwan_auth_response.md">WWAN_AUTH_RESPONSE</a>
 
  
 

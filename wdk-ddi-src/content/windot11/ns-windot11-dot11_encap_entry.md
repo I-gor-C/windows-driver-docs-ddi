@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : d17547c5-47a3-4d10-b27f-6a3bbf7aad03
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.dot11_encap_entry, PDOT11_ENCAP_ENTRY structure pointer [Network Drivers Starting with Windows Vista], Native_802.11_data_types_3304c37a-c08f-488e-a75d-d31d59a4a491.xml, *PDOT11_ENCAP_ENTRY, DOT11_ENCAP_ENTRY, PDOT11_ENCAP_ENTRY, DOT11_ENCAP_ENTRY structure [Network Drivers Starting with Windows Vista], windot11/DOT11_ENCAP_ENTRY, windot11/PDOT11_ENCAP_ENTRY
+ms.keywords : DOT11_ENCAP_ENTRY structure [Network Drivers Starting with Windows Vista], windot11/DOT11_ENCAP_ENTRY, Native_802.11_data_types_3304c37a-c08f-488e-a75d-d31d59a4a491.xml, PDOT11_ENCAP_ENTRY structure pointer [Network Drivers Starting with Windows Vista], DOT11_ENCAP_ENTRY, windot11/PDOT11_ENCAP_ENTRY, PDOT11_ENCAP_ENTRY, netvista.dot11_encap_entry, *PDOT11_ENCAP_ENTRY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -58,7 +58,20 @@ typedef struct DOT11_ENCAP_ENTRY {
 
 The type of encapsulation that is performed on the EtherType specified by the 
      <b>usEtherType</b> member. The 
-     <b>usEncapType</b> member can have one of the following values:
+     <b>usEncapType</b> member can have one of the following values: 
+     
+
+
+
+
+#### DOT11_ENCAP_RFC_1042
+
+The encapsulation that is defined through IETF RFC 1042.
+
+
+#### DOT11_ENCAP_802_IH
+
+The encapsulation that is defined through the IEEE 802.1h-1997 standard.
 
 `usEtherType`
 
@@ -91,11 +104,11 @@ The miniport driver returns an encapsulation list when it makes an
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndis_status_dot11_association_completion" tabindex="0">
-   NDIS_STATUS_DOT11_ASSOCIATION_COMPLETION</mshelp:link>
-
 <mshelp:link keywords="netvista.dot11_association_completion_parameters" tabindex="0"><b>
    DOT11_ASSOCIATION_COMPLETION_PARAMETERS</b></mshelp:link>
+
+<mshelp:link keywords="netvista.ndis_status_dot11_association_completion" tabindex="0">
+   NDIS_STATUS_DOT11_ASSOCIATION_COMPLETION</mshelp:link>
 
  
 

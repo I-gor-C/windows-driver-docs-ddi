@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 78a1808e-d244-4f23-bba1-c48a7b2e051b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisCoAssignInstanceName, netvista.ndiscoassigninstancename, ndis/NdisCoAssignInstanceName, NdisCoAssignInstanceName function [Network Drivers Starting with Windows Vista], condis_protocol_ref_48515a9c-790b-4122-8a29-2a35cf560af9.xml
+ms.keywords : ndis/NdisCoAssignInstanceName, condis_protocol_ref_48515a9c-790b-4122-8a29-2a35cf560af9.xml, NdisCoAssignInstanceName function [Network Drivers Starting with Windows Vista], NdisCoAssignInstanceName, netvista.ndiscoassigninstancename
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -171,17 +171,17 @@ The caller is responsible for freeing the buffer containing the returned instanc
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVC</a>
-
 <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
-
-<a href="..\ndis\nc-ndis-miniport_co_oid_request.md">MiniportCoOidRequest</a>
 
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
+<a href="..\ndis\nf-ndis-ndisfreestring.md">NdisFreeString</a>
+
+<a href="..\ndis\nc-ndis-miniport_co_oid_request.md">MiniportCoOidRequest</a>
+
 <a href="..\ndis\nc-ndis-miniport_oid_request.md">MiniportOidRequest</a>
 
-<a href="..\ndis\nf-ndis-ndisfreestring.md">NdisFreeString</a>
+<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVC</a>
 
  
 

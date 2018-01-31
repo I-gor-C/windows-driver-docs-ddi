@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddstor._PERSISTENT_RESERVE_COMMAND
-title : _PERSISTENT_RESERVE_COMMAND
+title : "_PERSISTENT_RESERVE_COMMAND"
 author : windows-driver-content
 description : The PERSISTENT_RESERVE_COMMAND structure is used together with the IOCTL_STORAGE_PERSISTENT_RESERVE_IN and IOCTL_STORAGE_PERSISTENT_RESERVE_OUT requests to obtain and control information about persistent reservations and reservation keys that are active within a device server.
 old-location : storage\persistent_reserve_command.htm
@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c7debd93-0fcd-43c5-a950-8154b62175bf
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddstor/PPERSISTENT_RESERVE_COMMAND, PERSISTENT_RESERVE_COMMAND, *PPERSISTENT_RESERVE_COMMAND, PPERSISTENT_RESERVE_COMMAND structure pointer [Storage Devices], PPERSISTENT_RESERVE_COMMAND, ntddstor/PERSISTENT_RESERVE_COMMAND, storage.persistent_reserve_command, PERSISTENT_RESERVE_COMMAND structure [Storage Devices], _PERSISTENT_RESERVE_COMMAND, structs-general_4fe3d6f6-6e9f-41f5-915c-2636707f429c.xml
+ms.keywords : PERSISTENT_RESERVE_COMMAND structure [Storage Devices], storage.persistent_reserve_command, PPERSISTENT_RESERVE_COMMAND structure pointer [Storage Devices], structs-general_4fe3d6f6-6e9f-41f5-915c-2636707f429c.xml, *PPERSISTENT_RESERVE_COMMAND, ntddstor/PPERSISTENT_RESERVE_COMMAND, PPERSISTENT_RESERVE_COMMAND, PERSISTENT_RESERVE_COMMAND, ntddstor/PERSISTENT_RESERVE_COMMAND, _PERSISTENT_RESERVE_COMMAND
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPERSISTENT_RESERVE_COMMAND, PERSISTENT_RESERVE_COMMAND"
+req.typenames : PERSISTENT_RESERVE_COMMAND, *PPERSISTENT_RESERVE_COMMAND
 ---
 
 # _PERSISTENT_RESERVE_COMMAND structure

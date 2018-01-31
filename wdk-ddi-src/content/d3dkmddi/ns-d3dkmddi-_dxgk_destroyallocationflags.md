@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmddi._DXGK_DESTROYALLOCATIONFLAGS
-title : _DXGK_DESTROYALLOCATIONFLAGS
+title : "_DXGK_DESTROYALLOCATIONFLAGS"
 author : windows-driver-content
 description : The DXGK_DESTROYALLOCATIONFLAGS structure identifies how to release allocations.
 old-location : display\dxgk_destroyallocationflags.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8f848d68-cef4-45a2-bdda-1bc8c9df6272
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_DESTROYALLOCATIONFLAGS, d3dkmddi/DXGK_DESTROYALLOCATIONFLAGS, display.dxgk_destroyallocationflags, DmStructs_acc32f8d-3d16-493e-be05-e739bc635bd0.xml, DXGK_DESTROYALLOCATIONFLAGS structure [Display Devices], _DXGK_DESTROYALLOCATIONFLAGS
+ms.keywords : d3dkmddi/DXGK_DESTROYALLOCATIONFLAGS, DmStructs_acc32f8d-3d16-493e-be05-e739bc635bd0.xml, DXGK_DESTROYALLOCATIONFLAGS, display.dxgk_destroyallocationflags, DXGK_DESTROYALLOCATIONFLAGS structure [Display Devices], _DXGK_DESTROYALLOCATIONFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

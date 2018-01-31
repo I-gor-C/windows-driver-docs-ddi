@@ -32,14 +32,14 @@ winddiui.h contains the following programming interfaces:
 | [DrvPrinterEvent](nf-winddiui-drvprinterevent.md) | A printer interface DLL's DrvPrinterEvent function is called by the print spooler when processing printer-specific events that might require action by the printer driver. |
 | [DrvQueryColorProfile](nf-winddiui-drvquerycolorprofile.md) | The DrvQueryColorProfile function allows a printer interface DLL to specify an ICC profile to use for color management. |
 | [DrvQueryJobAttributes](nf-winddiui-drvqueryjobattributes.md) | The DrvQueryJobAttributes function allows a printer interface DLL to specify support for such capabilities as printing multiple document pages on a physical page (&#0034;N-up&#0034; printing), printing multiple copies of each page, collating pages, and printing pages in reverse order. |
-| [DrvSplAbort](nf-winddiui-drvsplabort.md) | . |
-| [DrvSplClose](nf-winddiui-drvsplclose.md) | . |
+| [DrvSplAbort](nf-winddiui-drvsplabort.md) | "." |
+| [DrvSplClose](nf-winddiui-drvsplclose.md) | "." |
 | [DrvSplDeviceCaps](nf-winddiui-drvspldevicecaps.md) | A printer interface DLL's DrvSplDeviceCaps function queries a printer for its capabilities. |
-| [DrvSplEndDoc](nf-winddiui-drvsplenddoc.md) | . |
-| [DrvSplEndPage](nf-winddiui-drvsplendpage.md) | . |
-| [DrvSplStartDoc](nf-winddiui-drvsplstartdoc.md) | . |
-| [DrvSplStartPage](nf-winddiui-drvsplstartpage.md) | . |
-| [DrvSplWritePrinter](nf-winddiui-drvsplwriteprinter.md) | . |
+| [DrvSplEndDoc](nf-winddiui-drvsplenddoc.md) | "." |
+| [DrvSplEndPage](nf-winddiui-drvsplendpage.md) | "." |
+| [DrvSplStartDoc](nf-winddiui-drvsplstartdoc.md) | "." |
+| [DrvSplStartPage](nf-winddiui-drvsplstartpage.md) | "." |
+| [DrvSplWritePrinter](nf-winddiui-drvsplwriteprinter.md) | "." |
 | [DrvUpgradePrinter](nf-winddiui-drvupgradeprinter.md) | A printer interface DLL's DrvUpgradePrinter function is used for updating a printer's registry settings when a new version of the driver is added to a system. |
 
 

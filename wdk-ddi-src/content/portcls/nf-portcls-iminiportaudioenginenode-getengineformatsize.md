@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 0874EC25-3ABE-410B-B5AC-E98020378D7E
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GetEngineFormatSize method [Audio Devices], IMiniportAudioEngineNode interface, IMiniportAudioEngineNode interface [Audio Devices], GetEngineFormatSize method, audio.iminiportaudioenginenode_getengineformatsize, IMiniportAudioEngineNode, GetEngineFormatSize method [Audio Devices], GetEngineFormatSize, IMiniportAudioEngineNode::GetEngineFormatSize, portcls/IMiniportAudioEngineNode::GetEngineFormatSize
+ms.keywords : GetEngineFormatSize, GetEngineFormatSize method [Audio Devices], IMiniportAudioEngineNode interface, portcls/IMiniportAudioEngineNode::GetEngineFormatSize, GetEngineFormatSize method [Audio Devices], IMiniportAudioEngineNode, IMiniportAudioEngineNode::GetEngineFormatSize, IMiniportAudioEngineNode interface [Audio Devices], GetEngineFormatSize method, audio.iminiportaudioenginenode_getengineformatsize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method

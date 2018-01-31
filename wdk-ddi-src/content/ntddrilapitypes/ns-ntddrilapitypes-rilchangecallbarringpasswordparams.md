@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9b90f85e-091f-465d-a6e2-fa4ad66489ff
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILCHANGECALLBARRINGPASSWORDPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILCHANGECALLBARRINGPASSWORDPARAMS, ntddrilapitypes/RILCHANGECALLBARRINGPASSWORDPARAMS, netvista.rilchangecallbarringpasswordparams, RILCHANGECALLBARRINGPASSWORDPARAMS
+ms.keywords : RILCHANGECALLBARRINGPASSWORDPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilchangecallbarringpasswordparams, ntddrilapitypes/RILCHANGECALLBARRINGPASSWORDPARAMS, RILCHANGECALLBARRINGPASSWORDPARAMS, *LPRILCHANGECALLBARRINGPASSWORDPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

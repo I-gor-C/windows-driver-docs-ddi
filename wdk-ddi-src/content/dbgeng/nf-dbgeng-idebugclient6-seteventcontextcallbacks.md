@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 246573DB-5FEB-4068-8DB8-950F5EDFD1A9
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : SetEventContextCallbacks method [Windows Debugging], IDebugClient6, IDebugClient6 interface [Windows Debugging], SetEventContextCallbacks method, dbgeng/IDebugClient6::SetEventContextCallbacks, SetEventContextCallbacks method [Windows Debugging], IDebugClient6 interface, SetEventContextCallbacks, debugger.idebugclient6_seteventcontextcallbacks, IDebugClient6::SetEventContextCallbacks
+ms.keywords : debugger.idebugclient6_seteventcontextcallbacks, IDebugClient6, SetEventContextCallbacks method [Windows Debugging], SetEventContextCallbacks method [Windows Debugging], IDebugClient6 interface, dbgeng/IDebugClient6::SetEventContextCallbacks, IDebugClient6::SetEventContextCallbacks, IDebugClient6 interface [Windows Debugging], SetEventContextCallbacks method, SetEventContextCallbacks
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

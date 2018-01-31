@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e39a59f4-6ec2-402d-8f8e-12324d6cbfa8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PKSDATARANGE, KSDATARANGE, *PKSDATARANGE, ks/KSDATARANGE, ks/KSDATAFORMAT, KSDATAFORMAT, ks/PKSDATAFORMAT, ks/PKSDATARANGE, PKSDATAFORMAT structure pointer [Streaming Media Devices], KSDATARANGE structure [Streaming Media Devices], ks-struct_787a73ee-98dd-4e97-b7ea-2ed38ff564c7.xml, PKSDATAFORMAT, *PKSDATAFORMAT, KSDATAFORMAT structure [Streaming Media Devices], PKSDATARANGE structure pointer [Streaming Media Devices], stream.ksdataformat
+ms.keywords : PKSDATAFORMAT, ks/KSDATAFORMAT, PKSDATARANGE, *PKSDATARANGE, *PKSDATAFORMAT, stream.ksdataformat, KSDATAFORMAT structure [Streaming Media Devices], KSDATARANGE, ks/PKSDATAFORMAT, PKSDATAFORMAT structure pointer [Streaming Media Devices], KSDATARANGE structure [Streaming Media Devices], ks/PKSDATARANGE, ks-struct_787a73ee-98dd-4e97-b7ea-2ed38ff564c7.xml, ks/KSDATARANGE, PKSDATARANGE structure pointer [Streaming Media Devices], KSDATAFORMAT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSDATARANGE, KSDATAFORMAT, KSDATARANGE, *PKSDATAFORMAT"
+req.typenames : "*PKSDATARANGE, KSDATAFORMAT, *PKSDATAFORMAT, KSDATARANGE"
 ---
 
 # KSDATAFORMAT structure
@@ -83,6 +83,23 @@ Specifies additional data format type information for a specific setting of <b>M
 	  The significance of this field is determined by the major format (and subformat, if the major format supports subformats). For example, <b>Specifier</b> can represent a particular encoding of a subformat, or it can be used to specify what type of data structure follows KSDATAFORMAT in memory.
 
 The following specifiers (defined in <i>ks.h</i>) are of general use:
+
+
+
+
+#### KSDATAFORMAT_SPECIFIER_NONE
+
+Stands for no specifier. Used for formats that do not support specifiers.
+
+
+#### KSDATAFORMAT_SPECIFIER_FILENAME
+
+Indicates that a null-terminated Unicode string immediately follows the KSDATAFORMAT structure in memory.  
+
+
+#### KSDATAFORMAT_SPECIFIER_FILEHANDLE
+
+Indicates that a file handle immediately follows KSDATAFORMAT in memory.
 
 `SubFormat`
 

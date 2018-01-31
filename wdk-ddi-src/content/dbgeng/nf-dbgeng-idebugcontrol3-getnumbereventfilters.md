@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 6bb80c64-bb2e-4388-b1a8-479bdaa8b635
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugControl::GetNumberEventFilters, GetNumberEventFilters method [Windows Debugging], IDebugControl2 interface, IDebugControl2 interface [Windows Debugging], GetNumberEventFilters method, IDebugControl2::GetNumberEventFilters, GetNumberEventFilters, dbgeng/IDebugControl2::GetNumberEventFilters, IDebugControl_de1a980a-b0cb-486b-a292-1a9463a231c6.xml, IDebugControl3::GetNumberEventFilters, debugger.getnumbereventfilters, GetNumberEventFilters method [Windows Debugging], GetNumberEventFilters method [Windows Debugging], IDebugControl interface, IDebugControl::GetNumberEventFilters, IDebugControl interface [Windows Debugging], GetNumberEventFilters method, GetNumberEventFilters method [Windows Debugging], IDebugControl3 interface, IDebugControl3, dbgeng/IDebugControl3::GetNumberEventFilters, IDebugControl3 interface [Windows Debugging], GetNumberEventFilters method
+ms.keywords : GetNumberEventFilters method [Windows Debugging], IDebugControl interface, GetNumberEventFilters method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl2::GetNumberEventFilters, IDebugControl3, IDebugControl2::GetNumberEventFilters, IDebugControl3 interface [Windows Debugging], GetNumberEventFilters method, IDebugControl2 interface [Windows Debugging], GetNumberEventFilters method, IDebugControl::GetNumberEventFilters, GetNumberEventFilters method [Windows Debugging], IDebugControl_de1a980a-b0cb-486b-a292-1a9463a231c6.xml, GetNumberEventFilters, dbgeng/IDebugControl3::GetNumberEventFilters, IDebugControl interface [Windows Debugging], GetNumberEventFilters method, GetNumberEventFilters method [Windows Debugging], IDebugControl3 interface, IDebugControl3::GetNumberEventFilters, dbgeng/IDebugControl::GetNumberEventFilters, debugger.getnumbereventfilters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

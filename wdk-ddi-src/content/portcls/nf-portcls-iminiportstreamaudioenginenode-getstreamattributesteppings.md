@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 2EC0C859-5479-4A55-9180-DB9938400DF7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportStreamAudioEngineNode interface [Audio Devices], GetStreamAttributeSteppings method, GetStreamAttributeSteppings, audio.iminiportstreamaudioenginenode_getstreamattributesteppings, GetStreamAttributeSteppings method [Audio Devices], portcls/IMiniportStreamAudioEngineNode::GetStreamAttributeSteppings, IMiniportStreamAudioEngineNode::GetStreamAttributeSteppings, IMiniportStreamAudioEngineNode, GetStreamAttributeSteppings method [Audio Devices], IMiniportStreamAudioEngineNode interface
+ms.keywords : GetStreamAttributeSteppings, audio.iminiportstreamaudioenginenode_getstreamattributesteppings, IMiniportStreamAudioEngineNode interface [Audio Devices], GetStreamAttributeSteppings method, GetStreamAttributeSteppings method [Audio Devices], GetStreamAttributeSteppings method [Audio Devices], IMiniportStreamAudioEngineNode interface, IMiniportStreamAudioEngineNode::GetStreamAttributeSteppings, portcls/IMiniportStreamAudioEngineNode::GetStreamAttributeSteppings, IMiniportStreamAudioEngineNode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 376b0cc3-8189-499e-ad7f-5844f8cb4221
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoQueue interface, ConfigureRequestDispatching method, ConfigureRequestDispatching, IWDFIoQueue::ConfigureRequestDispatching, ConfigureRequestDispatching method, IWDFIoQueue interface, umdf.iwdfioqueue_configurerequestdispatching, wdf.iwdfioqueue_configurerequestdispatching, UMDFQueueObjectRef_8aab2e0a-7864-4a37-abba-2807327dd4dc.xml, wudfddi/IWDFIoQueue::ConfigureRequestDispatching, ConfigureRequestDispatching method, IWDFIoQueue
+ms.keywords : umdf.iwdfioqueue_configurerequestdispatching, IWDFIoQueue, UMDFQueueObjectRef_8aab2e0a-7864-4a37-abba-2807327dd4dc.xml, ConfigureRequestDispatching method, IWDFIoQueue::ConfigureRequestDispatching, IWDFIoQueue interface, ConfigureRequestDispatching method, wdf.iwdfioqueue_configurerequestdispatching, ConfigureRequestDispatching method, IWDFIoQueue interface, ConfigureRequestDispatching, wudfddi/IWDFIoQueue::ConfigureRequestDispatching
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -87,9 +87,9 @@ The driver can call the <b>ConfigureRequestDispatching</b> method multiple times
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
-
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
 
  
 

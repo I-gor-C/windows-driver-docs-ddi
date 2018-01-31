@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : bbcf7597-217a-499b-b0f2-deef1e85becc
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PKSNODEPROPERTY structure pointer [Audio Devices], aud-prop_7d1e6907-77f6-445d-ba5d-b94037b234f3.xml, *PKSNODEPROPERTY, audio.ksnodeproperty, KSNODEPROPERTY, KSNODEPROPERTY structure [Audio Devices], ksmedia/KSNODEPROPERTY, PKSNODEPROPERTY, ksmedia/PKSNODEPROPERTY
+ms.keywords : aud-prop_7d1e6907-77f6-445d-ba5d-b94037b234f3.xml, *PKSNODEPROPERTY, PKSNODEPROPERTY, ksmedia/KSNODEPROPERTY, audio.ksnodeproperty, KSNODEPROPERTY structure [Audio Devices], KSNODEPROPERTY, PKSNODEPROPERTY structure pointer [Audio Devices], ksmedia/PKSNODEPROPERTY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSNODEPROPERTY, KSNODEPROPERTY"
+req.typenames : KSNODEPROPERTY, *PKSNODEPROPERTY
 ---
 
 # KSNODEPROPERTY structure

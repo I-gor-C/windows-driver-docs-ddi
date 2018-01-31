@@ -172,28 +172,28 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndismcmregisteraddressfamilyex" tabindex="0"><b>
-   NdisMCmRegisterAddressFamilyEx</b></mshelp:link>
-
-<a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
-
-<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
-
 <a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a>
 
-<mshelp:link keywords="netvista.ndiscmregisteraddressfamilyex" tabindex="0"><b>
-   NdisCmRegisterAddressFamilyEx</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a>
 
 <mshelp:link keywords="netvista.ndisinitializenpagedlookasidelist" tabindex="0"><b>
    NdisInitializeNPagedLookasideList</b></mshelp:link>
 
-<a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545368">CO_ADDRESS_FAMILY</a>
-
 <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 
 <a href="..\ndis\nc-ndis-protocol_cl_open_af_complete_ex.md">ProtocolClOpenAfCompleteEx</a>
+
+<a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
+
+<mshelp:link keywords="netvista.ndiscmregisteraddressfamilyex" tabindex="0"><b>
+   NdisCmRegisterAddressFamilyEx</b></mshelp:link>
+
+<mshelp:link keywords="netvista.ndismcmregisteraddressfamilyex" tabindex="0"><b>
+   NdisMCmRegisterAddressFamilyEx</b></mshelp:link>
+
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545368">CO_ADDRESS_FAMILY</a>
 
  
 

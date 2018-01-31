@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : EFF55B5C-55E2-4E03-9D96-FDB1BC550A53
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.iprinterscriptablepropertybag_getwritestream, GetWriteStream, IPrinterScriptablePropertyBag, IPrinterScriptablePropertyBag::GetWriteStream, GetWriteStream method [Print Devices], IPrinterScriptablePropertyBag interface, GetWriteStream method [Print Devices], IPrinterScriptablePropertyBag interface [Print Devices], GetWriteStream method, printerextension/IPrinterScriptablePropertyBag::GetWriteStream
+ms.keywords : printerextension/IPrinterScriptablePropertyBag::GetWriteStream, GetWriteStream method [Print Devices], print.iprinterscriptablepropertybag_getwritestream, IPrinterScriptablePropertyBag interface [Print Devices], GetWriteStream method, GetWriteStream method [Print Devices], IPrinterScriptablePropertyBag interface, GetWriteStream, IPrinterScriptablePropertyBag, IPrinterScriptablePropertyBag::GetWriteStream
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 91b29a5b-8bc0-44c0-8c48-2d023da12dcb
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectGeneralRef_07e58947-78a3-4864-924c-8bd11dfd8af5.xml, kmdf.wdfdeviceinitsetpowerinrush, WdfDeviceInitSetPowerInrush, wdfdevice/WdfDeviceInitSetPowerInrush, PFN_WDFDEVICEINITSETPOWERINRUSH, WdfDeviceInitSetPowerInrush method, wdf.wdfdeviceinitsetpowerinrush
+ms.keywords : DFDeviceObjectGeneralRef_07e58947-78a3-4864-924c-8bd11dfd8af5.xml, wdf.wdfdeviceinitsetpowerinrush, WdfDeviceInitSetPowerInrush method, PFN_WDFDEVICEINITSETPOWERINRUSH, wdfdevice/WdfDeviceInitSetPowerInrush, WdfDeviceInitSetPowerInrush, kmdf.wdfdeviceinitsetpowerinrush
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,14 +83,14 @@ Calling <b>WdfDeviceInitSetPowerInrush</b> from a filter driver has no effect. F
 | **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI |
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
-
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
 
  
 

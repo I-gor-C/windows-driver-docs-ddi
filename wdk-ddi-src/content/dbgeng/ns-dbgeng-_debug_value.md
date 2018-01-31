@@ -1,6 +1,6 @@
 ---
 UID : NS:dbgeng._DEBUG_VALUE
-title : _DEBUG_VALUE
+title : "_DEBUG_VALUE"
 author : windows-driver-content
 description : The DEBUG_VALUE structure holds register and expression values.
 old-location : debugger\debug_value.htm
@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 568469ad-79c4-4437-aefe-a29e77e5143a
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/PDEBUG_VALUE, PDEBUG_VALUE, *PDEBUG_VALUE, PDEBUG_VALUE structure pointer [Windows Debugging], DEBUG_VALUE, debugger.debug_value, Structures_2486f31c-2a25-41eb-ac3f-9cc1d62dd2e0.xml, dbgeng/DEBUG_VALUE, DEBUG_VALUE structure [Windows Debugging], _DEBUG_VALUE
+ms.keywords : "*PDEBUG_VALUE, PDEBUG_VALUE structure pointer [Windows Debugging], dbgeng/DEBUG_VALUE, DEBUG_VALUE structure [Windows Debugging], PDEBUG_VALUE, Structures_2486f31c-2a25-41eb-ac3f-9cc1d62dd2e0.xml, dbgeng/PDEBUG_VALUE, debugger.debug_value, _DEBUG_VALUE, DEBUG_VALUE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEBUG_VALUE, DEBUG_VALUE"
+req.typenames : DEBUG_VALUE, *PDEBUG_VALUE
 ---
 
 # _DEBUG_VALUE structure

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c6377dcc-a83b-4766-b882-25d228a26efe
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.wmicompleterequest, WmiCompleteRequest routine [Kernel-Mode Driver Architecture], wmilib/WmiCompleteRequest, WmiCompleteRequest, k902_08bc200c-67e2-4806-b744-621f31ec6af3.xml
+ms.keywords : k902_08bc200c-67e2-4806-b744-621f31ec6af3.xml, wmilib/WmiCompleteRequest, kernel.wmicompleterequest, WmiCompleteRequest, WmiCompleteRequest routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -99,26 +99,26 @@ A driver must not call <b>WmiCompleteRequest</b> from its <a href="..\wmilib\nc-
 | **Minimum UMDF version** |  |
 | **Header** | wmilib.h (include Wmilib.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\wmilib\nc-wmilib-wmi_set_dataitem_callback.md">DpWmiSetDataItem</a>
-
-<a href="..\wmilib\nc-wmilib-wmi_query_reginfo_callback.md">DpWmiQueryReginfo</a>
-
-<a href="..\wmilib\nc-wmilib-wmi_query_datablock_callback.md">DpWmiQueryDataBlock</a>
 
 <a href="..\wmilib\nc-wmilib-wmi_function_control_callback.md">DpWmiFunctionControl</a>
 
 <a href="..\wmilib\nf-wmilib-wmisystemcontrol.md">WmiSystemControl</a>
 
+<a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>
+
 <a href="..\wmilib\nc-wmilib-wmi_execute_method_callback.md">DpWmiExecuteMethod</a>
+
+<a href="..\wmilib\nc-wmilib-wmi_query_datablock_callback.md">DpWmiQueryDataBlock</a>
 
 <a href="..\wmilib\nc-wmilib-wmi_set_datablock_callback.md">DpWmiSetDataBlock</a>
 
-<a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>
+<a href="..\wmilib\nc-wmilib-wmi_set_dataitem_callback.md">DpWmiSetDataItem</a>
+
+<a href="..\wmilib\nc-wmilib-wmi_query_reginfo_callback.md">DpWmiQueryReginfo</a>
 
  
 

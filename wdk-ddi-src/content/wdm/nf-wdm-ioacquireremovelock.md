@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 46398050-7f06-4d64-8b27-12e529884cb2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.ioacquireremovelock, k104_3df0773a-09a7-40cd-8e32-58d89cf551b1.xml, IoAcquireRemoveLock routine [Kernel-Mode Driver Architecture], IoAcquireRemoveLock, wdm/IoAcquireRemoveLock
+ms.keywords : k104_3df0773a-09a7-40cd-8e32-58d89cf551b1.xml, wdm/IoAcquireRemoveLock, IoAcquireRemoveLock routine [Kernel-Mode Driver Architecture], IoAcquireRemoveLock, kernel.ioacquireremovelock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -102,7 +102,7 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | CompleteRequestStatusCheck, MarkDevicePower, MarkPower, MarkPowerDown, MarkQueryRelations, MarkStartDevice, MultRemoveLock, NsRemoveLockMnRemove, NsRemoveLockMnSurpriseRemove, NsRemoveLockQueryMnRemove, PowerDownAllocate, PowerDownFail, PowerUpFail, RemoveLock, RemoveLockCheck, RemoveLockForward, RemoveLockForward2, RemoveLockForwardDeviceControl, RemoveLockForwardDeviceControl2, RemoveLockForwardDeviceControlInternal, RemoveLockForwardDeviceControlInternal2, RemoveLockForwardRead, RemoveLockForwardRead2, RemoveLockForwardWrite, RemoveLockForwardWrite2, RemoveLockMnRemove, RemoveLockMnRemove2, RemoveLockMnSurpriseRemove, RemoveLockQueryMnRemove, RemoveLockRelease2, RemoveLockReleaseCleanup, RemoveLockReleaseClose, RemoveLockReleaseCreate, RemoveLockReleaseDeviceControl, RemoveLockReleaseInternalDeviceControl, RemoveLockReleasePnp, RemoveLockReleasePower, RemoveLockReleaseRead, RemoveLockReleaseShutdown, RemoveLockReleaseSystemControl, RemoveLockReleaseWrite, WmiForward |
 
 ## See Also

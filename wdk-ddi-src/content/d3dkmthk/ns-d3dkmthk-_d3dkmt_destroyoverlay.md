@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmthk._D3DKMT_DESTROYOVERLAY
-title : _D3DKMT_DESTROYOVERLAY
+title : "_D3DKMT_DESTROYOVERLAY"
 author : windows-driver-content
 description : The D3DKMT_DESTROYOVERLAY structure contains the handle to the overlay to destroy.
 old-location : display\d3dkmt_destroyoverlay.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b1b8554f-8d6b-4c2e-b6b8-fcbfc97f5dd9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_destroyoverlay, _D3DKMT_DESTROYOVERLAY, OpenGL_Structs_57b46d39-5b2c-4d58-9daa-e1460168fe55.xml, D3DKMT_DESTROYOVERLAY, D3DKMT_DESTROYOVERLAY structure [Display Devices], d3dkmthk/D3DKMT_DESTROYOVERLAY
+ms.keywords : "_D3DKMT_DESTROYOVERLAY, display.d3dkmt_destroyoverlay, d3dkmthk/D3DKMT_DESTROYOVERLAY, D3DKMT_DESTROYOVERLAY, D3DKMT_DESTROYOVERLAY structure [Display Devices], OpenGL_Structs_57b46d39-5b2c-4d58-9daa-e1460168fe55.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

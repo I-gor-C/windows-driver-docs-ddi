@@ -1,6 +1,6 @@
 ---
 UID : NS:windot11._DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO
-title : _DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO
+title : "_DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO"
 author : windows-driver-content
 description : The DOT11_POWER_MGMT_AUTO_MODE_ENABLED structure describes to a device whether to automatically manage its power saving mode.
 old-location : netvista\dot11_power_mgmt_auto_mode_enabled_info.htm
@@ -8,14 +8,14 @@ old-project : netvista
 ms.assetid : 9C75544F-A14C-4741-91FC-434AE1872A6E
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PDOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, netvista.dot11_power_mgmt_auto_mode_enabled_info, _DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, windot11/PDOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO structure [Network Drivers Starting with Windows Vista], PDOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, *PDOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO
+ms.keywords : "*PDOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, _DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, PDOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, netvista.dot11_power_mgmt_auto_mode_enabled_info, DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO structure [Network Drivers Starting with Windows Vista], windot11/PDOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, PDOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : windot11.h
 req.include-header : Windot11.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows 8
+req.target-min-winverclnt : Versions:\_Supported in Windows 8
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, *PDOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO
+req.typenames : "*PDOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO"
 req.product : Windows 10 or later.
 ---
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2D2980D7-6675-4414-AA32-D8782526E039
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestIsFromUserModeDriver method, wdf.wdfrequestisfromusermodedriver, WdfRequestIsFromUserModeDriver, PFN_WDFREQUESTISFROMUSERMODEDRIVER, wdfrequest/WdfRequestIsFromUserModeDriver
+ms.keywords : WdfRequestIsFromUserModeDriver method, PFN_WDFREQUESTISFROMUSERMODEDRIVER, wdfrequest/WdfRequestIsFromUserModeDriver, wdf.wdfrequestisfromusermodedriver, WdfRequestIsFromUserModeDriver
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

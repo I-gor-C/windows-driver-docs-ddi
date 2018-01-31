@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : d3ad851d-ba09-4052-a2d0-d6cb8315e04f
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : HidP_TranslateUsagesToI8042ScanCodes, HidP_TranslateUsagesToI8042ScanCodes routine [Human Input Devices], hid.hidp_translateusagestoi8042scancodes, hidfunc_da67ba0d-7d82-4b35-9ebb-cdd93b12450b.xml, hidpi/HidP_TranslateUsagesToI8042ScanCodes
+ms.keywords : hidpi/HidP_TranslateUsagesToI8042ScanCodes, hid.hidp_translateusagestoi8042scancodes, HidP_TranslateUsagesToI8042ScanCodes routine [Human Input Devices], hidfunc_da67ba0d-7d82-4b35-9ebb-cdd93b12450b.xml, HidP_TranslateUsagesToI8042ScanCodes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,6 +82,16 @@ Identifies the key direction for the specified change usage list.
 </tr>
 </table></span></div>
 
+
+#### HidP_Keyboard_Break
+
+Specifies a <i>break</i> direction (key up). The changed usage list contains the usages set to OFF that were previously set to ON (which corresponds to the keys that were previously down, but are now up).
+
+
+#### HidPKeyboard_Make
+
+Specifies a <i>make</i> direction (key down). The changed usage list contains the usages set to ON that were previously set to OFF (which corresponds to the keys that were previously up, but now are down).
+
 `ModifierState`
 
 Pointer to a _HIDP_KEYBOARD_MODIFIER_STATE structure that the caller maintains for use by the translate usages routine. The modifier state structure identifies the state of the keyboard modifier keys. 
@@ -132,6 +142,21 @@ Pointer to a caller-supplied PHIDP_INSERT_SCANCODES-typed callback routine that 
 </td>
 </tr>
 </table></span></div>
+
+
+#### Context
+
+Pointer to the context of the caller of the translate usage routine. The translate usage routine passes the <i>InsertCodesContext</i> pointer to the <i>InsertCodesProcedure</i> routine.
+
+
+#### NewScanCodes
+
+Pointer to the first byte of a scan code that the translate usage routine returns to the caller of the translate usage routine.
+
+
+#### Length
+
+Specifies the length, in bytes, of the scan code. A scan code cannot exceed four bytes.
 
 `InsertCodesContext`
 
@@ -223,16 +248,16 @@ Update the previous usage list to the current usage list.
 | **Minimum UMDF version** |  |
 | **Header** | hidpi.h (include Hidpi.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\hidpi\nf-hidpi-hidp_getusages.md">HidP_GetUsages</a>
+
 <a href="..\hidpi\nf-hidpi-hidp_usagelistdifference.md">HidP_UsageListDifference</a>
 
 <a href="..\hidpi\nf-hidpi-hidp_maxusagelistlength.md">HidP_MaxUsageListLength</a>
-
-<a href="..\hidpi\nf-hidpi-hidp_getusages.md">HidP_GetUsages</a>
 
  
 

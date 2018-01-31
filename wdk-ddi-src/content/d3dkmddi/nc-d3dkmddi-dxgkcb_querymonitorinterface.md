@@ -84,7 +84,7 @@ NTSTATUS DxgkcbQuerymonitorinterface(
 | **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h (include Dispmprt.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

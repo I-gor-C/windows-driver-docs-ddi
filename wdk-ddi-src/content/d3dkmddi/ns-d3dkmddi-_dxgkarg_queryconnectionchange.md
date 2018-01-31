@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmddi._DXGKARG_QUERYCONNECTIONCHANGE
-title : _DXGKARG_QUERYCONNECTIONCHANGE
+title : "_DXGKARG_QUERYCONNECTIONCHANGE"
 author : windows-driver-content
 description : Used to hold the arguments for DXGKDDI_QUERYCONNECTIONCHANGE.
 old-location : display\dxgkarg_queryconnectionchange.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6B91F3F0-B02D-46F3-9086-EA32F043FC16
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxgkarg_queryconnectionchange, d3dkmddi/DXGKARG_QUERYCONNECTIONCHANGE, *IN_PDXGKARG_QUERYCONNECTIONCHANGE, DXGKARG_QUERYCONNECTIONCHANGE, DXGKARG_QUERYCONNECTIONCHANGE structure [Display Devices], _DXGKARG_QUERYCONNECTIONCHANGE
+ms.keywords : DXGKARG_QUERYCONNECTIONCHANGE, d3dkmddi/DXGKARG_QUERYCONNECTIONCHANGE, display.dxgkarg_queryconnectionchange, *IN_PDXGKARG_QUERYCONNECTIONCHANGE, _DXGKARG_QUERYCONNECTIONCHANGE, DXGKARG_QUERYCONNECTIONCHANGE structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

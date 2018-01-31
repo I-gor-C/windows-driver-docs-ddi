@@ -30,7 +30,7 @@ req.assembly :
 req.type-library : 
 req.lib : NtDll.lib (user mode); NtosKrnl.lib (kernel mode)
 req.dll : NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
-req.irql : "<= DIRQL (see Comments section)"
+req.irql : <= DIRQL (see Comments section)
 req.typenames : WORK_QUEUE_TYPE
 req.product : Windows 10 or later.
 ---

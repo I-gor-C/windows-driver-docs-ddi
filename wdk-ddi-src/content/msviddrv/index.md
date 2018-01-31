@@ -24,7 +24,7 @@ msviddrv.h contains the following programming interfaces:
 ## Structures
 | Title | Description |
 | ---- |:---- |
-| [tag_video_configure_parms](ns-msviddrv-tag_video_configure_parms.md) | . |
-| [tag_video_geterrortext_parms](ns-msviddrv-tag_video_geterrortext_parms.md) | . |
-| [tag_video_open_parms](ns-msviddrv-tag_video_open_parms.md) | . |
-| [tag_video_stream_init_parms](ns-msviddrv-tag_video_stream_init_parms.md) | . |
+| [tag_video_configure_parms](ns-msviddrv-tag_video_configure_parms.md) | "." |
+| [tag_video_geterrortext_parms](ns-msviddrv-tag_video_geterrortext_parms.md) | "." |
+| [tag_video_open_parms](ns-msviddrv-tag_video_open_parms.md) | "." |
+| [tag_video_stream_init_parms](ns-msviddrv-tag_video_stream_init_parms.md) | "." |

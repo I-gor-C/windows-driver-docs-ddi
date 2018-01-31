@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : bd4e762d-b3d5-4a4c-bdeb-998cd72783b4
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : WriteBusData method [Windows Debugging], IDebugDataSpaces interface, WriteBusData, WriteBusData method [Windows Debugging], IDebugDataSpaces4, IDebugDataSpaces3 interface [Windows Debugging], WriteBusData method, dbgeng/IDebugDataSpaces3::WriteBusData, WriteBusData method [Windows Debugging], IDebugDataSpaces4 interface, WriteBusData method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces3::WriteBusData, IDebugDataSpaces interface [Windows Debugging], WriteBusData method, IDebugDataSpaces4 interface [Windows Debugging], WriteBusData method, dbgeng/IDebugDataSpaces4::WriteBusData, debugger.writebusdata, dbgeng/IDebugDataSpaces::WriteBusData, WriteBusData method [Windows Debugging], IDebugDataSpaces3 interface, IDebugDataSpaces4::WriteBusData, IDebugDataSpaces2 interface [Windows Debugging], WriteBusData method, IDebugDataSpaces_a1fb8543-dee8-475d-b42c-17077d72b06e.xml, dbgeng/IDebugDataSpaces2::WriteBusData, IDebugDataSpaces2::WriteBusData, IDebugDataSpaces::WriteBusData
+ms.keywords : IDebugDataSpaces3 interface [Windows Debugging], WriteBusData method, dbgeng/IDebugDataSpaces3::WriteBusData, dbgeng/IDebugDataSpaces::WriteBusData, WriteBusData method [Windows Debugging], IDebugDataSpaces3 interface, IDebugDataSpaces2::WriteBusData, dbgeng/IDebugDataSpaces2::WriteBusData, WriteBusData method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces4 interface [Windows Debugging], WriteBusData method, WriteBusData method [Windows Debugging], IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces4::WriteBusData, IDebugDataSpaces3::WriteBusData, WriteBusData method [Windows Debugging], WriteBusData, IDebugDataSpaces_a1fb8543-dee8-475d-b42c-17077d72b06e.xml, IDebugDataSpaces2 interface [Windows Debugging], WriteBusData method, IDebugDataSpaces4, IDebugDataSpaces::WriteBusData, WriteBusData method [Windows Debugging], IDebugDataSpaces interface, IDebugDataSpaces4::WriteBusData, IDebugDataSpaces interface [Windows Debugging], WriteBusData method, debugger.writebusdata
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

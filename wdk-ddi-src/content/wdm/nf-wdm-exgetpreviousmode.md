@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0f4c7bc2-a29d-4b0c-81c3-01cdfefa1322
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExGetPreviousMode, kernel.exgetpreviousmode, ExGetPreviousMode routine [Kernel-Mode Driver Architecture], wdm/ExGetPreviousMode, k102_080fbfa6-6261-453d-a2c7-e08818d34b6f.xml
+ms.keywords : ExGetPreviousMode routine [Kernel-Mode Driver Architecture], k102_080fbfa6-6261-453d-a2c7-e08818d34b6f.xml, ExGetPreviousMode, wdm/ExGetPreviousMode, kernel.exgetpreviousmode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,7 +74,7 @@ Alternatively, <b>ExGetPreviousMode</b> can be used to determine the previous pr
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

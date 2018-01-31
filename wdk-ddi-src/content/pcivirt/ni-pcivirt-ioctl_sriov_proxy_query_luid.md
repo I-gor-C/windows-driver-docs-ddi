@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSRIOV_PF_EVENT, SRIOV_PF_EVENT"
+req.typenames : SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
 ---
 
 # IOCTL_SRIOV_PROXY_QUERY_LUID IOCTL

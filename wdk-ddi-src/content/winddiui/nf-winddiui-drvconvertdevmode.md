@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : eb0402a8-22ce-417f-9b19-25b357451307
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DrvConvertDevMode function [Print Devices], DrvConvertDevMode, print_interface-graphics_ceabaf66-f730-4243-85a7-ffcee065192b.xml, print.drvconvertdevmode, winddiui/DrvConvertDevMode
+ms.keywords : print.drvconvertdevmode, winddiui/DrvConvertDevMode, DrvConvertDevMode, print_interface-graphics_ceabaf66-f730-4243-85a7-ffcee065192b.xml, DrvConvertDevMode function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,6 +76,29 @@ Caller-supplied pointer to the size, in bytes, of the buffer pointed to by <i>pd
 `fMode`
 
 Caller-supplied bit flag indicating the type of operation to be performed. This can be one of the following flags:
+
+
+
+
+
+
+
+
+#### CDM_CONVERT
+
+The function should convert the contents of the input DEVMODEW structure (pointed to by <i>pdmIn</i>) into a new DEVMODEW structure, and place the result in the DEVMODEW structure pointed to by <i>pdmOut</i>. The initial contents of the received output DEVMODEW structure (pointed to by <i>pdmOut</i>) should be used to determine the output version.
+
+
+#### CDM_CONVERT351
+
+The function should convert the contents of the input DEVMODEW structure (pointed to by <i>pdmIn</i>), creating an output DEVMODEW structure that is compatible with Windows NT 3.51, and place the result in the DEVMODEW structure pointed to by <i>pdmOut</i>.
+
+If the driver does not support a DEVMODEW structure for Windows NT 3.51, the function should convert the input DEVMODEW to the current version.
+
+
+#### CDM_DRIVER_DEFAULT
+
+The function should copy the current version of its default DEVMODEW structure to the buffer pointed to by <i>pdmOut</i>.
 
 
 ## Return Value

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0F0750A1-142B-4834-85F5-3F5E40EC72F7
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : STORPORT_ETW_EVENT_KEYWORD_PERFORMANCE, STORPORT_ETW_EVENT_KEYWORD_IO, STORPORT_ETW_EVENT_KEYWORD_POWER, StorPortEtwEvent4 routine [Storage Devices], StorportEtwEventOpcodeInfo, StorportEtwLevelError, storage.storportetwevent4, StorPortEtwEvent4, StorportEtwEventOpcodeResume, StorportEtwLevelInformational, StorportEtwEventOpcodeDC_Stop, StorportEtwLevelWarning, StorportEtwEventOpcodeSuspend, STORPORT_ETW_EVENT_KEYWORD_ENUMERATION, storport/StorPortEtwEvent4, StorportEtwLevelVerbose, StorportEtwEventOpcodeReply, StorportEtwEventOpcodeDC_Start, StorportEtwLevelCritical, StorportEtwLevelLogAlways, StorportEtwEventOpcodeStart, StorportEtwEventOpcodeExtension, StorportEtwEventOpcodeReceive, StorportEtwEventOpcodeStop
+ms.keywords : StorportEtwEventOpcodeResume, StorPortEtwEvent4, STORPORT_ETW_EVENT_KEYWORD_ENUMERATION, StorportEtwLevelVerbose, storage.storportetwevent4, StorportEtwEventOpcodeStart, StorportEtwLevelLogAlways, StorportEtwEventOpcodeDC_Start, StorportEtwLevelInformational, StorportEtwEventOpcodeDC_Stop, STORPORT_ETW_EVENT_KEYWORD_PERFORMANCE, StorportEtwEventOpcodeExtension, storport/StorPortEtwEvent4, StorPortEtwEvent4 routine [Storage Devices], StorportEtwEventOpcodeSuspend, StorportEtwEventOpcodeReceive, STORPORT_ETW_EVENT_KEYWORD_POWER, StorportEtwEventOpcodeReply, StorportEtwLevelError, STORPORT_ETW_EVENT_KEYWORD_IO, StorportEtwEventOpcodeInfo, StorportEtwLevelCritical, StorportEtwEventOpcodeStop, StorportEtwLevelWarning
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -421,7 +421,7 @@ Events generated from StorPort miniport drivers are published to the "Microsoft-
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

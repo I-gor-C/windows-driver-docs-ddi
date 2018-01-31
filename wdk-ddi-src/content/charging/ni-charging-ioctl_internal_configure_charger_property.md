@@ -72,7 +72,7 @@ None.
 | ---- |:---- |
 | **Windows Driver kit version** |  |
 | **Header** | charging.h (include Charging.h) |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 
 ## See Also
 

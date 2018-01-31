@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 6b8f53d7-361c-40a3-b93c-39e653bd9032
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl2 interface [Windows Debugging], ExecuteCommandFile method, ExecuteCommandFile method [Windows Debugging], IDebugControl interface, ExecuteCommandFile method [Windows Debugging], dbgeng/IDebugControl2::ExecuteCommandFile, IDebugControl interface [Windows Debugging], ExecuteCommandFile method, dbgeng/IDebugControl::ExecuteCommandFile, ExecuteCommandFile method [Windows Debugging], IDebugControl3 interface, debugger.executecommandfile, IDebugControl_61c4589a-321e-4574-8565-87bdc7b36a73.xml, ExecuteCommandFile method [Windows Debugging], IDebugControl2 interface, ExecuteCommandFile, dbgeng/IDebugControl3::ExecuteCommandFile, IDebugControl3 interface [Windows Debugging], ExecuteCommandFile method, IDebugControl::ExecuteCommandFile, IDebugControl2::ExecuteCommandFile, IDebugControl3::ExecuteCommandFile, IDebugControl3
+ms.keywords : IDebugControl3 interface [Windows Debugging], ExecuteCommandFile method, dbgeng/IDebugControl3::ExecuteCommandFile, IDebugControl3, ExecuteCommandFile, IDebugControl2::ExecuteCommandFile, IDebugControl interface [Windows Debugging], ExecuteCommandFile method, IDebugControl::ExecuteCommandFile, ExecuteCommandFile method [Windows Debugging], debugger.executecommandfile, IDebugControl2 interface [Windows Debugging], ExecuteCommandFile method, IDebugControl_61c4589a-321e-4574-8565-87bdc7b36a73.xml, IDebugControl3::ExecuteCommandFile, ExecuteCommandFile method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl::ExecuteCommandFile, ExecuteCommandFile method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl2::ExecuteCommandFile, ExecuteCommandFile method [Windows Debugging], IDebugControl3 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -106,13 +106,13 @@ This method reads the specified file and execute the commands one line at a time
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543208">Execute</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
  
 

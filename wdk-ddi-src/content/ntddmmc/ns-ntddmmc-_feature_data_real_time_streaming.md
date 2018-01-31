@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddmmc._FEATURE_DATA_REAL_TIME_STREAMING
-title : _FEATURE_DATA_REAL_TIME_STREAMING
+title : "_FEATURE_DATA_REAL_TIME_STREAMING"
 author : windows-driver-content
 description : The FEATURE_DATA_REAL_TIME_STREAMING structure holds information about the Real Time Streaming feature.
 old-location : storage\feature_data_real_time_streaming.htm
@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3b1b54cc-52a5-48ce-a637-70e289c1944e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : FEATURE_DATA_REAL_TIME_STREAMING, ntddmmc/FEATURE_DATA_REAL_TIME_STREAMING, ntddmmc/PFEATURE_DATA_REAL_TIME_STREAMING, PFEATURE_DATA_REAL_TIME_STREAMING structure pointer [Storage Devices], *PFEATURE_DATA_REAL_TIME_STREAMING, FEATURE_DATA_REAL_TIME_STREAMING structure [Storage Devices], storage.feature_data_real_time_streaming, _FEATURE_DATA_REAL_TIME_STREAMING, PFEATURE_DATA_REAL_TIME_STREAMING, structs-CD-ROM_2bd0a42c-a5b8-4a5b-958e-56e1a47a6499.xml
+ms.keywords : ntddmmc/FEATURE_DATA_REAL_TIME_STREAMING, ntddmmc/PFEATURE_DATA_REAL_TIME_STREAMING, PFEATURE_DATA_REAL_TIME_STREAMING, _FEATURE_DATA_REAL_TIME_STREAMING, PFEATURE_DATA_REAL_TIME_STREAMING structure pointer [Storage Devices], *PFEATURE_DATA_REAL_TIME_STREAMING, storage.feature_data_real_time_streaming, FEATURE_DATA_REAL_TIME_STREAMING, structs-CD-ROM_2bd0a42c-a5b8-4a5b-958e-56e1a47a6499.xml, FEATURE_DATA_REAL_TIME_STREAMING structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : FEATURE_DATA_REAL_TIME_STREAMING, *PFEATURE_DATA_REAL_TIME_STREAMING
+req.typenames : "*PFEATURE_DATA_REAL_TIME_STREAMING, FEATURE_DATA_REAL_TIME_STREAMING"
 ---
 
 # _FEATURE_DATA_REAL_TIME_STREAMING structure

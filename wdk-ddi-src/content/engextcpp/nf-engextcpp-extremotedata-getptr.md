@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : f9778881-9b53-49c5-9fe8-80f9a866b9af
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : ExtRemoteData class [Windows Debugging], GetPtr method, ExtRemoteData, ExtRemoteData::GetPtr, GetPtr method [Windows Debugging], EngExtCpp_Ref_6aea2145-72ce-4bdc-afb2-1fa360e643da.xml, GetPtr method [Windows Debugging], ExtRemoteData class, debugger.extremotedata_getptr, GetPtr
+ms.keywords : ExtRemoteData class [Windows Debugging], GetPtr method, GetPtr method [Windows Debugging], ExtRemoteData class, ExtRemoteData, GetPtr, debugger.extremotedata_getptr, GetPtr method [Windows Debugging], EngExtCpp_Ref_6aea2145-72ce-4bdc-afb2-1fa360e643da.xml, ExtRemoteData::GetPtr
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+req.typenames : "*PSILO_DRIVER_CAPABILITIES, SILO_DRIVER_CAPABILITIES"
 ---
 
 
@@ -74,9 +74,9 @@ The size of the memory represented by the <a href="..\engextcpp\nl-engextcpp-ext
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544019">ExtRemoteData::GetData</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544035">ExtRemoteData::GetLongPtr</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544019">ExtRemoteData::GetData</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544069">ExtRemoteData::GetUlong64</a>
 

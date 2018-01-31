@@ -1,6 +1,6 @@
 ---
 UID : NS:ntifs._FILE_LEVEL_TRIM_OUTPUT
-title : _FILE_LEVEL_TRIM_OUTPUT
+title : "_FILE_LEVEL_TRIM_OUTPUT"
 author : windows-driver-content
 description : The FILE_LEVEL_TRIM_OUTPUT structure contains the results of a trim operation performed by an FSCTL_FILE_LEVEL_TRIM request.
 old-location : ifsk\file_level_trim_output.htm
@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 28CCE967-E752-4E0E-94D9-3A4243266684
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.file_level_trim_output, FILE_LEVEL_TRIM_OUTPUT, FILE_LEVEL_TRIM_RANGE_OUTPUT structure [Installable File System Drivers], _FILE_LEVEL_TRIM_OUTPUT, ntifs/PFILE_LEVEL_TRIM_RANGE_OUTPUT, PFILE_LEVEL_TRIM_RANGE_OUTPUT, FILE_LEVEL_TRIM_RANGE_OUTPUT, FILE_LEVEL_TRIM_OUTPUT structure [Installable File System Drivers], *PFILE_LEVEL_TRIM_OUTPUT, ntifs/FILE_LEVEL_TRIM_RANGE, PFILE_LEVEL_TRIM_RANGE_OUTPUT structure pointer [Installable File System Drivers]
+ms.keywords : PFILE_LEVEL_TRIM_RANGE_OUTPUT, *PFILE_LEVEL_TRIM_OUTPUT, ntifs/PFILE_LEVEL_TRIM_RANGE_OUTPUT, FILE_LEVEL_TRIM_RANGE_OUTPUT structure [Installable File System Drivers], _FILE_LEVEL_TRIM_OUTPUT, ntifs/FILE_LEVEL_TRIM_RANGE, ifsk.file_level_trim_output, FILE_LEVEL_TRIM_OUTPUT structure [Installable File System Drivers], FILE_LEVEL_TRIM_OUTPUT, PFILE_LEVEL_TRIM_RANGE_OUTPUT structure pointer [Installable File System Drivers], FILE_LEVEL_TRIM_RANGE_OUTPUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : FILE_LEVEL_TRIM_OUTPUT, *PFILE_LEVEL_TRIM_OUTPUT
+req.typenames : "*PFILE_LEVEL_TRIM_OUTPUT, FILE_LEVEL_TRIM_OUTPUT"
 ---
 
 # _FILE_LEVEL_TRIM_OUTPUT structure

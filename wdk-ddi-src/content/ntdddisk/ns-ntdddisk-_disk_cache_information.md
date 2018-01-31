@@ -1,6 +1,6 @@
 ---
 UID : NS:ntdddisk._DISK_CACHE_INFORMATION
-title : _DISK_CACHE_INFORMATION
+title : "_DISK_CACHE_INFORMATION"
 author : windows-driver-content
 description : The DISK_CACHE_INFORMATION structure is used with the IOCTL_DISK_GET_CACHE_INFORMATION request to retrieve cache information.
 old-location : storage\disk_cache_information.htm
@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 17ea8b6b-d41f-4224-880a-49443756d0de
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PDISK_CACHE_INFORMATION, structs-disk_def992c5-6103-4eab-8598-4d52808e6b8c.xml, _DISK_CACHE_INFORMATION, storage.disk_cache_information, PDISK_CACHE_INFORMATION structure pointer [Storage Devices], DISK_CACHE_INFORMATION, DISK_CACHE_INFORMATION structure [Storage Devices], *PDISK_CACHE_INFORMATION, ntdddisk/PDISK_CACHE_INFORMATION, ntdddisk/DISK_CACHE_INFORMATION
+ms.keywords : DISK_CACHE_INFORMATION, _DISK_CACHE_INFORMATION, PDISK_CACHE_INFORMATION structure pointer [Storage Devices], *PDISK_CACHE_INFORMATION, PDISK_CACHE_INFORMATION, ntdddisk/PDISK_CACHE_INFORMATION, ntdddisk/DISK_CACHE_INFORMATION, structs-disk_def992c5-6103-4eab-8598-4d52808e6b8c.xml, storage.disk_cache_information, DISK_CACHE_INFORMATION structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -111,9 +111,9 @@ See discussion under <b>ReadRetentionPriority</b>.
 
 ## See Also
 
-<a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_cache_information.md">IOCTL_DISK_GET_CACHE_INFORMATION</a>
-
 <a href="..\ntdddisk\ns-ntdddisk-_disk_cache_information.md">DISK_CACHE_INFORMATION</a>
+
+<a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_cache_information.md">IOCTL_DISK_GET_CACHE_INFORMATION</a>
 
  
 

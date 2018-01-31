@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : E45FA08C-3E00-4AF6-A983-6E9C808AFA11
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ufxclient/UfxDeviceNotifyAttach, UfxDeviceNotifyAttach, buses.ufxdevicenotifyattach, UfxDeviceNotifyAttach method [Buses]
+ms.keywords : UfxDeviceNotifyAttach method [Buses], buses.ufxdevicenotifyattach, UfxDeviceNotifyAttach, ufxclient/UfxDeviceNotifyAttach
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
+req.typenames : UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
 req.product : Windows 10 or later.
 ---
 

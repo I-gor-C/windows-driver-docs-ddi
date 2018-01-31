@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : cbf688b4-a174-4ab0-af98-2c0db1b2ab3a
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : OutputVersionInformation method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl::OutputVersionInformation, IDebugControl_ea568b24-944d-4ed8-abd6-24b7c7771a1e.xml, IDebugControl2 interface [Windows Debugging], OutputVersionInformation method, OutputVersionInformation method [Windows Debugging], dbgeng/IDebugControl2::OutputVersionInformation, OutputVersionInformation method [Windows Debugging], IDebugControl2 interface, IDebugControl3::OutputVersionInformation, dbgeng/IDebugControl3::OutputVersionInformation, IDebugControl::OutputVersionInformation, IDebugControl3 interface [Windows Debugging], OutputVersionInformation method, OutputVersionInformation method [Windows Debugging], IDebugControl interface, OutputVersionInformation, debugger.outputversioninformation, IDebugControl3, IDebugControl interface [Windows Debugging], OutputVersionInformation method, IDebugControl2::OutputVersionInformation
+ms.keywords : OutputVersionInformation method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl::OutputVersionInformation, IDebugControl2::OutputVersionInformation, IDebugControl3::OutputVersionInformation, IDebugControl3, IDebugControl_ea568b24-944d-4ed8-abd6-24b7c7771a1e.xml, OutputVersionInformation, IDebugControl2 interface [Windows Debugging], OutputVersionInformation method, IDebugControl interface [Windows Debugging], OutputVersionInformation method, OutputVersionInformation method [Windows Debugging], IDebugControl interface, IDebugControl3 interface [Windows Debugging], OutputVersionInformation method, dbgeng/IDebugControl3::OutputVersionInformation, debugger.outputversioninformation, OutputVersionInformation method [Windows Debugging], dbgeng/IDebugControl2::OutputVersionInformation, IDebugControl::OutputVersionInformation, OutputVersionInformation method [Windows Debugging], IDebugControl2 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 94DD7FBF-2D4F-4DD9-A49E-A9FA494BF995
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetSynchronizationStatus method [Windows Debugging], IDebugControl6 interface, IDebugControl6, IDebugControl6 interface [Windows Debugging], GetSynchronizationStatus method, GetSynchronizationStatus, IDebugControl6::GetSynchronizationStatus, GetSynchronizationStatus method [Windows Debugging], dbgeng/IDebugControl6::GetSynchronizationStatus, debugger.idebugcontrol6_getsynchronizationstatus
+ms.keywords : GetSynchronizationStatus method [Windows Debugging], IDebugControl6 interface [Windows Debugging], GetSynchronizationStatus method, GetSynchronizationStatus, IDebugControl6, IDebugControl6::GetSynchronizationStatus, GetSynchronizationStatus method [Windows Debugging], IDebugControl6 interface, debugger.idebugcontrol6_getsynchronizationstatus, dbgeng/IDebugControl6::GetSynchronizationStatus
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

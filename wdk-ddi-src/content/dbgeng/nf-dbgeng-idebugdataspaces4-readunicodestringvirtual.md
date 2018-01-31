@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 956ad15d-2c90-473a-b9be-8c5023628841
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugDataSpaces4 interface [Windows Debugging], ReadUnicodeStringVirtual method, IDebugDataSpaces4, dbgeng/IDebugDataSpaces4::ReadUnicodeStringVirtual, ReadUnicodeStringVirtual method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces_423e591f-3840-4c6c-94e0-67b06a435652.xml, debugger.readunicodestringvirtual, ReadUnicodeStringVirtual method [Windows Debugging], ReadUnicodeStringVirtual, IDebugDataSpaces4::ReadUnicodeStringVirtual
+ms.keywords : ReadUnicodeStringVirtual method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces4, IDebugDataSpaces4 interface [Windows Debugging], ReadUnicodeStringVirtual method, dbgeng/IDebugDataSpaces4::ReadUnicodeStringVirtual, ReadUnicodeStringVirtual, ReadUnicodeStringVirtual method [Windows Debugging], debugger.readunicodestringvirtual, IDebugDataSpaces4::ReadUnicodeStringVirtual, IDebugDataSpaces_423e591f-3840-4c6c-94e0-67b06a435652.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -144,11 +144,11 @@ The engine will read up to <i>MaxBytes</i> from the target, looking for a null-t
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugdataspaces4.md">IDebugDataSpaces4</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554357">ReadUnicodeStringVirtualWide</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554300">ReadMultiByteStringVirtual</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugdataspaces4.md">IDebugDataSpaces4</a>
 
  
 

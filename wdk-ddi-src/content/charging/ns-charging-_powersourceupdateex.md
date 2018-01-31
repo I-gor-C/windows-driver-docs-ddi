@@ -1,6 +1,6 @@
 ---
 UID : NS:charging._POWERSOURCEUPDATEEX
-title : _POWERSOURCEUPDATEEX
+title : "_POWERSOURCEUPDATEEX"
 author : windows-driver-content
 description : This structure is for internal use only.
 old-location : battery\powersourceupdateex.htm
@@ -8,7 +8,7 @@ old-project : battery
 ms.assetid : FAA39A82-E27E-41BD-9830-03EAE7CFF64F
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : POWERSOURCEUPDATEEX structure [Battery Devices], POWERSOURCEUPDATEEX, _POWERSOURCEUPDATEEX, charging/BATTERY_INFORMATION, battery.powersourceupdateex, *PPOWERSOURCEUPDATEEX
+ms.keywords : charging/BATTERY_INFORMATION, POWERSOURCEUPDATEEX structure [Battery Devices], battery.powersourceupdateex, _POWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

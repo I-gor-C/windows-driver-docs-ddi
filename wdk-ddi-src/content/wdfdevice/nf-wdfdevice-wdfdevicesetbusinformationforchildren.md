@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ecfce692-7dac-4f55-8a8a-1f51c27cce41
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFDEVICESETBUSINFORMATIONFORCHILDREN, WdfDeviceSetBusInformationForChildren, wdf.wdfdevicesetbusinformationforchildren, WdfDeviceSetBusInformationForChildren method, wdfdevice/WdfDeviceSetBusInformationForChildren, kmdf.wdfdevicesetbusinformationforchildren, DFDeviceObjectGeneralRef_76b69a67-0e1e-41d6-be98-3d5f76433d97.xml
+ms.keywords : PFN_WDFDEVICESETBUSINFORMATIONFORCHILDREN, WdfDeviceSetBusInformationForChildren, wdfdevice/WdfDeviceSetBusInformationForChildren, WdfDeviceSetBusInformationForChildren method, wdf.wdfdevicesetbusinformationforchildren, kmdf.wdfdevicesetbusinformationforchildren, DFDeviceObjectGeneralRef_76b69a67-0e1e-41d6-be98-3d5f76433d97.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,7 +84,7 @@ Child devices can obtain the information that <b>WdfDeviceSetBusInformationForCh
 | **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also

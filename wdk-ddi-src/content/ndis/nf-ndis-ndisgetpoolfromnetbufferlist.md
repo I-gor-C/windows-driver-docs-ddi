@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 645fd5f6-32b5-4ef6-9583-1418291d55d3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisGetPoolFromNetBufferList function [Network Drivers Starting with Windows Vista], netvista.ndisgetpoolfromnetbufferlist, ndis/NdisGetPoolFromNetBufferList, NdisGetPoolFromNetBufferList, ndis_netbuf_functions_ref_c93c9420-04fb-42f7-9844-29c3b2052b82.xml
+ms.keywords : netvista.ndisgetpoolfromnetbufferlist, ndis_netbuf_functions_ref_c93c9420-04fb-42f7-9844-29c3b2052b82.xml, ndis/NdisGetPoolFromNetBufferList, NdisGetPoolFromNetBufferList function [Network Drivers Starting with Windows Vista], NdisGetPoolFromNetBufferList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -83,7 +83,7 @@ The handle that
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_NetBuffer_Function |
 
 ## See Also

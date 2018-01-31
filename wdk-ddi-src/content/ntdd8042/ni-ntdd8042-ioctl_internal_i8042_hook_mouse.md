@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : MOUSE_STATE, *PMOUSE_STATE
+req.typenames : "*PMOUSE_STATE, MOUSE_STATE"
 ---
 
 # IOCTL_INTERNAL_I8042_HOOK_MOUSE IOCTL

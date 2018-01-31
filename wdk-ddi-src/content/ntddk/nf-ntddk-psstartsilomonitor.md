@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 65828926-FDA7-4F65-AD55-B7E03639FA27
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PsStartSiloMonitor routine [Kernel-Mode Driver Architecture], PsStartSiloMonitor, kernel.psstartsilomonitor, ntddk/PsStartSiloMonitor
+ms.keywords : ntddk/PsStartSiloMonitor, PsStartSiloMonitor routine [Kernel-Mode Driver Architecture], PsStartSiloMonitor, kernel.psstartsilomonitor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

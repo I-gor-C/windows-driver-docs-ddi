@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILGBATOKEN, RILGBATOKEN"
+req.typenames : RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 

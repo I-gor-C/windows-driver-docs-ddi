@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 77ba5ba3-11d3-4c28-86e6-91f3189b5403
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/RtlCreateHeap, rtlref_e57e4a89-3686-4ab4-85e2-af223cdb3b18.xml, ifsk.rtlcreateheap, RtlCreateHeap, RtlCreateHeap routine [Installable File System Drivers]
+ms.keywords : ifsk.rtlcreateheap, ntifs/RtlCreateHeap, rtlref_e57e4a89-3686-4ab4-85e2-af223cdb3b18.xml, RtlCreateHeap, RtlCreateHeap routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -63,7 +63,24 @@ Flags specifying optional attributes of the heap. These options affect subsequen
 
 Callers should set this parameter to zero if no optional attributes are requested. 
 
-This parameter can be one or more of the following values.
+This parameter can be one or more of the following values. 
+
+
+
+
+#### HEAP_GENERATE_EXCEPTIONS
+
+Specifies that the system will indicate a heap failure by raising an exception, such as STATUS_NO_MEMORY, instead of returning <b>NULL</b>. 
+
+
+#### HEAP_GROWABLE
+
+Specifies that the heap is growable. Must be specified if <i>HeapBase</i> is <b>NULL</b>. 
+
+
+#### HEAP_NO_SERIALIZE
+
+Specifies that mutual exclusion will not be used when the heap functions allocate and free memory from this heap. The default, when HEAP_NO_SERIALIZE is not specified, is to serialize access to the heap. Serialization of heap access allows two or more threads to simultaneously allocate and free memory from the same heap.
 
 `HeapBase`
 
@@ -385,16 +402,16 @@ The process has multiple threads, and the application provides its own mechanism
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** |  |
-| **IRQL** | < DISPATCH_LEVEL |
+| **IRQL** | "< DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtlfreeheap.md">RtlFreeHeap</a>
+<a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a>
 
 <a href="..\ntifs\nf-ntifs-rtldestroyheap.md">RtlDestroyHeap</a>
 
-<a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a>
+<a href="..\ntifs\nf-ntifs-rtlfreeheap.md">RtlFreeHeap</a>
 
  
 

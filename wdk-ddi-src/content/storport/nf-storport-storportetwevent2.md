@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : A390D684-C675-4140-8E8E-8330FB3192E4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : STORPORT_ETW_EVENT_KEYWORD_PERFORMANCE, STORPORT_ETW_EVENT_KEYWORD_IO, STORPORT_ETW_EVENT_KEYWORD_POWER, StorPortEtwEvent2 routine [Storage Devices], StorportEtwEventOpcodeInfo, storport/StorPortEtwEvent2, StorportEtwLevelError, StorPortEtwEvent2, StorportEtwEventOpcodeResume, StorportEtwLevelInformational, storage.storportetwevent2, StorportEtwEventOpcodeDC_Stop, StorportEtwLevelWarning, StorportEtwEventOpcodeSuspend, STORPORT_ETW_EVENT_KEYWORD_ENUMERATION, StorportEtwLevelVerbose, StorportEtwEventOpcodeReply, StorportEtwEventOpcodeDC_Start, StorportEtwLevelCritical, StorportEtwLevelLogAlways, StorportEtwEventOpcodeStart, StorportEtwEventOpcodeExtension, StorportEtwEventOpcodeReceive, StorportEtwEventOpcodeStop
+ms.keywords : StorportEtwEventOpcodeResume, STORPORT_ETW_EVENT_KEYWORD_ENUMERATION, StorportEtwLevelVerbose, StorPortEtwEvent2, StorportEtwEventOpcodeStart, storage.storportetwevent2, StorportEtwLevelLogAlways, storport/StorPortEtwEvent2, StorportEtwEventOpcodeDC_Start, StorportEtwLevelInformational, StorportEtwEventOpcodeDC_Stop, STORPORT_ETW_EVENT_KEYWORD_PERFORMANCE, StorportEtwEventOpcodeExtension, StorPortEtwEvent2 routine [Storage Devices], StorportEtwEventOpcodeSuspend, StorportEtwEventOpcodeReceive, STORPORT_ETW_EVENT_KEYWORD_POWER, StorportEtwEventOpcodeReply, StorportEtwLevelError, STORPORT_ETW_EVENT_KEYWORD_IO, StorportEtwEventOpcodeInfo, StorportEtwLevelCritical, StorportEtwEventOpcodeStop, StorportEtwLevelWarning
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -401,14 +401,14 @@ Events generated from StorPort miniport drivers are published to the "Microsoft-
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportetwevent8.md">StorPortEtwEvent8</a>
-
 <a href="..\storport\nf-storport-storportetwevent4.md">StorPortEtwEvent4</a>
+
+<a href="..\storport\nf-storport-storportetwevent8.md">StorPortEtwEvent8</a>
 
  
 

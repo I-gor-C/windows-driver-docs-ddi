@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9A7B4181-0592-4C40-BC5A-99AFFA57846C
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf._wdfinterruptreportactive, PFN_WDFINTERRUPTREPORTACTIVE, wdfinterrupt/WdfInterruptReportActive, wdf.wdfinterruptreportactive, kmdf.wdfinterruptreportactive, WdfInterruptReportActive, WdfInterruptReportActive method
+ms.keywords : PFN_WDFINTERRUPTREPORTACTIVE, wdf.wdfinterruptreportactive, WdfInterruptReportActive method, kmdf.wdfinterruptreportactive, WdfInterruptReportActive, wdfinterrupt/WdfInterruptReportActive, kmdf._wdfinterruptreportactive
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_INTERRUPT_PRIORITY, WDF_INTERRUPT_PRIORITY"
+req.typenames : WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
 req.product : Windows 10 or later.
 ---
 
@@ -89,7 +89,7 @@ For more information, see <a href="https://msdn.microsoft.com/F96214C9-702D-402E
 | **Minimum UMDF version** |  |
 | **Header** | wdfinterrupt.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 
 ## See Also

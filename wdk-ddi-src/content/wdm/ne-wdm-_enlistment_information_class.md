@@ -1,6 +1,6 @@
 ---
 UID : NE:wdm._ENLISTMENT_INFORMATION_CLASS
-title : _ENLISTMENT_INFORMATION_CLASS
+title : "_ENLISTMENT_INFORMATION_CLASS"
 author : windows-driver-content
 description : The ENLISTMENT_INFORMATION_CLASS enumeration identifies the type of information that the ZwSetInformationEnlistment routine can set and that the ZwQueryInformationEnlistment routine can retrieve for an enlistment object.
 old-location : kernel\enlistment_information_class.htm
@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d031e032-66e3-4697-8db1-67655cfc223d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.enlistment_information_class, ENLISTMENT_INFORMATION_CLASS, wdm/EnlistmentCrmInformation, ENLISTMENT_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], _ENLISTMENT_INFORMATION_CLASS, wdm/EnlistmentBasicInformation, EnlistmentRecoveryInformation, wdm/EnlistmentRecoveryInformation, ktm_ref_9bf2b9fa-5b9a-47fb-873c-6bd5f1930553.xml, EnlistmentCrmInformation, EnlistmentBasicInformation, wdm/ENLISTMENT_INFORMATION_CLASS
+ms.keywords : wdm/EnlistmentCrmInformation, EnlistmentRecoveryInformation, kernel.enlistment_information_class, wdm/ENLISTMENT_INFORMATION_CLASS, wdm/EnlistmentBasicInformation, _ENLISTMENT_INFORMATION_CLASS, wdm/EnlistmentRecoveryInformation, ENLISTMENT_INFORMATION_CLASS, ENLISTMENT_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], EnlistmentBasicInformation, ktm_ref_9bf2b9fa-5b9a-47fb-873c-6bd5f1930553.xml, EnlistmentCrmInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -82,11 +82,11 @@ typedef enum _ENLISTMENT_INFORMATION_CLASS {
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwqueryinformationenlistment.md">ZwQueryInformationEnlistment</a>
+<a href="..\wdm\nf-wdm-zwsetinformationenlistment.md">ZwSetInformationEnlistment</a>
 
 <a href="..\wdm\ns-wdm-_enlistment_basic_information.md">ENLISTMENT_BASIC_INFORMATION</a>
 
-<a href="..\wdm\nf-wdm-zwsetinformationenlistment.md">ZwSetInformationEnlistment</a>
+<a href="..\wdm\nf-wdm-zwqueryinformationenlistment.md">ZwQueryInformationEnlistment</a>
 
  
 

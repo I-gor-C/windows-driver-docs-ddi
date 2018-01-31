@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3ca53536-e847-4c11-a28d-e046e8a392de
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortServicesI2C, video/VideoPortServicesI2C, video/VideoPortServicesWCMemoryProtection, VIDEO_PORT_SERVICES enumeration [Display Devices], Video_Structs_f2ede654-971a-4700-a911-8063a2a03ffe.xml, video/VIDEO_PORT_SERVICES, video/VideoPortServicesAGP, video/VideoPortServicesHeadless, VIDEO_PORT_SERVICES, VideoPortServicesHeadless, VideoPortServicesDebugReport, display.video_port_services, video/VideoPortServicesDebugReport, video/VideoPortServicesInt10, VideoPortServicesInt10, VideoPortServicesWCMemoryProtection, VideoPortServicesAGP
+ms.keywords : VIDEO_PORT_SERVICES enumeration [Display Devices], video/VIDEO_PORT_SERVICES, video/VideoPortServicesHeadless, Video_Structs_f2ede654-971a-4700-a911-8063a2a03ffe.xml, video/VideoPortServicesAGP, video/VideoPortServicesInt10, VIDEO_PORT_SERVICES, VideoPortServicesHeadless, VideoPortServicesDebugReport, video/VideoPortServicesDebugReport, video/VideoPortServicesWCMemoryProtection, video/VideoPortServicesI2C, VideoPortServicesInt10, display.video_port_services, VideoPortServicesWCMemoryProtection, VideoPortServicesI2C, VideoPortServicesAGP
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -111,15 +111,15 @@ The video miniport driver obtains a set of function pointers by passing a value 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551792">Debug Report Functions Implemented by the Video Port Driver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567384">I2C Functions Implemented by the Video Port Driver</a>
 
 <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567384">I2C Functions Implemented by the Video Port Driver</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567732">Int10 Functions Implemented by the Video Port Driver</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538227">AGP Functions Implemented by the Video Port Driver</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551792">Debug Report Functions Implemented by the Video Port Driver</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 05cbeca1-7420-41c6-8868-980b265523db
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisFCancelDirectOidRequest function [Network Drivers Starting with Windows Vista], NdisFCancelDirectOidRequest, netvista.ndisfcanceldirectoidrequest, ndis/NdisFCancelDirectOidRequest, ndis_request_direct_ref_48dc16f9-1c11-41de-9c37-91abed86b06c.xml
+ms.keywords : NdisFCancelDirectOidRequest, ndis/NdisFCancelDirectOidRequest, NdisFCancelDirectOidRequest function [Network Drivers Starting with Windows Vista], netvista.ndisfcanceldirectoidrequest, ndis_request_direct_ref_48dc16f9-1c11-41de-9c37-91abed86b06c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -94,10 +94,12 @@ The filter driver can call
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
 
 <a href="..\ndis\nf-ndis-ndisfdirectoidrequest.md">NdisFDirectOidRequest</a>
 
@@ -105,8 +107,6 @@ The filter driver can call
    FilterCancelDirectOidRequest</i></mshelp:link>
 
 <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
-
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
 
  
 

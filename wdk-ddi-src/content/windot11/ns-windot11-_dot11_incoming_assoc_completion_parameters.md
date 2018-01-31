@@ -1,6 +1,6 @@
 ---
 UID : NS:windot11._DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS
-title : _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS
+title : "_DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS"
 author : windows-driver-content
 description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location : netvista\dot11_incoming_assoc_completion_parameters.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 8f3cfe07-5026-40fb-b832-da5ae048843e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : windot11/PDOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS, *PDOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS, PDOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS, DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS structure [Network Drivers Starting with Windows Vista], _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS, windot11/DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS, netvista.dot11_incoming_assoc_completion_parameters, PDOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS, Native_802.11_data_types_fac44c06-59c5-4fd3-a8ec-335d9e9c6f7d.xml
+ms.keywords : "_DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS, windot11/PDOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS, PDOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS, DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS, DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS structure [Network Drivers Starting with Windows Vista], *PDOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS, windot11/DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS, Native_802.11_data_types_fac44c06-59c5-4fd3-a8ec-335d9e9c6f7d.xml, netvista.dot11_incoming_assoc_completion_parameters, PDOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS, *PDOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS
+req.typenames : "*PDOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS, DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS"
 req.product : Windows 10 or later.
 ---
 
@@ -103,6 +103,22 @@ The miniport driver must set the members of
 
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+
+
+#### Type
+
+This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
+
+
+#### Revision
+
+This member must be set to DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS_REVISION_1.
+
+
+#### Size
+
+This member must be set to 
+       <b>sizeof</b>(DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS).
 
 `MulticastCipher`
 
@@ -214,6 +230,32 @@ For nonzero values of
      <b>uStatus</b>, this member indicates the source of the error that prevents association. The NIC must
      set 
      <b>ucErrorSource</b> to one of the following values:
+     
+
+
+
+
+#### DOT11_ASSOC_ERROR_SOURCE_OS
+
+The miniport driver has rejected the association procedure because of system errors, such as
+       out-of-memory errors. In this case, 
+       <b>uStatus</b> should be set to the NDIS_STATUS_XXX or NTSTATUS_XXX code returned from the operating
+       system.
+
+
+#### DOT11_ASSOC_ERROR_SOURCE_REMOTE
+
+The AP or the peer station has rejected the association procedure. In this case, 
+       <b>uStatus</b> should be set to the 802.11 status code form the 802.11 authentication frame,
+       association response frame, or re-association response frame. Table 19 in the 
+       <i>IEEE 802.11-2003 Specification</i> contains all the possible values. The miniport driver can also
+       return new values in this IEEE specification when it is amended.
+
+
+#### DOT11_ASSOC_ERROR_SOURCE_OTHER
+
+The association failed for an IHV-specific reason. In this case, 
+       <b>uStatus</b> contains a nonzero value specified by the IHV.
 
 `UnicastCipher`
 
@@ -253,14 +295,14 @@ The NDIS_STATUS_DOT11_INCOMING_ASSOC_COMPLETION status indication marks the end 
 
 ## See Also
 
+<a href="..\wlantypes\ne-wlantypes-_dot11_auth_algorithm.md">DOT11_AUTH_ALGORITHM</a>
+
 <a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>
 
 <mshelp:link keywords="netvista.ndis_status_dot11_incoming_assoc_completion" tabindex="0">
    NDIS_STATUS_DOT11_INCOMING_ASSOC_COMPLETION</mshelp:link>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-<a href="..\wlantypes\ne-wlantypes-_dot11_auth_algorithm.md">DOT11_AUTH_ALGORITHM</a>
 
  
 

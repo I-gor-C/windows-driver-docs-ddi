@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3FA48004-E96A-4ED7-935F-B7F58A74FB1F
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storport/StorPortGetDataInBufferSystemAddress, StorPortGetDataInBufferSystemAddress, storage.storportgetdatainbuffersystemaddress, StorPortGetDataInBufferSystemAddress routine [Storage Devices]
+ms.keywords : StorPortGetDataInBufferSystemAddress, StorPortGetDataInBufferSystemAddress routine [Storage Devices], storport/StorPortGetDataInBufferSystemAddress, storage.storportgetdatainbuffersystemaddress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -132,14 +132,14 @@ A system address can not be assigned.
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportgetdatainbuffermdl.md">StorPortGetDataInBufferMdl</a>
-
 <a href="..\storport\nf-storport-storportgetdatainbufferscattergatherlist.md">StorPortGetDataInBufferScatterGatherList</a>
+
+<a href="..\storport\nf-storport-storportgetdatainbuffermdl.md">StorPortGetDataInBufferMdl</a>
 
  
 

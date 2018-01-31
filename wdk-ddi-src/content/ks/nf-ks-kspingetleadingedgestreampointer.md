@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 05615730-dbeb-496a-b4a8-a16830b31586
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinGetLeadingEdgeStreamPointer function [Streaming Media Devices], stream.kspingetleadingedgestreampointer, KsPinGetLeadingEdgeStreamPointer, ks/KsPinGetLeadingEdgeStreamPointer, avfunc_0eb1faec-c090-4647-8306-84cff42ddf9c.xml
+ms.keywords : ks/KsPinGetLeadingEdgeStreamPointer, stream.kspingetleadingedgestreampointer, KsPinGetLeadingEdgeStreamPointer, avfunc_0eb1faec-c090-4647-8306-84cff42ddf9c.xml, KsPinGetLeadingEdgeStreamPointer function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -62,6 +62,20 @@ A pointer to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure owning the 
 This parameter specifies how to acquire the leading edge stream pointer. Can be one of the following:
 
 
+
+
+#### KSSTREAM_POINTER_STATE_UNLOCKED
+
+Acquire the leading edge stream pointer regardless of whether it references a data frame or not. 
+
+No attempts can be made to access any data associated with the pointer until the pointer is locked. Also note that frames associated with an unlocked stream pointer can be canceled.
+
+
+#### KSSTREAM_POINTER_STATE_LOCKED
+
+Acquire and lock the leading edge stream pointer. If no data frame is associated with the stream pointer, return <b>NULL</b>. If a non<b>null</b> pointer is returned, it is a locked stream pointer and has a data frame associated with it. Frames associated with a locked stream pointer <b>cannot</b> be canceled.
+
+
 ## Return Value
 
 <b>KsPinGetLeadingEdgeStreamPointer</b> returns a pointer to a <a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a> structure or <b>NULL</b>. A return value of <b>NULL</b> may occur because there is no queue associated with the pin, indicating that the pin does not use the standard transport mechanism. Alternatively, a return value of <b>NULL</b> may occur because an attempt to lock the leading edge failed, indicating that there is no data frame associated with the leading edge.
@@ -79,24 +93,24 @@ Filters that implement <a href="https://msdn.microsoft.com/0b6a02c2-e672-4568-a8
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
+
+<a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a>
+
+<a href="..\ks\nf-ks-ksstreampointeradvanceoffsetsandunlock.md">KsStreamPointerAdvanceOffsetsAndUnlock</a>
+
 <a href="..\ks\nf-ks-kspingettrailingedgestreampointer.md">KsPinGetTrailingEdgeStreamPointer</a>
+
+<a href="..\ks\nf-ks-ksstreampointerdelete.md">KsStreamPointerDelete</a>
 
 <a href="..\ks\nf-ks-ksstreampointerclone.md">KsStreamPointerClone</a>
 
 <a href="..\ks\nf-ks-ksstreampointeradvance.md">KsStreamPointerAdvance</a>
-
-<a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a>
-
-<a href="..\ks\nf-ks-ksstreampointerdelete.md">KsStreamPointerDelete</a>
-
-<a href="..\ks\nf-ks-ksstreampointeradvanceoffsetsandunlock.md">KsStreamPointerAdvanceOffsetsAndUnlock</a>
-
-<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 02001bad-bafe-432d-bc07-011cb6981ae6
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugClient5::GetNumberEventCallbacks, IDebugClient5 interface [Windows Debugging], GetNumberEventCallbacks method, GetNumberEventCallbacks method [Windows Debugging], GetNumberEventCallbacks method [Windows Debugging], IDebugClient5 interface, debugger.getnumbereventcallbacks, GetNumberEventCallbacks, IDebugClient5, IDebugClient_976101a5-6218-475a-b8e9-e7091e2524d6.xml, IDebugClient5::GetNumberEventCallbacks
+ms.keywords : debugger.getnumbereventcallbacks, IDebugClient5 interface [Windows Debugging], GetNumberEventCallbacks method, GetNumberEventCallbacks, GetNumberEventCallbacks method [Windows Debugging], IDebugClient5 interface, GetNumberEventCallbacks method [Windows Debugging], IDebugClient5::GetNumberEventCallbacks, IDebugClient_976101a5-6218-475a-b8e9-e7091e2524d6.xml, dbgeng/IDebugClient5::GetNumberEventCallbacks, IDebugClient5
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -103,15 +103,15 @@ For more information about callbacks, see <a href="https://msdn.microsoft.com/90
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547923">GetNumberInputCallbacks</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547931">GetNumberOutputCallbacks</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556671">SetEventCallbacks</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546601">GetEventCallbacks</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556671">SetEventCallbacks</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547923">GetNumberInputCallbacks</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547931">GetNumberOutputCallbacks</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugeventcallbacks.md">IDebugEventCallbacks</a>
 

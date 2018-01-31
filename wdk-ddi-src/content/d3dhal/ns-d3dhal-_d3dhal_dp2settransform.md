@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dhal._D3DHAL_DP2SETTRANSFORM
-title : _D3DHAL_DP2SETTRANSFORM
+title : "_D3DHAL_DP2SETTRANSFORM"
 author : windows-driver-content
 description : D3DHAL_DP2SETTRANSFORM structure is used to specify the transform state and matrix for D3dDrawPrimitives2.
 old-location : display\d3dhal_dp2settransform.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7905f5bd-15f5-4b4f-bc00-91acb2371dc0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dstrct_0392a6fc-4098-4c82-92fa-5684be9fa195.xml, *LPD3DHAL_DP2SETTRANSFORM, d3dhal/LPD3DHAL_DP2SETTRANSFORM, display.d3dhal_dp2settransform, LPD3DHAL_DP2SETTRANSFORM structure pointer [Display Devices], _D3DHAL_DP2SETTRANSFORM, D3DHAL_DP2SETTRANSFORM structure [Display Devices], d3dhal/D3DHAL_DP2SETTRANSFORM, D3DHAL_DP2SETTRANSFORM, LPD3DHAL_DP2SETTRANSFORM
+ms.keywords : D3DHAL_DP2SETTRANSFORM, d3dhal/D3DHAL_DP2SETTRANSFORM, *LPD3DHAL_DP2SETTRANSFORM, _D3DHAL_DP2SETTRANSFORM, d3dhal/LPD3DHAL_DP2SETTRANSFORM, LPD3DHAL_DP2SETTRANSFORM, LPD3DHAL_DP2SETTRANSFORM structure pointer [Display Devices], display.d3dhal_dp2settransform, D3DHAL_DP2SETTRANSFORM structure [Display Devices], d3dstrct_0392a6fc-4098-4c82-92fa-5684be9fa195.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

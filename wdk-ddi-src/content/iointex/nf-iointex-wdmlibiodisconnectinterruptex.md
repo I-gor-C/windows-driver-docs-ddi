@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : B6F8663C-3A13-45DA-80FE-CC8B9194D083
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : WdmlibIoDisconnectInterruptEx, kernel.wdmlibiodisconnectinterruptex, IoDisconnectInterruptEx, iointex/WdmlibIoDisconnectInterruptEx, WdmlibIoDisconnectInterruptEx function [Kernel-Mode Driver Architecture], iointex/IoDisconnectInterruptEx
+ms.keywords : iointex/IoDisconnectInterruptEx, WdmlibIoDisconnectInterruptEx, iointex/WdmlibIoDisconnectInterruptEx, IoDisconnectInterruptEx, kernel.wdmlibiodisconnectinterruptex, WdmlibIoDisconnectInterruptEx function [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

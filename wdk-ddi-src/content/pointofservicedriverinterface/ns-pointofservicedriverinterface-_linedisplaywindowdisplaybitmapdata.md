@@ -1,6 +1,6 @@
 ---
 UID : NS:pointofservicedriverinterface._LineDisplayWindowDisplayBitmapData
-title : _LineDisplayWindowDisplayBitmapData
+title : "_LineDisplayWindowDisplayBitmapData"
 author : windows-driver-content
 description : This structure is not implemented.
 old-location : pos\linedisplaywindowdisplaybitmapdata.htm
@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : C18A13B1-C4DD-4147-8CA3-4F23E689ACF3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : pointofservicedriverinterface/PLineDisplayWindowDisplayBitmapData, PLineDisplayWindowDisplayBitmapData structure pointer, pos.linedisplaywindowdisplaybitmapdata, pointofservicedriverinterface/LineDisplayWindowDisplayBitmapData, LineDisplayWindowDisplayBitmapData, LineDisplayWindowDisplayBitmapData structure, PLineDisplayWindowDisplayBitmapData, _LineDisplayWindowDisplayBitmapData
+ms.keywords : pointofservicedriverinterface/LineDisplayWindowDisplayBitmapData, PLineDisplayWindowDisplayBitmapData structure pointer, _LineDisplayWindowDisplayBitmapData, PLineDisplayWindowDisplayBitmapData, pos.linedisplaywindowdisplaybitmapdata, LineDisplayWindowDisplayBitmapData, LineDisplayWindowDisplayBitmapData structure, pointofservicedriverinterface/PLineDisplayWindowDisplayBitmapData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

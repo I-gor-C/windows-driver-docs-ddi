@@ -24,4 +24,4 @@ d4iface.h contains the following programming interfaces:
 ## Structures
 | Title | Description |
 | ---- |:---- |
-| [_DOT4_ACTIVITY](ns-d4iface-_dot4_activity.md) | . |
+| [_DOT4_ACTIVITY](ns-d4iface-_dot4_activity.md) | "." |

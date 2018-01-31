@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f6d40f3e-4bc9-4b30-97ac-600a33280305
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortInitializeQueueTag routine [Storage Devices], storage.ataportinitializequeuetag, AtaPortInitializeQueueTag, irb/AtaPortInitializeQueueTag, atartns_2dd092e5-f635-4da7-8444-ffef8e5c75db.xml
+ms.keywords : AtaPortInitializeQueueTag routine [Storage Devices], irb/AtaPortInitializeQueueTag, AtaPortInitializeQueueTag, atartns_2dd092e5-f635-4da7-8444-ffef8e5c75db.xml, storage.ataportinitializequeuetag
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -97,9 +97,9 @@ The values in the <i>TargetId</i> and <i>Lun</i> parameters specify the device t
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportallocatequeuetag.md">AtaPortAllocateQueueTag</a>
-
 <a href="..\irb\nf-irb-ataportreleasequeuetag.md">AtaPortReleaseQueueTag</a>
+
+<a href="..\irb\nf-irb-ataportallocatequeuetag.md">AtaPortAllocateQueueTag</a>
 
  
 

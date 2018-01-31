@@ -160,9 +160,9 @@ The shared memory provider specified the entry point (ALLOCATE_SHARED_MEMORY_HAN
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisallocatesharedmemory.md">NdisAllocateSharedMemory</a>
-
 <a href="..\ndis\ns-ndis-_ndis_shared_memory_parameters.md">NDIS_SHARED_MEMORY_PARAMETERS</a>
+
+<a href="..\ndis\nf-ndis-ndisallocatesharedmemory.md">NdisAllocateSharedMemory</a>
 
 <mshelp:link keywords="netvista.ndis_shared_memory_provider_characteristics" tabindex="0"><b>
    NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS</b></mshelp:link>

@@ -65,6 +65,23 @@ Pointer to the context for the interface routine.
 Specifies the voltage level to set on the Vpp pin. <i>VppLevel</i> must be one of the following values:
 
 
+
+
+#### PCMCIA_VPP_0V
+
+Specifies that the voltage on the Vpp pin be set to zero volts and that the Vpp pin be disabled.
+
+
+#### PCMCIA_VPP_12V
+
+Specifies that the voltage on the Vpp pin be set to twelve volts.
+
+
+#### PCMCIA_VPP_IS_VCC
+
+Specifies that the voltage on the Vpp pin be set to equal the voltage on the Vcc (primary card power) pin.
+
+
 ## Return Value
 
 The <b>PCMCIA_SET_VPP</b> interface routine returns <b>TRUE</b> after the requested voltage level is set.
@@ -86,14 +103,14 @@ Callers of this routine can run at IRQL &lt;= DISPATCH_LEVEL. To maintain overal
 | **Minimum UMDF version** |  |
 | **Header** | ntddpcm.h (include Ntddpcm.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL (See Remarks section.) |
+| **IRQL** | "<=DISPATCH_LEVEL (See Remarks section.)" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537609">PCMCIA_IS_WRITE_PROTECTED</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537610">PCMCIA_MODIFY_MEMORY_WINDOW</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537609">PCMCIA_IS_WRITE_PROTECTED</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : c463169e-5e18-44bb-b954-8a99d24edd0c
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.extremotedata_extremotedata, ExtRemoteData constructor [Windows Debugging], ExtRemoteData class, ExtRemoteData, ExtRemoteData constructor [Windows Debugging], ExtRemoteData::ExtRemoteData, EngExtCpp_Ref_8e376094-9e23-4ea4-81e3-c47e6695a687.xml, ExtRemoteData class [Windows Debugging], ExtRemoteData constructor
+ms.keywords : ExtRemoteData, ExtRemoteData constructor [Windows Debugging], ExtRemoteData class, debugger.extremotedata_extremotedata, ExtRemoteData constructor [Windows Debugging], ExtRemoteData class [Windows Debugging], ExtRemoteData constructor, ExtRemoteData::ExtRemoteData, EngExtCpp_Ref_8e376094-9e23-4ea4-81e3-c47e6695a687.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+req.typenames : "*PSILO_DRIVER_CAPABILITIES, SILO_DRIVER_CAPABILITIES"
 ---
 
 
@@ -76,17 +76,17 @@ The constructor is called by the <a href="https://msdn.microsoft.com/a335f881-7b
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/50b4bee4-3a8c-45a1-9a3f-b416aa8a19e5">ExtRemoteData::Set(Offset Bytes)</a>
-
 <a href="https://msdn.microsoft.com/a335f881-7b6f-4069-87fe-c036867b0c77">ExtRemoteData::Set(Typed)</a>
+
+<a href="https://msdn.microsoft.com/50b4bee4-3a8c-45a1-9a3f-b416aa8a19e5">ExtRemoteData::Set(Offset Bytes)</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544019">ExtRemoteData::GetData</a>
 
-<a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData::ExtRemoteData (Name, Offset, Bytes)</a>
+<a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a>
 
 <a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData::ExtRemoteData (Offset, Bytes)</a>
 
-<a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a>
+<a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData::ExtRemoteData (Name, Offset, Bytes)</a>
 
  
 

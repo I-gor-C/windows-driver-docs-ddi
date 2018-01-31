@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 47142adb-4d22-41eb-b455-93409bbffffb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcmTcpciPortControllerSetHardwareRequestQueue, buses.ucmtcpciportcontrollersethardwarerequestqueue, UcmTcpciPortControllerSetHardwareRequestQueue method [Buses], ucmtcpciportcontroller/UcmTcpciPortControllerSetHardwareRequestQueue
+ms.keywords : ucmtcpciportcontroller/UcmTcpciPortControllerSetHardwareRequestQueue, UcmTcpciPortControllerSetHardwareRequestQueue method [Buses], buses.ucmtcpciportcontrollersethardwarerequestqueue, UcmTcpciPortControllerSetHardwareRequestQueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,7 +85,7 @@ A client driver may choose to use the same queue across multiple port controller
 | **Minimum UMDF version** |  |
 | **Header** | ucmtcpciportcontroller.h |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

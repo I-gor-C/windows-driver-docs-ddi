@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 5387e22a-88df-413f-a6d1-2e208381df67
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltOplockIsSharedRequest, FltApiRef_e_to_o_93f74880-eb0d-4040-82a0-e0cb4bfb2cba.xml, fltkernel/FltOplockIsSharedRequest, ifsk.fltoplockissharedrequest, FltOplockIsSharedRequest routine [Installable File System Drivers]
+ms.keywords : FltOplockIsSharedRequest routine [Installable File System Drivers], ifsk.fltoplockissharedrequest, FltApiRef_e_to_o_93f74880-eb0d-4040-82a0-e0cb4bfb2cba.xml, FltOplockIsSharedRequest, fltkernel/FltOplockIsSharedRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,7 +71,7 @@ A pointer to the callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback
 | **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

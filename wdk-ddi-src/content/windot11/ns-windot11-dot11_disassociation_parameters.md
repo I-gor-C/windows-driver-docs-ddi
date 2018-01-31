@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : bf5f520e-4bbc-4b9f-9e6c-b430cb9e3b28
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : Native_802.11_data_types_289b81c2-13d2-484b-9306-6ca3dc961675.xml, netvista.dot11_disassociation_parameters, *PDOT11_DISASSOCIATION_PARAMETERS, DOT11_DISASSOCIATION_PARAMETERS structure [Network Drivers Starting with Windows Vista], PDOT11_DISASSOCIATION_PARAMETERS, PDOT11_DISASSOCIATION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], DOT11_DISASSOCIATION_PARAMETERS, windot11/DOT11_DISASSOCIATION_PARAMETERS, windot11/PDOT11_DISASSOCIATION_PARAMETERS
+ms.keywords : windot11/DOT11_DISASSOCIATION_PARAMETERS, Native_802.11_data_types_289b81c2-13d2-484b-9306-6ca3dc961675.xml, DOT11_DISASSOCIATION_PARAMETERS structure [Network Drivers Starting with Windows Vista], PDOT11_DISASSOCIATION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], PDOT11_DISASSOCIATION_PARAMETERS, netvista.dot11_disassociation_parameters, DOT11_DISASSOCIATION_PARAMETERS, windot11/PDOT11_DISASSOCIATION_PARAMETERS, *PDOT11_DISASSOCIATION_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,6 +75,22 @@ The miniport driver must set the members of
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
+
+#### Type
+
+This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
+
+
+#### Revision
+
+This member must be set to DOT11_DISASSOCIATION_PARAMETERS_REVISION_1.
+
+
+#### Size
+
+This member must be set to 
+       sizeof(DOT11_DISASSOCIATION_PARAMETERS).
+
 `MacAddr`
 
 The media access control (MAC) address of the AP or peer station that the 802.11 station has
@@ -126,12 +142,12 @@ For more information about the disassociation operation, see
 
 ## See Also
 
+<mshelp:link keywords="netvista.ndis_status_dot11_disassociation" tabindex="0">
+   NDIS_STATUS_DOT11_DISASSOCIATION</mshelp:link>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547652">DOT11_ASSOC_STATUS</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-<mshelp:link keywords="netvista.ndis_status_dot11_disassociation" tabindex="0">
-   NDIS_STATUS_DOT11_DISASSOCIATION</mshelp:link>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : AC84B27B-6FBF-429D-A8FA-F3C8F583F738
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : FilterSynchronousOidRequest function [Network Drivers Starting with Windows Vista], FILTER_SYNCHRONOUS_OID_REQUEST, ndis/FilterSynchronousOidRequest, FilterSynchronousOidRequest, netvista.filter_synchronous_oid_request
+ms.keywords : netvista.filter_synchronous_oid_request, FilterSynchronousOidRequest function [Network Drivers Starting with Windows Vista], FilterSynchronousOidRequest, ndis/FilterSynchronousOidRequest, FILTER_SYNCHRONOUS_OID_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -81,7 +81,7 @@ None
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

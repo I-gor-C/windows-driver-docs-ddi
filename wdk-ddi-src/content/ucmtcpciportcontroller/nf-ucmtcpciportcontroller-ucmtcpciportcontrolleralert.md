@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 38700667-d872-4c08-b846-236e94318dba
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcmTcpciPortControllerAlert method [Buses], ucmtcpciportcontroller/UcmTcpciPortControllerAlert, buses.ucmtcpciportcontrolleralert, UcmTcpciPortControllerAlert
+ms.keywords : UcmTcpciPortControllerAlert, UcmTcpciPortControllerAlert method [Buses], ucmtcpciportcontroller/UcmTcpciPortControllerAlert, buses.ucmtcpciportcontrolleralert
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -93,7 +93,7 @@ When handling alerts, UcmTcpciCx may send hardware requests to the client driver
 | **Minimum UMDF version** |  |
 | **Header** | ucmtcpciportcontroller.h |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

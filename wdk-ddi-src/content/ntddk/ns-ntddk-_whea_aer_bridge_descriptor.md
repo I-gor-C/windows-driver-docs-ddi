@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddk._WHEA_AER_BRIDGE_DESCRIPTOR
-title : _WHEA_AER_BRIDGE_DESCRIPTOR
+title : "_WHEA_AER_BRIDGE_DESCRIPTOR"
 author : windows-driver-content
 description : The WHEA_AER_BRIDGE_DESCRIPTOR structure describes a PCI Express (PCIe) bridge error source.
 old-location : whea\whea_aer_bridge_descriptor.htm
@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 33cc9d34-cffb-410d-9948-37c8a409e0a5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : whearef_52e2fbef-c8d7-42c8-b8ae-584fbc4f622f.xml, _WHEA_AER_BRIDGE_DESCRIPTOR, PWHEA_AER_BRIDGE_DESCRIPTOR structure pointer [WHEA Drivers and Applications], *PWHEA_AER_BRIDGE_DESCRIPTOR, whea.whea_aer_bridge_descriptor, ntddk/PWHEA_AER_BRIDGE_DESCRIPTOR, WHEA_AER_BRIDGE_DESCRIPTOR structure [WHEA Drivers and Applications], PWHEA_AER_BRIDGE_DESCRIPTOR, WHEA_AER_BRIDGE_DESCRIPTOR, ntddk/WHEA_AER_BRIDGE_DESCRIPTOR
+ms.keywords : PWHEA_AER_BRIDGE_DESCRIPTOR structure pointer [WHEA Drivers and Applications], ntddk/PWHEA_AER_BRIDGE_DESCRIPTOR, whea.whea_aer_bridge_descriptor, PWHEA_AER_BRIDGE_DESCRIPTOR, _WHEA_AER_BRIDGE_DESCRIPTOR, *PWHEA_AER_BRIDGE_DESCRIPTOR, WHEA_AER_BRIDGE_DESCRIPTOR, whearef_52e2fbef-c8d7-42c8-b8ae-584fbc4f622f.xml, ntddk/WHEA_AER_BRIDGE_DESCRIPTOR, WHEA_AER_BRIDGE_DESCRIPTOR structure [WHEA Drivers and Applications]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_AER_BRIDGE_DESCRIPTOR, WHEA_AER_BRIDGE_DESCRIPTOR"
+req.typenames : WHEA_AER_BRIDGE_DESCRIPTOR, *PWHEA_AER_BRIDGE_DESCRIPTOR
 ---
 
 # _WHEA_AER_BRIDGE_DESCRIPTOR structure
@@ -109,6 +109,51 @@ An AER_BRIDGE_DESCRIPTOR_FLAGS union that indicates which of the members of the 
 </td>
 </tr>
 </table></span></div>
+
+
+#### UncorrectableErrorMaskRW
+
+A single bit that indicates that the operating system can write to the <b>UncorrectableErrorMask</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.
+
+
+#### UncorrectableErrorSeverityRW
+
+A single bit that indicates that the operating system can write to the <b>UncorrectableErrorSeverity</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.
+
+
+#### CorrectableErrorMaskRW
+
+A single bit that indicates that the operating system can write to the <b>CorrectableErrorMask</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.
+
+
+#### AdvancedCapsAndControlRW
+
+A single bit that indicates that the operating system can write to the <b>AdvancedCapsAndControl</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.
+
+
+#### SecondaryUncorrectableErrorMaskRW
+
+A single bit that indicates that the operating system can write to the <b>SecondaryUncorrectableErrorMask</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.
+
+
+#### SecondaryUncorrectableErrorSevRW
+
+A single bit that indicates that the operating system can write to the <b>SecondaryUncorrectableErrorSev</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.
+
+
+#### SecondaryCapsAndControlRW
+
+A single bit that indicates that the operating system can write to the <b>SecondaryCapsAndControl</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.
+
+
+#### Reserved
+
+Reserved for system use.
+
+
+#### AsUSHORT
+
+A USHORT representation of the contents of the AER_ROOTPORT_DESCRIPTOR_FLAGS union.
 
 `Reserved`
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8c598cb8-083a-459d-b94b-958b7d625c88
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFUSBTARGETDEVICEGETIOTARGET, kmdf.wdfusbtargetdevicegetiotarget, wdf.wdfusbtargetdevicegetiotarget, wdfusb/WdfUsbTargetDeviceGetIoTarget, WdfUsbTargetDeviceGetIoTarget, WdfUsbTargetDeviceGetIoTarget method, DFUsbRef_d65932cf-8891-4687-a784-eb6f794759fd.xml
+ms.keywords : wdfusb/WdfUsbTargetDeviceGetIoTarget, kmdf.wdfusbtargetdevicegetiotarget, WdfUsbTargetDeviceGetIoTarget, WdfUsbTargetDeviceGetIoTarget method, PFN_WDFUSBTARGETDEVICEGETIOTARGET, DFUsbRef_d65932cf-8891-4687-a784-eb6f794759fd.xml, wdf.wdfusbtargetdevicegetiotarget
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
+req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
 
@@ -79,7 +79,7 @@ For more information about the <b>WdfUsbTargetDeviceGetIoTarget</b> method and U
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

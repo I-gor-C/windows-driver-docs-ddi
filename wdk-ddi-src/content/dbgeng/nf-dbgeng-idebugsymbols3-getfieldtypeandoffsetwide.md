@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : b4e38b33-2f23-4439-b0bc-ab3524e5180e
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetFieldTypeAndOffsetWide, GetFieldTypeAndOffsetWide method [Windows Debugging], debugger.getfieldtypeandoffsetwide, dbgeng/IDebugSymbols3::GetFieldTypeAndOffsetWide, IDebugSymbols3::GetFieldTypeAndOffsetWide, GetFieldTypeAndOffsetWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetFieldTypeAndOffsetWide method
+ms.keywords : debugger.getfieldtypeandoffsetwide, GetFieldTypeAndOffsetWide, GetFieldTypeAndOffsetWide method [Windows Debugging], IDebugSymbols3 interface, GetFieldTypeAndOffsetWide method [Windows Debugging], IDebugSymbols3::GetFieldTypeAndOffsetWide, IDebugSymbols3, dbgeng/IDebugSymbols3::GetFieldTypeAndOffsetWide, IDebugSymbols3 interface [Windows Debugging], GetFieldTypeAndOffsetWide method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

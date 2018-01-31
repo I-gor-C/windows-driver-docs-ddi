@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 19180ab8-7ac6-45cb-8f17-b16368bbb32b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rtlrealsuccessor, rtlref_5bf190a8-a1c9-45d8-8be3-73178d2f7add.xml, RtlRealSuccessor routine [Installable File System Drivers], RtlRealSuccessor, ntddk/RtlRealSuccessor
+ms.keywords : ntddk/RtlRealSuccessor, ifsk.rtlrealsuccessor, RtlRealSuccessor, RtlRealSuccessor routine [Installable File System Drivers], rtlref_5bf190a8-a1c9-45d8-8be3-73178d2f7add.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -91,11 +91,11 @@ Callers of <b>RtlRealSuccessor</b> must be running at IRQL &lt;= DISPATCH_LEVEL 
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-rtlsplay.md">RtlSplay</a>
-
 <a href="..\ntddk\nf-ntddk-rtlsubtreesuccessor.md">RtlSubtreeSuccessor</a>
 
 <a href="..\ntddk\nf-ntddk-rtlrealpredecessor.md">RtlRealPredecessor</a>
+
+<a href="..\ntddk\nf-ntddk-rtlsplay.md">RtlSplay</a>
 
  
 

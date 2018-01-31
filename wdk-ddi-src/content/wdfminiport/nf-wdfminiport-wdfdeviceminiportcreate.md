@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d74dedbd-f418-4ea3-ae76-c0da9c5f2fb9
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceMiniportCreate, kmdf.wdfdeviceminiportcreate, wdf.wdfdeviceminiportcreate, DFDeviceObjectGeneralRef_18104589-c58d-4e8b-af91-c6620b3772e9.xml, PFN_WDFDEVICEMINIPORTCREATE, wdfminiport/WdfDeviceMiniportCreate, WdfDeviceMiniportCreate method
+ms.keywords : kmdf.wdfdeviceminiportcreate, PFN_WDFDEVICEMINIPORTCREATE, wdf.wdfdeviceminiportcreate, DFDeviceObjectGeneralRef_18104589-c58d-4e8b-af91-c6620b3772e9.xml, WdfDeviceMiniportCreate method, WdfDeviceMiniportCreate, wdfminiport/WdfDeviceMiniportCreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_MEMORY_DESCRIPTOR, WDF_MEMORY_DESCRIPTOR"
+req.typenames : WDF_MEMORY_DESCRIPTOR, *PWDF_MEMORY_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 
@@ -178,11 +178,11 @@ For more information about miniport drivers, see <a href="https://docs.microsoft
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552404">WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE</a>
+
 <a href="..\wdfminiport\nf-wdfminiport-wdfdriverminiportunload.md">WdfDriverMiniportUnload</a>
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552404">WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE</a>
 
  
 

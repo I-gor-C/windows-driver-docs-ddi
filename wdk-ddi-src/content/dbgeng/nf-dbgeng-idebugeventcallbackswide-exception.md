@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 02f5bec1-f2d2-4b72-bd9e-b30315c334da
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugEventCallbacksWide interface [Windows Debugging], Exception method, debugger.idebugeventcallbackswide_exception, IDebugEventCallbacksWide, IDebugEventCallbacksWide::Exception, Exception, Exception method [Windows Debugging], IDebugEventCallbacksWide interface, Exception method [Windows Debugging], dbgeng/IDebugEventCallbacksWide::Exception
+ms.keywords : Exception method [Windows Debugging], IDebugEventCallbacksWide interface [Windows Debugging], Exception method, debugger.idebugeventcallbackswide_exception, dbgeng/IDebugEventCallbacksWide::Exception, Exception method [Windows Debugging], IDebugEventCallbacksWide interface, IDebugEventCallbacksWide, Exception, IDebugEventCallbacksWide::Exception
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

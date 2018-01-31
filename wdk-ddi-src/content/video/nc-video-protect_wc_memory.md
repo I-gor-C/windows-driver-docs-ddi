@@ -90,9 +90,9 @@ When WC memory protection is no longer required, the display miniport driver sho
 
 ## See Also
 
-<a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a>
-
 <a href="..\video\nc-video-restore_wc_memory.md">VideoPortRestoreWCMemory</a>
+
+<a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a>
 
  
 

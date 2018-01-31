@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : a0d59215-5201-4e1a-9cb2-d9ff6109c3bb
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GetPosition, audio.iminiportwavecyclicstream_getposition, audmp-routines_016da0e2-bc56-4c06-9755-a13b75d6c5c9.xml, IMiniportWaveCyclicStream, GetPosition method [Audio Devices], IMiniportWaveCyclicStream interface [Audio Devices], GetPosition method, portcls/IMiniportWaveCyclicStream::GetPosition, IMiniportWaveCyclicStream::GetPosition, GetPosition method [Audio Devices], IMiniportWaveCyclicStream interface
+ms.keywords : IMiniportWaveCyclicStream, GetPosition, audmp-routines_016da0e2-bc56-4c06-9755-a13b75d6c5c9.xml, IMiniportWaveCyclicStream interface [Audio Devices], GetPosition method, GetPosition method [Audio Devices], IMiniportWaveCyclicStream interface, GetPosition method [Audio Devices], portcls/IMiniportWaveCyclicStream::GetPosition, IMiniportWaveCyclicStream::GetPosition, audio.iminiportwavecyclicstream_getposition
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -96,16 +96,16 @@ The WaveCyclic port driver implements a property handler for <a href="https://ms
 | **Minimum UMDF version** |  |
 | **Header** | portcls.h (include Portcls.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iminiportwavecyclicstream.md">IMiniportWaveCyclicStream</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537297">KSPROPERTY_AUDIO_POSITION</a>
 
 <a href="..\ks\ne-ks-pksstate.md">KSSTATE</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537297">KSPROPERTY_AUDIO_POSITION</a>
+<a href="..\portcls\nn-portcls-iminiportwavecyclicstream.md">IMiniportWaveCyclicStream</a>
 
  
 

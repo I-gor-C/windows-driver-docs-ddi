@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dukmdt._D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION
-title : _D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION
+title : "_D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION"
 author : windows-driver-content
 description : D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION describes a virtual address update operation.
 old-location : display\d3dddi_updategpuvirtualaddress_operation.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : BCA741A8-2294-43C1-8B9C-3724274D637B
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION structure [Display Devices], d3dukmdt/D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION, _D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION, D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION, display.d3dddi_updategpuvirtualaddress_operation
+ms.keywords : d3dukmdt/D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION, display.d3dddi_updategpuvirtualaddress_operation, D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION structure [Display Devices], D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION, _D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -94,9 +94,9 @@ typedef struct _D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION {
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_updategpuvirtualaddresscb.md">pfnUpdateGpuVirtualAddressCb</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_reservegpuvirtualaddresscb.md">pfnReserveGpuVirtualAddressCb</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_updategpuvirtualaddresscb.md">pfnUpdateGpuVirtualAddressCb</a>
 
  
 

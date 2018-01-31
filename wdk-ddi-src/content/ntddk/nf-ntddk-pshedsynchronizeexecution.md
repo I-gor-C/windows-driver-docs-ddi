@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 299fd2fc-d7f4-4176-addd-d45d010b1056
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PshedSynchronizeExecution function [WHEA Drivers and Applications], whea.pshedsynchronizeexecution, ntddk/PshedSynchronizeExecution, PshedSynchronizeExecution, whearef_7a6363f4-466d-498a-97c4-b5f7937005dd.xml
+ms.keywords : PshedSynchronizeExecution, ntddk/PshedSynchronizeExecution, PshedSynchronizeExecution function [WHEA Drivers and Applications], whea.pshedsynchronizeexecution, whearef_7a6363f4-466d-498a-97c4-b5f7937005dd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -75,6 +75,11 @@ SynchronizeRoutine(
 </tr>
 </table></span></div>
 
+
+#### SynchronizeContext
+
+The context value that is passed in the <i>SynchronizeContext</i> parameter to the <b>PshedSynchronizeExecution</b> function.
+
 `SynchronizeContext`
 
 A pointer to a caller-supplied context area that is passed to the function pointed to by the <i>SynchronizeRoutine</i> parameter.
@@ -113,7 +118,7 @@ The function specified in the <i>SynchronizeRoutine</i> parameter is called.
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** |  |
-| **IRQL** | <= DIRQL |
+| **IRQL** | "<= DIRQL" |
 | **DDI compliance rules** |  |
 
 ## See Also

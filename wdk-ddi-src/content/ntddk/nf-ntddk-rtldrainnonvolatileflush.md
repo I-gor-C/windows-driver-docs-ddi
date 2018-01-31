@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : EA1C2DF3-591C-407A-ABBF-DE615466A498
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntddk/RtlDrainNonVolatileFlush, RtlDrainNonVolatileFlush routine [Installable File System Drivers], RtlDrainNonVolatileFlush, ifsk.rtldrainnonvolatileflush
+ms.keywords : RtlDrainNonVolatileFlush routine [Installable File System Drivers], ntddk/RtlDrainNonVolatileFlush, RtlDrainNonVolatileFlush, ifsk.rtldrainnonvolatileflush
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -109,16 +109,16 @@ This routine <b>RtlDrainNonVolatileFlush</b> can also add more context to <b>NvT
 
 ## See Also
 
-<mshelp:link keywords="ifsk.RtlFlushNonVolatileMemory" tabindex="0"><b>
-RtlFlushNonVolatileMemory</b></mshelp:link>
-
 <a href="https://msdn.microsoft.com/49DDDEF8-F949-4674-A18B-9BB091D163C2">RtlWriteNonVolatileMemory</a>
+
+<a href="https://msdn.microsoft.com/8E083814-7408-47D2-A811-2DCBDCD13097">RtlFreeNonVolatileToken</a>
 
 <a href="https://msdn.microsoft.com/A9E866D4-C47F-4926-A838-EDB739CF1185">RtlGetNonVolatileToken</a>
 
-<a href="https://msdn.microsoft.com/169C5F41-B372-4056-AAC5-53DD0582A563">RtlFlushNonVolatileMemoryRanges</a>
+<mshelp:link keywords="ifsk.RtlFlushNonVolatileMemory" tabindex="0"><b>
+RtlFlushNonVolatileMemory</b></mshelp:link>
 
-<a href="https://msdn.microsoft.com/8E083814-7408-47D2-A811-2DCBDCD13097">RtlFreeNonVolatileToken</a>
+<a href="https://msdn.microsoft.com/169C5F41-B372-4056-AAC5-53DD0582A563">RtlFlushNonVolatileMemoryRanges</a>
 
  
 

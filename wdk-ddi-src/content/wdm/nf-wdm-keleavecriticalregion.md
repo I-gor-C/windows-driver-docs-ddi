@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d3e90c3b-5ead-40d1-9143-a2b1fc8c255d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeLeaveCriticalRegion routine [Kernel-Mode Driver Architecture], k105_f9344044-a57f-4ee4-800c-a03edcc27196.xml, kernel.keleavecriticalregion, KeLeaveCriticalRegion, wdm/KeLeaveCriticalRegion
+ms.keywords : KeLeaveCriticalRegion routine [Kernel-Mode Driver Architecture], kernel.keleavecriticalregion, k105_f9344044-a57f-4ee4-800c-a03edcc27196.xml, wdm/KeLeaveCriticalRegion, KeLeaveCriticalRegion
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,14 +70,14 @@ Highest-level drivers can call this routine while running in the context of the 
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** | CriticalRegions, IrqlKeApcLte2, WithinCriticalRegion, HwStorPortProhibitedDDIs, WithinCriticalRegion(storport) |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keareapcsdisabled.md">KeAreApcsDisabled</a>
+<a href="..\ntddk\nf-ntddk-keareapcsdisabled.md">KeAreApcsDisabled</a>
 
-<a href="..\wdm\nf-wdm-keentercriticalregion.md">KeEnterCriticalRegion</a>
+<a href="..\ntddk\nf-ntddk-keentercriticalregion.md">KeEnterCriticalRegion</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : c0c23778-767a-4304-9ecf-c76337261e27
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : WriteSymbol method [Windows Debugging], IDebugSymbolGroup2 interface, IDebugSymbolGroup2 interface [Windows Debugging], WriteSymbol method, IDebugSymbolGroup::WriteSymbol, WriteSymbol, WriteSymbol method [Windows Debugging], IDebugSymbolGroup interface, dbgeng/IDebugSymbolGroup::WriteSymbol, IDebugSymbolGroup interface [Windows Debugging], WriteSymbol method, WriteSymbol method [Windows Debugging], IDebugSymbolGroup2::WriteSymbol, debugger.writesymbol, IDebugSymbolGroup2, ComOther_3b8938be-b82e-404c-b80f-36e1ceedc353.xml, dbgeng/IDebugSymbolGroup2::WriteSymbol
+ms.keywords : WriteSymbol method [Windows Debugging], IDebugSymbolGroup2 interface, IDebugSymbolGroup2 interface [Windows Debugging], WriteSymbol method, ComOther_3b8938be-b82e-404c-b80f-36e1ceedc353.xml, WriteSymbol method [Windows Debugging], dbgeng/IDebugSymbolGroup2::WriteSymbol, IDebugSymbolGroup::WriteSymbol, IDebugSymbolGroup2, IDebugSymbolGroup2::WriteSymbol, WriteSymbol, debugger.writesymbol, dbgeng/IDebugSymbolGroup::WriteSymbol, WriteSymbol method [Windows Debugging], IDebugSymbolGroup interface, IDebugSymbolGroup interface [Windows Debugging], WriteSymbol method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -104,13 +104,13 @@ For more information about symbol groups, see <a href="https://msdn.microsoft.co
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549201">GetSymbolValueText</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549201">GetSymbolValueText</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
 
  
 

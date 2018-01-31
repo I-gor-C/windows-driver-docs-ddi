@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5a2d3430-ca94-42f0-bfeb-fd38d9d4958a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFUsbRef_be9c210e-6cf0-4e0b-a5d5-f0b02d7a2141.xml, PFN_WDFUSBTARGETDEVICECREATE, kmdf.wdfusbtargetdevicecreate, wdf.wdfusbtargetdevicecreate, wdfusb/WdfUsbTargetDeviceCreate, WdfUsbTargetDeviceCreate method, WdfUsbTargetDeviceCreate
+ms.keywords : PFN_WDFUSBTARGETDEVICECREATE, wdf.wdfusbtargetdevicecreate, wdfusb/WdfUsbTargetDeviceCreate, WdfUsbTargetDeviceCreate method, kmdf.wdfusbtargetdevicecreate, DFUsbRef_be9c210e-6cf0-4e0b-a5d5-f0b02d7a2141.xml, WdfUsbTargetDeviceCreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
+req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
 
@@ -146,11 +146,11 @@ For more information about the <b>WdfUsbTargetDeviceCreate</b> method and USB I/
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicegetnuminterfaces.md">WdfUsbTargetDeviceGetNumInterfaces</a>
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a>
 
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicegetnuminterfaces.md">WdfUsbTargetDeviceGetNumInterfaces</a>
 
  
 

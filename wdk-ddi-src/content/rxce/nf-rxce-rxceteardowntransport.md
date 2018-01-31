@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 61376532-c78f-4a22-b8b7-ee55ddcb4b57
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rxceteardowntransport, rxce/RxCeTearDownTransport, rxref_12c54611-8bbf-46bf-9ee9-35072b9322c1.xml, RxCeTearDownTransport function [Installable File System Drivers], RxCeTearDownTransport
+ms.keywords : RxCeTearDownTransport function [Installable File System Drivers], rxce/RxCeTearDownTransport, rxref_12c54611-8bbf-46bf-9ee9-35072b9322c1.xml, ifsk.rxceteardowntransport, RxCeTearDownTransport
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.typenames : RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -94,7 +94,7 @@ If a transport that has not been bound to is specified in the <i>pTransport</i> 
 | **Minimum UMDF version** |  |
 | **Header** | rxce.h (include Rxce.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

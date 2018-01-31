@@ -1,6 +1,6 @@
 ---
 UID : NS:bthddi._BRB_GET_LOCAL_BD_ADDR
-title : _BRB_GET_LOCAL_BD_ADDR
+title : "_BRB_GET_LOCAL_BD_ADDR"
 author : windows-driver-content
 description : The _BRB_GET_LOCAL_BD_ADDR structure describes the address of the local radio.
 old-location : bltooth\_brb_get_local_bd_addr.htm
@@ -8,14 +8,14 @@ old-project : bltooth
 ms.assetid : cddaa92c-c43b-4875-a52e-a28ecc30962d
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : bth_structs_eede3474-96b3-4865-a700-70f7e444a4c3.xml, bltooth._brb_get_local_bd_addr, _BRB_GET_LOCAL_BD_ADDR, bthddi/_BRB_GET_LOCAL_BD_ADDR, _BRB_GET_LOCAL_BD_ADDR structure [Bluetooth Devices]
+ms.keywords : bltooth._brb_get_local_bd_addr, bthddi/_BRB_GET_LOCAL_BD_ADDR, bth_structs_eede3474-96b3-4865-a700-70f7e444a4c3.xml, _BRB_GET_LOCAL_BD_ADDR structure [Bluetooth Devices], _BRB_GET_LOCAL_BD_ADDR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 52f892a8-e82d-465d-aef5-630f5e971e8f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlTestBit, kernel.rtltestbit, wdm/RtlTestBit, k109_552764bc-c69d-4039-8284-8cc8f41dc16a.xml, RtlTestBit routine [Kernel-Mode Driver Architecture]
+ms.keywords : k109_552764bc-c69d-4039-8284-8cc8f41dc16a.xml, RtlTestBit routine [Kernel-Mode Driver Architecture], RtlTestBit, kernel.rtltestbit, wdm/RtlTestBit
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,7 +80,7 @@ Callers of <b>RtlTestBit</b> must be running at IRQL &lt;= APC_LEVEL if the memo
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL (see Remarks section) |
+| **IRQL** | "<= APC_LEVEL (see Remarks section)" |
 | **DDI compliance rules** |  |
 
 ## See Also

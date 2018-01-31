@@ -2,7 +2,7 @@
 UID : NC:winsplp.ROUTER_NOTIFY_CALLBACK
 title : ROUTER_NOTIFY_CALLBACK
 author : windows-driver-content
-description : .
+description : "."
 old-location : print\router_notify_callback.htm
 old-project : print
 ms.assetid : 97D8FEEA-B6D7-4AD7-A067-B503AF8F23FF
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPSCARD_IO_REQUEST, SCARD_IO_REQUEST, *PSCARD_IO_REQUEST"
+req.typenames : "*PSCARD_IO_REQUEST, SCARD_IO_REQUEST, *LPSCARD_IO_REQUEST"
 req.product : Windows 10 or later.
 ---
 

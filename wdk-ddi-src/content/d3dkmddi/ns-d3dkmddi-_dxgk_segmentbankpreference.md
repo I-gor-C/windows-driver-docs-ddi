@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmddi._DXGK_SEGMENTBANKPREFERENCE
-title : _DXGK_SEGMENTBANKPREFERENCE
+title : "_DXGK_SEGMENTBANKPREFERENCE"
 author : windows-driver-content
 description : The DXGK_SEGMENTBANKPREFERENCE structure describes bank preferences for paging in an allocation.
 old-location : display\dxgk_segmentbankpreference.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ff292137-4d95-4388-aae9-f6436b403c6a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_SEGMENTBANKPREFERENCE structure [Display Devices], display.dxgk_segmentbankpreference, DXGK_SEGMENTBANKPREFERENCE, DmStructs_58615e96-0b7c-49a9-8966-0f627d7078f7.xml, _DXGK_SEGMENTBANKPREFERENCE, d3dkmddi/DXGK_SEGMENTBANKPREFERENCE
+ms.keywords : DmStructs_58615e96-0b7c-49a9-8966-0f627d7078f7.xml, display.dxgk_segmentbankpreference, d3dkmddi/DXGK_SEGMENTBANKPREFERENCE, _DXGK_SEGMENTBANKPREFERENCE, DXGK_SEGMENTBANKPREFERENCE structure [Display Devices], DXGK_SEGMENTBANKPREFERENCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -78,15 +78,15 @@ The display miniport driver can indicate up to four bank preferences in the <b>H
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
-
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render.md">DxgkDdiRender</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationlist.md">DXGK_ALLOCATIONLIST</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationlist.md">DXGK_ALLOCATIONLIST</a>
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff562047">DXGK_SEGMENTPREFERENCE</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render.md">DxgkDdiRender</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : eb4500cb-de96-4fbe-971c-d7badc6993af
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILPSMEDIACONFIGURATION structure [Network Drivers Starting with Windows Vista], *LPRILPSMEDIACONFIGURATION, netvista.rilpsmediaconfiguration_2, RILPSMEDIACONFIGURATION, rilapitypes/RILPSMEDIACONFIGURATION
+ms.keywords : RILPSMEDIACONFIGURATION structure [Network Drivers Starting with Windows Vista], rilapitypes/RILPSMEDIACONFIGURATION, *LPRILPSMEDIACONFIGURATION, netvista.rilpsmediaconfiguration_2, RILPSMEDIACONFIGURATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILPSMEDIACONFIGURATION, *LPRILPSMEDIACONFIGURATION
+req.typenames : "*LPRILPSMEDIACONFIGURATION, RILPSMEDIACONFIGURATION"
 req.product : Windows 10 or later.
 ---
 

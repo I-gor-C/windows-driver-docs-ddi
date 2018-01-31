@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 42e5340e-0be4-49d1-a219-88b7425a41ef
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlNotifyFullChangeDirectory routine [Installable File System Drivers], rxprocs/FsRtlNotifyFullChangeDirectory, FsRtlNotifyFullChangeDirectory, ifsk.fsrtlnotifyfullchangedirectory, fsrtlref_551aff27-746f-49a4-b427-fa273249c36e.xml
+ms.keywords : FsRtlNotifyFullChangeDirectory routine [Installable File System Drivers], rxprocs/FsRtlNotifyFullChangeDirectory, ifsk.fsrtlnotifyfullchangedirectory, FsRtlNotifyFullChangeDirectory, fsrtlref_551aff27-746f-49a4-b427-fa273249c36e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
+req.typenames : RX_CONTEXT, *PRX_CONTEXT
 req.product : Windows 10 or later.
 ---
 

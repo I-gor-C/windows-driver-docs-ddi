@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6a79896a-0591-40dd-8e2d-6e3796556564
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_SendRPS routine [Storage Devices], fibreHBA_rtns_753d25be-cb77-4e65-ab1b-1f2b77d65ec8.xml, HBA_SendRPS, hbaapi/HBA_SendRPS, storage.hba_sendrps
+ms.keywords : hbaapi/HBA_SendRPS, HBA_SendRPS, storage.hba_sendrps, HBA_SendRPS routine [Storage Devices], fibreHBA_rtns_753d25be-cb77-4e65-ab1b-1f2b77d65ec8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -161,9 +161,9 @@ Returned if an unspecified error occurred that prevented the execution of the RP
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-
 <a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
 
  
 

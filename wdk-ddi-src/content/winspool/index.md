@@ -23,17 +23,17 @@ winspool.h contains the following programming interfaces:
 | Title | Description |
 | ---- |:---- |
 | [DeleteJobNamedProperty](nf-winspool-deletejobnamedproperty.md) | Deletes the named property for the specified print job on the specified printer. |
-| [EnumJobNamedProperties](nf-winspool-enumjobnamedproperties.md) | . |
+| [EnumJobNamedProperties](nf-winspool-enumjobnamedproperties.md) | "." |
 | [ExtDeviceMode](nf-winspool-extdevicemode.md) | The ExtDeviceMode function is provided only for compatibility with 16-bit applications. |
 | [FindFirstPrinterChangeNotification](nf-winspool-findfirstprinterchangenotification.md) | Warning  Starting with Windows 10, the APIs which support third-party print providers are deprecated. |
-| [FreePrintNamedPropertyArray](nf-winspool-freeprintnamedpropertyarray.md) | . |
+| [FreePrintNamedPropertyArray](nf-winspool-freeprintnamedpropertyarray.md) | "." |
 | [FreePrintPropertyValue](nf-winspool-freeprintpropertyvalue.md) | Frees the value that is retrieved using GetJobNamedPropertyValue function. |
 | [GetJobNamedPropertyValue](nf-winspool-getjobnamedpropertyvalue.md) | Retrieves the value of the named property for the specified print job on the specified printer. |
-| [GetPrintOutputInfo](nf-winspool-getprintoutputinfo.md) | . |
-| [PrinterMessageBoxA](nf-winspool-printermessageboxa.md) | . |
-| [PrinterMessageBoxW](nf-winspool-printermessageboxw.md) | . |
-| [SetJobNamedProperty](nf-winspool-setjobnamedproperty.md) | . |
-| [WaitForPrinterChange](nf-winspool-waitforprinterchange.md) | . |
+| [GetPrintOutputInfo](nf-winspool-getprintoutputinfo.md) | "." |
+| [PrinterMessageBoxA](nf-winspool-printermessageboxa.md) | "." |
+| [PrinterMessageBoxW](nf-winspool-printermessageboxw.md) | "." |
+| [SetJobNamedProperty](nf-winspool-setjobnamedproperty.md) | "." |
+| [WaitForPrinterChange](nf-winspool-waitforprinterchange.md) | "." |
 
 
 
@@ -48,9 +48,9 @@ winspool.h contains the following programming interfaces:
 | [_BINARY_CONTAINER](ns-winspool-_binary_container.md) | The BINARY_CONTAINER structure is a container for binary data. |
 | [_DRIVER_INFO_8A](ns-winspool-_driver_info_8a.md) | The DRIVER_INFO_8 structure contains printer driver information. |
 | [_DRIVER_INFO_8W](ns-winspool-_driver_info_8w.md) | The DRIVER_INFO_8 structure contains printer driver information. |
-| [PrintNamedProperty](ns-winspool-printnamedproperty.md) | . |
-| [PrintPropertiesCollection](ns-winspool-printpropertiescollection.md) | . |
-| [PrintPropertyValue](ns-winspool-printpropertyvalue.md) | . |
+| [PrintNamedProperty](ns-winspool-printnamedproperty.md) | "." |
+| [PrintPropertiesCollection](ns-winspool-printpropertiescollection.md) | "." |
+| [PrintPropertyValue](ns-winspool-printpropertyvalue.md) | "." |
 
 
 ## Enumerations

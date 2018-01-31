@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 20d61d23-4151-4a23-8963-6e38a08f391e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rxprefixtablelookupname, prefix/RxPrefixTableLookupName, RxPrefixTableLookupName, RxPrefixTableLookupName function [Installable File System Drivers], rxref_e46fe04e-07a6-4733-936e-e70a51009618.xml
+ms.keywords : RxPrefixTableLookupName function [Installable File System Drivers], ifsk.rxprefixtablelookupname, RxPrefixTableLookupName, rxref_e46fe04e-07a6-4733-936e-e70a51009618.xml, prefix/RxPrefixTableLookupName
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -106,14 +106,14 @@ On checked builds, <b>RxPrefixTableLookupName</b> causes the system to ASSERT if
 | **Minimum UMDF version** |  |
 | **Header** | prefix.h (include Prefix.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\prefix\nf-prefix-rxpacquireprefixtablelockexclusive.md">RxpAcquirePrefixTableLockExclusive</a>
-
 <a href="..\prefix\nf-prefix-rxpreleaseprefixtablelock.md">RxpReleasePrefixTableLock</a>
+
+<a href="..\prefix\nf-prefix-rxpacquireprefixtablelockexclusive.md">RxpAcquirePrefixTableLockExclusive</a>
 
 <a href="..\prefix\nf-prefix-rxpacquireprefixtablelockshared.md">RxpAcquirePrefixTableLockShared</a>
 

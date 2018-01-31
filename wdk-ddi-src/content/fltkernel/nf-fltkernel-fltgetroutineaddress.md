@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : b2b74e79-5840-41a0-8af3-3d13e209aea7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.fltgetroutineaddress, FltGetRoutineAddress routine [Installable File System Drivers], FltApiRef_e_to_o_81848969-38e3-4f2f-bdc3-45027ea28202.xml, FltGetRoutineAddress, fltkernel/FltGetRoutineAddress
+ms.keywords : FltGetRoutineAddress routine [Installable File System Drivers], FltGetRoutineAddress, ifsk.fltgetroutineaddress, FltApiRef_e_to_o_81848969-38e3-4f2f-bdc3-45027ea28202.xml, fltkernel/FltGetRoutineAddress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,7 +78,7 @@ Note that in Windows 2000 and Windows XP, before FltGetRoutineAddress is called 
 | **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 394593f5-92eb-4f84-adbe-67e0e5320ff0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFTimerObjectRef_6b433db6-e7a0-4521-961d-56c3de8a97ad.xml, wdf.wdftimerstop, WdfTimerStop, kmdf.wdftimerstop, wdftimer/WdfTimerStop, WdfTimerStop method
+ms.keywords : kmdf.wdftimerstop, DFTimerObjectRef_6b433db6-e7a0-4521-961d-56c3de8a97ad.xml, WdfTimerStop, WdfTimerStop method, wdf.wdftimerstop, wdftimer/WdfTimerStop
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -101,9 +101,9 @@ For more information about framework timer objects, see <a href="https://docs.mi
 
 <a href="..\wdftimer\nf-wdftimer-wdftimercreate.md">WdfTimerCreate</a>
 
-<a href="https://msdn.microsoft.com/abe15fd9-620e-4c24-9a82-32d20a7e49cc">EvtTimerFunc</a>
-
 <a href="..\wdftimer\nf-wdftimer-wdftimerstart.md">WdfTimerStart</a>
+
+<a href="https://msdn.microsoft.com/abe15fd9-620e-4c24-9a82-32d20a7e49cc">EvtTimerFunc</a>
 
  
 

@@ -1,6 +1,6 @@
 ---
 UID : NS:ks._KSFILTER_DESCRIPTOR
-title : _KSFILTER_DESCRIPTOR
+title : "_KSFILTER_DESCRIPTOR"
 author : windows-driver-content
 description : The KSFILTER_DESCRIPTOR structure describes the characteristics of a filter created by a given filter factory.
 old-location : stream\ksfilter_descriptor.htm
@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : c9e3c1ea-a8c9-45db-a31c-7f8e95cf6b2b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PKSFILTER_DESCRIPTOR, ks/KSFILTER_DESCRIPTOR, stream.ksfilter_descriptor, PKSFILTER_DESCRIPTOR structure pointer [Streaming Media Devices], avstruct_f9b8c041-9001-42a5-989e-3de86daa56fe.xml, *PKSFILTER_DESCRIPTOR, _KSFILTER_DESCRIPTOR, KSFILTER_DESCRIPTOR structure [Streaming Media Devices], KSFILTER_DESCRIPTOR, ks/PKSFILTER_DESCRIPTOR
+ms.keywords : KSFILTER_DESCRIPTOR structure [Streaming Media Devices], ks/PKSFILTER_DESCRIPTOR, PKSFILTER_DESCRIPTOR structure pointer [Streaming Media Devices], ks/KSFILTER_DESCRIPTOR, _KSFILTER_DESCRIPTOR, KSFILTER_DESCRIPTOR, stream.ksfilter_descriptor, PKSFILTER_DESCRIPTOR, avstruct_f9b8c041-9001-42a5-989e-3de86daa56fe.xml, *PKSFILTER_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -159,17 +159,17 @@ Similarly, if you do not use <b>DEFINE_KS_FILTER_NODE_DESCRIPTORS</b> to set <i>
 
 ## See Also
 
-<a href="..\ks\ns-ks-kstopology_connection.md">KSTOPOLOGY_CONNECTION</a>
+<a href="..\ks\ns-ks-_ksnode_descriptor.md">KSNODE_DESCRIPTOR</a>
 
 <a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>
 
-<a href="..\ks\nf-ks-kscreatefilterfactory.md">KsCreateFilterFactory</a>
-
-<a href="..\ks\ns-ks-kscomponentid.md">KSCOMPONENTID</a>
-
 <a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a>
 
-<a href="..\ks\ns-ks-_ksnode_descriptor.md">KSNODE_DESCRIPTOR</a>
+<a href="..\ks\nf-ks-kscreatefilterfactory.md">KsCreateFilterFactory</a>
+
+<a href="..\ks\ns-ks-kstopology_connection.md">KSTOPOLOGY_CONNECTION</a>
+
+<a href="..\ks\ns-ks-kscomponentid.md">KSCOMPONENTID</a>
 
  
 

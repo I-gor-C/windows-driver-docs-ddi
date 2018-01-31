@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 3ec46b53-f3a8-4fd6-bf94-261ff8accad7
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSymbols3::GetSymbolEntryString, GetSymbolEntryString method [Windows Debugging], IDebugSymbols3 interface, GetSymbolEntryString method [Windows Debugging], debugger.getsymbolentrystring, GetSymbolEntryString, IDebugSymbols3::GetSymbolEntryString, IDebugSymbols3 interface [Windows Debugging], GetSymbolEntryString method, IDebugSymbols3, IDebugSymbols_cf31d6c1-ffc6-4112-af04-dc023635bb5a.xml
+ms.keywords : GetSymbolEntryString method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging], GetSymbolEntryString method, IDebugSymbols_cf31d6c1-ffc6-4112-af04-dc023635bb5a.xml, GetSymbolEntryString method [Windows Debugging], IDebugSymbols3::GetSymbolEntryString, dbgeng/IDebugSymbols3::GetSymbolEntryString, GetSymbolEntryString, IDebugSymbols3, debugger.getsymbolentrystring
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -116,9 +116,9 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548476">GetSymbolEntriesByOffset</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548458">GetSymbolEntriesByName</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548476">GetSymbolEntriesByOffset</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 

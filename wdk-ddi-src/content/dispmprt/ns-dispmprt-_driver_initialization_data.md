@@ -1,6 +1,6 @@
 ---
 UID : NS:dispmprt._DRIVER_INITIALIZATION_DATA
-title : _DRIVER_INITIALIZATION_DATA
+title : "_DRIVER_INITIALIZATION_DATA"
 author : windows-driver-content
 description : The DRIVER_INITIALIZATION_DATA structure contains pointers to functions implemented by the display miniport driver.
 old-location : display\driver_initialization_data.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3ab00f9c-7ce9-41bf-85c5-96be31d19719
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_7b91bf58-dfda-4c7c-ae26-21e577bdc152.xml, _DRIVER_INITIALIZATION_DATA, PDRIVER_INITIALIZATION_DATA structure pointer [Display Devices], dispmprt/DRIVER_INITIALIZATION_DATA, PDRIVER_INITIALIZATION_DATA, DRIVER_INITIALIZATION_DATA structure [Display Devices], *PDRIVER_INITIALIZATION_DATA, DRIVER_INITIALIZATION_DATA, dispmprt/PDRIVER_INITIALIZATION_DATA, display.driver_initialization_data
+ms.keywords : DRIVER_INITIALIZATION_DATA structure [Display Devices], _DRIVER_INITIALIZATION_DATA, dispmprt/DRIVER_INITIALIZATION_DATA, display.driver_initialization_data, dispmprt/PDRIVER_INITIALIZATION_DATA, DmStructs_7b91bf58-dfda-4c7c-ae26-21e577bdc152.xml, PDRIVER_INITIALIZATION_DATA, *PDRIVER_INITIALIZATION_DATA, DRIVER_INITIALIZATION_DATA, PDRIVER_INITIALIZATION_DATA structure pointer [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DRIVER_INITIALIZATION_DATA, *PDRIVER_INITIALIZATION_DATA
+req.typenames : "*PDRIVER_INITIALIZATION_DATA, DRIVER_INITIALIZATION_DATA"
 ---
 
 # _DRIVER_INITIALIZATION_DATA structure

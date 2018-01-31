@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : e0ab18ea-4447-4eee-bdf3-d251d4d4952f
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetFrameOffset2 method [Windows Debugging], IDebugRegisters2 interface [Windows Debugging], GetFrameOffset2 method, GetFrameOffset2 method [Windows Debugging], IDebugRegisters2 interface, debugger.getframeoffset2, IDebugRegisters_9b3855a5-d5e4-4485-81f3-1584b707f73a.xml, dbgeng/IDebugRegisters2::GetFrameOffset2, IDebugRegisters2, GetFrameOffset2, IDebugRegisters2::GetFrameOffset2
+ms.keywords : GetFrameOffset2 method [Windows Debugging], dbgeng/IDebugRegisters2::GetFrameOffset2, GetFrameOffset2 method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters2::GetFrameOffset2, IDebugRegisters2 interface [Windows Debugging], GetFrameOffset2 method, IDebugRegisters_9b3855a5-d5e4-4485-81f3-1584b707f73a.xml, GetFrameOffset2, debugger.getframeoffset2, IDebugRegisters2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -148,9 +148,9 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546806">GetFrameOffset</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546806">GetFrameOffset</a>
 
  
 

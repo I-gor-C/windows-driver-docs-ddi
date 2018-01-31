@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 43a75def-0288-4615-ac85-b5e340aa11e6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisGetCurrentProcessorCounts, ndis_sysinfo_ref_dab49118-724d-43e8-8d8d-05ebc7220f22.xml, NdisGetCurrentProcessorCounts function [Network Drivers Starting with Windows Vista], ndis/NdisGetCurrentProcessorCounts, netvista.ndisgetcurrentprocessorcounts
+ms.keywords : NdisGetCurrentProcessorCounts function [Network Drivers Starting with Windows Vista], ndis/NdisGetCurrentProcessorCounts, NdisGetCurrentProcessorCounts, netvista.ndisgetcurrentprocessorcounts, ndis_sysinfo_ref_dab49118-724d-43e8-8d8d-05ebc7220f22.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -133,5 +133,5 @@ KernelandUser[n] is the KernelandUser value returned by a previous call, stored 
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Miscellaneous_Function |

@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : A1287386-E831-474A-858C-89787741FD57
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : POS_CX_ATTRIBUTES_INIT function, POS_CX_ATTRIBUTES_INIT, poscx/POS_CX_ATTRIBUTES_INIT, pos.pos_cx_attributes_init
+ms.keywords : pos.pos_cx_attributes_init, poscx/POS_CX_ATTRIBUTES_INIT, POS_CX_ATTRIBUTES_INIT, POS_CX_ATTRIBUTES_INIT function
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

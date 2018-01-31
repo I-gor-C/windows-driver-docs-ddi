@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -171,13 +171,13 @@ The name that the <i>Name</i> parameter specifies must start with <b>$$</b> and 
 
 <i>KnownStructOutput</i>
 
-<i>DebugExtensionQueryValueNames</i>
-
 <i>DebugExtensionNotify</i>
 
-<i>DebugExtensionUninitialize</i>
+<i>DebugExtensionQueryValueNames</i>
 
 <a href="..\dbgeng\nc-dbgeng-pdebug_extension_initialize.md">DebugExtensionInitialize</a>
+
+<i>DebugExtensionUninitialize</i>
 
  
 

@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddndis._NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS
-title : _NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS
+title : "_NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS"
 author : windows-driver-content
 description : The NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS structure specifies an array of policy properties for a Hyper-V extensible switch port. Each element in the array is formatted as an NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO structure.
 old-location : netvista\ndis_switch_port_property_enum_parameters.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 026b86e0-dd71-4073-93f0-2f93777b1af1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS structure [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS, netvista.ndis_switch_port_property_enum_parameters, NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS, PNDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS, PNDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS, ntddndis/NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS, ntddndis/PNDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS
+ms.keywords : "_NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS, PNDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS, ntddndis/NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS, NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS, PNDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS, ntddndis/PNDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS, NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS structure [Network Drivers Starting with Windows Vista], netvista.ndis_switch_port_property_enum_parameters"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,6 +74,15 @@ The type, revision, and size of the <b>NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS
 
 The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value:
 
+
+
+
+#### NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS_REVISION_1
+
+Original version for NDIS 6.30 and later.
+
+Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS_REVISION_1.
+
 `NumProperties`
 
 A ULONG value that specifies the number of <a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_enum_info.md">NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO</a> elements that follow the <b>NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS</b> structure.
@@ -118,13 +127,13 @@ For more information about extensible switch policies, see <a href="https://msdn
 
 <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_enum_info.md">NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598277">OID_SWITCH_PORT_PROPERTY_ENUM</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_enum_info.md">NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598237">NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS_GET_FIRST_INFO</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <b></b>
 

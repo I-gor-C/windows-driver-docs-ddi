@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4789e848-bb95-43e1-9768-8f94a475f9c8
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : iddcx/IddCxDeviceInitConfig, IddCxDeviceInitConfig method [Display Devices], display.iddcxdeviceinitconfig, IddCxDeviceInitConfig
+ms.keywords : iddcx/IddCxDeviceInitConfig, IddCxDeviceInitConfig method [Display Devices], IddCxDeviceInitConfig, display.iddcxdeviceinitconfig
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : NtosKrnl.exe
 req.dll : 
-req.irql : _Must_inspect_result_
+req.irql : "_Must_inspect_result_"
 topictype : 
 apitype : 
 apilocation : 
@@ -76,5 +76,5 @@ The information required about the configuration of the client.
 | **Minimum UMDF version** |  |
 | **Header** | iddcx.h |
 | **Library** |  |
-| **IRQL** | _Must_inspect_result_ |
+| **IRQL** | "_Must_inspect_result_" |
 | **DDI compliance rules** |  |

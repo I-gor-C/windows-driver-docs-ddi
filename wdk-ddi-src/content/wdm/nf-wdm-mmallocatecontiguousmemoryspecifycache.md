@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e35544ed-d113-476e-85a8-6b3f613c1dc2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmAllocateContiguousMemorySpecifyCache routine [Kernel-Mode Driver Architecture], wdm/MmAllocateContiguousMemorySpecifyCache, kernel.mmallocatecontiguousmemoryspecifycache, k106_764af538-9f9b-432b-af6a-4a6b7addd95d.xml, MmAllocateContiguousMemorySpecifyCache
+ms.keywords : k106_764af538-9f9b-432b-af6a-4a6b7addd95d.xml, MmAllocateContiguousMemorySpecifyCache routine [Kernel-Mode Driver Architecture], kernel.mmallocatecontiguousmemoryspecifycache, wdm/MmAllocateContiguousMemorySpecifyCache, MmAllocateContiguousMemorySpecifyCache
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -104,14 +104,14 @@ If you specify a nonzero value for the <i>BoundaryAddressMultiple</i> parameter,
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-mmallocatecontiguousmemory.md">MmAllocateContiguousMemory</a>
-
 <a href="..\wdm\nf-wdm-mmfreecontiguousmemory.md">MmFreeContiguousMemory</a>
+
+<a href="..\wdm\nf-wdm-mmallocatecontiguousmemory.md">MmAllocateContiguousMemory</a>
 
  
 

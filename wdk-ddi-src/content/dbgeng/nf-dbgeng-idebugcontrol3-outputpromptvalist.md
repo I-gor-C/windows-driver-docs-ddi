@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 08140a38-19dd-4fce-8659-ab5eb3257f2f
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : OutputPromptVaList method [Windows Debugging], IDebugControl2 interface, IDebugControl3::OutputPromptVaList, debugger.outputpromptvalist, IDebugControl2 interface [Windows Debugging], OutputPromptVaList method, IDebugControl_fc743964-a97c-45d2-8167-0e7401c7a546.xml, IDebugControl3, OutputPromptVaList method [Windows Debugging], IDebugControl interface, IDebugControl2::OutputPromptVaList, OutputPromptVaList method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], OutputPromptVaList method, dbgeng/IDebugControl3::OutputPromptVaList, OutputPromptVaList, OutputPromptVaList method [Windows Debugging], IDebugControl interface [Windows Debugging], OutputPromptVaList method, dbgeng/IDebugControl2::OutputPromptVaList, IDebugControl::OutputPromptVaList, dbgeng/IDebugControl::OutputPromptVaList
+ms.keywords : IDebugControl3, dbgeng/IDebugControl::OutputPromptVaList, IDebugControl::OutputPromptVaList, IDebugControl3::OutputPromptVaList, IDebugControl3 interface [Windows Debugging], OutputPromptVaList method, IDebugControl_fc743964-a97c-45d2-8167-0e7401c7a546.xml, OutputPromptVaList method [Windows Debugging], IDebugControl interface, OutputPromptVaList method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl2::OutputPromptVaList, OutputPromptVaList method [Windows Debugging], debugger.outputpromptvalist, dbgeng/IDebugControl3::OutputPromptVaList, IDebugControl interface [Windows Debugging], OutputPromptVaList method, OutputPromptVaList, OutputPromptVaList method [Windows Debugging], IDebugControl3 interface, IDebugControl2::OutputPromptVaList, IDebugControl2 interface [Windows Debugging], OutputPromptVaList method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -286,19 +286,19 @@ For more information about prompting the user, see <a href="https://msdn.microso
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548180">GetPromptText</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553227">OutputPrompt</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539252">ControlledOutputVaList</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539252">ControlledOutputVaList</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548180">GetPromptText</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541518">DEBUG_OUTPUT_XXX</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553227">OutputPrompt</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
  
 

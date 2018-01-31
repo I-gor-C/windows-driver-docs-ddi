@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 426d28fa-abfe-44d9-9b15-119f92367b40
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxDispatchToWorkerThread routine [Installable File System Drivers], RxDispatchToWorkerThread, rxworkq/RxDispatchToWorkerThread, rxref_4ac4f78d-fd07-4d80-a4db-8215322d6c89.xml, ifsk.rxdispatchtoworkerthread
+ms.keywords : RxDispatchToWorkerThread routine [Installable File System Drivers], rxworkq/RxDispatchToWorkerThread, RxDispatchToWorkerThread, ifsk.rxdispatchtoworkerthread, rxref_4ac4f78d-fd07-4d80-a4db-8215322d6c89.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
+req.typenames : RX_CONTEXT, *PRX_CONTEXT
 req.product : Windows 10 or later.
 ---
 
@@ -63,6 +63,23 @@ A pointer to the device object of the corresponding network mini-redirector driv
 `WorkQueueType`
 
 The type of the work queue representing the priority of the task. The <i>WorkQueueType</i> parameter can be one of can be one of the following enumerations for WORK_QUEUE_TYPE:
+
+
+
+
+#### CriticalWorkQueue
+
+Insert the WORK_QUEUE_ITEM into the queue from which a system thread with a real-time priority attribute will process the work item.
+
+
+#### DelayedWorkQueue
+
+Insert the WORK_QUEUE_ITEM into the queue from which a system thread with a variable priority attribute will process the work item.
+
+
+#### HyperCriticalWorkQueue
+
+Insert the WORK_QUEUE_ITEM into the queue from which a system thread will process the work item so that the routine to be invoked is not blocked.
 
 `Routine`
 
@@ -123,7 +140,7 @@ If the <b>RxDispatchToWorkerThread </b>routine fails on a debug build, the <b>_R
 | **Minimum UMDF version** |  |
 | **Header** | rxworkq.h (include Rxworkq.h, Rxstruc.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

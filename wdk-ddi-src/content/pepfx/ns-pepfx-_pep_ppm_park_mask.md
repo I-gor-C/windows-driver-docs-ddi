@@ -1,6 +1,6 @@
 ---
 UID : NS:pepfx._PEP_PPM_PARK_MASK
-title : _PEP_PPM_PARK_MASK
+title : "_PEP_PPM_PARK_MASK"
 author : windows-driver-content
 description : The PEP_PROCESSOR_PARK_MASK structure contains the current core parking mask.
 old-location : kernel\pep_ppm_park_mask.htm
@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 528576FD-BDB2-4772-9151-A1C855BA953E
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PPEP_PPM_PARK_MASK, kernel.pep_ppm_park_mask, PPEP_PPM_PARK_MASK structure pointer [Kernel-Mode Driver Architecture], pepfx/PPEP_PPM_PARK_MASK, *PPEP_PPM_PARK_MASK, PEP_PPM_PARK_MASK structure [Kernel-Mode Driver Architecture], PEP_PPM_PARK_MASK, _PEP_PPM_PARK_MASK, pepfx/PEP_PPM_PARK_MASK
+ms.keywords : pepfx/PPEP_PPM_PARK_MASK, PEP_PPM_PARK_MASK, PPEP_PPM_PARK_MASK structure pointer [Kernel-Mode Driver Architecture], PPEP_PPM_PARK_MASK, _PEP_PPM_PARK_MASK, PEP_PPM_PARK_MASK structure [Kernel-Mode Driver Architecture], kernel.pep_ppm_park_mask, *PPEP_PPM_PARK_MASK, pepfx/PEP_PPM_PARK_MASK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,6 +66,17 @@ typedef struct _PEP_PPM_PARK_MASK {
 [in/out] An array of processors in the core parking domain. 
 
 The Processors array is guaranteed to contain the processors in increasing order by processor index.
+
+
+
+#### On input
+
+Indicates the OS parking preference for each processor.
+
+
+#### On output
+
+Returns the PEP parking preference for each processor.
 
 
 ## Requirements

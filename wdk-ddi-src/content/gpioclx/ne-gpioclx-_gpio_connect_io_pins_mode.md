@@ -1,6 +1,6 @@
 ---
 UID : NE:gpioclx._GPIO_CONNECT_IO_PINS_MODE
-title : _GPIO_CONNECT_IO_PINS_MODE
+title : "_GPIO_CONNECT_IO_PINS_MODE"
 author : windows-driver-content
 description : The GPIO_CONNECT_IO_PINS_MODE enumeration indicates whether a set of general-purpose I/O (GPIO) pins is configured as inputs or outputs.
 old-location : gpio\gpio_connect_io_pins_mode.htm
@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : 17E98D35-8C63-4EEC-B8DD-896FA2B084A8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GPIO_CONNECT_IO_PINS_MODE, gpioclx/ConnectModeInvalid, ConnectModeOutput, ConnectModeInput, GPIO.gpio_connect_io_pins_mode, ConnectModeMaximum, gpioclx/GPIO_CONNECT_IO_PINS_MODE, *PGPIO_CONNECT_IO_PINS_MODE, gpioclx/ConnectModeMaximum, GPIO_CONNECT_IO_PINS_MODE enumeration [Parallel Ports], ConnectModeInvalid, gpioclx/ConnectModeInput, _GPIO_CONNECT_IO_PINS_MODE, gpioclx/ConnectModeOutput
+ms.keywords : GPIO_CONNECT_IO_PINS_MODE, ConnectModeOutput, gpioclx/ConnectModeInput, ConnectModeMaximum, gpioclx/ConnectModeInvalid, GPIO_CONNECT_IO_PINS_MODE enumeration [Parallel Ports], gpioclx/GPIO_CONNECT_IO_PINS_MODE, gpioclx/ConnectModeMaximum, ConnectModeInput, ConnectModeInvalid, gpioclx/ConnectModeOutput, *PGPIO_CONNECT_IO_PINS_MODE, _GPIO_CONNECT_IO_PINS_MODE, GPIO.gpio_connect_io_pins_mode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum

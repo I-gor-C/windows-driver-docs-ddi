@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c61e343a-5276-4cb8-87ff-9852ad167ff5
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFRequestObjectRef_fdcaef98-5478-42af-a61e-669eec37907e.xml, wdf.wdfrequestretrieveoutputmemory, WdfRequestRetrieveOutputMemory, wdfrequest/WdfRequestRetrieveOutputMemory, kmdf.wdfrequestretrieveoutputmemory, PFN_WDFREQUESTRETRIEVEOUTPUTMEMORY, WdfRequestRetrieveOutputMemory method
+ms.keywords : WdfRequestRetrieveOutputMemory, kmdf.wdfrequestretrieveoutputmemory, DFRequestObjectRef_fdcaef98-5478-42af-a61e-669eec37907e.xml, PFN_WDFREQUESTRETRIEVEOUTPUTMEMORY, wdfrequest/WdfRequestRetrieveOutputMemory, wdf.wdfrequestretrieveoutputmemory, WdfRequestRetrieveOutputMemory method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -160,7 +160,7 @@ For more information about <b>WdfRequestRetrieveOutputMemory</b>, see <a href="h
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, MemAfterReqCompletedIntIoctl, MemAfterReqCompletedIntIoctlA, MemAfterReqCompletedIoctl, MemAfterReqCompletedIoctlA, MemAfterReqCompletedRead, MemAfterReqCompletedReadA, MemAfterReqCompletedWrite, OutputBufferAPI |
 
 ## See Also

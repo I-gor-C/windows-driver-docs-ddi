@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : B0C1E602-83CE-4F4E-9198-B1B1CDAFF4BF
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl5 interface [Windows Debugging], OutputContextStackTraceEx method, OutputContextStackTraceEx, dbgeng/IDebugControl5::OutputContextStackTraceEx, OutputContextStackTraceEx method [Windows Debugging], OutputContextStackTraceEx method [Windows Debugging], IDebugControl5 interface, debugger.idebugcontrol5_outputcontextstacktraceex, IDebugControl5::OutputContextStackTraceEx, IDebugControl5
+ms.keywords : IDebugControl5::OutputContextStackTraceEx, IDebugControl5 interface [Windows Debugging], OutputContextStackTraceEx method, OutputContextStackTraceEx method [Windows Debugging], IDebugControl5 interface, dbgeng/IDebugControl5::OutputContextStackTraceEx, IDebugControl5, debugger.idebugcontrol5_outputcontextstacktraceex, OutputContextStackTraceEx, OutputContextStackTraceEx method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : aaf3d22d-da54-4478-9bf8-aad4b943788a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfresource/WdfIoResourceListCreate, DFResourceObjectRef_7130ba6a-fc24-4785-9fa3-c8fd159f63fb.xml, kmdf.wdfioresourcelistcreate, WdfIoResourceListCreate, PFN_WDFIORESOURCELISTCREATE, WdfIoResourceListCreate method, wdf.wdfioresourcelistcreate
+ms.keywords : wdf.wdfioresourcelistcreate, WdfIoResourceListCreate, kmdf.wdfioresourcelistcreate, DFResourceObjectRef_7130ba6a-fc24-4785-9fa3-c8fd159f63fb.xml, PFN_WDFIORESOURCELISTCREATE, WdfIoResourceListCreate method, wdfresource/WdfIoResourceListCreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,7 +95,7 @@ The caller-specified resource-requirements-list object becomes the parent of the
 | **Minimum UMDF version** |  |
 | **Header** | wdfresource.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also

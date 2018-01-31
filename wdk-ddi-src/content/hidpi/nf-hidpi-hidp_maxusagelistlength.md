@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 90491024-f623-4528-8d37-4a6acb394473
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : hidpi/HidP_MaxUsageListLength, HidP_MaxUsageListLength, hid.hidp_maxusagelistlength, HidP_MaxUsageListLength routine [Human Input Devices], hidfunc_a038fac0-7532-40e4-b083-e0dbe046ad85.xml
+ms.keywords : hidfunc_a038fac0-7532-40e4-b083-e0dbe046ad85.xml, hidpi/HidP_MaxUsageListLength, HidP_MaxUsageListLength routine [Human Input Devices], HidP_MaxUsageListLength, hid.hidp_maxusagelistlength
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -89,11 +89,11 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539708">HidP_GetButtons</a>
+
 <a href="..\hidpi\nf-hidpi-hidp_getusages.md">HidP_GetUsages</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539708">HidP_GetButtons</a>
 
  
 

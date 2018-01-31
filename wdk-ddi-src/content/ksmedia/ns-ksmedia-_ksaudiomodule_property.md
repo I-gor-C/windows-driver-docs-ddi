@@ -1,6 +1,6 @@
 ---
 UID : NS:ksmedia._KSAUDIOMODULE_PROPERTY
-title : _KSAUDIOMODULE_PROPERTY
+title : "_KSAUDIOMODULE_PROPERTY"
 author : windows-driver-content
 description : The KSAUDIOMODULE_DESCRIPTOR structure describes the static, external properties of the audio modules.
 old-location : audio\ksaudiomodule_property.htm
@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 1DE3F065-6F8E-402F-87EF-F9582E31BFFE
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : KSAUDIOMODULE_PROPERTY structure [Audio Devices], PKSAUDIOMODULE_PROPERTY structure pointer [Audio Devices], audio.ksaudiomodule_property, ksmedia/PKSAUDIOMODULE_PROPERTY, _KSAUDIOMODULE_PROPERTY, *PKSAUDIOMODULE_PROPERTY, KSAUDIOMODULE_PROPERTY, ksmedia/KSAUDIOMODULE_PROPERTY, PKSAUDIOMODULE_PROPERTY
+ms.keywords : audio.ksaudiomodule_property, PKSAUDIOMODULE_PROPERTY, ksmedia/PKSAUDIOMODULE_PROPERTY, *PKSAUDIOMODULE_PROPERTY, KSAUDIOMODULE_PROPERTY, KSAUDIOMODULE_PROPERTY structure [Audio Devices], PKSAUDIOMODULE_PROPERTY structure pointer [Audio Devices], _KSAUDIOMODULE_PROPERTY, ksmedia/KSAUDIOMODULE_PROPERTY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSAUDIOMODULE_PROPERTY, KSAUDIOMODULE_PROPERTY"
+req.typenames : KSAUDIOMODULE_PROPERTY, *PKSAUDIOMODULE_PROPERTY
 ---
 
 # _KSAUDIOMODULE_PROPERTY structure

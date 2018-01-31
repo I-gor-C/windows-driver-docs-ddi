@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : da3ddebc-109e-43fb-a0e9-fd89d90dbbc7
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbolGroup2::GetSymbolOffset, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolOffset method, GetSymbolOffset, GetSymbolOffset method [Windows Debugging], ComOther_11a91301-541c-4bc3-aa1e-614db8170e03.xml, IDebugSymbolGroup2, debugger.getsymboloffset, dbgeng/IDebugSymbolGroup2::GetSymbolOffset, GetSymbolOffset method [Windows Debugging], IDebugSymbolGroup2 interface
+ms.keywords : GetSymbolOffset method [Windows Debugging], IDebugSymbolGroup2 interface, ComOther_11a91301-541c-4bc3-aa1e-614db8170e03.xml, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolOffset method, IDebugSymbolGroup2::GetSymbolOffset, debugger.getsymboloffset, dbgeng/IDebugSymbolGroup2::GetSymbolOffset, GetSymbolOffset, IDebugSymbolGroup2, GetSymbolOffset method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -113,9 +113,9 @@ For more information about symbol groups, see <a href="https://msdn.microsoft.co
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
 
  
 

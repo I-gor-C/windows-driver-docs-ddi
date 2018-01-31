@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1374ad6f-3a79-4db1-acc9-28c8bd9aa93d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmtcreateallocation, PFND3DKMT_CREATEALLOCATION, OpenGL_Functions_dfd80d2b-c3c7-4aca-833c-153090153b96.xml, d3dkmthk/D3DKMTCreateAllocation, D3DKMTCreateAllocation, D3DKMTCreateAllocation function [Display Devices]
+ms.keywords : D3DKMTCreateAllocation function [Display Devices], display.d3dkmtcreateallocation, OpenGL_Functions_dfd80d2b-c3c7-4aca-833c-153090153b96.xml, D3DKMTCreateAllocation, PFND3DKMT_CREATEALLOCATION, d3dkmthk/D3DKMTCreateAllocation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

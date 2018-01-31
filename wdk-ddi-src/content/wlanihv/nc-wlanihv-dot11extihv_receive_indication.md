@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDRIVER_INFO_8W, *LPDRIVER_INFO_8W, DRIVER_INFO_8W"
+req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -113,12 +113,12 @@ When the Native 802.11 miniport driver, which manages the WLAN adapter, makes an
 
 ## See Also
 
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
+
 <mshelp:link keywords="netvista.ndis_status_media_specific_indication" tabindex="0"><b>
    NDIS_STATUS_MEDIA_SPECIFIC_INDICATION</b></mshelp:link>
 
 <a href="..\wlanihv\ne-wlanihv-_dot11ext_ihv_indication_type.md">DOT11EXT_IHV_INDICATION_TYPE</a>
-
-<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
 
  
 

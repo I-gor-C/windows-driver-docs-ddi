@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e8845b15-4427-45ea-9192-352d82c89c6a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rxce/RxCeBuildAddress, ifsk.rxcebuildaddress, rxref_ee32329f-3111-4ee6-869f-2b8e21d6696c.xml, RxCeBuildAddress, RxCeBuildAddress function [Installable File System Drivers]
+ms.keywords : rxref_ee32329f-3111-4ee6-869f-2b8e21d6696c.xml, ifsk.rxcebuildaddress, RxCeBuildAddress function [Installable File System Drivers], rxce/RxCeBuildAddress, RxCeBuildAddress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.typenames : RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -123,7 +123,7 @@ When <b>RxCeBuildAddress</b> is successful, the data members in the RXCE_ADDRESS
 | **Minimum UMDF version** |  |
 | **Header** | rxce.h (include Rxce.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

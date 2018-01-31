@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7518f018-5ece-43e6-8aad-02038c0e94fc
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_GetUiccATR, netvista.ril_getuiccatr, rilapi/RIL_GetUiccATR, RIL_GetUiccATR method [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.ril_getuiccatr, rilapi/RIL_GetUiccATR, RIL_GetUiccATR, RIL_GetUiccATR method [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
+req.typenames : "*PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER"
 req.product : Windows 10 or later.
 ---
 

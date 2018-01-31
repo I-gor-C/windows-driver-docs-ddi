@@ -431,7 +431,7 @@ d3dkmddi.h contains the following programming interfaces:
 | [_DXGK_GLITCH_DURATION](ne-d3dkmddi-_dxgk_glitch_duration.md) | Enumeration that describes the duration of a user visible effect of a glitch during a SetTimingsFromVidPn call. |
 | [_DXGK_GLITCH_EFFECT](ne-d3dkmddi-_dxgk_glitch_effect.md) | Enumeration which describes the user visible effect of a glitch during a SetTimingsFromVidPn call. |
 | [_DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS](ne-d3dkmddi-_dxgk_hardware_content_protection_teardown_flags.md) | DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS provides additional information to the driver in a DxgkCbHardwareContentProtectionTeardown call. |
-| [_DXGK_INTERRUPT_STATE](ne-d3dkmddi-_dxgk_interrupt_state.md) | . |
+| [_DXGK_INTERRUPT_STATE](ne-d3dkmddi-_dxgk_interrupt_state.md) | "." |
 | [_DXGK_INTERRUPT_TYPE](ne-d3dkmddi-_dxgk_interrupt_type.md) | The DXGK_INTERRUPT_TYPE enumeration indicates the type of interrupt that the display miniport driver notifies the graphics processing unit (GPU) scheduler about. |
 | [_DXGK_MEMORY_TRANSFER_DIRECTION](ne-d3dkmddi-_dxgk_memory_transfer_direction.md) | DXGK_MEMORY_TRANSFER_DIRECTION is used as part of an allocation transfer operation to specify the direction of the transfer. |
 | [_DXGK_MONITOR_INTERFACE_VERSION](ne-d3dkmddi-_dxgk_monitor_interface_version.md) | Indicates a particular version of the Monitor interface. |

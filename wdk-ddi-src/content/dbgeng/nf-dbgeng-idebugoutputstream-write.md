@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : CC609DA8-9778-4AFC-9205-5F68AF15927C
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : Write, IDebugOutputStream, Write method [Windows Debugging], dbgeng/IDebugOutputStream::Write, IDebugOutputStream::Write, IDebugOutputStream interface [Windows Debugging], Write method, Write method [Windows Debugging], IDebugOutputStream interface, debugger.idebugoutputstream_write
+ms.keywords : Write method [Windows Debugging], IDebugOutputStream interface, debugger.idebugoutputstream_write, dbgeng/IDebugOutputStream::Write, IDebugOutputStream::Write, Write, IDebugOutputStream interface [Windows Debugging], Write method, Write method [Windows Debugging], IDebugOutputStream
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

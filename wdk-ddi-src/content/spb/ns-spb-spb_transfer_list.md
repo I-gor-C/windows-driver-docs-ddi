@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : DC4E165B-4D3A-4C5F-9B6F-8CB825BAF4FD
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PSPB_TRANSFER_LIST, SPB_TRANSFER_LIST structure [Buses], SPB_TRANSFER_LIST, SPB.spb_transfer_list, PSPB_TRANSFER_LIST structure pointer [Buses], spb/PSPB_TRANSFER_LIST, *PSPB_TRANSFER_LIST, spb/SPB_TRANSFER_LIST
+ms.keywords : PSPB_TRANSFER_LIST, SPB.spb_transfer_list, PSPB_TRANSFER_LIST structure pointer [Buses], spb/SPB_TRANSFER_LIST, spb/PSPB_TRANSFER_LIST, SPB_TRANSFER_LIST structure [Buses], SPB_TRANSFER_LIST, *PSPB_TRANSFER_LIST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_TRANSFER_LIST, SPB_TRANSFER_LIST"
+req.typenames : SPB_TRANSFER_LIST, *PSPB_TRANSFER_LIST
 req.product : Windows 10 or later.
 ---
 
@@ -88,11 +88,11 @@ If your SPB controller driver supports custom I/O control (IOCTL) requests that 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406223">SPB_TRANSFER_LIST_ENTRY</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh974774">IOCTL_SPB_FULL_DUPLEX</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a>
 
  
 

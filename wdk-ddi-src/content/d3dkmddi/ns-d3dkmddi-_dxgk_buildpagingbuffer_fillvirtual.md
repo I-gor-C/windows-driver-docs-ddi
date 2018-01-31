@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmddi._DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL
-title : _DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL
+title : "_DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL"
 author : windows-driver-content
 description : DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL is used as part of an operation to fill an allocation with a pattern.
 old-location : display\dxgk_buildpagingbuffer_fillvirtual.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 373065F6-C754-4517-905E-86A974866120
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL structure [Display Devices], d3dkmddi/DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL, DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL, display.dxgk_buildpagingbuffer_fillvirtual, _DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL
+ms.keywords : "_DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL, DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL structure [Display Devices], DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL, display.dxgk_buildpagingbuffer_fillvirtual, d3dkmddi/DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,9 +86,9 @@ The kernel mode driver handle of the allocation being filled. The handle is retu
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_buildpagingbuffer.md">DXGKARG_BUILDPAGINGBUFFER</a>
-
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_buildpagingbuffer.md">DXGKARG_BUILDPAGINGBUFFER</a>
 
  
 

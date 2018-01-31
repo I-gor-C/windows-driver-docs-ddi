@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 406508b2-7509-4d2b-ac22-63644eedcec0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : rtns-disk_9358ac66-e3ba-43c0-856f-0f8b4c0ee832.xml, IoWritePartitionTable, IoWritePartitionTable routine [Storage Devices], ntddk/IoWritePartitionTable, storage.iowritepartitiontable
+ms.keywords : IoWritePartitionTable routine [Storage Devices], rtns-disk_9358ac66-e3ba-43c0-856f-0f8b4c0ee832.xml, IoWritePartitionTable, ntddk/IoWritePartitionTable, storage.iowritepartitiontable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

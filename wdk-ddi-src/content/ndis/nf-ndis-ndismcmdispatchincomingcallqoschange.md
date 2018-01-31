@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e3da62c2-4940-4c55-8232-1780d92b7f1f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisMCmDispatchIncomingCallQoSChange, condis_mcm_ref_d926c691-a75e-4195-9026-67429043a821.xml, NdisMCmDispatchIncomingCallQoSChange macro [Network Drivers Starting with Windows Vista], netvista.ndismcmdispatchincomingcallqoschange, NdisMCmDispatchIncomingCallQoSChange
+ms.keywords : netvista.ndismcmdispatchincomingcallqoschange, NdisMCmDispatchIncomingCallQoSChange, NdisMCmDispatchIncomingCallQoSChange macro [Network Drivers Starting with Windows Vista], condis_mcm_ref_d926c691-a75e-4195-9026-67429043a821.xml, ndis/NdisMCmDispatchIncomingCallQoSChange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -99,28 +99,28 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCM_Function |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
-
-<a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a>
-
-<a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a>
-
 <a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a>
-
-<mshelp:link keywords="netvista.ndiscmdispatchincomingcallqoschange" tabindex="0"><b>
-   NdisCmDispatchIncomingCallQoSChange</b></mshelp:link>
-
-<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 
 <a href="..\ndis\nf-ndis-ndismcmactivatevc.md">NdisMCmActivateVc</a>
 
 <mshelp:link keywords="netvista.protocolclincomingcallqoschange" tabindex="0"><i>
    ProtocolClIncomingCallQosChange</i></mshelp:link>
+
+<a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
+
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
+
+<mshelp:link keywords="netvista.ndiscmdispatchincomingcallqoschange" tabindex="0"><b>
+   NdisCmDispatchIncomingCallQoSChange</b></mshelp:link>
+
+<a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a>
 
  
 

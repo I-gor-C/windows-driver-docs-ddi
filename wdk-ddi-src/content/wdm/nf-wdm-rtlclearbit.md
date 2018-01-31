@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : bfc75a17-a0de-436e-aebf-902fd841871a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.rtlclearbit, k109_f785121e-f076-4f31-90ab-4bec446e3cc9.xml, RtlClearBit routine [Kernel-Mode Driver Architecture], RtlClearBit, wdm/RtlClearBit
+ms.keywords : k109_f785121e-f076-4f31-90ab-4bec446e3cc9.xml, RtlClearBit, wdm/RtlClearBit, kernel.rtlclearbit, RtlClearBit routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,7 +80,7 @@ Callers of <b>RtlClearBit</b> must be running at IRQL &lt;= APC_LEVEL if the mem
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL (See Remarks section) |
+| **IRQL** | "<= APC_LEVEL (See Remarks section)" |
 | **DDI compliance rules** |  |
 
 ## See Also

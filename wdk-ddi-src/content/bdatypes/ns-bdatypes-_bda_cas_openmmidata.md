@@ -1,14 +1,14 @@
 ---
 UID : NS:bdatypes._BDA_CAS_OPENMMIDATA
-title : _BDA_CAS_OPENMMIDATA
+title : "_BDA_CAS_OPENMMIDATA"
 author : windows-driver-content
-description : .
+description : "."
 old-location : stream\bda_cas_openmmidata.htm
 old-project : stream
 ms.assetid : FAF30768-5DE4-4284-8CB5-2E518A2E37E7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PBDA_CAS_OPENMMIDATA structure pointer [Streaming Media Devices], *PBDA_CAS_OPENMMIDATA, stream.bda_cas_openmmidata, bdatypes/PBDA_CAS_OPENMMIDATA, bdatypes/BDA_CAS_OPENMMIDATA, BDA_CAS_OPENMMIDATA structure [Streaming Media Devices], BDA_CAS_OPENMMIDATA, PBDA_CAS_OPENMMIDATA, _BDA_CAS_OPENMMIDATA
+ms.keywords : stream.bda_cas_openmmidata, BDA_CAS_OPENMMIDATA structure [Streaming Media Devices], bdatypes/PBDA_CAS_OPENMMIDATA, bdatypes/BDA_CAS_OPENMMIDATA, BDA_CAS_OPENMMIDATA, PBDA_CAS_OPENMMIDATA, _BDA_CAS_OPENMMIDATA, PBDA_CAS_OPENMMIDATA structure pointer [Streaming Media Devices], *PBDA_CAS_OPENMMIDATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : BDA_CAS_OPENMMIDATA, *PBDA_CAS_OPENMMIDATA
+req.typenames : "*PBDA_CAS_OPENMMIDATA, BDA_CAS_OPENMMIDATA"
 ---
 
 # _BDA_CAS_OPENMMIDATA structure

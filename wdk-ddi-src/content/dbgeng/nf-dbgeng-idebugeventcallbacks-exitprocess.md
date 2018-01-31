@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 050b747e-5570-4e25-81e4-eccdde4f6995
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : ExitProcess, IDebugEventCallbacks::ExitProcess, IDebugEventCallbacks, ExitProcess method [Windows Debugging], dbgeng/IDebugEventCallbacks::ExitProcess, debugger.idebugeventcallbacks_exitprocess, ExitProcess method [Windows Debugging], IDebugEventCallbacks interface, ComCallbacks_bcacc47e-294c-4dfa-a38e-2b57f534d415.xml, IDebugEventCallbacks interface [Windows Debugging], ExitProcess method
+ms.keywords : ExitProcess method [Windows Debugging], IDebugEventCallbacks, dbgeng/IDebugEventCallbacks::ExitProcess, ExitProcess, ComCallbacks_bcacc47e-294c-4dfa-a38e-2b57f534d415.xml, IDebugEventCallbacks::ExitProcess, debugger.idebugeventcallbacks_exitprocess, IDebugEventCallbacks interface [Windows Debugging], ExitProcess method, ExitProcess method [Windows Debugging], IDebugEventCallbacks interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

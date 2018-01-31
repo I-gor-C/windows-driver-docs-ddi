@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 79e56363-1098-42bb-8e6a-c4b4c76e7e7c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.fsrtlinitializeextracreateparameterlist, ntifs/FsRtlInitializeExtraCreateParameterList, FsRtlInitializeExtraCreateParameterList routine [Installable File System Drivers], FsRtlInitializeExtraCreateParameterList, fsrtlref_785d3f11-f568-491e-9cdb-abba70ae3eeb.xml
+ms.keywords : ntifs/FsRtlInitializeExtraCreateParameterList, ifsk.fsrtlinitializeextracreateparameterlist, FsRtlInitializeExtraCreateParameterList routine [Installable File System Drivers], FsRtlInitializeExtraCreateParameterList, fsrtlref_785d3f11-f568-491e-9cdb-abba70ae3eeb.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,7 +71,7 @@ Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff54
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

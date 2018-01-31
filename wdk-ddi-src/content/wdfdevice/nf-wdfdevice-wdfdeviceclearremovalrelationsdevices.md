@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c3ff7c9d-380e-4d66-88a4-aef7abe20c9d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdeviceclearremovalrelationsdevices, WdfDeviceClearRemovalRelationsDevices method, wdfdevice/WdfDeviceClearRemovalRelationsDevices, WdfDeviceClearRemovalRelationsDevices, DFDeviceObjectGeneralRef_e2dc5cb6-4f45-441c-b242-5b67ea8fa381.xml, kmdf.wdfdeviceclearremovalrelationsdevices, PFN_WDFDEVICECLEARREMOVALRELATIONSDEVICES
+ms.keywords : DFDeviceObjectGeneralRef_e2dc5cb6-4f45-441c-b242-5b67ea8fa381.xml, WdfDeviceClearRemovalRelationsDevices method, wdfdevice/WdfDeviceClearRemovalRelationsDevices, PFN_WDFDEVICECLEARREMOVALRELATIONSDEVICES, WdfDeviceClearRemovalRelationsDevices, kmdf.wdfdeviceclearremovalrelationsdevices, wdf.wdfdeviceclearremovalrelationsdevices
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,7 +76,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 | **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also

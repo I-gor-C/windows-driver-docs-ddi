@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : cc455bb1-3574-4dfb-9462-f2c67632132b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisInterlockedInsertTailList, NdisInterlockedInsertTailList macro [Network Drivers Starting with Windows Vista], ndis/NdisInterlockedInsertTailList, netvista.ndisinterlockedinserttaillist, ndis_interlocked_ref_1fd860e3-2f63-41a0-9231-7e50a9b87e36.xml
+ms.keywords : ndis_interlocked_ref_1fd860e3-2f63-41a0-9231-7e50a9b87e36.xml, NdisInterlockedInsertTailList macro [Network Drivers Starting with Windows Vista], NdisInterlockedInsertTailList, netvista.ndisinterlockedinserttaillist, ndis/NdisInterlockedInsertTailList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -115,17 +115,17 @@ If
 
 ## See Also
 
+<a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542043">CONTAINING_RECORD</a>
 
-<mshelp:link keywords="netvista.ndisinterlockedremoveheadlist" tabindex="0"><b>
-   NdisInterlockedRemoveHeadList</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisinitializelisthead.md">NdisInitializeListHead</a>
 
 <mshelp:link keywords="netvista.ndisinterlockedinsertheadlist" tabindex="0"><b>
    NdisInterlockedInsertHeadList</b></mshelp:link>
 
-<a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a>
-
-<a href="..\ndis\nf-ndis-ndisinitializelisthead.md">NdisInitializeListHead</a>
+<mshelp:link keywords="netvista.ndisinterlockedremoveheadlist" tabindex="0"><b>
+   NdisInterlockedRemoveHeadList</b></mshelp:link>
 
  
 

@@ -1,6 +1,6 @@
 ---
 UID : NS:ndis._NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES
-title : _NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES
+title : "_NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES"
 author : windows-driver-content
 description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location : netvista\ndis_miniport_adapter_native_802_11_attributes.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f841c7f9-9ad3-4b53-b2d9-0d66d6e64b8b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES, PNDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES, PNDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES, Native_802.11_data_types_7b3396ce-7830-4b08-8df4-e0d8f49c7144.xml, NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], ndis/PNDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES, ndis/NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES, _NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES, netvista.ndis_miniport_adapter_native_802_11_attributes
+ms.keywords : netvista.ndis_miniport_adapter_native_802_11_attributes, PNDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], Native_802.11_data_types_7b3396ce-7830-4b08-8df4-e0d8f49c7144.xml, PNDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES, ndis/PNDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES, *PNDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], _NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES, ndis/NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES, *PNDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES
+req.typenames : "*PNDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES"
 ---
 
 # _NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES structure
@@ -99,6 +99,29 @@ The miniport driver must set the members of
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
+
+#### Type
+
+This member must be set to NDIS_OBJECT_TYPE_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES.
+
+
+#### Revision
+
+For the Windows Vista or Windows Server 2008 operating systems, this member must be set to
+        NDIS_MINIPORT_ADAPTER_802_11_ATTRIBUTES_REVISION_1.
+
+For later versions of the Windows operating systems, this member must be set to
+        NDIS_MINIPORT_ADAPTER_802_11_ATTRIBUTES_REVISION_2.
+
+
+#### Size
+
+For the Windows Vista or Windows Server 2008 operating systems, this member must be set to
+        NDIS_SIZEOF_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES_REVISION_1.
+
+For later versions of the Windows operating systems, this member must be set to
+        NDIS_SIZEOF_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES_REVISION_2.
+
 `MultiDomainCapabilityImplemented`
 
 A Boolean value that, if <b>TRUE</b>, specifies that the 802.11 station can operate in multiple
@@ -135,6 +158,25 @@ A bitmask of the miniport driver's supported operation modes. This bitmask is de
 For more information about operation modes, see 
      <mshelp:link keywords="netvista.native_802_11_operation_modes" tabindex="0">Native 802.11 Operation
      Modes</mshelp:link>.
+
+
+#### DOT11_OPERATION_MODE_EXTENSIBLE_AP
+
+Specifies that the miniport driver supports the Extensible Access Point (ExtAP) operation mode.
+       
+
+This value is available beginning with Windows 7.
+
+
+#### DOT11_OPERATION_MODE_EXTENSIBLE_STATION
+
+Specifies that the miniport driver supports the Extensible Station (ExtSTA) operation
+       mode.
+
+
+#### DOT11_OPERATION_MODE_NETWORK_MONITOR
+
+Specifies that the miniport driver supports the Network Monitor (NetMon) operation mode.
 
 `SupportedPhyAttributes`
 
@@ -209,16 +251,16 @@ The
 
 ## See Also
 
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-operation-modes">Native 802.11 Operation Modes</a>
+
 <mshelp:link keywords="netvista.extensible_station_operation_mode" tabindex="0">Extensible Station Operation
    Mode</mshelp:link>
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-supported-phy-types">OID_DOT11_SUPPORTED_PHY_TYPES</a>
-
 <a href="..\windot11\ns-windot11-_dot11_extap_attributes.md">DOT11_EXTAP_ATTRIBUTES</a>
 
-<a href="..\windot11\ns-windot11-dot11_vwifi_attributes.md">DOT11_VWIFI_ATTRIBUTES</a>
-
 <a href="..\windot11\ns-windot11-dot11_phy_attributes.md">DOT11_PHY_ATTRIBUTES</a>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-supported-phy-types">OID_DOT11_SUPPORTED_PHY_TYPES</a>
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
@@ -227,13 +269,13 @@ The
 <mshelp:link keywords="netvista.native_802_11_miniport_driver_initialization" tabindex="0">Native 802.11 Miniport
    Driver Initialization</mshelp:link>
 
+<a href="..\windot11\ns-windot11-dot11_vwifi_attributes.md">DOT11_VWIFI_ATTRIBUTES</a>
+
 <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <a href="..\windot11\ns-windot11-_dot11_wfd_attributes.md">DOT11_WFD_ATTRIBUTES</a>
-
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-operation-modes">Native 802.11 Operation Modes</a>
 
  
 

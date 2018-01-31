@@ -1,6 +1,6 @@
 ---
 UID : NS:hbapiwmi._MSFC_FibrePortHBAAttributes
-title : _MSFC_FibrePortHBAAttributes
+title : "_MSFC_FibrePortHBAAttributes"
 author : windows-driver-content
 description : A WMI provider uses the MSFC_FibrePortHBAAttributes WMI class to expose attribute information associated with a fibre channel port.
 old-location : storage\msfc_fibreporthbaattributes.htm
@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e8a31f48-bad2-49d1-81be-d345d87a0fd5
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PMSFC_FibrePortHBAAttributes, structs-Fibre_8721cac7-a44b-4401-991d-1b8822aec5be.xml, PMSFC_FibrePortHBAAttributes structure pointer [Storage Devices], hbapiwmi/MSFC_FibrePortHBAAttributes, MSFC_FibrePortHBAAttributes structure [Storage Devices], MSFC_FibrePortHBAAttributes, hbapiwmi/PMSFC_FibrePortHBAAttributes, PMSFC_FibrePortHBAAttributes, storage.msfc_fibreporthbaattributes, _MSFC_FibrePortHBAAttributes"
+ms.keywords : storage.msfc_fibreporthbaattributes, hbapiwmi/PMSFC_FibrePortHBAAttributes, _MSFC_FibrePortHBAAttributes, structs-Fibre_8721cac7-a44b-4401-991d-1b8822aec5be.xml, PMSFC_FibrePortHBAAttributes, *PMSFC_FibrePortHBAAttributes, PMSFC_FibrePortHBAAttributes structure pointer [Storage Devices], MSFC_FibrePortHBAAttributes structure [Storage Devices], MSFC_FibrePortHBAAttributes, hbapiwmi/MSFC_FibrePortHBAAttributes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMSFC_FibrePortHBAAttributes, MSFC_FibrePortHBAAttributes"
+req.typenames : MSFC_FibrePortHBAAttributes, *PMSFC_FibrePortHBAAttributes
 ---
 
 # _MSFC_FibrePortHBAAttributes structure
@@ -76,9 +76,9 @@ Unique identifier for the port. This identifier must be unique among all ports o
 
 ## See Also
 
-<a href="..\hbapiwmi\ns-hbapiwmi-_msfc_hbaportattributesresults.md">MSFC_HBAPortAttributesResults</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+
+<a href="..\hbapiwmi\ns-hbapiwmi-_msfc_hbaportattributesresults.md">MSFC_HBAPortAttributesResults</a>
 
  
 

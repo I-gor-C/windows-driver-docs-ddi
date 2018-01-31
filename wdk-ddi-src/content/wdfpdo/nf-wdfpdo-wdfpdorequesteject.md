@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 40cd83c0-701a-436f-a3c3-b0ab14848a92
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfPdoRequestEject method, WdfPdoRequestEject, wdfpdo/WdfPdoRequestEject, wdf.wdfpdorequesteject, PFN_WDFPDOREQUESTEJECT, DFDeviceObjectFdoPdoRef_f57ccd07-8cb3-4972-bddb-aa704d9422b0.xml, kmdf.wdfpdorequesteject
+ms.keywords : DFDeviceObjectFdoPdoRef_f57ccd07-8cb3-4972-bddb-aa704d9422b0.xml, wdf.wdfpdorequesteject, kmdf.wdfpdorequesteject, wdfpdo/WdfPdoRequestEject, PFN_WDFPDOREQUESTEJECT, WdfPdoRequestEject method, WdfPdoRequestEject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,7 +83,7 @@ For more information about <b>WdfPdoRequestEject</b> and <a href="..\wdfchildlis
 | **Minimum UMDF version** |  |
 | **Header** | wdfpdo.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also

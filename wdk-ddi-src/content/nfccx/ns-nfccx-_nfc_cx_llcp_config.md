@@ -1,6 +1,6 @@
 ---
 UID : NS:nfccx._NFC_CX_LLCP_CONFIG
-title : _NFC_CX_LLCP_CONFIG
+title : "_NFC_CX_LLCP_CONFIG"
 author : windows-driver-content
 description : The NFC_CX_LLCP_CONFIG structure is an input parameter to NfcCxSetLlcpConfig.
 old-location : nfpdrivers\nfc_cx_llcp_config.htm
@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 84A1F957-FAAE-4C2D-9D49-486813A26950
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : nfccx/NFC_CX_LLCP_CONFIG, NFC_CX_LLCP_CONFIG, NFC_CX_LLCP_CONFIG structure [Near-Field Proximity Drivers], *PNFC_CX_LLCP_CONFIG, PNFC_CX_LLCP_CONFIG, PNFC_CX_LLCP_CONFIG structure pointer [Near-Field Proximity Drivers], _NFC_CX_LLCP_CONFIG, nfpdrivers.nfc_cx_llcp_config, nfccx/PNFC_CX_LLCP_CONFIG
+ms.keywords : nfccx/NFC_CX_LLCP_CONFIG, *PNFC_CX_LLCP_CONFIG, nfpdrivers.nfc_cx_llcp_config, _NFC_CX_LLCP_CONFIG, nfccx/PNFC_CX_LLCP_CONFIG, PNFC_CX_LLCP_CONFIG structure pointer [Near-Field Proximity Drivers], NFC_CX_LLCP_CONFIG structure [Near-Field Proximity Drivers], NFC_CX_LLCP_CONFIG, PNFC_CX_LLCP_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -81,9 +81,9 @@ Size of this structure in bytes.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a>
-
 <a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a>
+
+<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 31C7A629-3B5E-44BA-AE03-3331E3200FC6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PsInsertSiloContext, ntddk/PsInsertSiloContext, kernel.psinsertsilocontext, PsInsertSiloContext routine [Kernel-Mode Driver Architecture]
+ms.keywords : ntddk/PsInsertSiloContext, PsInsertSiloContext, kernel.psinsertsilocontext, PsInsertSiloContext routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 UID : NS:wdm._KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT
-title : _KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT
+title : "_KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT"
 author : windows-driver-content
 description : The KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT structure describes the notification context that is passed to a registered callback function when a new processor is dynamically added to a hardware partition.
 old-location : kernel\ke_processor_change_notify_context.htm
@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b8b8e2af-487c-4d7b-8af0-b6365d4703b0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT structure pointer [Kernel-Mode Driver Architecture], wdm/KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, kstruct_c_dcd6ab01-880a-4a63-bd74-acff53b786d1.xml, wdm/PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, *PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, kernel.ke_processor_change_notify_context, KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT structure [Kernel-Mode Driver Architecture], _KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT
+ms.keywords : wdm/PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT structure pointer [Kernel-Mode Driver Architecture], PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, kernel.ke_processor_change_notify_context, kstruct_c_dcd6ab01-880a-4a63-bd74-acff53b786d1.xml, KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, wdm/KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, _KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT structure [Kernel-Mode Driver Architecture], *PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -67,6 +67,23 @@ The processor number of the new processor. This member is a <a href="..\miniport
 
 The state of the processor add operation. Possible values are as follows:
 
+
+
+
+#### KeProcessorAddStartNotify
+
+The operating system is about to add the processor. At this state, a device driver that receives this notification can allocate any per-processor data structures and perform any other required tasks to prepare the driver for execution on the new processor.
+
+
+#### KeProcessorAddCompleteNotify
+
+The operating system has successfully added the processor. At this state, a device driver that receives this notification can start scheduling threads on the new processor.
+
+
+#### KeProcessorAddFailureNotify
+
+The operating system failed to add the processor. If a device driver receives this notification, it should free any per-processor data structures that it allocated for the new processor when it received the <b>KeProcessorAddStartNotify</b> notification.
+
 `Status`
 
 If the <b>State</b> member contains <b>KeProcessorAddFailureNotify</b>, this member contains the error status that indicates why the processor add operation failed.
@@ -90,11 +107,11 @@ A device driver's callback function that receives these notifications must not m
 
 ## See Also
 
-<a href="..\miniport\ns-miniport-_processor_number.md">PROCESSOR_NUMBER</a>
+<a href="..\wdm\nf-wdm-kegetprocessornumberfromindex.md">KeGetProcessorNumberFromIndex</a>
 
 <a href="..\wdm\nf-wdm-keregisterprocessorchangecallback.md">KeRegisterProcessorChangeCallback</a>
 
-<a href="..\wdm\nf-wdm-kegetprocessornumberfromindex.md">KeGetProcessorNumberFromIndex</a>
+<a href="..\miniport\ns-miniport-_processor_number.md">PROCESSOR_NUMBER</a>
 
  
 

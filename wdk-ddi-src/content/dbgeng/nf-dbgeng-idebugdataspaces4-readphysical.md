@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 8df51985-9208-46ce-8802-6bc5ec707ab2
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.readphysical3, IDebugDataSpaces2 interface [Windows Debugging], ReadPhysical method, IDebugDataSpaces4, IDebugDataSpaces::ReadPhysical, IDebugDataSpaces3 interface [Windows Debugging], ReadPhysical method, ReadPhysical method [Windows Debugging], dbgeng/IDebugDataSpaces::ReadPhysical, IDebugDataSpaces3::ReadPhysical, IDebugDataSpaces4 interface [Windows Debugging], ReadPhysical method, ReadPhysical method [Windows Debugging], IDebugDataSpaces2 interface, dbgeng/IDebugDataSpaces3::ReadPhysical, dbgeng/IDebugDataSpaces4::ReadPhysical, IDebugDataSpaces_5be1f680-1177-4cdf-a4d8-5868644a51af.xml, dbgeng/IDebugDataSpaces2::ReadPhysical, ReadPhysical method [Windows Debugging], IDebugDataSpaces interface, IDebugDataSpaces4::ReadPhysical, ReadPhysical method [Windows Debugging], IDebugDataSpaces3 interface, IDebugDataSpaces interface [Windows Debugging], ReadPhysical method, IDebugDataSpaces2::ReadPhysical, ReadPhysical method [Windows Debugging], IDebugDataSpaces4 interface, ReadPhysical
+ms.keywords : ReadPhysical method [Windows Debugging], ReadPhysical method [Windows Debugging], IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces4::ReadPhysical, IDebugDataSpaces_5be1f680-1177-4cdf-a4d8-5868644a51af.xml, IDebugDataSpaces::ReadPhysical, ReadPhysical method [Windows Debugging], IDebugDataSpaces3 interface, dbgeng/IDebugDataSpaces2::ReadPhysical, IDebugDataSpaces3::ReadPhysical, ReadPhysical, IDebugDataSpaces3 interface [Windows Debugging], ReadPhysical method, IDebugDataSpaces4::ReadPhysical, IDebugDataSpaces2::ReadPhysical, ReadPhysical method [Windows Debugging], IDebugDataSpaces interface, IDebugDataSpaces interface [Windows Debugging], ReadPhysical method, IDebugDataSpaces4, debugger.readphysical3, ReadPhysical method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces4 interface [Windows Debugging], ReadPhysical method, dbgeng/IDebugDataSpaces::ReadPhysical, dbgeng/IDebugDataSpaces3::ReadPhysical, IDebugDataSpaces2 interface [Windows Debugging], ReadPhysical method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

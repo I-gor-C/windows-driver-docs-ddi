@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3d649cc5-6512-432c-9bd9-60e18507a873
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestReuse method, PFN_WDFREQUESTREUSE, wdfrequest/WdfRequestReuse, WdfRequestReuse, DFRequestObjectRef_8815216b-4632-4cc8-8afd-c4b1412ddbad.xml, wdf.wdfrequestreuse, kmdf.wdfrequestreuse
+ms.keywords : WdfRequestReuse method, wdfrequest/WdfRequestReuse, wdf.wdfrequestreuse, DFRequestObjectRef_8815216b-4632-4cc8-8afd-c4b1412ddbad.xml, kmdf.wdfrequestreuse, PFN_WDFREQUESTREUSE, WdfRequestReuse
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -118,20 +118,20 @@ For more information about <b>WdfRequestReuse</b>, see <a href="https://msdn.mic
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, ReqSendFail |
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreatefromirp.md">WdfRequestCreateFromIrp</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdf_request_reuse_params_init.md">WDF_REQUEST_REUSE_PARAMS_INIT</a>
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsetcompletionroutine.md">WdfRequestSetCompletionRoutine</a>
 
+<a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a>
+
 <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_reuse_params.md">WDF_REQUEST_REUSE_PARAMS</a>
 
-<a href="..\wdfrequest\nf-wdfrequest-wdf_request_reuse_params_init.md">WDF_REQUEST_REUSE_PARAMS_INIT</a>
-
-<a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreatefromirp.md">WdfRequestCreateFromIrp</a>
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreate.md">WdfRequestCreate</a>
 

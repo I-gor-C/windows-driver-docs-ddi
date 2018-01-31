@@ -1,6 +1,6 @@
 ---
 UID : NS:windot11._DOT11_EXTAP_ATTRIBUTES
-title : _DOT11_EXTAP_ATTRIBUTES
+title : "_DOT11_EXTAP_ATTRIBUTES"
 author : windows-driver-content
 description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location : netvista\dot11_extap_attributes.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0460357c-7180-45f0-a7ab-83c46c24ba68
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : windot11/PDOT11_EXTAP_ATTRIBUTES, DOT11_EXTAP_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], netvista.dot11_extap_attributes, _DOT11_EXTAP_ATTRIBUTES, windot11/DOT11_EXTAP_ATTRIBUTES, PDOT11_EXTAP_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], PDOT11_EXTAP_ATTRIBUTES, *PDOT11_EXTAP_ATTRIBUTES, Native_802.11_data_types_a1779e69-266e-4fa0-bbd2-01701b9b8772.xml, DOT11_EXTAP_ATTRIBUTES
+ms.keywords : "_DOT11_EXTAP_ATTRIBUTES, netvista.dot11_extap_attributes, Native_802.11_data_types_a1779e69-266e-4fa0-bbd2-01701b9b8772.xml, windot11/DOT11_EXTAP_ATTRIBUTES, *PDOT11_EXTAP_ATTRIBUTES, DOT11_EXTAP_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], PDOT11_EXTAP_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], PDOT11_EXTAP_ATTRIBUTES, DOT11_EXTAP_ATTRIBUTES, windot11/PDOT11_EXTAP_ATTRIBUTES"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -89,6 +89,22 @@ The miniport driver must set the members of
 
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+
+
+#### Type
+
+This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
+
+
+#### Revision
+
+This member must be set to DOT11_EXTAP_ATTRIBUTES_REVISION_1.
+
+
+#### Size
+
+This member must be set to 
+       <b>sizeof</b>(DOT11_EXTAP_ATTRIBUTES).
 
 `pInfraSupportedMcastAlgoPairs`
 
@@ -272,23 +288,23 @@ Any length supported by the 802.11 station
 
 ## See Also
 
-<a href="..\windot11\ns-windot11-_dot11_extap_attributes.md">DOT11_EXTAP_ATTRIBUTES</a>
-
-<mshelp:link keywords="netvista.oid_dot11_privacy_exemption_list" tabindex="0">
-   OID_DOT11_PRIVACY_EXEMPTION_LIST</mshelp:link>
-
 <a href="..\wlantypes\ns-wlantypes-dot11_auth_cipher_pair.md">DOT11_AUTH_CIPHER_PAIR</a>
 
-<a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>
+<a href="..\windot11\ns-windot11-_dot11_extap_attributes.md">DOT11_EXTAP_ATTRIBUTES</a>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-desired-bssid-list">OID_DOT11_DESIRED_BSSID_LIST</a>
 
 <mshelp:link keywords="netvista.dot11_country_or_region_string" tabindex="0"><b>
    DOT11_COUNTRY_OR_REGION_STRING</b></mshelp:link>
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-desired-bssid-list">OID_DOT11_DESIRED_BSSID_LIST</a>
+<a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<mshelp:link keywords="netvista.oid_dot11_privacy_exemption_list" tabindex="0">
+   OID_DOT11_PRIVACY_EXEMPTION_LIST</mshelp:link>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
  
 

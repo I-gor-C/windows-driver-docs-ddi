@@ -1,6 +1,6 @@
 ---
 UID : NS:ursdevice._URS_CONFIG
-title : _URS_CONFIG
+title : "_URS_CONFIG"
 author : windows-driver-content
 description : Contains pointers to event callback functions implemented by the URS client driver for a USB dual-role controller. Initialize this structure by calling URS_CONFIG_INIT.
 old-location : buses\urs_config.htm
@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 3857CA53-6992-410A-96D1-EEA9CC586EDF
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PURS_CONFIG, buses.urs_config, _URS_CONFIG, URS_CONFIG structure [Buses], URS_CONFIG, PURS_CONFIG structure pointer [Buses], ursdevice/URS_CONFIG, ursdevice/PURS_CONFIG, PURS_CONFIG"
+ms.keywords : "*PURS_CONFIG, URS_CONFIG structure [Buses], ursdevice/PURS_CONFIG, _URS_CONFIG, PURS_CONFIG structure pointer [Buses], PURS_CONFIG, ursdevice/URS_CONFIG, URS_CONFIG, buses.urs_config"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -82,9 +82,9 @@ The size of this structure.
 
 ## See Also
 
-<a href="..\ursdevice\nf-ursdevice-urs_config_init.md">URS_CONFIG_INIT</a>
-
 <a href="..\ursdevice\nf-ursdevice-ursdeviceinitialize.md">UrsDeviceInitialize</a>
+
+<a href="..\ursdevice\nf-ursdevice-urs_config_init.md">URS_CONFIG_INIT</a>
 
  
 

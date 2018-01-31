@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 94e7c36a-e45c-4d98-aeb7-f23769347ca5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ucmtcpciportcontroller/UcmTcpciPortControllerStart, UcmTcpciPortControllerStart, buses.ucmtcpciportcontrollerstart, UcmTcpciPortControllerStart method [Buses]
+ms.keywords : ucmtcpciportcontroller/UcmTcpciPortControllerStart, buses.ucmtcpciportcontrollerstart, UcmTcpciPortControllerStart method [Buses], UcmTcpciPortControllerStart
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

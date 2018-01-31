@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 0400ff8c-a6d5-4fbf-b2fb-eb9fd7aabd7e
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3 interface [Windows Debugging], GetNextSymbolMatchWide method, dbgeng/IDebugSymbols3::GetNextSymbolMatchWide, IDebugSymbols3::GetNextSymbolMatchWide, GetNextSymbolMatchWide, GetNextSymbolMatchWide method [Windows Debugging], IDebugSymbols3 interface, GetNextSymbolMatchWide method [Windows Debugging], IDebugSymbols3, debugger.getnextsymbolmatchwide
+ms.keywords : dbgeng/IDebugSymbols3::GetNextSymbolMatchWide, IDebugSymbols3::GetNextSymbolMatchWide, GetNextSymbolMatchWide, IDebugSymbols3 interface [Windows Debugging], GetNextSymbolMatchWide method, debugger.getnextsymbolmatchwide, GetNextSymbolMatchWide method [Windows Debugging], IDebugSymbols3, GetNextSymbolMatchWide method [Windows Debugging], IDebugSymbols3 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

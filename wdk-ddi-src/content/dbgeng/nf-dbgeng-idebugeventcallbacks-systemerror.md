@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 651f5207-36c8-4d46-8305-950efb2365bf
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugEventCallbacks interface [Windows Debugging], SystemError method, SystemError, IDebugEventCallbacks::SystemError, IDebugEventCallbacks, ComCallbacks_a84628b9-4376-4ca0-883f-835d19e13d73.xml, dbgeng/IDebugEventCallbacks::SystemError, debugger.idebugeventcallbacks_systemerror, SystemError method [Windows Debugging], IDebugEventCallbacks interface, SystemError method [Windows Debugging]
+ms.keywords : IDebugEventCallbacks interface [Windows Debugging], SystemError method, SystemError, IDebugEventCallbacks, SystemError method [Windows Debugging], IDebugEventCallbacks interface, IDebugEventCallbacks::SystemError, debugger.idebugeventcallbacks_systemerror, SystemError method [Windows Debugging], ComCallbacks_a84628b9-4376-4ca0-883f-835d19e13d73.xml, dbgeng/IDebugEventCallbacks::SystemError
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8725868e-00bc-45fe-ab9d-c192abd1a059
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.videoportfreecommonbuffer, VideoPortFreeCommonBuffer, video/VideoPortFreeCommonBuffer, VideoPortFreeCommonBuffer function [Display Devices], VideoPort_Functions_0f1acebf-0fdf-4152-ad91-2cafed40296c.xml
+ms.keywords : VideoPortFreeCommonBuffer function [Display Devices], video/VideoPortFreeCommonBuffer, VideoPortFreeCommonBuffer, display.videoportfreecommonbuffer, VideoPort_Functions_0f1acebf-0fdf-4152-ad91-2cafed40296c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -102,9 +102,9 @@ Except for <a href="..\video\nf-video-videoportgetcommonbuffer.md">VideoPortGetC
 
 ## See Also
 
-<a href="..\video\nf-video-videoportreleasecommonbuffer.md">VideoPortReleaseCommonBuffer</a>
-
 <a href="..\video\nf-video-videoportgetcommonbuffer.md">VideoPortGetCommonBuffer</a>
+
+<a href="..\video\nf-video-videoportreleasecommonbuffer.md">VideoPortReleaseCommonBuffer</a>
 
  
 

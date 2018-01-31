@@ -22,7 +22,7 @@ rxcontx.h contains the following programming interfaces:
 ## Functions
 | Title | Description |
 | ---- |:---- |
-| [__RxSynchronizeBlockingOperations](nf-rxcontx-__rxsynchronizeblockingoperations.md) | __RxSynchronizeBlockingOperations synchronizes blocking I/O requests to the same work queue. |
+| [__RxSynchronizeBlockingOperations](nf-rxcontx-__rxsynchronizeblockingoperations.md) | "__RxSynchronizeBlockingOperations synchronizes blocking I/O requests to the same work queue." |
 | [RxCreateRxContext](nf-rxcontx-rxcreaterxcontext.md) | RxCreateRxContext allocates a new RX_CONTEXT structure and initializes the data structure. |
 | [RxDereferenceAndDeleteRxContext_Real](nf-rxcontx-rxdereferenceanddeleterxcontext_real.md) | RxDereferenceAndDeleteRxContext_Real dereferences an RX_CONTEXT data structure and if the ReferenceCount member goes to zero, then it deallocates and removes the specified RX_CONTEXT structure from the RDBSS in-memory data structures. |
 | [RxInitializeContext](nf-rxcontx-rxinitializecontext.md) | RxInitializeContext initializes an existing RX_CONTEXT data structure. |

@@ -1,6 +1,6 @@
 ---
 UID : NS:wdm._IO_CONNECT_INTERRUPT_PARAMETERS
-title : _IO_CONNECT_INTERRUPT_PARAMETERS
+title : "_IO_CONNECT_INTERRUPT_PARAMETERS"
 author : windows-driver-content
 description : The IO_CONNECT_INTERRUPT_PARAMETERS structure contains the parameters that a driver supplies to the IoConnectInterruptEx routine to register an interrupt service routine (ISR).
 old-location : kernel\io_connect_interrupt_parameters.htm
@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 450c2e2b-56fa-4896-ba81-0f84f7e3051d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IO_CONNECT_INTERRUPT_PARAMETERS structure [Kernel-Mode Driver Architecture], kstruct_b_c3854cf4-b084-42f4-9f3b-92a96fc741c1.xml, IO_CONNECT_INTERRUPT_PARAMETERS, *PIO_CONNECT_INTERRUPT_PARAMETERS, PIO_CONNECT_INTERRUPT_PARAMETERS, wdm/IO_CONNECT_INTERRUPT_PARAMETERS, kernel.io_connect_interrupt_parameters, _IO_CONNECT_INTERRUPT_PARAMETERS, PIO_CONNECT_INTERRUPT_PARAMETERS structure pointer [Kernel-Mode Driver Architecture], wdm/PIO_CONNECT_INTERRUPT_PARAMETERS
+ms.keywords : kernel.io_connect_interrupt_parameters, _IO_CONNECT_INTERRUPT_PARAMETERS, wdm/PIO_CONNECT_INTERRUPT_PARAMETERS, wdm/IO_CONNECT_INTERRUPT_PARAMETERS, kstruct_b_c3854cf4-b084-42f4-9f3b-92a96fc741c1.xml, IO_CONNECT_INTERRUPT_PARAMETERS, PIO_CONNECT_INTERRUPT_PARAMETERS, IO_CONNECT_INTERRUPT_PARAMETERS structure [Kernel-Mode Driver Architecture], *PIO_CONNECT_INTERRUPT_PARAMETERS, PIO_CONNECT_INTERRUPT_PARAMETERS structure pointer [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PIO_CONNECT_INTERRUPT_PARAMETERS, IO_CONNECT_INTERRUPT_PARAMETERS"
+req.typenames : IO_CONNECT_INTERRUPT_PARAMETERS, *PIO_CONNECT_INTERRUPT_PARAMETERS
 req.product : Windows 10 or later.
 ---
 

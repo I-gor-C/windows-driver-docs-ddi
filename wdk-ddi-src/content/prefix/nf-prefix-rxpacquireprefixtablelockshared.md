@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 89924d1d-80c2-4778-9647-c3add9e7d013
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : prefix/RxpAcquirePrefixTableLockShared, ifsk.rxpacquireprefixtablelockshared, rxref_340b65e8-2dba-4895-8cdf-e3464d14f5a3.xml, RxpAcquirePrefixTableLockShared, RxpAcquirePrefixTableLockShared function [Installable File System Drivers]
+ms.keywords : RxpAcquirePrefixTableLockShared function [Installable File System Drivers], ifsk.rxpacquireprefixtablelockshared, rxref_340b65e8-2dba-4895-8cdf-e3464d14f5a3.xml, prefix/RxpAcquirePrefixTableLockShared, RxpAcquirePrefixTableLockShared
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -94,22 +94,22 @@ Normal kernel APC delivery should be disabled before calling this routine. Norma
 | **Minimum UMDF version** |  |
 | **Header** | prefix.h (include Prefix.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545908">FsRtlExitFileSystem</a>
+<a href="..\ntddk\nf-ntddk-keentercriticalregion.md">KeEnterCriticalRegion</a>
 
-<a href="..\wdm\nf-wdm-keleavecriticalregion.md">KeLeaveCriticalRegion</a>
-
-<a href="..\prefix\nf-prefix-rxpreleaseprefixtablelock.md">RxpReleasePrefixTableLock</a>
+<a href="..\ntddk\nf-ntddk-keleavecriticalregion.md">KeLeaveCriticalRegion</a>
 
 <a href="..\prefix\nf-prefix-rxprefixtablelookupname.md">RxPrefixTableLookupName</a>
 
-<a href="..\prefix\nf-prefix-rxpacquireprefixtablelockexclusive.md">RxpAcquirePrefixTableLockExclusive</a>
+<a href="..\prefix\nf-prefix-rxpreleaseprefixtablelock.md">RxpReleasePrefixTableLock</a>
 
-<a href="..\wdm\nf-wdm-keentercriticalregion.md">KeEnterCriticalRegion</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545908">FsRtlExitFileSystem</a>
+
+<a href="..\prefix\nf-prefix-rxpacquireprefixtablelockexclusive.md">RxpAcquirePrefixTableLockExclusive</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545900">FsRtlEnterFileSystem</a>
 

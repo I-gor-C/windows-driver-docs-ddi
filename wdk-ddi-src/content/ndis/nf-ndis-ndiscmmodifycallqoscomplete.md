@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 8489dc63-8e92-45c9-b4a8-593b511743b0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisCmModifyCallQoSComplete, netvista.ndiscmmodifycallqoscomplete, condis_call_manager_ref_471da783-5fb9-459e-98a1-209e8b11a3b5.xml, NdisCmModifyCallQoSComplete function [Network Drivers Starting with Windows Vista], NdisCmModifyCallQoSComplete
+ms.keywords : NdisCmModifyCallQoSComplete function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_471da783-5fb9-459e-98a1-209e8b11a3b5.xml, netvista.ndiscmmodifycallqoscomplete, NdisCmModifyCallQoSComplete, ndis/NdisCmModifyCallQoSComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -110,21 +110,21 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_CallManager_Function |
 
 ## See Also
 
-<mshelp:link keywords="netvista.protocolclmodifycallqoscomplete" tabindex="0"><i>
-   ProtocolClModifyCallQoSComplete</i></mshelp:link>
+<a href="..\ndis\nc-ndis-protocol_cm_modify_qos_call.md">ProtocolCmModifyCallQoS</a>
 
 <a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a>
+
+<mshelp:link keywords="netvista.protocolclmodifycallqoscomplete" tabindex="0"><i>
+   ProtocolClModifyCallQoSComplete</i></mshelp:link>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
 
 <a href="..\ndis\nf-ndis-ndismcmmodifycallqoscomplete.md">NdisMCmModifyCallQosComplete</a>
-
-<a href="..\ndis\nc-ndis-protocol_cm_modify_qos_call.md">ProtocolCmModifyCallQoS</a>
 
  
 

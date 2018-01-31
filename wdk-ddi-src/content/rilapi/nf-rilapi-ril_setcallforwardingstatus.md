@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : c73e3b75-e11d-44b8-9a4a-c98ccfe1c820
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_SetCallForwardingStatus, netvista.ril_setcallforwardingstatus, RIL_SetCallForwardingStatus method [Network Drivers Starting with Windows Vista], rilapi/RIL_SetCallForwardingStatus
+ms.keywords : rilapi/RIL_SetCallForwardingStatus, RIL_SetCallForwardingStatus method [Network Drivers Starting with Windows Vista], netvista.ril_setcallforwardingstatus, RIL_SetCallForwardingStatus
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
+req.typenames : "*PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER"
 req.product : Windows 10 or later.
 ---
 

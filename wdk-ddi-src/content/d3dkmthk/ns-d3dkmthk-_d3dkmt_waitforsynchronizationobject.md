@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmthk._D3DKMT_WAITFORSYNCHRONIZATIONOBJECT
-title : _D3DKMT_WAITFORSYNCHRONIZATIONOBJECT
+title : "_D3DKMT_WAITFORSYNCHRONIZATIONOBJECT"
 author : windows-driver-content
 description : The D3DKMT_WAITFORSYNCHRONIZATIONOBJECT structure contains information about the synchronization events that the D3DKMTWaitForSynchronizationObject function waits for to occur.
 old-location : display\d3dkmt_waitforsynchronizationobject.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 47d0330e-5413-4729-b103-c1a4d6c648e1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_WAITFORSYNCHRONIZATIONOBJECT structure [Display Devices], display.d3dkmt_waitforsynchronizationobject, OpenGL_Structs_5498c651-0ef6-4114-9821-de193980f879.xml, D3DKMT_WAITFORSYNCHRONIZATIONOBJECT, _D3DKMT_WAITFORSYNCHRONIZATIONOBJECT, d3dkmthk/D3DKMT_WAITFORSYNCHRONIZATIONOBJECT
+ms.keywords : "_D3DKMT_WAITFORSYNCHRONIZATIONOBJECT, OpenGL_Structs_5498c651-0ef6-4114-9821-de193980f879.xml, d3dkmthk/D3DKMT_WAITFORSYNCHRONIZATIONOBJECT, display.d3dkmt_waitforsynchronizationobject, D3DKMT_WAITFORSYNCHRONIZATIONOBJECT structure [Display Devices], D3DKMT_WAITFORSYNCHRONIZATIONOBJECT"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

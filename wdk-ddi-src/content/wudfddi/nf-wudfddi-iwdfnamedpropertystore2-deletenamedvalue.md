@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ce0953d3-054f-446b-9f69-58f4580740f3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.iwdfnamedpropertystore2_deletenamedvalue, IWDFNamedPropertyStore2::DeleteNamedValue, DeleteNamedValue, DeleteNamedValue method, DeleteNamedValue method, IWDFNamedPropertyStore2 interface, IWDFNamedPropertyStore2 interface, DeleteNamedValue method, UMDFPropertyStoreObjectRef_9363c14f-0ff0-4c2f-910a-916b3cb9d664.xml, umdf.iwdfnamedpropertystore2_deletenamedvalue, IWDFNamedPropertyStore2, wudfddi/IWDFNamedPropertyStore2::DeleteNamedValue
+ms.keywords : umdf.iwdfnamedpropertystore2_deletenamedvalue, DeleteNamedValue, IWDFNamedPropertyStore2::DeleteNamedValue, wudfddi/IWDFNamedPropertyStore2::DeleteNamedValue, UMDFPropertyStoreObjectRef_9363c14f-0ff0-4c2f-910a-916b3cb9d664.xml, wdf.iwdfnamedpropertystore2_deletenamedvalue, DeleteNamedValue method, IWDFNamedPropertyStore2 interface, IWDFNamedPropertyStore2 interface, DeleteNamedValue method, DeleteNamedValue method, IWDFNamedPropertyStore2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method

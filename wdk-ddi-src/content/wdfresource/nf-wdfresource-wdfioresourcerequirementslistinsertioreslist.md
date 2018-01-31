@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d70d9fed-22fd-4bcf-a4bf-fbd941559529
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfioresourcerequirementslistinsertioreslist, wdf.wdfioresourcerequirementslistinsertioreslist, PFN_WDFIORESOURCEREQUIREMENTSLISTINSERTIORESLIST, WdfIoResourceRequirementsListInsertIoResList, DFResourceObjectRef_193f75e1-39a1-4a93-947b-550e7ad99494.xml, wdfresource/WdfIoResourceRequirementsListInsertIoResList, WdfIoResourceRequirementsListInsertIoResList method
+ms.keywords : PFN_WDFIORESOURCEREQUIREMENTSLISTINSERTIORESLIST, WdfIoResourceRequirementsListInsertIoResList, WdfIoResourceRequirementsListInsertIoResList method, DFResourceObjectRef_193f75e1-39a1-4a93-947b-550e7ad99494.xml, kmdf.wdfioresourcerequirementslistinsertioreslist, wdfresource/WdfIoResourceRequirementsListInsertIoResList, wdf.wdfioresourcerequirementslistinsertioreslist
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -143,7 +143,7 @@ For more information about resource requirements lists, see <a href="https://doc
 | **Minimum UMDF version** |  |
 | **Header** | wdfresource.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also

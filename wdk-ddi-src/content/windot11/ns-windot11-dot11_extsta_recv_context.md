@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 517be11b-a15d-43ac-aefd-f425fa6f63e7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PDOT11_EXTSTA_RECV_CONTEXT, PDOT11_EXTSTA_RECV_CONTEXT, PDOT11_EXTSTA_RECV_CONTEXT structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_EXTSTA_RECV_CONTEXT, DOT11_EXTSTA_RECV_CONTEXT structure [Network Drivers Starting with Windows Vista], *PDOT11_EXTAP_RECV_CONTEXT, netvista.dot11_extsta_recv_context, DOT11_EXTAP_RECV_CONTEXT, Native_802.11_data_types_c3f69d82-f4b2-4a2a-b864-9b4eebc9e3ff.xml, windot11/PDOT11_EXTSTA_RECV_CONTEXT, DOT11_EXTSTA_RECV_CONTEXT"
+ms.keywords : Native_802.11_data_types_c3f69d82-f4b2-4a2a-b864-9b4eebc9e3ff.xml, windot11/PDOT11_EXTSTA_RECV_CONTEXT, PDOT11_EXTSTA_RECV_CONTEXT, PDOT11_EXTSTA_RECV_CONTEXT structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_extsta_recv_context, windot11/DOT11_EXTSTA_RECV_CONTEXT, *PDOT11_EXTAP_RECV_CONTEXT, *PDOT11_EXTSTA_RECV_CONTEXT, DOT11_EXTAP_RECV_CONTEXT, DOT11_EXTSTA_RECV_CONTEXT structure [Network Drivers Starting with Windows Vista], DOT11_EXTSTA_RECV_CONTEXT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_EXTSTA_RECV_CONTEXT, DOT11_EXTAP_RECV_CONTEXT, DOT11_EXTSTA_RECV_CONTEXT, *PDOT11_EXTAP_RECV_CONTEXT"
+req.typenames : "*PDOT11_EXTSTA_RECV_CONTEXT, DOT11_EXTSTA_RECV_CONTEXT, DOT11_EXTAP_RECV_CONTEXT, *PDOT11_EXTAP_RECV_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -80,6 +80,22 @@ The miniport driver must set the members of
 For more information about these members, see 
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
+
+#### Type
+
+This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
+
+
+#### Revision
+
+This member must be set to DOT11_EXTSTA_RECV_CONTEXT_REVISION_1.
+
+
+#### Size
+
+This member must be set to 
+       sizeof(DOT11_EXTSTA_RECV_CONTEXT).
+
 `lRSSI`
 
 The received signal strength indication (RSSI) value for the last received MPDU fragment of the
@@ -123,6 +139,29 @@ If the miniport driver is operating in ExtSTA mode, the driver must always set
      <b>uReceiveFlags</b> to zero.
 
 The following flag values are valid for the miniport driver if is operating in NetMon mode.
+
+
+
+
+#### DOT11_RECV_FLAG_RAW_PACKET
+
+If this bit is set, the packet contains the data as it was originally received by the 802.11
+       station. For more information about raw packets, see 
+       <mshelp:link keywords="netvista.indicating_raw_802_11_packets" tabindex="0">Indicating Raw 802.11
+       Packets</mshelp:link>.
+
+
+#### DOT11_RECV_FLAG_RAW_PACKET_FCS_FAILURE
+
+If this bit is set, the raw packet data was received with frame check sequence (FCS) failures.
+       
+<div class="alert"><b>Note</b>  The miniport driver must set DOT11_RECV_FLAG_RAW_PACKET when setting
+       DOT11_RECV_FLAG_RAW_PACKET_FCS_FAILURE.</div><div> </div>
+
+#### DOT11_RECV_FLAG_RAW_PACKET_TIMESTAMP
+
+If this bit is set, the NIC sets the timestamp information in the 
+       <b>ullTimestamp</b> member.
 
 `uSizeMediaSpecificInfo`
 
@@ -210,17 +249,17 @@ For more information about Native 802.11 receive operations, see
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndismindicatereceivenetbufferlists" tabindex="0"><b>
-   NdisMIndicateReceiveNetBufferLists</b></mshelp:link>
-
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
 
 <mshelp:link keywords="netvista.oid_dot11_data_rate_mapping_table" tabindex="0">
    OID_DOT11_DATA_RATE_MAPPING_TABLE</mshelp:link>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+
+<mshelp:link keywords="netvista.ndismindicatereceivenetbufferlists" tabindex="0"><b>
+   NdisMIndicateReceiveNetBufferLists</b></mshelp:link>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 

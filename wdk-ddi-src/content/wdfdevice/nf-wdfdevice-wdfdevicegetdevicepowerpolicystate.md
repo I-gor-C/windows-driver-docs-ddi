@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3a4aab60-6568-4017-acad-ca643cb4d661
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceGetDevicePowerPolicyState, DFDeviceObjectGeneralRef_34dd5376-7889-4900-bcd9-65ad9ff732e2.xml, wdf.wdfdevicegetdevicepowerpolicystate, WdfDeviceGetDevicePowerPolicyState method, PFN_WDFDEVICEGETDEVICEPOWERPOLICYSTATE, wdfdevice/WdfDeviceGetDevicePowerPolicyState, kmdf.wdfdevicegetdevicepowerpolicystate
+ms.keywords : kmdf.wdfdevicegetdevicepowerpolicystate, wdf.wdfdevicegetdevicepowerpolicystate, PFN_WDFDEVICEGETDEVICEPOWERPOLICYSTATE, WdfDeviceGetDevicePowerPolicyState method, wdfdevice/WdfDeviceGetDevicePowerPolicyState, DFDeviceObjectGeneralRef_34dd5376-7889-4900-bcd9-65ad9ff732e2.xml, WdfDeviceGetDevicePowerPolicyState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,16 +81,16 @@ The <b>WdfDeviceGetDevicePowerPolicyState</b> method returns a meaningful value 
 | **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevstatenormalize.md">WdfDevStateNormalize</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepowerstate.md">WdfDeviceGetDevicePowerState</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepnpstate.md">WdfDeviceGetDevicePnpState</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepowerstate.md">WdfDeviceGetDevicePowerState</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f1a38276-4964-422d-9b3c-8450b1028f27
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfcmresourcelistgetcount, wdfresource/WdfCmResourceListGetCount, PFN_WDFCMRESOURCELISTGETCOUNT, WdfCmResourceListGetCount, WdfCmResourceListGetCount method, DFResourceObjectRef_8161cc12-7f39-44f4-a4a1-28329911ac96.xml, wdf.wdfcmresourcelistgetcount
+ms.keywords : PFN_WDFCMRESOURCELISTGETCOUNT, wdf.wdfcmresourcelistgetcount, wdfresource/WdfCmResourceListGetCount, WdfCmResourceListGetCount, DFResourceObjectRef_8161cc12-7f39-44f4-a4a1-28329911ac96.xml, kmdf.wdfcmresourcelistgetcount, WdfCmResourceListGetCount method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,5 +79,5 @@ For more information about resource lists, see <a href="https://docs.microsoft.c
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfresource.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |

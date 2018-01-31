@@ -8,14 +8,14 @@ old-project : bltooth
 ms.assetid : c019f382-1ad3-4b08-a254-ae803e2b6bc6
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : sdplib/SdpCreateNodeTree, SdpCreateNodeTree function [Bluetooth Devices], bth_funcs_95027cd6-7f0b-48e1-a574-990754e28e74.xml, SdpCreateNodeTree, bltooth.sdpcreatenodetree
+ms.keywords : bth_funcs_95027cd6-7f0b-48e1-a574-990754e28e74.xml, SdpCreateNodeTree, SdpCreateNodeTree function [Bluetooth Devices], bltooth.sdpcreatenodetree, sdplib/SdpCreateNodeTree
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
 req.header : sdplib.h
 req.include-header : BthSdpddi.h
 req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
@@ -78,7 +78,7 @@ When an SDP tree is no longer needed, the Bluetooth profile driver should destro
     <a href="..\sdplib\nf-sdplib-sdpfreetree.md">SdpFreeTree</a> function. 
     <b>SdpFreeTree</b> frees the root node and all child nodes that have been attached to it. Individual 
     <a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a> structures can be freed by calling the 
-    <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> driver support routine as long as they
+    <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> driver support routine as long as they
     are no longer part of a tree or other list.
 
 Bluetooth profile drivers can obtain a pointer to this function through the BTHDDI_SDP_NODE_INTERFACE
@@ -93,20 +93,20 @@ Bluetooth profile drivers can obtain a pointer to this function through the BTHD
 | **Minimum UMDF version** |  |
 | **Header** | sdplib.h (include BthSdpddi.h) |
 | **Library** |  |
-| **IRQL** | <= PASSIVE_LEVEL |
+| **IRQL** | "<= PASSIVE_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
+<a href="..\sdpnode\ns-sdpnode-_sdp_tree_root_node.md">SDP_TREE_ROOT_NODE</a>
 
 <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_node_interface.md">BTHDDI_SDP_NODE_INTERFACE</a>
 
-<a href="..\sdpnode\ns-sdpnode-_sdp_tree_root_node.md">SDP_TREE_ROOT_NODE</a>
+<a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
 
 <a href="..\sdplib\nf-sdplib-sdpfreetree.md">SdpFreeTree</a>
 
-<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
+<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
 
  
 

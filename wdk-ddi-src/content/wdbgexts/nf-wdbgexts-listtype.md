@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 5c250438-8805-4f45-b08f-65ec87b3e61a
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.listtype, ListType function [Windows Debugging], WdbgExts_Ref_aa50fe48-2a66-4d5e-aec7-d225966cfab2.xml, ListType, wdbgexts/ListType
+ms.keywords : WdbgExts_Ref_aa50fe48-2a66-4d5e-aec7-d225966cfab2.xml, ListType, wdbgexts/ListType, debugger.listtype, ListType function [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -64,7 +64,14 @@ Specifies the name of the type of each entry in the linked list.
 
 `Address`
 
+#### If ListByFieldAddress is zero:
 
+Specifies the address in the target's memory of the first entry in the linked list.
+
+
+#### If ListByFieldAddress is 1:
+
+Specifies the address in the target's memory of the member of the first entry that points to the next entry.
 
 `ListByFieldAddress`
 

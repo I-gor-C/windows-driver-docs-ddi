@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : AC0811C9-8746-40F4-801E-6A1567ABDE0B
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltReleaseContextsEx routine [Installable File System Drivers], FltReleaseContextsEx, ifsk.fltreleasecontextsex, fltkernel/FltReleaseContextsEx
+ms.keywords : ifsk.fltreleasecontextsex, fltkernel/FltReleaseContextsEx, FltReleaseContextsEx, FltReleaseContextsEx routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -94,13 +94,13 @@ When each context's reference count reaches zero, the context is freed immediate
 
 <a href="..\fltkernel\nf-fltkernel-fltgetcontextsex.md">FltGetContextsEx</a>
 
-<a href="..\fltkernel\ns-fltkernel-_flt_related_contexts_ex.md">FLT_RELATED_CONTEXTS_EX</a>
-
-<a href="..\fltkernel\ns-fltkernel-_flt_context_registration.md">FLT_CONTEXT_REGISTRATION</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+
+<a href="..\fltkernel\ns-fltkernel-_flt_context_registration.md">FLT_CONTEXT_REGISTRATION</a>
+
+<a href="..\fltkernel\ns-fltkernel-_flt_related_contexts_ex.md">FLT_RELATED_CONTEXTS_EX</a>
 
  
 

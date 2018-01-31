@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c7d346ab-6990-4636-bafd-2e448a937f3b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlInsertElementGenericTableFullAvl, ntddk/RtlInsertElementGenericTableFullAvl, RtlInsertElementGenericTableFullAvl routine [Installable File System Drivers], ifsk.rtlinsertelementgenerictablefullavl, rtlref_425ca8ff-1fa8-4bdf-84ea-a8935cf0df59.xml
+ms.keywords : ntddk/RtlInsertElementGenericTableFullAvl, ifsk.rtlinsertelementgenerictablefullavl, RtlInsertElementGenericTableFullAvl, RtlInsertElementGenericTableFullAvl routine [Installable File System Drivers], rtlref_425ca8ff-1fa8-4bdf-84ea-a8935cf0df59.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -76,6 +76,28 @@ On output, a value of <b>TRUE</b> means the insertion of the new element in the 
 `NodeOrParent`
 
 The search result of a previous call to <a href="..\ntddk\nf-ntddk-rtllookupelementgenerictablefullavl.md">RtlLookupElementGenericTableFullAvl</a>. This value indicates to the <b>RtlInsertElementGenericTableFullAvl</b> routine whether the tree is currently empty, or if not empty, whether to insert the new entry to the left or the right of the parent entry. The <i>SearchResult</i> parameter can have any of the following values:
+
+
+
+
+#### TableEmptyTree
+
+The tree was empty. The contents of <i>NodeOrParent</i> has <i>not</i> been altered.
+
+
+#### TableFoundNode
+
+The <b>RtlInsertElementGenericTableFullAvl</b> routine found a table entry whose key matches the data in <i>Buffer</i>. <i>NodeOrParent</i> contains a pointer to the matched entry.
+
+
+#### TableInsertAsLeft
+
+The <b>RtlInsertElementGenericTableFullAvl</b> routine did <i>not</i> find a table entry whose key matches the data in <i>Buffer</i>. If the entry that <b>RtlInsertElementGenericTableFullAvl</b> searched for were in the table, it would be the left child of the entry that <i>NodeOrParent</i> points to.
+
+
+#### TableInsertAsRight
+
+The <b>RtlInsertElementGenericTableFullAvl</b> routine did <i>not</i> find a table entry whose key matches the data in <i>Buffer</i>. If the entry that <b>RtlInsertElementGenericTableFullAvl</b> searched for were in the table, it would be the right child of the entry that <i>NodeOrParent</i> points to.
 
 `SearchResult`
 
@@ -127,14 +149,14 @@ The caller-supplied <i>CompareRoutine</i> or <i>AllocateRoutine</i> contains pag
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | < DISPATCH_LEVEL (see Remarks section) |
+| **IRQL** | "< DISPATCH_LEVEL (see Remarks section)" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTable</a>
-
 <a href="..\ntddk\nf-ntddk-rtldeleteelementgenerictable.md">RtlDeleteElementGenericTable</a>
+
+<a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTable</a>
 
  
 

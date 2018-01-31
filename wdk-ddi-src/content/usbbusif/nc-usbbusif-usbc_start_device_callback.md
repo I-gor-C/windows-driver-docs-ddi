@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : USBD_VERSION_INFORMATION, *PUSBD_VERSION_INFORMATION
+req.typenames : "*PUSBD_VERSION_INFORMATION, USBD_VERSION_INFORMATION"
 req.product : Windows 10 or later.
 ---
 

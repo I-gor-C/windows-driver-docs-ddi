@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 696d0870-966e-44ac-859e-d530dd6c76b8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisIfDeregisterInterface function [Network Drivers Starting with Windows Vista], netvista.ndisifderegisterinterface, ndis/NdisIfDeregisterInterface, NdisIfDeregisterInterface, net_if_functions_ref_dc1bdf3d-3cca-4d4a-b0f9-4bdef32bcdb0.xml
+ms.keywords : NdisIfDeregisterInterface function [Network Drivers Starting with Windows Vista], net_if_functions_ref_dc1bdf3d-3cca-4d4a-b0f9-4bdef32bcdb0.xml, netvista.ndisifderegisterinterface, NdisIfDeregisterInterface, ndis/NdisIfDeregisterInterface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -95,9 +95,9 @@ An interface provider calls the
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a>
-
 <a href="..\ndis\nf-ndis-ndisifregisterinterface.md">NdisIfRegisterInterface</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a>
 
  
 

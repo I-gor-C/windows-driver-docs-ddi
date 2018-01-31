@@ -28,14 +28,14 @@ req.assembly :
 req.type-library : 
 req.lib : Usbcamd2.lib
 req.dll : 
-req.irql : >= PASSIVE_LEVEL (See Remarks section)
+req.irql : ">= PASSIVE_LEVEL (See Remarks section)"
 topictype : 
 apitype : 
 apilocation : 
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
+req.typenames : "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
 req.product : Windows 10 or later.
 ---
 
@@ -143,7 +143,7 @@ This function may be called at IRQL &gt;= PASSIVE_LEVEL. If the function is call
 | **Minimum UMDF version** |  |
 | **Header** | usbcamdi.h (include Usbcamdi.h) |
 | **Library** |  |
-| **IRQL** | >= PASSIVE_LEVEL (See Remarks section) |
+| **IRQL** | ">= PASSIVE_LEVEL (See Remarks section)" |
 | **DDI compliance rules** |  |
 
 ## See Also

@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._DDICONTENTPROTECTIONCAPS
-title : _DDICONTENTPROTECTIONCAPS
+title : "_DDICONTENTPROTECTIONCAPS"
 author : windows-driver-content
 description : The DDICONTENTPROTECTIONCAPS structure describes a specific encryption and decode combination that the driver uses.
 old-location : display\ddicontentprotectioncaps.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d223712d-2c77-4bec-b8c0-d677d4caeac2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.ddicontentprotectioncaps, d3dumddi/DDICONTENTPROTECTIONCAPS, D3D_other_Structs_15111323-4ebe-49be-8ce6-d43a896533ee.xml, _DDICONTENTPROTECTIONCAPS, DDICONTENTPROTECTIONCAPS structure [Display Devices], DDICONTENTPROTECTIONCAPS
+ms.keywords : D3D_other_Structs_15111323-4ebe-49be-8ce6-d43a896533ee.xml, DDICONTENTPROTECTIONCAPS, display.ddicontentprotectioncaps, DDICONTENTPROTECTIONCAPS structure [Display Devices], _DDICONTENTPROTECTIONCAPS, d3dumddi/DDICONTENTPROTECTIONCAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -58,7 +58,17 @@ typedef struct _DDICONTENTPROTECTIONCAPS {
 
 
 
-A <b>NULL</b> value indicates that no encryption is used.
+A <b>NULL</b> value indicates that no encryption is used. 
+
+
+#### D3DCRYPTOTYPE_AES128_CTR
+
+A GUID that indicates the 128-bit AES-CRT block cipher.
+
+
+#### D3DCRYPTOTYPE_PROPRIETARY
+
+A GUID that indicates a proprietary encryption algorithm.
 
 `DecodeProfile`
 

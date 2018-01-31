@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : eed2ed36-c081-44c7-857b-d2a9f608a022
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfcollectionadd, WdfCollectionAdd method, wdf.wdfcollectionadd, wdfcollection/WdfCollectionAdd, WdfCollectionAdd, PFN_WDFCOLLECTIONADD, DFCollectionObjectRef_76895387-58f4-46fc-b5d0-244408fe57b9.xml
+ms.keywords : WdfCollectionAdd method, wdfcollection/WdfCollectionAdd, DFCollectionObjectRef_76895387-58f4-46fc-b5d0-244408fe57b9.xml, wdf.wdfcollectionadd, kmdf.wdfcollectionadd, WdfCollectionAdd, PFN_WDFCOLLECTIONADD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_CHILD_RETRIEVE_INFO, *PWDF_CHILD_RETRIEVE_INFO
+req.typenames : "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -105,7 +105,7 @@ For more information about object collections, see <a href="https://docs.microso
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfcollection.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also

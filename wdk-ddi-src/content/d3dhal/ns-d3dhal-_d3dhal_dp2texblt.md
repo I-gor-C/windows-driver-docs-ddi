@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dhal._D3DHAL_DP2TEXBLT
-title : _D3DHAL_DP2TEXBLT
+title : "_D3DHAL_DP2TEXBLT"
 author : windows-driver-content
 description : The D3DHAL_DP2TEXBLT structure is used for texture blts when D3dDrawPrimitives2 responds to the D3DDP2OP_TEXBLT command token.
 old-location : display\d3dhal_dp2texblt.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e240fb49-26e6-4d30-b579-03824ac8b67f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : LPD3DHAL_DP2TEXBLT, d3dhal/D3DHAL_DP2TEXBLT, d3dstrct_80dddffa-3403-4e1e-a1cc-1cbbfdad09a8.xml, d3dhal/LPD3DHAL_DP2TEXBLT, D3DHAL_DP2TEXBLT, _D3DHAL_DP2TEXBLT, D3DHAL_DP2TEXBLT structure [Display Devices], LPD3DHAL_DP2TEXBLT structure pointer [Display Devices], *LPD3DHAL_DP2TEXBLT, display.d3dhal_dp2texblt
+ms.keywords : "_D3DHAL_DP2TEXBLT, LPD3DHAL_DP2TEXBLT, d3dhal/D3DHAL_DP2TEXBLT, LPD3DHAL_DP2TEXBLT structure pointer [Display Devices], display.d3dhal_dp2texblt, d3dstrct_80dddffa-3403-4e1e-a1cc-1cbbfdad09a8.xml, D3DHAL_DP2TEXBLT, d3dhal/LPD3DHAL_DP2TEXBLT, D3DHAL_DP2TEXBLT structure [Display Devices], *LPD3DHAL_DP2TEXBLT"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

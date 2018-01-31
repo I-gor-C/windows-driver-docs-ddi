@@ -1,6 +1,6 @@
 ---
 UID : NS:ehstorbandmgmt._SET_BAND_METADATA_PARAMETERS
-title : _SET_BAND_METADATA_PARAMETERS
+title : "_SET_BAND_METADATA_PARAMETERS"
 author : windows-driver-content
 description : The metadata for a configured band is set to the parameters in a SET_BAND_METADATA_PARAMETERS structure. This structure is input for a IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA request.
 old-location : storage\set_band_metadata_parameters.htm
@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3FCCFFE1-C341-4C8D-8EEC-E07C7ECFC317
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.set_band_metadata_parameters, PSET_BAND_METADATA_PARAMETERS, ehstorbandmgmt/PSET_BAND_METADATA_PARAMETERS, *PSET_BAND_METADATA_PARAMETERS, SET_BAND_METADATA_PARAMETERS, ehstorbandmgmt/SET_BAND_METADATA_PARAMETERS, SET_BAND_METADATA_PARAMETERS structure [Storage Devices], PSET_BAND_METADATA_PARAMETERS structure pointer [Storage Devices], _SET_BAND_METADATA_PARAMETERS
+ms.keywords : "*PSET_BAND_METADATA_PARAMETERS, PSET_BAND_METADATA_PARAMETERS, storage.set_band_metadata_parameters, _SET_BAND_METADATA_PARAMETERS, ehstorbandmgmt/PSET_BAND_METADATA_PARAMETERS, SET_BAND_METADATA_PARAMETERS structure [Storage Devices], SET_BAND_METADATA_PARAMETERS, PSET_BAND_METADATA_PARAMETERS structure pointer [Storage Devices], ehstorbandmgmt/SET_BAND_METADATA_PARAMETERS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -77,6 +77,16 @@ The offset, in bytes, of an  <b> AUTH_KEY</b> structure containing the authoriza
 
 To specify a default authentication key to the band, set   <b>AuthKeyOffset</b> = <b>EHSTOR_BANDMGR_NO_KEY</b>.
 
+
+#### KeySize
+
+Size of the key, in bytes, of the key data at <b>Key</b>. If <b>KeySize</b> is set to 0, a default key is used.
+
+
+#### Key
+
+A variable-length byte array that contains the key data.
+
 `BandId`
 
 The identifier of a single band to return information for. <b>BandSize</b> must be 0 when a single band is selected  with <b>BandId.</b> To use <b>BandStart</b> and <b>BandSize</b> instead of <b>BandId</b> to select a band, set <b>BandId</b> = (ULONG) –1.
@@ -120,11 +130,11 @@ The new metadata to set for the band is included in the system buffer for  the <
 
 ## See Also
 
-<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_management_capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>
+<a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_set_band_metadata.md">IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA</a>
 
 <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_query_capabilities.md">IOCTL_EHSTOR_BANDMGMT_QUERY_CAPABILITIES</a>
 
-<a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_set_band_metadata.md">IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA</a>
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_management_capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>
 
  
 

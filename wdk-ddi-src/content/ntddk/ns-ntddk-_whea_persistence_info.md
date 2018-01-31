@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddk._WHEA_PERSISTENCE_INFO
-title : _WHEA_PERSISTENCE_INFO
+title : "_WHEA_PERSISTENCE_INFO"
 author : windows-driver-content
 description : The WHEA_PERSISTENCE_INFO union describes data that is used by the error record persistence interface for storing an error record.
 old-location : whea\whea_persistence_info.htm
@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : ab429d1b-0b4d-4897-b5f0-73113d16758e
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ntddk/WHEA_PERSISTENCE_INFO, PWHEA_PERSISTENCE_INFO union pointer [WHEA Drivers and Applications], PWHEA_PERSISTENCE_INFO, _WHEA_PERSISTENCE_INFO, whearef_0c5f7bbf-fc55-4667-b97a-9b28ec014bb5.xml, WHEA_PERSISTENCE_INFO, whea.whea_persistence_info, *PWHEA_PERSISTENCE_INFO, WHEA_PERSISTENCE_INFO union [WHEA Drivers and Applications], ntddk/PWHEA_PERSISTENCE_INFO
+ms.keywords : whea.whea_persistence_info, WHEA_PERSISTENCE_INFO, PWHEA_PERSISTENCE_INFO union pointer [WHEA Drivers and Applications], WHEA_PERSISTENCE_INFO union [WHEA Drivers and Applications], whearef_0c5f7bbf-fc55-4667-b97a-9b28ec014bb5.xml, PWHEA_PERSISTENCE_INFO, ntddk/WHEA_PERSISTENCE_INFO, _WHEA_PERSISTENCE_INFO, *PWHEA_PERSISTENCE_INFO, ntddk/PWHEA_PERSISTENCE_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_PERSISTENCE_INFO, WHEA_PERSISTENCE_INFO"
+req.typenames : WHEA_PERSISTENCE_INFO, *PWHEA_PERSISTENCE_INFO
 ---
 
 # _WHEA_PERSISTENCE_INFO structure

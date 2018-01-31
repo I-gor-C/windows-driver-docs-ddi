@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2167504e-ca92-4427-9101-04a2c2bf66df
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfWmiInstanceDeregister method, WdfWmiInstanceDeregister, PFN_WDFWMIINSTANCEDEREGISTER, wdfwmi/WdfWmiInstanceDeregister, DFWMIRef_4e04e7da-3a14-4bd4-a430-8f5f3624b61a.xml, wdf.wdfwmiinstancederegister, kmdf.wdfwmiinstancederegister
+ms.keywords : DFWMIRef_4e04e7da-3a14-4bd4-a430-8f5f3624b61a.xml, wdfwmi/WdfWmiInstanceDeregister, WdfWmiInstanceDeregister method, wdf.wdfwmiinstancederegister, kmdf.wdfwmiinstancederegister, WdfWmiInstanceDeregister, PFN_WDFWMIINSTANCEDEREGISTER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,14 +82,14 @@ For more information about the <b>WdfWmiInstanceDeregister</b> method, see <a hr
 | **Minimum UMDF version** |  |
 | **Header** | wdfwmi.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancecreate.md">WdfWmiInstanceCreate</a>
-
 <a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstanceregister.md">WdfWmiInstanceRegister</a>
+
+<a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancecreate.md">WdfWmiInstanceCreate</a>
 
  
 

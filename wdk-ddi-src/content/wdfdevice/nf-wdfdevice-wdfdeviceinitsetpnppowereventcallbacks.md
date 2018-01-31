@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ace53515-0e8a-487d-abf7-caaa09478ed5
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceInitSetPnpPowerEventCallbacks method, kmdf.wdfdeviceinitsetpnppowereventcallbacks, wdfdevice/WdfDeviceInitSetPnpPowerEventCallbacks, PFN_WDFDEVICEINITSETPNPPOWEREVENTCALLBACKS, DFDeviceObjectGeneralRef_6a2f152e-b1ee-492e-a986-9c1ea925ff24.xml, wdf.wdfdeviceinitsetpnppowereventcallbacks, WdfDeviceInitSetPnpPowerEventCallbacks
+ms.keywords : PFN_WDFDEVICEINITSETPNPPOWEREVENTCALLBACKS, WdfDeviceInitSetPnpPowerEventCallbacks method, DFDeviceObjectGeneralRef_6a2f152e-b1ee-492e-a986-9c1ea925ff24.xml, WdfDeviceInitSetPnpPowerEventCallbacks, kmdf.wdfdeviceinitsetpnppowereventcallbacks, wdfdevice/WdfDeviceInitSetPnpPowerEventCallbacks, wdf.wdfdeviceinitsetpnppowereventcallbacks
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,7 +84,7 @@ For more information about calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicec
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, DrvAckIoStop, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI |
 
 ## See Also

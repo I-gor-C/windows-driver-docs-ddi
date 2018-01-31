@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddk._WHEA_XPF_PROCINFO_VALIDBITS
-title : _WHEA_XPF_PROCINFO_VALIDBITS
+title : "_WHEA_XPF_PROCINFO_VALIDBITS"
 author : windows-driver-content
 description : The WHEA_XPF_PROCINFO_VALIDBITS union describes which members of a WHEA_XPF_PROCINFO structure contain valid data.
 old-location : whea\whea_xpf_procinfo_validbits.htm
@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : ca0eef79-d990-4a82-b2d6-a51e3790cfc2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : WHEA_XPF_PROCINFO_VALIDBITS union [WHEA Drivers and Applications], WHEA_XPF_PROCINFO_VALIDBITS, _WHEA_XPF_PROCINFO_VALIDBITS, whearef_6ebbdab8-0590-4479-a8ab-ea9bacf69399.xml, *PWHEA_XPF_PROCINFO_VALIDBITS, PWHEA_XPF_PROCINFO_VALIDBITS, PWHEA_XPF_PROCINFO_VALIDBITS union pointer [WHEA Drivers and Applications], whea.whea_xpf_procinfo_validbits, ntddk/PWHEA_XPF_PROCINFO_VALIDBITS, ntddk/WHEA_XPF_PROCINFO_VALIDBITS
+ms.keywords : "_WHEA_XPF_PROCINFO_VALIDBITS, whearef_6ebbdab8-0590-4479-a8ab-ea9bacf69399.xml, WHEA_XPF_PROCINFO_VALIDBITS union [WHEA Drivers and Applications], ntddk/PWHEA_XPF_PROCINFO_VALIDBITS, WHEA_XPF_PROCINFO_VALIDBITS, PWHEA_XPF_PROCINFO_VALIDBITS union pointer [WHEA Drivers and Applications], ntddk/WHEA_XPF_PROCINFO_VALIDBITS, PWHEA_XPF_PROCINFO_VALIDBITS, whea.whea_xpf_procinfo_validbits, *PWHEA_XPF_PROCINFO_VALIDBITS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9b916114-85aa-4ab7-acaa-6b19d0a4d776
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : avfunc_e17d5ad8-b0e3-4b5e-ab4c-a552f1650ed4.xml, KsPinAttemptProcessing function [Streaming Media Devices], KsPinAttemptProcessing, stream.kspinattemptprocessing, ks/KsPinAttemptProcessing
+ms.keywords : KsPinAttemptProcessing function [Streaming Media Devices], KsPinAttemptProcessing, stream.kspinattemptprocessing, ks/KsPinAttemptProcessing, avfunc_e17d5ad8-b0e3-4b5e-ab4c-a552f1650ed4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,18 +85,18 @@ The processing dispatch occurs either synchronously or asynchronously, and <i>on
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL (See Remarks) |
+| **IRQL** | "<=DISPATCH_LEVEL (See Remarks)" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksgatecapturethreshold.md">KsGateCaptureThreshold</a>
-
-<b>KSGATE</b>
+<a href="..\ks\nf-ks-ksfilterattemptprocessing.md">KsFilterAttemptProcessing</a>
 
 <a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a>
 
-<a href="..\ks\nf-ks-ksfilterattemptprocessing.md">KsFilterAttemptProcessing</a>
+<a href="..\ks\nf-ks-ksgatecapturethreshold.md">KsGateCaptureThreshold</a>
+
+<b>KSGATE</b>
 
  
 

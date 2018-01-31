@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dukmdt._D3DDDI_SYNCHRONIZATIONOBJECTINFO2
-title : _D3DDDI_SYNCHRONIZATIONOBJECTINFO2
+title : "_D3DDDI_SYNCHRONIZATIONOBJECTINFO2"
 author : windows-driver-content
 description : The D3DDDI_SYNCHRONIZATIONOBJECTINFO2 structure contains information about a second-generation synchronization object.
 old-location : display\d3dddi_synchronizationobjectinfo2.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : dc1c6a67-320c-41f8-91ad-cdbcde191a81
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_SYNCHRONIZATIONOBJECTINFO2, D3DDDI_SYNCHRONIZATIONOBJECTINFO2 structure [Display Devices], D3D_other_Structs_0efa3a96-3e04-4232-bf7a-53c3f038d6ec.xml, _D3DDDI_SYNCHRONIZATIONOBJECTINFO2, display.d3dddi_synchronizationobjectinfo2, d3dukmdt/D3DDDI_SYNCHRONIZATIONOBJECTINFO2
+ms.keywords : D3DDDI_SYNCHRONIZATIONOBJECTINFO2 structure [Display Devices], d3dukmdt/D3DDDI_SYNCHRONIZATIONOBJECTINFO2, D3D_other_Structs_0efa3a96-3e04-4232-bf7a-53c3f038d6ec.xml, display.d3dddi_synchronizationobjectinfo2, _D3DDDI_SYNCHRONIZATIONOBJECTINFO2, D3DDDI_SYNCHRONIZATIONOBJECTINFO2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -113,13 +113,13 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECTINFO2 {
 
 ## See Also
 
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_synchronizationobject_type.md">D3DDDI_SYNCHRONIZATIONOBJECT_TYPE</a>
-
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_synchronizationobject_flags.md">D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatesynchronizationobject2.md">D3DKMTCreateSynchronizationObject2</a>
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createsynchronizationobject2.md">D3DKMT_CREATESYNCHRONIZATIONOBJECT2</a>
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatesynchronizationobject2.md">D3DKMTCreateSynchronizationObject2</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_synchronizationobject_flags.md">D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS</a>
+
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_synchronizationobject_type.md">D3DDDI_SYNCHRONIZATIONOBJECT_TYPE</a>
 
  
 

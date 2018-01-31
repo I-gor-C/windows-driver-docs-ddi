@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ffe91b9a-3b74-4dd9-b23d-096f1992485e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.iwdfdevice2_assigns0idlesettings, AssignS0IdleSettings, wudfddi/IWDFDevice2::AssignS0IdleSettings, AssignS0IdleSettings method, IWDFDevice2 interface, IWDFDevice2 interface, AssignS0IdleSettings method, IWDFDevice2::AssignS0IdleSettings, UMDFDeviceObjectRef_337ed405-40bd-4162-ad50-3ee59e4e6c73.xml, umdf.iwdfdevice2_assigns0idlesettings, IWDFDevice2, AssignS0IdleSettings method
+ms.keywords : AssignS0IdleSettings, AssignS0IdleSettings method, IWDFDevice2 interface, wudfddi/IWDFDevice2::AssignS0IdleSettings, AssignS0IdleSettings method, UMDFDeviceObjectRef_337ed405-40bd-4162-ad50-3ee59e4e6c73.xml, IWDFDevice2 interface, AssignS0IdleSettings method, umdf.iwdfdevice2_assigns0idlesettings, IWDFDevice2::AssignS0IdleSettings, IWDFDevice2, wdf.iwdfdevice2_assigns0idlesettings
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -198,9 +198,9 @@ For more information about supporting a device's idle capabilities, see <a href=
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/D020B8AA-7353-47E1-A111-82BFE6F5F03D">IWDFDevice3::AssignS0IdleSettingsEx</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a>
+
+<a href="https://msdn.microsoft.com/D020B8AA-7353-47E1-A111-82BFE6F5F03D">IWDFDevice3::AssignS0IdleSettingsEx</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556923">IWDFDevice2::AssignSxWakeSettings</a>
 

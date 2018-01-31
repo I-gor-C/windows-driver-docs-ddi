@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e6a8b2ca-7e9d-410a-b44b-7e873b6e5833
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltApiRef_e_to_o_ec80528f-12a7-4d31-9bd8-92050a16bd85.xml, ifsk.fltgetrequestorprocessidex, FltGetRequestorProcessIdEx, fltkernel/FltGetRequestorProcessIdEx, FltGetRequestorProcessIdEx routine [Installable File System Drivers]
+ms.keywords : ifsk.fltgetrequestorprocessidex, FltApiRef_e_to_o_ec80528f-12a7-4d31-9bd8-92050a16bd85.xml, fltkernel/FltGetRequestorProcessIdEx, FltGetRequestorProcessIdEx, FltGetRequestorProcessIdEx routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,14 +74,14 @@ The <b>FltGetRequestorProcessIdEx</b> routine returns the kernel-mode handle for
 | **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltgetrequestorprocess.md">FltGetRequestorProcess</a>
+
+<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
 
  
 

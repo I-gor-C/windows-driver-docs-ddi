@@ -1,6 +1,6 @@
 ---
 UID : NS:ksmedia._tagKSTOPOLOGY_ENDPOINTIDPAIR
-title : _tagKSTOPOLOGY_ENDPOINTIDPAIR
+title : "_tagKSTOPOLOGY_ENDPOINTIDPAIR"
 author : windows-driver-content
 description : The KSTOPOLOGY_ENDPOINTIDPAIR structure specifies the render and capture endpoint IDs to use for the KSPROPERTY_TELEPHONY_ENDPOINTIDPAIR property.
 old-location : audio\kstopology_endpointidpair.htm
@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 556B56A6-1EF4-406B-A9FB-901C0CF24BC0
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : KSTOPOLOGY_ENDPOINTIDPAIR structure [Audio Devices], audio.kstopology_endpointidpair, ksmedia/PKSTOPOLOGY_ENDPOINTIDPAIR, PKSTOPOLOGY_ENDPOINTIDPAIR, *PKSTOPOLOGY_ENDPOINTIDPAIR, _tagKSTOPOLOGY_ENDPOINTIDPAIR, KSTOPOLOGY_ENDPOINTIDPAIR, ksmedia/KSTOPOLOGY_ENDPOINTIDPAIR, PKSTOPOLOGY_ENDPOINTIDPAIR structure pointer [Audio Devices]
+ms.keywords : "_tagKSTOPOLOGY_ENDPOINTIDPAIR, KSTOPOLOGY_ENDPOINTIDPAIR, audio.kstopology_endpointidpair, *PKSTOPOLOGY_ENDPOINTIDPAIR, PKSTOPOLOGY_ENDPOINTIDPAIR structure pointer [Audio Devices], ksmedia/KSTOPOLOGY_ENDPOINTIDPAIR, PKSTOPOLOGY_ENDPOINTIDPAIR, ksmedia/PKSTOPOLOGY_ENDPOINTIDPAIR, KSTOPOLOGY_ENDPOINTIDPAIR structure [Audio Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

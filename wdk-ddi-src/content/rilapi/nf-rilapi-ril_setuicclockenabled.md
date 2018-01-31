@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : eb422fec-8cc3-42b8-9caf-21fd135df7a1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_SetUiccLockEnabled method [Network Drivers Starting with Windows Vista], netvista.ril_setuicclockenabled, rilapi/RIL_SetUiccLockEnabled, RIL_SetUiccLockEnabled
+ms.keywords : netvista.ril_setuicclockenabled, RIL_SetUiccLockEnabled method [Network Drivers Starting with Windows Vista], RIL_SetUiccLockEnabled, rilapi/RIL_SetUiccLockEnabled
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
+req.typenames : "*PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER"
 req.product : Windows 10 or later.
 ---
 

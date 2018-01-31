@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c3e209b5-9925-4911-8c42-0f15c1c710be
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlFastLock, ifsk.fsrtlfastlock, FsRtlFastLock function [Installable File System Drivers], fsrtlref_c60db87b-ac5a-4c60-83f2-7381e0156806.xml, ntifs/FsRtlFastLock
+ms.keywords : ntifs/FsRtlFastLock, FsRtlFastLock function [Installable File System Drivers], fsrtlref_c60db87b-ac5a-4c60-83f2-7381e0156806.xml, FsRtlFastLock, ifsk.fsrtlfastlock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -126,14 +126,14 @@ A return value of <b>TRUE</b> indicates that the IO_STATUS_BLOCK structure point
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlallocatefilelock~r1.md">FsRtlAllocateFileLock</a>
-
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializefilelock~r2.md">FsRtlInitializeFileLock</a>
+
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlallocatefilelock~r1.md">FsRtlAllocateFileLock</a>
 
  
 

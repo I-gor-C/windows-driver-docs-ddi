@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5c716207-b093-499a-8fad-344b5ac51e25
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisClGetProtocolVcContextFromTapiCallId, condis_client_ref_0f7c98a1-306b-40b4-b84c-0e624c936e90.xml, netvista.ndisclgetprotocolvccontextfromtapicallid, NdisClGetProtocolVcContextFromTapiCallId function [Network Drivers Starting with Windows Vista], ndis/NdisClGetProtocolVcContextFromTapiCallId
+ms.keywords : NdisClGetProtocolVcContextFromTapiCallId function [Network Drivers Starting with Windows Vista], NdisClGetProtocolVcContextFromTapiCallId, netvista.ndisclgetprotocolvccontextfromtapicallid, condis_client_ref_0f7c98a1-306b-40b4-b84c-0e624c936e90.xml, ndis/NdisClGetProtocolVcContextFromTapiCallId
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -136,11 +136,11 @@ See the
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
 <a href="..\ndis\nf-ndis-ndiscogettapicallid.md">NdisCoGetTapiCallId</a>
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 55d6d93b-c20f-435b-ba99-2df26bd17240
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiamindr_lh/IWiaMiniDrv::drvNotifyPnpEvent, MiniDrv_7684a7e5-7ca5-4d20-a1a8-fc38400815ce.xml, drvNotifyPnpEvent method [Imaging Devices], IWiaMiniDrv interface, IWiaMiniDrv::drvNotifyPnpEvent, image.iwiaminidrv_drvnotifypnpevent, IWiaMiniDrv interface [Imaging Devices], drvNotifyPnpEvent method, drvNotifyPnpEvent method [Imaging Devices], drvNotifyPnpEvent, IWiaMiniDrv
+ms.keywords : wiamindr_lh/IWiaMiniDrv::drvNotifyPnpEvent, MiniDrv_7684a7e5-7ca5-4d20-a1a8-fc38400815ce.xml, drvNotifyPnpEvent method [Imaging Devices], IWiaMiniDrv interface, IWiaMiniDrv::drvNotifyPnpEvent, IWiaMiniDrv, drvNotifyPnpEvent method [Imaging Devices], image.iwiaminidrv_drvnotifypnpevent, IWiaMiniDrv interface [Imaging Devices], drvNotifyPnpEvent method, drvNotifyPnpEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
+req.typenames : "*PSCANWINDOW, SCANWINDOW"
 req.product : Windows 10 or later.
 ---
 
@@ -92,9 +92,9 @@ If this method is called with *<i>pEventGuid</i> set to WIA_EVENT_CANCEL_IO devi
 
 ## See Also
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543977">IWiaMiniDrv::drvGetCapabilities</a>
+
+<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
 
  
 

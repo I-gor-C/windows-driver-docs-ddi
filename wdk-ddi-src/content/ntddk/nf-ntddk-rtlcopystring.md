@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5295be15-b42e-4e5b-8257-434fb9ed6c83
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlCopyString routine [Kernel-Mode Driver Architecture], ntddk/RtlCopyString, RtlCopyString, k109_c68983f1-ec02-405f-a3a6-d1f3884fe303.xml, kernel.rtlcopystring
+ms.keywords : ntddk/RtlCopyString, k109_c68983f1-ec02-405f-a3a6-d1f3884fe303.xml, RtlCopyString, kernel.rtlcopystring, RtlCopyString routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

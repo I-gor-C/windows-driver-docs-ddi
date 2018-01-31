@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 8ea36895-4728-45ad-84f7-3517afd2327d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMCoDeactivateVcComplete, netvista.ndismcodeactivatevccomplete, NdisMCoDeactivateVcComplete function [Network Drivers Starting with Windows Vista], condis_miniport_ref_b4ad1f67-6e33-45ca-9d55-323aed8820be.xml, ndis/NdisMCoDeactivateVcComplete
+ms.keywords : netvista.ndismcodeactivatevccomplete, NdisMCoDeactivateVcComplete function [Network Drivers Starting with Windows Vista], ndis/NdisMCoDeactivateVcComplete, NdisMCoDeactivateVcComplete, condis_miniport_ref_b4ad1f67-6e33-45ca-9d55-323aed8820be.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -107,19 +107,19 @@ A call to
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCO_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiscmdeactivatevc.md">NdisCmDeactivateVc</a>
-
-<a href="..\ndis\nc-ndis-miniport_co_deactivate_vc.md">MiniportCoDeactivateVc</a>
+<mshelp:link keywords="netvista.protocolcmdeactivatevccomplete" tabindex="0"><i>
+   ProtocolCmDeactivateVcComplete</i></mshelp:link>
 
 <a href="..\ndis\nf-ndis-ndiscmactivatevc.md">NdisCmActivateVc</a>
 
-<mshelp:link keywords="netvista.protocolcmdeactivatevccomplete" tabindex="0"><i>
-   ProtocolCmDeactivateVcComplete</i></mshelp:link>
+<a href="..\ndis\nf-ndis-ndiscmdeactivatevc.md">NdisCmDeactivateVc</a>
+
+<a href="..\ndis\nc-ndis-miniport_co_deactivate_vc.md">MiniportCoDeactivateVc</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 14205476-3f58-4105-99a7-a3baa2eba033
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugEventCallbacksWide::ChangeEngineState, ChangeEngineState, IDebugEventCallbacksWide, debugger.idebugeventcallbackswide_changeenginestate, IDebugEventCallbacksWide::ChangeEngineState, ChangeEngineState method [Windows Debugging], IDebugEventCallbacksWide interface, IDebugEventCallbacksWide interface [Windows Debugging], ChangeEngineState method, ChangeEngineState method [Windows Debugging]
+ms.keywords : ChangeEngineState method [Windows Debugging], IDebugEventCallbacksWide interface, ChangeEngineState method [Windows Debugging], IDebugEventCallbacksWide interface [Windows Debugging], ChangeEngineState method, dbgeng/IDebugEventCallbacksWide::ChangeEngineState, IDebugEventCallbacksWide::ChangeEngineState, debugger.idebugeventcallbackswide_changeenginestate, ChangeEngineState, IDebugEventCallbacksWide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -216,6 +216,83 @@ Text replacements have changed.
 `Argument`
 
 Provides additional information about the change to the engine's state.  If more than one bit flag is set in the <i>Flags</i> parameter, the <i>Argument</i> parameter is not used.  Otherwise, the interpretation of the value of <i>Argument</i> depends on the value of <i>Flags</i>:
+
+
+
+
+#### DEBUG_CES_CURRENT_THREAD
+
+The value of <i>Argument</i> is the current engine thread ID or--if there is no current thread--DEBUG_ANY_ID.  For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.
+
+
+#### DEBUG_CES_EFFECTIVE_PROCESSOR
+
+The value of <i>Argument</i> is the type of the effective processor.
+
+
+#### DEBUG_CES_BREAKPOINTS
+
+The value of <i>Argument</i> is the breakpoint ID of the breakpoint that was changed or--if more than one breakpoint was changed--DEBUG_ANY_ID.  For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff538928">Breakpoints</a>.
+
+
+#### DEBUG_CES_CODE_LEVEL
+
+The value of <i>Argument</i> is the code interpretation level.
+
+
+#### DEBUG_CES_EXECUTION_STATUS
+
+The value of <i>Argument</i> is the execution status (as described in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541651">DEBUG_STATUS_XXX</a> topic) possibly combined with the bit flag DEBUG_STATUS_INSIDE_WAIT. DEBUG_STATUS_INSIDE_WAIT is set when a <b>WaitForEvent</b> call is pending. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541386">Debugging Session and Execution Model</a>.
+
+
+#### DEBUG_CES_ENGINE_OPTIONS
+
+The value of <i>Argument</i> is the engine options. 
+
+
+#### DEBUG_CES_LOG_FILE
+
+The value of <i>Argument</i> is <b>TRUE</b> if the log file was opened and <b>FALSE</b> if the log file was closed.
+
+
+#### DEBUG_CES_RADIX
+
+The value of <i>Argument</i> is the default radix.
+
+
+#### DEBUG_CES_EVENT_FILTERS
+
+The value of <i>Argument</i> is the index of the event filter that was changed or--if more than one event filter was changed--DEBUG_ANY_ID.
+
+
+#### DEBUG_CES_PROCESS_OPTIONS
+
+The value of <i>Argument</i> is the process options for the current process.
+
+
+#### DEBUG_CES_EXTENSIONS
+
+The value of <i>Argument</i> is zero.
+
+
+#### DEBUG_CES_SYSTEMS
+
+The value of <i>Argument</i> is the target ID of the target that was added or--if a target was removed--DEBUG_ANY_ID.
+
+
+#### DEBUG_CES_ASSEMBLE_OPTIONS
+
+The value of <i>Argument</i> is the assemble options.
+
+
+#### DEBUG_CES_EXPRESSION_SYNTAX
+
+The value of <i>Argument</i> is the default expression syntax.
+
+
+#### DEBUG_CES_TEXT_REPLACEMENTS
+
+The value of <i>Argument</i> is DEBUG_ANY_ID.
 
 
 ## Return Value

@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dukmdt._D3DDDI_ALLOCATIONLIST
-title : _D3DDDI_ALLOCATIONLIST
+title : "_D3DDDI_ALLOCATIONLIST"
 author : windows-driver-content
 description : The D3DDDI_ALLOCATIONLIST structure describes information about an allocation specification that is used in direct memory access (DMA) buffering.
 old-location : display\d3dddi_allocationlist.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 167ceb16-d7b9-4657-84cd-f3b9de5e5267
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_ALLOCATIONLIST, display.d3dddi_allocationlist, d3dukmdt/D3DDDI_ALLOCATIONLIST, _D3DDDI_ALLOCATIONLIST, D3DDDI_ALLOCATIONLIST structure [Display Devices], D3D_other_Structs_0e766b30-b39d-4107-8739-0b9290e7d489.xml
+ms.keywords : D3DDDI_ALLOCATIONLIST structure [Display Devices], _D3DDDI_ALLOCATIONLIST, display.d3dddi_allocationlist, D3DDDI_ALLOCATIONLIST, D3D_other_Structs_0e766b30-b39d-4107-8739-0b9290e7d489.xml, d3dukmdt/D3DDDI_ALLOCATIONLIST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -81,15 +81,15 @@ typedef struct _D3DDDI_ALLOCATIONLIST {
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a>
-
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_offer_priority.md">D3DDDI_OFFER_PRIORITY</a>
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdevice.md">CreateDevice</a>
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_render.md">D3DDDICB_RENDER</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a>
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createdevice.md">D3DDDIARG_CREATEDEVICE</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_render.md">D3DDDICB_RENDER</a>
 
  
 

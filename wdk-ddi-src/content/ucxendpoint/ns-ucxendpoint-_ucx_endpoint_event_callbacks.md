@@ -1,6 +1,6 @@
 ---
 UID : NS:ucxendpoint._UCX_ENDPOINT_EVENT_CALLBACKS
-title : _UCX_ENDPOINT_EVENT_CALLBACKS
+title : "_UCX_ENDPOINT_EVENT_CALLBACKS"
 author : windows-driver-content
 description : This structure provides a list of pointers to UCX endpoint event callback functions.
 old-location : buses\_ucx_endpoint_event_callbacks.htm
@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 93071B7B-74D8-44A2-984D-A6BABFC07BA3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UCX_ENDPOINT_EVENT_CALLBACKS, P_UCX_ENDPOINT_EVENT_CALLBACKS, *PUCX_ENDPOINT_EVENT_CALLBACKS, P_UCX_ENDPOINT_EVENT_CALLBACKS structure pointer [Buses], ucxendpoint/_UCX_ENDPOINT_EVENT_CALLBACKS, UCX_ENDPOINT_EVENT_CALLBACKS structure [Buses], buses._ucx_endpoint_event_callbacks, _UCX_ENDPOINT_EVENT_CALLBACKS, ucxendpoint/P_UCX_ENDPOINT_EVENT_CALLBACKS
+ms.keywords : ucxendpoint/P_UCX_ENDPOINT_EVENT_CALLBACKS, P_UCX_ENDPOINT_EVENT_CALLBACKS structure pointer [Buses], P_UCX_ENDPOINT_EVENT_CALLBACKS, UCX_ENDPOINT_EVENT_CALLBACKS, _UCX_ENDPOINT_EVENT_CALLBACKS, *PUCX_ENDPOINT_EVENT_CALLBACKS, UCX_ENDPOINT_EVENT_CALLBACKS structure [Buses], buses._ucx_endpoint_event_callbacks, ucxendpoint/_UCX_ENDPOINT_EVENT_CALLBACKS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UCX_ENDPOINT_EVENT_CALLBACKS, *PUCX_ENDPOINT_EVENT_CALLBACKS
+req.typenames : "*PUCX_ENDPOINT_EVENT_CALLBACKS, UCX_ENDPOINT_EVENT_CALLBACKS"
 req.product : Windows 10 or later.
 ---
 
@@ -122,9 +122,9 @@ The size in bytes of the structure.
 
 ## See Also
 
-<a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointinitseteventcallbacks.md">UcxEndpointInitSetEventCallbacks</a>
-
 <a href="..\ucxendpoint\nf-ucxendpoint-ucx_endpoint_event_callbacks_init.md">UCX_ENDPOINT_EVENT_CALLBACKS_INIT</a>
+
+<a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointinitseteventcallbacks.md">UcxEndpointInitSetEventCallbacks</a>
 
  
 

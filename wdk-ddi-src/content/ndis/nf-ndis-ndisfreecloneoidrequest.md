@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f610fdf7-5c0e-41e0-994b-6da575541fca
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisFreeCloneOidRequest, ndis_request_ref_450d80e2-3414-4c02-aca1-848c75f824a6.xml, NdisFreeCloneOidRequest function [Network Drivers Starting with Windows Vista], NdisFreeCloneOidRequest, netvista.ndisfreecloneoidrequest
+ms.keywords : ndis/NdisFreeCloneOidRequest, netvista.ndisfreecloneoidrequest, NdisFreeCloneOidRequest, ndis_request_ref_450d80e2-3414-4c02-aca1-848c75f824a6.xml, NdisFreeCloneOidRequest function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -87,7 +87,7 @@ An NDIS intermediate driver or filter driver calls
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_OID_Function |
 
 ## See Also

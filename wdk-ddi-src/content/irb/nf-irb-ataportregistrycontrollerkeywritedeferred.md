@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f4297e91-06ae-4c7a-87bc-12e3f5b0238c
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortRegistryControllerKeyWriteDeferred, AtaPortRegistryControllerKeyWriteDeferred routine [Storage Devices], storage.ataportregistrycontrollerkeywritedeferred, atartns_cd43ce27-787a-4ffb-99d5-de7f410c4b32.xml, irb/AtaPortRegistryControllerKeyWriteDeferred
+ms.keywords : storage.ataportregistrycontrollerkeywritedeferred, AtaPortRegistryControllerKeyWriteDeferred routine [Storage Devices], atartns_cd43ce27-787a-4ffb-99d5-de7f410c4b32.xml, AtaPortRegistryControllerKeyWriteDeferred, irb/AtaPortRegistryControllerKeyWriteDeferred
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -145,9 +145,9 @@ The buffer pointed to by <i>Buffer </i>must be allocated by using <a href="..\ir
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportregistryfreebuffer.md">AtaPortRegistryFreeBuffer</a>
-
 <a href="..\irb\nf-irb-ataportregistryallocatebuffer.md">AtaPortRegistryAllocateBuffer</a>
+
+<a href="..\irb\nf-irb-ataportregistryfreebuffer.md">AtaPortRegistryFreeBuffer</a>
 
  
 

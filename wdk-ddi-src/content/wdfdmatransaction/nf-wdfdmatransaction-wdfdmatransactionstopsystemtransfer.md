@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 55674946-A2DA-4695-8673-6BF3123FB5FC
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdmatransactionstopsystemtransfer, PFN_WDFDMATRANSACTIONSTOPSYSTEMTRANSFER, WdfDmaTransactionStopSystemTransfer method, kmdf.wdfdmatransactionstopsystemtransfer, WdfDmaTransactionStopSystemTransfer, wdfdmatransaction/WdfDmaTransactionStopSystemTransfer
+ms.keywords : kmdf.wdfdmatransactionstopsystemtransfer, WdfDmaTransactionStopSystemTransfer method, wdfdmatransaction/WdfDmaTransactionStopSystemTransfer, PFN_WDFDMATRANSACTIONSTOPSYSTEMTRANSFER, wdf.wdfdmatransactionstopsystemtransfer, WdfDmaTransactionStopSystemTransfer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_DMA_SYSTEM_PROFILE_CONFIG, *PWDF_DMA_SYSTEM_PROFILE_CONFIG
+req.typenames : "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
 req.product : Windows 10 or later.
 ---
 
@@ -91,7 +91,7 @@ If your driver calls this method on an operating system earlier than Windows 8,
 | **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 
 ## See Also

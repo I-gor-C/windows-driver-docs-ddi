@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 328f9ffe-67ae-4ba5-98e4-b3b00068eb0e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.mmisaddressvalid, k106_5f0349a5-5fdb-4263-b91a-d00667729901.xml, MmIsAddressValid, ntddk/MmIsAddressValid, MmIsAddressValid routine [Kernel-Mode Driver Architecture]
+ms.keywords : ntddk/MmIsAddressValid, MmIsAddressValid, kernel.mmisaddressvalid, MmIsAddressValid routine [Kernel-Mode Driver Architecture], k106_5f0349a5-5fdb-4263-b91a-d00667729901.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -75,7 +75,7 @@ Even if <b>MmIsAddressValid</b> returns <b>TRUE</b>, accessing the address can c
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

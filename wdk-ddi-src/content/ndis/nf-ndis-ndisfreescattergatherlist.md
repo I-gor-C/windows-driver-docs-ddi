@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 140be989-e578-4bfe-8b9e-56abb274933a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisFreeScatterGatherList function [Network Drivers Starting with Windows Vista], ndis/NdisFreeScatterGatherList, NdisFreeScatterGatherList, netvista.ndisfreescattergatherlist, ndis_shared_memory_ref_2376e740-d44c-4572-8731-7518d4765208.xml
+ms.keywords : ndis_shared_memory_ref_2376e740-d44c-4572-8731-7518d4765208.xml, ndis/NdisFreeScatterGatherList, NdisFreeScatterGatherList, netvista.ndisfreescattergatherlist, NdisFreeScatterGatherList function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -28,14 +28,14 @@ req.assembly :
 req.type-library : 
 req.lib : Ndis.lib
 req.dll : 
-req.irql : = DISPATCH_LEVEL
+req.irql : "= DISPATCH_LEVEL"
 topictype : 
 apitype : 
 apilocation : 
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -95,14 +95,14 @@ NDIS drivers call the
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | = DISPATCH_LEVEL |
+| **IRQL** | "= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_scatter_gather_list.md">SCATTER_GATHER_LIST</a>
-
 <a href="..\ndis\nf-ndis-ndisbuildscattergatherlist.md">NdisBuildScatterGatherList</a>
+
+<a href="..\wdm\ns-wdm-_scatter_gather_list.md">SCATTER_GATHER_LIST</a>
 
  
 

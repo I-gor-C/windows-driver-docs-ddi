@@ -1,6 +1,6 @@
 ---
 UID : NS:dbgeng._DEBUG_SPECIFIC_FILTER_PARAMETERS
-title : _DEBUG_SPECIFIC_FILTER_PARAMETERS
+title : "_DEBUG_SPECIFIC_FILTER_PARAMETERS"
 author : windows-driver-content
 description : The DEBUG_SPECIFIC_FILTER_PARAMETERS structure contains the parameters for a specific event filter.
 old-location : debugger\debug_specific_filter_parameters.htm
@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 06926380-aae5-4d9f-94e0-43098f8a0423
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : DEBUG_SPECIFIC_FILTER_PARAMETERS, dbgeng/DEBUG_SPECIFIC_FILTER_PARAMETERS, PDEBUG_SPECIFIC_FILTER_PARAMETERS, Structures_b0152b9b-4809-46c8-81a7-5f571720eca1.xml, *PDEBUG_SPECIFIC_FILTER_PARAMETERS, dbgeng/PDEBUG_SPECIFIC_FILTER_PARAMETERS, _DEBUG_SPECIFIC_FILTER_PARAMETERS, DEBUG_SPECIFIC_FILTER_PARAMETERS structure [Windows Debugging], debugger.debug_specific_filter_parameters, PDEBUG_SPECIFIC_FILTER_PARAMETERS structure pointer [Windows Debugging]
+ms.keywords : "*PDEBUG_SPECIFIC_FILTER_PARAMETERS, DEBUG_SPECIFIC_FILTER_PARAMETERS structure [Windows Debugging], PDEBUG_SPECIFIC_FILTER_PARAMETERS, PDEBUG_SPECIFIC_FILTER_PARAMETERS structure pointer [Windows Debugging], DEBUG_SPECIFIC_FILTER_PARAMETERS, dbgeng/PDEBUG_SPECIFIC_FILTER_PARAMETERS, Structures_b0152b9b-4809-46c8-81a7-5f571720eca1.xml, debugger.debug_specific_filter_parameters, dbgeng/DEBUG_SPECIFIC_FILTER_PARAMETERS, _DEBUG_SPECIFIC_FILTER_PARAMETERS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DEBUG_SPECIFIC_FILTER_PARAMETERS, *PDEBUG_SPECIFIC_FILTER_PARAMETERS
+req.typenames : "*PDEBUG_SPECIFIC_FILTER_PARAMETERS, DEBUG_SPECIFIC_FILTER_PARAMETERS"
 ---
 
 # _DEBUG_SPECIFIC_FILTER_PARAMETERS structure
@@ -87,9 +87,9 @@ The size, in characters (including the terminator), of the name of the specific 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548398">GetSpecificFilterParameters</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556795">SetSpecificFilterParameters</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548398">GetSpecificFilterParameters</a>
 
  
 

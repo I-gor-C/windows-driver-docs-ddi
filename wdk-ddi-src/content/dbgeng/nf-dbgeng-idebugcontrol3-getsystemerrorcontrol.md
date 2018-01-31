@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 727df033-ddaf-45a7-bdca-51a9ee0404fb
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugControl2::GetSystemErrorControl, IDebugControl_94595f9e-7e73-4291-a904-49f1a8fbbaa8.xml, IDebugControl2::GetSystemErrorControl, GetSystemErrorControl, dbgeng/IDebugControl::GetSystemErrorControl, GetSystemErrorControl method [Windows Debugging], IDebugControl interface, IDebugControl3::GetSystemErrorControl, IDebugControl3 interface [Windows Debugging], GetSystemErrorControl method, IDebugControl2 interface [Windows Debugging], GetSystemErrorControl method, dbgeng/IDebugControl3::GetSystemErrorControl, IDebugControl::GetSystemErrorControl, GetSystemErrorControl method [Windows Debugging], IDebugControl2 interface, GetSystemErrorControl method [Windows Debugging], IDebugControl interface [Windows Debugging], GetSystemErrorControl method, IDebugControl3, GetSystemErrorControl method [Windows Debugging], IDebugControl3 interface, debugger.getsystemerrorcontrol
+ms.keywords : IDebugControl interface [Windows Debugging], GetSystemErrorControl method, dbgeng/IDebugControl::GetSystemErrorControl, GetSystemErrorControl method [Windows Debugging], IDebugControl3 interface, IDebugControl3, GetSystemErrorControl method [Windows Debugging], IDebugControl_94595f9e-7e73-4291-a904-49f1a8fbbaa8.xml, dbgeng/IDebugControl3::GetSystemErrorControl, IDebugControl3::GetSystemErrorControl, IDebugControl2::GetSystemErrorControl, IDebugControl::GetSystemErrorControl, GetSystemErrorControl method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl2::GetSystemErrorControl, IDebugControl3 interface [Windows Debugging], GetSystemErrorControl method, IDebugControl2 interface [Windows Debugging], GetSystemErrorControl method, GetSystemErrorControl, GetSystemErrorControl method [Windows Debugging], IDebugControl interface, debugger.getsystemerrorcontrol
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -103,15 +103,15 @@ When a system error occurs, the engine calls the <a href="https://msdn.microsoft
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556806">SetSystemErrorControl</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556806">SetSystemErrorControl</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550768">IDebugEventCallbacks::SystemError</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 
  
 

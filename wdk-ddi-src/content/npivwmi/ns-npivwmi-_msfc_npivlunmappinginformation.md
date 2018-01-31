@@ -1,6 +1,6 @@
 ---
 UID : NS:npivwmi._MSFC_NPIVLUNMappingInformation
-title : _MSFC_NPIVLUNMappingInformation
+title : "_MSFC_NPIVLUNMappingInformation"
 author : windows-driver-content
 description : The MSFC_NPIVLUNMappingInformation structure contains the Logical Unit Number (LUN) to virtual port mapping information.
 old-location : storage\msfc_npivlunmappinginformation.htm
@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5E8A2338-AF1E-41BE-870B-E1F1877DDEDD
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _MSFC_NPIVLUNMappingInformation, PMSFC_NPIVLUNMappingInformation structure pointer [Storage Devices], npivwmi/MSFC_NPIVLUNMappingInformation, MSFC_NPIVLUNMappingInformation, npivwmi/PMSFC_NPIVLUNMappingInformation, PMSFC_NPIVLUNMappingInformation, MSFC_NPIVLUNMappingInformation structure [Storage Devices], storage.msfc_npivlunmappinginformation, *PMSFC_NPIVLUNMappingInformation
+ms.keywords : MSFC_NPIVLUNMappingInformation, npivwmi/MSFC_NPIVLUNMappingInformation, PMSFC_NPIVLUNMappingInformation, MSFC_NPIVLUNMappingInformation structure [Storage Devices], _MSFC_NPIVLUNMappingInformation, storage.msfc_npivlunmappinginformation, *PMSFC_NPIVLUNMappingInformation, npivwmi/PMSFC_NPIVLUNMappingInformation, PMSFC_NPIVLUNMappingInformation structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMSFC_NPIVLUNMappingInformation, MSFC_NPIVLUNMappingInformation"
+req.typenames : MSFC_NPIVLUNMappingInformation, *PMSFC_NPIVLUNMappingInformation
 ---
 
 # _MSFC_NPIVLUNMappingInformation structure

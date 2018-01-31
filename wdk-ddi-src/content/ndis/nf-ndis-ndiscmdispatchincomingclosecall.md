@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f0f1221d-3d95-4d4c-acd0-6bcd653241c4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisCmDispatchIncomingCloseCall function [Network Drivers Starting with Windows Vista], netvista.ndiscmdispatchincomingclosecall, ndis/NdisCmDispatchIncomingCloseCall, condis_call_manager_ref_877248ee-cc60-430c-836c-d2580627363f.xml, NdisCmDispatchIncomingCloseCall
+ms.keywords : NdisCmDispatchIncomingCloseCall function [Network Drivers Starting with Windows Vista], netvista.ndiscmdispatchincomingclosecall, condis_call_manager_ref_877248ee-cc60-430c-836c-d2580627363f.xml, NdisCmDispatchIncomingCloseCall, ndis/NdisCmDispatchIncomingCloseCall
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -136,10 +136,14 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_CallManager_Function |
 
 ## See Also
+
+<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
+
+<a href="..\ndis\nc-ndis-protocol_cl_incoming_close_call.md">ProtocolClIncomingCloseCall</a>
 
 <mshelp:link keywords="netvista.ndiscmdispatchincomingdropparty" tabindex="0"><b>
    NdisCmDispatchIncomingDropParty</b></mshelp:link>
@@ -147,16 +151,12 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
 <mshelp:link keywords="netvista.protocolcoreceivenetbufferlists" tabindex="0"><i>
    ProtocolCoReceiveNetBufferLists</i></mshelp:link>
 
-<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
-
-<mshelp:link keywords="netvista.ndismcmdispatchincomingclosecall" tabindex="0"><b>
-   NdisMCmDispatchIncomingCloseCall</b></mshelp:link>
+<a href="..\ndis\nc-ndis-protocol_co_status_ex.md">ProtocolCoStatusEx</a>
 
 <a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 
-<a href="..\ndis\nc-ndis-protocol_co_status_ex.md">ProtocolCoStatusEx</a>
-
-<a href="..\ndis\nc-ndis-protocol_cl_incoming_close_call.md">ProtocolClIncomingCloseCall</a>
+<mshelp:link keywords="netvista.ndismcmdispatchincomingclosecall" tabindex="0"><b>
+   NdisMCmDispatchIncomingCloseCall</b></mshelp:link>
 
  
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4D172D39-0D28-4950-B428-330D5B4D0654
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceGetHardwareRegisterMappedAddress, wdf.wdfdevicegethardwareregistermappedaddress, PFN_WDFDEVICEGETHARDWAREREGISTERMAPPEDADDRESS, wdfdevice/WdfDeviceGetHardwareRegisterMappedAddress, WdfDeviceGetHardwareRegisterMappedAddress function
+ms.keywords : WdfDeviceGetHardwareRegisterMappedAddress, wdfdevice/WdfDeviceGetHardwareRegisterMappedAddress, PFN_WDFDEVICEGETHARDWAREREGISTERMAPPEDADDRESS, wdf.wdfdevicegethardwareregistermappedaddress, WdfDeviceGetHardwareRegisterMappedAddress function
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 34d25938-5640-4e32-949f-94605ac38fa0
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : OutputVaListWide, OutputVaListWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4 interface [Windows Debugging], OutputVaListWide method, debugger.outputvalistwide, IDebugControl4, IDebugControl4::OutputVaListWide, OutputVaListWide method [Windows Debugging], dbgeng/IDebugControl4::OutputVaListWide
+ms.keywords : IDebugControl4::OutputVaListWide, OutputVaListWide, dbgeng/IDebugControl4::OutputVaListWide, IDebugControl4 interface [Windows Debugging], OutputVaListWide method, OutputVaListWide method [Windows Debugging], IDebugControl4 interface, debugger.outputvalistwide, IDebugControl4, OutputVaListWide method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

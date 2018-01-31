@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4967e897-1a71-4f17-ad5b-9cc9916b0087
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IddCxDeviceInitialize, display.iddcxdeviceinitialize, iddcx/IddCxDeviceInitialize, IddCxDeviceInitialize method [Display Devices]
+ms.keywords : IddCxDeviceInitialize method [Display Devices], iddcx/IddCxDeviceInitialize, IddCxDeviceInitialize, display.iddcxdeviceinitialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : NtosKrnl.exe
 req.dll : 
-req.irql : _Must_inspect_result_
+req.irql : "_Must_inspect_result_"
 topictype : 
 apitype : 
 apilocation : 
@@ -71,5 +71,5 @@ The WDF device that is being initialized.
 | **Minimum UMDF version** |  |
 | **Header** | iddcx.h |
 | **Library** |  |
-| **IRQL** | _Must_inspect_result_ |
+| **IRQL** | "_Must_inspect_result_" |
 | **DDI compliance rules** |  |

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 49dc5866-d793-41a7-9d9e-e89eea6f2f28
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetVolumeFromDeviceObject, ifsk.fltgetvolumefromdeviceobject, fltkernel/FltGetVolumeFromDeviceObject, FltGetVolumeFromDeviceObject routine [Installable File System Drivers], FltApiRef_e_to_o_fcc59f13-4385-478e-ba1b-c539f13930af.xml
+ms.keywords : fltkernel/FltGetVolumeFromDeviceObject, FltApiRef_e_to_o_fcc59f13-4385-478e-ba1b-c539f13930af.xml, ifsk.fltgetvolumefromdeviceobject, FltGetVolumeFromDeviceObject, FltGetVolumeFromDeviceObject routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -118,7 +118,7 @@ To get a pointer to the device object for a given volume, call <a href="..\fltke
 | **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e294832a-f0f2-49ab-b215-7c0e67e5ec13
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SecMakeSPN, SecMakeSPN function [Installable File System Drivers], ksecddref_0225b4c1-8cfd-49cc-a69a-85da507c401e.xml, ifsk.secmakespn, ntifs/SecMakeSPN
+ms.keywords : ksecddref_0225b4c1-8cfd-49cc-a69a-85da507c401e.xml, ntifs/SecMakeSPN, SecMakeSPN function [Installable File System Drivers], ifsk.secmakespn, SecMakeSPN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -149,7 +149,7 @@ The <i>Allocate</i> parameter was set to true, but the memory allocation request
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

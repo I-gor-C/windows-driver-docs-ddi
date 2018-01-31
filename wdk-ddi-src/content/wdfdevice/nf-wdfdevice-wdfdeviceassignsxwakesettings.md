@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : af25d03f-32c5-4e2c-930f-1b905edc566b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdeviceassignsxwakesettings, WdfDeviceAssignSxWakeSettings method, wdfdevice/WdfDeviceAssignSxWakeSettings, WdfDeviceAssignSxWakeSettings, PFN_WDFDEVICEASSIGNSXWAKESETTINGS, kmdf.wdfdeviceassignsxwakesettings, DFDeviceObjectGeneralRef_1a9b9467-862d-422a-9cf6-501d1ddefe5e.xml
+ms.keywords : wdf.wdfdeviceassignsxwakesettings, kmdf.wdfdeviceassignsxwakesettings, PFN_WDFDEVICEASSIGNSXWAKESETTINGS, wdfdevice/WdfDeviceAssignSxWakeSettings, WdfDeviceAssignSxWakeSettings method, DFDeviceObjectGeneralRef_1a9b9467-862d-422a-9cf6-501d1ddefe5e.xml, WdfDeviceAssignSxWakeSettings
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -138,7 +138,7 @@ For more information, see <a href="https://msdn.microsoft.com/519dcd1a-9975-48b1
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, FDOPowerPolicyOwnerAPI, KmdfIrql, KmdfIrql2, NonFDONotPowerPolicyOwnerAPI |
 
 ## See Also

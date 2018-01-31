@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmdt._D3DKMDT_PALETTEDATA
-title : _D3DKMDT_PALETTEDATA
+title : "_D3DKMDT_PALETTEDATA"
 author : windows-driver-content
 description : The D3DKMDT_PALETTEDATA structure describes a palette entry for the display.
 old-location : display\d3dkmdt_palettedata.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 81ff56bb-84e5-4556-a0bf-32164b938622
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmdt/D3DKMDT_PALETTEDATA, DmStructs_83e6b2ae-dd44-4a21-bca5-6009af1f4ced.xml, display.d3dkmdt_palettedata, _D3DKMDT_PALETTEDATA, D3DKMDT_PALETTEDATA, D3DKMDT_PALETTEDATA structure [Display Devices]
+ms.keywords : D3DKMDT_PALETTEDATA, D3DKMDT_PALETTEDATA structure [Display Devices], _D3DKMDT_PALETTEDATA, DmStructs_83e6b2ae-dd44-4a21-bca5-6009af1f4ced.xml, display.d3dkmdt_palettedata, d3dkmdt/D3DKMDT_PALETTEDATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

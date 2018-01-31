@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmddi._DXGK_MONITORSOURCEMODESET_INTERFACE
-title : _DXGK_MONITORSOURCEMODESET_INTERFACE
+title : "_DXGK_MONITORSOURCEMODESET_INTERFACE"
 author : windows-driver-content
 description : The DXGK_MONITORSOURCEMODESET_INTERFACE structure contains pointers to functions that belong to the Monitor Source Mode Set interface, which is implemented by the video present network (VidPN) manager.
 old-location : display\dxgk_monitorsourcemodeset_interface.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ceab36a0-3be1-41d8-82c0-8393f93e5f42
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_MONITORSOURCEMODESET_INTERFACE, _DXGK_MONITORSOURCEMODESET_INTERFACE, DmStructs_c4c7e928-09db-424f-8ac7-7efffc71d06e.xml, display.dxgk_monitorsourcemodeset_interface, d3dkmddi/DXGK_MONITORSOURCEMODESET_INTERFACE, DXGK_MONITORSOURCEMODESET_INTERFACE structure [Display Devices]
+ms.keywords : DXGK_MONITORSOURCEMODESET_INTERFACE structure [Display Devices], DmStructs_c4c7e928-09db-424f-8ac7-7efffc71d06e.xml, d3dkmddi/DXGK_MONITORSOURCEMODESET_INTERFACE, display.dxgk_monitorsourcemodeset_interface, DXGK_MONITORSOURCEMODESET_INTERFACE, _DXGK_MONITORSOURCEMODESET_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -98,11 +98,11 @@ The display miniport driver calls the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_m
 
 ## See Also
 
-<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_monitor_source_mode.md">D3DKMDT_MONITOR_SOURCE_MODE</a>
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitor_acquiremonitorsourcemodeset.md">pfnAcquireMonitorSourceModeSet</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_vidpnsourcemodeset_interface.md">DXGK_VIDPNSOURCEMODESET_INTERFACE</a>
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitor_acquiremonitorsourcemodeset.md">pfnAcquireMonitorSourceModeSet</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_monitor_source_mode.md">D3DKMDT_MONITOR_SOURCE_MODE</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_vidpntargetmodeset_interface.md">DXGK_VIDPNTARGETMODESET_INTERFACE</a>
 

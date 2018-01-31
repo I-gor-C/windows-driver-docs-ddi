@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 89528b31-4d81-4612-92d7-5f64bdca8108
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : video/VideoPortCompareMemory, VideoPortCompareMemory, VideoPortCompareMemory function [Display Devices], display.videoportcomparememory, VideoPort_Functions_87b1236e-d77b-4930-897f-d5b33b1130aa.xml
+ms.keywords : VideoPortCompareMemory function [Display Devices], video/VideoPortCompareMemory, VideoPortCompareMemory, VideoPort_Functions_87b1236e-d77b-4930-897f-d5b33b1130aa.xml, display.videoportcomparememory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -92,15 +92,15 @@ Callers of <b>VideoPortCompareMemory</b> can be running at any IRQL if both bloc
 
 ## See Also
 
-<a href="..\video\nf-video-videoportscanrom.md">VideoPortScanRom</a>
-
-<a href="..\video\nf-video-videoportzerodevicememory.md">VideoPortZeroDeviceMemory</a>
-
-<a href="..\video\nf-video-videoportzeromemory.md">VideoPortZeroMemory</a>
-
 <a href="..\video\nf-video-videoportmovememory.md">VideoPortMoveMemory</a>
 
 <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
+
+<a href="..\video\nf-video-videoportzerodevicememory.md">VideoPortZeroDeviceMemory</a>
+
+<a href="..\video\nf-video-videoportscanrom.md">VideoPortScanRom</a>
+
+<a href="..\video\nf-video-videoportzeromemory.md">VideoPortZeroMemory</a>
 
  
 

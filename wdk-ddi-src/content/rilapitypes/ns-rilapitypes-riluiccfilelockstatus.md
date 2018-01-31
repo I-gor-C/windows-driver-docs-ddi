@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 348e44f2-4386-4b45-9d68-c996d471578f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILUICCFILELOCKSTATUS, *LPRILUICCFILELOCKSTATUS, rilapitypes/RILUICCFILELOCKSTATUS, netvista.riluiccfilelockstatus, RILUICCFILELOCKSTATUS structure [Network Drivers Starting with Windows Vista]
+ms.keywords : RILUICCFILELOCKSTATUS structure [Network Drivers Starting with Windows Vista], rilapitypes/RILUICCFILELOCKSTATUS, *LPRILUICCFILELOCKSTATUS, RILUICCFILELOCKSTATUS, netvista.riluiccfilelockstatus
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILUICCFILELOCKSTATUS, RILUICCFILELOCKSTATUS"
+req.typenames : RILUICCFILELOCKSTATUS, *LPRILUICCFILELOCKSTATUS
 req.product : Windows 10 or later.
 ---
 

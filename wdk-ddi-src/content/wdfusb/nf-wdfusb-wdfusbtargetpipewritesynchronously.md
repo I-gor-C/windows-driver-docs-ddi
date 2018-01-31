@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5513a245-0417-42f7-9c01-99b8bd5745eb
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfusb/WdfUsbTargetPipeWriteSynchronously, PFN_WDFUSBTARGETPIPEWRITESYNCHRONOUSLY, wdf.wdfusbtargetpipewritesynchronously, WdfUsbTargetPipeWriteSynchronously method, WdfUsbTargetPipeWriteSynchronously, DFUsbRef_9d78fb7e-eaf6-4d86-8376-4c68a1ab6ab9.xml, kmdf.wdfusbtargetpipewritesynchronously
+ms.keywords : kmdf.wdfusbtargetpipewritesynchronously, PFN_WDFUSBTARGETPIPEWRITESYNCHRONOUSLY, wdf.wdfusbtargetpipewritesynchronously, wdfusb/WdfUsbTargetPipeWriteSynchronously, WdfUsbTargetPipeWriteSynchronously, DFUsbRef_9d78fb7e-eaf6-4d86-8376-4c68a1ab6ab9.xml, WdfUsbTargetPipeWriteSynchronously method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
+req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
 
@@ -282,13 +282,13 @@ For more information about the <b>WdfUsbTargetPipeWriteSynchronously</b> method 
 
 ## See Also
 
-<a href="..\wdfmemory\nf-wdfmemory-wdfmemorygetbuffer.md">WdfMemoryGetBuffer</a>
+<a href="..\wdfmemory\nf-wdfmemory-wdf_memory_descriptor_init_buffer.md">WDF_MEMORY_DESCRIPTOR_INIT_BUFFER</a>
 
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipereadsynchronously.md">WdfUsbTargetPipeReadSynchronously</a>
 
 <a href="..\wdfmemory\nf-wdfmemory-wdfmemorycreate.md">WdfMemoryCreate</a>
 
-<a href="..\wdfmemory\nf-wdfmemory-wdf_memory_descriptor_init_buffer.md">WDF_MEMORY_DESCRIPTOR_INIT_BUFFER</a>
+<a href="..\wdfmemory\nf-wdfmemory-wdfmemorygetbuffer.md">WdfMemoryGetBuffer</a>
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcancelsentrequest.md">WdfRequestCancelSentRequest</a>
 

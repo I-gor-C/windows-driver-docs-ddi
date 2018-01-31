@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6E38514E-75BD-4F98-AD12-FA4E31654C3E
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFREQUESTRETRIEVEACTIVITYID, wdfrequest/WdfRequestRetrieveActivityId, wdf.wdfrequestretrieveactivityid, WdfRequestRetrieveActivityId, WdfRequestRetrieveActivityId method
+ms.keywords : PFN_WDFREQUESTRETRIEVEACTIVITYID, wdfrequest/WdfRequestRetrieveActivityId, WdfRequestRetrieveActivityId, wdf.wdfrequestretrieveactivityid, WdfRequestRetrieveActivityId method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

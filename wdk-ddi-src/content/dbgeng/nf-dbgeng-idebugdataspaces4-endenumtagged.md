@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 6a456b8c-aec6-443d-8db4-21e7715ab818
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugDataSpaces4::EndEnumTagged, EndEnumTagged method [Windows Debugging], IDebugDataSpaces3 interface, EndEnumTagged method [Windows Debugging], IDebugDataSpaces_a6366d17-1a38-43ca-af52-3c7e2b73be9e.xml, IDebugDataSpaces4, IDebugDataSpaces4::EndEnumTagged, EndEnumTagged, debugger.endenumtagged, IDebugDataSpaces4 interface [Windows Debugging], EndEnumTagged method, IDebugDataSpaces3::EndEnumTagged, IDebugDataSpaces3 interface [Windows Debugging], EndEnumTagged method, EndEnumTagged method [Windows Debugging], IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces3::EndEnumTagged
+ms.keywords : EndEnumTagged, IDebugDataSpaces4, EndEnumTagged method [Windows Debugging], IDebugDataSpaces3 interface, dbgeng/IDebugDataSpaces3::EndEnumTagged, IDebugDataSpaces4 interface [Windows Debugging], EndEnumTagged method, IDebugDataSpaces_a6366d17-1a38-43ca-af52-3c7e2b73be9e.xml, debugger.endenumtagged, IDebugDataSpaces4::EndEnumTagged, IDebugDataSpaces3 interface [Windows Debugging], EndEnumTagged method, dbgeng/IDebugDataSpaces4::EndEnumTagged, EndEnumTagged method [Windows Debugging], IDebugDataSpaces3::EndEnumTagged, EndEnumTagged method [Windows Debugging], IDebugDataSpaces4 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

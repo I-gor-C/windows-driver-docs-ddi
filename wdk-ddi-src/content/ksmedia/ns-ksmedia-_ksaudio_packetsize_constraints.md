@@ -1,6 +1,6 @@
 ---
 UID : NS:ksmedia._KSAUDIO_PACKETSIZE_CONSTRAINTS
-title : _KSAUDIO_PACKETSIZE_CONSTRAINTS
+title : "_KSAUDIO_PACKETSIZE_CONSTRAINTS"
 author : windows-driver-content
 description : The KSAUDIO_PACKETSIZE_CONSTRAINTS structure describes the physical hardware constraints.
 old-location : audio\ksaudio_packetsize_constraints.htm
@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 6BD3E98A-A2A5-4285-8F41-1445F90DD8EB
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : FILE_32_BYTE_ALIGNMENT, PKSAUDIO_PACKETSIZE_CONSTRAINTS, FILE_128_BYTE_ALIGNMENT, FILE_256_BYTE_ALIGNMENT, FILE_QUAD_ALIGNMENT, ksmedia/KSAUDIO_PACKETSIZE_CONSTRAINTS, KSAUDIO_PACKETSIZE_CONSTRAINTS structure [Audio Devices], FILE_LONG_ALIGNMENT, FILE_BYTE_ALIGNMENT, audio.ksaudio_packetsize_constraints, ksmedia/PKSAUDIO_PACKETSIZE_CONSTRAINTS, FILE_OCTA_ALIGNMENT, FILE_WORD_ALIGNMENT, FILE_512_BYTE_ALIGNMENT, FILE_64_BYTE_ALIGNMENT, PKSAUDIO_PACKETSIZE_CONSTRAINTS structure pointer [Audio Devices], KSAUDIO_PACKETSIZE_CONSTRAINTS, _KSAUDIO_PACKETSIZE_CONSTRAINTS
+ms.keywords : KSAUDIO_PACKETSIZE_CONSTRAINTS structure [Audio Devices], FILE_64_BYTE_ALIGNMENT, FILE_512_BYTE_ALIGNMENT, FILE_128_BYTE_ALIGNMENT, KSAUDIO_PACKETSIZE_CONSTRAINTS, FILE_32_BYTE_ALIGNMENT, ksmedia/KSAUDIO_PACKETSIZE_CONSTRAINTS, _KSAUDIO_PACKETSIZE_CONSTRAINTS, ksmedia/PKSAUDIO_PACKETSIZE_CONSTRAINTS, PKSAUDIO_PACKETSIZE_CONSTRAINTS, PKSAUDIO_PACKETSIZE_CONSTRAINTS structure pointer [Audio Devices], FILE_BYTE_ALIGNMENT, FILE_WORD_ALIGNMENT, FILE_QUAD_ALIGNMENT, FILE_256_BYTE_ALIGNMENT, audio.ksaudio_packetsize_constraints, FILE_LONG_ALIGNMENT, FILE_OCTA_ALIGNMENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,6 +69,44 @@ The number of additional constraints for specific processing modes. This value c
 The byte size alignment requirement. Use one of these defined file alignment values:
 <a id="FILE_BYTE_ALIGNMENT"></a><a id="file_byte_alignment"></a>
 
+#### FILE_BYTE_ALIGNMENT
+
+<a id="FILE_WORD_ALIGNMENT"></a><a id="file_word_alignment"></a>
+
+#### FILE_WORD_ALIGNMENT
+
+<a id="FILE_LONG_ALIGNMENT"></a><a id="file_long_alignment"></a>
+
+#### FILE_LONG_ALIGNMENT
+
+<a id="FILE_QUAD_ALIGNMENT"></a><a id="file_quad_alignment"></a>
+
+#### FILE_QUAD_ALIGNMENT
+
+<a id="FILE_OCTA_ALIGNMENT"></a><a id="file_octa_alignment"></a>
+
+#### FILE_OCTA_ALIGNMENT
+
+<a id="FILE_32_BYTE_ALIGNMENT"></a><a id="file_32_byte_alignment"></a>
+
+#### FILE_32_BYTE_ALIGNMENT
+
+<a id="FILE_64_BYTE_ALIGNMENT"></a><a id="file_64_byte_alignment"></a>
+
+#### FILE_64_BYTE_ALIGNMENT
+
+<a id="FILE_128_BYTE_ALIGNMENT"></a><a id="file_128_byte_alignment"></a>
+
+#### FILE_128_BYTE_ALIGNMENT
+
+<a id="FILE_256_BYTE_ALIGNMENT"></a><a id="file_256_byte_alignment"></a>
+
+#### FILE_256_BYTE_ALIGNMENT
+
+<a id="FILE_512_BYTE_ALIGNMENT"></a><a id="file_512_byte_alignment"></a>
+
+#### FILE_512_BYTE_ALIGNMENT
+
 `ProcessingModeConstraints`
 
 An array of 0 or more processing mode constraints.
@@ -93,9 +131,9 @@ For WaveRT drivers, this data structure describes the constraints for a WaveRT p
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-_ksaudio_packetsize_signalprocessingmode_constraint.md">KSAUDIO_PACKETSIZE_PROCESSINGMODE_CONSTRAINT</a>
-
 <a href="..\portcls\nf-portcls-pcregistersubdevice.md">PcRegisterSubdevice</a>
+
+<a href="..\ksmedia\ns-ksmedia-_ksaudio_packetsize_signalprocessingmode_constraint.md">KSAUDIO_PACKETSIZE_PROCESSINGMODE_CONSTRAINT</a>
 
  
 

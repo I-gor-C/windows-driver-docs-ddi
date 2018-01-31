@@ -98,9 +98,9 @@ When a miniport driver calls <b>AgpFreePhysical</b>, <b>Pages</b> pages of physi
 
 ## See Also
 
-<a href="..\videoagp\nc-videoagp-pagp_commit_physical.md">AgpCommitPhysical</a>
-
 <a href="..\videoagp\nc-videoagp-pagp_release_physical.md">AgpReleasePhysical</a>
+
+<a href="..\videoagp\nc-videoagp-pagp_commit_physical.md">AgpCommitPhysical</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5cbdda76-c02d-4fd4-8fa9-a783375ea292
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortFreeMdl routine [Storage Devices], StorPortFreeMdl, storprt_c7f2c49d-a04e-428c-8c94-4ba20526a1fe.xml, storage.storportfreemdl, storport/StorPortFreeMdl
+ms.keywords : storage.storportfreemdl, StorPortFreeMdl routine [Storage Devices], StorPortFreeMdl, storprt_c7f2c49d-a04e-428c-8c94-4ba20526a1fe.xml, storport/StorPortFreeMdl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -130,7 +130,7 @@ A miniport driver calls the <b>StorPortFreeMdl</b> routine to free the MDL that 
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | StorPortIrql |
 
 ## See Also

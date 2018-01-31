@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddstor._DEVICE_MEDIA_INFO
-title : _DEVICE_MEDIA_INFO
+title : "_DEVICE_MEDIA_INFO"
 author : windows-driver-content
 description : A storage class driver returns an array of DEVICE_MEDIA_INFO structures, embedded in a GET_MEDIA_TYPES structure, in response to an IOCTL_STORAGE_GET_MEDIA_TYPES_EX device-control request.
 old-location : storage\device_media_info.htm
@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 87906511-7bcb-4f4d-9383-44b0501536e3
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : _DEVICE_MEDIA_INFO, MEDIA_READ_ONLY, ntddstor/DEVICE_MEDIA_INFO, *PDEVICE_MEDIA_INFO, PDEVICE_MEDIA_INFO structure pointer [Storage Devices], MEDIA_READ_WRITE, MEDIA_ERASEABLE, MEDIA_WRITE_ONCE, DEVICE_MEDIA_INFO structure [Storage Devices], MEDIA_WRITE_PROTECTED, PDEVICE_MEDIA_INFO, ntddstor/PDEVICE_MEDIA_INFO, MEDIA_CURRENTLY_MOUNTED, storage.device_media_info, DEVICE_MEDIA_INFO, structs-general_e2c363ff-f053-45be-a807-f90480c0ae1f.xml
+ms.keywords : MEDIA_ERASEABLE, PDEVICE_MEDIA_INFO structure pointer [Storage Devices], MEDIA_READ_WRITE, _DEVICE_MEDIA_INFO, MEDIA_WRITE_ONCE, MEDIA_READ_ONLY, structs-general_e2c363ff-f053-45be-a807-f90480c0ae1f.xml, *PDEVICE_MEDIA_INFO, DEVICE_MEDIA_INFO structure [Storage Devices], DEVICE_MEDIA_INFO, ntddstor/PDEVICE_MEDIA_INFO, MEDIA_WRITE_PROTECTED, MEDIA_CURRENTLY_MOUNTED, storage.device_media_info, PDEVICE_MEDIA_INFO, ntddstor/DEVICE_MEDIA_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEVICE_MEDIA_INFO, DEVICE_MEDIA_INFO"
+req.typenames : DEVICE_MEDIA_INFO, *PDEVICE_MEDIA_INFO
 ---
 
 # _DEVICE_MEDIA_INFO structure

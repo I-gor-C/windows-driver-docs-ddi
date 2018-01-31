@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2fa389f8-8277-4795-a89e-ac5d92004310
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : UMDFRequestObjectRef_2c1cf2cc-30a2-438c-8e5a-b918fbcd5eee.xml, IWDFIoRequest interface, Complete method, umdf.iwdfiorequest_complete, IWDFIoRequest, wudfddi/IWDFIoRequest::Complete, IWDFIoRequest::Complete, Complete method, IWDFIoRequest interface, Complete method, wdf.iwdfiorequest_complete, Complete
+ms.keywords : wdf.iwdfiorequest_complete, Complete method, IWDFIoRequest interface, IWDFIoRequest::Complete, IWDFIoRequest interface, Complete method, IWDFIoRequest, Complete method, umdf.iwdfiorequest_complete, Complete, UMDFRequestObjectRef_2c1cf2cc-30a2-438c-8e5a-b918fbcd5eee.xml, wudfddi/IWDFIoRequest::Complete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method

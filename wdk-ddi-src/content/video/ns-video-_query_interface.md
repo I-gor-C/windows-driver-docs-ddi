@@ -1,6 +1,6 @@
 ---
 UID : NS:video._QUERY_INTERFACE
-title : _QUERY_INTERFACE
+title : "_QUERY_INTERFACE"
 author : windows-driver-content
 description : The QUERY_INTERFACE structure describes the interface being requested.
 old-location : display\query_interface.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0d813870-10bd-4b41-9f36-1cb45c462697
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : video/PQUERY_INTERFACE, *PQUERY_INTERFACE, PQUERY_INTERFACE structure pointer [Display Devices], video/QUERY_INTERFACE, _QUERY_INTERFACE, QUERY_INTERFACE, QUERY_INTERFACE structure [Display Devices], Video_Structs_facaef96-c0d9-4695-8541-65e5e430f182.xml, PQUERY_INTERFACE, display.query_interface
+ms.keywords : display.query_interface, _QUERY_INTERFACE, video/QUERY_INTERFACE, QUERY_INTERFACE, PQUERY_INTERFACE, QUERY_INTERFACE structure [Display Devices], video/PQUERY_INTERFACE, PQUERY_INTERFACE structure pointer [Display Devices], Video_Structs_facaef96-c0d9-4695-8541-65e5e430f182.xml, *PQUERY_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : QUERY_INTERFACE, *PQUERY_INTERFACE
+req.typenames : "*PQUERY_INTERFACE, QUERY_INTERFACE"
 req.product : Windows 10 or later.
 ---
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 8f3817e7-8409-4b75-be28-ac7fe32145cb
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugRegisters_0c188698-35b8-4c8f-ad8c-1218695845a8.xml, IDebugRegisters::SetValues, dbgeng/IDebugRegisters::SetValues, dbgeng/IDebugRegisters2::SetValues, SetValues method [Windows Debugging], debugger.setvalues, SetValues, IDebugRegisters interface [Windows Debugging], SetValues method, IDebugRegisters2::SetValues, SetValues method [Windows Debugging], IDebugRegisters interface, IDebugRegisters2, SetValues method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters2 interface [Windows Debugging], SetValues method
+ms.keywords : dbgeng/IDebugRegisters::SetValues, SetValues method [Windows Debugging], IDebugRegisters interface, SetValues method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters::SetValues, IDebugRegisters2 interface [Windows Debugging], SetValues method, IDebugRegisters_0c188698-35b8-4c8f-ad8c-1218695845a8.xml, SetValues, IDebugRegisters2::SetValues, dbgeng/IDebugRegisters2::SetValues, SetValues method [Windows Debugging], IDebugRegisters2, IDebugRegisters interface [Windows Debugging], SetValues method, debugger.setvalues
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -143,13 +143,13 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRegisters</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff597642">SetValue</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556884">SetValues2</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRegisters</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
 
  
 

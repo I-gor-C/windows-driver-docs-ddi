@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 55dcd9f3-6903-4718-98c2-ee42ee1026e3
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : hid.hidp_unsetusages, HidP_UnsetUsages routine [Human Input Devices], HidP_UnsetUsages, hidfunc_7ffa6677-1a45-4e19-8001-116fbeacf097.xml, hidpi/HidP_UnsetUsages
+ms.keywords : HidP_UnsetUsages routine [Human Input Devices], hid.hidp_unsetusages, hidfunc_7ffa6677-1a45-4e19-8001-116fbeacf097.xml, HidP_UnsetUsages, hidpi/HidP_UnsetUsages
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -211,20 +211,20 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 | **Minimum UMDF version** |  |
 | **Header** | hidpi.h (include Hidpi.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539812">HidP_UnsetButtons</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539779">HidP_SetButtons</a>
 
-<a href="..\hidpi\nf-hidpi-hidp_setdata.md">HidP_SetData</a>
-
 <a href="..\hidpi\nf-hidpi-hidp_setusages.md">HidP_SetUsages</a>
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
+<a href="..\hidpi\nf-hidpi-hidp_setdata.md">HidP_SetData</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539812">HidP_UnsetButtons</a>
 
  
 

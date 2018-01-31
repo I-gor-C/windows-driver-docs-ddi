@@ -1,6 +1,6 @@
 ---
 UID : NS:ndis._NET_BUFFER_LIST_POOL_PARAMETERS
-title : _NET_BUFFER_LIST_POOL_PARAMETERS
+title : "_NET_BUFFER_LIST_POOL_PARAMETERS"
 author : windows-driver-content
 description : The NET_BUFFER_LIST_POOL_PARAMETERS structure defines the parameters for a pool of NET_BUFFER_LIST structures.
 old-location : netvista\net_buffer_list_pool_parameters.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : DBB172A0-957E-4FAC-9727-D72B060E3193
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNET_BUFFER_LIST_POOL_PARAMETERS, PNET_BUFFER_LIST_POOL_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NET_BUFFER_LIST_POOL_PARAMETERS, NET_BUFFER_LIST_POOL_PARAMETERS structure [Network Drivers Starting with Windows Vista], ndis/NET_BUFFER_LIST_POOL_PARAMETERS, netvista.net_buffer_list_pool_parameters, *PNET_BUFFER_LIST_POOL_PARAMETERS, NET_BUFFER_LIST_POOL_PARAMETERS, ndis/PNET_BUFFER_LIST_POOL_PARAMETERS
+ms.keywords : PNET_BUFFER_LIST_POOL_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], ndis/NET_BUFFER_LIST_POOL_PARAMETERS, PNET_BUFFER_LIST_POOL_PARAMETERS, *PNET_BUFFER_LIST_POOL_PARAMETERS, ndis/PNET_BUFFER_LIST_POOL_PARAMETERS, NET_BUFFER_LIST_POOL_PARAMETERS structure [Network Drivers Starting with Windows Vista], netvista.net_buffer_list_pool_parameters, _NET_BUFFER_LIST_POOL_PARAMETERS, NET_BUFFER_LIST_POOL_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -87,7 +87,16 @@ For more information, see the Remarks section.
 
 The type, revision, and size of the <b>NET_BUFFER_LIST_POOL_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
-The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NET_BUFFER_LIST_POOL_PARAMETERS</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value:
+The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NET_BUFFER_LIST_POOL_PARAMETERS</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
+
+
+
+
+#### NET_BUFFER_LIST_POOL_PARAMETERS_REVISION_1
+
+Original version for NDIS 6.0.
+
+Set the <b>Size</b> member to NDIS_SIZEOF_NET_BUFFER_LIST_POOL_PARAMETERS_REVISION_1.
 
 `PoolTag`
 
@@ -100,6 +109,29 @@ A kernel pool tag that the caller uses when it allocates NET_BUFFER_LIST structu
 
 The type of caller. Miniport, filter, and intermediate drivers set this field to zero
        (NDIS_PROTOCOL_ID_DEFAULT). Protocol drivers use one of the following values:
+       
+
+
+
+
+#### NDIS_PROTOCOL_ID_DEFAULT
+
+Specifies a default protocol driver identifier.
+
+
+#### NDIS_PROTOCOL_ID_TCP_IP
+
+Specifies the TCP/IP protocol.
+
+
+#### NDIS_PROTOCOL_ID_IPX
+
+Specifies the IPX protocol.
+
+
+#### NDIS_PROTOCOL_ID_NBF
+
+Specifies the NetBEUI protocol.
 
 ## Remarks
 If 
@@ -128,11 +160,11 @@ The <i>Parameters</i> parameter of the <a href="..\ndis\nf-ndis-ndisallocatenetb
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">NdisAllocateNetBufferListPool</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list_data.md">NET_BUFFER_LIST_DATA</a>
 
-<a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">NdisAllocateNetBufferListPool</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 

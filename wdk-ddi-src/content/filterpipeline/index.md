@@ -28,7 +28,7 @@ filterpipeline.h contains the following programming interfaces:
 | [IPartColorProfile](nn-filterpipeline-ipartcolorprofile.md) | The IPartColorProfile interface is the abstraction for an XPS color profile. |
 | [IPartDiscardControl](nn-filterpipeline-ipartdiscardcontrol.md) | The filter pipeline supports the discard control. |
 | [IPartFont](nn-filterpipeline-ipartfont.md) | The IPartFont interface is the abstraction for fonts in a part. |
-| [IPartFont2](nn-filterpipeline-ipartfont2.md) | . |
+| [IPartFont2](nn-filterpipeline-ipartfont2.md) | "." |
 | [IPartImage](nn-filterpipeline-ipartimage.md) | The IPartImage interface is the abstraction for images in an XPS document. |
 | [IPartPrintTicket](nn-filterpipeline-ipartprintticket.md) | The IPartPrintTicket interface is the abstraction for a print ticket in an XPS document. |
 | [IPartResourceDictionary](nn-filterpipeline-ipartresourcedictionary.md) | The IPartResourceDictionary interface is the abstraction for an XPS resource dictionary. |
@@ -63,4 +63,4 @@ filterpipeline.h contains the following programming interfaces:
 | [__MIDL___MIDL_itf_filterpipeline_0000_0000_0001](ne-filterpipeline-__midl___midl_itf_filterpipeline_0000_0000_0001.md) | The ExpsCompressionOptions enumeration describes compression options for an XPS part. |
 | [__MIDL___MIDL_itf_filterpipeline_0000_0000_0002](ne-filterpipeline-__midl___midl_itf_filterpipeline_0000_0000_0002.md) | The EXpsFontOptions enumeration describes the font options for an XPS part. |
 | [__MIDL___MIDL_itf_filterpipeline_0000_0000_0003](ne-filterpipeline-__midl___midl_itf_filterpipeline_0000_0000_0003.md) | The EXpsJobConsumption enumeration describes job consumption updates. |
-| [__MIDL___MIDL_itf_filterpipeline_0000_0000_0004](ne-filterpipeline-__midl___midl_itf_filterpipeline_0000_0000_0004.md) | . |
+| [__MIDL___MIDL_itf_filterpipeline_0000_0000_0004](ne-filterpipeline-__midl___midl_itf_filterpipeline_0000_0000_0004.md) | "." |

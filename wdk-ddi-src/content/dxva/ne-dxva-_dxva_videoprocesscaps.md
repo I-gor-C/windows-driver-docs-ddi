@@ -1,6 +1,6 @@
 ---
 UID : NE:dxva._DXVA_VideoProcessCaps
-title : _DXVA_VideoProcessCaps
+title : "_DXVA_VideoProcessCaps"
 author : windows-driver-content
 description : The DXVA_VideoProcessCaps enumeration identifies operations that can be performed concurrently with the requested deinterlace.
 old-location : display\dxva_videoprocesscaps.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 225da110-cd59-4803-bde8-26e275b3ddbd
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVA_VideoProcess_SubRects, dxva/DXVA_VideoProcess_AlphaBlendExtended, dxva/DXVA_VideoProcessCaps, DXVA_VideoProcess_YUV2RGB, display.dxva_videoprocesscaps, dxva/DXVA_VideoProcess_AlphaBlend, DXVA_VideoProcess_StretchX, dxva/DXVA_VideoProcess_SubStreams, dxva/DXVA_VideoProcess_YUV2RGBExtended, DXVA_VideoProcess_SubStreams, DXVA_VideoProcess_AlphaBlendExtended, DXVA_VideoProcess_None, DXVA_VideoProcess_AlphaBlend, dxva/DXVA_VideoProcess_StretchX, _DXVA_VideoProcessCaps, DXVA_VideoProcess_StretchY, DXVA_VideoProcessCaps, dxva/DXVA_VideoProcess_SubStreamsExtended, DXVA_VideoProcess_SubStreamsExtended, DXVA_VideoProcess_YUV2RGBExtended, dxvaref_4298738a-dc13-47b4-bb3d-84e90661542b.xml, dxva/DXVA_VideoProcess_None, DXVA_VideoProcessCaps enumeration [Display Devices], dxva/DXVA_VideoProcess_StretchY, dxva/DXVA_VideoProcess_SubRects, dxva/DXVA_VideoProcess_YUV2RGB
+ms.keywords : DXVA_VideoProcess_AlphaBlendExtended, DXVA_VideoProcess_SubRects, dxva/DXVA_VideoProcess_SubRects, DXVA_VideoProcessCaps, dxva/DXVA_VideoProcess_StretchX, dxva/DXVA_VideoProcess_SubStreamsExtended, dxvaref_4298738a-dc13-47b4-bb3d-84e90661542b.xml, DXVA_VideoProcess_StretchY, DXVA_VideoProcessCaps enumeration [Display Devices], DXVA_VideoProcess_SubStreamsExtended, display.dxva_videoprocesscaps, dxva/DXVA_VideoProcess_YUV2RGB, dxva/DXVA_VideoProcess_StretchY, _DXVA_VideoProcessCaps, DXVA_VideoProcess_None, DXVA_VideoProcess_SubStreams, DXVA_VideoProcess_YUV2RGB, dxva/DXVA_VideoProcess_AlphaBlend, dxva/DXVA_VideoProcess_None, dxva/DXVA_VideoProcessCaps, dxva/DXVA_VideoProcess_SubStreams, DXVA_VideoProcess_YUV2RGBExtended, DXVA_VideoProcess_StretchX, DXVA_VideoProcess_AlphaBlend, dxva/DXVA_VideoProcess_YUV2RGBExtended, dxva/DXVA_VideoProcess_AlphaBlendExtended
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum

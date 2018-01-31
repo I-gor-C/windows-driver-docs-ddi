@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : EE68BED8-5FDC-4590-8E95-B228F1DFD32D
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDevice3, CreateInterrupt method, IWDFDevice3 interface, IWDFDevice3 interface, CreateInterrupt method, CreateInterrupt method, umdf.iwdfdevice3_createinterrupt, wdf.iwdfdevice3_createinterrupt, CreateInterrupt, IWDFDevice3::CreateInterrupt, wudfddi/IWDFDevice3::CreateInterrupt
+ms.keywords : IWDFDevice3 interface, CreateInterrupt method, wdf.iwdfdevice3_createinterrupt, IWDFDevice3, IWDFDevice3::CreateInterrupt, wudfddi/IWDFDevice3::CreateInterrupt, CreateInterrupt method, CreateInterrupt method, IWDFDevice3 interface, CreateInterrupt, umdf.iwdfdevice3_createinterrupt
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -103,11 +103,11 @@ For more information about handling interrupts in UMDF drivers, see <a href="htt
 
 ## See Also
 
-<a href="..\wudfinterrupt\ns-wudfinterrupt-_wudf_interrupt_config.md">WUDF_INTERRUPT_CONFIG</a>
+<a href="..\wudfinterrupt\nf-wudfinterrupt-wudf_interrupt_config_init.md">WUDF_INTERRUPT_CONFIG_INIT</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a>
 
-<a href="..\wudfinterrupt\nf-wudfinterrupt-wudf_interrupt_config_init.md">WUDF_INTERRUPT_CONFIG_INIT</a>
+<a href="..\wudfinterrupt\ns-wudfinterrupt-_wudf_interrupt_config.md">WUDF_INTERRUPT_CONFIG</a>
 
  
 

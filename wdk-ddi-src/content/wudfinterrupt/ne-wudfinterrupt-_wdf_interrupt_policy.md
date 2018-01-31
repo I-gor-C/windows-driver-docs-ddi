@@ -1,6 +1,6 @@
 ---
 UID : NE:wudfinterrupt._WDF_INTERRUPT_POLICY
-title : _WDF_INTERRUPT_POLICY
+title : "_WDF_INTERRUPT_POLICY"
 author : windows-driver-content
 description : The WDF_INTERRUPT_POLICY enumeration type identifies the affinity policies that the Plug and Play (PnP) manager can use when it assigns a device's interrupts to the processors of a multiprocessor system.
 old-location : wdf\wdf_interrupt_policy_umdf.htm
@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 92E2A992-8A0B-4E0F-B615-DC6E30E4A227
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfinterrupt/PWDF_INTERRUPT_POLICY, WdfIrqPolicyAllCloseProcessors, wudfinterrupt/WdfIrqPolicySpecifiedProcessors, umdf.wdf_interrupt_policy, WdfIrqPolicyOneCloseProcessor, wudfinterrupt/WDF_INTERRUPT_POLICY, WdfIrqPolicyMachineDefault, *PWDF_INTERRUPT_POLICY, WdfIrqPolicyAllProcessorsInMachine, WdfIrqPolicySpreadMessagesAcrossAllProcessors, wudfinterrupt/WdfIrqPolicyAllCloseProcessors, WdfIrqPolicySpecifiedProcessors, wudfinterrupt/WdfIrqPolicyAllProcessorsInMachine, _WDF_INTERRUPT_POLICY, wdf.wdf_interrupt_policy_umdf, wudfinterrupt/WdfIrqPolicyOneCloseProcessor, PWDF_INTERRUPT_POLICY enumeration pointer, WDF_INTERRUPT_POLICY, wudfinterrupt/WdfIrqPolicyMachineDefault, WDF_INTERRUPT_POLICY enumeration, PWDF_INTERRUPT_POLICY, wudfinterrupt/WdfIrqPolicySpreadMessagesAcrossAllProcessors
+ms.keywords : wudfinterrupt/WdfIrqPolicySpreadMessagesAcrossAllProcessors, WdfIrqPolicySpreadMessagesAcrossAllProcessors, WDF_INTERRUPT_POLICY, WdfIrqPolicySpecifiedProcessors, wudfinterrupt/WdfIrqPolicyMachineDefault, *PWDF_INTERRUPT_POLICY, umdf.wdf_interrupt_policy, WdfIrqPolicyAllProcessorsInMachine, wudfinterrupt/WdfIrqPolicyAllCloseProcessors, wudfinterrupt/PWDF_INTERRUPT_POLICY, WdfIrqPolicyAllCloseProcessors, PWDF_INTERRUPT_POLICY enumeration pointer, WdfIrqPolicyOneCloseProcessor, WDF_INTERRUPT_POLICY enumeration, WdfIrqPolicyMachineDefault, wudfinterrupt/WDF_INTERRUPT_POLICY, wudfinterrupt/WdfIrqPolicyOneCloseProcessor, PWDF_INTERRUPT_POLICY, wudfinterrupt/WdfIrqPolicySpecifiedProcessors, wudfinterrupt/WdfIrqPolicyAllProcessorsInMachine, wdf.wdf_interrupt_policy_umdf, _WDF_INTERRUPT_POLICY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum

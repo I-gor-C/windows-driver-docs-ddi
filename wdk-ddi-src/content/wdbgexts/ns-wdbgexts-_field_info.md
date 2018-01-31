@@ -1,6 +1,6 @@
 ---
 UID : NS:wdbgexts._FIELD_INFO
-title : _FIELD_INFO
+title : "_FIELD_INFO"
 author : windows-driver-content
 description : The FIELD_INFO structure is used by the IG_DUMP_SYMBOL_INFOIoctl operation to provide information about a member in a structure.
 old-location : debugger\field_info.htm
@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 627b14dc-9b13-464c-ba23-6e91bef2b940
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : "*PFIELD_INFO, FIELD_INFO structure [Windows Debugging], WdbgExts_Ref_4c79e59a-cd12-4ad9-affb-b7f0bd7689fb.xml, FIELD_INFO, PFIELD_INFO structure pointer [Windows Debugging], debugger.field_info, wdbgexts/PFIELD_INFO, _FIELD_INFO, PFIELD_INFO, wdbgexts/FIELD_INFO"
+ms.keywords : debugger.field_info, wdbgexts/PFIELD_INFO, FIELD_INFO, *PFIELD_INFO, wdbgexts/FIELD_INFO, _FIELD_INFO, PFIELD_INFO, WdbgExts_Ref_4c79e59a-cd12-4ad9-affb-b7f0bd7689fb.xml, PFIELD_INFO structure pointer [Windows Debugging], FIELD_INFO structure [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PFIELD_INFO, FIELD_INFO"
+req.typenames : FIELD_INFO, *PFIELD_INFO
 req.product : Windows 10 or later.
 ---
 
@@ -155,11 +155,11 @@ When calling the <a href="..\wdbgexts\ns-wdbgexts-_sym_dump_param.md">IG_DUMP_SY
 
 <a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a>
 
-<a href="..\wdbgexts\ns-wdbgexts-_sym_dump_param.md">IG_DUMP_SYMBOL_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540429">DBG_DUMP_FIELD_XXX</a>
 
 <a href="..\wdbgexts\nc-wdbgexts-psym_dump_field_callback.md">PSYM_DUMP_FIELD_CALLBACK</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540429">DBG_DUMP_FIELD_XXX</a>
+<a href="..\wdbgexts\ns-wdbgexts-_sym_dump_param.md">IG_DUMP_SYMBOL_INFO</a>
 
  
 

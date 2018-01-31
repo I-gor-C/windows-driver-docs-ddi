@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : e439f130-1b99-4f46-ace5-3456c09a5f67
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WIAS_ERROR macro [Imaging Devices], WIAS_ERROR, image.wias_error, wiamdef/WIAS_ERROR, IWiaLog_5b3e0d61-e0e5-4385-8256-943e437cee9d.xml
+ms.keywords : WIAS_ERROR macro [Imaging Devices], wiamdef/WIAS_ERROR, WIAS_ERROR, IWiaLog_5b3e0d61-e0e5-4385-8256-943e437cee9d.xml, image.wias_error
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2
+req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -97,9 +97,9 @@ The following is an example of how the macro can be used:
 
 <a href="..\wiamdef\nf-wiamdef-wias_assert.md">WIAS_ASSERT</a>
 
-<a href="..\wiamdef\nf-wiamdef-wias_hresult.md">WIAS_HRESULT</a>
-
 <a href="..\wiamdef\nf-wiamdef-wias_trace.md">WIAS_TRACE</a>
+
+<a href="..\wiamdef\nf-wiamdef-wias_hresult.md">WIAS_HRESULT</a>
 
  
 

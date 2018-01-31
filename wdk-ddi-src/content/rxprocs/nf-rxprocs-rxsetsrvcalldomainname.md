@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 876b3932-780f-4d00-8afc-40960f8fcaaf
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxSetSrvCallDomainName, rxprocs/RxSetSrvCallDomainName, rxref_f6d23374-7565-4922-8f1c-222886e3a90c.xml, ifsk.rxsetsrvcalldomainname, RxSetSrvCallDomainName function [Installable File System Drivers]
+ms.keywords : rxprocs/RxSetSrvCallDomainName, RxSetSrvCallDomainName, rxref_f6d23374-7565-4922-8f1c-222886e3a90c.xml, ifsk.rxsetsrvcalldomainname, RxSetSrvCallDomainName function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
+req.typenames : RX_CONTEXT, *PRX_CONTEXT
 req.product : Windows 10 or later.
 ---
 
@@ -101,7 +101,7 @@ If the <i>DomainName</i> parameter is not a <b>NULL</b> pointer, and the <i>Doma
 | **Minimum UMDF version** |  |
 | **Header** | rxprocs.h (include Mrxfcb.h, Rxprocs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

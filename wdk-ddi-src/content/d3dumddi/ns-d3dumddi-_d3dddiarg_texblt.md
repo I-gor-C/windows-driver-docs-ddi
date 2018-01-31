@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._D3DDDIARG_TEXBLT
-title : _D3DDDIARG_TEXBLT
+title : "_D3DDDIARG_TEXBLT"
 author : windows-driver-content
 description : The D3DDDIARG_TEXBLT structure describes parameters for a texture bit-block transfer (bitblt) operation.
 old-location : display\d3dddiarg_texblt.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e236ac2e-24d7-45a4-aa88-b496c8d92764
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDIARG_TEXBLT, UMDisplayDriver_param_Structs_4a343a1e-c364-4261-9f86-e179e0fc2f7c.xml, display.d3dddiarg_texblt, _D3DDDIARG_TEXBLT, D3DDDIARG_TEXBLT, D3DDDIARG_TEXBLT structure [Display Devices]
+ms.keywords : display.d3dddiarg_texblt, D3DDDIARG_TEXBLT structure [Display Devices], UMDisplayDriver_param_Structs_4a343a1e-c364-4261-9f86-e179e0fc2f7c.xml, d3dumddi/D3DDDIARG_TEXBLT, D3DDDIARG_TEXBLT, _D3DDDIARG_TEXBLT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,11 +86,11 @@ typedef struct _D3DDDIARG_TEXBLT {
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569161">POINT</a>
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_texblt.md">TexBlt</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
 
  
 

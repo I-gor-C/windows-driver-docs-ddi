@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 76b076d1-640b-4378-bf6d-36d87a8a5042
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisQueryDepthSList macro [Network Drivers Starting with Windows Vista], netvista.ndisquerydepthslist, NdisQueryDepthSList, ndis_interlocked_ref_f44c64cf-029a-408e-84a0-a8c09bc91592.xml, ndis/NdisQueryDepthSList
+ms.keywords : ndis/NdisQueryDepthSList, NdisQueryDepthSList, ndis_interlocked_ref_f44c64cf-029a-408e-84a0-a8c09bc91592.xml, NdisQueryDepthSList macro [Network Drivers Starting with Windows Vista], netvista.ndisquerydepthslist
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -74,7 +74,7 @@ None
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Miscellaneous_Function |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 07b5d7ed-fc4c-45e5-8748-2630c91d912a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceSetCharacteristics, DFDeviceObjectGeneralRef_a5d23cdb-a42e-48ef-9158-174354e13ca6.xml, kmdf.wdfdevicesetcharacteristics, WdfDeviceSetCharacteristics method, PFN_WDFDEVICESETCHARACTERISTICS, WdfDeviceSetCharacteristics, wdf.wdfdevicesetcharacteristics
+ms.keywords : PFN_WDFDEVICESETCHARACTERISTICS, wdfdevice/WdfDeviceSetCharacteristics, WdfDeviceSetCharacteristics, WdfDeviceSetCharacteristics method, wdf.wdfdevicesetcharacteristics, DFDeviceObjectGeneralRef_a5d23cdb-a42e-48ef-9158-174354e13ca6.xml, kmdf.wdfdevicesetcharacteristics
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,7 +86,7 @@ Each call to <b>WdfDeviceSetCharacteristics</b> overwrites the settings of any p
 | **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also

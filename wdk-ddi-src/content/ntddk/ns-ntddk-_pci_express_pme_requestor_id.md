@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddk._PCI_EXPRESS_PME_REQUESTOR_ID
-title : _PCI_EXPRESS_PME_REQUESTOR_ID
+title : "_PCI_EXPRESS_PME_REQUESTOR_ID"
 author : windows-driver-content
 description : The PCI_EXPRESS_PME_REQUESTOR_ID structure describes the identifier of the requester of a power management event (PME).
 old-location : pci\pci_express_pme_requestor_id.htm
@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : 2305ffbd-22c8-4f63-bbe4-fd297bf98e39
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : PCI.pci_express_pme_requestor_id, ntddk/PCI_EXPRESS_PME_REQUESTOR_ID, ntddk/PPCI_EXPRESS_PME_REQUESTOR_ID, PCI_EXPRESS_PME_REQUESTOR_ID union [Buses], PCI_EXPRESS_PME_REQUESTOR_ID, PPCI_EXPRESS_PME_REQUESTOR_ID, _PCI_EXPRESS_PME_REQUESTOR_ID, *PPCI_EXPRESS_PME_REQUESTOR_ID, PPCI_EXPRESS_PME_REQUESTOR_ID union pointer [Buses], pci_struct_0cb11d1f-7426-42fc-9d77-373516a492ae.xml
+ms.keywords : ntddk/PCI_EXPRESS_PME_REQUESTOR_ID, ntddk/PPCI_EXPRESS_PME_REQUESTOR_ID, _PCI_EXPRESS_PME_REQUESTOR_ID, PPCI_EXPRESS_PME_REQUESTOR_ID, PPCI_EXPRESS_PME_REQUESTOR_ID union pointer [Buses], *PPCI_EXPRESS_PME_REQUESTOR_ID, pci_struct_0cb11d1f-7426-42fc-9d77-373516a492ae.xml, PCI_EXPRESS_PME_REQUESTOR_ID union [Buses], PCI.pci_express_pme_requestor_id, PCI_EXPRESS_PME_REQUESTOR_ID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

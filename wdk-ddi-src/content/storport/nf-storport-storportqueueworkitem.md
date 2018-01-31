@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7B5DD97C-2E3D-4FF7-BF04-36F016B0C6B3
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storport/StorPortQueueWorkItem, StorPortQueueWorkItem routine [Storage Devices], StorPortQueueWorkItem, storage.storportqueueworkitem
+ms.keywords : StorPortQueueWorkItem routine [Storage Devices], StorPortQueueWorkItem, storport/StorPortQueueWorkItem, storage.storportqueueworkitem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -137,16 +137,16 @@ The work item was successfully queued.
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\storport\nf-storport-storportinitializeworker.md">StorPortInitializeWorker</a>
+
 <a href="..\storport\nc-storport-hw_workitem.md">HwStorWorkItem</a>
 
 <a href="..\storport\nf-storport-storportfreeworker.md">StorPortFreeWorker</a>
-
-<a href="..\storport\nf-storport-storportinitializeworker.md">StorPortInitializeWorker</a>
 
  
 

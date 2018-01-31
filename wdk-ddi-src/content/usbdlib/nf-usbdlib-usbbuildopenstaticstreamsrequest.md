@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : B514B88E-2D1F-43F1-BF70-BC49294CFE93
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UsbBuildOpenStaticStreamsRequest function [Buses], UsbBuildOpenStaticStreamsRequest, buses.usbbuildopenbasicstreamsrequest, usbdlib/UsbBuildOpenStaticStreamsRequest
+ms.keywords : usbdlib/UsbBuildOpenStaticStreamsRequest, UsbBuildOpenStaticStreamsRequest, buses.usbbuildopenbasicstreamsrequest, UsbBuildOpenStaticStreamsRequest function [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.typenames : "*PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -101,9 +101,9 @@ For a code example that shows the URB format required for an open-streams reques
 
 ## See Also
 
-<a href="..\usb\ns-usb-_urb_open_static_streams.md">_URB_OPEN_STATIC_STREAMS</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450846">How to Open and Close Static Streams in a USB Bulk Endpoint</a>
+
+<a href="..\usb\ns-usb-_urb_open_static_streams.md">_URB_OPEN_STATIC_STREAMS</a>
 
  
 

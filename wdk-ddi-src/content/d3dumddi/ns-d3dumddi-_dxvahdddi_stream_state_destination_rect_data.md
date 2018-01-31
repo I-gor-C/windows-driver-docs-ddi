@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA
-title : _DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA
+title : "_DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA"
 author : windows-driver-content
 description : The DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA structure describes stream-state data that specifies the destination rectangle. The driver scales the source rectangle within the input surface to the destination rectangle within the output surface.
 old-location : display\dxvahdddi_stream_state_destination_rect_data.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 82f0cb12-fc0e-4627-af50-df4697f6764f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA structure [Display Devices], _DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA, DXVA2_Structs_3b88b3f0-9b31-46c6-8725-514f227b12a1.xml, display.dxvahdddi_stream_state_destination_rect_data, d3dumddi/DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA, DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA
+ms.keywords : DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA structure [Display Devices], DXVA2_Structs_3b88b3f0-9b31-46c6-8725-514f227b12a1.xml, DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA, _DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA, d3dumddi/DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA, display.dxvahdddi_stream_state_destination_rect_data
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

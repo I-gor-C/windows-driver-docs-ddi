@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 343d965d-3e85-423e-a46b-894b19d5df4e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeQueryLogicalProcessorRelationship routine [Kernel-Mode Driver Architecture], kernel.kequerylogicalprocessorrelationship, KeQueryLogicalProcessorRelationship, wdm/KeQueryLogicalProcessorRelationship, k105_0db645b1-dfa2-4d90-856f-975997dc09a8.xml
+ms.keywords : KeQueryLogicalProcessorRelationship, KeQueryLogicalProcessorRelationship routine [Kernel-Mode Driver Architecture], k105_0db645b1-dfa2-4d90-856f-975997dc09a8.xml, kernel.kequerylogicalprocessorrelationship, wdm/KeQueryLogicalProcessorRelationship
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -144,16 +144,16 @@ To determine the buffer size to allocate, initially call <b>KeQueryLogicalProces
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Ntddk.h, Wdm.h, Ntddk.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="http://go.microsoft.com/fwlink/p/?linkid=155068">LOGICAL_PROCESSOR_RELATIONSHIP</a>
+<a href="http://go.microsoft.com/fwlink/p/?linkid=155065">SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX</a>
 
 <a href="..\miniport\ns-miniport-_processor_number.md">PROCESSOR_NUMBER</a>
 
-<a href="http://go.microsoft.com/fwlink/p/?linkid=155065">SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX</a>
+<a href="http://go.microsoft.com/fwlink/p/?linkid=155068">LOGICAL_PROCESSOR_RELATIONSHIP</a>
 
  
 

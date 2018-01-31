@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dhal._D3DHAL_DP2DRAWRECTPATCH
-title : _D3DHAL_DP2DRAWRECTPATCH
+title : "_D3DHAL_DP2DRAWRECTPATCH"
 author : windows-driver-content
 description : DirectX 8.0 and later versions only.
 old-location : display\d3dhal_dp2drawrectpatch.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 892fe11a-4dfd-43cb-8f9a-b148d81a087f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : LPD3DHAL_DP2DRAWRECTPATCH structure pointer [Display Devices], *LPD3DHAL_DP2DRAWRECTPATCH, LPD3DHAL_DP2DRAWRECTPATCH, _D3DHAL_DP2DRAWRECTPATCH, d3dhal/LPD3DHAL_DP2DRAWRECTPATCH, d3dhal/D3DHAL_DP2DRAWRECTPATCH, d3dstrct_beda6033-07b1-4985-8eac-6bb49bcce07e.xml, display.d3dhal_dp2drawrectpatch, D3DHAL_DP2DRAWRECTPATCH, D3DHAL_DP2DRAWRECTPATCH structure [Display Devices]
+ms.keywords : display.d3dhal_dp2drawrectpatch, d3dhal/LPD3DHAL_DP2DRAWRECTPATCH, D3DHAL_DP2DRAWRECTPATCH structure [Display Devices], _D3DHAL_DP2DRAWRECTPATCH, *LPD3DHAL_DP2DRAWRECTPATCH, LPD3DHAL_DP2DRAWRECTPATCH structure pointer [Display Devices], D3DHAL_DP2DRAWRECTPATCH, LPD3DHAL_DP2DRAWRECTPATCH, d3dhal/D3DHAL_DP2DRAWRECTPATCH, d3dstrct_beda6033-07b1-4985-8eac-6bb49bcce07e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -92,15 +92,15 @@ The driver receives notification that cached patch information is be released vi
 
 ## See Also
 
-D3DRS_DELETERTPATCH
-
-D3DDP2OP_DRAWRECTPATCH
-
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2drawtripatch.md">D3DHAL_DP2DRAWTRIPATCH</a>
 
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
+
+D3DDP2OP_DRAWRECTPATCH
+
+D3DRS_DELETERTPATCH
+
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 
  
 

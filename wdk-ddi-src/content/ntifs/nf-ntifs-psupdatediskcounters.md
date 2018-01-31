@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 0BDC6629-9C0E-4437-888D-1EF730714CA4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.psupdatediskcounters, PsUpdateDiskCounters, ntifs/PsUpdateDiskCounters, PsUpdateDiskCounters routine [Installable File System Drivers]
+ms.keywords : ntifs/PsUpdateDiskCounters, ifsk.psupdatediskcounters, PsUpdateDiskCounters routine [Installable File System Drivers], PsUpdateDiskCounters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -99,7 +99,7 @@ File system drivers use <b>PsUpdateDiskCounters</b> to update counts for disk I/
 | **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

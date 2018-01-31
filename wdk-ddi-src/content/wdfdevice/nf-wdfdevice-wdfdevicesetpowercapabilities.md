@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e04558e3-a95a-408b-961b-e8ea7ac9136d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfdevicesetpowercapabilities, wdf.wdfdevicesetpowercapabilities, WdfDeviceSetPowerCapabilities, PFN_WDFDEVICESETPOWERCAPABILITIES, DFDeviceObjectGeneralRef_d3d51bfe-62da-4146-b4c1-152cac9f0e82.xml, WdfDeviceSetPowerCapabilities method, wdfdevice/WdfDeviceSetPowerCapabilities
+ms.keywords : wdfdevice/WdfDeviceSetPowerCapabilities, WdfDeviceSetPowerCapabilities, DFDeviceObjectGeneralRef_d3d51bfe-62da-4146-b4c1-152cac9f0e82.xml, WdfDeviceSetPowerCapabilities method, kmdf.wdfdevicesetpowercapabilities, PFN_WDFDEVICESETPOWERCAPABILITIES, wdf.wdfdevicesetpowercapabilities
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -115,14 +115,14 @@ A driver typically calls <b>WdfDeviceSetPowerCapabilities</b> from within one of
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetpnpcapabilities.md">WdfDeviceSetPnpCapabilities</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdf_device_power_capabilities_init.md">WDF_DEVICE_POWER_CAPABILITIES_INIT</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetpnpcapabilities.md">WdfDeviceSetPnpCapabilities</a>
 
 <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_capabilities.md">WDF_DEVICE_POWER_CAPABILITIES</a>
 

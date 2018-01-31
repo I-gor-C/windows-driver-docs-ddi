@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 726B392E-3C7F-4F55-B045-CE022C242F0A
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMIdleNotificationConfirm function [Network Drivers Starting with Windows Vista], ndis/NdisMIdleNotificationConfirm, NdisMIdleNotificationConfirm, netvista.ndismidlenotificationconfirm
+ms.keywords : ndis/NdisMIdleNotificationConfirm, NdisMIdleNotificationConfirm function [Network Drivers Starting with Windows Vista], netvista.ndismidlenotificationconfirm, NdisMIdleNotificationConfirm
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

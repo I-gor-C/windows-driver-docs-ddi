@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : E9C5B866-1EB0-4043-B22F-DF2F4CFAE64C
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : spb/PSPB_TRANSFER_BUFFER, SPB.spb_transfer_buffer, spb/SPB_TRANSFER_BUFFER, *PSPB_TRANSFER_BUFFER, PSPB_TRANSFER_BUFFER, PSPB_TRANSFER_BUFFER structure pointer [Buses], SPB_TRANSFER_BUFFER structure [Buses], SPB_TRANSFER_BUFFER
+ms.keywords : spb/PSPB_TRANSFER_BUFFER, PSPB_TRANSFER_BUFFER structure pointer [Buses], PSPB_TRANSFER_BUFFER, SPB_TRANSFER_BUFFER structure [Buses], spb/SPB_TRANSFER_BUFFER, SPB_TRANSFER_BUFFER, *PSPB_TRANSFER_BUFFER, SPB.spb_transfer_buffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_TRANSFER_BUFFER, SPB_TRANSFER_BUFFER"
+req.typenames : SPB_TRANSFER_BUFFER, *PSPB_TRANSFER_BUFFER
 req.product : Windows 10 or later.
 ---
 
@@ -85,11 +85,11 @@ The <b>Mdl</b> member of this structure can be used only by clients of the SPB c
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406217">SPB_TRANSFER_BUFFER_LIST_ENTRY</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406223">SPB_TRANSFER_LIST_ENTRY</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406216">SPB_TRANSFER_BUFFER_FORMAT</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406217">SPB_TRANSFER_BUFFER_LIST_ENTRY</a>
 
  
 

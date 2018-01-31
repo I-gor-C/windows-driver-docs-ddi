@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddk._WHEA_XPF_MC_BANK_DESCRIPTOR
-title : _WHEA_XPF_MC_BANK_DESCRIPTOR
+title : "_WHEA_XPF_MC_BANK_DESCRIPTOR"
 author : windows-driver-content
 description : The WHEA_XPF_MC_BANK_DESCRIPTOR structure describes a bank of machine check registers for an x86 or x64 processor.
 old-location : whea\whea_xpf_mc_bank_descriptor.htm
@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : e5360f75-53cf-4025-9a1c-665c098329dd
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : whearef_9f1970bd-6dbf-4104-9525-2018ab2f766e.xml, ntddk/WHEA_XPF_MC_BANK_DESCRIPTOR, *PWHEA_XPF_MC_BANK_DESCRIPTOR, _WHEA_XPF_MC_BANK_DESCRIPTOR, PWHEA_XPF_MC_BANK_DESCRIPTOR structure pointer [WHEA Drivers and Applications], ntddk/PWHEA_XPF_MC_BANK_DESCRIPTOR, WHEA_XPF_MC_BANK_DESCRIPTOR structure [WHEA Drivers and Applications], whea.whea_xpf_mc_bank_descriptor, PWHEA_XPF_MC_BANK_DESCRIPTOR, WHEA_XPF_MC_BANK_DESCRIPTOR
+ms.keywords : whea.whea_xpf_mc_bank_descriptor, PWHEA_XPF_MC_BANK_DESCRIPTOR, PWHEA_XPF_MC_BANK_DESCRIPTOR structure pointer [WHEA Drivers and Applications], WHEA_XPF_MC_BANK_DESCRIPTOR, WHEA_XPF_MC_BANK_DESCRIPTOR structure [WHEA Drivers and Applications], ntddk/PWHEA_XPF_MC_BANK_DESCRIPTOR, *PWHEA_XPF_MC_BANK_DESCRIPTOR, _WHEA_XPF_MC_BANK_DESCRIPTOR, ntddk/WHEA_XPF_MC_BANK_DESCRIPTOR, whearef_9f1970bd-6dbf-4104-9525-2018ab2f766e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -100,6 +100,26 @@ An XPF_MC_BANK_FLAGS union that indicates which of the members of the WHEA_XPF_M
 </tr>
 </table></span></div>
 
+
+#### ClearOnInitializationRW
+
+A single bit that indicates that the operating system can write to the <b>ClearOnInitialization</b> member of the WHEA_XPF_MC_BANK_DESCRIPTOR structure.
+
+
+#### ControlDataRW
+
+A single bit that indicates that the operating system can write to the <b>ControlData</b> member of the WHEA_XPF_MC_BANK_DESCRIPTOR structure.
+
+
+#### Reserved
+
+Reserved for system use.
+
+
+#### AsUCHAR
+
+A UCHAR representation of contents of the XPF_MC_BANK_FLAGS union.
+
 `MiscMsr`
 
 The model-specific register address of the register bank's IA32_MCi_MISC register. For more information about the IA32_MCi_MISC register, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=78804">Intel 64 and IA-32 Architectures Software Developer's Manual</a>.
@@ -107,6 +127,23 @@ The model-specific register address of the register bank's IA32_MCi_MISC registe
 `StatusDataFormat`
 
 The format of the data in the register bank's status register. Possible values are:
+
+
+
+
+#### WHEA_XPF_MC_BANK_STATUSFORMAT_IA32MCA
+
+IA32 machine check architecture.
+
+
+#### WHEA_XPF_MC_BANK_STATUSFORMAT_Intel64MCA
+
+Intel64 machine check architecture.
+
+
+#### WHEA_XPF_MC_BANK_STATUSFORMAT_AMD64MCA
+
+AMD64 machine check architecture.
 
 `StatusMsr`
 

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 443fb3c0-0e75-4abc-b44f-047752b3cab7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PKSAUDIO_MICROPHONE_COORDINATES, KSAUDIO_MICROPHONE_COORDINATES structure [Audio Devices], KSAUDIO_MICROPHONE_COORDINATES, ksmedia/KSAUDIO_MICROPHONE_COORDINATES, aud-prop_85a5f68f-13f2-4465-bb16-4d30e9c9d731.xml, audio.ksaudio_microphone_coordinates, *PKSAUDIO_MICROPHONE_COORDINATES, ksmedia/PKSAUDIO_MICROPHONE_COORDINATES, PKSAUDIO_MICROPHONE_COORDINATES structure pointer [Audio Devices]
+ms.keywords : KSAUDIO_MICROPHONE_COORDINATES structure [Audio Devices], ksmedia/KSAUDIO_MICROPHONE_COORDINATES, PKSAUDIO_MICROPHONE_COORDINATES, KSAUDIO_MICROPHONE_COORDINATES, ksmedia/PKSAUDIO_MICROPHONE_COORDINATES, audio.ksaudio_microphone_coordinates, *PKSAUDIO_MICROPHONE_COORDINATES, aud-prop_85a5f68f-13f2-4465-bb16-4d30e9c9d731.xml, PKSAUDIO_MICROPHONE_COORDINATES structure pointer [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSAUDIO_MICROPHONE_COORDINATES, *PKSAUDIO_MICROPHONE_COORDINATES
+req.typenames : "*PKSAUDIO_MICROPHONE_COORDINATES, KSAUDIO_MICROPHONE_COORDINATES"
 ---
 
 # KSAUDIO_MICROPHONE_COORDINATES structure

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d453cc6a-d81f-485c-a71e-d99c080bfa28
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfusbtargetpipegetinformation, wdfusb/WdfUsbTargetPipeGetInformation, PFN_WDFUSBTARGETPIPEGETINFORMATION, kmdf.wdfusbtargetpipegetinformation, WdfUsbTargetPipeGetInformation, WdfUsbTargetPipeGetInformation method, DFUsbRef_edde1f49-9228-48fc-8812-ebfe65f48b18.xml
+ms.keywords : wdf.wdfusbtargetpipegetinformation, wdfusb/WdfUsbTargetPipeGetInformation, WdfUsbTargetPipeGetInformation, kmdf.wdfusbtargetpipegetinformation, DFUsbRef_edde1f49-9228-48fc-8812-ebfe65f48b18.xml, PFN_WDFUSBTARGETPIPEGETINFORMATION, WdfUsbTargetPipeGetInformation method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE"
+req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
 
@@ -84,16 +84,16 @@ For more information about the <b>WdfUsbTargetPipeGetInformation</b> method and 
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2 |
 
 ## See Also
 
 <a href="..\wdfusb\ns-wdfusb-_wdf_usb_pipe_information.md">WDF_USB_PIPE_INFORMATION</a>
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>
-
 <a href="..\wdfusb\nf-wdfusb-wdf_usb_pipe_information_init.md">WDF_USB_PIPE_INFORMATION_INIT</a>
+
+<a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>
 
  
 

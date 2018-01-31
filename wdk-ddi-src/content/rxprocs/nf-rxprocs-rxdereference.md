@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 4f63fc92-56e3-4414-a912-09ed0de59c92
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rxref_90cd9c96-1fcf-4214-b14f-5065c1e52260.xml, RxDereference, RxDereference function [Installable File System Drivers], ifsk.rxdereference, rxprocs/RxDereference
+ms.keywords : RxDereference, rxprocs/RxDereference, rxref_90cd9c96-1fcf-4214-b14f-5065c1e52260.xml, RxDereference function [Installable File System Drivers], ifsk.rxdereference
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
+req.typenames : RX_CONTEXT, *PRX_CONTEXT
 req.product : Windows 10 or later.
 ---
 
@@ -61,6 +61,23 @@ A pointer to the reference-counted data structure to be dereferenced.
 `LockHoldingState`
 
 The mode in which the appropriate lock for this data structure is held. This parameter can be one of the following values for the LOCK_HOLDING_STATE enumeration:
+
+
+
+
+#### LHS_LockNotHeld
+
+A lock is not currently held.
+
+
+#### LHS_SharedLockHeld
+
+A shared lock is being held.
+
+
+#### LHS_ExclusiveLockHeld
+
+An exclusive lock is being held.
 
 
 ## Return Value
@@ -96,16 +113,16 @@ If the <b>NodeReferenceCount</b> member decrements to 1 and the <i>LockHoldingSt
 | **Minimum UMDF version** |  |
 | **Header** | rxprocs.h (include Rxprocs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\rxprocs\nf-rxprocs-rxreference.md">RxReference</a>
 
-<a href="https://msdn.microsoft.com/9a3bb194-0289-47f4-a5c8-848d8d82cdd7">The SRV_CALL Structure</a>
-
 <a href="https://msdn.microsoft.com/6cf4c6f6-a21f-4919-92b5-2403b650d8d0">The SRV_OPEN Structure</a>
+
+<a href="https://msdn.microsoft.com/9a3bb194-0289-47f4-a5c8-848d8d82cdd7">The SRV_CALL Structure</a>
 
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/the-fobx-structure">The FOBX Structure</a>
 

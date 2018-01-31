@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 47633903-0314-4d50-8dd5-ddb0eb934e09
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.clfsterminatereadlog, wdm/ClfsTerminateReadLog, ClfsTerminateReadLog routine [Kernel-Mode Driver Architecture], ClfsTerminateReadLog, Clfs_691e308a-56d7-498f-af11-8908cc13b1b7.xml
+ms.keywords : kernel.clfsterminatereadlog, wdm/ClfsTerminateReadLog, ClfsTerminateReadLog routine [Kernel-Mode Driver Architecture], Clfs_691e308a-56d7-498f-af11-8908cc13b1b7.xml, ClfsTerminateReadLog
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,14 +77,14 @@ A pointer to the read context to be invalidated. The caller previously obtained 
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfsreadlogrecord.md">ClfsReadLogRecord</a>
-
 <a href="..\wdm\nf-wdm-clfsreadrestartarea.md">ClfsReadRestartArea</a>
+
+<a href="..\wdm\nf-wdm-clfsreadlogrecord.md">ClfsReadLogRecord</a>
 
  
 

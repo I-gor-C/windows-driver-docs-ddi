@@ -1,6 +1,6 @@
 ---
 UID : NS:hbapiwmi._GetPortAttributesByWWN_IN
-title : _GetPortAttributesByWWN_IN
+title : "_GetPortAttributesByWWN_IN"
 author : windows-driver-content
 description : The GetPortAttributesByWWN_IN structure is used by a WMI client to deliver input parameter data to the GetPortAttributesByWWN WMI method.
 old-location : storage\getportattributesbywwn_in.htm
@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2b189ece-6c49-42e2-8ef2-b3db516fc844
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PGetPortAttributesByWWN_IN, hbapiwmi/PGetPortAttributesByWWN_IN, PGetPortAttributesByWWN_IN structure pointer [Storage Devices], PGetPortAttributesByWWN_IN, hbapiwmi/GetPortAttributesByWWN_IN, structs-Fibre_0093904b-888e-48de-ba79-5302d0ed6b75.xml, GetPortAttributesByWWN_IN structure [Storage Devices], GetPortAttributesByWWN_IN, storage.getportattributesbywwn_in, _GetPortAttributesByWWN_IN"
+ms.keywords : PGetPortAttributesByWWN_IN, _GetPortAttributesByWWN_IN, hbapiwmi/GetPortAttributesByWWN_IN, hbapiwmi/PGetPortAttributesByWWN_IN, storage.getportattributesbywwn_in, structs-Fibre_0093904b-888e-48de-ba79-5302d0ed6b75.xml, GetPortAttributesByWWN_IN structure [Storage Devices], GetPortAttributesByWWN_IN, *PGetPortAttributesByWWN_IN, PGetPortAttributesByWWN_IN structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PGetPortAttributesByWWN_IN, GetPortAttributesByWWN_IN"
+req.typenames : GetPortAttributesByWWN_IN, *PGetPortAttributesByWWN_IN
 ---
 
 # _GetPortAttributesByWWN_IN structure

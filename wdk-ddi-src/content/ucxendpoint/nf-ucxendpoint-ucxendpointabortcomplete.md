@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 754BCC74-1EC2-429E-A711-E8958665A5A8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxEndpointAbortComplete, UcxEndpointAbortComplete method [Buses], buses._ucxendpointabortcomplete, ucxendpoint/UcxEndpointAbortComplete
+ms.keywords : buses._ucxendpointabortcomplete, UcxEndpointAbortComplete, UcxEndpointAbortComplete method [Buses], ucxendpoint/UcxEndpointAbortComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,7 +72,7 @@ This method does not return a value.
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ucxendpoint.h (include Ucxclass.h, Ucxendpoint.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

@@ -25,4 +25,4 @@ prdrvcom.h contains the following programming interfaces:
 ## Enumerations
 | Title | Description |
 | ---- |:---- |
-| [tagSHIMOPTS](ne-prdrvcom-tagshimopts.md) | . |
+| [tagSHIMOPTS](ne-prdrvcom-tagshimopts.md) | "." |

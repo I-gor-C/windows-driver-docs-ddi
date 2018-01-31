@@ -28,7 +28,7 @@ req.assembly :
 req.type-library : 
 req.lib : 
 req.dll : 
-req.irql : (See Remarks section)
+req.irql : "(See Remarks section)"
 topictype : 
 apitype : 
 apilocation : 
@@ -88,7 +88,7 @@ This routine is optional.
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 | **Library** |  |
-| **IRQL** | (See Remarks section) |
+| **IRQL** | "(See Remarks section)" |
 | **DDI compliance rules** |  |
 
 ## See Also

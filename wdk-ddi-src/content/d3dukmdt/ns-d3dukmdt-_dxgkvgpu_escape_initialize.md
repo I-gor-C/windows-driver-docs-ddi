@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dukmdt._DXGKVGPU_ESCAPE_INITIALIZE
-title : _DXGKVGPU_ESCAPE_INITIALIZE
+title : "_DXGKVGPU_ESCAPE_INITIALIZE"
 author : windows-driver-content
 description : Used to initialize an escape.
 old-location : display\dxgkvgpu_escape_initialize.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 697F4A4C-349E-46E5-B891-215C4AFFC4B6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKVGPU_ESCAPE_INITIALIZE structure [Display Devices], _DXGKVGPU_ESCAPE_INITIALIZE, d3dukmdt/DXGKVGPU_ESCAPE_INITIALIZE, DXGKVGPU_ESCAPE_INITIALIZE, display.dxgkvgpu_escape_initialize
+ms.keywords : d3dukmdt/DXGKVGPU_ESCAPE_INITIALIZE, display.dxgkvgpu_escape_initialize, DXGKVGPU_ESCAPE_INITIALIZE structure [Display Devices], DXGKVGPU_ESCAPE_INITIALIZE, _DXGKVGPU_ESCAPE_INITIALIZE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

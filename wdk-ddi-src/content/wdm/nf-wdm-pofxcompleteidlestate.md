@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : D9224991-DB36-4250-861A-6C21E29F91EF
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.pofxcompleteidlestate, PoFxCompleteIdleState routine [Kernel-Mode Driver Architecture], wdm/PoFxCompleteIdleState, PoFxCompleteIdleState
+ms.keywords : PoFxCompleteIdleState routine [Kernel-Mode Driver Architecture], kernel.pofxcompleteidlestate, wdm/PoFxCompleteIdleState, PoFxCompleteIdleState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,7 +82,7 @@ PoFx calls the driver's <i>ComponentIdleStateCallback</i> routine to tell the dr
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

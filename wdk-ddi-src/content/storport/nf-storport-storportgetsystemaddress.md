@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 28bb26bd-7259-4664-8092-6b9a917c1a91
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storprt_6e6713c8-a235-43b8-a325-2d4b8fca8f35.xml, storport/StorPortGetSystemAddress, StorPortGetSystemAddress, storage.storportgetsystemaddress, StorPortGetSystemAddress routine [Storage Devices]
+ms.keywords : StorPortGetSystemAddress routine [Storage Devices], storage.storportgetsystemaddress, StorPortGetSystemAddress, storport/StorPortGetSystemAddress, storprt_6e6713c8-a235-43b8-a325-2d4b8fca8f35.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -140,7 +140,7 @@ The attempt to map the data buffer to system space failed.
 
 ## Remarks
 
-Starting in Windows 8, the <i>Srb</i> parameter may point to either <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> or <a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>. If the function identifier in the <b>Function</b> field of <i>Srb</i> is <b>SRB_FUNCTION_STORAGE_REQUEST_BLOCK</b>, the SRB is a <b>STORAGE_REQUEST_BLOCK</b> request structure.
+Starting in Windows 8, the <i>Srb</i> parameter may point to either <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> or <a href="..\srb\ns-srb-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>. If the function identifier in the <b>Function</b> field of <i>Srb</i> is <b>SRB_FUNCTION_STORAGE_REQUEST_BLOCK</b>, the SRB is a <b>STORAGE_REQUEST_BLOCK</b> request structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -151,14 +151,14 @@ Starting in Windows 8, the <i>Srb</i> parameter may point to either <a href="..
 | **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | StorPortIrql |
 
 ## See Also
 
-<a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
-
 <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+
+<a href="..\srb\ns-srb-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
 
  
 

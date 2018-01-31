@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 38e22922-d9de-4dfd-9da9-c131b789f5d6
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFIOTARGETGETSTATE, WdfIoTargetGetState, wdf.wdfiotargetgetstate, kmdf.wdfiotargetgetstate, DFIOTargetRef_a11b8879-0766-4071-b1bd-c4cd43a0973b.xml, wdfiotarget/WdfIoTargetGetState, WdfIoTargetGetState method
+ms.keywords : kmdf.wdfiotargetgetstate, WdfIoTargetGetState method, wdfiotarget/WdfIoTargetGetState, DFIOTargetRef_a11b8879-0766-4071-b1bd-c4cd43a0973b.xml, PFN_WDFIOTARGETGETSTATE, wdf.wdfiotargetgetstate, WdfIoTargetGetState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,7 +81,7 @@ For more information about I/O targets, see <a href="https://msdn.microsoft.com/
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfiotarget.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also

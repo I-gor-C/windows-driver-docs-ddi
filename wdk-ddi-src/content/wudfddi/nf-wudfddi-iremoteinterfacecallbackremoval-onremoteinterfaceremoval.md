@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0dfa2eb8-a7f6-46d9-9599-5e2aaf583f78
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IRemoteInterfaceCallbackRemoval, IRemoteInterfaceCallbackRemoval interface, OnRemoteInterfaceRemoval method, UMDFIoTargetObjectRef_17c1557c-2046-4bea-8b7f-88fea7103155.xml, wdf.iremoteinterfacecallbackremoval_onremoteinterfaceremoval, OnRemoteInterfaceRemoval, OnRemoteInterfaceRemoval method, OnRemoteInterfaceRemoval method, IRemoteInterfaceCallbackRemoval interface, umdf.iremoteinterfacecallbackremoval_onremoteinterfaceremoval, IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval, wudfddi/IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval
+ms.keywords : OnRemoteInterfaceRemoval, umdf.iremoteinterfacecallbackremoval_onremoteinterfaceremoval, IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval, wudfddi/IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval, IRemoteInterfaceCallbackRemoval, UMDFIoTargetObjectRef_17c1557c-2046-4bea-8b7f-88fea7103155.xml, OnRemoteInterfaceRemoval method, IRemoteInterfaceCallbackRemoval interface, wdf.iremoteinterfacecallbackremoval_onremoteinterfaceremoval, IRemoteInterfaceCallbackRemoval interface, OnRemoteInterfaceRemoval method, OnRemoteInterfaceRemoval method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -86,11 +86,11 @@ For more information about a driver's <b>OnRemoteInterfaceRemoval</b> event call
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556889">IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent</a>
+<a href="..\wudfddi\nn-wudfddi-iremoteinterfacecallbackremoval.md">IRemoteInterfaceCallbackRemoval</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556775">IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival</a>
 
-<a href="..\wudfddi\nn-wudfddi-iremoteinterfacecallbackremoval.md">IRemoteInterfaceCallbackRemoval</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556889">IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent</a>
 
  
 

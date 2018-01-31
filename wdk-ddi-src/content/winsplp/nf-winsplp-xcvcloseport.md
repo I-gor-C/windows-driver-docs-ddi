@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 8dfeb2d5-e75e-4e5b-b209-cb23133136f7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : winsplp/XcvClosePort, spoolfnc_5d0750d1-1f50-4e09-8c91-1362b2037265.xml, XcvClosePort function [Print Devices], XcvClosePort, print.xcvcloseport
+ms.keywords : spoolfnc_5d0750d1-1f50-4e09-8c91-1362b2037265.xml, XcvClosePort, print.xcvcloseport, XcvClosePort function [Print Devices], winsplp/XcvClosePort
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,9 +84,9 @@ The function should close the port specified by the handle, and it should make t
 
 ## See Also
 
-<a href="..\winsplp\nf-winsplp-xcvopenport.md">XcvOpenPort</a>
-
 <a href="..\winsplp\nf-winsplp-addportui.md">AddPortUI</a>
+
+<a href="..\winsplp\nf-winsplp-xcvopenport.md">XcvOpenPort</a>
 
  
 

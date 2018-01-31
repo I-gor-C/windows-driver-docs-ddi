@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 0ec10c43-df57-4661-9106-8edc6b76f5d7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rxref_aa43a136-8df7-45f1-bf52-48792c094f31.xml, rxworkq/RxSpinDownMRxDispatcher, RxSpinDownMRxDispatcher, ifsk.rxspindownmrxdispatcher, RxSpinDownMRxDispatcher function [Installable File System Drivers]
+ms.keywords : RxSpinDownMRxDispatcher function [Installable File System Drivers], ifsk.rxspindownmrxdispatcher, rxworkq/RxSpinDownMRxDispatcher, rxref_aa43a136-8df7-45f1-bf52-48792c094f31.xml, RxSpinDownMRxDispatcher
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PRX_CONTEXT, RX_CONTEXT"
+req.typenames : RX_CONTEXT, *PRX_CONTEXT
 req.product : Windows 10 or later.
 ---
 
@@ -77,14 +77,14 @@ The <b>RxSpinDownMRxDispatcher</b> routine is also called internally by the <b>R
 | **Minimum UMDF version** |  |
 | **Header** | rxworkq.h (include Rxworkq.h, Rxstruc.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\rxworkq\nf-rxworkq-rxposttoworkerthread.md">RxPostToWorkerThread</a>
-
 <a href="..\rxworkq\nf-rxworkq-rxdispatchtoworkerthread.md">RxDispatchToWorkerThread</a>
+
+<a href="..\rxworkq\nf-rxworkq-rxposttoworkerthread.md">RxPostToWorkerThread</a>
 
  
 

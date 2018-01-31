@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddk._SILO_MONITOR_REGISTRATION
-title : _SILO_MONITOR_REGISTRATION
+title : "_SILO_MONITOR_REGISTRATION"
 author : windows-driver-content
 description : This structure specifies a server silo monitor that can receive notifications about server silo events.
 old-location : kernel\silo_monitor_registration.htm
@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : F99F6346-3FEE-4889-A058-C7540A4CBFC8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : SILO_MONITOR_REGISTRATION structure [Kernel-Mode Driver Architecture], *PSILO_MONITOR_REGISTRATION, PSILO_MONITOR_REGISTRATION, ntddk/SILO_MONITOR_REGISTRATION, PSILO_MONITOR_REGISTRATION structure pointer [Kernel-Mode Driver Architecture], SILO_MONITOR_REGISTRATION, kernel.silo_monitor_registration, _SILO_MONITOR_REGISTRATION, ntddk/PSILO_MONITOR_REGISTRATION
+ms.keywords : ntddk/PSILO_MONITOR_REGISTRATION, kernel.silo_monitor_registration, SILO_MONITOR_REGISTRATION structure [Kernel-Mode Driver Architecture], ntddk/SILO_MONITOR_REGISTRATION, SILO_MONITOR_REGISTRATION, PSILO_MONITOR_REGISTRATION, _SILO_MONITOR_REGISTRATION, PSILO_MONITOR_REGISTRATION structure pointer [Kernel-Mode Driver Architecture], *PSILO_MONITOR_REGISTRATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSILO_MONITOR_REGISTRATION, SILO_MONITOR_REGISTRATION"
+req.typenames : SILO_MONITOR_REGISTRATION, *PSILO_MONITOR_REGISTRATION
 ---
 
 # _SILO_MONITOR_REGISTRATION structure

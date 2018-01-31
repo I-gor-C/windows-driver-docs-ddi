@@ -1,6 +1,6 @@
 ---
 UID : NS:wwan._WWAN_DEVICE_CAPS_EX
-title : _WWAN_DEVICE_CAPS_EX
+title : "_WWAN_DEVICE_CAPS_EX"
 author : windows-driver-content
 description : The WWAN_DEVICE_CAPS_EX structure represents the capabilities of the mobile broadband device.
 old-location : netvista\wwan_device_caps_ex.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 91F62BFF-C26A-422A-B138-1E8D9A5146B3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/WWAN_DEVICE_CAPS_EX, wwan/PWWAN_DEVICE_CAPS_EX, PWWAN_DEVICE_CAPS_EX, *PWWAN_DEVICE_CAPS_EX, WWAN_DEVICE_CAPS_EX structure [Network Drivers Starting with Windows Vista], _WWAN_DEVICE_CAPS_EX, netvista.wwan_device_caps_ex, PWWAN_DEVICE_CAPS_EX structure pointer [Network Drivers Starting with Windows Vista], WWAN_DEVICE_CAPS_EX
+ms.keywords : WWAN_DEVICE_CAPS_EX structure [Network Drivers Starting with Windows Vista], WWAN_DEVICE_CAPS_EX, _WWAN_DEVICE_CAPS_EX, PWWAN_DEVICE_CAPS_EX structure pointer [Network Drivers Starting with Windows Vista], netvista.wwan_device_caps_ex, PWWAN_DEVICE_CAPS_EX, *PWWAN_DEVICE_CAPS_EX, wwan/PWWAN_DEVICE_CAPS_EX, wwan/WWAN_DEVICE_CAPS_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -1074,11 +1074,11 @@ For CDMA-based devices, only CDMA-related data services must be specified. For e
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/BE664B41-3FE7-4E93-8739-12BD2F0AE5B8">OID_WWAN_DEVICE_CAPS_EX</a>
-
 <a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>
 
 <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_device_caps_ex.md">NDIS_WWAN_DEVICE_CAPS_EX</a>
+
+<a href="https://msdn.microsoft.com/BE664B41-3FE7-4E93-8739-12BD2F0AE5B8">OID_WWAN_DEVICE_CAPS_EX</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6acff4d8-c21f-49c5-a255-5b46aac97c9f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFQueueObjectRef_52e014c4-04ca-44b2-a5a8-19185b085cdf.xml, PFN_WDFIOQUEUERETRIEVEREQUESTBYFILEOBJECT, WdfIoQueueRetrieveRequestByFileObject method, wdfio/WdfIoQueueRetrieveRequestByFileObject, wdf.wdfioqueueretrieverequestbyfileobject, WdfIoQueueRetrieveRequestByFileObject, kmdf.wdfioqueueretrieverequestbyfileobject
+ms.keywords : wdf.wdfioqueueretrieverequestbyfileobject, wdfio/WdfIoQueueRetrieveRequestByFileObject, WdfIoQueueRetrieveRequestByFileObject method, WdfIoQueueRetrieveRequestByFileObject, DFQueueObjectRef_52e014c4-04ca-44b2-a5a8-19185b085cdf.xml, kmdf.wdfioqueueretrieverequestbyfileobject, PFN_WDFIOQUEUERETRIEVEREQUESTBYFILEOBJECT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -145,14 +145,14 @@ For more information about the <b>WdfIoQueueRetrieveRequestByFileObject</b> meth
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfio.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DoubleCompletion, DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfio\nf-wdfio-wdfioqueueretrievenextrequest.md">WdfIoQueueRetrieveNextRequest</a>
-
 <a href="..\wdfio\nf-wdfio-wdfioqueueretrievefoundrequest.md">WdfIoQueueRetrieveFoundRequest</a>
+
+<a href="..\wdfio\nf-wdfio-wdfioqueueretrievenextrequest.md">WdfIoQueueRetrieveNextRequest</a>
 
  
 

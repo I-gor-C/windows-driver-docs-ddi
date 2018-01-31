@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 8f720af6-d70a-4682-86f4-011e70a6f64f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : miniport_register_ref_60f684ba-a2ca-4fa8-8a80-9e805fb5c453.xml, NdisWriteRegisterUchar, NdisWriteRegisterUchar macro [Network Drivers Starting with Windows Vista], ndis/NdisWriteRegisterUchar, netvista.ndiswriteregisteruchar
+ms.keywords : ndis/NdisWriteRegisterUchar, NdisWriteRegisterUchar macro [Network Drivers Starting with Windows Vista], netvista.ndiswriteregisteruchar, miniport_register_ref_60f684ba-a2ca-4fa8-8a80-9e805fb5c453.xml, NdisWriteRegisterUchar
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -91,13 +91,13 @@ If a driver calls this function, a NIC's device registers must be mapped to nonc
 
 <a href="..\ndis\nf-ndis-ndisreadregisteruchar.md">NdisReadRegisterUchar</a>
 
-<a href="..\ndis\nf-ndis-ndiswriteregisterulong.md">NdisWriteRegisterUlong</a>
-
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-
 <a href="..\ndis\nf-ndis-ndismmapiospace.md">NdisMMapIoSpace</a>
 
 <a href="..\ndis\nf-ndis-ndiswriteregisterushort.md">NdisWriteRegisterUshort</a>
+
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+<a href="..\ndis\nf-ndis-ndiswriteregisterulong.md">NdisWriteRegisterUlong</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 966af529-1725-4e80-9e67-cdb8666673f2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PKSPROPERTY_DROPPEDFRAMES_CURRENT_S, ksmedia/KSPROPERTY_DROPPEDFRAMES_CURRENT_S, *PKSPROPERTY_DROPPEDFRAMES_CURRENT_S, ksmedia/PKSPROPERTY_DROPPEDFRAMES_CURRENT_S, vidcapstruct_ee78d2f2-c142-4d17-855d-7dc35589f271.xml, stream.ksproperty_droppedframes_current_s, PKSPROPERTY_DROPPEDFRAMES_CURRENT_S structure pointer [Streaming Media Devices], KSPROPERTY_DROPPEDFRAMES_CURRENT_S structure [Streaming Media Devices], KSPROPERTY_DROPPEDFRAMES_CURRENT_S
+ms.keywords : KSPROPERTY_DROPPEDFRAMES_CURRENT_S, ksmedia/KSPROPERTY_DROPPEDFRAMES_CURRENT_S, PKSPROPERTY_DROPPEDFRAMES_CURRENT_S, KSPROPERTY_DROPPEDFRAMES_CURRENT_S structure [Streaming Media Devices], *PKSPROPERTY_DROPPEDFRAMES_CURRENT_S, PKSPROPERTY_DROPPEDFRAMES_CURRENT_S structure pointer [Streaming Media Devices], stream.ksproperty_droppedframes_current_s, vidcapstruct_ee78d2f2-c142-4d17-855d-7dc35589f271.xml, ksmedia/PKSPROPERTY_DROPPEDFRAMES_CURRENT_S
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSPROPERTY_DROPPEDFRAMES_CURRENT_S, KSPROPERTY_DROPPEDFRAMES_CURRENT_S"
+req.typenames : KSPROPERTY_DROPPEDFRAMES_CURRENT_S, *PKSPROPERTY_DROPPEDFRAMES_CURRENT_S
 ---
 
 # KSPROPERTY_DROPPEDFRAMES_CURRENT_S structure
@@ -83,11 +83,11 @@ For more information about updating <b>PictureNumber</b> and <b>DropCount</b> se
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565135">KSPROPERTY_DROPPEDFRAMES_CURRENT</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567806">PROPSETID_VIDCAP_DROPPEDFRAMES</a>
 
 <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565135">KSPROPERTY_DROPPEDFRAMES_CURRENT</a>
 
  
 

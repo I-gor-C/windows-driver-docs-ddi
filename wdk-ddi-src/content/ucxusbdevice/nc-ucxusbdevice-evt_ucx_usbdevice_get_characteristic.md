@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSTREAM_INFO, STREAM_INFO"
+req.typenames : STREAM_INFO, *PSTREAM_INFO
 req.product : Windows 10 or later.
 ---
 
@@ -88,5 +88,5 @@ The UCX client driver registers its implementation with the USB host controller 
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |

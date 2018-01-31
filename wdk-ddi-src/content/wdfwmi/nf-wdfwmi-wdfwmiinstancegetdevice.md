@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4ebc90e0-328b-4830-9942-027d3f19d186
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfwmiinstancegetdevice, DFWMIRef_adc116bf-d2bc-41b0-8d1d-5cc90440d778.xml, PFN_WDFWMIINSTANCEGETDEVICE, WdfWmiInstanceGetDevice method, wdfwmi/WdfWmiInstanceGetDevice, kmdf.wdfwmiinstancegetdevice, WdfWmiInstanceGetDevice
+ms.keywords : DFWMIRef_adc116bf-d2bc-41b0-8d1d-5cc90440d778.xml, PFN_WDFWMIINSTANCEGETDEVICE, wdf.wdfwmiinstancegetdevice, wdfwmi/WdfWmiInstanceGetDevice, kmdf.wdfwmiinstancegetdevice, WdfWmiInstanceGetDevice, WdfWmiInstanceGetDevice method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,7 +76,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 | **Minimum UMDF version** |  |
 | **Header** | wdfwmi.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also

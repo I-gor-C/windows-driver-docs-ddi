@@ -1,6 +1,6 @@
 ---
 UID : NE:hwnclx._HWN_CLX_EXPORT_INDEX
-title : _HWN_CLX_EXPORT_INDEX
+title : "_HWN_CLX_EXPORT_INDEX"
 author : windows-driver-content
 description : Defines the position for each of the Hardware Notification exports in the export table.
 old-location : gpiobtn\_hwn_clx_export_index.htm
@@ -8,7 +8,7 @@ old-project : gpiobtn
 ms.assetid : fcbbd188-438a-4eaa-8034-67ca52d1fb56
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : RegisterClientIndex, hwnclx/UnregisterClientIndex, hwnclx/HWN_CLX_EXPORT_INDEX, AddDevicePostDeviceCreateIndex, _HWN_CLX_EXPORT_INDEX, HwNExportLastExportIndex, *PHWN_CLX_EXPORT_INDEX, HWN_CLX_EXPORT_INDEX, hwnclx/RegisterClientIndex, hwnclx/AddDevicePostDeviceCreateIndex, gpiobtn._hwn_clx_export_index, hwnclx/HwNExportLastExportIndex, HWN_CLX_EXPORT_INDEX enumeration, UnregisterClientIndex, AddDevicePreDeviceCreateIndex, hwnclx/AddDevicePreDeviceCreateIndex
+ms.keywords : HwNExportLastExportIndex, HWN_CLX_EXPORT_INDEX enumeration, *PHWN_CLX_EXPORT_INDEX, gpiobtn._hwn_clx_export_index, AddDevicePostDeviceCreateIndex, AddDevicePreDeviceCreateIndex, hwnclx/RegisterClientIndex, HWN_CLX_EXPORT_INDEX, hwnclx/HwNExportLastExportIndex, hwnclx/AddDevicePostDeviceCreateIndex, _HWN_CLX_EXPORT_INDEX, UnregisterClientIndex, hwnclx/UnregisterClientIndex, hwnclx/AddDevicePreDeviceCreateIndex, RegisterClientIndex, hwnclx/HWN_CLX_EXPORT_INDEX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum

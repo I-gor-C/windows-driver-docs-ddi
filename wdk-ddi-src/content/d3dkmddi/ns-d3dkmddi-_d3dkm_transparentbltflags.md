@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmddi._D3DKM_TRANSPARENTBLTFLAGS
-title : _D3DKM_TRANSPARENTBLTFLAGS
+title : "_D3DKM_TRANSPARENTBLTFLAGS"
 author : windows-driver-content
 description : The D3DKM_TRANSPARENTBLTFLAGS structure specifies the display adapter's ability to perform a hardware-accelerated bit-block transfer (bitblt) with transparency.
 old-location : display\d3dkm_transparentbltflags.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8ac87e6e-bc24-45fe-b0c5-d253dd03da16
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkm_transparentbltflags, _D3DKM_TRANSPARENTBLTFLAGS, d3dkmddi/D3DKM_TRANSPARENTBLTFLAGS, D3DKM_TRANSPARENTBLTFLAGS structure [Display Devices], DmStructs_7190815e-5610-4c97-823f-8bdaae16c005.xml, D3DKM_TRANSPARENTBLTFLAGS
+ms.keywords : D3DKM_TRANSPARENTBLTFLAGS, d3dkmddi/D3DKM_TRANSPARENTBLTFLAGS, DmStructs_7190815e-5610-4c97-823f-8bdaae16c005.xml, display.d3dkm_transparentbltflags, D3DKM_TRANSPARENTBLTFLAGS structure [Display Devices], _D3DKM_TRANSPARENTBLTFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

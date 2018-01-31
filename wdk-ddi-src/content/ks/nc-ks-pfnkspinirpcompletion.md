@@ -82,14 +82,14 @@ The minidriver specifies this routine's address in the <i>IrpCompletion</i> para
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
-
 <a href="..\ks\nf-ks-kspinregisterirpcompletioncallback.md">KsPinRegisterIrpCompletionCallback</a>
+
+<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 614C6E21-00D0-4F57-9E09-D1BAB166BA42
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMResetMiniport function [Network Drivers Starting with Windows Vista], netvista.ndismresetminiport, NdisMResetMiniport, ndis/NdisMResetMiniport
+ms.keywords : ndis/NdisMResetMiniport, netvista.ndismresetminiport, NdisMResetMiniport, NdisMResetMiniport function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -78,5 +78,5 @@ As a result, NDIS schedules a work item for calling the miniport driver's <a hre
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 60cecce7-9085-4cbd-b637-e24af51d1c22
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RIL_SUPSVCDATASTATUS_ERROR, netvista.rilsupservicedatastatus, RIL_SUPSVCDATASTATUS_FURTHERINFOREQUIRED, RIL_SUPSVCDATASTATUS_MAX, ntddrilapitypes/RIL_SUPSVCDATASTATUS_TIMEOUT, RILSUPSERVICEDATASTATUS, RIL_SUPSVCDATASTATUS_ERROR, ntddrilapitypes/RILSUPSERVICEDATASTATUS, RIL_SUPSVCDATASTATUS_TIMEOUT, ntddrilapitypes/RIL_SUPSVCDATASTATUS_MAX, ntddrilapitypes/RIL_SUPSVCDATASTATUS_FURTHERINFOREQUIRED, RILSUPSERVICEDATASTATUS enumeration [Network Drivers Starting with Windows Vista]
+ms.keywords : RIL_SUPSVCDATASTATUS_MAX, ntddrilapitypes/RIL_SUPSVCDATASTATUS_TIMEOUT, RIL_SUPSVCDATASTATUS_ERROR, ntddrilapitypes/RIL_SUPSVCDATASTATUS_MAX, ntddrilapitypes/RIL_SUPSVCDATASTATUS_ERROR, RILSUPSERVICEDATASTATUS, netvista.rilsupservicedatastatus, RIL_SUPSVCDATASTATUS_TIMEOUT, RILSUPSERVICEDATASTATUS enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_SUPSVCDATASTATUS_FURTHERINFOREQUIRED, RIL_SUPSVCDATASTATUS_FURTHERINFOREQUIRED, ntddrilapitypes/RILSUPSERVICEDATASTATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum

@@ -1,6 +1,6 @@
 ---
 UID : NS:ntdddump._FILTER_INITIALIZATION_DATA
-title : _FILTER_INITIALIZATION_DATA
+title : "_FILTER_INITIALIZATION_DATA"
 author : windows-driver-content
 description : The filter driver fills in a FILTER_INITIALIZATION_DATA structure and returns it to the crash dump driver.
 old-location : storage\filter_initialization_data.htm
@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 71f9d0c2-ffc9-4fe1-ae95-f38a1d1e82df
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-filter_5efcc842-8111-4808-9b70-14d63dd91ba5.xml, storage.filter_initialization_data, PFILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, PFILTER_INITIALIZATION_DATA structure pointer [Storage Devices], ntdddump/FILTER_INITIALIZATION_DATA, DUMP_FILTER_MAJOR_VERSION, DUMP_FILTER_FLAG_SYSTEM_SUPPORT_READ, ntdddump/PFILTER_INITIALIZATION_DATA, DUMP_FILTER_MAJOR_VERSION_1, FILTER_INITIALIZATION_DATA structure [Storage Devices], _FILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA, DUMP_FILTER_CRITICAL
+ms.keywords : PFILTER_INITIALIZATION_DATA structure pointer [Storage Devices], ntdddump/FILTER_INITIALIZATION_DATA, DUMP_FILTER_MAJOR_VERSION_1, FILTER_INITIALIZATION_DATA, PFILTER_INITIALIZATION_DATA, ntdddump/PFILTER_INITIALIZATION_DATA, DUMP_FILTER_CRITICAL, structs-filter_5efcc842-8111-4808-9b70-14d63dd91ba5.xml, FILTER_INITIALIZATION_DATA structure [Storage Devices], DUMP_FILTER_MAJOR_VERSION, _FILTER_INITIALIZATION_DATA, DUMP_FILTER_FLAG_SYSTEM_SUPPORT_READ, *PFILTER_INITIALIZATION_DATA, storage.filter_initialization_data
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA
+req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 # _FILTER_INITIALIZATION_DATA structure
@@ -118,6 +118,13 @@ Fail the filter initialization  immediately if the  dump filter driver's <b>Driv
 
 Set to one of the following major version values:
 
+
+#### DUMP_FILTER_MAJOR_VERSION_1 (0x1)
+
+
+
+#### DUMP_FILTER_MAJOR_VERSION (0x2)
+
 `MaxPagesPerWrite`
 
 The maximum number of pages for each dump read or write request.
@@ -144,13 +151,13 @@ For a dump filter driver to support read filtering, the following settings are r
 
 ## See Also
 
-<a href="..\ntdddump\nc-ntdddump-dump_finish.md">Dump_Finish</a>
-
-<a href="..\ntdddump\ns-ntdddump-_filter_extension.md">FILTER_EXTENSION</a>
+<a href="..\ntdddump\nc-ntdddump-dump_write.md">Dump_Write</a>
 
 <a href="..\ntdddump\nc-ntdddump-dump_start.md">Dump_Start</a>
 
-<a href="..\ntdddump\nc-ntdddump-dump_write.md">Dump_Write</a>
+<a href="..\ntdddump\nc-ntdddump-dump_finish.md">Dump_Finish</a>
+
+<a href="..\ntdddump\ns-ntdddump-_filter_extension.md">FILTER_EXTENSION</a>
 
 <a href="..\ntdddump\nc-ntdddump-dump_read.md">Dump_Read</a>
 

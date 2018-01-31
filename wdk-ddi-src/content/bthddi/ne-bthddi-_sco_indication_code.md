@@ -1,6 +1,6 @@
 ---
 UID : NE:bthddi._SCO_INDICATION_CODE
-title : _SCO_INDICATION_CODE
+title : "_SCO_INDICATION_CODE"
 author : windows-driver-content
 description : The SCO_INDICATION_CODE enumeration type describes the type of an incoming SCO connection or bonding state change. The Bluetooth driver stack passes a value from this enumeration in the Indication argument of a profile driver's SCO Callback Function.
 old-location : bltooth\sco_indication_code.htm
@@ -8,14 +8,14 @@ old-project : bltooth
 ms.assetid : 4223dd79-cac7-41bd-8c94-12baf8e8367a
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : bthddi/ScoIndicationRemoteDisconnect, bthddi/ScoIndicationAddReference, bth_enums_e7290768-826f-4240-904c-07222b05d377.xml, SCO_INDICATION_CODE enumeration [Bluetooth Devices], bthddi/ScoIndicationRemoteConnect, bthddi/PSCO_INDICATION_CODE, bthddi/SCO_INDICATION_CODE, ScoIndicationAddReference, PSCO_INDICATION_CODE, *PSCO_INDICATION_CODE, _SCO_INDICATION_CODE, SCO_INDICATION_CODE, ScoIndicationRemoteDisconnect, ScoIndicationReleaseReference, ScoIndicationRemoteConnect, bthddi/ScoIndicationReleaseReference, bltooth.sco_indication_code, PSCO_INDICATION_CODE enumeration pointer [Bluetooth Devices]
+ms.keywords : PSCO_INDICATION_CODE, SCO_INDICATION_CODE enumeration [Bluetooth Devices], ScoIndicationReleaseReference, *PSCO_INDICATION_CODE, bthddi/ScoIndicationAddReference, ScoIndicationAddReference, SCO_INDICATION_CODE, bthddi/PSCO_INDICATION_CODE, bthddi/SCO_INDICATION_CODE, bth_enums_e7290768-826f-4240-904c-07222b05d377.xml, bthddi/ScoIndicationRemoteDisconnect, ScoIndicationRemoteConnect, _SCO_INDICATION_CODE, bltooth.sco_indication_code, bthddi/ScoIndicationRemoteConnect, PSCO_INDICATION_CODE enumeration pointer [Bluetooth Devices], ScoIndicationRemoteDisconnect, bthddi/ScoIndicationReleaseReference
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
 req.header : bthddi.h
 req.include-header : Bthddi.h
 req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Vista, and later.
+req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SCO_INDICATION_CODE, *PSCO_INDICATION_CODE
+req.typenames : "*PSCO_INDICATION_CODE, SCO_INDICATION_CODE"
 ---
 
 # _SCO_INDICATION_CODE Enumeration
@@ -96,9 +96,9 @@ typedef enum _SCO_INDICATION_CODE {
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536628">BRB_SCO_REGISTER_SERVER</a>
-
 <a href="..\bthioctl\ni-bthioctl-ioctl_internal_bth_submit_brb.md">IOCTL_INTERNAL_BTH_SUBMIT_BRB</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536628">BRB_SCO_REGISTER_SERVER</a>
 
 <a href="..\bthddi\nc-bthddi-pfnsco_indication_callback.md">SCO Callback Function</a>
 

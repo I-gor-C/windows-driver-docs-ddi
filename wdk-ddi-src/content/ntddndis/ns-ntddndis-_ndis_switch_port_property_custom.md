@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddndis._NDIS_SWITCH_PORT_PROPERTY_CUSTOM
-title : _NDIS_SWITCH_PORT_PROPERTY_CUSTOM
+title : "_NDIS_SWITCH_PORT_PROPERTY_CUSTOM"
 author : windows-driver-content
 description : The NDIS_SWITCH_PORT_PROPERTY_CUSTOM structure specifies a custom policy property for a Hyper-V extensible switch port.
 old-location : netvista\ndis_switch_port_property_custom.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5ac17c34-c71c-45a7-870f-7e135c8bd5ca
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_SWITCH_PORT_PROPERTY_CUSTOM structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_SWITCH_PORT_PROPERTY_CUSTOM, ntddndis/NDIS_SWITCH_PORT_PROPERTY_CUSTOM, _NDIS_SWITCH_PORT_PROPERTY_CUSTOM, NDIS_SWITCH_PORT_PROPERTY_CUSTOM structure [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_PORT_PROPERTY_CUSTOM, NDIS_SWITCH_PORT_PROPERTY_CUSTOM, netvista.ndis_switch_port_property_custom, ntddndis/PNDIS_SWITCH_PORT_PROPERTY_CUSTOM
+ms.keywords : NDIS_SWITCH_PORT_PROPERTY_CUSTOM structure [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_PORT_PROPERTY_CUSTOM structure pointer [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_PORT_PROPERTY_CUSTOM, _NDIS_SWITCH_PORT_PROPERTY_CUSTOM, *PNDIS_SWITCH_PORT_PROPERTY_CUSTOM, netvista.ndis_switch_port_property_custom, NDIS_SWITCH_PORT_PROPERTY_CUSTOM, ntddndis/PNDIS_SWITCH_PORT_PROPERTY_CUSTOM, ntddndis/NDIS_SWITCH_PORT_PROPERTY_CUSTOM
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_SWITCH_PORT_PROPERTY_CUSTOM, *PNDIS_SWITCH_PORT_PROPERTY_CUSTOM
+req.typenames : "*PNDIS_SWITCH_PORT_PROPERTY_CUSTOM, NDIS_SWITCH_PORT_PROPERTY_CUSTOM"
 ---
 
 # _NDIS_SWITCH_PORT_PROPERTY_CUSTOM structure
@@ -64,7 +64,16 @@ A ULONG value that contains a bitwise <b>OR</b> of flags. This member is reserve
 
 The type, revision, and size of the <b>NDIS_SWITCH_PORT_PROPERTY_CUSTOM</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
-The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_PORT_PROPERTY_CUSTOM</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value:
+The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_PORT_PROPERTY_CUSTOM</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value:  
+
+
+
+
+#### NDIS_SWITCH_PORT_PROPERTY_CUSTOM_REVISION_1
+
+Original version for NDIS 6.30 and later.
+
+Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_SWITCH_PORT_PROPERTY_CUSTOM_REVISION_1.
 
 `PropertyBufferLength`
 
@@ -105,17 +114,17 @@ For more information about extensible switch policies, see <a href="https://msdn
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598231">NDIS_SWITCH_PORT_PROPERTY_CUSTOM_GET_BUFFER</a>
+
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598275">OID_SWITCH_PORT_PROPERTY_ADD</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_parameters.md">NDIS_SWITCH_PORT_PROPERTY_PARAMETERS</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598278">OID_SWITCH_PORT_PROPERTY_UPDATE</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <b></b>
 

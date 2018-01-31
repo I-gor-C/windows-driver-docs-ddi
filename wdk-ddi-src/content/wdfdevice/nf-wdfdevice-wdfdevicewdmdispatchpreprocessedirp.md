@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 83b18680-0b58-4278-87ff-757eb6e76178
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfdevicewdmdispatchpreprocessedirp, WdfDeviceWdmDispatchPreprocessedIrp method, wdfdevice/WdfDeviceWdmDispatchPreprocessedIrp, PFN_WDFDEVICEWDMDISPATCHPREPROCESSEDIRP, DFDeviceObjectGeneralRef_e861729e-006d-413c-9f7e-60e2fae72c1f.xml, WdfDeviceWdmDispatchPreprocessedIrp, wdf.wdfdevicewdmdispatchpreprocessedirp
+ms.keywords : wdfdevice/WdfDeviceWdmDispatchPreprocessedIrp, WdfDeviceWdmDispatchPreprocessedIrp method, PFN_WDFDEVICEWDMDISPATCHPREPROCESSEDIRP, DFDeviceObjectGeneralRef_e861729e-006d-413c-9f7e-60e2fae72c1f.xml, WdfDeviceWdmDispatchPreprocessedIrp, kmdf.wdfdevicewdmdispatchpreprocessedirp, wdf.wdfdevicewdmdispatchpreprocessedirp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,5 +84,5 @@ A framework-based driver that preprocesses or postprocesses WDM IRPs must call <
 | **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |

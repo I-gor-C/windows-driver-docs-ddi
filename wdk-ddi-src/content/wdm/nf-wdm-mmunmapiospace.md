@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5963f34a-4315-46c3-9802-0b6a1b229e3f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmUnmapIoSpace routine [Kernel-Mode Driver Architecture], MmUnmapIoSpace, kernel.mmunmapiospace, k106_a56f91b1-7187-4836-a3d8-4b7d2918227a.xml, wdm/MmUnmapIoSpace
+ms.keywords : MmUnmapIoSpace routine [Kernel-Mode Driver Architecture], wdm/MmUnmapIoSpace, k106_a56f91b1-7187-4836-a3d8-4b7d2918227a.xml, kernel.mmunmapiospace, MmUnmapIoSpace
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,7 +80,7 @@ If a driver calls <b>MmMapIoSpace</b> during device start-up, it must call <b>Mm
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

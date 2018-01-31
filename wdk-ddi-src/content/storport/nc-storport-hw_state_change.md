@@ -127,9 +127,9 @@ HW_STATE_CHANGE (
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportstatechangedetected.md"> StorPortStateChangeDetected</a>
-
 <a href="..\storport\ns-storport-_stor_address.md">STOR_ADDRESS</a>
+
+<a href="..\storport\nf-storport-storportstatechangedetected.md"> StorPortStateChangeDetected</a>
 
  
 

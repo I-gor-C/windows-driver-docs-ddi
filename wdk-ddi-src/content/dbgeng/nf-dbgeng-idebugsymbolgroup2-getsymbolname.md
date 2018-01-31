@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : a594e436-3b37-4bba-ba9d-65159fdfb7ac
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbolGroup interface [Windows Debugging], GetSymbolName method, GetSymbolName, GetSymbolName method [Windows Debugging], IDebugSymbolGroup interface, IDebugSymbolGroup2::GetSymbolName, ComOther_e12d7aee-985e-4770-8567-7c3748a79905.xml, debugger.getsymbolname, dbgeng/IDebugSymbolGroup::GetSymbolName, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolName method, dbgeng/IDebugSymbolGroup2::GetSymbolName, GetSymbolName method [Windows Debugging], IDebugSymbolGroup2 interface, IDebugSymbolGroup2, GetSymbolName method [Windows Debugging], IDebugSymbolGroup::GetSymbolName
+ms.keywords : IDebugSymbolGroup2::GetSymbolName, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolName method, debugger.getsymbolname, GetSymbolName method [Windows Debugging], GetSymbolName method [Windows Debugging], IDebugSymbolGroup2 interface, ComOther_e12d7aee-985e-4770-8567-7c3748a79905.xml, GetSymbolName method [Windows Debugging], IDebugSymbolGroup interface, dbgeng/IDebugSymbolGroup::GetSymbolName, IDebugSymbolGroup2, GetSymbolName, IDebugSymbolGroup::GetSymbolName, dbgeng/IDebugSymbolGroup2::GetSymbolName, IDebugSymbolGroup interface [Windows Debugging], GetSymbolName method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -123,11 +123,11 @@ For more information about symbol groups, see <a href="https://msdn.microsoft.co
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
 
  
 

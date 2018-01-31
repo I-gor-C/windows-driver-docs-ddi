@@ -1,6 +1,6 @@
 ---
 UID : NS:ntddndis._NDIS_NIC_SWITCH_VPORT_PARAMETERS
-title : _NDIS_NIC_SWITCH_VPORT_PARAMETERS
+title : "_NDIS_NIC_SWITCH_VPORT_PARAMETERS"
 author : windows-driver-content
 description : The NDIS_NIC_SWITCH_VPORT_PARAMETERS structure specifies the configuration for a virtual port (VPort) on a network adapter switch of the network adapter.
 old-location : netvista\ndis_nic_switch_vport_parameters.htm
@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : d75bec3d-b427-40d2-bec3-95b7409f31bb
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddndis/PNDIS_NIC_SWITCH_VPORT_PARAMETERS, ntddndis/NDIS_NIC_SWITCH_VPORT_PARAMETERS, netvista.ndis_nic_switch_vport_parameters, NDIS_NIC_SWITCH_VPORT_PARAMETERS structure [Network Drivers Starting with Windows Vista], *PNDIS_NIC_SWITCH_VPORT_PARAMETERS, PNDIS_NIC_SWITCH_VPORT_PARAMETERS, PNDIS_NIC_SWITCH_VPORT_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], NDIS_NIC_SWITCH_VPORT_PARAMETERS, _NDIS_NIC_SWITCH_VPORT_PARAMETERS
+ms.keywords : ntddndis/PNDIS_NIC_SWITCH_VPORT_PARAMETERS, PNDIS_NIC_SWITCH_VPORT_PARAMETERS, *PNDIS_NIC_SWITCH_VPORT_PARAMETERS, netvista.ndis_nic_switch_vport_parameters, _NDIS_NIC_SWITCH_VPORT_PARAMETERS, ntddndis/NDIS_NIC_SWITCH_VPORT_PARAMETERS, NDIS_NIC_SWITCH_VPORT_PARAMETERS structure [Network Drivers Starting with Windows Vista], NDIS_NIC_SWITCH_VPORT_PARAMETERS, PNDIS_NIC_SWITCH_VPORT_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_NIC_SWITCH_VPORT_PARAMETERS, NDIS_NIC_SWITCH_VPORT_PARAMETERS"
+req.typenames : NDIS_NIC_SWITCH_VPORT_PARAMETERS, *PNDIS_NIC_SWITCH_VPORT_PARAMETERS
 ---
 
 # _NDIS_NIC_SWITCH_VPORT_PARAMETERS structure
@@ -67,13 +67,66 @@ An NDIS_SRIOV_FUNCTION_ID value that specifies the ID of the Physical Function (
 
 `Flags`
 
-A ULONG value that contains a bitwise OR of flags. The following flags are defined for this member.
+A ULONG value that contains a bitwise OR of flags. The following flags are defined for this member. 
+
+
+
+
+
+#### NDIS_NIC_SWITCH_VPORT_PARAMS_LOOKAHEAD_SPLIT_ENABLED
+
+
+	                                 
+	This flag is reserved for future use. 
+Miniport drivers must ignore this flag.
+
+
+#### NDIS_NIC_SWITCH_VPORT_PARAMS_FLAGS_CHANGED
+
+
+	                                 
+	This flag specifies that the <b>Flags</b> member has been updated after the VPort has been created. These flags can be enabled or disabled after the VPort has been created by using an OID set request of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451825">OID_NIC_SWITCH_VPORT_PARAMETERS</a>. 
+
+<div class="alert"><b>Note</b>  This flag is valid only when this structure is used in OID set requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451825">OID_NIC_SWITCH_VPORT_PARAMETERS</a>. </div><div> </div>
+
+#### NDIS_NIC_SWITCH_VPORT_PARAMS_NAME_CHANGED
+
+                                  
+ This flag specifies that the <b>VPortName</b> member has been updated after the VPort has been created. This member can be updated by using an OID set request of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451825">OID_NIC_SWITCH_VPORT_PARAMETERS</a>. 
+
+<div class="alert"><b>Note</b>  This flag is valid only when this structure is used in OID set requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451825">OID_NIC_SWITCH_VPORT_PARAMETERS</a>. </div><div> </div>
+
+#### NDIS_NIC_SWITCH_VPORT_PARAMS_INT_MOD_CHANGED
+
+This flag specifies that the <b>InterruptModeration</b> member has been updated after the VPort has been created. This member can be updated by using an OID set request of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451825">OID_NIC_SWITCH_VPORT_PARAMETERS</a>. 
+ 
+
+<div class="alert"><b>Note</b>  This flag is valid only when this structure is used in OID set requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451825">OID_NIC_SWITCH_VPORT_PARAMETERS</a>. </div><div> </div>
+
+#### NDIS_NIC_SWITCH_VPORT_PARAMS_STATE_CHANGED
+
+This flag specifies that the <b>VPortState</b> member has been updated after the VPort has been created. This member can be updated by using an OID set request of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451825">OID_NIC_SWITCH_VPORT_PARAMETERS</a>.
+<div class="alert"><b>Note</b>  This flag is valid only when this structure is used in OID set requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451825">OID_NIC_SWITCH_VPORT_PARAMETERS</a>. </div><div> </div>
+
+#### NDIS_NIC_SWITCH_VPORT_PARAMS_PROCESSOR_AFFINITY_CHANGED
+
+This flag specifies that the <b>ProcessoryAffinity</b> member has been updated after the VPort has been created. The processor affinity of a VPort can only be updated if the VPort is attached to the PF on the network adapter. The <b>ProcessoryAffinity</b> member can be updated by using an OID set request of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451825">OID_NIC_SWITCH_VPORT_PARAMETERS</a>.
+<div class="alert"><b>Note</b>  This flag is valid only when this structure is used in OID set requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451825">OID_NIC_SWITCH_VPORT_PARAMETERS</a>. </div><div> </div>
 
 `Header`
 
 The type, revision, and size of the <b>NDIS_NIC_SWITCH_VPORT_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
-The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_NIC_SWITCH_VPORT_PARAMETERS</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value:
+The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_NIC_SWITCH_VPORT_PARAMETERS</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
+
+
+
+
+#### NDIS_NIC_SWITCH_VPORT_PARAMETERS_REVISION_1
+
+Original version for NDIS 6.30 and later.
+
+Set the <b>Size</b> member to NDIS_SIZEOF_NIC_SWITCH_VPORT_PARAMETERS_REVISION_1.
 
 `InterruptModeration`
 
@@ -143,17 +196,17 @@ For more information about the SR-IOV interface, see 	<a href="https://msdn.micr
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451825">OID_NIC_SWITCH_VPORT_PARAMETERS</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_info.md">NDIS_NIC_SWITCH_INFO</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451816">OID_NIC_SWITCH_CREATE_VPORT</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451819">OID_NIC_SWITCH_ENUM_SWITCHES</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_vf_info.md">NDIS_NIC_SWITCH_VF_INFO</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451816">OID_NIC_SWITCH_CREATE_VPORT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451825">OID_NIC_SWITCH_VPORT_PARAMETERS</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_info.md">NDIS_NIC_SWITCH_INFO</a>
 
 <b></b>
 

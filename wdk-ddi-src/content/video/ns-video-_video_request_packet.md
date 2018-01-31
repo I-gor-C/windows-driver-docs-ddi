@@ -1,6 +1,6 @@
 ---
 UID : NS:video._VIDEO_REQUEST_PACKET
-title : _VIDEO_REQUEST_PACKET
+title : "_VIDEO_REQUEST_PACKET"
 author : windows-driver-content
 description : A pointer to a VIDEO_REQUEST_PACKET structure is passed to the miniport driver's HwVidStartIO function by the video port driver.
 old-location : display\video_request_packet.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8ccc8c97-4c8c-4278-8eef-a612ce85439e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : video/VIDEO_REQUEST_PACKET, display.video_request_packet, VIDEO_REQUEST_PACKET structure [Display Devices], PVIDEO_REQUEST_PACKET structure pointer [Display Devices], *PVIDEO_REQUEST_PACKET, video/PVIDEO_REQUEST_PACKET, PVIDEO_REQUEST_PACKET, Video_Structs_38b404b6-a625-43a4-b2ad-21749c64eee1.xml, VIDEO_REQUEST_PACKET, _VIDEO_REQUEST_PACKET
+ms.keywords : display.video_request_packet, video/VIDEO_REQUEST_PACKET, *PVIDEO_REQUEST_PACKET, Video_Structs_38b404b6-a625-43a4-b2ad-21749c64eee1.xml, VIDEO_REQUEST_PACKET, video/PVIDEO_REQUEST_PACKET, PVIDEO_REQUEST_PACKET structure pointer [Display Devices], _VIDEO_REQUEST_PACKET, VIDEO_REQUEST_PACKET structure [Display Devices], PVIDEO_REQUEST_PACKET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

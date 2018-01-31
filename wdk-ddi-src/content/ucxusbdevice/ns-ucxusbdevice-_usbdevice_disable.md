@@ -1,6 +1,6 @@
 ---
 UID : NS:ucxusbdevice._USBDEVICE_DISABLE
-title : _USBDEVICE_DISABLE
+title : "_USBDEVICE_DISABLE"
 author : windows-driver-content
 description : Contains parameters for a request to disable the specified device. This structure is passed by UCX in request parameters (Parameters.Others.Arg1) of a framework request object of the EVT_UCX_USBDEVICE_DISABLE callback function.
 old-location : buses\_usbdevice_disable.htm
@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : C9F2331F-0C16-47F3-9FDE-2719E179513F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : P_USBDEVICE_DISABLE, buses._usbdevice_disable, USBDEVICE_DISABLE, P_USBDEVICE_DISABLE structure pointer [Buses], *PUSBDEVICE_DISABLE, USBDEVICE_DISABLE structure [Buses], ucxusbdevice/P_USBDEVICE_DISABLE, ucxusbdevice/_USBDEVICE_DISABLE, _USBDEVICE_DISABLE
+ms.keywords : P_USBDEVICE_DISABLE structure pointer [Buses], P_USBDEVICE_DISABLE, ucxusbdevice/P_USBDEVICE_DISABLE, USBDEVICE_DISABLE structure [Buses], *PUSBDEVICE_DISABLE, _USBDEVICE_DISABLE, ucxusbdevice/_USBDEVICE_DISABLE, buses._usbdevice_disable, USBDEVICE_DISABLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : USBDEVICE_DISABLE, *PUSBDEVICE_DISABLE
+req.typenames : "*PUSBDEVICE_DISABLE, USBDEVICE_DISABLE"
 req.product : Windows 10 or later.
 ---
 
@@ -76,11 +76,11 @@ A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_
 
 ## See Also
 
+<a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_enable.md">USBDEVICE_ENABLE</a>
+
 <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_disable.md">EVT_UCX_USBDEVICE_DISABLE</a>
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a>
-
-<a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_enable.md">USBDEVICE_ENABLE</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a2de12d5-ed9e-42ac-b3e8-a3a567e4ab4a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.iois32bitprocess, wdm/IoIs32bitProcess, IoIs32bitProcess, k104_8380b2cb-114a-41bc-a32e-8fb60b18c133.xml, IoIs32bitProcess routine [Kernel-Mode Driver Architecture]
+ms.keywords : IoIs32bitProcess, k104_8380b2cb-114a-41bc-a32e-8fb60b18c133.xml, IoIs32bitProcess routine [Kernel-Mode Driver Architecture], kernel.iois32bitprocess, wdm/IoIs32bitProcess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,5 +81,5 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 | **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |

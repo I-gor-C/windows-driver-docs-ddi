@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9a21495e-8a4d-4177-a2c5-b6a928d86fd9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/KeEnterGuardedRegion, KeEnterGuardedRegion routine [Kernel-Mode Driver Architecture], kernel.keenterguardedregion, KeEnterGuardedRegion, k105_0f632d64-85dc-4c0f-8a26-8b4710673ab5.xml
+ms.keywords : wdm/KeEnterGuardedRegion, KeEnterGuardedRegion routine [Kernel-Mode Driver Architecture], k105_0f632d64-85dc-4c0f-8a26-8b4710673ab5.xml, KeEnterGuardedRegion, kernel.keenterguardedregion
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT"
+req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 
@@ -71,12 +71,12 @@ For more information about guarded regions, see <a href="https://msdn.microsoft.
 | **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** | GuardedRegions, IrqlKeApcLte2, WithinCriticalRegion, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keleaveguardedregion.md">KeLeaveGuardedRegion</a>
+<a href="..\ntddk\nf-ntddk-keleaveguardedregion.md">KeLeaveGuardedRegion</a>
 
  
 

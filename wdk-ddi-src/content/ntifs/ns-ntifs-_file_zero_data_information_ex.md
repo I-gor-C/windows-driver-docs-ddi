@@ -1,6 +1,6 @@
 ---
 UID : NS:ntifs._FILE_ZERO_DATA_INFORMATION_EX
-title : _FILE_ZERO_DATA_INFORMATION_EX
+title : "_FILE_ZERO_DATA_INFORMATION_EX"
 author : windows-driver-content
 description : Contains a range of a file to set to zeros.
 old-location : ifsk\file_zero_data_information_ex.htm
@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 429C644C-C784-4C0E-96C3-EC82698F6624
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PFILE_ZERO_DATA_INFORMATION_EX, ntifs/PFILE_ZERO_DATA_INFORMATION_EX, FILE_ZERO_DATA_INFORMATION_EX structure [Installable File System Drivers], FILE_ZERO_DATA_INFORMATION_EX, ifsk.file_zero_data_information_ex, _FILE_ZERO_DATA_INFORMATION_EX, ntifs/FILE_ZERO_DATA_INFORMATION_EX, PFILE_ZERO_DATA_INFORMATION_EX, PFILE_ZERO_DATA_INFORMATION_EX structure pointer [Installable File System Drivers]"
+ms.keywords : PFILE_ZERO_DATA_INFORMATION_EX structure pointer [Installable File System Drivers], ifsk.file_zero_data_information_ex, FILE_ZERO_DATA_INFORMATION_EX structure [Installable File System Drivers], FILE_ZERO_DATA_INFORMATION_EX, ntifs/PFILE_ZERO_DATA_INFORMATION_EX, *PFILE_ZERO_DATA_INFORMATION_EX, _FILE_ZERO_DATA_INFORMATION_EX, PFILE_ZERO_DATA_INFORMATION_EX, ntifs/FILE_ZERO_DATA_INFORMATION_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PFILE_ZERO_DATA_INFORMATION_EX, FILE_ZERO_DATA_INFORMATION_EX"
+req.typenames : FILE_ZERO_DATA_INFORMATION_EX, *PFILE_ZERO_DATA_INFORMATION_EX
 ---
 
 # _FILE_ZERO_DATA_INFORMATION_EX structure

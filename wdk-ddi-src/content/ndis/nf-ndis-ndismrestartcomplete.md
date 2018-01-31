@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f43137ed-2ea3-4b7c-8d61-bda76bcb5f34
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : miniport_ndis_functions_ref_ee1a63ca-c2c4-422b-8c8a-163785c58802.xml, NdisMRestartComplete function [Network Drivers Starting with Windows Vista], ndis/NdisMRestartComplete, netvista.ndismrestartcomplete, NdisMRestartComplete
+ms.keywords : netvista.ndismrestartcomplete, ndis/NdisMRestartComplete, NdisMRestartComplete, miniport_ndis_functions_ref_ee1a63ca-c2c4-422b-8c8a-163785c58802.xml, NdisMRestartComplete function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE"
+req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 
@@ -66,6 +66,27 @@ The miniport adapter handle that NDIS passed to the
 `Status`
 
 The final status of the restart operation. The following status values are supported:
+     
+
+
+
+
+#### NDIS_STATUS_SUCCESS
+
+The driver successfully restarted the flow of network data through the miniport adapter.
+
+
+#### NDIS_STATUS_RESOURCES
+
+The restart failed because of insufficient resources.
+
+
+#### NDIS_STATUS_FAILURE
+
+The driver indicates NDIS_STATUS_FAILURE if none of the preceding values applies. The driver
+       should call the 
+       <a href="..\ndis\nf-ndis-ndiswriteerrorlogentry.md">NdisWriteErrorLogEntry</a> function
+       with parameters that specify the reason for the failure.
 
 
 ## Return Value
@@ -99,16 +120,16 @@ A miniport driver can resume indicating received packets immediately after NDIS 
 | **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Miniport_Driver_Function |
 
 ## See Also
 
 <a href="..\ndis\nc-ndis-miniport_restart.md">MiniportRestart</a>
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-
 <a href="..\ndis\nf-ndis-ndiswriteerrorlogentry.md">NdisWriteErrorLogEntry</a>
+
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
  
 

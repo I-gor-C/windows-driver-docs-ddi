@@ -22,4 +22,4 @@ rxlog.h contains the following programming interfaces:
 ## Functions
 | Title | Description |
 | ---- |:---- |
-| [_RxLog](nf-rxlog-_rxlog.md) | _RxLog takes a format string and variable number of parameters and formats an output string for recording as an I/O error log entry if logging is enabled. |
+| [_RxLog](nf-rxlog-_rxlog.md) | "_RxLog takes a format string and variable number of parameters and formats an output string for recording as an I/O error log entry if logging is enabled." |

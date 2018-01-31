@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e2664aec-dc96-4cf6-921b-ccd4ee6cf04e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDIARG_VIDEODECODERBEGINFRAME structure [Display Devices], D3D11_1DDIARG_VIDEODECODERBEGINFRAME, display.d3d11_1ddiarg_videodecoderbeginframe, d3d10umddi/D3D11_1DDIARG_VIDEODECODERBEGINFRAME
+ms.keywords : display.d3d11_1ddiarg_videodecoderbeginframe, D3D11_1DDIARG_VIDEODECODERBEGINFRAME structure [Display Devices], D3D11_1DDIARG_VIDEODECODERBEGINFRAME, d3d10umddi/D3D11_1DDIARG_VIDEODECODERBEGINFRAME
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -78,9 +78,9 @@ For more information, see the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi
 
 ## See Also
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessoroutputview.md">CreateVideoProcessorOutputView</a>
-
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videodecoderbeginframe.md">VideoDecoderBeginFrame</a>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessoroutputview.md">CreateVideoProcessorOutputView</a>
 
  
 

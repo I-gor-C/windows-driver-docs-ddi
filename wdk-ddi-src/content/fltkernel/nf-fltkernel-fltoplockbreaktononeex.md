@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 748951e3-9642-4c98-a3b0-5f6b18519bd4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fltkernel/FltOplockBreakToNoneEx, FltApiRef_e_to_o_7111d712-59f1-4c71-b02c-9bb415aa118f.xml, FltOplockBreakToNoneEx, ifsk.fltoplockbreaktononeex, FltOplockBreakToNoneEx routine [Installable File System Drivers]
+ms.keywords : ifsk.fltoplockbreaktononeex, fltkernel/FltOplockBreakToNoneEx, FltOplockBreakToNoneEx, FltApiRef_e_to_o_7111d712-59f1-4c71-b02c-9bb415aa118f.xml, FltOplockBreakToNoneEx routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -67,7 +67,14 @@ A pointer to the callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback
 
 `Flags`
 
-A bitmask for the associated file I/O operation. A minifilter driver sets bits to specify the behavior of <b>FltOplockBreakToNoneEx</b>. The <i>Flags</i> parameter has the following options:
+A bitmask for the associated file I/O operation. A minifilter driver sets bits to specify the behavior of <b>FltOplockBreakToNoneEx</b>. The <i>Flags</i> parameter has the following options: 
+
+
+
+
+#### OPLOCK_FLAG_COMPLETE_IF_OPLOCKED (0x00000001)
+
+Allows an oplock break to proceed without blocking or pending the operation that caused the oplock break. Typically, this flag is only used if the I/O operation that is represented by the callback data that the <i>CallbackData</i> parameter points to is an IRP_MJ_CREATE operation.
 
 `Context`
 
@@ -91,7 +98,19 @@ This routine is declared as follows:
       );</pre>
 </td>
 </tr>
-</table></span></div>This routine has the following parameters:
+</table></span></div>This routine has the following parameters: 
+
+
+
+
+#### CallbackData
+
+A pointer to the callback data structure for the I/O operation. 
+
+
+#### Context
+
+A context information pointer that was passed in the <i>Context</i> parameter to <b>FltOplockBreakToNoneEx</b>.
 
 `PrePostCallbackDataRoutine`
 
@@ -111,7 +130,19 @@ This routine is declared as follows:
       );</pre>
 </td>
 </tr>
-</table></span></div>This routine has the following parameters:
+</table></span></div>This routine has the following parameters: 
+
+
+
+
+#### CallbackData
+
+A pointer to the callback data structure for the I/O operation. 
+
+
+#### Context
+
+A context information pointer that was passed in the <i>Context</i> parameter to <b>FltOplockBreakToNoneEx</b>.
 
 
 ## Return Value
@@ -170,18 +201,18 @@ For more information about opportunistic locks, see the Microsoft Windows SDK do
 | **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 | **Library** |  |
-| **IRQL** | <= APC_LEVEL |
+| **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
+<a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltinitializeoplock.md">FltInitializeOplock</a>
 
-<a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
-
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockbreaktononeex~r5.md">FsRtlOplockBreakToNoneEx</a>
+
+<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
 
  
 

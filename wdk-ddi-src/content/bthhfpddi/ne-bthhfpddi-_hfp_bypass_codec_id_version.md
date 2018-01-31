@@ -1,6 +1,6 @@
 ---
 UID : NE:bthhfpddi._HFP_BYPASS_CODEC_ID_VERSION
-title : _HFP_BYPASS_CODEC_ID_VERSION
+title : "_HFP_BYPASS_CODEC_ID_VERSION"
 author : windows-driver-content
 description : The HFP_BYPASS_CODEC_ID_VERSION enumeration defines the codec ID structure versions that are supported by the HFP service.
 old-location : audio\hfp_bypass_codec_id_version.htm
@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : A16980CD-3F2F-4A67-902A-F3D72AA042D9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : bthhfpddi/REQ_HFP_BYPASS_CODEC_ID_V1, bthhfpddi/HFP_BYPASS_CODEC_ID_VERSION, *PHFP_BYPASS_CODEC_ID_VERSION, audio.hfp_bypass_codec_id_version, _HFP_BYPASS_CODEC_ID_VERSION, HFP_BYPASS_CODEC_ID_VERSION, REQ_HFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_VERSION enumeration [Audio Devices]
+ms.keywords : HFP_BYPASS_CODEC_ID_VERSION enumeration [Audio Devices], *PHFP_BYPASS_CODEC_ID_VERSION, bthhfpddi/REQ_HFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_VERSION, _HFP_BYPASS_CODEC_ID_VERSION, REQ_HFP_BYPASS_CODEC_ID_V1, audio.hfp_bypass_codec_id_version, bthhfpddi/HFP_BYPASS_CODEC_ID_VERSION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PHFP_BYPASS_CODEC_ID_VERSION, HFP_BYPASS_CODEC_ID_VERSION"
+req.typenames : HFP_BYPASS_CODEC_ID_VERSION, *PHFP_BYPASS_CODEC_ID_VERSION
 ---
 
 # _HFP_BYPASS_CODEC_ID_VERSION Enumeration

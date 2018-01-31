@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : FAC9AC9B-9C4B-4D53-A59A-8901EC8755BC
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SetStreamLoopbackProtection, SetStreamLoopbackProtection method [Audio Devices], IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection, SetStreamLoopbackProtection method [Audio Devices], IMiniportStreamAudioEngineNode interface, audio.iminiportstreamaudioenginenode_setstreamloopbackprotection, IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode interface [Audio Devices], SetStreamLoopbackProtection method, portcls/IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection
+ms.keywords : IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection, SetStreamLoopbackProtection method [Audio Devices], portcls/IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection, IMiniportStreamAudioEngineNode interface [Audio Devices], SetStreamLoopbackProtection method, SetStreamLoopbackProtection, IMiniportStreamAudioEngineNode, SetStreamLoopbackProtection method [Audio Devices], IMiniportStreamAudioEngineNode interface, audio.iminiportstreamaudioenginenode_setstreamloopbackprotection
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -79,11 +79,11 @@ For more information about audio stream loopback protection, see <a href="https:
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iminiportstreamaudioenginenode.md">IMiniportStreamAudioEngineNode</a>
+CONSTRICTOR_OPTION
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450878">KSPROPERTY_AUDIOENGINE_LOOPBACK_PROTECTION</a>
 
-CONSTRICTOR_OPTION
+<a href="..\portcls\nn-portcls-iminiportstreamaudioenginenode.md">IMiniportStreamAudioEngineNode</a>
 
  
 

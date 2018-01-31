@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 3c96012f-8307-417c-be8f-bb466c576669
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksgenerateevents, avfunc_47306d1b-67f9-4ea6-81bb-3b76b848667a.xml, KsGenerateEvents, KsGenerateEvents function [Streaming Media Devices], ks/KsGenerateEvents
+ms.keywords : KsGenerateEvents, stream.ksgenerateevents, KsGenerateEvents function [Streaming Media Devices], avfunc_47306d1b-67f9-4ea6-81bb-3b76b848667a.xml, ks/KsGenerateEvents
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -122,7 +122,7 @@ For more information, see <a href="https://msdn.microsoft.com/7add2055-8d3f-432d
 | **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 | **Library** |  |
-| **IRQL** | <=DISPATCH_LEVEL |
+| **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also

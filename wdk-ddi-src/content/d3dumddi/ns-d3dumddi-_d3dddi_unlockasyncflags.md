@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dumddi._D3DDDI_UNLOCKASYNCFLAGS
-title : _D3DDDI_UNLOCKASYNCFLAGS
+title : "_D3DDDI_UNLOCKASYNCFLAGS"
 author : windows-driver-content
 description : The D3DDDI_UNLOCKASYNCFLAGS structure identifies how to unlock a resource.
 old-location : display\d3dddi_unlockasyncflags.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c31e4a4e-7bc7-43a2-8f86-e79012064fa2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddi_unlockasyncflags, d3dumddi/D3DDDI_UNLOCKASYNCFLAGS, D3DDDI_UNLOCKASYNCFLAGS structure [Display Devices], _D3DDDI_UNLOCKASYNCFLAGS, D3DDDI_UNLOCKASYNCFLAGS, D3D_other_Structs_d42c29f4-23e8-4b5c-8710-2e4153c857bf.xml
+ms.keywords : D3DDDI_UNLOCKASYNCFLAGS structure [Display Devices], d3dumddi/D3DDDI_UNLOCKASYNCFLAGS, D3D_other_Structs_d42c29f4-23e8-4b5c-8710-2e4153c857bf.xml, D3DDDI_UNLOCKASYNCFLAGS, _D3DDDI_UNLOCKASYNCFLAGS, display.d3dddi_unlockasyncflags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct

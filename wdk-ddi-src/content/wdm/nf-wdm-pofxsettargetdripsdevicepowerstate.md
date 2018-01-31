@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 435c0731-101c-498b-9041-904001be3f2c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoFxSetTargetDripsDevicePowerState function [Kernel-Mode Driver Architecture], PoFxSetTargetDripsDevicePowerState, wdm/PoFxSetTargetDripsDevicePowerState, kernel.pofxsettargetdripsdevicepowerstate
+ms.keywords : PoFxSetTargetDripsDevicePowerState function [Kernel-Mode Driver Architecture], PoFxSetTargetDripsDevicePowerState, kernel.pofxsettargetdripsdevicepowerstate, wdm/PoFxSetTargetDripsDevicePowerState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

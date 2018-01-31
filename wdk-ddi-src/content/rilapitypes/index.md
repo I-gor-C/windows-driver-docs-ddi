@@ -329,6 +329,7 @@ rilapitypes.h contains the following programming interfaces:
 | [RILEMERGENCYNUMBERCATEGORY](ne-rilapitypes-rilemergencynumbercategory.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILEMERGENCYNUMBERPARAMMASK](ne-rilapitypes-rilemergencynumberparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILEQUIPMENTSTATE](ne-rilapitypes-rilequipmentstate.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
+| [RILERRORCODES](ne-rilapitypes-rilerrorcodes.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILERRORDETAILSPARAMMASK](ne-rilapitypes-rilerrordetailsparammask.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |
 | [RILEUTRAMRLPARAMMASK](ne-rilapitypes-rileutramrlparammask.md) | This enumeration describes the RILEUTRAMRLPARAMMASK. |
 | [RILEVDOKIND](ne-rilapitypes-rilevdokind.md) | This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. |

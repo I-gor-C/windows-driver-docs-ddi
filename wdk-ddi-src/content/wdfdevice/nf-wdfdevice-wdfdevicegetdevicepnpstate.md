@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 25936ed9-d213-458f-bbc8-90eedea9ba02
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdevicegetdevicepnpstate, WdfDeviceGetDevicePnpState, kmdf.wdfdevicegetdevicepnpstate, wdfdevice/WdfDeviceGetDevicePnpState, PFN_WDFDEVICEGETDEVICEPNPSTATE, WdfDeviceGetDevicePnpState method, DFDeviceObjectGeneralRef_8c17c41d-4e8e-499e-83db-92006e4fe08a.xml
+ms.keywords : WdfDeviceGetDevicePnpState method, wdf.wdfdevicegetdevicepnpstate, WdfDeviceGetDevicePnpState, DFDeviceObjectGeneralRef_8c17c41d-4e8e-499e-83db-92006e4fe08a.xml, PFN_WDFDEVICEGETDEVICEPNPSTATE, wdfdevice/WdfDeviceGetDevicePnpState, kmdf.wdfdevicegetdevicepnpstate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,16 +79,16 @@ Most drivers do not need to be aware of the state of the framework's Plug and Pl
 | **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevstatenormalize.md">WdfDevStateNormalize</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepowerstate.md">WdfDeviceGetDevicePowerState</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepowerpolicystate.md">WdfDeviceGetDevicePowerPolicyState</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepowerstate.md">WdfDeviceGetDevicePowerState</a>
 
  
 

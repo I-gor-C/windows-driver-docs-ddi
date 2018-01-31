@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : C6C693CC-D9C0-4EE8-9F8C-07D8665C673D
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsAcquireCachedMdl function [Streaming Media Devices], GUID, stream.ksacquirecachedmdl, PVOID, ks/KsAcquireCachedMdl, KsAcquireCachedMdl
+ms.keywords : stream.ksacquirecachedmdl, PVOID, GUID, KsAcquireCachedMdl, ks/KsAcquireCachedMdl, KsAcquireCachedMdl function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,6 +85,17 @@ VOID
 </td>
 </tr>
 </table></span></div>
+
+#### GUID
+
+GUID passed in the <b>KsAcquireCachedMdl</b> function by the Avstream miniport driver.
+
+
+#### PVOID
+
+Cancel context supplied by the Avstream miniport driver in the <b>KsAcquireCachedMdl</b> function call.
+
+Release context. This is the output of the <b>KsAcquireCachedMdl</b> function.
 
 `CancelContext`
 

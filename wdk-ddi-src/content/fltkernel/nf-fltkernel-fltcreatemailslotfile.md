@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : A727CDC1-A17A-4ABE-92AC-7CAEC11B78D1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fltkernel/FltCreateMailslotFile, ifsk.fltcreatemailslotfile, FltCreateMailslotFile function [Installable File System Drivers], FltCreateMailslotFile
+ms.keywords : FltCreateMailslotFile function [Installable File System Drivers], fltkernel/FltCreateMailslotFile, FltCreateMailslotFile, ifsk.fltcreatemailslotfile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -427,9 +427,9 @@ To specify an extra create parameter (ECP) as part of a create operation, initia
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-ioinitializedrivercreatecontext.md">IoInitializeDriverCreateContext</a>
-
 <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
+
+<a href="..\ntddk\nf-ntddk-ioinitializedrivercreatecontext.md">IoInitializeDriverCreateContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameterlist.md">FltFreeExtraCreateParameterList</a>
 

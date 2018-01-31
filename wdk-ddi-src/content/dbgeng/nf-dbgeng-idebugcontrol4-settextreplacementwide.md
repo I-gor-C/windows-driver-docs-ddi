@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : bbd3fbc0-6dbe-4200-8fe8-e7ca9e4c9478
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : SetTextReplacementWide, dbgeng/IDebugControl4::SetTextReplacementWide, debugger.settextreplacementwide, IDebugControl4, IDebugControl4::SetTextReplacementWide, SetTextReplacementWide method [Windows Debugging], IDebugControl4 interface [Windows Debugging], SetTextReplacementWide method, SetTextReplacementWide method [Windows Debugging], IDebugControl4 interface
+ms.keywords : SetTextReplacementWide method [Windows Debugging], debugger.settextreplacementwide, IDebugControl4 interface [Windows Debugging], SetTextReplacementWide method, IDebugControl4::SetTextReplacementWide, IDebugControl4, dbgeng/IDebugControl4::SetTextReplacementWide, SetTextReplacementWide, SetTextReplacementWide method [Windows Debugging], IDebugControl4 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -107,17 +107,17 @@ For an overview of aliases used by the <a href="https://msdn.microsoft.com/fa52a
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/6e42122b-5a18-403b-a19a-1346bea8da12">as, aS (Set Alias)</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553268">OutputTextReplacements</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554548">RemoveTextReplacements</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537997">ad (Delete Alias)</a>
+
+<a href="https://msdn.microsoft.com/6e42122b-5a18-403b-a19a-1346bea8da12">as, aS (Set Alias)</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549280">GetTextReplacement</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537997">ad (Delete Alias)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554548">RemoveTextReplacements</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556809">SetTextMacro</a>
 

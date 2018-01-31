@@ -1,6 +1,6 @@
 ---
 UID : NS:d3dkmddi._DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE
-title : _DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE
+title : "_DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE"
 author : windows-driver-content
 description : DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE is used with the DxgkCbReserveGpuVirtualAddressRangedevice driver interface (DDI) to allow the kernel mode driver to reserve a graphics processing unit (GPU) virtual address range during creation of a process.
 old-location : display\dxgkargcb_reservegpuvirtualaddressrange.htm
@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : D555E595-4319-4FCC-84A7-52FA3F278FFD
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "*INOUT_PDXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE, DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE, display.dxgkargcb_reservegpuvirtualaddressrange, d3dkmddi/DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE, DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE structure [Display Devices], _DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE"
+ms.keywords : "*INOUT_PDXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE, display.dxgkargcb_reservegpuvirtualaddressrange, DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE structure [Display Devices], DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE, _DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE, d3dkmddi/DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -92,9 +92,9 @@ The starting location of the reserved address range.
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createprocess.md">DxgkDdiCreateProcess</a>
-
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_reservegpuvirtualaddressrange.md">DxgkCbReserveGpuVirtualAddressRange</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createprocess.md">DxgkDdiCreateProcess</a>
 
  
 

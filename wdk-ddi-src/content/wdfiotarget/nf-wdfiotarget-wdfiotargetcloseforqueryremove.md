@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5fa93ac6-8aee-4248-b0a6-ab82bc5486bf
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFIOTARGETCLOSEFORQUERYREMOVE, wdf.wdfiotargetcloseforqueryremove, DFIOTargetRef_ea857ade-1dcd-4e58-b198-50186a536159.xml, wdfiotarget/WdfIoTargetCloseForQueryRemove, kmdf.wdfiotargetcloseforqueryremove, WdfIoTargetCloseForQueryRemove, WdfIoTargetCloseForQueryRemove method
+ms.keywords : WdfIoTargetCloseForQueryRemove method, wdf.wdfiotargetcloseforqueryremove, WdfIoTargetCloseForQueryRemove, wdfiotarget/WdfIoTargetCloseForQueryRemove, DFIOTargetRef_ea857ade-1dcd-4e58-b198-50186a536159.xml, kmdf.wdfiotargetcloseforqueryremove, PFN_WDFIOTARGETCLOSEFORQUERYREMOVE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function

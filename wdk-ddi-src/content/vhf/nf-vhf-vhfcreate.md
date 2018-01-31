@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 11A98BBE-2609-4E55-8988-42620EB15281
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : VhfCreate, hid.vhfcreate, vhf/VhfCreate, VhfCreate method [Human Input Devices]
+ms.keywords : hid.vhfcreate, VhfCreate, VhfCreate method [Human Input Devices], vhf/VhfCreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR"
+req.typenames : USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 693CB919-A1D1-4A82-ABE5-2362431A9B92
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetSystemByServer method [Windows Debugging], IDebugSystemObjects3 interface [Windows Debugging], GetSystemByServer method, IDebugSystemObjects3, GetSystemByServer, IDebugSystemObjects3::GetSystemByServer, debugger.idebugsystemobjects3_getsystembyserver, dbgeng/IDebugSystemObjects3::GetSystemByServer, GetSystemByServer method [Windows Debugging], IDebugSystemObjects3 interface
+ms.keywords : GetSystemByServer method [Windows Debugging], IDebugSystemObjects3::GetSystemByServer, GetSystemByServer method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects3, GetSystemByServer, dbgeng/IDebugSystemObjects3::GetSystemByServer, debugger.idebugsystemobjects3_getsystembyserver, IDebugSystemObjects3 interface [Windows Debugging], GetSystemByServer method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

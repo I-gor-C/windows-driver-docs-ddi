@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 0C4888C7-B7F9-4B23-8AC9-41CB7863AF22
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : SetQuitLockString method [Windows Debugging], IDebugClient5 interface, IDebugClient5::SetQuitLockString, SetQuitLockString, SetQuitLockString method [Windows Debugging], IDebugClient5, debugger.idebugclient5_setquitlockstring, IDebugClient5 interface [Windows Debugging], SetQuitLockString method, dbgeng/IDebugClient5::SetQuitLockString
+ms.keywords : IDebugClient5 interface [Windows Debugging], SetQuitLockString method, SetQuitLockString method [Windows Debugging], IDebugClient5::SetQuitLockString, SetQuitLockString, debugger.idebugclient5_setquitlockstring, SetQuitLockString method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient5::SetQuitLockString, IDebugClient5
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

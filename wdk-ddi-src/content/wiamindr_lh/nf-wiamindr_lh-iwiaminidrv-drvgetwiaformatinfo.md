@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : f0b7d982-735f-489c-b9f8-81a287f6722a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : drvGetWiaFormatInfo, wiamindr_lh/IWiaMiniDrv::drvGetWiaFormatInfo, MiniDrv_6c0cb527-6884-4b7d-a7cc-0e09c1774b7f.xml, drvGetWiaFormatInfo method [Imaging Devices], IWiaMiniDrv interface, drvGetWiaFormatInfo method [Imaging Devices], IWiaMiniDrv::drvGetWiaFormatInfo, IWiaMiniDrv interface [Imaging Devices], drvGetWiaFormatInfo method, IWiaMiniDrv, image.iwiaminidrv_drvgetwiaformatinfo
+ms.keywords : drvGetWiaFormatInfo, drvGetWiaFormatInfo method [Imaging Devices], IWiaMiniDrv, IWiaMiniDrv interface [Imaging Devices], drvGetWiaFormatInfo method, drvGetWiaFormatInfo method [Imaging Devices], IWiaMiniDrv interface, IWiaMiniDrv::drvGetWiaFormatInfo, MiniDrv_6c0cb527-6884-4b7d-a7cc-0e09c1774b7f.xml, wiamindr_lh/IWiaMiniDrv::drvGetWiaFormatInfo, image.iwiaminidrv_drvgetwiaformatinfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
+req.typenames : "*PSCANWINDOW, SCANWINDOW"
 req.product : Windows 10 or later.
 ---
 
@@ -104,11 +104,11 @@ The minidriver can define a global array to hold the WIA_FORMAT_INFO structures,
 
 ## See Also
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543982">IWiaMiniDrv::drvGetDeviceErrorStr</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543972">IWiaMiniDrv::drvFreeDrvItemContext</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543982">IWiaMiniDrv::drvGetDeviceErrorStr</a>
+<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
 
  
 

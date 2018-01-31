@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e54864de-9558-44b1-9c5a-0f2ecc6516b1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.nmrclientdetachprovidercomplete, NmrClientDetachProviderComplete, NmrClientDetachProviderComplete function [Network Drivers Starting with Windows Vista], nmrref_7fb0e7ef-62a3-4dc4-a0e2-b38005056317.xml, netioddk/NmrClientDetachProviderComplete
+ms.keywords : NmrClientDetachProviderComplete function [Network Drivers Starting with Windows Vista], nmrref_7fb0e7ef-62a3-4dc4-a0e2-b38005056317.xml, netvista.nmrclientdetachprovidercomplete, netioddk/NmrClientDetachProviderComplete, NmrClientDetachProviderComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,7 +88,7 @@ A client module should not call the
 | **Minimum UMDF version** |  |
 | **Header** | netioddk.h (include Wsk.h) |
 | **Library** |  |
-| **IRQL** | <= DISPATCH_LEVEL |
+| **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** |  |
 
 ## See Also
